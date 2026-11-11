@@ -12,22 +12,23 @@ Term 03 combines four Dars sources, with Farsi Umumi as the chapter backbone:
 
 | Source | Current unique vocabulary entries |
 |---|---:|
-| Farsi Umumi (FA) | 283 |
-| Khwandan (KH) | 128 |
+| Farsi Umumi (FA) | 293 |
+| Khwandan (KH) | 132 |
 | Newestan (N) | 66 |
-| Shunidan (SH) | 105 |
-| **Total** | **582** |
+| Shunidan (SH) | 106 |
+| **Total** | **588** |
 
-The source-tagged lexicon contains 274 verb entries. Verb records include part of speech, masdar, an imperative form (or an explicit non-applicability note), and example sentences using the masdar and imperative. Repeated headwords are deduplicated while retaining source references.
+The source-tagged lexicon contains 276 verb entries. Verb records include part of speech, masdar, an imperative form (or an explicit non-applicability note), and example sentences using the masdar and imperative. Repeated headwords are deduplicated while retaining source references.
 
 - `term03-data.js` — original curated Term 03 vocabulary, FA chapter metadata, chapter summaries and cross-book mapping
 - `term03-lexicon-additions.js` — expanded vocabulary from the new-word lists and opening lesson vocabulary across FA, KH, N and SH
 - `term03-matn-verbs.js` — additional complex verbs and expressions selected from lesson body texts
 - `term03-writing.js` — Newestan writing prompts, chapter insights, essay outlines, assessment rubric and 20 chapter-linked speech plans
+- `term03-khulasa.js` — five-line Persian summaries for each of the 20 Farsi Umumi chapters, with a printable writing exercise
 - `term-portal.js` — three-term landing page, term navigation and global progress dashboard
 - `../tools/audit-term03.cjs` — automated source, summary, transliteration and verb-field audit
 
-The 20 Farsi Umumi chapters each have a concise learning summary. Their linked vocabulary is grouped under the FA chapter backbone, while source labels preserve the originating Dars book and chapter.
+The dedicated **Khulasa** tab contains a five-line summary for each Farsi Umumi chapter and a printable space to write a summary in your own words. The summaries are based on the chapter learning objectives and the OCR text; OCR ambiguities should be checked against the original lesson pages when refining details. Their linked vocabulary is grouped under the FA chapter backbone, while source labels preserve the originating Dars book and chapter. The obsolete “My words” navigation tab has been removed.
 
 Term 03 is Book 3 in the application. Its units are presented from Unit 20 down to Unit 1. Book 2 and its browser-local memorisation keys remain separate and unchanged.
 
