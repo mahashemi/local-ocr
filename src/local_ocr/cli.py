@@ -68,6 +68,15 @@ def process(
         )
 
     typer.echo(f"Scanning PDFs in: {input_dir.resolve()}")
+
+    def show_progress(done: int, total: int, page_result: object) -> None:
+        result = page_result
+        status = "FAILED" if result.error else result.source  # type: ignore[attr-defined]
+        typer.echo(
+            f"[{done}/{total}] {result.pdf_path.name} "  # type: ignore[attr-defined]
+            f"page {result.page_number}: {status}"  # type: ignore[attr-defined]
+        )
+
     summary = process_directory(
         input_dir=input_dir,
         output_dir=output_dir,
@@ -78,6 +87,7 @@ def process(
         pages_per_batch=pages_per_batch,
         resume=not no_resume,
         recursive=not non_recursive,
+        progress_callback=show_progress,
     )
     typer.echo(
         f"Finished: {summary.documents} documents, "
