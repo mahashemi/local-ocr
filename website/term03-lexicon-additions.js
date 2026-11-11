@@ -341,9 +341,10 @@
  V(20,"SH3-10","نقاب زدن","neqāb zadan","to put on a mask","او برای ناشناس ماندن نقاب زد.","U barāye nāshenās māndan neqāb zad.","He put on a mask to remain unidentified.","نقاب زدن","نقاب بزن","نقاب زدن در داستان هویت شخصیت را پنهان می‌کند.","Neqāb zadan dar dāstān hoviyat-e shakhsiyat rā penhān mikonad.","Wearing a mask hides a character's identity in a story.","در صورت نیاز نقاب بزن.","Dar surat-e niyāz neqāb bezan.","Put on a mask if necessary.");
  V(20,"SH3-10","سراغ چیزی رفتن","sorāgh-e chizi raftan","to go looking for something","او سراغ کتاب قدیمی رفت.","U sorāgh-e ketāb-e qadimi raft.","He went looking for the old book.","سراغ چیزی رفتن","سراغش برو","سراغ چیزی رفتن نشان‌دهندهٔ جست‌وجو است.","Sorāgh-e chizi raftan neshān-dahande-ye jost-o-ju ast.","Going after something shows a search.","سراغ پاسخ درست برو.","Sorāgh-e pāskh-e dorost boro.","Go look for the correct answer.");
  // Deduplicate against the curated base and within this file by Persian headword.
- const seen=new Set((window.TERM3_DATA||[]).map(x=>String(x.fa).replace(/[\u200c\sـ]/g,"")));
+ const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
+ const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
  const additions=[];
- for(const x of rows){const k=x.fa.replace(/[\u200c\sـ]/g,"");if(!seen.has(k)){seen.add(k);additions.push(x)}}
+ for(const x of rows){const k=norm(x.fa),prior=byKey.get(k);if(prior){prior.sources=Array.from(new Set([...(prior.sources||[prior.source]).filter(Boolean),x.source].filter(Boolean)));}else{x.sources=[x.source];additions.push(x);byKey.set(k,x)}}
  window.TERM3_DATA=(window.TERM3_DATA||[]).concat(additions);
  window.TERM3_ADDITIONS_COUNT=additions.length;
 })();
