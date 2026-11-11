@@ -1197,7 +1197,7 @@ function add(){
 const essayStoreKey="term03-writing-essays-v1", speechStoreKey="term03-writing-speeches-v1";
 function readLocal(key){try{return JSON.parse(localStorage.getItem(key)||"{}")}catch(e){return {}}}
 function writeLocal(key,obj){try{localStorage.setItem(key,JSON.stringify(obj))}catch(e){}}
-let essayDrafts=readLocal(essayStoreKey),speechDrafts=readLocal(speechStoreKey),essayCh=20,speechCh=20;
+let essayDrafts=readLocal(essayStoreKey),speechDrafts=readLocal(speechStoreKey),essayCh=1,speechCh=20;
 function printCurrent(){document.body.classList.add("printing");window.onafterprint=()=>document.body.classList.remove("printing");window.print()}
 function essays(){
  const data=window.TERM3_WRITING, item=data.chapters.find(x=>x.ch===essayCh)||data.chapters[0], saved=essayDrafts[essayCh]||{};
