@@ -229,3 +229,27 @@ window.TERM3_DATA = [
 {unit:1,source:"FA3-01",fa:"برخورد کردن",tr:"barkhord kardan",en:"to behave; to deal with; to encounter",pos:"فعل مرکب — compound verb",ms:"برخورد کردن",amr:"برخورد کن",m:["برخورد کردن با مهمان باید محترمانه باشد.","Barkhord kardan bā mehman bāyad mohtaramāne bāshad.","One should behave respectfully toward a guest."],a:["با دیگران محترمانه برخورد کن.","Bā digarān mohtaramāne barkhord kon.","Treat others respectfully."]}
 
 ];
+
+
+window.TERM3_UNIT_META = {
+  1:{base:"FA3-01 · Polite requests",links:"KH3-01 · rude and polite language (supporting)"},
+  2:{base:"FA3-02 · Personal qualities",links:"KH3-02 · friendship; N3-04 · social relationships; SH3-01 · childhood descriptions (supporting)"},
+  3:{base:"FA3-03 · Decisions and plans",links:"KH3-03 · planning; N3-07 · short- and long-term plans (direct)"},
+  4:{base:"FA3-04 · Regret",links:"KH3-04 · regret (direct)"},
+  5:{base:"FA3-05 · Wishes and subjunctive",links:"SH3-03 · driving vocabulary (supporting only)"},
+  6:{base:"FA3-06 · Banking",links:"KH3-06 · lending, interest and receipts (direct)"},
+  7:{base:"FA3-07 · Economy and inheritance",links:"KH3-07 · Ranj-o-Ganj (thematic / literary support)"},
+  8:{base:"FA3-08 · Renting and housing",links:"KH3-08 · renting; N3-03 · renting and description (direct)"},
+  9:{base:"FA3-09 · Worry and stress",links:"KH3-09 · happiness (related emotional theme, not equivalent)"},
+  10:{base:"FA3-10 · Laws",links:"KH3-10 · law and keywords (direct)"},
+  11:{base:"FA3-11 · Energy",links:"N3-05 · forests and nature (environmental support); KH3-11 is linked to FA3-17, not this unit"},
+  12:{base:"FA3-12 · Environment",links:"KH3-12 · desert legend; N3-05 · forests and nature (thematic)"},
+  13:{base:"FA3-13 · Animals and wildlife",links:"KH3-13 · Iranian cheetah (direct)"},
+  14:{base:"FA3-14 · Civilisations and heritage",links:"KH3-14 · Silk Road (direct)"},
+  15:{base:"FA3-15 · Customs and traditions",links:"KH3-15 · tea-drinking customs; N3-08 · cultures of nations (direct thematic)"},
+  16:{base:"FA3-16 · News and media",links:"KH3-16 · news websites; N3-06 · media literacy (direct)"},
+  17:{base:"FA3-17 · Inventions",links:"KH3-11 · inventor of electricity; KH3-17 · nano-clothes (direct thematic)"},
+  18:{base:"FA3-18 · Festivals and customs",links:"KH3-18 · Eid al-Ghadir; N3-08 · cultures and customs (supporting)"},
+  19:{base:"FA3-19 · Travel and attractions",links:"KH3-19 · holidays; N3-01 · village tourism; SH3-02 · airport; SH3-04 · travel problems; SH3-07 · hotels (direct thematic)"},
+  20:{base:"FA3-20 · Persian poetry",links:"KH3-07 · verse and retelling poetry (literary skill); N3-10 and SH3-10 are storytelling, a separate literary cluster"}
+};
