@@ -37,7 +37,7 @@
   originalHome();
   const title=activeTerm===1?"Term One":activeTerm===2?"Term Two":"Term Three · Persian";
   const description=activeTerm===3?"Farsi Umumi, Khwandan, Newestan and Shunidan are brought together here. Each Farsi Umumi chapter includes a learning summary, linked lesson vocabulary, and dedicated writing and speaking practice.":activeTerm===2?"Continue your established Term 02 vocabulary, grammar and memorisation work. Your existing learning progress is preserved.":"The Term 01 learning collection is ready to be populated as its source materials are added.";
-  const sourceCounts=activeTerm===3?["FA3","KH3","N3","SH3"].map(code=>({code,count:all().filter(x=>x.bk===3&&String(x.source||"").startsWith(code+"-")).length})): [];
+  const sourceCounts=activeTerm===3?["FA3","KH3","N3","SH3"].map(code=>({code,count:all().filter(x=>x.bk===3&&(x.sources||[x.source]).some(src=>String(src||"").startsWith(code+"-"))).length})): [];
   const sourceLine=sourceCounts.length?'<div class="source-coverage">'+sourceCounts.map(x=>'<span><b>'+x.code+'</b><small>'+x.count+' words</small></span>').join("")+'</div>':"";
   v.insertAdjacentHTML("afterbegin",'<section class="term-welcome"><h2>'+title+'</h2><p>'+description+'</p>'+sourceLine+'</section>');
  };
