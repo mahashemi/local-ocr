@@ -89,7 +89,7 @@ def _write_checkpoint(info: PDFInfo, result: PageResult) -> None:
     target = _checkpoint_path(info, result.page_number)
     temporary = target.with_suffix(".json.tmp")
     payload = {
-        "input_sha256": info.digest,
+        "checkpoint_version": 2,\n        "input_sha256": info.digest,
         "page_number": result.page_number,
         "source": result.source,
         "text": result.text,
@@ -106,7 +106,7 @@ def _read_checkpoint(info: PDFInfo, page_number: int) -> PageResult | None:
         return None
     try:
         payload = json.loads(target.read_text(encoding="utf-8"))
-        if payload.get("input_sha256") != info.digest:
+        if payload.get("checkpoint_version") != 2:\n            return None\n        if payload.get("input_sha256") != info.digest:
             return None
         return PageResult(
             info.path,
