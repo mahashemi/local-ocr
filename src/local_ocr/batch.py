@@ -119,7 +119,7 @@ def _recognize_page(
 ) -> PageResult:
     """Open a separate PyMuPDF document per task; safe for threaded page work."""
     try:
-        with fitz.open(info.path) as document:
+        with pymupdf.open(info.path) as document:
             page = document.load_page(page_number - 1)
             native_text = page.get_text("text").strip()
             # Prefer the embedded text layer when it contains meaningful text.
