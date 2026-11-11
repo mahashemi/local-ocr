@@ -28,9 +28,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
       - name: Validate Term 03 data JavaScript
         run: node --check website/term03-data.js
 
@@ -39,8 +36,11 @@ jobs:
           node -e "const fs=require('fs'); const html=fs.readFileSync('website/index.html','utf8'); const match=html.match(/<script>([\\s\\S]*?)<\\/script>/); if(!match) throw new Error('Inline application script not found'); fs.writeFileSync('/tmp/persian-trainer.js',match[1]);"
           node --check /tmp/persian-trainer.js
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload website
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: website
 
