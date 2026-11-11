@@ -34,6 +34,12 @@ jobs:
       - name: Validate Term 03 writing curriculum JavaScript
         run: node --check website/term03-writing.js
 
+      - name: Validate expanded Term 03 lexicon JavaScript
+        run: node --check website/term03-lexicon-additions.js
+
+      - name: Validate portal navigation JavaScript
+        run: node --check website/term-portal.js
+
       - name: Validate embedded application JavaScript
         run: |
           node -e "const fs=require('fs'); const html=fs.readFileSync('website/index.html','utf8'); const match=html.match(/<script>([\\s\\S]*?)<\\/script>/); if(!match) throw new Error('Inline application script not found'); fs.writeFileSync('/tmp/persian-trainer.js',match[1]);"
