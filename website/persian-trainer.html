@@ -1152,7 +1152,7 @@ function home(){
   homeBody();
 }
 function homeBody(){
-  const a=all(),d=a.filter(i=>done.has(i.id)).length;
+  const a=all().filter(i=>activeTerm===null||i.bk===activeTerm),d=a.filter(i=>done.has(i.id)).length;
   const pct=(x,t)=>t?Math.round(100*x/t):0;
   const cnt=l=>l.filter(i=>done.has(i.id)).length;
   const bar=(x,t)=>`<div class="bar" style="flex-basis:100%;order:9"><i style="width:${pct(x,t)}%"></i></div>`;
@@ -1165,13 +1165,13 @@ function homeBody(){
     h=`<div class="mut" style="margin:6px 0">${m.length} match${m.length==1?"":"es"}</div><div class="dc" style="padding:0">`+m.slice(0,150).map(word).join("")+`</div>`+(m.length>150?'<p class="mut">Showing the first 150. Type more to narrow it down.</p>':"");
   }else{
     h=`<div class="card" style="cursor:default;min-height:0;text-align:left"><b>${d} / ${a.length}</b> memorized overall<div class="bar"><i style="width:${pct(d,a.length)}%"></i></div></div>`;
-    [...new Set([1,2,3,...a.map(i=>i.bk)])].sort((x,y)=>x-y).forEach(b=>{
+    [...new Set(activeTerm===null?[1,2,3,...a.map(i=>i.bk)]:[activeTerm])].sort((x,y)=>x-y).forEach(b=>{
       const bi=a.filter(i=>i.bk===b);
       const chs=[...new Set(bi.map(i=>i.ch))].sort((x,y)=>b===3?y-x:x-y);
       h+=det("b"+b,b===3?"Term 03 · Persian":"Book "+b,cnt(bi),bi.length,bi.length?chs.map(c=>{
         const ci=bi.filter(i=>i.ch===c),cs=esc(String(c));
         const meta=b===3?(window.TERM3_UNIT_META||{})[c]:null;
-        const mapNote=meta?'<div class="unitmap"><b>FA base:</b> '+esc(meta.base)+'<br><b>Connected lessons:</b> '+esc(meta.links)+'</div>':"";
+        const mapNote=meta?'<div class="unitmap"><b>FA base:</b> '+esc(meta.base)+'<br><b>Connected lessons:</b> '+esc(meta.links)+'</div><div class="chapter-summary"><b>خلاصهٔ آموزشی فصل</b>'+esc(meta.summary||"")+"</div>":"";
         return det("b"+b+"c"+c,"Chapter "+cs+chT(b,c),cnt(ci),ci.length,mapNote+`<div class="row" style="margin-top:8px"><button class="pri" data-go="cards" data-b="${b}" data-c="${cs}">▶ Flashcards</button><button data-go="quiz" data-b="${b}" data-c="${cs}">Quiz</button></div>`+ci.map(word).join(""));
       }).join(""):'<p class="mut">No words yet. Add some in “Add words”.</p>');
     });
@@ -1285,7 +1285,7 @@ function speeches(){
  $("#clearSpeech").onclick=()=>{if(confirm("Clear this chapter's speech notes?")){delete speechDrafts[speechCh];writeLocal(speechStoreKey,speechDrafts);speeches()}};
 }
 
-function render(){({home,cards,quiz:startQuiz,add,essays,speeches})[tab]()}
+function render(){if(tab==="portal"){v.innerHTML="";return}({home,cards,quiz:startQuiz,add,essays,speeches})[tab]()}
 function gotoTab(t){tab=t;bkSel.hidden=chSel.hidden=!["home","cards","quiz"].includes(t);document.querySelectorAll("[data-t]").forEach(x=>x.classList.toggle("on",x.dataset.t===t));deck=[];idx=0;flip=false;render()}
 document.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>gotoTab(b.dataset.t));
 chSel.onchange=()=>{deck=[];idx=0;flip=false;render()};
