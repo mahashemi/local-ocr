@@ -3,7 +3,7 @@
 (()=>{
  const rows=[];
  const N=(unit,source,fa,tr,en,pos="اسم — ism (noun)",exFa,exTr,exEn,note="")=>rows.push({unit,source,fa,tr,en,pos,ex:[exFa,exTr,exEn],...(note?{note}:{})});
- const V=(unit,source,fa,tr,en,ms,amr,mf,mt,me,af,at,ae,note="")=>rows.push({unit,source,fa,tr,en,pos:"فعل مرکب — compound verb",ms,amr,m:[mf,mt,me],a:[af,at,ae],...(note?{note}:{})});
+ const V=(unit,source,fa,tr,en,mf,mt,me,ms,amr,af,at,ae,note="")=>rows.push({unit,source,fa,tr,en,pos:"فعل مرکب — compound verb",ms,amr,m:[mf,mt,me],a:[af,at,ae],...(note?{note}:{})});
  const A=(unit,source,fa,tr,en,exFa,exTr,exEn)=>N(unit,source,fa,tr,en,"صفت — sifat (adjective)",exFa,exTr,exEn);
  // FA: polite requests, personal qualities, decisions and regret
  N(1,"FA3-01","تشریف بردن","tashrif bordan","to leave (honorific)","مهمانان پس از پایان جلسه تشریف بردند.","Mehmānān pas az pāyān-e jalase tashrif bordand.","The guests left after the meeting.");
