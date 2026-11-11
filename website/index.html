@@ -1097,7 +1097,7 @@ function sentence(i){
   if(i.ms)out+='<div class="gline"><span class="glabel">مصدر / Masdar:</span> <span class="fa">'+esc(i.ms)+'</span></div>';
   if(i.amr)out+='<div class="gline"><span class="glabel">امر / Amr:</span> <span class="fa">'+esc(i.amr)+'</span></div>';
   out+=exBlock("مثال با مصدر / Masdar example",i.m)+exBlock("مثال با امر / Imperative example",i.a);
-  if(i.source)out+='<div class="source">Source: '+esc(i.source)+'</div>';
+  const sourceLabel=(i.sources||[i.source]).filter(Boolean).join(" · ");if(sourceLabel)out+='<div class="source">Sources: '+esc(sourceLabel)+'</div>';
   out+='</div>';
  }
  if(i.nt)out+='<div class="mut" style="margin-top:8px">'+esc(i.nt)+'</div>';
