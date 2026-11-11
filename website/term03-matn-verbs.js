@@ -107,8 +107,10 @@
  V(10,"SH3-09","پس گرفتن","pas gereftan","to take back; to reclaim","مشتری پول خود را پس گرفت.","Moshtari pul-e khod rā pas gereft.","The customer got their money back.","پس گرفتن","پس بگیر","پس گرفتن کالای معیوب حق مشتری است.","Pas gereftan-e kālā-ye ma'yub haqq-e moshtari ast.","Reclaiming a defective item is the customer's right.","پولت را پس بگیر.","Pulat rā pas begir.","Get your money back.");
  V(10,"SH3-09","صادر کردن","sāder kardan","to issue; to export","فروشنده فاکتور جدید صادر کرد.","Forushande fāktor-e jadid sāder kard.","The seller issued a new invoice.","صادر کردن","صادر کن","صادر کردن فاکتور دقیق ضروری است.","Sāder kardan-e fāktor-e daqiq zaruri ast.","Issuing an accurate invoice is essential.","فاکتور را صادر کن.","Fāktor rā sāder kon.","Issue the invoice.");
  V(20,"SH3-10","پاره شدن","pāre shodan","to tear; to be torn","کیسهٔ کتاب‌ها پاره شد.","Kise-ye ketābhā pāre shod.","The bag of books tore.","پاره شدن","—","پاره شدن کاغذ اتفاقی بود.","Pāre shodan-e kāghaz ettefāqi bud.","The paper tore accidentally.","—","—","—","فعل لازم است؛ امر مستقیم ندارد.");
- const seen=new Set((window.TERM3_DATA||[]).map(x=>String(x.fa).replace(/[\\u200c\\sـ]/g,"")));
- const additions=rows.filter(x=>{const k=x.fa.replace(/[\\u200c\\sـ]/g,"");if(seen.has(k))return false;seen.add(k);return true});
+ const norm=x=>String(x||"").replace(/[\\u200c\\sـ]/g,"");
+ const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
+ const additions=[];
+ for(const x of rows){const k=norm(x.fa),prior=byKey.get(k);if(prior){prior.sources=Array.from(new Set([...(prior.sources||[prior.source]).filter(Boolean),x.source].filter(Boolean)));}else{x.sources=[x.source];additions.push(x);byKey.set(k,x)}}
  window.TERM3_DATA=(window.TERM3_DATA||[]).concat(additions);
  window.TERM3_MATN_VERBS_COUNT=additions.length;
 })();
