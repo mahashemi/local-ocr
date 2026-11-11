@@ -26,6 +26,8 @@ def test_process_directory_extracts_embedded_pdf_text_and_resumes(tmp_path: Path
     assert first.pages_completed == 1
     assert first.pages_failed == 0
     assert first.outputs and first.outputs[0].exists()
+    assert len(first.outputs) == 1
+    assert not list(output_dir.glob("*.clean.txt"))
     assert "embedded PDF text" in first.outputs[0].read_text(encoding="utf-8")
 
     second = process_directory(
