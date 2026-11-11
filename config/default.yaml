@@ -1,0 +1,33 @@
+app:
+  name: Local OCR
+  offline: true
+  host: 127.0.0.1
+  port: 8000
+
+paths:
+  data: ./data
+  input: ./data/input
+  working: ./data/working
+  output: ./data/output
+  failed: ./data/failed
+  cache: ./data/cache
+  models: ./models
+
+processing:
+  workers: 3
+  pages_per_batch: 5
+  parallel_mode: both
+  render_dpi: 300
+  resume_on_start: true
+  max_retries: 2
+
+ocr:
+  default_engine: tesseract
+  default_language: fas
+  preserve_raw_output: true
+  normalize_text: false
+  tesseract:
+    language: fas
+    oem: 1
+    psm: 3
+    threads_per_worker: 1
