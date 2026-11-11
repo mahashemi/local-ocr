@@ -22,6 +22,7 @@
   }).join('')+'</div><div class="portal-summary"><span><b>'+a.length.toLocaleString()+'</b> total vocabulary entries</span><span><b>'+d.toLocaleString()+'</b> memorised</span><span><b>'+(a.length?Math.round(d*100/a.length):0)+'%</b> overall progress</span></div>';
   v.querySelectorAll("[data-enter]").forEach(btn=>btn.onclick=()=>enterTerm(Number(btn.dataset.enter)));
  }
+ window.updateGlobalStats=updateStats;
  function enterTerm(b){
   activeTerm=b;bkSel.value=String(b);fillCh();chSel.value="all";
   $id("termNav").hidden=false;$id("activeTermTitle").textContent="TERM 0"+b+(b===3?" · PERSIAN":"");
