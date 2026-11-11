@@ -51,7 +51,7 @@ def process(
     """OCR all PDFs in a folder and write one UTF-8 text file per PDF."""
     import pytesseract
 
-    from local_ocr.batch import process_directory
+    from local_ocr.batch import PageResult, process_directory
 
     try:
         installed_languages = pytesseract.get_languages(config="")
@@ -69,12 +69,11 @@ def process(
 
     typer.echo(f"Scanning PDFs in: {input_dir.resolve()}")
 
-    def show_progress(done: int, total: int, page_result: object) -> None:
-        result = page_result
-        status = "FAILED" if result.error else result.source  # type: ignore[attr-defined]
+    def show_progress(done: int, total: int, result: PageResult) -> None:
+        status = "FAILED" if result.error else result.source
         typer.echo(
-            f"[{done}/{total}] {result.pdf_path.name} "  # type: ignore[attr-defined]
-            f"page {result.page_number}: {status}"  # type: ignore[attr-defined]
+            f"[{done}/{total}] {result.pdf_path.name} "
+            f"page {result.page_number}: {status}"
         )
 
     summary = process_directory(
