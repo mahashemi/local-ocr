@@ -1,13 +1,14 @@
 """Reliable local batch OCR for PDFs using PyMuPDF and Tesseract.
 
-The module deliberately keeps checkpoints and outputs on local disk. Each page is
-checkpointed atomically so an interrupted batch can be resumed.
+Raw page text and rejected embedded PDF text are checkpointed locally. A separate
+cleaned document is generated without modifying the raw OCR output.
 """
 from __future__ import annotations
 
 import hashlib
 import json
 import re
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
@@ -16,6 +17,8 @@ from typing import Callable, Iterable
 import pymupdf
 import pytesseract
 from PIL import Image
+
+from local_ocr.persian.normalization import normalize_persian
 
 
 @dataclass(frozen=True)
@@ -26,6 +29,10 @@ class PDFInfo:
     work_dir: Path
     output_path: Path
 
+    @property
+    def cleaned_output_path(self) -> Path:
+        return self.output_path.with_name(f"{self.output_path.stem}.clean.txt")
+
 
 @dataclass(frozen=True)
 class PageResult:
@@ -34,6 +41,7 @@ class PageResult:
     text: str
     source: str
     error: str | None = None
+    rejected_native_text: str | None = None
 
 
 @dataclass
@@ -86,6 +94,7 @@ def _write_checkpoint(info: PDFInfo, result: PageResult) -> None:
         "source": result.source,
         "text": result.text,
         "error": result.error,
+        "rejected_native_text": result.rejected_native_text,
     }
     temporary.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
     temporary.replace(target)
@@ -105,9 +114,50 @@ def _read_checkpoint(info: PDFInfo, page_number: int) -> PageResult | None:
             payload.get("text", ""),
             payload.get("source", "checkpoint"),
             payload.get("error"),
+            payload.get("rejected_native_text"),
         )
     except (OSError, ValueError, TypeError):
         return None
+
+
+def has_suspicious_embedded_text(text: str, *, language: str = "fas") -> bool:
+    """Detect obvious extraction corruption before trusting a PDF text layer.
+
+    The first pass is deliberately conservative: control bytes and replacement
+    characters are strong evidence of broken ToUnicode mappings. More subtle
+    visual/text mismatches require page-image evaluation and are not guessed here.
+    """
+    if not text.strip():
+        return True
+    for char in text:
+        category = unicodedata.category(char)
+        if char == "\ufffd":
+            return True
+        if category == "Cc" and char not in "\n\r\t":
+            return True
+    return False
+
+
+def clean_extracted_text(text: str, *, language: str = "fas") -> str:
+    """Remove invalid control characters and apply conservative language cleanup.
+
+    Keep line breaks, tabs, ZWNJ/ZWJ, bidi marks, Arabic diacritics and punctuation.
+    """
+    kept = []
+    for char in text:
+        category = unicodedata.category(char)
+        if char == "\ufffd":
+            continue
+        if category == "Cc" and char not in "\n\r\t":
+            continue
+        kept.append(char)
+
+    cleaned = "".join(kept).replace("\r\n", "\n").replace("\r", "\n")
+    if language == "fas":
+        cleaned = normalize_persian(cleaned)
+    cleaned = re.sub(r"[ \t]+(?=\n)", "", cleaned)
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip()
 
 
 def _recognize_page(
@@ -122,10 +172,12 @@ def _recognize_page(
         with pymupdf.open(info.path) as document:
             page = document.load_page(page_number - 1)
             native_text = page.get_text("text").strip()
-            # Prefer the embedded text layer when it contains meaningful text.
-            if len(native_text) >= 20:
+            if len(native_text) >= 20 and not has_suspicious_embedded_text(
+                native_text, language=language
+            ):
                 return PageResult(info.path, page_number, native_text, "pdf-text")
 
+            rejected_native = native_text if native_text else None
             scale = dpi / 72.0
             pixmap = page.get_pixmap(
                 matrix=pymupdf.Matrix(scale, scale),
@@ -138,25 +190,41 @@ def _recognize_page(
                 lang=language,
                 config=tesseract_config,
             ).strip()
-            return PageResult(info.path, page_number, text, "tesseract")
+            source = "tesseract-fallback" if rejected_native else "tesseract"
+            return PageResult(
+                info.path, page_number, text, source,
+                rejected_native_text=rejected_native,
+            )
     except Exception as exc:  # noqa: BLE001 - persist per-page failure and continue batch
         return PageResult(info.path, page_number, "", "error", f"{type(exc).__name__}: {exc}")
 
 
 def _write_document_output(info: PDFInfo) -> None:
-    temporary = info.output_path.with_suffix(".txt.tmp")
-    with temporary.open("w", encoding="utf-8", newline="\n") as stream:
+    raw_temp = info.output_path.with_suffix(".txt.tmp")
+    clean_temp = info.cleaned_output_path.with_suffix(".txt.tmp")
+    with raw_temp.open("w", encoding="utf-8", newline="\n") as raw_stream, clean_temp.open(
+        "w", encoding="utf-8", newline="\n"
+    ) as clean_stream:
         for page_number in range(1, info.page_count + 1):
             checkpoint = _read_checkpoint(info, page_number)
-            stream.write(f"\n\n========== PAGE {page_number} ==========\n\n")
+            header = f"========== PAGE {page_number} =========="
+            raw_stream.write(f"\n\n{header}\n\n")
+            clean_stream.write(f"\n\n{header}\n\n")
             if checkpoint is None:
-                stream.write("[PAGE NOT PROCESSED]\n")
+                marker = "[PAGE NOT PROCESSED]\n"
+                raw_stream.write(marker)
+                clean_stream.write(marker)
             elif checkpoint.error:
-                stream.write(f"[OCR ERROR: {checkpoint.error}]\n")
+                marker = f"[OCR ERROR: {checkpoint.error}]\n"
+                raw_stream.write(marker)
+                clean_stream.write(marker)
             else:
-                stream.write(checkpoint.text)
-                stream.write("\n")
-    temporary.replace(info.output_path)
+                raw_stream.write(checkpoint.text + "\n")
+                clean_stream.write(
+                    clean_extracted_text(checkpoint.text) + "\n"
+                )
+    raw_temp.replace(info.output_path)
+    clean_temp.replace(info.cleaned_output_path)
 
 
 def process_directory(
@@ -194,8 +262,6 @@ def process_directory(
     config = "--oem 1 --psm 3"
     processed = 0
 
-    # One bounded worker pool is shared by all documents: pages from different
-    # PDFs and pages within each PDF can run concurrently without nested pools.
     max_batches = max(
         ((info.page_count + pages_per_batch - 1) // pages_per_batch for info in infos),
         default=0,
@@ -234,4 +300,5 @@ def process_directory(
     for info in infos:
         _write_document_output(info)
         summary.outputs.append(info.output_path)
+        summary.outputs.append(info.cleaned_output_path)
     return summary
