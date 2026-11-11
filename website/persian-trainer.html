@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Offline Persian Term 03 vocabulary, essay-writing practice and five-minute speech preparation.">
 <title>Persian Trainer — Term 03</title>
 
 <style>
@@ -44,16 +45,20 @@ u{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:
 .grammar .gline{margin:5px 0}.grammar .glabel{font-weight:700;color:var(--ac)}
 .grammar .gex{border-top:1px dashed var(--bd);margin-top:9px;padding-top:8px}
 .source{font-size:12px;color:var(--mut);margin-top:6px}.unitmap{font-size:13px;color:var(--mut);padding:10px 0;border-bottom:1px solid var(--bd);margin-bottom:8px}
+.writing-wrap{max-width:900px;margin:0 auto}.writing-wrap h2{font-size:20px;margin:10px 0}.writing-wrap h3{font-size:16px;margin:16px 0 8px}.writing-wrap .panel{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:10px 0;text-align:left}.writing-wrap .fa-block{direction:rtl;text-align:right;line-height:1.9}.writing-wrap textarea{min-height:105px;resize:vertical;direction:auto}.writing-wrap .essay-draft{min-height:320px;direction:rtl;text-align:right;line-height:2}.writing-wrap .smallbox{min-height:64px;direction:rtl;text-align:right}.writing-wrap label{display:block;font-size:13px;color:var(--mut);margin:8px 0 4px}.writing-wrap .rubric-row{display:grid;grid-template-columns:1fr auto;gap:8px;border-bottom:1px solid var(--bd);padding:8px 0}.writing-wrap .hint-list li{margin:6px 0}.writing-wrap .speech-plan{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.writing-wrap .speech-plan .panel{margin:0}.writing-wrap .timerline{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:var(--mut);font-size:13px}.writing-wrap select{max-width:100%}
+@media(max-width:600px){.writing-wrap .speech-plan{grid-template-columns:1fr}}
+@media print{body.printing{background:#fff;color:#111}body.printing main{max-width:none;padding:0}body.printing .no-print,body.printing h1{display:none!important}body.printing .writing-wrap{max-width:none}body.printing .writing-wrap .panel{break-inside:avoid;border:1px solid #bbb;background:#fff;color:#111}body.printing textarea{color:#111;background:#fff;border:1px solid #999;min-height:90px;white-space:pre-wrap}body.printing .essay-draft{min-height:500px}body.printing details:not([open])>.dc{display:block!important}body.printing details>summary{font-weight:bold}body.printing .mut{color:#444}body.printing .fa-block{color:#111}}
 </style></head>
 <body><main>
 <h1>Persian Trainer</h1>
 <div class="row">
  <select id="bk"></select><select id="ch"></select>
- <button data-t="home" class="on">Study list</button><button data-t="cards">Flashcards</button><button data-t="quiz">Quiz</button><button data-t="add">My words</button>
+ <button data-t="home" class="on">Study list</button><button data-t="cards">Flashcards</button><button data-t="quiz">Quiz</button><button data-t="add">My words</button><button data-t="essays">Newestan · Essays</button><button data-t="speeches">Sukhanrani · 5 min</button>
 </div>
 <div id="v"></div>
 </main>
 <script src="term03-data.js"></script>
+<script src="term03-writing.js"></script>
 <script>
 // ===== BOOK 2 DATA: [chapter, persian, transliteration, meaning, sentence fa, sentence translit, sentence en] =====
 const BOOK2=[
@@ -1188,8 +1193,93 @@ function add(){
   $("#clr").onclick=()=>{if(confirm("Delete all words you added in this browser?")){custom=[];save();fillCh();deck=[];$("#msg").textContent="Cleared."}};
 }
 
-function render(){({home,cards,quiz:startQuiz,add})[tab]()}
-function gotoTab(t){tab=t;bkSel.hidden=chSel.hidden=(t==="home"||t==="add");document.querySelectorAll("[data-t]").forEach(x=>x.classList.toggle("on",x.dataset.t===t));deck=[];idx=0;flip=false;render()}
+
+const essayStoreKey="term03-writing-essays-v1", speechStoreKey="term03-writing-speeches-v1";
+function readLocal(key){try{return JSON.parse(localStorage.getItem(key)||"{}")}catch(e){return {}}}
+function writeLocal(key,obj){try{localStorage.setItem(key,JSON.stringify(obj))}catch(e){}}
+let essayDrafts=readLocal(essayStoreKey),speechDrafts=readLocal(speechStoreKey),essayCh=20,speechCh=20;
+function printCurrent(){document.body.classList.add("printing");window.onafterprint=()=>document.body.classList.remove("printing");window.print()}
+function essays(){
+ const data=window.TERM3_WRITING, item=data.chapters.find(x=>x.ch===essayCh)||data.chapters[0], saved=essayDrafts[essayCh]||{};
+ const topic=saved.topic||"main";
+ const topics=[["main",item.topic],["alternate",item.alternate]];
+ v.innerHTML=`<section class="writing-wrap">
+ <div class="no-print"><div class="mut">Term 03 · Newestan · Ten writing units</div><h2>Essay writing workshop</h2>
+ <p>Work through the chapter skill, plan your response, write a complete draft and print a clean practice sheet. Your work is saved only in this browser.</p>
+ <div class="row"><label for="essayChapter">Newestan chapter</label><select id="essayChapter">${data.chapters.map(x=>`<option value="${x.ch}" ${x.ch===essayCh?"selected":""}>Chapter ${x.ch} · ${esc(x.title)}</option>`).join("")}</select></div></div>
+ <div class="panel"><div class="mut">CHAPTER ${item.ch} · ${esc(item.title)}</div><h2 class="fa-block">${esc(item.topic)}</h2>
+ <label for="essayTopic">Choose your writing prompt</label><select id="essayTopic">${topics.map(([k,t])=>`<option value="${k}" ${topic===k?"selected":""}>${esc(t)}</option>`).join("")}</select>
+ <p class="mut">Main question to answer: ${esc(item.question)}</p>
+ <details><summary><b>Chapter insight — what the lesson is teaching</b></summary><div class="dc">${esc(item.insight)}</div></details>
+ <details><summary><b>Writing hints and useful expressions</b></summary><div class="dc"><ul class="hint-list">${item.hints.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></details>
+ <details><summary><b>Suggested essay structure</b></summary><div class="dc"><ol>${item.outline.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></div></details>
+ <details><summary><b>20-point assessment rubric from the OCR</b></summary><div class="dc">${data.rubric.map(x=>`<div class="rubric-row"><b>${esc(x.name)} · ${x.points}/20</b><span>${x.points} points</span><div style="grid-column:1/-1" class="mut">${esc(x.detail)}</div></div>`).join("")}<p><b>Total: 20 points.</b> The OCR's descriptive bands show: عالی ۱۹–۲۰; خیلی خوب ۱۷–۱۸; خوب ۱۴–۱۶; متوسط ۱۱–۱۳; تلاش بیشتر ۰–۱۰. The printed scale is slightly damaged by OCR, so these bands are transcribed cautiously.</p></div></details>
+ </div>
+ <div class="panel">
+ <h3>1. Plan before writing</h3>
+ <label>عنوان نهایی / Final title</label><textarea class="smallbox" data-field="title" placeholder="عنوان نوشته را بنویسید">${esc(saved.title||"")}</textarea>
+ <label>جملهٔ اصلی یا پاسخ کوتاه به پرسش / Main idea</label><textarea class="smallbox" data-field="thesis" placeholder="موضع یا پاسخ اصلی شما چیست؟">${esc(saved.thesis||"")}</textarea>
+ <label>نکته‌های بدنه و مثال‌ها / Supporting points and examples</label><textarea data-field="plan" placeholder="۱. ...&#10;۲. ...&#10;۳. ...">${esc(saved.plan||"")}</textarea>
+ <label>واژگان و عبارت‌های پیوندی / Vocabulary and connectors</label><textarea class="smallbox" data-field="vocab" placeholder="واژه‌های دقیق، مترادف‌ها و پیونددهنده‌ها">${esc(saved.vocab||"")}</textarea>
+ </div>
+ <div class="panel">
+ <h3>2. Write your essay</h3>
+ <label>مقدمه / Opening paragraph</label><textarea data-field="intro" placeholder="موضوع را معرفی کنید و مسیر نوشته را روشن سازید.">${esc(saved.intro||"")}</textarea>
+ <label>بدنه / Main paragraphs</label><textarea data-field="body" class="essay-draft" placeholder="هر بند را حول یک ایدهٔ اصلی بنویسید و با دلیل یا مثال گسترش دهید.">${esc(saved.body||"")}</textarea>
+ <label>نتیجه‌گیری / Conclusion</label><textarea data-field="conclusion" placeholder="نکته‌های اصلی را جمع‌بندی کنید؛ مطلب تازه و بی‌ارتباط اضافه نکنید.">${esc(saved.conclusion||"")}</textarea>
+ </div>
+ <div class="panel">
+ <h3>3. If this is a research essay</h3>
+ <label>پرسش اصلی تحقیق</label><textarea class="smallbox" data-field="mainQ" placeholder="پرسشی باز که پاسخ آن فقط بله یا خیر نباشد.">${esc(saved.mainQ||"")}</textarea>
+ <label>پرسش‌های فرعی</label><textarea data-field="subQ" placeholder="سه تا پنج پرسش فرعی که به پاسخ پرسش اصلی کمک کنند.">${esc(saved.subQ||"")}</textarea>
+ <label>منابع و شمارهٔ صفحه</label><textarea class="smallbox" data-field="sources" placeholder="نام نویسنده، سال، عنوان، ناشر، صفحه یا نشانی دقیق منبع.">${esc(saved.sources||"")}</textarea>
+ <label>چکیده</label><textarea class="smallbox" data-field="abstract" placeholder="موضوع، روش، نکته‌های مهم و یافته‌ها را خلاصه کنید.">${esc(saved.abstract||"")}</textarea>
+ <label>کلیدواژه‌ها (۵ تا ۸ واژه)</label><textarea class="smallbox" data-field="keywords" placeholder="کلیدواژه‌ها را با ویرگول جدا کنید.">${esc(saved.keywords||"")}</textarea>
+ </div>
+ <div class="panel">
+ <h3>4. Final self-check</h3><ul class="hint-list">${item.must.map(x=>`<li><label style="display:flex;gap:8px;align-items:flex-start;color:var(--fg)"><input type="checkbox" data-check="${esc(x)}" ${(saved.checks||[]).includes(x)?"checked":""} style="width:auto;margin:3px 0"> ${esc(x)}</label></li>`).join("")}</ul>
+ <label>نمرهٔ خودارزیابی از ۲۰ / Your estimated score</label><input type="number" min="0" max="20" data-field="score" value="${esc(saved.score||"")}" placeholder="0–20">
+ <div class="mut" id="essaySaved">Saved locally in this browser.</div>
+ </div>
+ <div class="row no-print"><button class="pri" id="printEssay">Print this essay sheet</button><button id="clearEssay">Clear this chapter's draft</button></div>
+ </section>`;
+ $("#essayChapter").onchange=e=>{essayCh=Number(e.target.value);essays()};
+ const saveEssay=()=>{const obj={...(essayDrafts[essayCh]||{}),topic:$("#essayTopic").value,checks:[...v.querySelectorAll("[data-check]:checked")].map(x=>x.dataset.check)};v.querySelectorAll("[data-field]").forEach(el=>obj[el.dataset.field]=el.value);essayDrafts[essayCh]=obj;writeLocal(essayStoreKey,essayDrafts);$("#essaySaved").textContent="Saved locally · "+new Date().toLocaleTimeString()};
+ $("#essayTopic").onchange=saveEssay;
+ v.querySelectorAll("[data-field],[data-check]").forEach(el=>{el.addEventListener("input",saveEssay);el.addEventListener("change",saveEssay)});
+ $("#printEssay").onclick=printCurrent;
+ $("#clearEssay").onclick=()=>{if(confirm("Clear this chapter's saved essay draft?")){delete essayDrafts[essayCh];writeLocal(essayStoreKey,essayDrafts);essays()}};
+}
+function speeches(){
+ const item=(window.TERM3_SPEECHES||[]).find(x=>x.ch===speechCh)||window.TERM3_SPEECHES[0],saved=speechDrafts[speechCh]||{};
+ v.innerHTML=`<section class="writing-wrap">
+ <div class="no-print"><div class="mut">Term 03 · Farsi Umumi · 20 chapter-linked talks</div><h2>سخنرانی پنج‌دقیقه‌ای / Five-minute Sukhanrani</h2><p>Prepare one short talk connected to each FA chapter. Use the verse as the central anchor, then explain its meaning and connect it to the chapter and daily life. Do not merely recite the verse.</p>
+ <div class="row"><label for="speechChapter">Farsi Umumi chapter</label><select id="speechChapter">${window.TERM3_SPEECHES.map(x=>`<option value="${x.ch}" ${x.ch===speechCh?"selected":""}>FA ${String(x.ch).padStart(2,"0")} · ${esc(x.title)}</option>`).join("")}</select></div></div>
+ <div class="panel"><div class="mut">FA CHAPTER ${item.ch}</div><h2 class="fa-block">${esc(item.title)}</h2><h3 class="fa-block">${esc(item.topic)}</h3>
+ <div class="fa-block" style="font-size:24px;margin:14px 0">${esc(item.arabic)}</div><b>Qur'anic anchor: ${esc(item.verse)}</b><p class="fa-block">${esc(item.meaning)}</p>
+ <p class="mut">Check the verse in your own Mushaf/tafsir before quoting it publicly; this page gives the reference and a concise working translation.</p>
+ </div>
+ <div class="panel"><h3>Five-minute structure</h3><div class="timerline"><span>Opening · 30 sec</span><span>Verse and explanation · 60 sec</span><span>Main points · 2 min 30 sec</span><span>Application · 45 sec</span><span>Conclusion · 15 sec</span></div>
+ <ol class="hint-list"><li><b>Khudba / opening (30 sec):</b> Begin with بسم الله الرحمن الرحیم, حمد خدا, صلوات بر محمد و آل محمد, then greet the audience and announce the topic.</li><li><b>Connect to the ayah (60 sec):</b> Recite the verse accurately, name the surah and ayah, give its meaning, and explain why it relates to the topic.</li><li><b>Develop the message (2 min 30 sec):</b> Explain the three pointers below. Give one concrete example rather than repeating general statements.</li><li><b>Practical application (45 sec):</b> Give the audience one action they can take today.</li><li><b>Close (15 sec):</b> Summarise the message in one sentence, offer a brief dua, and end with salawat.</li></ol></div>
+ <div class="panel"><h3>Three points to develop</h3><ol class="hint-list">${item.points.map(x=>`<li>${esc(x)}</li>`).join("")}</ol><p><b>Suggested audience action:</b> ${esc(item.action)}</p></div>
+ <div class="panel"><h3>Prepare your own speech</h3>
+ <label>Opening and greeting / مقدمه و خطبه</label><textarea data-speech="opening" placeholder="بسم الله، حمد، صلوات، سلام و معرفی موضوع...">${esc(saved.opening||"")}</textarea>
+ <label>Explanation of the ayah / شرح آیه</label><textarea data-speech="verse" placeholder="معنای آیه و ارتباط آن با موضوع فصل...">${esc(saved.verse||"")}</textarea>
+ <label>My examples and supporting points / نکته‌ها و مثال‌ها</label><textarea data-speech="body" class="essay-draft" placeholder="سه نکته را با مثال‌های روشن گسترش دهید...">${esc(saved.body||"")}</textarea>
+ <label>Practical takeaway / پیام کاربردی</label><textarea data-speech="action" placeholder="مخاطب پس از سخنرانی چه کاری انجام دهد؟">${esc(saved.action||"")}</textarea>
+ <label>Closing dua and salawat / دعا و پایان</label><textarea data-speech="close" placeholder="جمع‌بندی کوتاه، دعا و صلوات...">${esc(saved.close||"")}</textarea>
+ <div class="mut" id="speechSaved">Saved locally in this browser.</div></div>
+ <div class="row no-print"><button class="pri" id="printSpeech">Print this speech plan</button><button id="clearSpeech">Clear this chapter's notes</button></div>
+ </section>`;
+ $("#speechChapter").onchange=e=>{speechCh=Number(e.target.value);speeches()};
+ const saveSpeech=()=>{const obj={};v.querySelectorAll("[data-speech]").forEach(el=>obj[el.dataset.speech]=el.value);speechDrafts[speechCh]=obj;writeLocal(speechStoreKey,speechDrafts);$("#speechSaved").textContent="Saved locally · "+new Date().toLocaleTimeString()};
+ v.querySelectorAll("[data-speech]").forEach(el=>el.addEventListener("input",saveSpeech));
+ $("#printSpeech").onclick=printCurrent;
+ $("#clearSpeech").onclick=()=>{if(confirm("Clear this chapter's speech notes?")){delete speechDrafts[speechCh];writeLocal(speechStoreKey,speechDrafts);speeches()}};
+}
+
+function render(){({home,cards,quiz:startQuiz,add,essays,speeches})[tab]()}
+function gotoTab(t){tab=t;bkSel.hidden=chSel.hidden=!["home","cards","quiz"].includes(t);document.querySelectorAll("[data-t]").forEach(x=>x.classList.toggle("on",x.dataset.t===t));deck=[];idx=0;flip=false;render()}
 document.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>gotoTab(b.dataset.t));
 chSel.onchange=()=>{deck=[];idx=0;flip=false;render()};
 bkSel.onchange=()=>{fillCh();deck=[];idx=0;flip=false;render()};
