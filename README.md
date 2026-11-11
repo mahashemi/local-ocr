@@ -88,11 +88,19 @@ Application source code is MIT licensed. Third-party engines, model weights, and
 
 ## Bulk PDF processing (first working pipeline)
 
-Install Tesseract 5 and its Persian `fas` language data, then place PDFs in
-`data/input/`. From the repository root with `.venv` active:
+Install Tesseract 5 and its Persian `fas` language data (Homebrew on Apple Silicon):
 
 ```bash
-python -m local_ocr.cli process --input data/input --output data/output
+curl -L --fail --retry 3 \\
+  https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/main/fas.traineddata \\
+  -o "$(brew --prefix)/share/tessdata/fas.traineddata"
+tesseract --list-langs
+```
+
+Place PDFs in `data/input/`. From the repository root with `.venv` active:
+
+```bash
+PYTHONPATH=src python -m local_ocr.cli process --input data/input --output data/output
 ```
 
 The command recursively scans for PDFs, extracts embedded text where available,
