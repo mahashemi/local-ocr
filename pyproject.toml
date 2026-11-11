@@ -3,7 +3,7 @@ name = "local-ocr"
 version = "0.1.0"
 description = "Free, offline-capable local OCR workbench with pluggable language and engine support"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 license = { file = "LICENSE" }
 dependencies = [
   "pydantic>=2.8,<3",
@@ -38,4 +38,4 @@ addopts = "-ra"
 
 [tool.ruff]
 line-length = 100
-target-version = "py310"
+target-version = "py312"
