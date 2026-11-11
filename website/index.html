@@ -1055,7 +1055,7 @@ const $=s=>document.querySelector(s), v=$("#v"), chSel=$("#ch"), bkSel=$("#bk");
 let tab="home",idx=0,flip=false,deck=[],quiz=null;
 
 function esc(s){const d=document.createElement("div");d.textContent=s;return d.innerHTML.replace(/"/g,"&quot;")}
-function pool(){const b=bkSel.value,c=chSel.value;return all().filter(i=>(b==="all"||String(i.bk)===b)&&(c==="all"||String(i.ch)===c))}
+function pool(){const b=bkSel.value,c=chSel.value;const p=all().filter(i=>(b==="all"||String(i.bk)===b)&&(c==="all"||String(i.ch)===c));return b==="3"?p.sort((x,y)=>Number(y.ch)-Number(x.ch)):p}
 function fillBk(){
   const cur=bkSel.value||"all";
   const bs=[...new Set([1,2,3,...all().map(i=>i.bk)])].sort((x,y)=>x-y).map(String);
