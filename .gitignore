@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.coverage
+htmlcov/
+
+# Local runtime data: never commit user documents or OCR output
+data/
+logs/
+*.sqlite3
+*.db
+*.pdf
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+*.docx
+*.rtf
+
+# Model weights and caches
+models/**/*
+!models/README.md
+.cache/
+.huggingface/
+transformers_cache/
+
+# Frontend
+node_modules/
+dist/
+.vite/
+
+# Environment and OS
+.env
+.DS_Store
