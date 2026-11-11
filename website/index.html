@@ -59,7 +59,7 @@ main{max-width:1120px;padding:28px 24px 16px}.site-head{margin-bottom:26px}.bran
 @media print{.site-head,.term-nav,.site-footer{display:none!important}}</style></head>
 <body><main>
 <header class="site-head"><div class="brandline"><div><div class="eyebrow">PERSIAN LEARNING · TERM 01–03</div><h1>راهِ فارسی <span>·</span> Persian Learning</h1><p class="tagline">A thoughtful path from vocabulary to confident expression.</p></div><div class="brandmark">فارسی</div></div><section class="overall-progress"><div class="progress-head"><div><b>Your learning journey</b><span class="mut">Across all three terms</span></div><div class="progress-total"><strong id="overallDone">0</strong><span> / <span id="overallWords">0</span> words</span></div></div><div class="bar bigbar"><i id="overallBar" style="width:0%"></i></div><div class="progress-foot"><span id="overallPercent">0% memorised</span><span id="termProgressMini">3 terms · steady progress</span></div></section></header>
-<div id="termNav" class="term-nav" hidden><button id="backTerms" class="back-btn">← All terms</button><div class="term-nav-title" id="activeTermTitle"></div><select id="bk" hidden></select><select id="ch"></select><nav id="termTabs"><button data-t="home" class="on">Study list</button><button data-t="cards">Flashcards</button><button data-t="quiz">Quiz</button><button data-t="add">My words</button><button data-t="essays">Newestan · Essays</button><button data-t="speeches">Sukhanrani</button></nav></div>
+<div id="termNav" class="term-nav" hidden><button id="backTerms" class="back-btn">← All terms</button><div class="term-nav-title" id="activeTermTitle"></div><select id="bk" hidden></select><select id="ch"></select><nav id="termTabs"><button data-t="home" class="on">Study list</button><button data-t="cards">Flashcards</button><button data-t="quiz">Quiz</button><button data-t="khulasa">Khulasa · خلاصه‌نویسی</button><button data-t="essays">Newestan · Essays</button><button data-t="speeches">Sukhanrani</button></nav></div>
 <div id="v"></div>
 <footer class="site-footer"><div class="footer-ornament">✦</div><p>Developed by <strong>Seyed Mohammad Abuzar Al-Hashemi</strong></p><p class="fa-footer" lang="fa">به امید آن‌که این کوشش ناچیز، چراغی در راه دانش و خدمتی کوچک در مسیر تعجیل فرج مولایمان، حضرت صاحب‌الزمان (عج)، باشد.</p><p class="footer-en">May this humble effort serve the pursuit of knowledge and be accepted as a small contribution toward the hastening of the reappearance of Imam al-Zamān (عج).</p></footer>
 </main>
@@ -67,6 +67,7 @@ main{max-width:1120px;padding:28px 24px 16px}.site-head{margin-bottom:26px}.bran
 <script src="term03-lexicon-additions.js"></script>
 <script src="term03-matn-verbs.js"></script>
 <script src="term03-writing.js"></script>
+<script src="term03-khulasa.js"></script>
 <script>
 // ===== BOOK 2 DATA: [chapter, persian, transliteration, meaning, sentence fa, sentence translit, sentence en] =====
 const BOOK2=[
@@ -1174,7 +1175,7 @@ function homeBody(){
         const meta=b===3?(window.TERM3_UNIT_META||{})[c]:null;
         const mapNote=meta?'<div class="unitmap"><b>FA base:</b> '+esc(meta.base)+'<br><b>Connected lessons:</b> '+esc(meta.links)+'</div><div class="chapter-summary"><b>خلاصهٔ آموزشی فصل</b>'+esc(meta.summary||"")+"</div>":"";
         return det("b"+b+"c"+c,"Chapter "+cs+chT(b,c),cnt(ci),ci.length,mapNote+`<div class="row" style="margin-top:8px"><button class="pri" data-go="cards" data-b="${b}" data-c="${cs}">▶ Flashcards</button><button data-go="quiz" data-b="${b}" data-c="${cs}">Quiz</button></div>`+ci.map(word).join(""));
-      }).join(""):'<p class="mut">No words yet. Add some in “Add words”.</p>');
+      }).join(""):'<p class="mut">No vocabulary entries are available in this unit yet.</p>');
     });
   }
   const R=$("#res");R.innerHTML=h;
@@ -1202,6 +1203,16 @@ function add(){
 }
 
 
+function khulasa(){
+ const rows=window.TERM3_KHULASA||[],chosen=Number(chSel.value)||20;
+ const item=rows.find(x=>x.ch===chosen)||rows[rows.length-1];
+ v.innerHTML=`<section class="writing-wrap"><div class="mut">TERM 03 · FARSI UMOOMI · KHULASA NAVEESI</div><h2>خلاصه‌نویسی فصل‌های فارسی عمومی</h2><p>هر خلاصه، نکتهٔ اصلی درس را در پنج جملهٔ کوتاه جمع‌بندی می‌کند. پس از مطالعه، متن را با زبان خودتان بازنویسی کنید و از مثال‌های کتاب کمک بگیرید.</p><div class="panel no-print"><label for="khulasaChapter">انتخاب فصل</label><select id="khulasaChapter">${rows.slice().sort((a,b)=>b.ch-a.ch).map(x=>`<option value="${x.ch}" ${x.ch===chosen?"selected":""}>فصل ${x.ch} · ${esc(x.title)}</option>`).join("")}</select></div><article class="panel"><div class="mut">FA3 · CHAPTER ${item.ch}</div><h2 class="fa-block">${esc(item.title)}</h2><ol class="khulasa-lines">${item.lines.map(x=>`<li>${esc(x)}</li>`).join("")}</ol><div class="chapter-summary"><b>روش تمرین</b>کتاب را ببندید و همین پنج نکته را بدون نگاه کردن، با واژه‌های خودتان در یک بند پیوسته بنویسید. سپس متن خود را با خلاصه مقایسه کنید.</div></article><div class="panel no-print"><h3>خلاصهٔ خودم</h3><textarea id="myKhulasa" rows="8" placeholder="خلاصه را با زبان خودتان بنویسید. این متن در این مرورگر ذخیره می‌شود."></textarea><div class="row"><button class="pri" id="printKhulasa">چاپ برگهٔ خلاصه</button></div><p class="mut">یادداشت‌ها فقط در همین مرورگر ذخیره می‌شوند.</p></div></section>`;
+ const key="term03-khulasa-drafts-v1",saved=(()=>{try{return JSON.parse(localStorage.getItem(key)||"{}")}catch(e){return {}}})();
+ const area=$("#myKhulasa");area.value=saved[chosen]||"";
+ area.oninput=()=>{saved[chosen]=area.value;try{localStorage.setItem(key,JSON.stringify(saved))}catch(e){}};
+ $("#khulasaChapter").onchange=e=>{chSel.value=e.target.value;khulasa()};
+ $("#printKhulasa").onclick=printCurrent;
+}
 const essayStoreKey="term03-writing-essays-v1", speechStoreKey="term03-writing-speeches-v1";
 function readLocal(key){try{return JSON.parse(localStorage.getItem(key)||"{}")}catch(e){return {}}}
 function writeLocal(key,obj){try{localStorage.setItem(key,JSON.stringify(obj))}catch(e){}}
@@ -1286,7 +1297,7 @@ function speeches(){
  $("#clearSpeech").onclick=()=>{if(confirm("Clear this chapter's speech notes?")){delete speechDrafts[speechCh];writeLocal(speechStoreKey,speechDrafts);speeches()}};
 }
 
-function render(){if(tab==="portal"){v.innerHTML="";return}({home,cards,quiz:startQuiz,add,essays,speeches})[tab]()}
+function render(){if(tab==="portal"){v.innerHTML="";return}({home,cards,quiz:startQuiz,khulasa,essays,speeches})[tab]()}
 function gotoTab(t){tab=t;bkSel.hidden=chSel.hidden=!["home","cards","quiz"].includes(t);document.querySelectorAll("[data-t]").forEach(x=>x.classList.toggle("on",x.dataset.t===t));deck=[];idx=0;flip=false;render()}
 document.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>gotoTab(b.dataset.t));
 chSel.onchange=()=>{deck=[];idx=0;flip=false;render()};
