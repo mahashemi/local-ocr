@@ -44,4 +44,8 @@
  V(20,"KH3-20","سپری شدن","separi shodan","to pass (time)","سال‌ها به‌سرعت سپری شدند.","Sālhā be-sor'at separi shodand.","The years passed quickly.","سپری شدن","—","سپری شدن زمان بازگشت‌پذیر نیست.","Separi shodan-e zamān bāzgasht-pazir nist.","Time passing cannot be reversed.","—","—","—","فعل لازم است؛ امر مستقیم ندارد.");
  V(20,"KH3-20","به شهادت رسیدن","be shahādat residan","to be martyred","او در راه دفاع از مردم به شهادت رسید.","U dar rāh-e defā' az mardom be shahādat resid.","He was martyred while defending the people.","به شهادت رسیدن","—","به شهادت رسیدن او مردم را اندوهگین کرد.","Be shahādat residan-e u mardom rā anduhgin kard.","His martyrdom saddened the people.","—","—","—","عبارت لازم و احترام‌آمیز است؛ امر مستقیم ندارد.");
  V(20,"KH3-20","تبعید کردن","tab'id kardan","to exile; to deport","حکومت او را به کشور دیگری تبعید کرد.","Hokumat u rā be keshvar-e digari tab'id kard.","The government exiled him to another country.","تبعید کردن","تبعید نکن","تبعید کردن مخالفان ناعادلانه است.","Tab'id kardan-e mokhālefān nā'ādelāne ast.","Exiling opponents is unjust.","—","—","—","امری از نظر دستوری ساخته می‌شود، اما کاربرد دستوری آن در گفتار روزمره کم است.");
+ const seen=new Set((window.TERM3_DATA||[]).map(x=>String(x.fa).replace(/[\\u200c\\sـ]/g,"")));
+ const additions=rows.filter(x=>{const k=x.fa.replace(/[\\u200c\\sـ]/g,"");if(seen.has(k))return false;seen.add(k);return true});
+ window.TERM3_DATA=(window.TERM3_DATA||[]).concat(additions);
+ window.TERM3_MATN_VERBS_COUNT=additions.length;
 })();
