@@ -1060,8 +1060,8 @@ let custom=[],done=new Set(),hideDone=false;
 // custom rows: [book, chapter, persian, translit, meaning, exFa, exTr, exEn]
 try{custom=JSON.parse(localStorage.getItem(KEY)||"null")||JSON.parse(localStorage.getItem("persian_custom_v1")||"[]").map(r=>[2,...r])}catch(e){custom=[]}
 try{done=new Set(JSON.parse(localStorage.getItem(DKEY)||"[]"))}catch(e){}
-const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(custom))}catch(e){}};
-const saveDone=()=>{try{localStorage.setItem(DKEY,JSON.stringify([...done]))}catch(e){}};
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(custom))}catch(e){}if(window.updateGlobalStats)window.updateGlobalStats()};
+const saveDone=()=>{try{localStorage.setItem(DKEY,JSON.stringify([...done]))}catch(e){}if(window.updateGlobalStats)window.updateGlobalStats()};
 const all=()=>Object.entries(BOOKS).flatMap(([b,rows])=>rows.map(r=>toItem(r,Number(b)))).concat(custom.map(r=>toItem(r.slice(1),Number(r[0]))));
 const $=s=>document.querySelector(s), v=$("#v"), chSel=$("#ch"), bkSel=$("#bk");
 let tab="portal",activeTerm=null,idx=0,flip=false,deck=[],quiz=null;
