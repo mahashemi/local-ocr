@@ -231,6 +231,7 @@ window.TERM3_DATA = [
 ];
 
 
+window.TERM3_DATA.forEach(x=>{x.sources=Array.from(new Set([...(x.sources||[]),x.source].filter(Boolean)))});
 window.TERM3_UNIT_META = {
   1:{base:"FA3-01 · Polite requests",links:"KH3-01 · rude and polite language (supporting)",summary:"آموزش درخواست مؤدبانه در موقعیت‌های رسمی و دوستانه؛ شناخت تعارف‌ها و عبارت‌های احترام‌آمیز و تبدیل جمله‌های خودمانی به بیان رسمی و پرسشی."},
   2:{base:"FA3-02 · Personal qualities",links:"KH3-02 · friendship; N3-04 · social relationships; SH3-01 · childhood descriptions (supporting)",summary:"شناخت ویژگی‌های مثبت و منفی افراد و یادگیری توصیف شخصیت دیگران؛ توجه به صفت‌ها، ریشهٔ واژه‌ها و نقش رفتار در دوستی و روابط انسانی."},
