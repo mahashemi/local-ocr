@@ -13,7 +13,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable, Iterable
 
-import fitz
+import pymupdf
 import pytesseract
 from PIL import Image
 
@@ -64,7 +64,7 @@ def _safe_stem(path: Path) -> str:
 
 def _inspect_pdf(path: Path, working_dir: Path, output_dir: Path) -> PDFInfo:
     digest = _sha256(path)
-    with fitz.open(path) as document:
+    with pymupdf.open(path) as document:
         page_count = document.page_count
     identity = f"{_safe_stem(path)}-{digest[:10]}"
     work_dir = working_dir / identity
@@ -128,8 +128,8 @@ def _recognize_page(
 
             scale = dpi / 72.0
             pixmap = page.get_pixmap(
-                matrix=fitz.Matrix(scale, scale),
-                colorspace=fitz.csRGB,
+                matrix=pymupdf.Matrix(scale, scale),
+                colorspace=pymupdf.csRGB,
                 alpha=False,
             )
             image = Image.frombytes("RGB", (pixmap.width, pixmap.height), pixmap.samples)
