@@ -1,55 +1,86 @@
 # Local OCR
 
-A free, local-first OCR workbench for scanned books and documents. Designed to run on your own computer, with an offline operating mode and pluggable OCR engines.
+A free, local-first, API-first OCR platform for scanned books and documents. Persian (Farsi, `fas`) is the first language profile; the application architecture is language-independent and designed for future Arabic, Urdu, English, and other language support.
 
-**First language:** Persian (Farsi, `fas`). The core pipeline is language-independent so additional languages can be added without changing document processing, job management, or export code.
+## Non-negotiable principles
 
-## Non-negotiable design principles
-
-- OCR and document processing run locally. No cloud OCR or paid APIs.
-- Input PDFs, page images, intermediate results, database, logs, and exports remain on local storage.
-- Model downloads are explicit setup actions. No automatic model downloads during normal processing.
-- Offline mode must work without network access after setup; missing local assets produce a clear error.
+- OCR and document processing run on your machine. No cloud OCR or paid APIs.
+- PDFs, page images, intermediate results, databases, logs, and exports stay in local storage.
+- Model downloads are explicit setup actions. No automatic downloads or remote fallbacks during processing.
+- Normal operation must work without internet after setup.
 - No telemetry or analytics.
-- OCR engines are replaceable adapters behind a stable interface.
+- The dashboard and CLI are API clients; they do not contain OCR business logic.
+- OCR engines are replaceable adapters behind stable contracts.
 - Raw engine output is preserved separately from language-specific normalization.
 
-## Project status
+## Current milestone: API foundation
 
-Early foundation. The initial implementation will establish the engine contract, language normalization boundary, local configuration, and tests before adding the queue, workers, API, and browser dashboard.
+The first local API is available under `/api/v1`:
 
-## Planned capabilities
+| Endpoint | Purpose |
+|---|---|
+| `GET /api/v1/health` | Local service health and operating mode |
+| `GET /api/v1/languages` | Language profile discovery |
+| `GET /api/v1/engines` | OCR engine adapter discovery |
+| `GET /api/v1/models` | Locally installed model directory discovery |
+| `GET /docs` | Interactive OpenAPI documentation |
 
-- Batch processing of many PDFs with persistent queue and resumable page-level progress.
-- Parallel processing across documents and page batches, with bounded resource usage.
-- Digital-text detection to avoid unnecessary OCR.
-- Side-by-side PDF and OCR review.
-- Persian-aware RTL and ZWNJ handling, with raw text preserved.
-- DOCX and RTF exports with RTL formatting.
-- Benchmarking for character error rate (CER), word error rate (WER), layout quality, speed, and memory.
-- Localhost-only dashboard and CLI.
+The initial server is a foundation milestone, not yet the complete OCR workbench. PDF upload, durable jobs, worker scheduling, page-level progress, OCR execution, review UI, and exports are the next implementation stages.
 
-## Development setup
+## Run on macOS (Apple Silicon)
 
-Requires macOS (Apple Silicon supported) and Python 3.12+.
+Requires Python 3.12 or newer.
 
 ```bash
-# Install uv if it is not already installed:
-brew install uv
+git clone https://github.com/mahashemi/local-ocr.git
+cd local-ocr
 
-# Create and activate the project environment:
-uv sync --extra dev
+python3 -m venv .venv
+source .venv/bin/activate
 
-# Run tests:
-uv run pytest
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+bash start.sh
 ```
 
-The OCR engine and model assets are installed separately from the application. See [docs/architecture.md](docs/architecture.md) and [docs/offline-first.md](docs/offline-first.md).
+Open:
 
-## Local data
+- Local home: http://127.0.0.1:8000
+- Interactive API docs: http://127.0.0.1:8000/docs
+- Health check: http://127.0.0.1:8000/api/v1/health
 
-Runtime data belongs under the configured data directory (default: `./data`) and is excluded from Git. Do not commit PDFs, page images, OCR outputs, model weights, caches, or personal documents.
+Stop the server with `Ctrl+C`.
+
+The server binds to `127.0.0.1` only. Do not change this to `0.0.0.0` for personal document processing.
+
+## Tests
+
+```bash
+source .venv/bin/activate
+python -m pytest
+```
+
+## Architecture
+
+See [architecture](docs/architecture.md), [API contract](docs/api.md), [offline-first policy](docs/offline-first.md), and [benchmarking plan](docs/benchmarking.md).
+
+The same API and application services are intended to run in both local and future cloud deployments. Local and cloud deployments will select different database, storage, queue, event, and worker adapters. Cloud infrastructure is not required for local use.
+
+## Initial processing defaults
+
+- 3 concurrent workers
+- 5 pages per batch
+- Parallel processing across independent PDFs and page batches within large PDFs
+- Page order preserved during reconstruction
+- Bounded queues, memory safeguards, checkpointing, and retries
+
+These are starting defaults and will be benchmarked on the target Mac before tuning.
+
+## Data and models
+
+Runtime data belongs under the local data directory and is excluded from Git. Model weights are also excluded from Git; see [models/README.md](models/README.md). Every engine/model must have its license, runtime requirements, supported languages, revision, and checksum recorded before use.
 
 ## License
 
-Application source code is MIT licensed. Third-party OCR engines, model weights, and datasets retain their own licenses; check each before downloading or using them.
+Application source code is MIT licensed. Third-party engines, model weights, and datasets retain their own licenses and terms.
