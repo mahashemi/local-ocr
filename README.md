@@ -84,3 +84,20 @@ Runtime data belongs under the local data directory and is excluded from Git. Mo
 ## License
 
 Application source code is MIT licensed. Third-party engines, model weights, and datasets retain their own licenses and terms.
+
+
+## Bulk PDF processing (first working pipeline)
+
+Install Tesseract 5 and its Persian `fas` language data, then place PDFs in
+`data/input/`. From the repository root with `.venv` active:
+
+```bash
+python -m local_ocr.cli process --input data/input --output data/output
+```
+
+The command recursively scans for PDFs, extracts embedded text where available,
+and uses local Tesseract for scanned pages. It writes one UTF-8 text file per PDF
+under `data/output/` and atomic per-page checkpoints under `data/working/`.
+Completed pages are skipped on rerun; failed pages are retried. Defaults are
+3 shared worker threads, 5 pages per batch, and 300 DPI. No network access is
+performed by the processing command.
