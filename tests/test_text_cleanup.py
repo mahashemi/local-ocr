@@ -14,5 +14,5 @@ def test_cleaner_removes_controls_but_preserves_persian_marks_and_zwnj():
     cleaned = clean_extracted_text(value)
     assert "\x02" not in cleaned
     assert "می\u200cروم" in cleaned
-    assert "یکَ" in cleaned
+    assert "ی کَ" in cleaned
     assert "\n\n\n" not in cleaned
