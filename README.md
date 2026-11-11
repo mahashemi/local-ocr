@@ -104,8 +104,9 @@ PYTHONPATH=src python -m local_ocr.cli process --input data/input --output data/
 ```
 
 The command recursively scans for PDFs, extracts embedded text where available,
-and uses local Tesseract for scanned pages. It writes one UTF-8 text file per PDF
-under `data/output/` and atomic per-page checkpoints under `data/working/`.
+and uses local Tesseract for scanned pages. It writes one conservatively cleaned, page-numbered UTF-8 text file per PDF
+under `data/output/`. Raw page text and rejected embedded text remain in atomic
+per-page checkpoints under `data/working/`; no duplicate `.clean.txt` files are generated.
 Completed pages are skipped on rerun; failed pages are retried. Defaults are
 3 shared worker threads, 5 pages per batch, and 300 DPI. No network access is
 performed by the processing command.
