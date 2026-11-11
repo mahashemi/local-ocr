@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Persian Trainer</title>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<title>Persian Trainer — Term 03</title>
+
 <style>
 :root{--bg:#faf8f4;--fg:#1f1d1a;--mut:#6b665e;--card:#fff;--bd:#e3ddd2;--ac:#0f766e;--acf:#fff;--ok:#15803d;--no:#b91c1c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171614;--fg:#f1ede6;--mut:#a39d92;--card:#22201d;--bd:#3a3631;--ac:#2dd4bf;--acf:#0b1f1c;--ok:#4ade80;--no:#f87171}}
@@ -14,7 +14,7 @@ h1{font-size:20px;margin:0 0 12px}
 .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
 button,select,input,textarea{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:8px 12px}
 button{cursor:pointer}button.on,button.pri{background:var(--ac);color:var(--acf);border-color:var(--ac)}
-.fa{font-family:Vazirmatn,Tahoma,sans-serif;direction:rtl}
+.fa{font-family:Tahoma,"Noto Naskh Arabic",sans-serif;direction:rtl}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:24px;min-height:200px;text-align:center;cursor:pointer}
 .card .fa{font-size:30px;line-height:1.7}
 .tr{color:var(--ac);font-style:italic}.mut{color:var(--mut);font-size:14px}
@@ -40,15 +40,20 @@ summary input{width:18px;height:18px;margin:0;padding:0;accent-color:var(--ac)}
 .sh{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pf{max-width:55%;font-size:20px;text-align:right}
 u{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--ac)}
+ .grammar{margin-top:12px;padding:12px;border:1px solid var(--bd);border-radius:10px;text-align:left;background:var(--bg)}
+.grammar .gline{margin:5px 0}.grammar .glabel{font-weight:700;color:var(--ac)}
+.grammar .gex{border-top:1px dashed var(--bd);margin-top:9px;padding-top:8px}
+.source{font-size:12px;color:var(--mut);margin-top:6px}
 </style></head>
 <body><main>
 <h1>Persian Trainer</h1>
 <div class="row">
  <select id="bk"></select><select id="ch"></select>
- <button data-t="home" class="on">Home</button><button data-t="cards">Cards</button><button data-t="quiz">Quiz</button><button data-t="add">Add words</button>
+ <button data-t="home" class="on">Study list</button><button data-t="cards">Flashcards</button><button data-t="quiz">Quiz</button><button data-t="add">My words</button>
 </div>
 <div id="v"></div>
 </main>
+<script src="term03-data.js"></script>
 <script>
 // ===== BOOK 2 DATA: [chapter, persian, transliteration, meaning, sentence fa, sentence translit, sentence en] =====
 const BOOK2=[
@@ -842,7 +847,7 @@ const BOOK2=[
 [20,"دانه","Dāne","grain, seed; also a counting word"]
 ];
 // Hierarchy: BOOKS[bookNumber] = built-in rows. Add built-in rows for books 1 and 3 here.
-const BOOKS={1:[],2:BOOK2,3:[]};
+const BOOKS={1:[],2:BOOK2,3:(window.TERM3_DATA||[])};
 const KEY="persian_custom_v2",DKEY="persian_done_v1";
 // EXTRA: extra sentences (and notes) keyed by Persian word: [sentence fa, translit, english, note]. Row’s own sentence wins.
 const EXTRA={
@@ -1035,7 +1040,10 @@ const EXTRA={
 "ده":["ده انگشت دارم.", "Dah angosht dāram.", "I have ten fingers."],
 "دانه":["من دو دانه سیب خوردم.", "Man do dāne sib khordam.", "I ate two apples."]
 };
-const toItem=(a,b)=>{const x=EXTRA[a[1]]||[];return{bk:b,ch:a[0],fa:a[1],tr:a[2],en:a[3],xf:a[4]||x[0]||"",xt:a[5]||x[1]||"",xe:a[6]||x[2]||"",nt:x[3]||"",id:b+"|"+a[0]+"|"+a[1]}};
+const toItem=(a,b)=>{
+ if(!Array.isArray(a)){const x=a.ex||[];return{...a,bk:b,ch:a.unit,xf:x[0]||"",xt:x[1]||"",xe:x[2]||"",nt:a.note||"",id:b+"|"+a.unit+"|"+a.source+"|"+a.fa}}
+ const x=EXTRA[a[1]]||[];return{bk:b,ch:a[0],fa:a[1],tr:a[2],en:a[3],xf:a[4]||x[0]||"",xt:a[5]||x[1]||"",xe:a[6]||x[2]||"",nt:x[3]||"",id:b+"|"+a[0]+"|"+a[1]};
+};
 let custom=[],done=new Set(),hideDone=false;
 // custom rows: [book, chapter, persian, translit, meaning, exFa, exTr, exEn]
 try{custom=JSON.parse(localStorage.getItem(KEY)||"null")||JSON.parse(localStorage.getItem("persian_custom_v1")||"[]").map(r=>[2,...r])}catch(e){custom=[]}
@@ -1051,7 +1059,7 @@ function pool(){const b=bkSel.value,c=chSel.value;return all().filter(i=>(b==="a
 function fillBk(){
   const cur=bkSel.value||"all";
   const bs=[...new Set([1,2,3,...all().map(i=>i.bk)])].sort((x,y)=>x-y).map(String);
-  bkSel.innerHTML='<option value="all">All books</option>'+bs.map(b=>`<option value="${esc(b)}">Book ${esc(b)}</option>`).join("");
+  bkSel.innerHTML='<option value="all">All books</option>'+bs.map(b=>`<option value="${esc(b)}">${b==="3"?"Term 03 · Persian":"Book "+esc(b)}</option>`).join("");
   bkSel.value=bs.includes(cur)||cur==="all"?cur:"all";
   fillCh();
 }
@@ -1059,12 +1067,29 @@ function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor
 function fillCh(){
   const cur=chSel.value||"all";
   const bsel=bkSel.value;
-  const chs=[...new Set(all().filter(i=>bsel==="all"||String(i.bk)===bsel).map(i=>String(i.ch)))].sort((x,y)=>x-y);
+  const chs=[...new Set(all().filter(i=>bsel==="all"||String(i.bk)===bsel).map(i=>String(i.ch)))].sort((x,y)=>bsel==="3"?Number(y)-Number(x):Number(x)-Number(y));
   chSel.innerHTML='<option value="all">All chapters</option>'+chs.map(c=>`<option value="${esc(c)}">Chapter ${esc(c)}${c==="0"?" · Grammar":""}</option>`).join("");
   chSel.value=chs.includes(cur)||cur==="all"?cur:"all";
 }
 const mk=t=>esc(t).replace(/\[\[/g,"<u>").replace(/\]\]/g,"</u>");
-function sentence(i){return (i.xf?`<div class="ex"><div class="fa">${mk(i.xf)}</div><div class="tr mut">${mk(i.xt)}</div><div>${mk(i.xe)}</div></div>`:"")+(i.nt?`<div class="mut" style="margin-top:8px">${esc(i.nt)}</div>`:"")}
+function exBlock(label,x){
+ if(!x)return "";
+ return '<div class="gex"><div class="glabel">'+esc(label)+'</div><div class="fa">'+esc(x[0]||"")+'</div><div class="tr mut">'+esc(x[1]||"")+'</div><div>'+esc(x[2]||"")+'</div></div>';
+}
+function sentence(i){
+ let out="";
+ if(i.xf)out+='<div class="ex"><div class="fa">'+mk(i.xf)+'</div><div class="tr mut">'+mk(i.xt)+'</div><div>'+mk(i.xe)+'</div></div>';
+ if(i.pos){
+  out+='<div class="grammar"><div class="gline"><span class="glabel">نوع واژه / Part of speech:</span> '+esc(i.pos)+'</div>';
+  if(i.ms)out+='<div class="gline"><span class="glabel">مصدر / Masdar:</span> <span class="fa">'+esc(i.ms)+'</span></div>';
+  if(i.amr)out+='<div class="gline"><span class="glabel">امر / Amr:</span> <span class="fa">'+esc(i.amr)+'</span></div>';
+  out+=exBlock("مثال با مصدر / Masdar example",i.m)+exBlock("مثال با امر / Imperative example",i.a);
+  if(i.source)out+='<div class="source">Source: '+esc(i.source)+'</div>';
+  out+='</div>';
+ }
+ if(i.nt)out+='<div class="mut" style="margin-top:8px">'+esc(i.nt)+'</div>';
+ return out;
+}
 
 function cards(){
   if(!deck.length)deck=pool().filter(i=>!hideDone||!done.has(i.id));
@@ -1106,8 +1131,8 @@ function showQ(){
   });
 }
 
-const CH_TITLE={"2|0":"Grammar & connectors"};const chT=(b,c)=>CH_TITLE[b+"|"+c]?" · "+CH_TITLE[b+"|"+c]:"";
-const opened=new Set(["b2"]);let hq="";
+const CH_TITLE={"2|0":"Grammar & connectors","3|20":"Poetry and poets","3|19":"Travel and attractions","3|18":"Festivals and customs","3|17":"Inventions","3|16":"News and media","3|15":"Customs and traditions","3|14":"Civilisations and the Silk Road","3|13":"Animals and wildlife","3|12":"Environment","3|11":"Energy","3|10":"Laws","3|9":"Worry and stress","3|8":"Renting and housing","3|7":"Economy and inheritance","3|6":"Banking","3|5":"Wishes","3|4":"Regret","3|3":"Decisions and planning","3|2":"Personal qualities","3|1":"Polite speech"};const chT=(b,c)=>CH_TITLE[b+"|"+c]?" · "+CH_TITLE[b+"|"+c]:"";
+const opened=new Set(["b2","b3"]);let hq="";
 const fold=t=>String(t).normalize("NFD").replace(/[\u0300-\u036f\u064b-\u065f\u0670\u200c]/g,"").replace(/\u06c0/g,"\u0647").replace(/\u064a/g,"\u06cc").replace(/\u0643/g,"\u06a9").toLowerCase().replace(/[^a-z0-9\u0600-\u06ff]/g,"").replace(/ee/g,"i").replace(/oo/g,"u").replace(/u/g,"o").replace(/w/g,"v").replace(/gh/g,"q");
 function home(){
   v.innerHTML=`<input id="q" type="search" placeholder="Search English, Persian or transliteration…" value="${esc(hq)}" autocomplete="off" style="margin-bottom:10px"><div id="res"></div>`;
@@ -1130,7 +1155,7 @@ function homeBody(){
     h=`<div class="card" style="cursor:default;min-height:0;text-align:left"><b>${d} / ${a.length}</b> memorized overall<div class="bar"><i style="width:${pct(d,a.length)}%"></i></div></div>`;
     [...new Set([1,2,3,...a.map(i=>i.bk)])].sort((x,y)=>x-y).forEach(b=>{
       const bi=a.filter(i=>i.bk===b);
-      const chs=[...new Set(bi.map(i=>i.ch))].sort((x,y)=>x-y);
+      const chs=[...new Set(bi.map(i=>i.ch))].sort((x,y)=>b===3?y-x:x-y);
       h+=det("b"+b,"Book "+b,cnt(bi),bi.length,bi.length?chs.map(c=>{
         const ci=bi.filter(i=>i.ch===c),cs=esc(String(c));
         return det("b"+b+"c"+c,"Chapter "+cs+chT(b,c),cnt(ci),ci.length,`<div class="row" style="margin-top:8px"><button class="pri" data-go="cards" data-b="${b}" data-c="${cs}">▶ Flashcards</button><button data-go="quiz" data-b="${b}" data-c="${cs}">Quiz</button></div>`+ci.map(word).join(""));
