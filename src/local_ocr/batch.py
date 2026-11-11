@@ -1,7 +1,7 @@
 """Reliable local batch OCR for PDFs using PyMuPDF and Tesseract.
 
-Raw page text and rejected embedded PDF text are checkpointed locally. A separate
-cleaned document is generated without modifying the raw OCR output.
+Raw page text and rejected embedded PDF text are checkpointed locally. Only one
+conservatively cleaned, page-numbered text document is written for each PDF.
 """
 from __future__ import annotations
 
@@ -28,11 +28,6 @@ class PDFInfo:
     digest: str
     work_dir: Path
     output_path: Path
-
-    @property
-    def cleaned_output_path(self) -> Path:
-        return self.output_path.with_name(f"{self.output_path.stem}.clean.txt")
-
 
 @dataclass(frozen=True)
 class PageResult:
@@ -203,32 +198,20 @@ def _recognize_page(
 
 
 def _write_document_output(info: PDFInfo) -> None:
-    raw_temp = info.output_path.with_suffix(".txt.tmp")
-    clean_temp = info.cleaned_output_path.with_suffix(".txt.tmp")
-    with raw_temp.open("w", encoding="utf-8", newline="\n") as raw_stream, clean_temp.open(
-        "w", encoding="utf-8", newline="\n"
-    ) as clean_stream:
+    """Write one cleaned text document; raw page text remains in checkpoints."""
+    temporary = info.output_path.with_suffix(".txt.tmp")
+    with temporary.open("w", encoding="utf-8", newline="\n") as stream:
         for page_number in range(1, info.page_count + 1):
             checkpoint = _read_checkpoint(info, page_number)
             header = f"========== PAGE {page_number} =========="
-            raw_stream.write(f"\n\n{header}\n\n")
-            clean_stream.write(f"\n\n{header}\n\n")
+            stream.write(f"\n\n{header}\n\n")
             if checkpoint is None:
-                marker = "[PAGE NOT PROCESSED]\n"
-                raw_stream.write(marker)
-                clean_stream.write(marker)
+                stream.write("[PAGE NOT PROCESSED]\n")
             elif checkpoint.error:
-                marker = f"[OCR ERROR: {checkpoint.error}]\n"
-                raw_stream.write(marker)
-                clean_stream.write(marker)
+                stream.write(f"[OCR ERROR: {checkpoint.error}]\n")
             else:
-                raw_stream.write(checkpoint.text + "\n")
-                clean_stream.write(
-                    clean_extracted_text(checkpoint.text) + "\n"
-                )
-    raw_temp.replace(info.output_path)
-    clean_temp.replace(info.cleaned_output_path)
-
+                stream.write(clean_extracted_text(checkpoint.text) + "\n")
+    temporary.replace(info.output_path)
 
 def process_directory(
     input_dir: Path,
@@ -303,5 +286,4 @@ def process_directory(
     for info in infos:
         _write_document_output(info)
         summary.outputs.append(info.output_path)
-        summary.outputs.append(info.cleaned_output_path)
     return summary
