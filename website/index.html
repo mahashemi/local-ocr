@@ -43,7 +43,7 @@ u{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:
  .grammar{margin-top:12px;padding:12px;border:1px solid var(--bd);border-radius:10px;text-align:left;background:var(--bg)}
 .grammar .gline{margin:5px 0}.grammar .glabel{font-weight:700;color:var(--ac)}
 .grammar .gex{border-top:1px dashed var(--bd);margin-top:9px;padding-top:8px}
-.source{font-size:12px;color:var(--mut);margin-top:6px}
+.source{font-size:12px;color:var(--mut);margin-top:6px}.unitmap{font-size:13px;color:var(--mut);padding:10px 0;border-bottom:1px solid var(--bd);margin-bottom:8px}
 </style></head>
 <body><main>
 <h1>Persian Trainer</h1>
@@ -1156,9 +1156,11 @@ function homeBody(){
     [...new Set([1,2,3,...a.map(i=>i.bk)])].sort((x,y)=>x-y).forEach(b=>{
       const bi=a.filter(i=>i.bk===b);
       const chs=[...new Set(bi.map(i=>i.ch))].sort((x,y)=>b===3?y-x:x-y);
-      h+=det("b"+b,"Book "+b,cnt(bi),bi.length,bi.length?chs.map(c=>{
+      h+=det("b"+b,b===3?"Term 03 · Persian":"Book "+b,cnt(bi),bi.length,bi.length?chs.map(c=>{
         const ci=bi.filter(i=>i.ch===c),cs=esc(String(c));
-        return det("b"+b+"c"+c,"Chapter "+cs+chT(b,c),cnt(ci),ci.length,`<div class="row" style="margin-top:8px"><button class="pri" data-go="cards" data-b="${b}" data-c="${cs}">▶ Flashcards</button><button data-go="quiz" data-b="${b}" data-c="${cs}">Quiz</button></div>`+ci.map(word).join(""));
+        const meta=b===3?(window.TERM3_UNIT_META||{})[c]:null;
+        const mapNote=meta?'<div class="unitmap"><b>FA base:</b> '+esc(meta.base)+'<br><b>Connected lessons:</b> '+esc(meta.links)+'</div>':"";
+        return det("b"+b+"c"+c,"Chapter "+cs+chT(b,c),cnt(ci),ci.length,mapNote+`<div class="row" style="margin-top:8px"><button class="pri" data-go="cards" data-b="${b}" data-c="${cs}">▶ Flashcards</button><button data-go="quiz" data-b="${b}" data-c="${cs}">Quiz</button></div>`+ci.map(word).join(""));
       }).join(""):'<p class="mut">No words yet. Add some in “Add words”.</p>');
     });
   }
