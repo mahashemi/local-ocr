@@ -1173,7 +1173,7 @@ function homeBody(){
       h+=det("b"+b,b===3?"Term 03 · Persian":"Book "+b,cnt(bi),bi.length,bi.length?chs.map(c=>{
         const ci=bi.filter(i=>i.ch===c),cs=esc(String(c));
         const meta=b===3?(window.TERM3_UNIT_META||{})[c]:null;
-        const mapNote=meta?'<div class="unitmap"><b>FA base:</b> '+esc(meta.base)+'<br><b>Connected lessons:</b> '+esc(meta.links)+'</div>":"";
+        const mapNote=meta?'<div class="unitmap"><b>FA base:</b> '+esc(meta.base)+'<br><b>Connected lessons:</b> '+esc(meta.links)+'</div>':"";
         return det("b"+b+"c"+c,"Chapter "+cs+chT(b,c),cnt(ci),ci.length,mapNote+`<div class="row" style="margin-top:8px"><button class="pri" data-go="cards" data-b="${b}" data-c="${cs}">▶ Flashcards</button><button data-go="quiz" data-b="${b}" data-c="${cs}">Quiz</button></div>`+ci.map(word).join(""));
       }).join(""):'<p class="mut">No vocabulary entries are available in this unit yet.</p>');
     });
