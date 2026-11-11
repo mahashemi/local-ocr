@@ -11,7 +11,7 @@ import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable
+from typing import Callable, Iterable
 
 import fitz
 import pytesseract
@@ -170,6 +170,7 @@ def process_directory(
     pages_per_batch: int = 5,
     resume: bool = True,
     recursive: bool = True,
+    progress_callback: Callable[[int, int, PageResult], None] | None = None,
 ) -> BatchSummary:
     """Process every PDF in a directory; page checkpoints allow safe resumption."""
     if workers < 1 or pages_per_batch < 1:
@@ -191,6 +192,7 @@ def process_directory(
     infos = [_inspect_pdf(path, working_dir, output_dir) for path in pdf_paths]
     summary.pages_total = sum(info.page_count for info in infos)
     config = "--oem 1 --psm 3"
+    processed = 0
 
     # One bounded worker pool is shared by all documents: pages from different
     # PDFs and pages within each PDF can run concurrently without nested pools.
@@ -208,6 +210,9 @@ def process_directory(
                     existing = _read_checkpoint(info, page_number) if resume else None
                     if existing is not None and existing.error is None:
                         summary.pages_completed += 1
+                        processed += 1
+                        if progress_callback:
+                            progress_callback(processed, summary.pages_total, existing)
                         continue
                     future = pool.submit(
                         _recognize_page, info, page_number, language, dpi, config
@@ -222,6 +227,9 @@ def process_directory(
                     summary.pages_failed += 1
                 else:
                     summary.pages_completed += 1
+                processed += 1
+                if progress_callback:
+                    progress_callback(processed, summary.pages_total, result)
 
     for info in infos:
         _write_document_output(info)
