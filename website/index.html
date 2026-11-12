@@ -1302,7 +1302,7 @@ function khulasa(){
    let found=null,span=1;
    for(let n=Math.min(maxWords,Math.floor((parts.length-p+1)/2));n>=1;n--){
     const end=p+(n*2-1);if(end>parts.length)continue;
-    const raw=parts.slice(p,end).join(''),key=fold(raw);
+    const raw=parts.slice(p,end).join(''),key=cleanKh(raw);
     if(key&&wordIndex.has(key)){found=wordIndex.get(key);span=n*2-1;break}
    }
    if(found){const raw=parts.slice(p,p+span).join('');out.push('<button type="button" class="kh-word" data-word-id="'+esc(found.id)+'" aria-label="Open vocabulary card: '+esc(found.fa)+'">'+esc(raw)+'</button>');p+=span}
