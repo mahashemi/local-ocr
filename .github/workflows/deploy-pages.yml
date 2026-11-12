@@ -41,6 +41,12 @@ jobs:
       - name: Validate expanded Term 03 lexicon JavaScript
         run: node --check website/term03-lexicon-additions.js
 
+      - name: Validate source-audited vocabulary additions
+        run: node --check website/term03-source-audit.js
+
+      - name: Validate cross-term verb treasury
+        run: node --check website/verb-treasury.js
+
       - name: Validate portal navigation JavaScript
         run: node --check website/term-portal.js
 
