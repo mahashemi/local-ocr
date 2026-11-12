@@ -3,7 +3,7 @@
  * These are first-page word-list entries; expansions will be added after lesson-text review.
  */
 window.TERM1_DATA = [
-{unit:2,source:"F1-02",fa:"کارگر",tr:"kāگر",en:"worker; labourer",pos:"اسم — ism (noun)",ex:["پدرِ علی کارگر است.","Pedar-e Ali kāگر ast.","Ali's father is a worker."]},
+{unit:2,source:"F1-02",fa:"کارگر",tr:"kārgar",en:"worker; labourer",pos:"اسم — ism (noun)",ex:["پدرِ علی کارگر است.","Pedar-e Ali kāگر ast.","Ali's father is a worker."]},
 {unit:2,source:"F1-02",fa:"معلم",tr:"mo'allem",en:"teacher",pos:"اسم — ism (noun)",ex:["معلم فارسی ما مهربان است.","Mo'allem-e fārsi-ye mā mehrabān ast.","Our Persian teacher is kind."]},
 {unit:2,source:"F1-02",fa:"همکلاسی",tr:"hamkelāsi",en:"classmate",pos:"اسم — ism (noun)",ex:["زهرا همکلاسیِ من است.","Zahrā hamkelāsi-ye man ast.","Zahra is my classmate."]},
 {unit:4,source:"F1-04",fa:"مدیر",tr:"modir",en:"manager; director; principal",pos:"اسم — ism (noun)",ex:["مدیرِ مدرسه با دانش‌آموزان صحبت کرد.","Modir-e madrese bā dānesh-āmuzān sohbat kard.","The school principal spoke with the students."]},
