@@ -1190,6 +1190,41 @@
  N(1,"FA3-01","دفعه","daf'e","time; occasion; instance","این دفعه با دقت بیشتری گوش کن.","In daf'e bā deqqat-e bishtari gush kon.","Listen more carefully this time.","اسم — ism (noun)");
  N(1,"FA3-01","توهین","tohin","insult; offence","توهین به دیگران با گفت‌وگوی محترمانه سازگار نیست.","Tohin be digarān bā goft-o-gu-ye mohtaramāne sāzegār nist.","Insulting others is incompatible with respectful conversation.","اسم — ism (noun)");
 
+ // Source-reconciled first-page entries from the 60 Term 03 OCR files.
+ N(2,"FA3-02","دلسوز","delsuz","compassionate; caring","او معلمی دلسوز و مهربان است.","U mo'allemi delsuz-o mehrabān ast.","She is a caring and kind teacher.","صفت — sifat (adjective)");
+ N(5,"FA3-05","تعمیرگاه","ta'mirgāh","repair shop; garage","ماشین را به تعمیرگاه بردیم.","Māshin rā be ta'mirgāh bordim.","We took the car to the garage.","اسم — esm (noun)");
+ N(10,"FA3-10","استثنا","estesnā","exception","این قانون هیچ استثنایی ندارد.","In qānun hich estesnā'i nadārad.","This rule has no exceptions.","اسم — esm (noun)");
+ N(12,"FA3-12","صعود","so'ud","ascent; rise","صعود به قله چند ساعت طول کشید.","So'ud be qolle chand sā'at tul keshid.","The climb to the summit took several hours.","اسم — esm (noun)");
+ N(19,"FA3-19","غواصی","ghavvāsi","diving; scuba diving","غواصی در این آب‌ها به تجهیزات نیاز دارد.","Ghavvāsi dar in ābhā be tajhizāt niyāz dārad.","Diving in these waters requires equipment.","اسم — esm (noun)");
+ N(1,"KH3-01","حسادت کردن","hasādat kardan","to feel jealous","نباید به موفقیت دیگران حسادت کنیم.","Nabāyad be movaffaqiyat-e digarān hasādat konim.","We should not be jealous of others' success.","عبارت — expression");
+ N(2,"KH3-02","پافشاری","pāfeshāri","persistence; insistence","پافشاری او سرانجام نتیجه داد.","Pāfeshāri-ye u saranjām natije dād.","His persistence eventually paid off.","اسم — noun");
+ N(3,"KH3-03","فهرست","fehrest","list; index","نام کتاب‌ها را در فهرست نوشتم.","Nām-e ketābhā rā dar fehrest neveshtam.","I wrote the book titles in the list.","اسم — noun");
+ N(4,"KH3-04","تسلیم شدن","taslim shodan","to surrender; to give in","او در برابر دشواری‌ها تسلیم نشد.","U dar barābar-e doshvārihā taslim nashod.","He did not give in to difficulties.","عبارت — expression");
+ N(5,"KH3-05","دست‌نیافتنی","dast-nāyāftani","unattainable; inaccessible","این هدف دشوار است، اما دست‌نیافتنی نیست.","In hadaf doshvār ast, ammā dast-nāyāftani nist.","This goal is difficult, but not unattainable.","صفت — adjective");
+ N(6,"KH3-06","دفترچهٔ حساب","daftarche-ye hesāb","account book; passbook","شمارهٔ حساب در دفترچهٔ حساب نوشته شده است.","Shomāre-ye hesāb dar daftarche-ye hesāb neveshte shode ast.","The account number is written in the passbook.","گروه اسمی — noun phrase");
+ N(7,"KH3-07","نصیحت کردن","nasihat kardan","to advise; to counsel","پدرم مرا به مطالعه نصیحت کرد.","Pedaram marā be motāle'e nasihat kard.","My father advised me to study.","عبارت — expression");
+ N(9,"KH3-09","شادکامی","shādkāmi","happiness; well-being","سلامتی و دوستی به شادکامی کمک می‌کنند.","Salāmati-o dusti be shādkāmi komak mikonand.","Health and friendship contribute to well-being.","اسم — noun");
+ N(10,"KH3-10","ناخوشایند","nā-khoshāyand","unpleasant","صدای بلند برای همسایه‌ها ناخوشایند است.","Sedā-ye boland barāye hamsāyehā nā-khoshāyand ast.","Loud noise is unpleasant for the neighbours.","صفت — adjective");
+ N(11,"KH3-11","فروتن","forutan","humble; modest","دانشمند فروتن به دیگران احترام می‌گذارد.","Dāneshmand-e forutan be digarān ehterām migozārad.","A humble scholar respects others.","صفت — adjective");
+ N(12,"KH3-12","نواحی","navāhi","regions; areas","در نواحی شمالی باران بیشتری می‌بارد.","Dar navāhi-ye shomāli bārān-e bishtari mibārad.","It rains more in the northern regions.","اسم — noun");
+ N(13,"KH3-13","حیله‌گر","hile-gar","cunning; deceitful","روباه در داستان حیله‌گر توصیف شده است.","Rubāh dar dāstān hile-gar توصیف shode ast.","The fox is described as cunning in the story.","صفت — adjective");
+ N(14,"KH3-14","شمعدان","sham'dān","candleholder","شمعدان قدیمی روی میز بود.","Sham'dān-e qadimi ru-ye miz bud.","The old candleholder was on the table.","اسم — noun");
+ N(15,"KH3-15","سوگواری","sugvāri","mourning","مردم در مراسم سوگواری شرکت کردند.","Mardom dar marāsem-e sugvāri sherkat kardand.","People attended the mourning ceremony.","اسم — noun");
+ N(17,"KH3-17","زحمتکش","zahmatkesh","hardworking; industrious","کارگران زحمتکش سزاوار احترام‌اند.","Kāregārān-e zahmatkesh sazāvār-e ehterām-and.","Hardworking workers deserve respect.","صفت — adjective");
+ N(18,"KH3-18","حجةالوداع","Hajjat al-Wadā'","The Prophet's Farewell Pilgrimage","مسلمانان واقعهٔ حجةالوداع را مطالعه می‌کنند.","Mosalmānān vāqe'e-ye Hajjat al-Wadā' rā motāle'e mikonand.","Muslims study the event of the Farewell Pilgrimage.","عنوان — proper term");
+ N(20,"KH3-20","مصائب","masā'eb","hardships; calamities","او در زندگی مصائب بسیاری دید.","U dar zendegi masā'eb-e besyāri did.","He experienced many hardships in life.","اسم — noun");
+ N(1,"N3-01","روزنامه‌نگاری","ruznāme-negāri","journalism","روزنامه‌نگاری به دقت و انصاف نیاز دارد.","Ruznāme-negāri be deqqat-o ensāf niyāz dārad.","Journalism requires accuracy and fairness.","اسم — noun");
+ N(2,"N3-02","عهده داشتن","ohde dāshtan","to be responsible for","او عهده‌دار برنامه‌ریزی گروه است.","U ohde-dār-e barnāme-rizi-ye goruh ast.","He is responsible for the group's planning.","عبارت — expression");
+ N(3,"N3-03","حق شارژ","haqq-e shārژ","building maintenance fee","مستأجر باید حق شارژ را هر ماه بپردازد.","Mostā'jer bāyad haqq-e shārژ rā har māh bepardāzad.","The tenant must pay the maintenance fee every month.","گروه اسمی — noun phrase");
+ N(4,"N3-04","احساس خوشبختی","ehsās-e khoshbakhti","feeling of happiness","خانواده به او احساس خوشبختی می‌دهد.","Khānevāde be u ehsās-e khoshbakhti midahad.","Family gives him a feeling of happiness.","گروه اسمی — noun phrase");
+ N(5,"N3-05","آبزیان","ābziyān","aquatic animals","آبزیان در رودخانه و دریا زندگی می‌کنند.","Ābziyān dar rudkhāne-o daryā zendegi mikonand.","Aquatic animals live in rivers and seas.","اسم — noun");
+ N(7,"N3-07","بلندمدت","boland-moddat","long-term","برای موفقیت به برنامه‌ریزی بلندمدت نیاز داریم.","Barāye movaffaqiyat be barnāme-rizi-ye boland-moddat niyāz dārim.","We need long-term planning for success.","صفت — adjective");
+ N(8,"N3-08","کالری","kāleri","calorie","این غذا کالری زیادی دارد.","In ghazā kāleri-ye ziyādi dārad.","This food has many calories.","اسم — noun");
+ N(9,"N3-09","مترادف","motarādef","synonym","برای این واژه یک مترادف پیدا کن.","Barāye in vāژه yek motarādef peydā kon.","Find a synonym for this word.","اسم — noun");
+ N(10,"N3-10","طرح تحقیق","tarh-e tahqiq","research proposal; research plan","طرح تحقیق باید پرسش اصلی روشنی داشته باشد.","Tarh-e tahqiq bāyad porsesh-e asli-ye rowshani dāshte bāshad.","A research proposal should have a clear main question.","گروه اسمی — noun phrase");
+ N(1,"SH3-01","اخمو","akhmu","frowning; grumpy","او صبح‌ها گاهی اخمو است.","U sobhhā gāhi akhmu ast.","He is sometimes grumpy in the mornings.","صفت — adjective");
+ N(5,"SH3-05","سوخت‌وساز","sukht-o-sāz","metabolism","ورزش منظم به سوخت‌وساز بدن کمک می‌کند.","Varzesh-e monazzam be sukht-o-sāz-e badan komak mikonad.","Regular exercise helps the body's metabolism.","اسم — noun");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
