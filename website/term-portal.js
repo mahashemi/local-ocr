@@ -13,7 +13,7 @@
   const a=all(),d=a.filter(x=>done.has(x.id)).length;
   const data=[
    {b:1,no:"TERM 01",name:"Term One",sub:"Build the foundations of Persian",desc:"Farsi Umumi · everyday vocabulary, grammar and conversation",theme:"t1"},
-   {b:2,no:"TERM 02",name:"Term Two",sub:"Strengthen grammar and expression",desc:"60 source lessons · vocabulary, 157 grammar-checked verbs, Khulasa, writing and speaking",theme:"t2"},
+   {b:2,no:"TERM 02",name:"Term Two",sub:"Strengthen grammar and expression",desc:"60 source lessons · vocabulary, 185 grammar-checked verb records, Khulasa, writing and speaking",theme:"t2"},
    {b:3,no:"TERM 03",name:"Term Three",sub:"Read, write, speak and think in Persian",desc:"Farsi Umumi · Khwandan · Newestan · Shunidan",theme:"t3"}
   ];
   v.innerHTML='<section class="portal-intro"><div class="eyebrow">YOUR PERSIAN LEARNING LIBRARY</div><h2>Choose your term. Continue your journey.</h2><p>Every term has its own vocabulary, practice tools and learning activities. Your memorisation progress is tracked across the whole collection.</p></section><div class="term-grid">'+data.map(t=>{
