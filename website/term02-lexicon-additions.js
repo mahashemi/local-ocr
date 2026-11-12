@@ -52,22 +52,18 @@
  // Khwandan: one extra source-list term for every chapter.
  N(1,"KH2-01","طرف مقابل","taraf-e moghābel","the other person; interlocutor","گروه اسمی — noun phrase","در گفتگو به حرف طرف مقابل گوش بده.","Dar goftogu be harf-e taraf-e moghābel gush bedeh.","Listen to the other person in a conversation.");
  N(2,"KH2-02","تلفن همراه","telefon-e hamrāh","mobile phone","گروه اسمی — noun phrase","تلفن همراه ابزار ارتباطی مفیدی است.","Telefon-e hamrāh abzār-e ertebāti-ye mofidi ast.","A mobile phone is a useful communication tool.");
- N(3,"KH2-03","مخفی شدن","makhfi shodan","to hide","عبارت — expression","کودک برای بازی مخفی شد.","Kudak barāye bāzi makhfi shod.","The child hid for the game.");
  N(4,"KH2-04","حریم خصوصی","harim-e khosusi","privacy","گروه اسمی — noun phrase","تصاویر خانوادگی بخشی از حریم خصوصی‌اند.","Tasāvir-e khānevādegi bakhshi az harim-e khosusi-and.","Family photographs are part of privacy.");
  N(5,"KH2-05","شادابی","shādābi","vitality; freshness","اسم — noun","ورزش به شادابی بدن کمک می‌کند.","Varzesh be shādābi-ye badan komak mikonad.","Exercise helps physical vitality.");
  N(6,"KH2-06","پذیرش","pazires","admissions; reception","اسم — noun","بیمار در بخش پذیرش ثبت‌نام کرد.","Bimār dar bakhsh-e pazires sabt-nām kard.","The patient registered at reception.");
  N(7,"KH2-07","خسارت","khasārat","damage; loss","اسم — noun","سیل به خانه‌ها خسارت زد.","Seyl be khāne-hā khasārat zad.","The flood damaged homes.");
  N(8,"KH2-08","مهمان‌نواز","mehmān-navāz","hospitable","صفت — adjective","مردم این شهر مهمان‌نواز هستند.","Mardom-e in shahr mehmān-navāz hastand.","The people of this city are hospitable.");
  N(9,"KH2-09","نقاط قوت و ضعف","noqāt-e qovvat-o za'f","strengths and weaknesses","گروه اسمی — noun phrase","نقد فیلم باید نقاط قوت و ضعف را نشان دهد.","Naqd-e film bāyad noqāt-e qovvat-o za'f rā neshān dahad.","A film review should show its strengths and weaknesses.");
- N(10,"KH2-10","گره زدن","gereh zadan","to tie a knot","عبارت — expression","گره زدن در بافت فرش مهارت می‌خواهد.","Gereh zadan dar bāft-e farsh mahārat mikhāhad.","Tying knots in carpet weaving requires skill.");
  N(11,"KH2-11","پیشوند","pishvand","prefix","اسم — noun","پیشوند به آغاز واژه اضافه می‌شود.","Pishvand be āghāz-e vāzhe ezāfe mishavad.","A prefix is added to the beginning of a word.");
  N(12,"KH2-12","باند فرودگاه","bānd-e forudgāh","airport runway","گروه اسمی — noun phrase","هواپیما روی باند فرودگاه فرود آمد.","Havāpeymā ru-ye bānd-e forudgāh forud āmad.","The plane landed on the airport runway.");
- N(13,"KH2-13","شباهت","shabāhat","similarity","اسم — noun","این دو خودرو شباهت زیادی دارند.","In do khodro shabāhat-e ziyādi dārand.","These two cars are very similar.");
  N(14,"KH2-14","پیشوند منفی‌ساز","pishvand-e manfi-sāz","negative-forming prefix","گروه اسمی — noun phrase","پیشوند منفی‌ساز معنای واژه را تغییر می‌دهد.","Pishvand-e manfi-sāz ma'nā-ye vāzhe rā taghyir midahad.","A negative-forming prefix changes a word's meaning.");
  N(15,"KH2-15","عادت غذایی","ādat-e ghazāyi","eating habit","گروه اسمی — noun phrase","عادت غذایی سالم به برنامه نیاز دارد.","Ādat-e ghazāyi-ye sālem be barnāme niyāz dārad.","A healthy eating habit requires a plan.");
  N(16,"KH2-16","فضاپیما","fazāpeyma","spacecraft","اسم — noun","فضاپیما برای سفر فضایی طراحی شده است.","Fazāpeyma barāye safar-e fazāyi tarāhi shode ast.","A spacecraft is designed for space travel.");
  N(17,"KH2-17","دسترسی","dastresi","access","اسم — noun","دسترسی به اینترنت برای مسافران مهم است.","Dastresi be internet barāye mosāferān mohem ast.","Internet access is important for travellers.");
- N(18,"KH2-18","در ذهن ماندن","dar zehn māndan","to remain in memory","عبارت — expression","نکته‌های مهم در ذهن ماندند.","Nokte-hā-ye mohem dar zehn māndand.","The important points remained in memory.");
  N(19,"KH2-19","قیمت مناسب","gheymat-e monāseb","reasonable price","گروه اسمی — noun phrase","این فروشگاه کالاها را با قیمت مناسب می‌فروشد.","In forushgāh kālā-hā rā bā gheymat-e monāseb miforushad.","This shop sells goods at a reasonable price.");
  N(20,"KH2-20","آش شور و بی‌نمک","āsh-e shur-o bi-namak","a badly prepared dish; figuratively a mess","اصطلاح — idiom","این آش شور و بی‌نمک شد.","In āsh shur-o bi-namak shod.","This dish turned out badly.");
  // Newestan and Shunidan source lists.
@@ -81,14 +77,12 @@
  N(15,"N2-08","رب انار","rob-e anār","pomegranate molasses","گروه اسمی — noun phrase","رب انار در این غذا استفاده می‌شود.","Rob-e anār dar in ghazā estefāde mishavad.","Pomegranate molasses is used in this dish.",[15,16]);
  N(17,"N2-09","منظره","manzare","view; scenery","اسم — noun","اتاق منظرهٔ زیبایی به باغ دارد.","Otāq manzare-ye zibāyi be bāgh dārad.","The room has a beautiful view of the garden.",[17]);
  N(2,"N2-10","نشانه‌گذاری","neshāne-gozāri","punctuation","اسم — noun","نشانه‌گذاری درست خواندن نامه را آسان می‌کند.","Neshāne-gozāri-ye dorost khāndan-e nāme rā āsān mikonad.","Correct punctuation makes a letter easier to read.",[2,19]);
- N(1,"SH2-01","تشریف آوردن","tashrif āvardan","to come (honorific)","عبارت — expression","تشریف آوردن مهمانان باعث خوشحالی میزبان شد.","Tashrif āvardan-e mehmānān bā'es-e khoshhāli-ye mizbān shod.","The guests' arrival made the host happy.");
  N(2,"SH2-02","آتش‌نشانی","ātash-neshāni","fire service; fire station","اسم — noun","با آتش‌نشانی تماس گرفتیم.","Bā ātash-neshāni tamās gereftim.","We called the fire service.");
  N(3,"SH2-03","باشگاه بدن‌سازی","bāshgāh-e badan-sāzi","gym; bodybuilding club","گروه اسمی — noun phrase","او هر هفته به باشگاه بدن‌سازی می‌رود.","U har hafte be bāshgāh-e badan-sāzi miravad.","He goes to the gym every week.");
  N(4,"SH2-04","ریزگرد","riz-gard","dust storm; airborne dust","اسم — noun","ریزگرد دید افقی را کم کرد.","Riz-gard did-e ofoqi rā kam kard.","The dust storm reduced visibility.");
  N(5,"SH2-05","خونریزی","khunrizi","bleeding","اسم — noun","خونریزی شدید نیازمند رسیدگی فوری است.","Khunrizi-ye shadid niyāzmand-e residegi-ye fowri ast.","Severe bleeding requires immediate attention.");
  N(6,"SH2-06","سوزش سینه","suzesh-e sine","chest burning; heartburn","گروه اسمی — noun phrase","بیمار از سوزش سینه شکایت داشت.","Bimār az suzesh-e sine shekāyat dāsht.","The patient complained of chest burning.");
  N(7,"SH2-07","یخبندان","yakhbandān","frost; icy conditions","اسم — noun","یخبندان جاده را لغزنده کرد.","Yakhbandān jāde rā laghzande kard.","Icy conditions made the road slippery.");
- N(8,"SH2-08","کنسل شدن","konsel shodan","to be cancelled","عبارت — expression","پرواز به دلیل طوفان کنسل شد.","Parvāz be dalil-e tufān konsel shod.","The flight was cancelled because of the storm.");
  N(9,"SH2-09","صدابردار","sedā-bardār","sound recordist","اسم — noun","صدابردار صدای گفتگو را ضبط کرد.","Sedā-bardār sedā-ye goftogu rā zabt kard.","The sound recordist recorded the conversation.");
  N(10,"SH2-10","قلمکاری","qalamkāri","block printing; traditional textile art","اسم — noun","قلمکاری از هنرهای سنتی ایران است.","Qalamkāri az honar-hā-ye sonnati-ye Irān ast.","Qalamkari is a traditional Iranian art.");
  window.TERM2_DATA.push(...rows);
