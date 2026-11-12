@@ -88,7 +88,7 @@
  N(13,"KH2-13","حواس‌پرتی","havās-parti","distraction","اسم — noun","حواس‌پرتی هنگام رانندگی خطرناک است.","Havās-parti hengām-e rāndegi khatarnāk ast.","Distraction while driving is dangerous.");
  N(14,"KH2-14","عذرخواهی","ozrkhāhi","apology","اسم — noun","عذرخواهی صادقانه می‌تواند اختلاف را کم کند.","Ozrkhāhi-ye sādeqāne mitavānad ekhtelāf rā kam konad.","A sincere apology can reduce disagreement.",[8,12,14]);
  N(15,"KH2-15","زمان‌بندی","zamān-bandi","scheduling; timing","اسم — noun","زمان‌بندی درست مراحل آشپزی را آسان می‌کند.","Zamān-bandi-ye dorost marāhel-e āshpazi rā āsān mikonad.","Good timing makes cooking steps easier.",[15,16]);
- N(16,"KH2-16","غلات","qallāt","grains; cereals","اسم — noun","غلات بخشی از غذای فضانوردان است.","Qallāt bakhshi az ghazā-ye fazānavardān ast.","Grains are part of astronauts' food.",[15,16]);
+ N(16,"KH2-16","غلات","ghallāt","grains; cereals","اسم — noun","غلات بخشی از غذای فضانوردان است.","Ghallāt bakhshi az ghazā-ye fazānavardān ast.","Grains are part of astronauts' food.",[15,16]);
  N(17,"KH2-17","منوی کودکان","menu-ye kudakān","children's menu","گروه اسمی — noun phrase","این هتل منوی کودکان دارد.","In hotel menu-ye kudakān dārad.","This hotel has a children's menu.");
  N(18,"KH2-18","کارشناس","kārshenās","expert; specialist","اسم — noun","کارشناس روش مطالعه را توضیح داد.","Kārshenās ravesh-e motāle'e rā tozih dād.","The expert explained the study method.");
  N(19,"KH2-19","باورکردنی","bāvar-kardani","believable; credible","صفت — adjective","این توضیح باورکردنی نیست.","In tozih bāvar-kardani nist.","This explanation is not believable.");
