@@ -82,11 +82,11 @@
  N(2,"SH2-02","گوشی خدمتتان","gushi khedmatetān","the phone is yours (polite handover)","گروه گفتاری — spoken phrase","کارمند گفت: گوشی خدمتتان.","Kārmand goft: gushi khedmatetān.","The employee said, “The phone is yours.”");
  N(3,"SH2-03","اضافه‌وزن","ezāfe-vazn","excess weight; overweight","اسم — noun","ورزش منظم به کاهش اضافه‌وزن کمک می‌کند.","Varzesh-e monazzam be kāhesh-e ezāfe-vazn komak mikonad.","Regular exercise helps reduce excess weight.");
  N(4,"SH2-04","خبر واقعی","khabar-e vāqe'i","true news; factual report","گروه اسمی — noun phrase","خبر واقعی باید منبع معتبر داشته باشد.","Khabar-e vāqe'i bāyad manba'-e mo'tabar dāshte bāshad.","A factual report should have a reliable source.");
- N(5,"SH2-05","کمک‌های اولیه","komak-hā-ye avvaliye","first aid","گروه اسمی — noun phrase","آموزش کمک‌های اولیه در حادثه مفید است.","Āmuzesh-e komak-hā-ye avvaliye dar hādesه mofid ast.","First-aid training is useful in an emergency.");
+ N(5,"SH2-05","کمک‌های اولیه","komak-hā-ye avvaliye","first aid","گروه اسمی — noun phrase","آموزش کمک‌های اولیه در حادثه مفید است.","Āmuzesh-e komak-hā-ye avvaliye dar hādes mofid ast.","First-aid training is useful in an emergency.");
  N(6,"SH2-06","نمونه‌گیری","nemune-giri","sampling; taking a sample","اسم — noun","نمونه‌گیری خون در آزمایشگاه انجام شد.","Nemune-giri-ye khun dar āzmāyeshgāh anjām shod.","The blood sample was taken in the laboratory.");
  N(7,"SH2-07","آب‌گرفتگی","āb-gereftegi","flooding; waterlogging","اسم — noun","آب‌گرفتگی خیابان رفت‌وآمد را دشوار کرد.","Āb-gereftegi-ye khiābān raft-o-āmad rā doshvār kard.","Street flooding made travel difficult.");
  N(8,"SH2-08","سفر زیارتی","safar-e ziyārati","pilgrimage trip","گروه اسمی — noun phrase","سفر زیارتی برای خانواده خاطره‌انگیز بود.","Safar-e ziyārati barāye khānevāde khātere-angiz bud.","The pilgrimage trip was memorable for the family.");
- N(9,"SH2-09","تهیه‌کننده","tahye-konande","producer (film)","اسم — noun","تهیه‌کننده هزینهٔ ساخت فیلم را مدیریت می‌کند.","Tahیه-konande hazine-ye sākht-e film rā modiriyat mikonad.","The producer manages the cost of making the film.");
+ N(9,"SH2-09","تهیه‌کننده","tahye-konande","producer (film)","اسم — noun","تهیه‌کننده هزینهٔ ساخت فیلم را مدیریت می‌کند.","Tahye-konande hazine-ye sākht-e film rā modiriyat mikonad.","The producer manages the cost of making the film.");
  N(10,"SH2-10","سفال‌گری","sofāl-gari","pottery; ceramics","اسم — noun","سفال‌گری از هنرهای سنتی ایران است.","Sofāl-gari az honar-hā-ye sonnati-ye Irān ast.","Pottery is one of Iran's traditional arts.");
  window.TERM2_DATA=rows;
 })();
