@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Offline Persian Term 03 vocabulary, essay-writing practice and five-minute speech preparation.">
-<title>Persian Trainer — Term 03</title>
+<meta name="description" content="A source-based Persian learning library for Terms 01–03: vocabulary, grammar, reading, writing and speaking practice.">
+<title>Persian Trainer — Terms 01–03</title>
 
 <style>
 :root{--bg:#faf8f4;--fg:#1f1d1a;--mut:#6b665e;--card:#fff;--bd:#e3ddd2;--ac:#0f766e;--acf:#fff;--ok:#15803d;--no:#b91c1c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -1103,7 +1103,7 @@ function pool(){const b=bkSel.value,c=chSel.value;const p=all().filter(i=>(b==="
 function fillBk(){
   const cur=bkSel.value||"all";
   const bs=[...new Set([1,2,3,...all().map(i=>i.bk)])].sort((x,y)=>x-y).map(String);
-  bkSel.innerHTML='<option value="all">All books</option>'+bs.map(b=>`<option value="${esc(b)}">${b==="3"?"Term 03 · Persian":"Book "+esc(b)}</option>`).join("");
+  bkSel.innerHTML='<option value="all">All books</option>'+bs.map(b=>`<option value="${esc(b)}">${b==="3"?"Term 03 · Persian":"Term 0"+esc(b)}</option>`).join("");
   bkSel.value=bs.includes(cur)||cur==="all"?cur:"all";
   fillCh();
 }
@@ -1218,7 +1218,7 @@ function homeBody(){
     [...new Set(activeTerm===null?[1,2,3,...a.map(i=>i.bk)]:[activeTerm])].sort((x,y)=>x-y).forEach(b=>{
       const bi=a.filter(i=>i.bk===b);
       const chs=[...new Set(bi.map(i=>i.ch))].sort((x,y)=>b===3?y-x:x-y);
-      h+=det("b"+b,b===3?"Term 03 · Persian":"Book "+b,cnt(bi),bi.length,bi.length?chs.map(c=>{
+      h+=det("b"+b,b===3?"Term 03 · Persian":"Term 0"+b,cnt(bi),bi.length,bi.length?chs.map(c=>{
         const ci=bi.filter(i=>i.ch===c),cs=esc(String(c));
         const meta=b===3?(window.TERM3_UNIT_META||{})[c]:null;
         const mapNote=meta?'<div class="unitmap"><b>FA base:</b> '+esc(meta.base)+'<br><b>Connected lessons:</b> '+esc(meta.links)+'</div>':"";
