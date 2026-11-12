@@ -29,6 +29,27 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Validate Term 01 source-based vocabulary
+        run: |
+          node --check website/term01-data.js
+          node <<'NODE'
+          global.window = {};
+          require('./website/term01-data.js');
+          const rows = window.TERM1_DATA;
+          if (!Array.isArray(rows) || rows.length < 20) throw new Error('Term 01 vocabulary is unexpectedly small');
+          const seen = new Set();
+          for (const row of rows) {
+            for (const field of ['unit', 'source', 'fa', 'tr', 'en']) {
+              if (!row[field]) throw new Error('Missing ' + field + ' in ' + JSON.stringify(row));
+            }
+            if (/[\\u0600-\\u06ff]/.test(row.tr)) throw new Error('Non-Latin character in transliteration: ' + row.fa);
+            const key = row.unit + '|' + row.fa;
+            if (seen.has(key)) throw new Error('Duplicate Term 01 entry: ' + key);
+            seen.add(key);
+          }
+          console.log('Validated ' + rows.length + ' Term 01 entries.');
+          NODE
+
       - name: Validate Term 03 data JavaScript
         run: node --check website/term03-data.js
 
