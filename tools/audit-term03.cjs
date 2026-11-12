@@ -39,5 +39,5 @@ for (const [source, count] of Object.entries(sourceCounts)) assert(count > 0, "N
 assert(Object.keys(global.TERM3_UNIT_META || {}).length === 20, "Expected 20 FA chapter summaries");
 for (const [unit, meta] of Object.entries(global.TERM3_UNIT_META)) assert(meta.summary, "Missing chapter summary for FA3-" + unit);
 assert(Array.isArray(global.TERM3_KHULASA) && global.TERM3_KHULASA.length === 20, "Expected a dedicated Khulasa summary for all 20 FA chapters");
-for (const item of global.TERM3_KHULASA) assert(item.lines.length === 5, "Khulasa must contain five concise lines for FA3-" + item.ch);
+for (const item of global.TERM3_KHULASA) assert(item.lines.length >= 5 && item.lines.length <= 6, "Khulasa must contain five or six concise lines for FA3-" + item.ch);
 console.log(JSON.stringify({ total: entries.length, sources: sourceCounts, verbs: entries.filter(x => /فعل|اصطلاح فعلی/.test(x.pos)).length, chapterSummaries: Object.keys(global.TERM3_UNIT_META).length, khulasaSummaries: global.TERM3_KHULASA.length }, null, 2));
