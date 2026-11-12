@@ -42,6 +42,31 @@
 [8,"N1-08","رب گوجه‌فرنگی","rob-e goje-farangi","tomato paste","noun phrase","برای خورشت رب گوجه‌فرنگی لازم است.","Barāye khoresh rob-e goje-farangi lāzem ast.","Tomato paste is needed for the stew."],
 [8,"N1-08","رنده","rande","grater","noun","هویج را با رنده خرد می‌کنم.","Havij rā bā rande khord mikonam.","I grate the carrot."],
 [7,"N1-07","مانتو","mānto","women's overcoat; manteau","noun","او مانتوی آبی پوشیده است.","U mānto-ye ābi pushide ast.","She is wearing a blue manteau."]
+,
+[3,"N1-03","اجاره‌نشینی","ejāre-neshini","renting; tenant life","noun","اجاره‌نشینی در شهرهای بزرگ گران است.","Ejāre-neshini dar shahrhā-ye bozorg gerān ast.","Renting is expensive in large cities."],
+[3,"N1-03","صاحب‌خانه","sāheb-khāne","landlord; homeowner","noun","صاحب‌خانه قرارداد را امضا کرد.","Sāheb-khāne gharārdād rā emzā kard.","The landlord signed the contract."],
+[3,"N1-03","مستأجر","mosta'jer","tenant; renter","noun","مستأجر اجاره را هر ماه می‌پردازد.","Mosta'jer ejāre rā har māh mipardāzad.","The tenant pays the rent every month."],
+[3,"N1-03","سرپناه","sar-panāh","shelter; place to live","noun","هر خانواده به سرپناهی امن نیاز دارد.","Har khānevāde be sar-panāhi amn niyāz dārad.","Every family needs safe shelter."],
+[4,"N1-04","صمیمی","samimi","close; intimate; warm","adjective","رابطهٔ صمیمی به اعتماد نیاز دارد.","Rābete-ye samimi be e'temād niyāz dārad.","A close relationship requires trust."],
+[4,"N1-04","زندگی مشترک","zendegi-ye moshtarak","shared life; married life","noun phrase","زندگی مشترک به گفت‌وگو نیاز دارد.","Zendegi-ye moshtarak be goft-o-gu niyāz dārad.","Shared life requires communication."],
+[4,"N1-04","شبکه‌های اجتماعی","shabakehā-ye ejtemā'i","social networks; social media","noun phrase","شبکه‌های اجتماعی بخشی از زندگی امروز هستند.","Shabakehā-ye ejtemā'i bakhshi az zendegi-ye emruz hastand.","Social media is part of life today."],
+[4,"N1-04","تعامل اجتماعی","ta'āmol-e ejtemā'i","social interaction","noun phrase","تعامل اجتماعی برای سلامت جامعه مهم است.","Ta'āmol-e ejtemā'i barāye salāmat-e jāme'e mohem ast.","Social interaction is important for society's health."],
+[5,"N1-05","جزیره","jazire","island","noun","این جزیره طبیعت زیبایی دارد.","In jazire tabi'at-e zibāyi dārad.","This island has beautiful nature."],
+[5,"N1-05","زلال","zolāl","clear; pure","adjective","آب چشمه زلال است.","Āb-e cheshme zolāl ast.","The spring water is clear."],
+[5,"N1-05","دستگاه آب‌شیرین‌کن","dastgāh-e āb-shirin-kon","water desalination device","noun phrase","دستگاه آب‌شیرین‌کن آب دریا را شیرین می‌کند.","Dastgāh-e āb-shirin-kon āb-e daryā rā shirin mikonad.","The desalination device makes seawater fresh."],
+[5,"N1-05","جزر و مد","jazr-o-mad","tide; ebb and flow","noun phrase","جزر و مد در ساحل دیده می‌شود.","Jazr-o-mad dar sāhel dide mishavad.","The tide can be seen at the shore."],
+[6,"N1-06","سواد رسانه‌ای","savād-e resāne'i","media literacy","noun phrase","سواد رسانه‌ای به تشخیص خبر درست کمک می‌کند.","Savād-e resāne'i be tashkhis-e khabar-e dorost komak mikonad.","Media literacy helps identify reliable news."],
+[6,"N1-06","جرایم اینترنتی","jarā'em-e interneti","cybercrime; internet crimes","noun phrase","آگاهی از جرایم اینترنتی ضروری است.","Āgāhi az jarā'em-e interneti zaruri ast.","Awareness of cybercrime is essential."],
+[6,"N1-06","پیام‌رسان","payām-resān","messaging app; messenger","noun","این پیام‌رسان برای گفت‌وگو استفاده می‌شود.","In payām-resān barāye goft-o-gu estefāde mishavad.","This messaging app is used for communication."],
+[6,"N1-06","نرم‌افزار","narm-afzār","software; application","noun","این نرم‌افزار برای آموزش زبان است.","In narm-afzār barāye āmuzesh-e zabān ast.","This software is for language learning."],
+[7,"N1-07","برنامه‌ریزی","barnāme-rizi","planning","noun","برنامه‌ریزی به مدیریت زمان کمک می‌کند.","Barnāme-rizi be modiriyat-e zamān komak mikonad.","Planning helps with time management."],
+[7,"N1-07","کوتاه‌مدت","kutāh-moddat","short-term","adjective","این یک برنامۀ کوتاه‌مدت است.","In yek barnāme-ye kutāh-moddat ast.","This is a short-term plan."],
+[7,"N1-07","پیش‌بینی","pish-bini","prediction; forecast","noun","پیش‌بینی هوا برای سفر مفید است.","Pish-bini-ye havā barāye safar mofid ast.","The weather forecast is useful for travel."],
+[7,"N1-07","پایبند بودن","pāyband budan","to remain committed; to adhere","verb","باید به برنامهٔ خود پایبند باشیم.","Bāyad be barnāme-ye khod pāyband bāshim.","We should remain committed to our plan."],
+[10,"N1-10","سؤال اصلی","so'āl-e asli","main question; research question","noun phrase","سؤال اصلی تحقیق باید روشن باشد.","So'āl-e asli-ye tahqiq bāyad rowshan bāshad.","The main research question should be clear."],
+[10,"N1-10","استاد راهنما","ostād-e rāhnamā","academic supervisor; advisor","noun phrase","استاد راهنما طرح تحقیق را بررسی کرد.","Ostād-e rāhnamā tarh-e tahqiq rā barrasi kard.","The academic supervisor reviewed the research proposal."],
+[10,"N1-10","فرایند نوشتن","farāyand-e neveshtan","writing process","noun phrase","فرایند نوشتن چند مرحله دارد.","Farāyand-e neveshtan chand marhale dārad.","The writing process has several stages."],
+[10,"N1-10","منبع","manba'","source; reference","noun","برای تحقیق باید منبع معتبر پیدا کنیم.","Barāye tahqiq bāyad manba'-e mo'tabar peydā konim.","We should find a reliable source for research."]
 ];
  const additions=rows.map(([unit,source,fa,tr,en,pos,faEx,trEx,enEx])=>({unit,source,fa,tr,en,pos:pos==="noun"?"اسم — noun":pos==="noun phrase"?"ترکیب اسمی — noun phrase":pos==="adjective"?"صفت — adjective":pos==="adjective/adverb"?"صفت/قید — adjective/adverb":pos==="noun/preposition"?"اسم/حرف اضافه — noun/preposition":pos==="time expression"?"قید زمان — time expression":"فعل مرکب — compound verb",ex:[faEx,trEx,enEx]}));
  const norm=s=>String(s||"").replace(/[\u200c\sـ]/g,"");
