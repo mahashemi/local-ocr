@@ -1388,13 +1388,14 @@ function essays(){
  $("#printEssay").onclick=printCurrent;
  $("#clearEssay").onclick=()=>{if(confirm("Clear this chapter's saved essay draft?")){delete essayDrafts[activeTerm===2?'t2-'+essayCh:essayCh];writeLocal(essayStoreKey,essayDrafts);essays()}};
 }
+function quranVerseLink(verse){const digits=String(verse||'').replace(/[۰-۹]/g,x=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(x)).replace(/[٠-٩]/g,x=>'٠١٢٣٤٥٦٧٨٩'.indexOf(x));const m=digits.match(/(\d{1,3})\s*[:：]\s*(\d{1,3})/);return m?'<a class="quran-ref" href="https://mahashemi.github.io/QuranMemorizer/#/surah/'+Number(m[1])+'/ayah/'+Number(m[2])+'" target="_blank" rel="noopener noreferrer">'+esc(verse)+'</a>':esc(verse)}
 function speeches(){
  const speechRows=activeTerm===2?(window.TERM2_SPEECHES||[]):(window.TERM3_SPEECHES||[]), speechKey=activeTerm===2?'t2-'+speechCh:speechCh, item=speechRows.find(x=>x.ch===speechCh)||speechRows[0],saved=speechDrafts[speechKey]||{};
  v.innerHTML=`<section class="writing-wrap">
  <div class="no-print"><div class="mut">Term 03 · Farsi Umumi · 20 chapter-linked talks</div><h2>سخنرانی پنج‌دقیقه‌ای / Five-minute Sukhanrani</h2><p>Prepare one short talk connected to each FA chapter. Use the verse as the central anchor, then explain its meaning and connect it to the chapter and daily life. Do not merely recite the verse.</p>
  <div class="row"><label for="speechChapter">Farsi Umumi chapter</label><select id="speechChapter">${speechRows.map(x=>`<option value="${x.ch}" ${x.ch===speechCh?"selected":""}>FA ${String(x.ch).padStart(2,"0")} · ${esc(x.title)}</option>`).join("")}</select></div></div>
  <div class="panel"><div class="mut">FA CHAPTER ${item.ch}</div><h2 class="fa-block">${esc(item.title)}</h2><h3 class="fa-block">${esc(item.topic)}</h3>
- <div class="fa-block" style="font-size:24px;margin:14px 0">${esc(item.arabic)}</div><b>Qur'anic anchor: ${esc(item.verse)}</b><p class="fa-block">${esc(item.meaning)}</p>
+ <div class="fa-block" style="font-size:24px;margin:14px 0">${esc(item.arabic)}</div><b>Qur'anic anchor: ${quranVerseLink(item.verse)}</b><p class="fa-block">${esc(item.meaning)}</p>
  <p class="mut">Check the verse in your own Mushaf/tafsir before quoting it publicly; this page gives the reference and a concise working translation.</p>
  </div>
  <div class="panel"><h3>Five-minute structure</h3><div class="timerline"><span>Opening · 30 sec</span><span>Verse and explanation · 60 sec</span><span>Main points · 2 min 30 sec</span><span>Application · 45 sec</span><span>Conclusion · 15 sec</span></div>
