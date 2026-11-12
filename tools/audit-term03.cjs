@@ -37,6 +37,11 @@ for (const item of entries) {
         "A verb without a natural imperative needs an explanation: " + item.fa);
     }
     assert(!/[\u0600-\u06ff]/.test(item.m[1] || ""), "Persian script in masdar-example transliteration: " + item.fa);
+  } else {
+    assert(Array.isArray(item.ex) && item.ex.length >= 3 && item.ex.every(Boolean),
+      "Noun/adjective is missing a trilingual example: " + item.fa);
+    assert(!/[\u0600-\u06ff]/.test(item.ex[1] || ""),
+      "Persian script in vocabulary-example transliteration: " + item.fa);
   }
 }
 for (const [source, count] of Object.entries(sourceCounts)) assert(count > 0, "No entries for " + source);
