@@ -1207,7 +1207,7 @@
  N(10,"KH3-10","ناخوشایند","nā-khoshāyand","unpleasant","صدای بلند برای همسایه‌ها ناخوشایند است.","Sedā-ye boland barāye hamsāyehā nā-khoshāyand ast.","Loud noise is unpleasant for the neighbours.","صفت — adjective");
  N(11,"KH3-11","فروتن","forutan","humble; modest","دانشمند فروتن به دیگران احترام می‌گذارد.","Dāneshmand-e forutan be digarān ehterām migozārad.","A humble scholar respects others.","صفت — adjective");
  N(12,"KH3-12","نواحی","navāhi","regions; areas","در نواحی شمالی باران بیشتری می‌بارد.","Dar navāhi-ye shomāli bārān-e bishtari mibārad.","It rains more in the northern regions.","اسم — noun");
- N(13,"KH3-13","حیله‌گر","hile-gar","cunning; deceitful","روباه در داستان حیله‌گر توصیف شده است.","Rubāh dar dāstān hile-gar توصیف shode ast.","The fox is described as cunning in the story.","صفت — adjective");
+ N(13,"KH3-13","حیله‌گر","hile-gar","cunning; deceitful","روباه در داستان حیله‌گر توصیف شده است.","Rubāh dar dāstān hile-gar towsif shode ast.","The fox is described as cunning in the story.","صفت — adjective");
  N(14,"KH3-14","شمعدان","sham'dān","candleholder","شمعدان قدیمی روی میز بود.","Sham'dān-e qadimi ru-ye miz bud.","The old candleholder was on the table.","اسم — noun");
  N(15,"KH3-15","سوگواری","sugvāri","mourning","مردم در مراسم سوگواری شرکت کردند.","Mardom dar marāsem-e sugvāri sherkat kardand.","People attended the mourning ceremony.","اسم — noun");
  N(17,"KH3-17","زحمتکش","zahmatkesh","hardworking; industrious","کارگران زحمتکش سزاوار احترام‌اند.","Kāregārān-e zahmatkesh sazāvār-e ehterām-and.","Hardworking workers deserve respect.","صفت — adjective");
@@ -1215,12 +1215,12 @@
  N(20,"KH3-20","مصائب","masā'eb","hardships; calamities","او در زندگی مصائب بسیاری دید.","U dar zendegi masā'eb-e besyāri did.","He experienced many hardships in life.","اسم — noun");
  N(1,"N3-01","روزنامه‌نگاری","ruznāme-negāri","journalism","روزنامه‌نگاری به دقت و انصاف نیاز دارد.","Ruznāme-negāri be deqqat-o ensāf niyāz dārad.","Journalism requires accuracy and fairness.","اسم — noun");
  N(2,"N3-02","عهده داشتن","ohde dāshtan","to be responsible for","او عهده‌دار برنامه‌ریزی گروه است.","U ohde-dār-e barnāme-rizi-ye goruh ast.","He is responsible for the group's planning.","عبارت — expression");
- N(3,"N3-03","حق شارژ","haqq-e shārژ","building maintenance fee","مستأجر باید حق شارژ را هر ماه بپردازد.","Mostā'jer bāyad haqq-e shārژ rā har māh bepardāzad.","The tenant must pay the maintenance fee every month.","گروه اسمی — noun phrase");
+ N(3,"N3-03","حق شارژ","haqq-e shārj","building maintenance fee","مستأجر باید حق شارژ را هر ماه بپردازد.","Mostā'jer bāyad haqq-e shārj rā har māh bepardāzad.","The tenant must pay the maintenance fee every month.","گروه اسمی — noun phrase");
  N(4,"N3-04","احساس خوشبختی","ehsās-e khoshbakhti","feeling of happiness","خانواده به او احساس خوشبختی می‌دهد.","Khānevāde be u ehsās-e khoshbakhti midahad.","Family gives him a feeling of happiness.","گروه اسمی — noun phrase");
  N(5,"N3-05","آبزیان","ābziyān","aquatic animals","آبزیان در رودخانه و دریا زندگی می‌کنند.","Ābziyān dar rudkhāne-o daryā zendegi mikonand.","Aquatic animals live in rivers and seas.","اسم — noun");
  N(7,"N3-07","بلندمدت","boland-moddat","long-term","برای موفقیت به برنامه‌ریزی بلندمدت نیاز داریم.","Barāye movaffaqiyat be barnāme-rizi-ye boland-moddat niyāz dārim.","We need long-term planning for success.","صفت — adjective");
  N(8,"N3-08","کالری","kāleri","calorie","این غذا کالری زیادی دارد.","In ghazā kāleri-ye ziyādi dārad.","This food has many calories.","اسم — noun");
- N(9,"N3-09","مترادف","motarādef","synonym","برای این واژه یک مترادف پیدا کن.","Barāye in vāژه yek motarādef peydā kon.","Find a synonym for this word.","اسم — noun");
+ N(9,"N3-09","مترادف","motarādef","synonym","برای این واژه یک مترادف پیدا کن.","Barāye in vāzhe yek motarādef peydā kon.","Find a synonym for this word.","اسم — noun");
  N(10,"N3-10","طرح تحقیق","tarh-e tahqiq","research proposal; research plan","طرح تحقیق باید پرسش اصلی روشنی داشته باشد.","Tarh-e tahqiq bāyad porsesh-e asli-ye rowshani dāshte bāshad.","A research proposal should have a clear main question.","گروه اسمی — noun phrase");
  N(1,"SH3-01","اخمو","akhmu","frowning; grumpy","او صبح‌ها گاهی اخمو است.","U sobhhā gāhi akhmu ast.","He is sometimes grumpy in the mornings.","صفت — adjective");
  N(5,"SH3-05","سوخت‌وساز","sukht-o-sāz","metabolism","ورزش منظم به سوخت‌وساز بدن کمک می‌کند.","Varzesh-e monazzam be sukht-o-sāz-e badan komak mikonad.","Regular exercise helps the body's metabolism.","اسم — noun");
