@@ -1,7 +1,7 @@
 /* Additional complex verbs selected from the body texts (matn), not only the first-page word lists. */
 (()=>{
  const rows=[];
- const V=(unit,source,fa,tr,en,mf,mt,me,ms,amr,af,at,ae,note="")=>rows.push({unit,source,fa,tr,en,pos:"فعل مرکب — compound verb",ms,amr,m:[mf,mt,me],a:[af,at,ae],...(note?{note}:{})});
+ const V=(unit,source,fa,tr,en,xf,xt,xe,ms,amr,mf,mt,me,af,at,ae,note="")=>rows.push({unit,source,fa,tr,en,pos:"فعل مرکب — compound verb",ms,amr,ex:[xf,xt,xe],m:[mf,mt,me],a:[af,at,ae],...(note?{note}:{})});
  const N=(unit,source,fa,tr,en,exFa,exTr,exEn)=>rows.push({unit,source,fa,tr,en,pos:"اسم — ism (noun)",ex:[exFa,exTr,exEn]});
  V(2,"FA3-02","تحمل کردن","tahammol kardan","to tolerate; to endure","تحمل کردن رفتار نادرست دشوار است.","Tahammol kardan-e raftār-e nādorost doshvār ast.","Tolerating improper behaviour is difficult.","تحمل کردن","تحمل کن","تحمل کردن سختی‌ها به صبر نیاز دارد.","Tahammol kardan-e sakhti-hā be sabr niyāz dārad.","Enduring hardship requires patience.","رفتار دیگران را با آرامش تحمل کن.","Raftār-e digarān rā bā ārāmesh tahammol kon.","Bear others' behaviour calmly.");
  V(2,"FA3-02","بچه‌دار شدن","bachche-dār shodan","to have a child; to become a parent","بچه‌دار شدن مسئولیت بزرگی است.","Bachche-dār shodan mas'uliyat-e bozorgi ast.","Having a child is a major responsibility.","بچه‌دار شدن","—","بچه‌دار شدن تغییر بزرگی در زندگی است.","Bachche-dār shodan taghyir-e bozorgi dar zendegi ast.","Having a child is a major life change.","—","—","—","فرایند/رویداد است و امر مستقیم طبیعی ندارد.");
