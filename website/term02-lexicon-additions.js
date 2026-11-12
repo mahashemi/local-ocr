@@ -140,7 +140,6 @@
  N(2,"KH2-02","برنامه‌ریزی زمانی","barnāme-rizi-ye zamāni","time planning","گروه اسمی — noun phrase","برنامه‌ریزی زمانی استفاده از اینترنت را متعادل می‌کند.","Barnāme-rizi-ye zamāni estefāde az internet rā mota'ādel mikonad.","Time planning balances internet use.");
  N(3,"KH2-03","رقابت","reqābat","competition; rivalry","اسم — noun","رقابت سالم با احترام همراه است.","Reqābat-e sālem bā ehterām hamrāh ast.","Healthy competition goes hand in hand with respect.");
  N(5,"FA2-05","نجات جان","nejāt-e jān","saving a life","گروه اسمی — noun phrase","نجات جان انسان وظیفه‌ای مهم است.","Nejāt-e jān-e ensān vazife-i mohem ast.","Saving a human life is an important duty.");
- N(6,"FA2-06","بستری شدن","bastari shodan","to be hospitalised","عبارت — expression","بستری شدن بیمار برای درمان لازم شد.","Bastari shodan-e bimār barāye darmān lāzem shod.","The patient needed to be hospitalised for treatment.");
  N(6,"KH2-06","مرجع ضمیر","marja'-e zamir","pronoun antecedent","گروه اسمی — noun phrase","مرجع ضمیر را در جمله پیدا کنید.","Marja'-e zamir rā dar jomle peydā konid.","Find the pronoun's antecedent in the sentence.");
  N(7,"KH2-07","تلفات","talafāt","casualties; losses","اسم — noun","گزارش از تلفات حادثه خبر داد.","Gozāresh az talafāt-e hādes khabar dād.","The report gave the casualty figures.");
  N(8,"FA2-08","سفر تفریحی","safar-e tafrihi","holiday trip; leisure travel","گروه اسمی — noun phrase","سفر تفریحی فرصتی برای استراحت است.","Safar-e tafrihi forsati barāye esterāhat ast.","A holiday trip is an opportunity to rest.");
@@ -167,8 +166,8 @@
  N(18,"FA2-18","فوق‌لیسانس","foq-lisāns","master's degree","اسم — noun","او مدرک فوق‌لیسانس دارد.","U madrak-e foq-lisāns dārad.","He has a master's degree.");
  N(18,"FA2-18","روان‌شناسی","ravān-shenāsi","psychology","اسم — noun","روان‌شناسی رفتار انسان را بررسی می‌کند.","Ravān-shenāsi raftār-e ensān rā barrasi mikonad.","Psychology studies human behaviour.");
  N(19,"FA2-19","تعویض","ta'viz","exchange; replacement","اسم — noun","تعویض کالای خراب باید طبق مقررات انجام شود.","Ta'viz-e kālā-ye kharāb bāyad tebeq-e moqarrarāt anjām shavad.","Replacing a faulty product should follow the rules.");
- N(20,"FA2-20","اصطلاح","estelāh","expression; idiom","اسم — noun","این اصطلاح در گفتگوی روزمره کاربرد دارد.","In estelāh dar goftogu-ye ruzمرre kārbord dārad.","This expression is used in everyday conversation.");
- N(20,"FA2-20","مضارع مستمر","mozāre'-e mostamer","present continuous tense","گروه اسمی — grammar term","مضارع مستمر کاری را نشان می‌دهد که aknun ادامه دارد.","Mozāre'-e mostamer kāri rā neshān midahad ke aknun edāme dārad.","The present continuous describes an action happening now.");
+ N(20,"FA2-20","اصطلاح","estelāh","expression; idiom","اسم — noun","این اصطلاح در گفتگوی روزمره کاربرد دارد.","In estelāh dar goftogu-ye ruzmare kārbord dārad.","This expression is used in everyday conversation.");
+ N(20,"FA2-20","مضارع مستمر","mozāre'-e mostamer","present continuous tense","گروه اسمی — grammar term","مضارع مستمر کاری را نشان می‌دهد که اکنون ادامه دارد.","Mozāre'-e mostamer kāri rā neshān midahad ke aknun edāme dārad.","The present continuous describes an action happening now.");
  V(6,"FA2-06","بستری شدن","bastari shodan","to be hospitalised","بستری شدن","بستری شو","بستری شدن بیمار برای درمان لازم شد.","Bastari shodan-e bimār barāye darmān lāzem shod.","The patient needed to be hospitalised for treatment.","اگر لازم است، بستری شو.","Agar lāzem ast, bastari sho.","If necessary, be admitted to hospital.");
  window.TERM2_DATA.push(...rows);
 })();
