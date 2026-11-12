@@ -3,7 +3,7 @@
  let mode="table",index=0,flipped=false,term="all",query="";
  const $=s=>v.querySelector(s);
  const norm=s=>String(s||"").toLowerCase();
- const keyNorm=s=>String(s||"").replace(/[\\u200c\\sـ]/g,"").toLowerCase();
+ const keyNorm=s=>String(s||"").replace(/[\u200c\sـ]/g,"").toLowerCase();
  const sameForm=(x)=>!!(x.ms&&x.amr&&x.amr!=="—"&&keyNorm(x.ms)===keyNorm(x.amr));
  const curated=()=>{const grouped=new Map();for(const x of all().filter(x=>x.ms||x.amr)){const key=x.bk+"|"+keyNorm(x.fa),prior=grouped.get(key);if(prior){prior.sources=Array.from(new Set([...(prior.sources||[prior.source]),...(x.sources||[x.source])].filter(Boolean)));prior.units=Array.from(new Set([...(prior.units||[prior.ch]),...(x.units||[x.ch])]));}else grouped.set(key,{...x,sources:Array.from(new Set([...(x.sources||[x.source])].filter(Boolean))),units:Array.from(new Set(x.units||[x.ch]))});}return [...grouped.values()].map(x=>sameForm(x)?({...x,needsReview:true,formProblem:"Masdar and imperative are identical; verify the imperative."}):x)};
  const candidates=()=>all().filter(x=>x.bk<3&&!x.ms&&!x.amr&&/(کردن|شدن|دادن|گرفتن|رفتن|آمدن|آوردن|زدن|گذاشتن|بردن|خوردن|کشیدن|ماندن|ساختن|نوشتن|خواندن)$/.test(x.fa||""));
