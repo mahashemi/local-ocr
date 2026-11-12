@@ -1,5 +1,6 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
+const path = require("node:path");
 global.window = global;
 require("../website/term03-data.js");
 require("../website/term03-lexicon-additions.js");
@@ -54,6 +55,15 @@ const expectedSources = [
 ];
 const presentSources = new Set(entries.flatMap(item => (item.sources || [item.source]).filter(Boolean)));
 for (const source of expectedSources) assert(presentSources.has(source), "No lexicon entry linked to " + source);
+
+const studyDir = path.join(__dirname, "../study-materials/dars/term-03");
+const studyFiles = fs.readdirSync(studyDir);
+for (const source of expectedSources) {
+  const filePrefix = source.startsWith("N3-") ? "T3_" + source + "-" : "T3_" + source.replace("-", "_") + "-";
+  assert(studyFiles.some(name => name.startsWith(filePrefix)), "Missing original study-material file for " + source);
+}
+assert(studyFiles.length === 60, "Expected exactly 60 original Term 03 source files");
+
 assert(Array.isArray(global.TERM3_WRITING?.chapters) && global.TERM3_WRITING.chapters.length === 20,
   "Expected a writing prompt for all 20 Term 03 chapters");
 assert(Array.isArray(global.TERM3_SPEECHES) && global.TERM3_SPEECHES.length === 20,
@@ -69,4 +79,4 @@ assert(Object.keys(global.TERM3_UNIT_META || {}).length === 20, "Expected 20 FA 
 for (const [unit, meta] of Object.entries(global.TERM3_UNIT_META)) assert(meta.summary, "Missing chapter summary for FA3-" + unit);
 assert(Array.isArray(global.TERM3_KHULASA) && global.TERM3_KHULASA.length === 20, "Expected a dedicated Khulasa summary for all 20 FA chapters");
 for (const item of global.TERM3_KHULASA) assert(item.lines.length >= 5 && item.lines.length <= 6, "Khulasa must contain five or six concise lines for FA3-" + item.ch);
-console.log(JSON.stringify({ total: entries.length, sources: sourceCounts, verifiedVerbs: entries.filter(x => /فعل|اصطلاح فعلی/.test(x.pos)).length, chapterSummaries: Object.keys(global.TERM3_UNIT_META).length, khulasaSummaries: global.TERM3_KHULASA.length, writingPrompts: global.TERM3_WRITING.chapters.length, speechPrompts: global.TERM3_SPEECHES.length, sourceChapters: expectedSources.length }, null, 2));
+console.log(JSON.stringify({ total: entries.length, sources: sourceCounts, verifiedVerbs: entries.filter(x => /فعل|اصطلاح فعلی/.test(x.pos)).length, chapterSummaries: Object.keys(global.TERM3_UNIT_META).length, khulasaSummaries: global.TERM3_KHULASA.length, writingPrompts: global.TERM3_WRITING.chapters.length, speechPrompts: global.TERM3_SPEECHES.length, sourceChapters: expectedSources.length, sourceFiles: studyFiles.length }, null, 2));
