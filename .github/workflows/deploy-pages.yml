@@ -47,6 +47,9 @@ jobs:
       - name: Validate cross-term verb treasury
         run: node --check website/verb-treasury.js
 
+      - name: Validate trilingual semantic vocabulary
+        run: node --check website/semantic-meanings.js
+
       - name: Validate portal navigation JavaScript
         run: node --check website/term-portal.js
 
