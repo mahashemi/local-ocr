@@ -37,8 +37,8 @@
  window.home=function(){
   originalHome();
   const title=activeTerm===1?"Term One":activeTerm===2?"Term Two":"Term Three · Persian";
-  const description=activeTerm===3?"Farsi Umumi, Khwandan, Newestan and Shunidan are brought together here. Each Farsi Umumi chapter includes a learning summary, linked lesson vocabulary, and dedicated writing and speaking practice.":activeTerm===2?"Continue your established Term 02 vocabulary, grammar and memorisation work. Your existing learning progress is preserved.":"Term 01 is now being built from its Farsi Umumi, Khwandan, Newestan and Shunidan source lessons. The first source-checked vocabulary set is available, with chapter reading and practice still being expanded.";
-  const sourceCounts=activeTerm===3?["FA3","KH3","N3","SH3"].map(code=>({code,count:all().filter(x=>x.bk===3&&(x.sources||[x.source]).some(src=>String(src||"").startsWith(code+"-"))).length})): [];
+  const description=activeTerm===3?"Farsi Umumi, Khwandan, Newestan and Shunidan are brought together here. Each Farsi Umumi chapter includes a learning summary, linked lesson vocabulary, and dedicated writing and speaking practice.":activeTerm===2?"Term 02 is being expanded from all 60 source lessons. Vocabulary, verb forms, Khulasa summaries, writing and speaking practice are being checked against the original books.":"Term 01 is now being built from its Farsi Umumi, Khwandan, Newestan and Shunidan source lessons. The first source-checked vocabulary set is available, with chapter reading and practice still being expanded.";
+  const codes=activeTerm===3?["FA3","KH3","N3","SH3"]:activeTerm===2?["FA2","KH2","N2","SH2"]:[];\n  const sourceCounts=codes.map(code=>({code,count:all().filter(x=>x.bk===activeTerm&&(x.sources||[x.source]).some(src=>String(src||"").startsWith(code+"-"))).length}));
   const sourceLine=sourceCounts.length?'<div class="source-coverage">'+sourceCounts.map(x=>'<span><b>'+x.code+'</b><small>'+x.count+' words</small></span>').join("")+'</div>':"";
   v.insertAdjacentHTML("afterbegin",'<section class="term-welcome"><h2>'+title+'</h2><p>'+description+'</p>'+sourceLine+'</section>');
  };
