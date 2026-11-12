@@ -1165,7 +1165,7 @@ function cards(){
   const i=deck[idx];
   v.innerHTML=`<div class="mut">${idx+1} / ${deck.length} · use Flip to reveal the answer</div>
   <div class="card" id="c" style="cursor:default">${flip?`<div class="fa">${esc(i.fa)}</div><div class="tr">${esc(i.tr)}</div><p>${esc(i.en)}</p>${sentence(i)}`:`<div class="fa">${esc(i.fa)}</div>`}</div>
-  <div class="row" style="margin-top:12px"><button id="flipCard" class="pri">${flip?"Show word":"Flip · Reveal meaning"}</button><button id="pv">← Prev</button><button id="nx" class="pri">Next →</button><button id="sh">Shuffle</button></div>
+  <div class="row" style="margin-top:12px"><button id="flipCard" class="pri">${flip?"↩ Flip back":"Flip · Reveal meaning"}</button><button id="pv">← Prev</button><button id="nx" class="pri">Next →</button><button id="sh">Shuffle</button></div>
   <div class="row"><button id="dn" class="${done.has(i.id)?"on":""}">${done.has(i.id)?"✓ Memorized":"Mark memorized"}</button>${hb}</div>
   <div class="mut">Progress here: ${pool().filter(x=>done.has(x.id)).length} / ${pool().length} memorized</div>`;
   bindHd();
