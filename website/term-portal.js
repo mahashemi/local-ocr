@@ -25,7 +25,7 @@
  }
  window.updateGlobalStats=updateStats;
  function enterTerm(b){
-  activeTerm=b;bkSel.value=String(b);fillCh();chSel.value="all";
+  activeTerm=b;bkSel.value=String(b);fillCh();chSel.value="all";if(b===2){essayCh=1;speechCh=1;}
   $id("termNav").hidden=false;$id("activeTermTitle").textContent="TERM 0"+b+(b===3?" · PERSIAN":"");
   document.querySelectorAll('#termTabs [data-t="essays"],#termTabs [data-t="speeches"],#termTabs [data-t="khulasa"]').forEach(x=>x.hidden=!(b===3||(b===2&&((window.TERM2_WRITING||{}).chapters||[]).length)));
   gotoTab("home");
@@ -37,7 +37,7 @@
  window.home=function(){
   originalHome();
   const title=activeTerm===1?"Term One":activeTerm===2?"Term Two":"Term Three · Persian";
-  const description=activeTerm===3?"Farsi Umumi, Khwandan, Newestan and Shunidan are brought together here. Each Farsi Umumi chapter includes a learning summary, linked lesson vocabulary, and dedicated writing and speaking practice.":activeTerm===2?"Term 02 is being expanded from all 60 source lessons. Vocabulary, verb forms, Khulasa summaries, writing and speaking practice are being checked against the original books.":"Term 01 is now being built from its Farsi Umumi, Khwandan, Newestan and Shunidan source lessons. The first source-checked vocabulary set is available, with chapter reading and practice still being expanded.";
+  const description=activeTerm===3?"Farsi Umumi, Khwandan, Newestan and Shunidan are brought together here. Each Farsi Umumi chapter includes a learning summary, linked lesson vocabulary, and dedicated writing and speaking practice.":activeTerm===2?"Term 02 now includes vocabulary and grammar from all 60 source lessons, 185 grammar-checked verb records, chapter summaries, writing and speaking practice.":"Term 01 is now being built from its Farsi Umumi, Khwandan, Newestan and Shunidan source lessons. The first source-checked vocabulary set is available, with chapter reading and practice still being expanded.";
   const codes=activeTerm===3?["FA3","KH3","N3","SH3"]:activeTerm===2?["FA2","KH2","N2","SH2"]:[];
   const sourceCounts=codes.map(code=>({code,count:all().filter(x=>x.bk===activeTerm&&(x.sources||[x.source]).some(src=>String(src||"").startsWith(code+"-"))).length}));
   const sourceLine=sourceCounts.length?'<div class="source-coverage">'+sourceCounts.map(x=>'<span><b>'+x.code+'</b><small>'+x.count+' words</small></span>').join("")+'</div>':"";
