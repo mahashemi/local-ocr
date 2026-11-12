@@ -1392,7 +1392,7 @@ function speeches(){
  const speechRows=activeTerm===2?(window.TERM2_SPEECHES||[]):(window.TERM3_SPEECHES||[]), speechKey=activeTerm===2?'t2-'+speechCh:speechCh, item=speechRows.find(x=>x.ch===speechCh)||speechRows[0],saved=speechDrafts[speechKey]||{};
  v.innerHTML=`<section class="writing-wrap">
  <div class="no-print"><div class="mut">Term 03 · Farsi Umumi · 20 chapter-linked talks</div><h2>سخنرانی پنج‌دقیقه‌ای / Five-minute Sukhanrani</h2><p>Prepare one short talk connected to each FA chapter. Use the verse as the central anchor, then explain its meaning and connect it to the chapter and daily life. Do not merely recite the verse.</p>
- <div class="row"><label for="speechChapter">Farsi Umumi chapter</label><select id="speechChapter">${window.TERM3_SPEECHES.map(x=>`<option value="${x.ch}" ${x.ch===speechCh?"selected":""}>FA ${String(x.ch).padStart(2,"0")} · ${esc(x.title)}</option>`).join("")}</select></div></div>
+ <div class="row"><label for="speechChapter">Farsi Umumi chapter</label><select id="speechChapter">${speechRows.map(x=>`<option value="${x.ch}" ${x.ch===speechCh?"selected":""}>FA ${String(x.ch).padStart(2,"0")} · ${esc(x.title)}</option>`).join("")}</select></div></div>
  <div class="panel"><div class="mut">FA CHAPTER ${item.ch}</div><h2 class="fa-block">${esc(item.title)}</h2><h3 class="fa-block">${esc(item.topic)}</h3>
  <div class="fa-block" style="font-size:24px;margin:14px 0">${esc(item.arabic)}</div><b>Qur'anic anchor: ${esc(item.verse)}</b><p class="fa-block">${esc(item.meaning)}</p>
  <p class="mut">Check the verse in your own Mushaf/tafsir before quoting it publicly; this page gives the reference and a concise working translation.</p>
@@ -1413,7 +1413,7 @@ function speeches(){
  const saveSpeech=()=>{const obj={};v.querySelectorAll("[data-speech]").forEach(el=>obj[el.dataset.speech]=el.value);speechDrafts[speechKey]=obj;writeLocal(speechStoreKey,speechDrafts);$("#speechSaved").textContent="Saved locally · "+new Date().toLocaleTimeString()};
  v.querySelectorAll("[data-speech]").forEach(el=>el.addEventListener("input",saveSpeech));
  $("#printSpeech").onclick=printCurrent;
- $("#clearSpeech").onclick=()=>{if(confirm("Clear this chapter's speech notes?")){delete speechDrafts[speechCh];writeLocal(speechStoreKey,speechDrafts);speeches()}};
+ $("#clearSpeech").onclick=()=>{if(confirm("Clear this chapter's speech notes?")){delete speechDrafts[speechKey];writeLocal(speechStoreKey,speechDrafts);speeches()}};
 }
 
 function render(){if(tab==="portal"){v.innerHTML="";return}({home,cards,quiz:startQuiz,khulasa,essays,speeches})[tab]()}
