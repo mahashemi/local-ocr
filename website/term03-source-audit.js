@@ -70,7 +70,7 @@
  N(13,"KH3-13","زیستگاه امن","zistgāh-e amn","safe habitat","یوزپلنگ به زیستگاه امن نیاز دارد.","Yuzpalang be zistgāh-e amn niyāz dārad.","The cheetah needs a safe habitat.");
  N(19,"KH3-19","سنگ‌نوشته","sang-neveshte","stone inscription","سنگ‌نوشته اطلاعاتی دربارهٔ گذشته به ما می‌دهد.","Sang-neveshte ettelā'āti darbāre-ye gozashte be mā midahad.","A stone inscription gives us information about the past.");
  N(3,"N3-03","کوچهٔ بن‌بست","kuche-ye bon-bast","dead-end alley","خانه در انتهای کوچهٔ بن‌بست قرار دارد.","Khāne dar entehā-ye kuche-ye bon-bast qarār dārad.","The house is at the end of a dead-end alley.");
- N(4,"N3-04","روابط اجتماعی","ravābet-e ejtemā'i","social relationships","روابط اجتماعی سالم برای سلامت روان مهم است.","Ravābet-e ejtemā'i-ye sālem barāye salāmat-e ravān mohem ast.","Healthy social relationships matter for mental well-being.");
+ N(2,"N3-04","روابط اجتماعی","ravābet-e ejtemā'i","social relationships","روابط اجتماعی سالم برای سلامت روان مهم است.","Ravābet-e ejtemā'i-ye sālem barāye salāmat-e ravān mohem ast.","Healthy social relationships matter for mental well-being.");
  N(9,"N3-09","دانشگاه مجازی","dāneshgāh-e majāzi","virtual university","دانشگاه مجازی بخشی از آموزش را از راه دور ارائه می‌کند.","Dāneshgāh-e majāzi bakhshi az āmuzesh rā az rāh-e dur erā'e mikonad.","A virtual university provides some education remotely.");
  N(10,"N3-10","عناصر داستان","anāsor-e dāstān","story elements","شخصیت و زمان از عناصر داستان هستند.","Shakhsiyat va zamān az anāsor-e dāstān hastand.","Character and time are story elements.");
  N(1,"SH3-01","پرت شدن حواس","part shodan-e havās","distraction; being distracted","پرت شدن حواس هنگام رانندگی خطرناک است.","Part shodan-e havās hengām-e rānandegi khatarnāk ast.","Being distracted while driving is dangerous.");
@@ -82,6 +82,18 @@
  N(8,"SH3-08","انتخاب واحد","entekhāb-e vāhed","course registration; selecting courses","دانشجو انتخاب واحد را پیش از آغاز ترم انجام داد.","Dāneshju entekhāb-e vāhed rā pish az āghāz-e term anjām dād.","The student selected courses before the term began.");
  N(9,"SH3-09","تاریخ مصرف","tārikh-e masraf","expiry date","پیش از خرید، تاریخ مصرف را بررسی کن.","Pish az kharid, tārikh-e masraf rā barrasi kon.","Check the expiry date before buying.");
  N(10,"SH3-10","راهزن","rāhzan","bandit; highway robber","راهزن راه مسافران را بست.","Rāhzan rāh-e mosāferān rā bast.","The bandit blocked the travellers' road.");
+
+ // N3-04 cross-check: terms visible in the original source vocabulary list.
+ N(2,"N3-04","معتاد","mo'tād","addicted; an addicted person","اعتیاد می‌تواند به سلامت فرد و خانواده آسیب بزند.","E'tiyād mitavānad be salāmat-e fard va khānevāde āsib bezanad.","Addiction can harm the health of an individual and their family.","صفت / اسم — adjective / noun");
+ N(2,"N3-04","صرف غذا","sarf-e ghazā","eating a meal; mealtime","صرف غذا در کنار خانواده فرصت گفت‌وگو فراهم می‌کند.","Sarf-e ghazā dar kenār-e khānevāde forsat-e goft-o-gu farāham mikonad.","Eating together as a family creates an opportunity to talk.","گروه اسمی — noun phrase");
+ N(2,"N3-04","نظرخواهی","nazar-khāhi","asking for opinions; consultation","نظرخواهی از اعضای خانواده به تصمیم‌گیری بهتر کمک می‌کند.","Nazar-khāhi az a'zā-ye khānevāde be tasmim-giri-ye behtar komak mikonad.","Asking family members for their opinions helps with better decision-making.");
+ N(2,"N3-04","تأثیر","ta'sir","effect; influence","روابط اجتماعی سالم تأثیر مثبتی بر سلامت دارد.","Ravābet-e ejtemā'i-ye sālem ta'sir-e mosbati bar salāmat dārad.","Healthy social relationships have a positive effect on health.");
+ N(2,"N3-04","آسیب اجتماعی","āsib-e ejtemā'i","social harm; social problem","اعتیاد یکی از آسیب‌های اجتماعی است.","E'tiyād yeki az āsib-hā-ye ejtemā'i ast.","Addiction is one form of social harm.","گروه اسمی — noun phrase");
+ N(2,"N3-04","جوامع امروزی","javāme'-e emruzi","modern societies","شبکه‌های اجتماعی در جوامع امروزی نقش مهمی دارند.","Shabakehā-ye ejtemā'i dar javāme'-e emruzi naqsh-e mohemmi dārand.","Social networks play an important role in modern societies.","گروه اسمی — noun phrase");
+ N(2,"N3-04","شبکه‌های اجتماعی","shabakehā-ye ejtemā'i","social networks; social media","بسیاری از مردم هر روز از شبکه‌های اجتماعی استفاده می‌کنند.","Bisyāri az mardom har ruz az shabakehā-ye ejtemā'i estefāde mikonand.","Many people use social media every day.");
+ N(2,"N3-04","این‌گونه افراد","in-gune afrād","such people; people of this kind","این‌گونه افراد ممکن است به حمایت خانواده نیاز داشته باشند.","In-gune afrād momken ast be hemāyat-e khānevāde niyāz dāshte bāshand.","People in this situation may need family support.","گروه اسمی — noun phrase");
+ N(2,"N3-04","نیازهای جسمی","niyāzhā-ye jesmi","physical needs","کودکان به نیازهای جسمی و روحی خود توجه دارند.","Kudakān be niyāzhā-ye jesmi va ruhi-ye khod tavajjoh dārand.","Children have physical and emotional needs.");
+
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const seen=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
  const additions=[];
