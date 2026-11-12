@@ -33,7 +33,7 @@ for (const item of entries) {
     } else {
       assert(item.a === null || Array.isArray(item.a),
         "No-imperative verb must have either null or an example array: " + item.fa);
-      assert(item.note && /[\\u0600-\\u06ff]/.test(item.note),
+      assert(item.note && /[\u0600-\u06ff]/.test(item.note),
         "A verb without a natural imperative needs an explanation: " + item.fa);
     }
     assert(!/[\u0600-\u06ff]/.test(item.m[1] || ""), "Persian script in masdar-example transliteration: " + item.fa);
