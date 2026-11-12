@@ -1169,6 +1169,9 @@ function cards(){
   <div class="row"><button id="dn" class="${done.has(i.id)?"on":""}">${done.has(i.id)?"✓ Memorized":"Mark memorized"}</button>${hb}</div>
   <div class="mut">Progress here: ${pool().filter(x=>done.has(x.id)).length} / ${pool().length} memorized</div>`;
   bindHd();
+  // Keep clicks inside the revealed card (including semantic details) from reaching any enclosing dismiss handler.
+  const cardSurface=$("#c");
+  if(cardSurface)cardSurface.addEventListener("click",e=>e.stopPropagation());
   $("#dn").onclick=()=>{done.has(i.id)?done.delete(i.id):done.add(i.id);saveDone();if(hideDone)deck=[];cards()};
   $("#flipCard").onclick=()=>{flip=!flip;cards()};
   $("#pv").onclick=()=>{idx=(idx-1+deck.length)%deck.length;flip=false;cards()};
