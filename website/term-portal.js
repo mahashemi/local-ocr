@@ -12,7 +12,7 @@
  function portal(){
   const a=all(),d=a.filter(x=>done.has(x.id)).length;
   const data=[
-   {b:1,no:"TERM 01",name:"Term One",sub:"Build the foundations of Persian",desc:"Foundational vocabulary and essential structures",theme:"t1"},
+   {b:1,no:"TERM 01",name:"Term One",sub:"Build the foundations of Persian",desc:"Farsi Umumi · everyday vocabulary, grammar and conversation",theme:"t1"},
    {b:2,no:"TERM 02",name:"Term Two",sub:"Strengthen grammar and expression",desc:"Your established vocabulary and grammar collection",theme:"t2"},
    {b:3,no:"TERM 03",name:"Term Three",sub:"Read, write, speak and think in Persian",desc:"Farsi Umumi · Khwandan · Newestan · Shunidan",theme:"t3"}
   ];
@@ -37,7 +37,7 @@
  window.home=function(){
   originalHome();
   const title=activeTerm===1?"Term One":activeTerm===2?"Term Two":"Term Three · Persian";
-  const description=activeTerm===3?"Farsi Umumi, Khwandan, Newestan and Shunidan are brought together here. Each Farsi Umumi chapter includes a learning summary, linked lesson vocabulary, and dedicated writing and speaking practice.":activeTerm===2?"Continue your established Term 02 vocabulary, grammar and memorisation work. Your existing learning progress is preserved.":"The Term 01 learning collection is ready to be populated as its source materials are added.";
+  const description=activeTerm===3?"Farsi Umumi, Khwandan, Newestan and Shunidan are brought together here. Each Farsi Umumi chapter includes a learning summary, linked lesson vocabulary, and dedicated writing and speaking practice.":activeTerm===2?"Continue your established Term 02 vocabulary, grammar and memorisation work. Your existing learning progress is preserved.":"Term 01 is now being built from its Farsi Umumi, Khwandan, Newestan and Shunidan source lessons. The first source-checked vocabulary set is available, with chapter reading and practice still being expanded.";
   const sourceCounts=activeTerm===3?["FA3","KH3","N3","SH3"].map(code=>({code,count:all().filter(x=>x.bk===3&&(x.sources||[x.source]).some(src=>String(src||"").startsWith(code+"-"))).length})): [];
   const sourceLine=sourceCounts.length?'<div class="source-coverage">'+sourceCounts.map(x=>'<span><b>'+x.code+'</b><small>'+x.count+' words</small></span>').join("")+'</div>':"";
   v.insertAdjacentHTML("afterbegin",'<section class="term-welcome"><h2>'+title+'</h2><p>'+description+'</p>'+sourceLine+'</section>');
