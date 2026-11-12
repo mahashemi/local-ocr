@@ -1,5 +1,5 @@
 /* Term 01 — initial source-checked vocabulary batch.
- * Sources: study-materials/dars/term-01/T1_F1_02, T1_F1_04, T1_F1_05.
+ * Sources: F1-01, F1-02, F1-03, F1-04, F1-05; subsequent chapter files extend the coverage.
  * These are first-page word-list entries; expansions will be added after lesson-text review.
  */
 window.TERM1_DATA = [
@@ -88,5 +88,39 @@ window.TERM1_DATA = [
 {unit:10,source:"F1-10",fa:"کیک",tr:"keyk",en:"cake",pos:"اسم — noun",ex:["برای تولد کیک خریدیم.","Barāye tavalod keyk kharidim.","We bought a cake for the birthday."]},
 {unit:10,source:"F1-10",fa:"هدیه",tr:"hediye",en:"gift; present",pos:"اسم — noun",ex:["برای مادرم هدیه گرفتم.","Barāye mādaram hediye gereftam.","I got a gift for my mother."]},
 {unit:10,source:"F1-10",fa:"تاریخ تولد",tr:"tārikh-e tavalod",en:"date of birth; birthday date",pos:"اسم — noun",ex:["تاریخ تولد من پانزدهم آبان است.","Tārikh-e tavalod-e man pāndahom-e Ābān ast.","My date of birth is the fifteenth of Aban."]},
-{unit:10,source:"F1-10",fa:"باران آمدن",tr:"bārān āmadan",en:"to rain",pos:"فعل مرکب — compound verb",ex:["در بهار زیاد باران می‌آید.","Dar bahār ziyād bārān miāyad.","It rains a lot in spring."]}
+{unit:10,source:"F1-10",fa:"باران آمدن",tr:"bārān āmadan",en:"to rain",pos:"فعل مرکب — compound verb",ex:["در بهار زیاد باران می‌آید.","Dar bahār ziyād bārān miāyad.","It rains a lot in spring."]},
+{unit:1,source:"F1-01",fa:"سلام",tr:"salām",en:"hello; peace",pos:"عبارت — greeting",ex:["سلام، حال شما چطور است؟","Salām, hāl-e shomā chetor ast?","Hello, how are you?"]},
+{unit:1,source:"F1-01",fa:"صبح بخیر",tr:"sobh bekheyr",en:"good morning",pos:"عبارت — greeting",ex:["صبح بخیر، حال شما خوب است؟","Sobh bekheyr, hāl-e shomā khub ast?","Good morning, how are you?"]},
+{unit:1,source:"F1-01",fa:"خداحافظ",tr:"khodāhāfez",en:"goodbye",pos:"عبارت — greeting",ex:["خداحافظ، فردا می‌بینمت.","Khodāhāfez, fardā mibinamet.","Goodbye, see you tomorrow."]},
+{unit:1,source:"F1-01",fa:"چه خبر؟",tr:"che khabar?",en:"what's new?; how are things?",pos:"عبارت — expression",ex:["سلام، چه خبر؟","Salām, che khabar?","Hello, what's new?"]},
+{unit:1,source:"F1-01",fa:"اهل کجا",tr:"ahl-e kojā",en:"from where; where someone is from",pos:"عبارت — expression",ex:["شما اهل کجا هستید؟","Shomā ahl-e kojā hastid?","Where are you from?"]},
+{unit:1,source:"F1-01",fa:"من",tr:"man",en:"I; me",pos:"ضمیر شخصی — personal pronoun",ex:["من اهل ایران هستم.","Man ahl-e Irān hastam.","I am from Iran."]},
+{unit:1,source:"F1-01",fa:"تو",tr:"to",en:"you (singular, informal)",pos:"ضمیر شخصی — personal pronoun",ex:["تو اهل کجا هستی؟","To ahl-e kojā hasti?","Where are you from?"]},
+{unit:1,source:"F1-01",fa:"او",tr:"u",en:"he; she; it",pos:"ضمیر شخصی — personal pronoun",ex:["او اهل لبنان است.","U ahl-e Lobnān ast.","He or she is from Lebanon."]},
+{unit:1,source:"F1-01",fa:"ما",tr:"mā",en:"we; us",pos:"ضمیر شخصی — personal pronoun",ex:["ما اهل ایران هستیم.","Mā ahl-e Irān hastim.","We are from Iran."]},
+{unit:1,source:"F1-01",fa:"شما",tr:"shomā",en:"you (formal or plural)",pos:"ضمیر شخصی — personal pronoun",ex:["شما اهل کجا هستید؟","Shomā ahl-e kojā hastid?","Where are you from?"]},
+{unit:1,source:"F1-01",fa:"آنها",tr:"ānhā",en:"they; them",pos:"ضمیر شخصی — personal pronoun",ex:["آنها اهل هند هستند.","Ānhā ahl-e Hend hastand.","They are from India."]},
+{unit:1,source:"F1-01",fa:"ایرانی",tr:"irāni",en:"Iranian",pos:"صفت نسبی — nationality adjective",ex:["من ایرانی هستم.","Man irāni hastam.","I am Iranian."]},
+{unit:1,source:"F1-01",fa:"لبنانی",tr:"lobnāni",en:"Lebanese",pos:"صفت نسبی — nationality adjective",ex:["دوست من لبنانی است.","Dust-e man lobnāni ast.","My friend is Lebanese."]},
+{unit:1,source:"F1-01",fa:"پاکستانی",tr:"pākestāni",en:"Pakistani",pos:"صفت نسبی — nationality adjective",ex:["آنها پاکستانی هستند.","Ānhā pākestāni hastand.","They are Pakistani."]},
+{unit:1,source:"F1-01",fa:"چینی",tr:"chini",en:"Chinese",pos:"صفت نسبی — nationality adjective",ex:["او چینی است.","U chini ast.","He or she is Chinese."]},
+{unit:1,source:"F1-01",fa:"هندی",tr:"hendi",en:"Indian",pos:"صفت نسبی — nationality adjective",ex:["دوست من هندی است.","Dust-e man hendi ast.","My friend is Indian."]},
+{unit:1,source:"F1-01",fa:"عراقی",tr:"erāqi",en:"Iraqi",pos:"صفت نسبی — nationality adjective",ex:["او عراقی است.","U erāqi ast.","He or she is Iraqi."]},
+{unit:3,source:"F1-03",fa:"خودکار",tr:"khodkār",en:"pen",pos:"اسم — noun",ex:["این خودکار آبی است.","In khodkār ābi ast.","This pen is blue."]},
+{unit:3,source:"F1-03",fa:"مداد",tr:"medād",en:"pencil",pos:"اسم — noun",ex:["این مداد برای من است.","In medād barāye man ast.","This pencil is for me."]},
+{unit:3,source:"F1-03",fa:"مدادرنگی",tr:"medād-rangi",en:"coloured pencil",pos:"اسم — noun",ex:["من یک مدادرنگی دارم.","Man yek medād-rangi dāram.","I have a coloured pencil."]},
+{unit:3,source:"F1-03",fa:"کتاب",tr:"ketāb",en:"book",pos:"اسم — noun",ex:["این کتاب فارسی است.","In ketāb fārsi ast.","This is a Persian book."]},
+{unit:3,source:"F1-03",fa:"پاک‌کن",tr:"pāk-kon",en:"eraser",pos:"اسم — noun",ex:["پاک‌کن دارید؟","Pāk-kon dārid?","Do you have an eraser?"]},
+{unit:3,source:"F1-03",fa:"ماژیک",tr:"māzhik",en:"marker; felt-tip pen",pos:"اسم — noun",ex:["این ماژیک قرمز است.","In māzhik qermez ast.","This marker is red."]},
+{unit:3,source:"F1-03",fa:"دفتر",tr:"daftar",en:"notebook",pos:"اسم — noun",ex:["او یک دفتر دارد.","U yek daftar dārad.","He or she has a notebook."]},
+{unit:3,source:"F1-03",fa:"کاغذ",tr:"kāghaz",en:"paper",pos:"اسم — noun",ex:["کاغذ روی میز است.","Kāghaz ru-ye miz ast.","The paper is on the table."]},
+{unit:3,source:"F1-03",fa:"کیف",tr:"kif",en:"bag; schoolbag",pos:"اسم — noun",ex:["کتاب در کیف من است.","Ketāb dar kif-e man ast.","The book is in my bag."]},
+{unit:3,source:"F1-03",fa:"تراش",tr:"tarāsh",en:"pencil sharpener",pos:"اسم — noun",ex:["تراش در کیف است.","Tarāsh dar kif ast.","The pencil sharpener is in the bag."]},
+{unit:3,source:"F1-03",fa:"جامدادی",tr:"jāmedādi",en:"pencil case",pos:"اسم — noun",ex:["جامدادی من کوچک است.","Jāmedādi-ye man kuchak ast.","My pencil case is small."]},
+{unit:3,source:"F1-03",fa:"قیچی",tr:"qeychi",en:"scissors",pos:"اسم — noun",ex:["قیچی روی میز است.","Qeychi ru-ye miz ast.","The scissors are on the table."]},
+{unit:3,source:"F1-03",fa:"سیب",tr:"sib",en:"apple",pos:"اسم — noun",ex:["من یک سیب دارم.","Man yek sib dāram.","I have an apple."]},
+{unit:3,source:"F1-03",fa:"ببخشید",tr:"bebakhshid",en:"excuse me; sorry",pos:"عبارت — polite expression",ex:["ببخشید، خودکار دارید؟","Bebakhshid, khodkār dārid?","Excuse me, do you have a pen?"]},
+{unit:3,source:"F1-03",fa:"ممنون",tr:"mamnun",en:"thank you; thanks",pos:"عبارت — polite expression",ex:["ممنون، من مداد دارم.","Mamnun, man medād dāram.","Thanks, I have a pencil."]},
+{unit:3,source:"F1-03",fa:"داشتن",tr:"dāshtan",en:"to have",pos:"مصدر — infinitive",ex:["من یک کتاب دارم.","Man yek ketāb dāram.","I have a book."]},
+{unit:3,source:"F1-03",fa:"نداشتن",tr:"nadāshtan",en:"not to have",pos:"مصدر — infinitive",ex:["من خودکار ندارم.","Man khodkār nadāram.","I do not have a pen."]}
 ];
