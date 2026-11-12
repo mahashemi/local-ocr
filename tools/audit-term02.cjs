@@ -42,16 +42,17 @@ for (const x of rows) {
     assert(!persian.test(x.ex[1]||''), 'Persian-script example transliteration for '+x.fa);
   }
 }
-assert(verbs>=150, 'Expected at least 150 grammar-checked Term 02 verbs; found '+verbs);\nassert((global.TERM2_KHULASA||[]).length===20, 'Expected 20 Term 02 Khulasa summaries');
+assert(verbs>=150, 'Expected at least 150 grammar-checked Term 02 verbs; found '+verbs);
+assert((global.TERM2_KHULASA||[]).length===20, 'Expected 20 Term 02 Khulasa summaries');
 for (const x of global.TERM2_KHULASA||[]) assert(x.lines.length>=5&&x.lines.length<=6, 'Khulasa must have 5–6 lines: '+x.ch);
-const khFold = t => String(t).normalize('NFD').replace(/[\\u0300-\\u036f\\u064b-\\u065f\\u0670\\u200c]/g,'').replace(/\\u06c0/g,'\\u0647').replace(/\\u064a/g,'\\u06cc').replace(/\\u0643/g,'\\u06a9').toLowerCase().replace(/[^a-z0-9\\u0600-\\u06ff]/g,'').replace(/ee/g,'i').replace(/oo/g,'u').replace(/u/g,'o').replace(/w/g,'v').replace(/gh/g,'q');
-const cleanKh = t => khFold(String(t).replace(/[،؛؟۔,.;:!?«»()[\\]{}…]/g,''));
+const khFold = t => String(t).normalize('NFD').replace(/[\u0300-\u036f\u064b-\u065f\u0670\u200c]/g,'').replace(/\u06c0/g,'\u0647').replace(/\u064a/g,'\u06cc').replace(/\u0643/g,'\u06a9').toLowerCase().replace(/[^a-z0-9\u0600-\u06ff]/g,'').replace(/ee/g,'i').replace(/oo/g,'u').replace(/u/g,'o').replace(/w/g,'v').replace(/gh/g,'q');
+const cleanKh = t => khFold(String(t).replace(/[،؛؟۔,.;:!?«»()[\]{}…]/g,''));
 const vocabKeys = new Set(rows.map(x=>cleanKh(x.fa)));
-const maxWords = Math.max(1,...rows.map(x=>String(x.fa).trim().split(/\\s+/).length));
+const maxWords = Math.max(1,...rows.map(x=>String(x.fa).trim().split(/\s+/).length));
 function hasLinkedWord(line) {
-  const parts=String(line).split(/(\\s+)/);
+  const parts=String(line).split(/(\s+)/);
   for(let p=0;p<parts.length;) {
-    if(/^\\s+$/.test(parts[p])) { p++; continue; }
+    if(/^\s+$/.test(parts[p])) { p++; continue; }
     let found=false;
     for(let n=Math.min(maxWords,Math.floor((parts.length-p+1)/2));n>=1;n--) {
       const end=p+n*2-1;
