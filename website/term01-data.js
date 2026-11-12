@@ -122,5 +122,15 @@ window.TERM1_DATA = [
 {unit:3,source:"F1-03",fa:"ببخشید",tr:"bebakhshid",en:"excuse me; sorry",pos:"عبارت — polite expression",ex:["ببخشید، خودکار دارید؟","Bebakhshid, khodkār dārid?","Excuse me, do you have a pen?"]},
 {unit:3,source:"F1-03",fa:"ممنون",tr:"mamnun",en:"thank you; thanks",pos:"عبارت — polite expression",ex:["ممنون، من مداد دارم.","Mamnun, man medād dāram.","Thanks, I have a pencil."]},
 {unit:3,source:"F1-03",fa:"داشتن",tr:"dāshtan",en:"to have",pos:"مصدر — infinitive",ex:["من یک کتاب دارم.","Man yek ketāb dāram.","I have a book."]},
-{unit:3,source:"F1-03",fa:"نداشتن",tr:"nadāshtan",en:"not to have",pos:"مصدر — infinitive",ex:["من خودکار ندارم.","Man khodkār nadāram.","I do not have a pen."]}
+{unit:3,source:"F1-03",fa:"نداشتن",tr:"nadāshtan",en:"not to have",pos:"مصدر — infinitive",ex:["من خودکار ندارم.","Man khodkār nadāram.","I do not have a pen."]},
+{unit:1,source:"F1-01",fa:"ایران",tr:"irān",en:"Iran",pos:"اسم — noun",ex:["من اهل ایران هستم.","Man ahl-e Irān hastam.","I am from Iran."]},
+{unit:1,source:"F1-01",fa:"لبنان",tr:"lobnān",en:"Lebanon",pos:"اسم — noun",ex:["ما اهل لبنان هستیم.","Mā ahl-e Lobnān hastim.","We are from Lebanon."]},
+{unit:1,source:"F1-01",fa:"مالزی",tr:"mālezi",en:"Malaysia",pos:"اسم — noun",ex:["او اهل مالزی است.","U ahl-e Mālezi ast.","He or she is from Malaysia."]},
+{unit:1,source:"F1-01",fa:"پاکستان",tr:"pākestān",en:"Pakistan",pos:"اسم — noun",ex:["آنها اهل پاکستان هستند.","Ānhā ahl-e Pākestān hastand.","They are from Pakistan."]},
+{unit:1,source:"F1-01",fa:"هند",tr:"hend",en:"India",pos:"اسم — noun",ex:["دوست من اهل هند است.","Dust-e man ahl-e Hend ast.","My friend is from India."]},
+{unit:1,source:"F1-01",fa:"چین",tr:"chin",en:"China",pos:"اسم — noun",ex:["او اهل چین است.","U ahl-e Chin ast.","He or she is from China."]},
+{unit:1,source:"F1-01",fa:"عراق",tr:"erāq",en:"Iraq",pos:"اسم — noun",ex:["ما اهل عراق هستیم.","Mā ahl-e Erāq hastim.","We are from Iraq."]},
+{unit:1,source:"F1-01",fa:"اندونزی",tr:"andonezi",en:"Indonesia",pos:"اسم — noun",ex:["آنها اهل اندونزی هستند.","Ānhā ahl-e Andonezi hastand.","They are from Indonesia."]},
+{unit:1,source:"F1-01",fa:"ژاپن",tr:"zhāpon",en:"Japan",pos:"اسم — noun",ex:["شما اهل ژاپن هستید؟","Shomā ahl-e Zhāpon hastid?","Are you from Japan?"]},
+{unit:1,source:"F1-01",fa:"هلند",tr:"holand",en:"the Netherlands",pos:"اسم — noun",ex:["دوست او اهل هلند است.","Dust-e u ahl-e Holand ast.","His or her friend is from the Netherlands."]}
 ];
