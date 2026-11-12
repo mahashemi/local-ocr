@@ -1147,7 +1147,8 @@ const all=()=>{
   if(!prior){item.sources=[...new Set(item.sources||[item.source].filter(Boolean))];term2.set(key,item);out.push(item);return}
   prior.sources=[...new Set([...(prior.sources||[prior.source]),...(item.sources||[item.source])].filter(Boolean))];
   prior.units=[...new Set([...(prior.units||[prior.ch]),...(item.units||[item.ch])])].sort((a,b)=>a-b);
-  if(!prior.nt&&item.nt)prior.nt=item.nt;
+  if(!prior.source&&item.source)prior.source=item.source;
+  for(const field of ['tr','en','xf','xt','xe','nt','pos','ms','amr','m','a','note'])if((prior[field]===undefined||prior[field]===null||prior[field]==='')&&item[field]!==undefined)prior[field]=item[field];
  });
  return out.concat(custom.map(r=>toItem(r.slice(1),Number(r[0]))));
 };
