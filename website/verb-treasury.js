@@ -19,7 +19,7 @@
   $("#verbBack").onclick=()=>{term="all";query="";document.getElementById("termNav").hidden=true;window.gotoTab("portal")};
  }
  function renderCards(){
-  const deck=curated().filter(x=>(term==="all"||String(x.bk)===term)&&(!query||[x.fa,x.tr,x.en].some(z=>norm(z).includes(norm(query)))));
+  let deck=curated().filter(x=>(term==="all"||String(x.bk)===term)&&(!query||[x.fa,x.tr,x.en].some(z=>norm(z).includes(norm(query)))));
   if(!deck.length){v.innerHTML='<section class="verb-space"><p>No curated verbs match this selection yet.</p><button id="verbTable">Back to table</button></section>';$("#verbTable").onclick=()=>{mode="table";renderTable()};return}
   if(index>=deck.length)index=0;
   const x=deck[index];
