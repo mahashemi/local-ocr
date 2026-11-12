@@ -3,6 +3,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 global.window = global;
 require(path.join(root, 'website/term02-data.js'));
+require(path.join(root, 'website/term02-lexicon-additions.js'));
 require(path.join(root, 'website/term02-khulasa.js'));
 require(path.join(root, 'website/term02-writing.js'));
 const fail = [];
@@ -14,7 +15,7 @@ const sourceDir = path.join(root,'study-materials/dars/term-02');
 const files = fs.readdirSync(sourceDir).filter(n => /^(T2_(FA2|KH2)_\d{2}|T2_(N2|SH2)_\d{2})-.*\.txt$/.test(n));
 assert(files.length===60, 'Expected 60 Term 02 source files; found '+files.length);
 const rows = global.TERM2_DATA || [];
-assert(rows.length>=80, 'Expected at least 80 source-linked vocabulary rows; found '+rows.length);
+assert(rows.length>=160, 'Expected at least 80 source-linked vocabulary rows; found '+rows.length);
 const seen = new Set(rows.map(x=>x.source));
 for (const id of expected) assert(seen.has(id), 'Missing vocabulary coverage for '+id);
 const persian = /[\u0600-\u06ff]/;
@@ -28,7 +29,7 @@ for (const x of rows) {
     verbs++;
     assert(x.ms && x.amr && Array.isArray(x.m) && x.m.length===3, 'Missing masdar data for '+x.fa);
     assert(x.amr==='—' || (Array.isArray(x.a) && x.a.length===3), 'Missing imperative example for '+x.fa);
-    if (x.amr!=='—') {
+    if (x.amr==='—') assert(!!x.note, 'No-amr verb needs an explanatory note for '+x.fa);\n    if (x.amr!=='—') {
       assert(x.m[0].includes(x.ms), 'Masdar example mismatch for '+x.fa);
       assert(x.a[0].includes(x.amr), 'Imperative example mismatch for '+x.fa);
       assert(x.ms!==x.amr, 'Masdar and imperative collide for '+x.fa);
