@@ -16,15 +16,15 @@
 [3,"SH1-03","رانندهٔ تاکسی","rānande-ye tāksi","taxi driver","noun phrase","رانندهٔ تاکسی مسافران را به فرودگاه برد.","Rānande-ye tāksi mosāferān rā be forudgāh bord.","The taxi driver took the passengers to the airport."],
 [3,"SH1-03","پرستار","parastār","nurse","noun","پرستار از بیماران مراقبت می‌کند.","Parastār az bimārān morāqebat mikonad.","The nurse takes care of patients."],
 [13,"SH1-13","پیاده‌روی","piyāde-ravi","walking; a walk","noun","پیاده‌روی برای سلامتی مفید است.","Piyāde-ravi barāye salāmati mofid ast.","Walking is good for health."],
-[13,"SH1-13","ایمیل","imייל","email","noun","من هر روز ایمیل‌هایم را بررسی می‌کنم.","Man har ruz imיילhāyam rā barrasi mikonam.","I check my emails every day."],
+[13,"SH1-13","ایمیل","email","email","noun","من هر روز ایمیل‌هایم را بررسی می‌کنم.","Man har ruz email-hāyam rā barrasi mikonam.","I check my emails every day."],
 [16,"SH1-16","اسب‌سواری","asb-savāri","horse riding","noun","اسب‌سواری ورزش مورد علاقهٔ اوست.","Asb-savāri varzesh-e mored-e alāqe-ye ust.","Horse riding is his favourite sport."],
 [16,"SH1-16","کوهنوردی","kuh-navardi","mountaineering; hiking","noun","کوهنوردی به آمادگی جسمانی نیاز دارد.","Kuh-navardi be āmādegi-ye jesmāni niyāz dārad.","Mountaineering requires physical fitness."],
 [17,"SH1-17","ثبت‌نام","sabt-nām","registration; enrolment","noun","ثبت‌نام کلاس از شنبه آغاز می‌شود.","Sabt-nām-e kelās az shanbe āghāz mishavad.","Class registration begins on Saturday."],
 [17,"SH1-17","مسابقات ورزشی","mosābeqāt-e varzeshi","sports competitions","noun phrase","او در مسابقات ورزشی شرکت می‌کند.","U dar mosābeqāt-e varzeshi sherkat mikonad.","He or she takes part in sports competitions."],
 [18,"SH1-18","سوغاتی","sogāti","souvenir","noun","برای خانواده‌ام سوغاتی خریدم.","Barāye khānevāde-am sogāti kharidam.","I bought a souvenir for my family."],
 [18,"SH1-18","زیارت کردن","ziyārat kardan","to visit a holy shrine; to make a pilgrimage","verb","ما در سفر به مشهد حرم را زیارت کردیم.","Mā dar safar be Mashhad haram rā ziyārat kardim.","We visited the shrine during our trip to Mashhad."],
-[19,"SH1-19","حافظیه","Hāfeziye","Hafezieh (Hafez's tomb complex)","proper noun","گردشگران از حافظیه دیدن می‌کنند.","Gardeshgarān az Hāfeziye didan mikonand.","Tourists visit Hafezieh."],
-[19,"SH1-19","میدان نقش جهان","Meydān-e Naqsh-e Jahān","Naqsh-e Jahan Square","proper noun","میدان نقش جهان در اصفهان قرار دارد.","Meydān-e Naqsh-e Jahān dar Esfahān qarār dārad.","Naqsh-e Jahan Square is in Isfahan."],
+[19,"SH1-19","حافظیه","Hāfeziye","Hafezieh (Hafez's tomb complex)","noun","گردشگران از حافظیه دیدن می‌کنند.","Gardeshgarān az Hāfeziye didan mikonand.","Tourists visit Hafezieh."],
+[19,"SH1-19","میدان نقش جهان","Meydān-e Naqsh-e Jahān","Naqsh-e Jahan Square","noun","میدان نقش جهان در اصفهان قرار دارد.","Meydān-e Naqsh-e Jahān dar Esfahān qarār dārad.","Naqsh-e Jahan Square is in Isfahan."],
 [20,"SH1-20","فارغ‌التحصیل شدن","fāregh-ot-tahsil shodan","to graduate","verb","او سال گذشته از دانشگاه فارغ‌التحصیل شد.","U sāl-e gozashte az dāneshgāh fāregh-ot-tahsil shod.","He or she graduated from university last year."],
 [20,"SH1-20","دانشمند","dāneshmand","scholar; scientist","noun","این دانشمند کتاب‌های زیادی نوشته است.","In dāneshmand ketābhā-ye ziyādi neveshte ast.","This scholar has written many books."]
 ];
