@@ -1291,7 +1291,7 @@ function khulasa(){
  const chosen=Number(chSel.value)||(term===2?1:20);
  const item=rows.find(x=>x.ch===chosen)||rows[rows.length-1];
  const opts=rows.slice().sort((a,b)=>b.ch-a.ch).map(x=>'<option value="'+x.ch+'" '+(x.ch===chosen?'selected':'')+'>فصل '+x.ch+' · '+esc(x.title)+'</option>').join('');
- const words=all().filter(i=>i.fa&&i.en);
+ const words=all().filter(i=>i.fa&&i.en).sort((a,b)=>(a.bk===term?0:1)-(b.bk===term?0:1));
  const wordIndex=new Map();
  words.forEach(i=>{const k=fold(i.fa);if(k&&!wordIndex.has(k))wordIndex.set(k,i)});
  const maxWords=Math.max(1,...words.map(i=>String(i.fa).trim().split(/\s+/).length));
