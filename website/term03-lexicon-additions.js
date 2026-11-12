@@ -1072,11 +1072,11 @@
  N(20,"N3-02","بنیان‌گذار","bonyān-gozār","founder","او یکی از بنیان‌گذاران این مرکز بود.","U yeki az bonyān-gozārān-e in markaz bud.","He was one of the founders of this centre.","صفت / اسم — adjective / noun");
  N(20,"N3-02","انتقال خون","enteqāl-e khun","blood transfusion","انتقال خون می‌تواند جان بیماران را نجات دهد.","Enteqāl-e khun mitavānad jān-e bimārān rā nejāt dahad.","A blood transfusion can save patients' lives.");
  N(20,"N3-02","قبرستان","qabr-estān","cemetery","آرامگاه او در قبرستان قدیمی شهر است.","Ārāmgāh-e u dar qabr-estān-e qadimi-ye shahr ast.","His grave is in the old cemetery of the city.");
- N(20,"N3-02","کنگره","kongre","congress; conference","پژوهشگران در کنگرهٔ علمی شرکت کردند.","Pazhuheshgarān dar kongre-ye elmi شرکت kardand.","Researchers took part in the scientific conference.");
+ N(20,"N3-02","کنگره","kongre","congress; conference","پژوهشگران در کنگرهٔ علمی شرکت کردند.","Pazhuheshgarān dar kongre-ye elmi sherkat kardand.","Researchers took part in the scientific conference.");
  N(8,"N3-03","اجاره‌نشینی","ejāre-neshini","renting; living in rented accommodation","اجاره‌نشینی در شهرهای بزرگ هزینهٔ زیادی دارد.","Ejāre-neshini dar shahrhā-ye bozorg hazine-ye ziyādi dārad.","Living in rented accommodation is expensive in large cities.");
  N(8,"N3-03","صاحب‌خانه","sāheb-khāne","landlord; homeowner","صاحب‌خانه قرارداد را برای مستأجر توضیح داد.","Sāheb-khāne qarārdād rā barāye mosta'jer tozih dād.","The landlord explained the contract to the tenant.");
  N(8,"N3-03","مستأجر","mosta'jer","tenant","مستأجر باید اجاره را به‌موقع پرداخت کند.","Mosta'jer bāyad ejāre rā be-mowqe' pardākht konad.","The tenant must pay the rent on time.");
- N(8,"N3-03","اسباب‌کشی","asbāb-keshi","moving house; relocation","اسباب‌کشی به خانهٔ تازه چند روز طول کشید.","Asbāb-keshi be khāne-ye tāze chand ruz tul کشid.","Moving to the new house took several days.");
+ N(8,"N3-03","اسباب‌کشی","asbāb-keshi","moving house; relocation","اسباب‌کشی به خانهٔ تازه چند روز طول کشید.","Asbāb-keshi be khāne-ye tāze chand ruz tul keshid.","Moving to the new house took several days.");
  N(16,"N3-06","گنجینه","ganjine","treasure; collection","این کتابخانه گنجینه‌ای از آثار فارسی دارد.","In ketābkhāne ganjine-i az āsār-e fārsi dārad.","This library has a collection of Persian works.");
  N(16,"N3-06","مشارکت","moshārekat","participation; collaboration","مشارکت مردم به پیشرفت جامعه کمک می‌کند.","Moshārekat-e mardom be pishraft-e jāme'e komak mikonad.","Public participation helps society progress.");
  N(16,"N3-06","تبیین","tabyin","clarification; explanation","تبیین مسئله باید روشن و مستند باشد.","Tabyin-e mas'ale bāyad rowshan-o mostanad bāshad.","The explanation of the issue should be clear and evidence-based.");
@@ -1087,10 +1087,10 @@
  N(16,"N3-06","در دسترس","dar dastres","available; accessible","اطلاعات معتبر باید در دسترس همه باشد.","Ettelā'āt-e mo'tabar bāyad dar dastres-e hame bāshad.","Reliable information should be accessible to everyone.","گروه وصفی — adjective phrase");
  N(3,"N3-07","برنامهٔ کوتاه‌مدت","barnāme-ye kutāh-moddat","short-term plan","برای این هفته یک برنامهٔ کوتاه‌مدت نوشتم.","Barāye in hafte yek barnāme-ye kutāh-moddat neveshtam.","I wrote a short-term plan for this week.");
  N(3,"N3-07","برنامهٔ بلندمدت","barnāme-ye boland-moddat","long-term plan","یادگیری زبان بخشی از برنامهٔ بلندمدت من است.","Yād-giri-ye zabān bakhshi az barnāme-ye boland-moddat-e man ast.","Language learning is part of my long-term plan.");
- N(3,"N3-07","زودبازده","zud-bāzdeh","quick-yielding; producing quick results","این طرح زودبازده است اما به سرمایه نیاز دارد.","In طرح zud-bāzdeh ast ammā be sarmāye niyāz dārad.","This project produces quick results but requires investment.","صفت — adjective");
+ N(3,"N3-07","زودبازده","zud-bāzdeh","quick-yielding; producing quick results","این طرح زودبازده است اما به سرمایه نیاز دارد.","In tarh zud-bāzdeh ast ammā be sarmāye niyāz dārad.","This project produces quick results but requires investment.","صفت — adjective");
  N(3,"N3-07","دیربازده","dir-bāzdeh","slow-yielding; producing results over time","برخی سرمایه‌گذاری‌ها دیربازده هستند.","Barkhi sarmāye-gozāri-hā dir-bāzdeh hastand.","Some investments take time to produce results.","صفت — adjective");
  N(2,"SH3-01","شیفت بعدازظهر","shift-e ba'd-az-zohr","afternoon shift","مادر این هفته در شیفت بعدازظهر کار می‌کند.","Mādar in hafte dar shift-e ba'd-az-zohr kār mikonad.","Mother is working the afternoon shift this week.");
- N(2,"SH3-01","گلولهٔ برف","golule-ye barf","snowball","کودکان در حیاط گلولهٔ برف درست کردند.","Kudakān dar حiyāt golule-ye barf dorost kardand.","The children made snowballs in the yard.");
+ N(2,"SH3-01","گلولهٔ برف","golule-ye barf","snowball","کودکان در حیاط گلولهٔ برف درست کردند.","Kudakān dar hayāt golule-ye barf dorost kardand.","The children made snowballs in the yard.");
  N(2,"SH3-01","آلبوم قدیمی","ālbom-e qadimi","old photo album","در آلبوم قدیمی عکس‌های دوران کودکی ماست.","Dar ālbom-e qadimi aks-hā-ye dore-ye kudaki-ye māst.","Our childhood photographs are in the old album.");
  N(2,"SH3-01","دردناک","dardnāk","painful","زمین خوردن برای کودک دردناک بود.","Zamin khordan barāye kudak dardnāk bud.","The fall was painful for the child.","صفت — adjective");
  N(19,"SH3-02","طاقچه","tāqche","niche; shelf built into a wall","کلیدها را روی طاقچه گذاشتم.","Kelidhā rā ru-ye tāqche gozāshtam.","I put the keys on the wall shelf.");
@@ -1103,7 +1103,7 @@
  N(5,"SH3-03","مکانیک","mekānik","mechanic","مکانیک موتور خودرو را تعمیر کرد.","Mekānik motor-e khodro rā ta'mir kard.","The mechanic repaired the car engine.");
  N(5,"SH3-03","جناب","jenāb","sir; gentleman (formal address)","جناب راننده، لطفاً آهسته‌تر حرکت کنید.","Jenāb-e rānande, lotfan āheste-tar harekat konid.","Sir, please drive more slowly.","عنوان احترام‌آمیز — honorific");
  N(19,"SH3-04","جوی آب","ju-ye āb","water channel; streamlet","کودکان کنار جوی آب بازی می‌کردند.","Kudakān kenār-e ju-ye āb bāzi mikardand.","The children were playing beside the water channel.");
- N(19,"SH3-04","شرایط جوی","sharāyet-e javvi","weather conditions","شرایط جوی پرواز را به تأخیر انداخت.","Sharāyet-e javvi parvāz rā be ta'khir اندākht.","Weather conditions delayed the flight.");
+ N(19,"SH3-04","شرایط جوی","sharāyet-e javvi","weather conditions","شرایط جوی پرواز را به تأخیر انداخت.","Sharāyet-e javvi parvāz rā be ta'khir andākht.","Weather conditions delayed the flight.");
  N(19,"SH3-04","مقصر بودن","moqasser budan","to be at fault; to be responsible","او پذیرفت که در این اشتباه مقصر بوده است.","U paziroft ke dar in eshtebāh moqasser bude ast.","He accepted that he was at fault.","ساخت وصفی با بودن — copular construction");
  N(12,"SH3-05","وزن بدن","vazn-e badan","body weight","وزن بدن به تغذیه و فعالیت بستگی دارد.","Vazn-e badan be taghziye va fa'āliyat bastagi dārad.","Body weight depends on nutrition and activity.");
  N(12,"SH3-05","گیاه‌خواری","giyāh-khāri","vegetarianism","گیاه‌خواری برای برخی افراد یک انتخاب غذایی است.","Giyāh-khāri barāye barkhi afrād yek entekhāb-e ghazāyi ast.","Vegetarianism is a dietary choice for some people.");
@@ -1125,7 +1125,7 @@
  N(19,"SH3-07","سوئیت","su'it","suite","برای خانواده یک سوئیت رزرو کردیم.","Barāye khānevāde yek su'it rezerv kardim.","We booked a suite for the family.");
  N(19,"SH3-07","مسافرخانه","mosāfer-khāne","guesthouse; budget inn","مسافرخانه نزدیک ایستگاه قرار دارد.","Mosāfer-khāne nazdik-e istgāh qarār dārad.","The guesthouse is near the station.");
  N(19,"SH3-07","سونا","sonā","sauna","هتل یک سونا و استخر دارد.","Hotel yek sonā va estakhr dārad.","The hotel has a sauna and a swimming pool.");
- N(19,"SH3-07","اقامت","eqāmat","stay; accommodation","اقامت در هتل سه شب طول کشید.","Eqāmat dar hotel se shab tul کشid.","The hotel stay lasted three nights.");
+ N(19,"SH3-07","اقامت","eqāmat","stay; accommodation","اقامت در هتل سه شب طول کشید.","Eqāmat dar hotel se shab tul keshid.","The hotel stay lasted three nights.");
  N(3,"SH3-08","حذف و اضافه","hazf-o ezāfe","add/drop period; course add/drop","حذف و اضافه تا پایان هفته ادامه دارد.","Hazf-o ezāfe tā pāyān-e hafte edāme dārad.","The add/drop period continues until the end of the week.");
  N(3,"SH3-08","مدرک مورد تأیید","madrak-e mored-e ta'yid","approved; recognised credential","دانشگاه فقط مدرک مورد تأیید را می‌پذیرد.","Dāneshgāh faqat madrak-e mored-e ta'yid rā mipazirad.","The university accepts only recognised credentials.");
  N(3,"SH3-08","وزارت امور خارجه","vezārat-e omur-e khāreje","Ministry of Foreign Affairs","مدارک باید به تأیید وزارت امور خارجه برسد.","Madārek bāyad be ta'yid-e vezārat-e omur-e khāreje beresad.","The documents must be approved by the Ministry of Foreign Affairs.");
@@ -1140,7 +1140,7 @@
  N(10,"SH3-09","قطعهٔ کالا","qet'e-ye kālā","product component; part","اگر قطعهٔ کالا خراب باشد، آن را تعویض کنید.","Agar qet'e-ye kālā kharāb bāshad, ān rā ta'viz konid.","If a product part is faulty, have it replaced.");
  N(10,"SH3-09","نیازهای انسانی","niyāzhā-ye ensāni","human needs","بازار باید به نیازهای انسانی توجه کند.","Bāzār bāyad be niyāzhā-ye ensāni tavajjoh konad.","Markets should pay attention to human needs.");
  N(10,"SH3-09","کاهش قیمت","kāhesh-e gheymat","price reduction","کاهش قیمت به نفع خریدار است.","Kāhesh-e gheymat be naf'-e kharidār ast.","A price reduction benefits the buyer.");
- N(20,"SH3-10","چوپان","chupān","shepherd","چوپان گله را به چراگاه برد.","Chupān gele rā be charāgāh برد.","The shepherd took the flock to pasture.");
+ N(20,"SH3-10","چوپان","chupān","shepherd","چوپان گله را به چراگاه برد.","Chupān gele rā be charāgāh bord.","The shepherd took the flock to pasture.");
  N(20,"SH3-10","اهالی روستا","ahāli-ye rustā","villagers; residents of the village","اهالی روستا به مسافران کمک کردند.","Ahāli-ye rustā be mosāferān komak kardand.","The villagers helped the travellers.");
  N(20,"SH3-10","بره","barre","lamb","بره کنار مادرش راه می‌رفت.","Barre kenār-e mādარash rāh miraft.","The lamb walked beside its mother.");
  N(20,"SH3-10","امن و بی‌خطر","amn-o bi-khatar","safe and harmless","این مسیر امن و بی‌خطر است.","In masir amn-o bi-khatar ast.","This route is safe and harmless.","گروه وصفی — adjective phrase");
