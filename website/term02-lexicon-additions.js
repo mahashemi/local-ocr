@@ -286,5 +286,8 @@
  N(10,"FA2-10","اثر هنری","asar-e honari","work of art","گروه اسمی — noun phrase","هر اثر هنری می‌تواند پیامی داشته باشد.","Har asar-e honari mitavānad payāmi dāshte bāshad.","Every work of art can carry a message.");
  N(14,"KH2-14","پیشوندهای منفی‌ساز","pishvand-hā-ye manfi-sāz","negative-forming prefixes","گروه اسمی — grammar term","پیشوندهای منفی‌ساز معنای واژه را تغییر می‌دهند.","Pishvand-hā-ye manfi-sāz ma'nā-ye vāzhe rā taghyir midahand.","Negative-forming prefixes change a word's meaning.",[8,12,14]);
  N(20,"FA2-20","اصطلاح‌های فارسی","estelāh-hā-ye fārsi","Persian expressions and idioms","گروه اسمی — noun phrase","اصطلاح‌های فارسی در گفتگوهای روزمره به کار می‌روند.","Estelāh-hā-ye fārsi dar goftogu-hā-ye ruzmare be kār miravand.","Persian expressions are used in everyday conversations.");
+ N(8,"FA2-08","گروهی","goruhi","group; in a group","صفت — adjective","مسافران گروهی از موزه بازدید کردند.","Mosāferān goruhi az muze bāzdid kardand.","The travellers visited the museum as a group.");
+ N(9,"FA2-09","کمدی","komedi","comedy","اسم — noun","کمدی یکی از گونه‌های فیلم است.","Komedi yeki az gone-hā-ye film ast.","Comedy is one film genre.");
+ N(10,"FA2-10","هنرمندان","honarmandān","artists","اسم — plural noun","هنرمندان آثار خود را در نمایشگاه عرضه کردند.","Honarmandān āsār-e khod rā dar namāyeshgāh arze kardand.","The artists presented their works at the exhibition.");
  window.TERM2_DATA.push(...rows);
 })();
