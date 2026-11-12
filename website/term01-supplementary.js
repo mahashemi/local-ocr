@@ -79,6 +79,23 @@
 [16,"SH1-16","شنا","shenā","swimming","noun","شنا برای سلامتی مفید است.","Shenā barāye salāmati mofid ast.","Swimming is good for health."],
 [17,"SH1-17","کلاس هنری","kelās-e honari","art class","noun phrase","خواهرم در کلاس هنری شرکت می‌کند.","Khāharam dar kelās-e honari sherkat mikonad.","My sister attends an art class."],
 [20,"SH1-20","شیمی‌دان","shimi-dān","chemist","noun","این شیمی‌دان در دانشگاه کار می‌کند.","In shimi-dān dar dāneshgāh kār mikonad.","This chemist works at the university."]
+,
+[13,"SH1-13","مهمانی رفتن","mehmāni raftan","to go to a party or gathering","verb","امشب به خانهٔ دوستم مهمانی می‌روم.","Emshab be khāne-ye dustam mehmāni miravam.","Tonight I am going to my friend's gathering."],
+[13,"SH1-13","ورزش کردن","varzesh kardan","to exercise; to do sports","verb","من هر روز ورزش می‌کنم.","Man har ruz varzesh mikonam.","I exercise every day."],
+[13,"SH1-13","بازی کردن","bāzi kardan","to play","verb","کودکان در پارک بازی می‌کنند.","Kudakān dar pārk bāzi mikonand.","Children play in the park."],
+[16,"SH1-16","بدنسازی","badan-sāzi","bodybuilding; strength training","noun","او سه روز در هفته بدنسازی می‌کند.","U se ruz dar hafte badan-sāzi mikonad.","He does strength training three days a week."],
+[16,"SH1-16","گرافیک","gerāfik","graphic design; graphics","noun","او در رشتهٔ گرافیک درس می‌خواند.","U dar reshte-ye gerāfik dars mikhānad.","She studies graphic design."],
+[17,"SH1-17","ازدواج","ezdevāj","marriage","noun","ازدواج مسئولیت‌های تازه‌ای دارد.","Ezdevāj mas'uliyat-hā-ye tāze'i dārad.","Marriage brings new responsibilities."],
+[17,"SH1-17","باشگاه رفتن","bāshgāh raftan","to go to the gym or club","verb","من عصرها به باشگاه می‌روم.","Man asrhā be bāshgāh miravam.","I go to the gym in the evenings."],
+[18,"SH1-18","اتاق گرفتن","otāq gereftan","to get or book a room","verb","برای دو شب در هتل اتاق گرفتیم.","Barāye do shab dar hotel otāq gereftim.","We booked a room at the hotel for two nights."],
+[18,"SH1-18","گردش کردن","gardesh kardan","to go sightseeing; to stroll","verb","در شهر قدیمی گردش کردیم.","Dar shahr-e qadimi gardesh kardim.","We went sightseeing in the old city."],
+[18,"SH1-18","رستوران","restorān","restaurant","noun","امشب در یک رستوران محلی غذا می‌خوریم.","Emshab dar yek restorān-e mahalli ghazā mikhorim.","Tonight we are eating at a local restaurant."],
+[19,"SH1-19","حرم حضرت امام رضا","haram-e Hazrat-e Emām Rezā","the shrine of Imam Reza","noun phrase","زائران به حرم حضرت امام رضا می‌روند.","Zā'erān be haram-e Hazrat-e Emām Rezā miravand.","Pilgrims visit the shrine of Imam Reza."],
+[19,"SH1-19","آرامگاه","ārāmgāh","tomb; mausoleum","noun","آرامگاه شاعر در شیراز است.","Ārāmgāh-e shā'er dar Shirāz ast.","The poet's tomb is in Shiraz."],
+[19,"SH1-19","بازار قدیمی تبریز","bāzār-e qadimi-ye Tabriz","the old bazaar of Tabriz","noun phrase","بازار قدیمی تبریز بسیار دیدنی است.","Bāzār-e qadimi-ye Tabriz besyār didani ast.","The old bazaar of Tabriz is very beautiful to visit."],
+[20,"SH1-20","به دنیا آمدن","be donyā āmadan","to be born","verb","او در سال ۱۳۷۰ به دنیا آمد.","U dar sāl-e 1370 be donyā āmad.","He was born in 1991."],
+[20,"SH1-20","بزرگ شدن","bozorg shodan","to grow up","verb","او در یک شهر کوچک بزرگ شد.","U dar yek shahr-e kuchak bozorg shod.","She grew up in a small city."],
+[20,"SH1-20","تحصیل کردن","tahsil kardan","to study; to pursue education","verb","او در دانشگاه تحصیل می‌کند.","U dar dāneshgāh tahsil mikonad.","He studies at university."]
 ];
  const additions=rows.map(([unit,source,fa,tr,en,pos,faEx,trEx,enEx])=>({unit,source,fa,tr,en,pos:pos==="noun"?"اسم — noun":pos==="noun phrase"?"ترکیب اسمی — noun phrase":pos==="adjective"?"صفت — adjective":pos==="adjective/adverb"?"صفت/قید — adjective/adverb":pos==="noun/preposition"?"اسم/حرف اضافه — noun/preposition":pos==="time expression"?"قید زمان — time expression":"فعل مرکب — compound verb",ex:[faEx,trEx,enEx]}));
  const norm=s=>String(s||"").replace(/[\u200c\sـ]/g,"");
