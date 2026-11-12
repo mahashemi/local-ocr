@@ -97,7 +97,7 @@
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const seen=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
  const additions=[];
- for(const x of rows){const k=norm(x.fa),prior=seen.get(k);if(prior){prior.sources=Array.from(new Set([...(prior.sources||[prior.source]).filter(Boolean),x.source].filter(Boolean)));}else{x.sources=[x.source];additions.push(x);seen.set(k,x)}}
+ for(const x of rows){const k=norm(x.fa),prior=seen.get(k);if(prior){prior.sources=Array.from(new Set([...(prior.sources||[prior.source]).filter(Boolean),x.source].filter(Boolean)));prior.units=Array.from(new Set([...(prior.units||[prior.unit]),x.unit]));}else{x.sources=[x.source];x.units=[x.unit];additions.push(x);seen.set(k,x)}}
  window.TERM3_DATA=(window.TERM3_DATA||[]).concat(additions);
  window.TERM03_SOURCE_AUDIT_ADDITIONS=additions.length;
 })();
