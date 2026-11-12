@@ -794,7 +794,7 @@
  // FA3-07 / KH3-07: Islamic economics, inheritance, budgeting and the farmer's treasure story
  const N7=(unit,source,fa,tr,en,exFa,exTr,exEn)=>N(unit,source,fa,tr,en,"اسم — ism (noun)",exFa,exTr,exEn);
  N7(7,"FA3-07","اقتصاد","eqtesād","economy; economics","اقتصاد هر کشور به تولید و مصرف وابسته است.","Eqtesād-e har keshvar be tolid va masraf vābaste ast.","A country's economy depends on production and consumption.");
- N7(7,"FA3-07","ارث","ers","inheritance","پس از فوت پدربزرگ، اموال او به وارثانش رسید.","Pas az فوت-e pedarbozorg, amvāl-e u be vāresānash resid.","After the grandfather's death, his property passed to his heirs.");
+ N7(7,"FA3-07","ارث","ers","inheritance","پس از فوت پدربزرگ، اموال او به وارثانش رسید.","Pas az fot-e pedarbozorg, amvāl-e u be vāresānash resid.","After the grandfather's death, his property passed to his heirs.");
  N7(7,"FA3-07","شریک","sharik","partner; associate","پریسا می‌تواند با یک سرمایه‌گذار شریک شود.","Parisā mitavānad bā yek sarmāye-gozār sharik shavad.","Parisa can become a partner with an investor.");
  N7(7,"FA3-07","فقر","faqr","poverty","کاهش فقر یکی از هدف‌های اقتصاد اسلامی است.","Kāhesh-e faqr yeki az hadaf-hā-ye eqtesād-e Eslāmi ast.","Reducing poverty is one goal of Islamic economics.");
  N7(7,"FA3-07","درآمد","daramad","income; earnings","درآمد ماهانهٔ خانواده باید با مخارج آن هماهنگ باشد.","Daramad-e māhāne-ye khānevāde bā makhārej-e ān hamāhang bāshad.","A family's monthly income should match its expenses.");
