@@ -1342,9 +1342,9 @@ function essays(){
  const topic=saved.topic||"main";
  const topics=[["main",item.topic],["alternate",item.alternate]];
  v.innerHTML=`<section class="writing-wrap">
- <div class="no-print"><div class="mut">Term 03 · Newestan · Ten writing units</div><h2>Essay writing workshop</h2>
+ <div class="no-print"><div class="mut">Term 0${activeTerm||3} · Term-linked writing practice</div><h2>Essay writing workshop</h2>
  <p>Work through the chapter skill, plan your response, write a complete draft and print a clean practice sheet. Your work is saved only in this browser.</p>
- <div class="row"><label for="essayChapter">Newestan chapter</label><select id="essayChapter">${data.chapters.map(x=>`<option value="${x.ch}" ${x.ch===essayCh?"selected":""}>Chapter ${x.ch} · ${esc(x.title)}</option>`).join("")}</select></div></div>
+ <div class="row"><label for="essayChapter">Writing unit</label><select id="essayChapter">${data.chapters.map(x=>`<option value="${x.ch}" ${x.ch===essayCh?"selected":""}>Chapter ${x.ch} · ${esc(x.title)}</option>`).join("")}</select></div></div>
  <div class="panel"><div class="mut">CHAPTER ${item.ch} · ${esc(item.title)}</div><h2 class="fa-block">${esc(item.topic)}</h2>
  <label for="essayTopic">Choose your writing prompt</label><select id="essayTopic">${topics.map(([k,t])=>`<option value="${k}" ${topic===k?"selected":""}>${esc(t)}</option>`).join("")}</select>
  <p class="mut">Main question to answer: ${esc(item.question)}</p>
