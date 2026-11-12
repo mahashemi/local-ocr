@@ -45,7 +45,7 @@ assert((global.TERM2_KHULASA||[]).length===20, 'Expected 20 Term 02 Khulasa summ
 for (const x of global.TERM2_KHULASA||[]) assert(x.lines.length>=5&&x.lines.length<=6, 'Khulasa must have 5–6 lines: '+x.ch);
 assert((global.TERM2_WRITING?.chapters||[]).length===20, 'Expected 20 writing prompts');
 assert((global.TERM2_SPEECHES||[]).length===20, 'Expected 20 speech prompts');
-for (const x of global.TERM2_SPEECHES||[]) assert(/\d{1,3}[:：]\d{1,3}/.test(x.verse||''), 'Missing explicit Quran reference in speech '+x.ch);
+for (const x of global.TERM2_SPEECHES||[]) assert(/[0-9۰-۹٠-٩]{1,3}[:：][0-9۰-۹٠-٩]{1,3}/.test(x.verse||''), 'Missing explicit Quran reference in speech '+x.ch);
 const kh = fs.readFileSync(path.join(root,'website/term02-khulasa.js'),'utf8');
 assert(kh.includes('[[QURAN:5:32|'), 'Missing explicit source Quran reference marker (5:32)');
 const index = fs.readFileSync(path.join(root,'website/index.html'),'utf8');
