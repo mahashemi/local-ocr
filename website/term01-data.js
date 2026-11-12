@@ -30,7 +30,7 @@ window.TERM1_DATA = [
 {unit:5,source:"F1-05",fa:"عمو",tr:"amu",en:"paternal uncle (father's brother)",pos:"اسم — esm (noun)",ex:["عمویم امروز به خانهٔ ما می‌آید.","Amuyam emruz be khāne-ye mā miāyad.","My paternal uncle is coming to our house today."]},
 {unit:5,source:"F1-05",fa:"خاله",tr:"khāle",en:"maternal aunt (mother's sister)",pos:"اسم — esm (noun)",ex:["خاله‌ام معلم است.","Khāle-am mo'allem ast.","My maternal aunt is a teacher."]},
 {unit:5,source:"F1-05",fa:"دایی",tr:"dāyi",en:"maternal uncle (mother's brother)",pos:"اسم — esm (noun)",ex:["داییِ من در مشهد کار می‌کند.","Dāyi-ye man dar Mashhad kār mikonad.","My maternal uncle works in Mashhad."]},
-{unit:5,source:"F1-05",fa:"متأهل",tr:"mota'ahhel",en:"married",pos:"صفت — sifat (adjective)",ex:["خواهرم متأهل است.","Khāharam mota'ahhel ast.","My sister is married."]}
+{unit:5,source:"F1-05",fa:"متأهل",tr:"mota'ahhel",en:"married",pos:"صفت — sifat (adjective)",ex:["خواهرم متأهل است.","Khāharam mota'ahhel ast.","My sister is married."]},
 {unit:6,source:"F1-06",fa:"اتاق خواب",tr:"otāq-e khāb",en:"bedroom",pos:"اسم — noun",ex:["اتاق خواب ما پنجرهٔ بزرگی دارد.","Otāq-e khāb-e mā panjare-ye bozorgi dārad.","Our bedroom has a large window."]},
 {unit:6,source:"F1-06",fa:"پذیرایی",tr:"pazirāyi",en:"living room; reception room",pos:"اسم — noun",ex:["تلویزیون بزرگ در پذیرایی است.","Televizion-e bozorg dar pazirāyi ast.","The large television is in the living room."]},
 {unit:6,source:"F1-06",fa:"آشپزخانه",tr:"āshpazkhāne",en:"kitchen",pos:"اسم — noun",ex:["آشپزخانه کنار حیاط است.","Āshpazkhāne kenār-e hayāt ast.","The kitchen is beside the courtyard."]},
