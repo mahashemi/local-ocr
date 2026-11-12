@@ -1039,8 +1039,6 @@
 
 
  // Further FA3-01 / KH3-01 expressions and text-analysis vocabulary
- N(1,"FA3-01","قدم رنجه کردن","qadam ranje kardan","to honour someone with a visit (polite idiom)","میزبان گفت: «لطفاً فردا قدم رنجه کنید».","Mizbān goft: lotfan fardā qadam ranje konid.","The host said, 'Please honour us with a visit tomorrow.'");
- N(1,"FA3-01","خدمت رسیدن","khedmat residan","to call on someone respectfully; to visit (honorific)","برای عرض ادب خدمت استاد رسیدم.","Barāye arz-e adab khedmat-e ostād residam.","I went to pay my respects to the teacher.");
  N(1,"KH3-01","سنجیده","sanjide","considered; measured; thoughtful","پاسخ سنجیده از شدت اختلاف کم می‌کند.","Pāskh-e sanjide az sheddat-e ekhtelāf kam mikonad.","A thoughtful response reduces the intensity of a disagreement.");
  N(1,"KH3-01","حکیم","hakim","wise person; sage","لقمان حکیم در داستان نماد دانایی است.","Loqmān-e Hakim dar dāstān nemād-e dānāyi ast.","Luqman the Wise is a symbol of wisdom in the story.");
  N(1,"KH3-01","وراج","varrāj","very talkative; chatterbox","فرد وراج گاهی بدون توجه به دیگران زیاد صحبت می‌کند.","Fard-e varrāj gāhi bedun-e tavajjoh be digarān ziyād sohbat mikonad.","A chatterbox sometimes talks a lot without considering others.");
