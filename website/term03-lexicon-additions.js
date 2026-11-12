@@ -1185,6 +1185,11 @@
  V(20,"SH3-10","زندانی کردن","zendāni kardan","to imprison; to lock up","راهزن مردم را در اتاق زندانی کرد.","Rāhzan mardom rā dar otāq zendāni kard.","The bandit imprisoned the people in a room.","زندانی کردن","زندانی نکن","زندانی کردن انسان بی‌گناه ظلم است.","Zendāni kardan-e ensān-e bi-gonāh zolm ast.","Imprisoning an innocent person is unjust.","هیچ‌کس را بی‌دلیل زندانی نکن.","Hich-kas rā bi-dalil zendāni nakon.","Do not imprison anyone without reason.");
  V(20,"SH3-10","بی‌رمق شدن","bi-ramq shodan","to become weak; to lose energy","مسافر پس از راه طولانی بی‌رمق شد.","Mosāfer pas az rāh-e tulāni bi-ramq shod.","The traveller became exhausted after the long journey.","بی‌رمق شدن","—","بی‌رمق شدن پس از بیماری طبیعی است.","Bi-ramq shodan pas az bimāri tabi'i ast.","Losing strength after an illness is natural.","—","—","—","فعل لازم و تغییر حالت است؛ امر مستقیم ندارد.");
 
+
+ N(1,"FA3-01","کم و بیش","kam-o-bish","more or less; approximately","حاضران کم و بیش با موضوع آشنا بودند.","Hāzerān kam-o-bish bā mozū' āshenā budand.","The attendees were more or less familiar with the topic.","قید — qeyd (adverb)");
+ N(1,"FA3-01","دفعه","daf'e","time; occasion; instance","این دفعه با دقت بیشتری گوش کن.","In daf'e bā deqqat-e bishtari gush kon.","Listen more carefully this time.","اسم — ism (noun)");
+ N(1,"FA3-01","توهین","tohin","insult; offence","توهین به دیگران با گفت‌وگوی محترمانه سازگار نیست.","Tohin be digarān bā goft-o-gu-ye mohtaramāne sāzegār nist.","Insulting others is incompatible with respectful conversation.","اسم — ism (noun)");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
