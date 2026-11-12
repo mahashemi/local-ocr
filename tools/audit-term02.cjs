@@ -29,7 +29,8 @@ for (const x of rows) {
     verbs++;
     assert(x.ms && x.amr && Array.isArray(x.m) && x.m.length===3, 'Missing masdar data for '+x.fa);
     assert(x.amr==='—' || (Array.isArray(x.a) && x.a.length===3), 'Missing imperative example for '+x.fa);
-    if (x.amr==='—') assert(!!x.note, 'No-amr verb needs an explanatory note for '+x.fa);\n    if (x.amr!=='—') {
+    if (x.amr==='—') assert(!!x.note, 'No-amr verb needs an explanatory note for '+x.fa);
+    if (x.amr!=='—') {
       assert(x.m[0].includes(x.ms), 'Masdar example mismatch for '+x.fa);
       assert(x.a[0].includes(x.amr), 'Imperative example mismatch for '+x.fa);
       assert(x.ms!==x.amr, 'Masdar and imperative collide for '+x.fa);
