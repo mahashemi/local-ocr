@@ -49,7 +49,7 @@ def test_newestan_fourth_chapter_is_mapped_to_unit_two_consistently() -> None:
     data = read("term03-data.js")
     audit = read("term03-source-audit.js")
     assert 'N3-04 · social relationships' in data
-    assert re.search(r'2:\\{base:"FA3-02[^\\n]*N3-04', data)
+    assert re.search(r'2:\{base:"FA3-02[^\\n]*N3-04', data)
     mappings = re.findall(r'(?:N|V|A)\((\d+),"N3-04"', audit)
     assert mappings and set(mappings) == {"2"}
 
