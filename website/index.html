@@ -82,6 +82,41 @@ main{max-width:1120px;padding:28px 24px 16px}.site-head{margin-bottom:26px}.bran
 .semantic-pending>summary{font-size:12px;color:var(--ac)}
 @media(max-width:760px){.semantic-grid{grid-template-columns:1fr}.semantic-context{grid-column:auto}.verb-table-wrap{max-height:68vh}.verb-table{min-width:720px}}
 
+
+/* Refined Persian reading, summary and composition surfaces */
+.khulasa-lines li{background:color-mix(in srgb,var(--card) 92%,var(--soft));border-inline-start:3px solid color-mix(in srgb,var(--gold) 72%,var(--ac));border-bottom:0;padding:12px 14px}
+.writing-wrap h2{font-size:clamp(24px,2.7vw,30px);line-height:1.5}
+.writing-wrap h3{font-size:clamp(19px,2.1vw,23px);line-height:1.6}
+.writing-wrap .panel{box-shadow:0 10px 28px rgba(0,0,0,.055);border-color:color-mix(in srgb,var(--bd) 78%,var(--gold))}
+.writing-wrap .panel p{font-size:16px;line-height:1.9}
+.writing-wrap .hint-list li{font-size:17px;line-height:1.9;margin:9px 0}
+.writing-wrap label{font-size:15px;font-weight:700}
+.writing-wrap select{font-size:16px;padding:11px 13px;border-radius:10px}
+.writing-wrap textarea{min-height:180px;padding:15px 17px;border-radius:14px}
+.writing-wrap .timerline span{padding:8px 11px;border-radius:9px;background:var(--soft);border:1px solid var(--bd)}
+@media(max-width:600px){.writing-wrap h2{font-size:23px}.writing-wrap h3{font-size:19px}.writing-wrap .panel p{font-size:15px}.writing-wrap .hint-list li{font-size:16px}.writing-wrap textarea{min-height:160px}.khulasa-lines{font-size:19px;line-height:2.2}}
+
+.khulasa-lines{direction:rtl;text-align:justify;font-size:clamp(20px,2.05vw,24px);line-height:2.25;padding:8px 30px 8px 8px;color:var(--fg)}
+.khulasa-lines li{padding:9px 10px;margin:7px 0;border-bottom:1px solid color-mix(in srgb,var(--bd) 72%,transparent);border-radius:10px}
+.khulasa-lines li::marker{color:var(--gold);font-weight:800}
+.writing-wrap .fa-block{font-size:clamp(23px,2.5vw,29px);line-height:2.05;letter-spacing:0;color:var(--ink)}
+.writing-wrap .panel{padding:clamp(18px,2.5vw,28px);border-radius:18px}
+.writing-wrap textarea,.writing-wrap .essay-draft{font-size:18px;line-height:2.1}
+.writing-wrap .panel>h3{font-size:19px;color:var(--ink);margin-top:2px}
+.kh-word{display:inline;border:0;border-bottom:1px dotted var(--ac);border-radius:0;padding:0 1px;background:transparent;color:var(--ac);font:inherit;cursor:pointer}
+.kh-word:hover,.kh-word:focus-visible{background:var(--soft);border-bottom-style:solid;outline:none}
+.kh-word-modal[hidden]{display:none!important}
+.kh-word-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:18px;background:rgba(12,24,20,.58);backdrop-filter:blur(5px)}
+.kh-word-dialog{width:min(520px,100%);max-height:min(88vh,760px);overflow:auto;background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:22px;padding:22px;box-shadow:0 24px 80px rgba(0,0,0,.28);position:relative}
+.kh-word-close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;font-size:22px;padding:0;display:grid;place-items:center}
+.kh-word-card{margin-top:26px;padding:26px 18px;border:1px solid var(--bd);border-radius:17px;background:linear-gradient(145deg,var(--card),var(--soft));text-align:center;min-height:160px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.kh-word-card .fa{font-size:clamp(30px,6vw,40px);line-height:1.8}
+.kh-word-card .tr{font-size:18px}
+.kh-word-card .meaning{font-size:19px;font-weight:650}
+.kh-word-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:14px}
+.quran-ref{color:var(--ac);font-weight:750;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+@media(max-width:600px){.khulasa-lines{font-size:20px;padding-right:20px}.khulasa-lines li{padding:8px 4px}.kh-word-dialog{padding:17px}.writing-wrap .panel{padding:17px}}
+
 </style></head>
 <body><main>
 <div class="bismillah-wrap"><img src="bismillah_text_green.png" alt="بسم الله الرحمن الرحیم" class="bismillah-image"><div class="bismillah-rule"><span>✦</span></div></div>
@@ -91,6 +126,10 @@ main{max-width:1120px;padding:28px 24px 16px}.site-head{margin-bottom:26px}.bran
 <footer class="site-footer"><div class="footer-ornament">✦</div><p>Developed by <strong>Seyed Mohammad Abuzar Al-Hashemi</strong></p><p class="fa-footer" lang="fa">به امید آن‌که این کوشش ناچیز، چراغی در راه دانش و خدمتی کوچک در مسیر تعجیل فرج مولایمان، حضرت صاحب‌الزمان (عج)، باشد.</p><p class="footer-en">May this humble effort serve the pursuit of knowledge and be accepted as a small contribution toward the hastening of the reappearance of Imam al-Zamān (عج).</p></footer>
 </main>
 <script src="term01-data.js"></script>
+<script src="term02-data.js"></script>
+<script src="term02-lexicon-additions.js"></script>
+<script src="term02-khulasa.js"></script>
+<script src="term02-writing.js"></script>
 <script src="term01-chapters-11-15.js"></script>
 <script src="term01-chapters-16-20.js"></script>
 <script src="term01-supplementary.js"></script>
@@ -893,7 +932,7 @@ const BOOK2=[
 [20,"دانه","Dāne","grain, seed; also a counting word"]
 ];
 // Hierarchy: BOOKS[bookNumber] = built-in rows. Add built-in rows for books 1 and 3 here.
-const BOOKS={1:(window.TERM1_DATA||[]),2:BOOK2,3:(window.TERM3_DATA||[])};
+const BOOKS={1:(window.TERM1_DATA||[]),2:BOOK2.concat(window.TERM2_DATA||[]),3:(window.TERM3_DATA||[])};
 const KEY="persian_custom_v2",DKEY="persian_done_v1";
 // EXTRA: extra sentences (and notes) keyed by Persian word: [sentence fa, translit, english, note]. Row’s own sentence wins.
 const EXTRA={
@@ -1088,7 +1127,7 @@ const EXTRA={
 };
 const semanticFor=fa=>(window.PERSIAN_SEMANTICS||{})[fa]||null;
 const toItem=(a,b)=>{
- if(!Array.isArray(a)){const x=a.ex||[];return{...a,bk:b,ch:a.unit,units:Array.isArray(a.units)&&a.units.length?a.units:[a.unit],xf:x[0]||"",xt:x[1]||"",xe:x[2]||"",nt:a.note||"",sem:semanticFor(a.fa),id:b+"|"+a.unit+"|"+a.source+"|"+a.fa}}
+ if(!Array.isArray(a)){const x=a.ex||[];return{...a,bk:b,ch:a.unit,units:Array.isArray(a.units)&&a.units.length?a.units:[a.unit],sources:Array.isArray(a.sources)&&a.sources.length?a.sources:[a.source].filter(Boolean),xf:x[0]||"",xt:x[1]||"",xe:x[2]||"",nt:a.note||"",sem:semanticFor(a.fa),id:b+"|"+a.unit+"|"+a.source+"|"+a.fa}}
  const x=EXTRA[a[1]]||[];return{bk:b,ch:a[0],fa:a[1],tr:a[2],en:a[3],xf:a[4]||x[0]||"",xt:a[5]||x[1]||"",xe:a[6]||x[2]||"",nt:x[3]||"",sem:semanticFor(a[1]),id:b+"|"+a[0]+"|"+a[1]};
 };
 let custom=[],done=new Set(),hideDone=false;
@@ -1097,7 +1136,22 @@ try{custom=JSON.parse(localStorage.getItem(KEY)||"null")||JSON.parse(localStorag
 try{done=new Set(JSON.parse(localStorage.getItem(DKEY)||"[]"))}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(custom))}catch(e){}if(window.updateGlobalStats)window.updateGlobalStats()};
 const saveDone=()=>{try{localStorage.setItem(DKEY,JSON.stringify([...done]))}catch(e){}if(window.updateGlobalStats)window.updateGlobalStats()};
-const all=()=>Object.entries(BOOKS).flatMap(([b,rows])=>rows.map(r=>toItem(r,Number(b)))).concat(custom.map(r=>toItem(r.slice(1),Number(r[0]))));
+const all=()=>{
+ const raw=Object.entries(BOOKS).flatMap(([b,rows])=>rows.map(r=>toItem(r,Number(b))));
+ const out=[],term2=new Map();
+ raw.forEach(item=>{
+  if(item.bk!==2){out.push(item);return}
+  const key=fold(item.fa);
+  if(!key){out.push(item);return}
+  const prior=term2.get(key);
+  if(!prior){item.sources=[...new Set(item.sources||[item.source].filter(Boolean))];term2.set(key,item);out.push(item);return}
+  prior.sources=[...new Set([...(prior.sources||[prior.source]),...(item.sources||[item.source])].filter(Boolean))];
+  prior.units=[...new Set([...(prior.units||[prior.ch]),...(item.units||[item.ch])])].sort((a,b)=>a-b);
+  if(!prior.source&&item.source)prior.source=item.source;
+  for(const field of ['tr','en','xf','xt','xe','nt','pos','ms','amr','m','a','note'])if((prior[field]===undefined||prior[field]===null||prior[field]==='')&&item[field]!==undefined)prior[field]=item[field];
+ });
+ return out.concat(custom.map(r=>toItem(r.slice(1),Number(r[0]))));
+};
 const $=s=>document.querySelector(s), v=$("#v"), chSel=$("#ch"), bkSel=$("#bk");
 let tab="portal",activeTerm=null,idx=0,flip=false,deck=[],quiz=null;
 
@@ -1258,16 +1312,54 @@ function add(){
 
 
 function khulasa(){
- const rows=window.TERM3_KHULASA||[],chosen=Number(chSel.value)||20;
+ const term=activeTerm===2?2:3;
+ const rows=term===2?(window.TERM2_KHULASA||[]):(window.TERM3_KHULASA||[]);
+ if(!rows.length){v.innerHTML='<section class="writing-wrap"><h2>خلاصه‌نویسی</h2><p>خلاصه‌های این ترم در حال آماده‌سازی از روی متن اصلی درس‌ها هستند.</p></section>';return}
+ const chosen=Number(chSel.value)||(term===2?1:20);
  const item=rows.find(x=>x.ch===chosen)||rows[rows.length-1];
  const opts=rows.slice().sort((a,b)=>b.ch-a.ch).map(x=>'<option value="'+x.ch+'" '+(x.ch===chosen?'selected':'')+'>فصل '+x.ch+' · '+esc(x.title)+'</option>').join('');
- const lines=item.lines.map(x=>'<li>'+esc(x)+'</li>').join('');
- v.innerHTML='<section class="writing-wrap"><div class="mut">TERM 03 · FARSI UMOOMI · KHULASA NAVEESI</div><h2>خلاصه‌نویسی فصل‌های فارسی عمومی</h2><p>هر خلاصه، نکتهٔ اصلی درس را در پنج جملهٔ کوتاه جمع‌بندی می‌کند. پس از مطالعه، متن را با زبان خودتان بازنویسی کنید و از مثال‌های کتاب کمک بگیرید.</p><div class="panel no-print"><label for="khulasaChapter">انتخاب فصل</label><select id="khulasaChapter">'+opts+'</select></div><article class="panel"><div class="mut">FA3 · CHAPTER '+item.ch+'</div><h2 class="fa-block">'+esc(item.title)+'</h2><ol class="khulasa-lines">'+lines+'</ol><div class="chapter-summary"><b>روش تمرین</b>کتاب را ببندید و همین پنج نکته را بدون نگاه کردن، با واژه‌های خودتان در یک بند پیوسته بنویسید. سپس متن خود را با خلاصه مقایسه کنید.</div></article><div class="panel no-print"><h3>خلاصهٔ خودم</h3><textarea id="myKhulasa" rows="8" placeholder="خلاصه را با زبان خودتان بنویسید. این متن در این مرورگر ذخیره می‌شود."></textarea><div class="row"><button class="pri" id="printKhulasa">چاپ برگهٔ خلاصه</button></div><p class="mut">یادداشت‌ها فقط در همین مرورگر ذخیره می‌شوند.</p></div></section>';
- const key="term03-khulasa-drafts-v1",saved=(()=>{try{return JSON.parse(localStorage.getItem(key)||"{}")}catch(e){return {}}})();
- const area=$("#myKhulasa");area.value=saved[chosen]||"";
+ const words=all().filter(i=>i.fa&&i.en).sort((a,b)=>(a.bk===term?0:1)-(b.bk===term?0:1));
+ const cleanKh=t=>fold(String(t).replace(/[،؛؟۔,.;:!?«»()[\\]{}…]/g,''));
+ const wordIndex=new Map();
+ words.forEach(i=>{const k=cleanKh(i.fa);if(k&&!wordIndex.has(k))wordIndex.set(k,i)});
+ const maxWords=Math.max(1,...words.map(i=>String(i.fa).trim().split(/\s+/).length));
+ function linkLine(line){
+  const parts=String(line).split(/(\s+)/),out=[];
+  for(let p=0;p<parts.length;){
+   if(/^\s+$/.test(parts[p])){out.push(esc(parts[p++]));continue}
+   let found=null,span=1;
+   for(let n=Math.min(maxWords,Math.floor((parts.length-p+1)/2));n>=1;n--){
+    const end=p+(n*2-1);if(end>parts.length)continue;
+    const raw=parts.slice(p,end).join(''),key=cleanKh(raw);
+    if(key&&wordIndex.has(key)){found=wordIndex.get(key);span=n*2-1;break}
+   }
+   if(found){const raw=parts.slice(p,p+span).join('');out.push('<button type="button" class="kh-word" data-word-id="'+esc(found.id)+'" aria-label="Open vocabulary card: '+esc(found.fa)+'">'+esc(raw)+'</button>');p+=span}
+   else out.push(esc(parts[p++]));
+  }
+  return out.join('');
+ }
+ function linkQuran(line){
+  return String(line).replace(/\[\[QURAN:(\d{1,3}):(\d{1,3})\|([^\]]+)\]\]/g,(m,sura,aya,label)=>{
+   const sn=Number(sura),an=Number(aya);if(sn<1||sn>114||an<1)return esc(label);
+   return '<a class="quran-ref" href="https://mahashemi.github.io/QuranMemorizer/#/surah/'+sn+'/ayah/'+an+'" target="_blank" rel="noopener noreferrer">'+esc(label)+'</a>';
+  });
+ }
+ const lines=item.lines.map(x=>'<li>'+linkQuran(linkLine(x))+'</li>').join('');
+ v.innerHTML='<section class="writing-wrap"><div class="mut">TERM 0'+term+' · FARSI UMOOMI · KHULASA NAVEESI</div><h2>خلاصه‌نویسی فصل‌های فارسی عمومی</h2><p>واژه‌های زیرخط‌دار را انتخاب کنید تا کارت واژگان سه‌زبانه باز شود. برای هر واژه می‌توانید کارت را برگردانید و مثال را ببینید.</p><div class="panel no-print"><label for="khulasaChapter">انتخاب فصل</label><select id="khulasaChapter">'+opts+'</select></div><article class="panel"><div class="mut">FA'+term+' · CHAPTER '+item.ch+'</div><h2 class="fa-block">'+esc(item.title)+'</h2><ol class="khulasa-lines">'+lines+'</ol><div class="chapter-summary"><b>روش تمرین</b>کتاب را ببندید و نکته‌های اصلی را با زبان خودتان در یک بند پیوسته بازنویسی کنید.</div></article><div class="panel no-print"><h3>خلاصهٔ خودم</h3><textarea id="myKhulasa" rows="8" placeholder="خلاصه را با زبان خودتان بنویسید. این متن در این مرورگر ذخیره می‌شود."></textarea><div class="row"><button class="pri" id="printKhulasa">چاپ برگهٔ خلاصه</button></div><p class="mut">یادداشت‌ها فقط در همین مرورگر ذخیره می‌شوند.</p></div><div id="khWordModal" class="kh-word-modal" hidden aria-modal="true" role="dialog" aria-label="Vocabulary flashcard"><div class="kh-word-dialog"><button type="button" class="kh-word-close" data-kh-close aria-label="Close">×</button><div class="mut">TRILINGUAL VOCABULARY CARD</div><div id="khWordCard" class="kh-word-card"></div><div class="kh-word-actions"><button type="button" class="pri" id="khWordFlip">Flip card</button><button type="button" data-kh-close>Close</button></div></div></div></section>';
+ const key='term0'+term+'-khulasa-drafts-v1',saved=(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch(e){return {}}})();
+ const area=$('#myKhulasa');area.value=saved[chosen]||'';
  area.oninput=()=>{saved[chosen]=area.value;try{localStorage.setItem(key,JSON.stringify(saved))}catch(e){}};
- $("#khulasaChapter").onchange=e=>{chSel.value=e.target.value;khulasa()};
- $("#printKhulasa").onclick=printCurrent;
+ $('#khulasaChapter').onchange=e=>{chSel.value=e.target.value;khulasa()};
+ $('#printKhulasa').onclick=printCurrent;
+ const modal=$('#khWordModal'),card=$('#khWordCard');let current=null,revealed=false;
+ const close=()=>{modal.hidden=true;document.body.style.overflow=''};
+ const renderCard=()=>{if(!current)return;card.innerHTML=revealed?'<div class="fa">'+esc(current.fa)+'</div><div class="tr">'+esc(current.tr)+'</div><div class="meaning">'+esc(current.en)+'</div>'+(current.xf?'<div class="ex"><div class="fa">'+esc(current.xf)+'</div><div class="tr">'+esc(current.xt||'')+'</div><div>'+esc(current.xe||'')+'</div></div>':''):'<div class="fa">'+esc(current.fa)+'</div><div class="mut">Tap Flip to reveal the meaning and example.</div>';$('#khWordFlip').textContent=revealed?'Show front':'Flip · Reveal meaning'};
+ v.querySelectorAll('[data-word-id]').forEach(btn=>btn.onclick=()=>{current=words.find(i=>i.id===btn.dataset.wordId)||null;if(!current)return;revealed=false;renderCard();modal.hidden=false;document.body.style.overflow='hidden'});
+ modal.onclick=e=>{if(e.target===modal||e.target.closest('[data-kh-close]'))close()};
+ $('#khWordFlip').onclick=()=>{revealed=!revealed;renderCard()};
+ const oldEsc=window.__khulasaEscHandler;if(oldEsc)document.removeEventListener('keydown',oldEsc);
+ window.__khulasaEscHandler=e=>{if(e.key==='Escape'&&!modal.hidden)close()};
+ document.addEventListener('keydown',window.__khulasaEscHandler);
 }
 const essayStoreKey="term03-writing-essays-v1", speechStoreKey="term03-writing-speeches-v1";
 function readLocal(key){try{return JSON.parse(localStorage.getItem(key)||"{}")}catch(e){return {}}}
@@ -1275,13 +1367,13 @@ function writeLocal(key,obj){try{localStorage.setItem(key,JSON.stringify(obj))}c
 let essayDrafts=readLocal(essayStoreKey),speechDrafts=readLocal(speechStoreKey),essayCh=1,speechCh=20;
 function printCurrent(){document.body.classList.add("printing");window.onafterprint=()=>document.body.classList.remove("printing");window.print()}
 function essays(){
- const data=window.TERM3_WRITING, item=data.chapters.find(x=>x.ch===essayCh)||data.chapters[0], saved=essayDrafts[essayCh]||{};
+ const data=activeTerm===2?(window.TERM2_WRITING||window.TERM3_WRITING):window.TERM3_WRITING, item=data.chapters.find(x=>x.ch===essayCh)||data.chapters[0], saved=essayDrafts[activeTerm===2?'t2-'+essayCh:essayCh]||{};
  const topic=saved.topic||"main";
  const topics=[["main",item.topic],["alternate",item.alternate]];
  v.innerHTML=`<section class="writing-wrap">
- <div class="no-print"><div class="mut">Term 03 · Newestan · Ten writing units</div><h2>Essay writing workshop</h2>
+ <div class="no-print"><div class="mut">Term 0${activeTerm||3} · Term-linked writing practice</div><h2>Essay writing workshop</h2>
  <p>Work through the chapter skill, plan your response, write a complete draft and print a clean practice sheet. Your work is saved only in this browser.</p>
- <div class="row"><label for="essayChapter">Newestan chapter</label><select id="essayChapter">${data.chapters.map(x=>`<option value="${x.ch}" ${x.ch===essayCh?"selected":""}>Chapter ${x.ch} · ${esc(x.title)}</option>`).join("")}</select></div></div>
+ <div class="row"><label for="essayChapter">Writing unit</label><select id="essayChapter">${data.chapters.map(x=>`<option value="${x.ch}" ${x.ch===essayCh?"selected":""}>Chapter ${x.ch} · ${esc(x.title)}</option>`).join("")}</select></div></div>
  <div class="panel"><div class="mut">CHAPTER ${item.ch} · ${esc(item.title)}</div><h2 class="fa-block">${esc(item.topic)}</h2>
  <label for="essayTopic">Choose your writing prompt</label><select id="essayTopic">${topics.map(([k,t])=>`<option value="${k}" ${topic===k?"selected":""}>${esc(t)}</option>`).join("")}</select>
  <p class="mut">Main question to answer: ${esc(item.question)}</p>
@@ -1319,19 +1411,20 @@ function essays(){
  <div class="row no-print"><button class="pri" id="printEssay">Print this essay sheet</button><button id="clearEssay">Clear this chapter's draft</button></div>
  </section>`;
  $("#essayChapter").onchange=e=>{essayCh=Number(e.target.value);essays()};
- const saveEssay=()=>{const obj={...(essayDrafts[essayCh]||{}),topic:$("#essayTopic").value,checks:[...v.querySelectorAll("[data-check]:checked")].map(x=>x.dataset.check)};v.querySelectorAll("[data-field]").forEach(el=>obj[el.dataset.field]=el.value);essayDrafts[essayCh]=obj;writeLocal(essayStoreKey,essayDrafts);$("#essaySaved").textContent="Saved locally · "+new Date().toLocaleTimeString()};
+ const saveEssay=()=>{const draftKey=activeTerm===2?'t2-'+essayCh:essayCh;const obj={...(essayDrafts[draftKey]||{}),topic:$("#essayTopic").value,checks:[...v.querySelectorAll("[data-check]:checked")].map(x=>x.dataset.check)};v.querySelectorAll("[data-field]").forEach(el=>obj[el.dataset.field]=el.value);essayDrafts[draftKey]=obj;writeLocal(essayStoreKey,essayDrafts);$("#essaySaved").textContent="Saved locally · "+new Date().toLocaleTimeString()};
  $("#essayTopic").onchange=saveEssay;
  v.querySelectorAll("[data-field],[data-check]").forEach(el=>{el.addEventListener("input",saveEssay);el.addEventListener("change",saveEssay)});
  $("#printEssay").onclick=printCurrent;
- $("#clearEssay").onclick=()=>{if(confirm("Clear this chapter's saved essay draft?")){delete essayDrafts[essayCh];writeLocal(essayStoreKey,essayDrafts);essays()}};
+ $("#clearEssay").onclick=()=>{if(confirm("Clear this chapter's saved essay draft?")){delete essayDrafts[activeTerm===2?'t2-'+essayCh:essayCh];writeLocal(essayStoreKey,essayDrafts);essays()}};
 }
+function quranVerseLink(verse){const digits=String(verse||'').replace(/[۰-۹]/g,x=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(x)).replace(/[٠-٩]/g,x=>'٠١٢٣٤٥٦٧٨٩'.indexOf(x));const m=digits.match(/(\d{1,3})\s*[:：]\s*(\d{1,3})/);return m?'<a class="quran-ref" href="https://mahashemi.github.io/QuranMemorizer/#/surah/'+Number(m[1])+'/ayah/'+Number(m[2])+'" target="_blank" rel="noopener noreferrer">'+esc(verse)+'</a>':esc(verse)}
 function speeches(){
- const item=(window.TERM3_SPEECHES||[]).find(x=>x.ch===speechCh)||window.TERM3_SPEECHES[0],saved=speechDrafts[speechCh]||{};
+ const speechRows=activeTerm===2?(window.TERM2_SPEECHES||[]):(window.TERM3_SPEECHES||[]), speechKey=activeTerm===2?'t2-'+speechCh:speechCh, item=speechRows.find(x=>x.ch===speechCh)||speechRows[0],saved=speechDrafts[speechKey]||{};
  v.innerHTML=`<section class="writing-wrap">
- <div class="no-print"><div class="mut">Term 03 · Farsi Umumi · 20 chapter-linked talks</div><h2>سخنرانی پنج‌دقیقه‌ای / Five-minute Sukhanrani</h2><p>Prepare one short talk connected to each FA chapter. Use the verse as the central anchor, then explain its meaning and connect it to the chapter and daily life. Do not merely recite the verse.</p>
- <div class="row"><label for="speechChapter">Farsi Umumi chapter</label><select id="speechChapter">${window.TERM3_SPEECHES.map(x=>`<option value="${x.ch}" ${x.ch===speechCh?"selected":""}>FA ${String(x.ch).padStart(2,"0")} · ${esc(x.title)}</option>`).join("")}</select></div></div>
+ <div class="no-print"><div class="mut">Term 0${activeTerm||3} · Farsi Umumi · chapter-linked talks</div><h2>سخنرانی پنج‌دقیقه‌ای / Five-minute Sukhanrani</h2><p>Prepare one short talk connected to each FA chapter. Use the verse as the central anchor, then explain its meaning and connect it to the chapter and daily life. Do not merely recite the verse.</p>
+ <div class="row"><label for="speechChapter">Farsi Umumi chapter</label><select id="speechChapter">${speechRows.map(x=>`<option value="${x.ch}" ${x.ch===speechCh?"selected":""}>FA ${String(x.ch).padStart(2,"0")} · ${esc(x.title)}</option>`).join("")}</select></div></div>
  <div class="panel"><div class="mut">FA CHAPTER ${item.ch}</div><h2 class="fa-block">${esc(item.title)}</h2><h3 class="fa-block">${esc(item.topic)}</h3>
- <div class="fa-block" style="font-size:24px;margin:14px 0">${esc(item.arabic)}</div><b>Qur'anic anchor: ${esc(item.verse)}</b><p class="fa-block">${esc(item.meaning)}</p>
+ <div class="fa-block" style="font-size:24px;margin:14px 0">${esc(item.arabic)}</div><b>Qur'anic anchor: ${quranVerseLink(item.verse)}</b><p class="fa-block">${esc(item.meaning)}</p>
  <p class="mut">Check the verse in your own Mushaf/tafsir before quoting it publicly; this page gives the reference and a concise working translation.</p>
  </div>
  <div class="panel"><h3>Five-minute structure</h3><div class="timerline"><span>Opening · 30 sec</span><span>Verse and explanation · 60 sec</span><span>Main points · 2 min 30 sec</span><span>Application · 45 sec</span><span>Conclusion · 15 sec</span></div>
@@ -1347,10 +1440,10 @@ function speeches(){
  <div class="row no-print"><button class="pri" id="printSpeech">Print this speech plan</button><button id="clearSpeech">Clear this chapter's notes</button></div>
  </section>`;
  $("#speechChapter").onchange=e=>{speechCh=Number(e.target.value);speeches()};
- const saveSpeech=()=>{const obj={};v.querySelectorAll("[data-speech]").forEach(el=>obj[el.dataset.speech]=el.value);speechDrafts[speechCh]=obj;writeLocal(speechStoreKey,speechDrafts);$("#speechSaved").textContent="Saved locally · "+new Date().toLocaleTimeString()};
+ const saveSpeech=()=>{const obj={};v.querySelectorAll("[data-speech]").forEach(el=>obj[el.dataset.speech]=el.value);speechDrafts[speechKey]=obj;writeLocal(speechStoreKey,speechDrafts);$("#speechSaved").textContent="Saved locally · "+new Date().toLocaleTimeString()};
  v.querySelectorAll("[data-speech]").forEach(el=>el.addEventListener("input",saveSpeech));
  $("#printSpeech").onclick=printCurrent;
- $("#clearSpeech").onclick=()=>{if(confirm("Clear this chapter's speech notes?")){delete speechDrafts[speechCh];writeLocal(speechStoreKey,speechDrafts);speeches()}};
+ $("#clearSpeech").onclick=()=>{if(confirm("Clear this chapter's speech notes?")){delete speechDrafts[speechKey];writeLocal(speechStoreKey,speechDrafts);speeches()}};
 }
 
 function render(){if(tab==="portal"){v.innerHTML="";return}({home,cards,quiz:startQuiz,khulasa,essays,speeches})[tab]()}

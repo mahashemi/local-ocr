@@ -8,6 +8,7 @@ on:
       - "website/**"
       - ".github/workflows/deploy-pages.yml"
       - "tools/audit-term03.cjs"
+      - "tools/audit-term02.cjs"
   workflow_dispatch:
 
 permissions:
@@ -55,6 +56,14 @@ jobs:
           }
           console.log('Validated ' + rows.length + ' Term 01 entries.');
           NODE
+
+      - name: Validate Term 02 curriculum JavaScript
+        run: |
+          node --check website/term02-data.js
+          node --check website/term02-lexicon-additions.js
+          node --check website/term02-khulasa.js
+          node --check website/term02-writing.js
+          node tools/audit-term02.cjs
 
       - name: Validate Term 03 data JavaScript
         run: node --check website/term03-data.js
