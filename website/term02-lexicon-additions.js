@@ -85,5 +85,15 @@
  N(7,"SH2-07","یخبندان","yakhbandān","frost; icy conditions","اسم — noun","یخبندان جاده را لغزنده کرد.","Yakhbandān jāde rā laghzande kard.","Icy conditions made the road slippery.");
  N(9,"SH2-09","صدابردار","sedā-bardār","sound recordist","اسم — noun","صدابردار صدای گفتگو را ضبط کرد.","Sedā-bardār sedā-ye goftogu rā zabt kard.","The sound recordist recorded the conversation.");
  N(10,"SH2-10","قلمکاری","qalamkāri","block printing; traditional textile art","اسم — noun","قلمکاری از هنرهای سنتی ایران است.","Qalamkāri az honar-hā-ye sonnati-ye Irān ast.","Qalamkari is a traditional Iranian art.");
+ N(13,"KH2-13","حواس‌پرتی","havās-parti","distraction","اسم — noun","حواس‌پرتی هنگام رانندگی خطرناک است.","Havās-parti hengām-e rāndegi khatarnāk ast.","Distraction while driving is dangerous.");
+ N(14,"KH2-14","عذرخواهی","ozrkhāhi","apology","اسم — noun","عذرخواهی صادقانه می‌تواند اختلاف را کم کند.","Ozrkhāhi-ye sādeqāne mitavānad ekhtelāf rā kam konad.","A sincere apology can reduce disagreement.",[8,12,14]);
+ N(15,"KH2-15","زمان‌بندی","zamān-bandi","scheduling; timing","اسم — noun","زمان‌بندی درست مراحل آشپزی را آسان می‌کند.","Zamān-bandi-ye dorost marāhel-e āshpazi rā āsān mikonad.","Good timing makes cooking steps easier.",[15,16]);
+ N(16,"KH2-16","غلات","qallāt","grains; cereals","اسم — noun","غلات بخشی از غذای فضانوردان است.","Qallāt bakhshi az ghazā-ye fazānavardān ast.","Grains are part of astronauts' food.",[15,16]);
+ N(17,"KH2-17","منوی کودکان","menu-ye kudakān","children's menu","گروه اسمی — noun phrase","این هتل منوی کودکان دارد.","In hotel menu-ye kudakān dārad.","This hotel has a children's menu.");
+ N(18,"KH2-18","کارشناس","kārshenās","expert; specialist","اسم — noun","کارشناس روش مطالعه را توضیح داد.","Kārshenās ravesh-e motāle'e rā tozih dād.","The expert explained the study method.");
+ N(19,"KH2-19","باورکردنی","bāvar-kardani","believable; credible","صفت — adjective","این توضیح باورکردنی نیست.","In tozih bāvar-kardani nist.","This explanation is not believable.");
+ N(20,"KH2-20","فیل و فنجان","fil-o fenjān","a mismatch; a very unequal pairing","اصطلاح — idiom","این دو موضوع مثل فیل و فنجان به هم نمی‌آیند.","In do mozoo' mesl-e fil-o fenjān be ham nemiāyand.","These two things do not go together at all.");
+ N(8,"N2-04","فواره","favvāre","fountain","اسم — noun","فواره در وسط باغ قرار دارد.","Favvāre dar vasat-e bāgh qarār dārad.","The fountain is in the middle of the garden.",[8,12]);
+ N(7,"SH2-07","هشدار","hoshdār","warning","اسم — noun","هشدار هواشناسی را جدی بگیرید.","Hoshdār-e havāshenāsi rā jeddi begirid.","Take the weather warning seriously.");
  window.TERM2_DATA.push(...rows);
 })();
