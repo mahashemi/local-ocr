@@ -84,6 +84,18 @@ main{max-width:1120px;padding:28px 24px 16px}.site-head{margin-bottom:26px}.bran
 
 
 /* Refined Persian reading, summary and composition surfaces */
+.khulasa-lines li{background:color-mix(in srgb,var(--card) 92%,var(--soft));border-inline-start:3px solid color-mix(in srgb,var(--gold) 72%,var(--ac));border-bottom:0;padding:12px 14px}
+.writing-wrap h2{font-size:clamp(24px,2.7vw,30px);line-height:1.5}
+.writing-wrap h3{font-size:clamp(19px,2.1vw,23px);line-height:1.6}
+.writing-wrap .panel{box-shadow:0 10px 28px rgba(0,0,0,.055);border-color:color-mix(in srgb,var(--bd) 78%,var(--gold))}
+.writing-wrap .panel p{font-size:16px;line-height:1.9}
+.writing-wrap .hint-list li{font-size:17px;line-height:1.9;margin:9px 0}
+.writing-wrap label{font-size:15px;font-weight:700}
+.writing-wrap select{font-size:16px;padding:11px 13px;border-radius:10px}
+.writing-wrap textarea{min-height:180px;padding:15px 17px;border-radius:14px}
+.writing-wrap .timerline span{padding:8px 11px;border-radius:9px;background:var(--soft);border:1px solid var(--bd)}
+@media(max-width:600px){.writing-wrap h2{font-size:23px}.writing-wrap h3{font-size:19px}.writing-wrap .panel p{font-size:15px}.writing-wrap .hint-list li{font-size:16px}.writing-wrap textarea{min-height:160px}.khulasa-lines{font-size:19px;line-height:2.2}}
+
 .khulasa-lines{direction:rtl;text-align:justify;font-size:clamp(20px,2.05vw,24px);line-height:2.25;padding:8px 30px 8px 8px;color:var(--fg)}
 .khulasa-lines li{padding:9px 10px;margin:7px 0;border-bottom:1px solid color-mix(in srgb,var(--bd) 72%,transparent);border-radius:10px}
 .khulasa-lines li::marker{color:var(--gold);font-weight:800}
@@ -1394,7 +1406,7 @@ function quranVerseLink(verse){const digits=String(verse||'').replace(/[۰-۹]/g
 function speeches(){
  const speechRows=activeTerm===2?(window.TERM2_SPEECHES||[]):(window.TERM3_SPEECHES||[]), speechKey=activeTerm===2?'t2-'+speechCh:speechCh, item=speechRows.find(x=>x.ch===speechCh)||speechRows[0],saved=speechDrafts[speechKey]||{};
  v.innerHTML=`<section class="writing-wrap">
- <div class="no-print"><div class="mut">Term 03 · Farsi Umumi · 20 chapter-linked talks</div><h2>سخنرانی پنج‌دقیقه‌ای / Five-minute Sukhanrani</h2><p>Prepare one short talk connected to each FA chapter. Use the verse as the central anchor, then explain its meaning and connect it to the chapter and daily life. Do not merely recite the verse.</p>
+ <div class="no-print"><div class="mut">Term 0${activeTerm||3} · Farsi Umumi · chapter-linked talks</div><h2>سخنرانی پنج‌دقیقه‌ای / Five-minute Sukhanrani</h2><p>Prepare one short talk connected to each FA chapter. Use the verse as the central anchor, then explain its meaning and connect it to the chapter and daily life. Do not merely recite the verse.</p>
  <div class="row"><label for="speechChapter">Farsi Umumi chapter</label><select id="speechChapter">${speechRows.map(x=>`<option value="${x.ch}" ${x.ch===speechCh?"selected":""}>FA ${String(x.ch).padStart(2,"0")} · ${esc(x.title)}</option>`).join("")}</select></div></div>
  <div class="panel"><div class="mut">FA CHAPTER ${item.ch}</div><h2 class="fa-block">${esc(item.title)}</h2><h3 class="fa-block">${esc(item.topic)}</h3>
  <div class="fa-block" style="font-size:24px;margin:14px 0">${esc(item.arabic)}</div><b>Qur'anic anchor: ${quranVerseLink(item.verse)}</b><p class="fa-block">${esc(item.meaning)}</p>
