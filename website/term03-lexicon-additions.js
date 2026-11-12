@@ -2,7 +2,12 @@
    Entries are source-tagged; repeated vocabulary across books is stored once. */
 (()=>{
  const rows=[];
- const N=(unit,source,fa,tr,en,pos="اسم — ism (noun)",exFa,exTr,exEn,note="")=>rows.push({unit,source,fa,tr,en,pos,ex:[exFa,exTr,exEn],...(note?{note}:{})});
+ const N=(unit,source,fa,tr,en,...args)=>{
+  const hasPos=/^(اسم|صفت|گروه|عبارت|عنوان|قید|ساخت|اصطلاح)/.test(args[0]||"");
+  const pos=hasPos?args[0]:"اسم — ism (noun)";
+  const exFa=args[hasPos?1:0],exTr=args[hasPos?2:1],exEn=args[hasPos?3:2],note=args[hasPos?4:3]||"";
+  rows.push({unit,source,fa,tr,en,pos,ex:[exFa,exTr,exEn],...(note?{note}:{})});
+ };
  const V=(unit,source,fa,tr,en,xf,xt,xe,ms,amr,mf,mt,me,af,at,ae,note="")=>rows.push({unit,source,fa,tr,en,pos:"فعل مرکب — compound verb",ms,amr,ex:[xf,xt,xe],m:[mf,mt,me],a:amr&&amr!=="—"?[af,at,ae]:null,...(note?{note}:{})});
  const A=(unit,source,fa,tr,en,exFa,exTr,exEn)=>N(unit,source,fa,tr,en,"صفت — sifat (adjective)",exFa,exTr,exEn);
  // FA: polite requests, personal qualities, decisions and regret
