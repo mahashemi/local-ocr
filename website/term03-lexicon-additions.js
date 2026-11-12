@@ -410,9 +410,9 @@
  N(19,"FA3-19","دلتنگی","deltangi","longing; missing someone or somewhere","دلتنگی برای خانه در سفر طبیعی است.","Deltangi barāye khāne dar safar tabi'i ast.","Missing home while travelling is natural.");
  N(19,"FA3-19","غریبه","gharibe","stranger; unfamiliar person","مردم با گردشگر غریبه با مهربانی رفتار کردند.","Mardom bā gardeshgar-e gharibe bā mehrabāni raftār kardand.","People treated the unfamiliar tourist kindly.");
  N(19,"FA3-19","افطار","eftār","iftar; meal at the end of the daily fast","دوستان ایرانی او را برای افطار دعوت کردند.","Dustān-e Irāni u rā barāye eftār da'vat kardand.","His Iranian friends invited him to iftar.");
- N(19,"FA3-19","چادر","chā dor","tent","دوچرخه‌سوار شب را در چادر گذراند.","Docharkhe-savār shab rā dar chā dor gozarānd.","The cyclist spent the night in a tent.");
+ N(19,"FA3-19","چادر","chāder","tent","دوچرخه‌سوار شب را در چادر گذراند.","Docharkhe-savār shab rā dar chā dor gozarānd.","The cyclist spent the night in a tent.");
  N(19,"FA3-19","حفظ آثار","hefz-e āsār","preservation of heritage","حفظ آثار تاریخی باید در کنار توسعهٔ شهر در نظر گرفته شود.","Hefz-e āsār-e tarikhi bāyad dar kenār-e towse'e-ye shahr dar nazar gerefte shavad.","Heritage preservation should be considered alongside urban development.");
- N(19,"KH3-19","باستان‌شناس","bāstā n-shenās","archaeologist","باستان‌شناس از آثار تاریخی و محل کشف آن‌ها پژوهش می‌کند.","Bāstā n-shenās az āsār-e tarikhi va mahal-e kashf-e ānhā pazhuhesh mikonad.","An archaeologist researches historical objects and where they were found.");
+ N(19,"KH3-19","باستان‌شناس","bāstān-shenās","archaeologist","باستان‌شناس از آثار تاریخی و محل کشف آن‌ها پژوهش می‌کند.","Bāstā n-shenās az āsār-e tarikhi va mahal-e kashf-e ānhā pazhuhesh mikonad.","An archaeologist researches historical objects and where they were found.");
  N(19,"KH3-19","حکاکی‌شده","hakkāki-shode","engraved; carved","نام پادشاه روی سنگ حکاکی‌شده بود.","Nām-e pādeshāh ru-ye sang hakkāki-shode bud.","The king's name was engraved on the stone.");
  N(19,"KH3-19","دامنه","dāmane","slope; foothills","روستا در دامنهٔ کوه قرار دارد.","Rustā dar dāmane-ye kuh qarār dārad.","The village lies on the mountain slope.");
  N(19,"KH3-19","آرامگاه","ārāmgāh","mausoleum; tomb","آرامگاه شاعر در این شهر قرار دارد.","Ārāmgāh-e shā'er dar in shahr qarār dārad.","The poet's mausoleum is in this city.");
