@@ -49,7 +49,8 @@
   else if(tab==="quiz")startQuiz();
   else if(tab==="khulasa")khulasa();
   else if(tab==="essays")essays();
-  else if(tab==="speeches")speeches();\n  else if(tab==="verbs")window.verbTreasury();
+  else if(tab==="speeches")speeches();
+  else if(tab==="verbs")window.verbTreasury();
   updateStats();
  };
  window.gotoTab=function(t){
