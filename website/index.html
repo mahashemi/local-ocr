@@ -1127,7 +1127,7 @@ const EXTRA={
 };
 const semanticFor=fa=>(window.PERSIAN_SEMANTICS||{})[fa]||null;
 const toItem=(a,b)=>{
- if(!Array.isArray(a)){const x=a.ex||[];return{...a,bk:b,ch:a.unit,units:Array.isArray(a.units)&&a.units.length?a.units:[a.unit],xf:x[0]||"",xt:x[1]||"",xe:x[2]||"",nt:a.note||"",sem:semanticFor(a.fa),id:b+"|"+a.unit+"|"+a.source+"|"+a.fa}}
+ if(!Array.isArray(a)){const x=a.ex||[];return{...a,bk:b,ch:a.unit,units:Array.isArray(a.units)&&a.units.length?a.units:[a.unit],sources:Array.isArray(a.sources)&&a.sources.length?a.sources:[a.source].filter(Boolean),xf:x[0]||"",xt:x[1]||"",xe:x[2]||"",nt:a.note||"",sem:semanticFor(a.fa),id:b+"|"+a.unit+"|"+a.source+"|"+a.fa}}
  const x=EXTRA[a[1]]||[];return{bk:b,ch:a[0],fa:a[1],tr:a[2],en:a[3],xf:a[4]||x[0]||"",xt:a[5]||x[1]||"",xe:a[6]||x[2]||"",nt:x[3]||"",sem:semanticFor(a[1]),id:b+"|"+a[0]+"|"+a[1]};
 };
 let custom=[],done=new Set(),hideDone=false;
@@ -1136,7 +1136,21 @@ try{custom=JSON.parse(localStorage.getItem(KEY)||"null")||JSON.parse(localStorag
 try{done=new Set(JSON.parse(localStorage.getItem(DKEY)||"[]"))}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(custom))}catch(e){}if(window.updateGlobalStats)window.updateGlobalStats()};
 const saveDone=()=>{try{localStorage.setItem(DKEY,JSON.stringify([...done]))}catch(e){}if(window.updateGlobalStats)window.updateGlobalStats()};
-const all=()=>Object.entries(BOOKS).flatMap(([b,rows])=>rows.map(r=>toItem(r,Number(b)))).concat(custom.map(r=>toItem(r.slice(1),Number(r[0]))));
+const all=()=>{
+ const raw=Object.entries(BOOKS).flatMap(([b,rows])=>rows.map(r=>toItem(r,Number(b))));
+ const out=[],term2=new Map();
+ raw.forEach(item=>{
+  if(item.bk!==2){out.push(item);return}
+  const key=fold(item.fa);
+  if(!key){out.push(item);return}
+  const prior=term2.get(key);
+  if(!prior){item.sources=[...new Set(item.sources||[item.source].filter(Boolean))];term2.set(key,item);out.push(item);return}
+  prior.sources=[...new Set([...(prior.sources||[prior.source]),...(item.sources||[item.source])].filter(Boolean))];
+  prior.units=[...new Set([...(prior.units||[prior.ch]),...(item.units||[item.ch])])].sort((a,b)=>a-b);
+  if(!prior.nt&&item.nt)prior.nt=item.nt;
+ });
+ return out.concat(custom.map(r=>toItem(r.slice(1),Number(r[0]))));
+};
 const $=s=>document.querySelector(s), v=$("#v"), chSel=$("#ch"), bkSel=$("#bk");
 let tab="portal",activeTerm=null,idx=0,flip=false,deck=[],quiz=null;
 
