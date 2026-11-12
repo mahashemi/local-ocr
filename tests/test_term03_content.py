@@ -80,13 +80,13 @@ def test_core_verb_masdar_and_imperative_are_not_identical() -> None:
 
 
 def _normalise_persian_form(value: str) -> str:
-    return re.sub(r"[\\u200c\\sـ،؛.()]", "", value)
+    return re.sub(r"[\u200c\sـ،؛.()]", "", value)
 
 
 def test_all_curated_verb_examples_match_their_masdar_and_imperative() -> None:
     for filename in ("term03-lexicon-additions.js", "term03-matn-verbs.js"):
         source = read(filename)
-        calls = re.findall(r"\\bV\\((.*?)\\);", source)
+        calls = re.findall(r"\bV\((.*?)\);", source)
         for call in calls:
             args = re.findall(r'"([^"]*)"', call)
             if len(args) < 15:
@@ -98,10 +98,10 @@ def test_all_curated_verb_examples_match_their_masdar_and_imperative() -> None:
             if imperative != "—":
                 assert _normalise_persian_form(imperative) in _normalise_persian_form(imperative_example), (filename, args[1], imperative)
             else:
-                assert re.search(r"[\\u0600-\\u06ff]", args[-1]), (filename, args[1], "missing no-imperative explanation")
+                assert re.search(r"[\u0600-\u06ff]", args[-1]), (filename, args[1], "missing no-imperative explanation")
 
     source = read("term03-source-audit.js")
-    for call in re.findall(r"\\bV\\((.*?)\\);", source):
+    for call in re.findall(r"\bV\((.*?)\);", source):
         args = re.findall(r'"([^"]*)"', call)
         if len(args) < 12:
             continue
@@ -111,4 +111,4 @@ def test_all_curated_verb_examples_match_their_masdar_and_imperative() -> None:
         if imperative != "—":
             assert _normalise_persian_form(imperative) in _normalise_persian_form(args[9]), ("term03-source-audit.js", args[1], imperative)
         else:
-            assert re.search(r"[\\u0600-\\u06ff]", args[-1]), ("term03-source-audit.js", args[1], "missing no-imperative explanation")
+            assert re.search(r"[\u0600-\u06ff]", args[-1]), ("term03-source-audit.js", args[1], "missing no-imperative explanation")
