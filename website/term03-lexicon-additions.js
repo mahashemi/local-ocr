@@ -3,7 +3,7 @@
 (()=>{
  const rows=[];
  const N=(unit,source,fa,tr,en,pos="اسم — ism (noun)",exFa,exTr,exEn,note="")=>rows.push({unit,source,fa,tr,en,pos,ex:[exFa,exTr,exEn],...(note?{note}:{})});
- const V=(unit,source,fa,tr,en,mf,mt,me,ms,amr,af,at,ae,note="")=>rows.push({unit,source,fa,tr,en,pos:"فعل مرکب — compound verb",ms,amr,m:[mf,mt,me],a:[af,at,ae],...(note?{note}:{})});
+ const V=(unit,source,fa,tr,en,xf,xt,xe,ms,amr,mf,mt,me,af,at,ae,note="")=>rows.push({unit,source,fa,tr,en,pos:"فعل مرکب — compound verb",ms,amr,ex:[xf,xt,xe],m:[mf,mt,me],a:[af,at,ae],...(note?{note}:{})});
  const A=(unit,source,fa,tr,en,exFa,exTr,exEn)=>N(unit,source,fa,tr,en,"صفت — sifat (adjective)",exFa,exTr,exEn);
  // FA: polite requests, personal qualities, decisions and regret
  N(1,"FA3-01","تشریف بردن","tashrif bordan","to leave (honorific)","مهمانان پس از پایان جلسه تشریف بردند.","Mehmānān pas az pāyān-e jalase tashrif bordand.","The guests left after the meeting.");
@@ -297,7 +297,7 @@
  V(12,"SH3-05","ذخیره شدن","zakhire shodan","to be stored","انرژی اضافی در بدن ذخیره می‌شود.","Enerji-ye ezāfi dar badan zakhire mishavad.","Extra energy is stored in the body.","ذخیره شدن","—","ذخیره شدن چربی در بدن به عوامل مختلف بستگی دارد.","Zakhire shodan-e charbi dar badan be avāmel-e mokhtalef bastegi dārad.","Fat storage in the body depends on various factors.","—","—","—","مجهول/لازم است؛ امر مستقیم ندارد.");
  V(12,"SH3-05","تفت دادن","taft dādan","to sauté; to fry lightly","پیاز را کمی تفت دادم.","Piyāz rā kami taft dādam.","I sautéed the onion briefly.","تفت دادن","تفت بده","تفت دادن سبزی زمان زیادی نمی‌برد.","Taft dādan-e sabzi zamān-e ziyādi nemibarad.","Sautéing vegetables does not take long.","پیاز را کمی تفت بده.","Piyāz rā kami taft bedeh.","Sauté the onion briefly.");
  V(12,"SH3-05","سرخ کردن","sorkh kardan","to fry","مادر سیب‌زمینی را سرخ کرد.","Mādar sib-zamini rā sorkh kard.","Mother fried the potatoes.","سرخ کردن","سرخ کن","سرخ کردن با روغن زیاد سالم نیست.","Sorkh kardan bā rowghan-e ziyād sālem nist.","Frying with lots of oil is unhealthy.","سیب‌زمینی را با روغن کم سرخ کن.","Sib-zamini rā bā rowghan-e kam sorkh kon.","Fry the potatoes with little oil.");
- V(12,"SH3-05","پوست کندن","pust kandan","to peel","پوست کندن میوه آسان است.","Pust kandan-e mive āsān ast.","Peeling fruit is easy.","پوست کندن","پوست بکن","سیب را پوست بکن.","Sib rā pust bokon.","Peel the apple.");
+ V(12,"SH3-05","پوست کندن","pust kandan","to peel","او سیب را پوست کند.","U sib rā pust kand.","He peeled the apple.","پوست کندن","پوست بکن","پوست کندن میوه آسان است.","Pust kandan-e mive āsān ast.","Peeling fruit is easy.","سیب را پوست بکن.","Sib rā pust bokon.","Peel the apple.");
  V(12,"SH3-05","رنده کردن","rande kardan","to grate","هویج را رنده کردم.","Havij rā rande kardam.","I grated the carrot.","رنده کردن","رنده کن","رنده کردن هویج برای سالاد آسان است.","Rande kardan-e havij barāye sālād āsān ast.","Grating carrots for salad is easy.","هویج را رنده کن.","Havij rā rande kon.","Grate the carrot.");
  V(12,"SH3-05","پرورش دادن","parvaresh dādan","to raise; to cultivate","کشاورزان سبزیجات پرورش می‌دهند.","Keshāvarzān sabzijāt parvaresh midahand.","Farmers grow vegetables.","پرورش دادن","پرورش بده","پرورش دادن گیاهان به آب نیاز دارد.","Parvaresh dādan-e giyāhān be āb niyāz dārad.","Growing plants requires water.","گیاهان را با دقت پرورش بده.","Giyāhān rā bā deqqat parvaresh bedeh.","Cultivate the plants carefully.");
  N(12,"SH3-05","ماهی‌تابه","māhi-tābe","frying pan","ماهی‌تابه روی اجاق است.","Māhi-tābe ru-ye ojāq ast.","The frying pan is on the stove.");
