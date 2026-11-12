@@ -77,3 +77,38 @@ def test_core_verb_masdar_and_imperative_are_not_identical() -> None:
         masdar == "—" or imperative == "—" or masdar.replace("‌", "") != imperative.replace("‌", "")
         for masdar, imperative in forms
     )
+
+
+def _normalise_persian_form(value: str) -> str:
+    return re.sub(r"[\\u200c\\sـ،؛.()]", "", value)
+
+
+def test_all_curated_verb_examples_match_their_masdar_and_imperative() -> None:
+    for filename in ("term03-lexicon-additions.js", "term03-matn-verbs.js"):
+        source = read(filename)
+        calls = re.findall(r"\\bV\\((.*?)\\);", source)
+        for call in calls:
+            args = re.findall(r'"([^"]*)"', call)
+            if len(args) < 15:
+                continue
+            masdar, imperative = args[7], args[8]
+            masdar_example, imperative_example = args[9], args[12]
+            if masdar != "—":
+                assert _normalise_persian_form(masdar) in _normalise_persian_form(masdar_example), (filename, args[1], masdar)
+            if imperative != "—":
+                assert _normalise_persian_form(imperative) in _normalise_persian_form(imperative_example), (filename, args[1], imperative)
+            else:
+                assert re.search(r"[\\u0600-\\u06ff]", args[-1]), (filename, args[1], "missing no-imperative explanation")
+
+    source = read("term03-source-audit.js")
+    for call in re.findall(r"\\bV\\((.*?)\\);", source):
+        args = re.findall(r'"([^"]*)"', call)
+        if len(args) < 12:
+            continue
+        masdar, imperative = args[4], args[5]
+        if masdar != "—":
+            assert _normalise_persian_form(masdar) in _normalise_persian_form(args[6]), ("term03-source-audit.js", args[1], masdar)
+        if imperative != "—":
+            assert _normalise_persian_form(imperative) in _normalise_persian_form(args[9]), ("term03-source-audit.js", args[1], imperative)
+        else:
+            assert re.search(r"[\\u0600-\\u06ff]", args[-1]), ("term03-source-audit.js", args[1], "missing no-imperative explanation")
