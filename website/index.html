@@ -1354,7 +1354,7 @@ function khulasa(){
  const close=()=>{modal.hidden=true;document.body.style.overflow=''};
  const renderCard=()=>{if(!current)return;card.innerHTML=revealed?'<div class="fa">'+esc(current.fa)+'</div><div class="tr">'+esc(current.tr)+'</div><div class="meaning">'+esc(current.en)+'</div>'+(current.xf?'<div class="ex"><div class="fa">'+esc(current.xf)+'</div><div class="tr">'+esc(current.xt||'')+'</div><div>'+esc(current.xe||'')+'</div></div>':''):'<div class="fa">'+esc(current.fa)+'</div><div class="mut">Tap Flip to reveal the meaning and example.</div>';$('#khWordFlip').textContent=revealed?'Show front':'Flip · Reveal meaning'};
  v.querySelectorAll('[data-word-id]').forEach(btn=>btn.onclick=()=>{current=words.find(i=>i.id===btn.dataset.wordId)||null;if(!current)return;revealed=false;renderCard();modal.hidden=false;document.body.style.overflow='hidden'});
- modal.addEventListener('click',e=>{if(e.target===modal||e.target.closest('[data-kh-close]'))close()});
+ modal.onclick=e=>{if(e.target===modal||e.target.closest('[data-kh-close]'))close()};
  $('#khWordFlip').onclick=()=>{revealed=!revealed;renderCard()};
  const oldEsc=window.__khulasaEscHandler;if(oldEsc)document.removeEventListener('keydown',oldEsc);
  window.__khulasaEscHandler=e=>{if(e.key==='Escape'&&!modal.hidden)close()};
