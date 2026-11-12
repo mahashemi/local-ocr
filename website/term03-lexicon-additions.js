@@ -1049,6 +1049,19 @@
  V(1,"FA3-01","قدم رنجه کردن","qadam ranje kardan","to honour someone with a visit (polite idiom)","میزبان از مهمانان خواست که قدم رنجه کنند.","Mizbān az mehmānān khāst ke qadam ranje konand.","The host asked the guests to honour them with a visit.","قدم رنجه کردن","قدم رنجه بفرمایید","قدم رنجه کردن مهمان باعث شادی میزبان می‌شود.","Qadam ranje kardan-e mehmān bā'es-e shādi-ye mizbān mishavad.","A guest's visit brings joy to the host.","لطفاً فردا قدم رنجه بفرمایید.","Lotfan fardā qadam ranje befarmāyid.","Please honour us with a visit tomorrow.");
  V(1,"FA3-01","خدمت رسیدن","khedmat residan","to call on someone respectfully; to visit (honorific)","برای عرض ادب خدمت استاد رسیدم.","Barāye arz-e adab khedmat-e ostād residam.","I went to pay my respects to the teacher.","خدمت رسیدن","خدمت برسید","خدمت رسیدن به استاد برای عرض ادب رسم محترمانه‌ای است.","Khedmat residan be ostād barāye arz-e adab rasm-e mohtaramāne'i ast.","Calling on a teacher to pay one's respects is a courteous custom.","اگر فرصت دارید، فردا خدمت برسید.","Agar forsat dārid, fardā khedmat beresid.","If you have time, please come and see us tomorrow.");
 
+
+ // N3-04: complete the visible first-page social-relationships vocabulary list.
+ // Canonical learning-unit mapping is Unit 02 (see TERM3_DATA unit map).
+ N(2,"N3-04","معتاد","mo'tād","addicted; an addicted person","اعتیاد می‌تواند به سلامت فرد و خانواده آسیب بزند.","E'tiyād mitavānad be salāmat-e fard va khānevāde āsib bezanad.","Addiction can harm the health of an individual and their family.","صفت / اسم — adjective / noun");
+ N(2,"N3-04","صرف غذا","sarf-e ghazā","eating a meal; mealtime","صرف غذا در کنار خانواده فرصت گفت‌وگو فراهم می‌کند.","Sarf-e ghazā dar kenār-e khānevāde forsat-e goft-o-gu farāham mikonad.","Eating together as a family creates an opportunity to talk.","گروه اسمی — noun phrase");
+ N(2,"N3-04","نظرخواهی","nazar-khāhi","asking for opinions; consultation","نظرخواهی از اعضای خانواده به تصمیم‌گیری بهتر کمک می‌کند.","Nazar-khāhi az a'zā-ye khānevāde be tasmim-giri-ye behtar komak mikonad.","Asking family members for their opinions helps with better decision-making.");
+ N(2,"N3-04","تأثیر","ta'sir","effect; influence","روابط اجتماعی سالم تأثیر مثبتی بر سلامت دارد.","Ravābet-e ejtemā'i-ye sālem ta'sir-e mosbati bar salāmat dārad.","Healthy social relationships have a positive effect on health.");
+ N(2,"N3-04","آسیب اجتماعی","āsib-e ejtemā'i","social harm; social problem","اعتیاد یکی از آسیب‌های اجتماعی است.","E'tiyād yeki az āsib-hā-ye ejtemā'i ast.","Addiction is one form of social harm.","گروه اسمی — noun phrase");
+ N(2,"N3-04","جوامع امروزی","javāme'-e emruzi","modern societies","شبکه‌های اجتماعی در جوامع امروزی نقش مهمی دارند.","Shabakehā-ye ejtemā'i dar javāme'-e emruzi naqsh-e mohemmi dārand.","Social networks play an important role in modern societies.","گروه اسمی — noun phrase");
+ N(2,"N3-04","شبکه‌های اجتماعی","shabakehā-ye ejtemā'i","social networks; social media","بسیاری از مردم هر روز از شبکه‌های اجتماعی استفاده می‌کنند.","Bisyāri az mardom har ruz az shabakehā-ye ejtemā'i estefāde mikonand.","Many people use social media every day.");
+ N(2,"N3-04","این‌گونه افراد","in-gune afrād","such people; people of this kind","این‌گونه افراد ممکن است به حمایت خانواده نیاز داشته باشند.","In-gune afrād momken ast be hemāyat-e khānevāde niyāz dāshte bāshand.","People in this situation may need family support.","گروه اسمی — noun phrase");
+ N(2,"N3-04","نیازهای جسمی","niyāzhā-ye jesmi","physical needs","کودکان به نیازهای جسمی و روحی خود توجه دارند.","Kudakān be niyāzhā-ye jesmi va ruhi-ye khod tavajjoh dārand.","Children have physical and emotional needs.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
