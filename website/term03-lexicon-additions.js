@@ -242,7 +242,7 @@
  N(3,"N3-07","برنامهٔ بلندمدت","barnāme-ye boland-moddat","long-term plan","تحصیل بخشی از برنامهٔ بلندمدت من است.","Tahsil bakhshi az barnāme-ye boland-moddat-e man ast.","Education is part of my long-term plan.");
  V(3,"N3-07","پای‌بند بودن","pāy-band budan","to adhere to; to remain committed","او به برنامهٔ خود پای‌بند است.","U be barnāme-ye khod pāy-band ast.","He sticks to his plan.","پای‌بند بودن","پای‌بند باش","پای‌بند بودن به قول اهمیت دارد.","Pāy-band budan be qowl ahammiyat dārad.","Keeping one's word matters.","به تصمیم خود پای‌بند باش.","Be tasmim-e khod pāy-band bāsh.","Stay committed to your decision.");
  N(15,"N3-08","مهمان‌نوازی","mehmān-navāzi","hospitality","مهمان‌نوازی از ویژگی‌های فرهنگ ایرانی است.","Mehmān-navāzi az vizhegi-hā-ye farhang-e Irāni ast.","Hospitality is a feature of Iranian culture.");
- N(15,"N3-08","خونگرم","khun-garm","warm-hearted; sociable","مردم این شهر خونگرم هستند.","Mardom-e in shahr khun-garm hastand.","The people of this city are warm-hearted.","صفت — sifat (adjective)");
+ N(15,"N3-08","خونگرم","khun-garm","warm-hearted; sociable","صفت — sifat (adjective)","مردم این شهر خونگرم هستند.","Mardom-e in shahr khun-garm hastand.","The people of this city are warm-hearted.");
  N(15,"N3-08","خانه‌تکانی","khāne-tekāni","spring cleaning","خانه‌تکانی پیش از نوروز انجام می‌شود.","Khāne-tekāni pish az Nowruz anjām mishavad.","Spring cleaning is done before Nowruz.");
  N(3,"N3-09","دانشگاه مجازی","dāneshgāh-e majāzi","virtual university","دانشگاه مجازی آموزش را از راه دور ارائه می‌دهد.","Dāneshgāh-e majāzi āmuzesh rā az rāh-e dur erā'e midahad.","A virtual university provides distance education.");
  V(3,"N3-09","ثبت‌نام کردن","sabt-nām kardan","to register; to enrol","دانشجو برای ترم جدید ثبت‌نام کرد.","Dāneshju barāye term-e jadid sabt-nām kard.","The student enrolled for the new term.","ثبت‌نام کردن","ثبت‌نام کن","ثبت‌نام کردن پیش از آغاز ترم لازم است.","Sabt-nām kardan pish az āghāz-e term lāzem ast.","Registration is required before the term begins.","برای کلاس ثبت‌نام کن.","Barāye kelās sabt-nām kon.","Register for the class.");
@@ -292,7 +292,7 @@
  N(12,"SH3-05","رژیم غذایی","rezhim-e ghazāyi","diet; dietary regimen","رژیم غذایی سالم به بدن کمک می‌کند.","Rezhim-e ghazāyi-ye sālem be badan komak mikonad.","A healthy diet helps the body.");
  N(12,"SH3-05","مواد مغذی","mavād-e mozַaḏḏi","nutrients","میوه‌ها مواد مغذی دارند.","Mivehā mavād-e mozַaḏḏi dārand.","Fruit contains nutrients.");
  N(12,"SH3-05","سوخت‌وساز بدن","sukht-o-sāz-e badan","metabolism","سوخت‌وساز بدن به انرژی نیاز دارد.","Sukht-o-sāz-e badan be enerji niyāz dārad.","The body's metabolism requires energy.");
- N(12,"SH3-05","خوش‌طعم","khosh-ta'm","tasty; flavourful","این غذا خوش‌طعم است.","In ghazā khosh-ta'm ast.","This food is tasty.","صفت — sifat (adjective)");
+ N(12,"SH3-05","خوش‌طعم","khosh-ta'm","tasty; flavourful","صفت — sifat (adjective)","این غذا خوش‌طعم است.","In ghazā khosh-ta'm ast.","This food is tasty.");
  N(12,"SH3-05","غذاهای آب‌پز","ghazāhā-ye āb-paz","boiled foods","غذاهای آب‌پز روغن کمتری دارند.","Ghazāhā-ye āb-paz rowghan-e kamtari dārand.","Boiled foods contain less oil.");
  V(12,"SH3-05","ذخیره شدن","zakhire shodan","to be stored","انرژی اضافی در بدن ذخیره می‌شود.","Enerji-ye ezāfi dar badan zakhire mishavad.","Extra energy is stored in the body.","ذخیره شدن","—","ذخیره شدن چربی در بدن به عوامل مختلف بستگی دارد.","Zakhire shodan-e charbi dar badan be avāmel-e mokhtalef bastegi dārad.","Fat storage in the body depends on various factors.","—","—","—","مجهول/لازم است؛ امر مستقیم ندارد.");
  V(12,"SH3-05","تفت دادن","taft dādan","to sauté; to fry lightly","پیاز را کمی تفت دادم.","Piyāz rā kami taft dādam.","I sautéed the onion briefly.","تفت دادن","تفت بده","تفت دادن سبزی زمان زیادی نمی‌برد.","Taft dādan-e sabzi zamān-e ziyādi nemibarad.","Sautéing vegetables does not take long.","پیاز را کمی تفت بده.","Piyāz rā kami taft bedeh.","Sauté the onion briefly.");
@@ -1052,14 +1052,14 @@
 
  // N3-04: complete the visible first-page social-relationships vocabulary list.
  // Canonical learning-unit mapping is Unit 02 (see TERM3_DATA unit map).
- N(2,"N3-04","معتاد","mo'tād","addicted; an addicted person","اعتیاد می‌تواند به سلامت فرد و خانواده آسیب بزند.","E'tiyād mitavānad be salāmat-e fard va khānevāde āsib bezanad.","Addiction can harm the health of an individual and their family.","صفت / اسم — adjective / noun");
- N(2,"N3-04","صرف غذا","sarf-e ghazā","eating a meal; mealtime","صرف غذا در کنار خانواده فرصت گفت‌وگو فراهم می‌کند.","Sarf-e ghazā dar kenār-e khānevāde forsat-e goft-o-gu farāham mikonad.","Eating together as a family creates an opportunity to talk.","گروه اسمی — noun phrase");
+ N(2,"N3-04","معتاد","mo'tād","addicted; an addicted person","صفت / اسم — adjective / noun","اعتیاد می‌تواند به سلامت فرد و خانواده آسیب بزند.","E'tiyād mitavānad be salāmat-e fard va khānevāde āsib bezanad.","Addiction can harm the health of an individual and their family.");
+ N(2,"N3-04","صرف غذا","sarf-e ghazā","eating a meal; mealtime","گروه اسمی — noun phrase","صرف غذا در کنار خانواده فرصت گفت‌وگو فراهم می‌کند.","Sarf-e ghazā dar kenār-e khānevāde forsat-e goft-o-gu farāham mikonad.","Eating together as a family creates an opportunity to talk.");
  N(2,"N3-04","نظرخواهی","nazar-khāhi","asking for opinions; consultation","نظرخواهی از اعضای خانواده به تصمیم‌گیری بهتر کمک می‌کند.","Nazar-khāhi az a'zā-ye khānevāde be tasmim-giri-ye behtar komak mikonad.","Asking family members for their opinions helps with better decision-making.");
  N(2,"N3-04","تأثیر","ta'sir","effect; influence","روابط اجتماعی سالم تأثیر مثبتی بر سلامت دارد.","Ravābet-e ejtemā'i-ye sālem ta'sir-e mosbati bar salāmat dārad.","Healthy social relationships have a positive effect on health.");
- N(2,"N3-04","آسیب اجتماعی","āsib-e ejtemā'i","social harm; social problem","اعتیاد یکی از آسیب‌های اجتماعی است.","E'tiyād yeki az āsib-hā-ye ejtemā'i ast.","Addiction is one form of social harm.","گروه اسمی — noun phrase");
- N(2,"N3-04","جوامع امروزی","javāme'-e emruzi","modern societies","شبکه‌های اجتماعی در جوامع امروزی نقش مهمی دارند.","Shabakehā-ye ejtemā'i dar javāme'-e emruzi naqsh-e mohemmi dārand.","Social networks play an important role in modern societies.","گروه اسمی — noun phrase");
+ N(2,"N3-04","آسیب اجتماعی","āsib-e ejtemā'i","social harm; social problem","گروه اسمی — noun phrase","اعتیاد یکی از آسیب‌های اجتماعی است.","E'tiyād yeki az āsib-hā-ye ejtemā'i ast.","Addiction is one form of social harm.");
+ N(2,"N3-04","جوامع امروزی","javāme'-e emruzi","modern societies","گروه اسمی — noun phrase","شبکه‌های اجتماعی در جوامع امروزی نقش مهمی دارند.","Shabakehā-ye ejtemā'i dar javāme'-e emruzi naqsh-e mohemmi dārand.","Social networks play an important role in modern societies.");
  N(2,"N3-04","شبکه‌های اجتماعی","shabakehā-ye ejtemā'i","social networks; social media","بسیاری از مردم هر روز از شبکه‌های اجتماعی استفاده می‌کنند.","Bisyāri az mardom har ruz az shabakehā-ye ejtemā'i estefāde mikonand.","Many people use social media every day.");
- N(2,"N3-04","این‌گونه افراد","in-gune afrād","such people; people of this kind","این‌گونه افراد ممکن است به حمایت خانواده نیاز داشته باشند.","In-gune afrād momken ast be hemāyat-e khānevāde niyāz dāshte bāshand.","People in this situation may need family support.","گروه اسمی — noun phrase");
+ N(2,"N3-04","این‌گونه افراد","in-gune afrād","such people; people of this kind","گروه اسمی — noun phrase","این‌گونه افراد ممکن است به حمایت خانواده نیاز داشته باشند.","In-gune afrād momken ast be hemāyat-e khānevāde niyāz dāshte bāshand.","People in this situation may need family support.");
  N(2,"N3-04","نیازهای جسمی","niyāzhā-ye jesmi","physical needs","کودکان به نیازهای جسمی و روحی خود توجه دارند.","Kudakān be niyāzhā-ye jesmi va ruhi-ye khod tavajjoh dārand.","Children have physical and emotional needs.");
 
 
@@ -1069,7 +1069,7 @@
  N(20,"N3-02","تحصیلات ابتدایی","tahsილāt-e ebtedāyi","primary education","او تحصیلات ابتدایی خود را در همان شهر گذراند.","U tahsilāt-e ebtedāyi-ye khod rā dar hamān shahr gozānd.","He completed his primary education in the same city.");
  N(20,"N3-02","ادارهٔ پست و تلگراف","edāre-ye post-o telegrāf","post and telegraph office","پدر او در ادارهٔ پست و تلگراف کار می‌کرد.","Pedar-e u dar edāre-ye post-o telegrāf kār mikard.","His father worked at the post and telegraph office.");
  N(20,"N3-02","آموزشگاه","āmuzeshgāh","educational institute; training school","او در یک آموزشگاه به تدریس پرداخت.","U dar yek āmuzeshgāh be tadris pardākht.","He began teaching at an educational institute.");
- N(20,"N3-02","بنیان‌گذار","bonyān-gozār","founder","او یکی از بنیان‌گذاران این مرکز بود.","U yeki az bonyān-gozārān-e in markaz bud.","He was one of the founders of this centre.","صفت / اسم — adjective / noun");
+ N(20,"N3-02","بنیان‌گذار","bonyān-gozār","founder","صفت / اسم — adjective / noun","او یکی از بنیان‌گذاران این مرکز بود.","U yeki az bonyān-gozārān-e in markaz bud.","He was one of the founders of this centre.");
  N(20,"N3-02","انتقال خون","enteqāl-e khun","blood transfusion","انتقال خون می‌تواند جان بیماران را نجات دهد.","Enteqāl-e khun mitavānad jān-e bimārān rā nejāt dahad.","A blood transfusion can save patients' lives.");
  N(20,"N3-02","قبرستان","qabr-estān","cemetery","آرامگاه او در قبرستان قدیمی شهر است.","Ārāmgāh-e u dar qabr-estān-e qadimi-ye shahr ast.","His grave is in the old cemetery of the city.");
  N(20,"N3-02","کنگره","kongre","congress; conference","پژوهشگران در کنگرهٔ علمی شرکت کردند.","Pazhuheshgarān dar kongre-ye elmi sherkat kardand.","Researchers took part in the scientific conference.");
@@ -1083,16 +1083,16 @@
  N(16,"N3-06","هویت","hoviyat","identity","حفظ هویت فرهنگی برای نسل جوان مهم است.","Hefz-e hoviyat-e farhangi barāye nasl-e javān mohem ast.","Preserving cultural identity is important for the younger generation.");
  N(16,"N3-06","تاکسی اینترنتی","tāksi-ye interneti","ride-hailing service; app-based taxi","تاکسی اینترنتی رفت‌وآمد را آسان‌تر کرده است.","Tāksi-ye interneti raft-o-āmad rā āsāntar karde ast.","App-based taxis have made getting around easier.");
  N(16,"N3-06","نرم‌افزار","narm-afzār","software; application","برای ویرایش عکس از یک نرم‌افزار استفاده می‌کنم.","Barāye virāyesh-e aks az yek narm-afzār estefāde mikonam.","I use software to edit photos.");
- N(16,"N3-06","غیرمنطقی","gheyr-manteqi","illogical; unreasonable","این نتیجه‌گیری بدون شواهد غیرمنطقی است.","In natije-giri bedun-e shawāhed gheyr-manteqi ast.","This conclusion is unreasonable without evidence.","صفت — adjective");
- N(16,"N3-06","در دسترس","dar dastres","available; accessible","اطلاعات معتبر باید در دسترس همه باشد.","Ettelā'āt-e mo'tabar bāyad dar dastres-e hame bāshad.","Reliable information should be accessible to everyone.","گروه وصفی — adjective phrase");
+ N(16,"N3-06","غیرمنطقی","gheyr-manteqi","illogical; unreasonable","صفت — adjective","این نتیجه‌گیری بدون شواهد غیرمنطقی است.","In natije-giri bedun-e shawāhed gheyr-manteqi ast.","This conclusion is unreasonable without evidence.");
+ N(16,"N3-06","در دسترس","dar dastres","available; accessible","گروه وصفی — adjective phrase","اطلاعات معتبر باید در دسترس همه باشد.","Ettelā'āt-e mo'tabar bāyad dar dastres-e hame bāshad.","Reliable information should be accessible to everyone.");
  N(3,"N3-07","برنامهٔ کوتاه‌مدت","barnāme-ye kutāh-moddat","short-term plan","برای این هفته یک برنامهٔ کوتاه‌مدت نوشتم.","Barāye in hafte yek barnāme-ye kutāh-moddat neveshtam.","I wrote a short-term plan for this week.");
  N(3,"N3-07","برنامهٔ بلندمدت","barnāme-ye boland-moddat","long-term plan","یادگیری زبان بخشی از برنامهٔ بلندمدت من است.","Yād-giri-ye zabān bakhshi az barnāme-ye boland-moddat-e man ast.","Language learning is part of my long-term plan.");
- N(3,"N3-07","زودبازده","zud-bāzdeh","quick-yielding; producing quick results","این طرح زودبازده است اما به سرمایه نیاز دارد.","In tarh zud-bāzdeh ast ammā be sarmāye niyāz dārad.","This project produces quick results but requires investment.","صفت — adjective");
- N(3,"N3-07","دیربازده","dir-bāzdeh","slow-yielding; producing results over time","برخی سرمایه‌گذاری‌ها دیربازده هستند.","Barkhi sarmāye-gozāri-hā dir-bāzdeh hastand.","Some investments take time to produce results.","صفت — adjective");
+ N(3,"N3-07","زودبازده","zud-bāzdeh","quick-yielding; producing quick results","صفت — adjective","این طرح زودبازده است اما به سرمایه نیاز دارد.","In tarh zud-bāzdeh ast ammā be sarmāye niyāz dārad.","This project produces quick results but requires investment.");
+ N(3,"N3-07","دیربازده","dir-bāzdeh","slow-yielding; producing results over time","صفت — adjective","برخی سرمایه‌گذاری‌ها دیربازده هستند.","Barkhi sarmāye-gozāri-hā dir-bāzdeh hastand.","Some investments take time to produce results.");
  N(2,"SH3-01","شیفت بعدازظهر","shift-e ba'd-az-zohr","afternoon shift","مادر این هفته در شیفت بعدازظهر کار می‌کند.","Mādar in hafte dar shift-e ba'd-az-zohr kār mikonad.","Mother is working the afternoon shift this week.");
  N(2,"SH3-01","گلولهٔ برف","golule-ye barf","snowball","کودکان در حیاط گلولهٔ برف درست کردند.","Kudakān dar hayāt golule-ye barf dorost kardand.","The children made snowballs in the yard.");
  N(2,"SH3-01","آلبوم قدیمی","ālbom-e qadimi","old photo album","در آلبوم قدیمی عکس‌های دوران کودکی ماست.","Dar ālbom-e qadimi aks-hā-ye dore-ye kudaki-ye māst.","Our childhood photographs are in the old album.");
- N(2,"SH3-01","دردناک","dardnāk","painful","زمین خوردن برای کودک دردناک بود.","Zamin khordan barāye kudak dardnāk bud.","The fall was painful for the child.","صفت — adjective");
+ N(2,"SH3-01","دردناک","dardnāk","painful","صفت — adjective","زمین خوردن برای کودک دردناک بود.","Zamin khordan barāye kudak dardnāk bud.","The fall was painful for the child.");
  N(19,"SH3-02","طاقچه","tāqche","niche; shelf built into a wall","کلیدها را روی طاقچه گذاشتم.","Kelidhā rā ru-ye tāqche gozāshtam.","I put the keys on the wall shelf.");
  N(19,"SH3-02","اتباع غیرایرانی","atbā'-e gheyr-e Irāni","non-Iranian nationals","اتباع غیرایرانی باید مدارک سفر خود را همراه داشته باشند.","Atbā'-e gheyr-e Irāni bāyad madārek-e safar-e khod rā hamrāh dāshte bāshand.","Non-Iranian nationals should carry their travel documents.");
  N(19,"SH3-02","رعایت فاصله","re'āyat-e fāsele","keeping a distance; maintaining spacing","رعایت فاصله در صف نشانهٔ نظم است.","Re'āyat-e fāsele dar saff neshāne-ye nazm ast.","Keeping a distance in a queue is a sign of order.");
@@ -1101,10 +1101,10 @@
  N(5,"SH3-03","لاستیک زاپاس","lāstik-e zāpās","spare tyre","لاستیک زاپاس را پیش از سفر بررسی کن.","Lāstik-e zāpās rā pish az safar barrasi kon.","Check the spare tyre before travelling.");
  N(5,"SH3-03","پشت فرمان","posht-e farmān","behind the wheel; at the steering wheel","راننده پشت فرمان باید هوشیار باشد.","Rānande posht-e farmān bāyad hoshyār bāshad.","A driver must stay alert behind the wheel.");
  N(5,"SH3-03","مکانیک","mekānik","mechanic","مکانیک موتور خودرو را تعمیر کرد.","Mekānik motor-e khodro rā ta'mir kard.","The mechanic repaired the car engine.");
- N(5,"SH3-03","جناب","jenāb","sir; gentleman (formal address)","جناب راننده، لطفاً آهسته‌تر حرکت کنید.","Jenāb-e rānande, lotfan āheste-tar harekat konid.","Sir, please drive more slowly.","عنوان احترام‌آمیز — honorific");
+ N(5,"SH3-03","جناب","jenāb","sir; gentleman (formal address)","عنوان احترام‌آمیز — honorific","جناب راننده، لطفاً آهسته‌تر حرکت کنید.","Jenāb-e rānande, lotfan āheste-tar harekat konid.","Sir, please drive more slowly.");
  N(19,"SH3-04","جوی آب","ju-ye āb","water channel; streamlet","کودکان کنار جوی آب بازی می‌کردند.","Kudakān kenār-e ju-ye āb bāzi mikardand.","The children were playing beside the water channel.");
  N(19,"SH3-04","شرایط جوی","sharāyet-e javvi","weather conditions","شرایط جوی پرواز را به تأخیر انداخت.","Sharāyet-e javvi parvāz rā be ta'khir andākht.","Weather conditions delayed the flight.");
- N(19,"SH3-04","مقصر بودن","moqasser budan","to be at fault; to be responsible","او پذیرفت که در این اشتباه مقصر بوده است.","U paziroft ke dar in eshtebāh moqasser bude ast.","He accepted that he was at fault.","ساخت وصفی با بودن — copular construction");
+ N(19,"SH3-04","مقصر بودن","moqasser budan","to be at fault; to be responsible","ساخت وصفی با بودن — copular construction","او پذیرفت که در این اشتباه مقصر بوده است.","U paziroft ke dar in eshtebāh moqasser bude ast.","He accepted that he was at fault.");
  N(12,"SH3-05","وزن بدن","vazn-e badan","body weight","وزن بدن به تغذیه و فعالیت بستگی دارد.","Vazn-e badan be taghziye va fa'āliyat bastagi dārad.","Body weight depends on nutrition and activity.");
  N(12,"SH3-05","گیاه‌خواری","giyāh-khāri","vegetarianism","گیاه‌خواری برای برخی افراد یک انتخاب غذایی است.","Giyāh-khāri barāye barkhi afrād yek entekhāb-e ghazāyi ast.","Vegetarianism is a dietary choice for some people.");
  N(12,"SH3-05","غذاهای آبکی","ghazāhā-ye ābaki","watery foods; liquid-based dishes","در هوای گرم بعضی‌ها غذاهای آبکی را ترجیح می‌دهند.","Dar havā-ye garm ba'zi-hā ghazāhā-ye ābaki rā tarjih midahand.","In hot weather, some people prefer liquid-based dishes.");
@@ -1112,7 +1112,7 @@
  N(12,"SH3-05","خوراک مردم","khorāk-e mardom","people's food; diet","خوراک مردم با توجه به آب‌وهوا و فرهنگ تغییر می‌کند.","Khorāk-e mardom bā tavajjoh be āb-o-havā va farhang taghyir mikonad.","People's diet varies with climate and culture.");
  N(12,"SH3-05","سلیقه","saliqe","taste; preference","سلیقهٔ غذایی افراد با هم فرق دارد.","Saliqe-ye ghazāyi-ye afrād bā ham farq dārad.","People have different food preferences.");
  N(18,"SH3-06","غذاهای متنوع","ghazāhā-ye motanavve'","varied dishes; a variety of foods","این رستوران غذاهای متنوعی دارد.","In restoran ghazāhā-ye motanavve'i dārad.","This restaurant offers a variety of dishes.");
- N(18,"SH3-06","نوش جان","nush-e jān","enjoy your meal; bon appétit","میزبان گفت: نوش جان!","Mizbān goft: nush-e jān!","The host said, “Enjoy your meal!”","عبارت تعارف — set expression");
+ N(18,"SH3-06","نوش جان","nush-e jān","enjoy your meal; bon appétit","عبارت تعارف — set expression","میزبان گفت: نوش جان!","Mizbān goft: nush-e jān!","The host said, “Enjoy your meal!”");
  N(18,"SH3-06","سبزی‌پلو با ماهی","sabzi-polo bā māhi","herbed rice with fish","در شب عید سبزی‌پلو با ماهی می‌خوریم.","Dar shab-e Eid sabzi-polo bā māhi mikhorim.","We eat herbed rice with fish on the eve of the festival.");
  N(18,"SH3-06","زرشک‌پلو","zereshk-polo","barberry rice","زرشک‌پلو یکی از غذاهای محبوب ایرانی است.","Zereshk-polo yeki az ghazāhā-ye mahbub-e Irāni ast.","Barberry rice is a popular Iranian dish.");
  N(18,"SH3-06","چلوماهیچه","chelo-māhiche","rice with lamb shank","در مهمانی چلوماهیچه سفارش دادند.","Dar mehmāni chelo-māhiche sefāresh dādand.","They ordered rice with lamb shank at the gathering.");
@@ -1131,8 +1131,8 @@
  N(3,"SH3-08","وزارت امور خارجه","vezārat-e omur-e khāreje","Ministry of Foreign Affairs","مدارک باید به تأیید وزارت امور خارجه برسد.","Madārek bāyad be ta'yid-e vezārat-e omur-e khāreje beresad.","The documents must be approved by the Ministry of Foreign Affairs.");
  N(3,"SH3-08","گواهی دوره","govāhi-ye dore","course certificate","پس از پایان دوره گواهی دریافت کرد.","Pas az pāyān-e dore govāhi daryāft kard.","He received a certificate after completing the course.");
  N(3,"SH3-08","مدیریت زمان","modiriyat-e zamān","time management","مدیریت زمان برای دانشجویان ضروری است.","Modiriyat-e zamān barāye dāneshju-yān zaruri ast.","Time management is essential for students.");
- N(10,"SH3-09","دسته‌دار","daste-dār","handled; with a handle","این قابلمه دسته‌دار است.","In qāblame daste-dār ast.","This pot has a handle.","صفت — adjective");
- N(10,"SH3-09","شفاف","shaffāf","transparent; clear","فروشنده ظرف شفاف را نشان داد.","Forushande zarf-e shaffāf rā neshān dād.","The seller showed the transparent container.","صفت — adjective");
+ N(10,"SH3-09","دسته‌دار","daste-dār","handled; with a handle","صفت — adjective","این قابلمه دسته‌دار است.","In qāblame daste-dār ast.","This pot has a handle.");
+ N(10,"SH3-09","شفاف","shaffāf","transparent; clear","صفت — adjective","فروشنده ظرف شفاف را نشان داد.","Forushande zarf-e shaffāf rā neshān dād.","The seller showed the transparent container.");
  N(10,"SH3-09","حراج زمستانی","harāj-e zemestāni","winter sale","حراج زمستانی در بسیاری از فروشگاه‌ها آغاز شد.","Harāj-e zemestāni dar bisyāri az forushgāhhā āghāz shod.","The winter sale began in many shops.");
  N(10,"SH3-09","نحوهٔ ارسال","nahve-ye ersāl","delivery method","پیش از خرید، نحوهٔ ارسال کالا را بررسی کنید.","Pish az kharid, nahve-ye ersāl-e kālā rā barrasi konid.","Check the delivery method before buying.");
  N(10,"SH3-09","لباس مجلسی","lebās-e majlesi","formalwear; evening clothes","برای مراسم لباس مجلسی پوشید.","Barāye marāsem lebās-e majlesi pushid.","She wore formal clothes for the ceremony.");
@@ -1143,11 +1143,11 @@
  N(20,"SH3-10","چوپان","chupān","shepherd","چوپان گله را به چراگاه برد.","Chupān gele rā be charāgāh bord.","The shepherd took the flock to pasture.");
  N(20,"SH3-10","اهالی روستا","ahāli-ye rustā","villagers; residents of the village","اهالی روستا به مسافران کمک کردند.","Ahāli-ye rustā be mosāferān komak kardand.","The villagers helped the travellers.");
  N(20,"SH3-10","بره","barre","lamb","بره کنار مادرش راه می‌رفت.","Barre kenār-e mādარash rāh miraft.","The lamb walked beside its mother.");
- N(20,"SH3-10","امن و بی‌خطر","amn-o bi-khatar","safe and harmless","این مسیر امن و بی‌خطر است.","In masir amn-o bi-khatar ast.","This route is safe and harmless.","گروه وصفی — adjective phrase");
- N(20,"SH3-10","چاق و تنومند","chāq-o tanumand","plump and sturdy","آن مرد چاق و تنومند بود.","Ān mard chāq-o tanumand bud.","That man was plump and sturdy.","صفت مرکب — compound adjective");
+ N(20,"SH3-10","امن و بی‌خطر","amn-o bi-khatar","safe and harmless","گروه وصفی — adjective phrase","این مسیر امن و بی‌خطر است.","In masir amn-o bi-khatar ast.","This route is safe and harmless.");
+ N(20,"SH3-10","چاق و تنومند","chāq-o tanumand","plump and sturdy","صفت مرکب — compound adjective","آن مرد چاق و تنومند بود.","Ān mard chāq-o tanumand bud.","That man was plump and sturdy.");
  N(20,"SH3-10","پول حلال","pul-e halāl","lawful earnings; halal money","او همیشه به دنبال پول حلال بود.","U hamishe be donbāl-e pul-e halāl bud.","He always sought lawful earnings.");
- N(20,"SH3-10","سراسیمه","sarāsime","flustered; frantic","مرد سراسیمه به خانه برگشت.","Mard sarāsime be khāne bargasht.","The man returned home in a panic.","صفت / قید — adjective / adverb");
- N(20,"SH3-10","گریه‌کنان","gerye-konān","weeping; while crying","کودک گریه‌کنان به سوی مادر رفت.","Kudak gerye-konān be su-ye mādar raft.","The child went towards his mother crying.","قید حالت — manner adverb");
+ N(20,"SH3-10","سراسیمه","sarāsime","flustered; frantic","صفت / قید — adjective / adverb","مرد سراسیمه به خانه برگشت.","Mard sarāsime be khāne bargasht.","The man returned home in a panic.");
+ N(20,"SH3-10","گریه‌کنان","gerye-konān","weeping; while crying","قید حالت — manner adverb","کودک گریه‌کنان به سوی مادر رفت.","Kudak gerye-konān be su-ye mādar raft.","The child went towards his mother crying.");
  N(20,"SH3-10","فرهنگ‌نامه","farhang-nāme","dictionary; encyclopaedia","برای یافتن معنی واژه به فرهنگ‌نامه مراجعه کردم.","Barāye yāftan-e ma'ni-ye vāzhe be farhang-nāme morāje'e kardam.","I consulted a dictionary to find the word's meaning.");
 
  // Deduplicate against the curated base and within this file by Persian headword.
