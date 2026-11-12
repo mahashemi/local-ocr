@@ -60,6 +60,7 @@ jobs:
       - name: Validate Term 02 curriculum JavaScript
         run: |
           node --check website/term02-data.js
+          node --check website/term02-lexicon-additions.js
           node --check website/term02-khulasa.js
           node --check website/term02-writing.js
           node tools/audit-term02.cjs
