@@ -71,7 +71,7 @@ for (const x of global.TERM2_SPEECHES||[]) assert(/[0-9۰-۹٠-٩]{1,3}[:：][0-
 const kh = fs.readFileSync(path.join(root,'website/term02-khulasa.js'),'utf8');
 assert(kh.includes('[[QURAN:5:32|'), 'Missing explicit source Quran reference marker (5:32)');
 const index = fs.readFileSync(path.join(root,'website/index.html'),'utf8');
-for (const x of ['term02-data.js','term02-lexicon-additions.js','term02-khulasa.js','term02-writing.js','data-word-id','khWordModal','Escape','target="_blank"','rel="noopener noreferrer"','QuranMemorizer/#/surah/','cleanKh','const term2=new Map()']) assert(index.includes(x), 'Missing UI integration: '+x);
+for (const x of ['term02-data.js','term02-lexicon-additions.js','term02-khulasa.js','term02-writing.js','data-word-id','khWordModal','Escape','target="_blank"','rel="noopener noreferrer"','QuranMemorizer/#/surah/','cleanKh','term2=new Map()']) assert(index.includes(x), 'Missing UI integration: '+x);
 const portal = fs.readFileSync(path.join(root,'website/term-portal.js'),'utf8');
 assert(portal.includes('TERM2_WRITING'), 'Term 02 writing page is not connected to term navigation');
 assert(rows.some(x=>x.source==='N2-03'&&x.units.includes(6)), 'Expected N2-03 hospital vocabulary cross-linked to FA2-06');
