@@ -33,10 +33,12 @@ jobs:
         run: |
           node --check website/term01-data.js
           node --check website/term01-chapters-11-15.js
+          node --check website/term01-chapters-16-20.js
           node <<'NODE'
           global.window = {};
           require('./website/term01-data.js');
           require('./website/term01-chapters-11-15.js');
+          require('./website/term01-chapters-16-20.js');
           const rows = window.TERM1_DATA;
           if (!Array.isArray(rows) || rows.length < 20) throw new Error('Term 01 vocabulary is unexpectedly small');
           const seen = new Set();
