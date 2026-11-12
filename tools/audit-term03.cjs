@@ -16,13 +16,23 @@ for (const item of entries) {
   }
   assert(!/[\u0600-\u06ff]/.test(item.tr), "Persian script in transliteration: " + item.fa);
   if (/فعل|اصطلاح فعلی/.test(item.pos)) {
-    assert(item.ms && item.amr && Array.isArray(item.m) && item.m.length >= 3 && Array.isArray(item.a) && item.a.length >= 3,
-      "Verb is missing masdar/amr/examples: " + item.fa);
-    if (item.amr !== "—") assert.notEqual(item.ms.trim(), item.amr.trim(),
-      "Masdar and imperative must be different forms: " + item.fa + " (" + item.ms + ")");
-
+    assert(item.ms && item.amr && Array.isArray(item.m) && item.m.length >= 3,
+      "Verb is missing its masdar form/example: " + item.fa);
+    if (item.ms !== "—") assert(String(item.m[0] || "").includes(item.ms),
+      "Masdar example does not demonstrate the listed masdar: " + item.fa);
+    if (item.amr !== "—") {
+      assert(Array.isArray(item.a) && item.a.length >= 3,
+        "Verb with a direct imperative is missing its imperative example: " + item.fa);
+      assert(String(item.a[0] || "").includes(item.amr),
+        "Imperative example does not demonstrate the listed amr: " + item.fa);
+      assert.notEqual(item.ms.trim(), item.amr.trim(),
+        "Masdar and imperative must be different forms: " + item.fa + " (" + item.ms + ")");
+      assert(!/[\u0600-\u06ff]/.test(item.a[1] || ""), "Persian script in imperative-example transliteration: " + item.fa);
+    } else {
+      assert(item.a === null || Array.isArray(item.a),
+        "No-imperative verb must have either null or an example array: " + item.fa);
+    }
     assert(!/[\u0600-\u06ff]/.test(item.m[1] || ""), "Persian script in masdar-example transliteration: " + item.fa);
-    assert(!/[\u0600-\u06ff]/.test(item.a[1] || ""), "Persian script in imperative-example transliteration: " + item.fa);
   }
 }
 for (const [source, count] of Object.entries(sourceCounts)) assert(count > 0, "No entries for " + source);
