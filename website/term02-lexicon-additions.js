@@ -103,12 +103,12 @@
  N(3,"FA2-03","مسابقه","mosābeqe","competition; match","اسم — noun","مسابقه فردا برگزار می‌شود.","Mosābeqe fardā bargozār mishavad.","The competition will take place tomorrow.");
  N(4,"FA2-04","خبر","khabar","news; report","اسم — noun","خبر را از منبع معتبر بخوان.","Khabar rā az manba'-e mo'tabar bekhān.","Read the news from a reliable source.");
  N(4,"FA2-04","منبع خبری","manba'-e khabari","news source","گروه اسمی — noun phrase","هر منبع خبری باید بررسی شود.","Har manba'-e khabari bāyad barrasi shavad.","Every news source should be checked.");
- N(5,"FA2-05","سوختگی","sukhtegi","burn; burn injury","اسم — noun","سوختگی شدید به رسیدگی فوری نیاز دارد.","Sukhtegi-ye shadid be residگی-ye fowri niyāz dārad.","A severe burn needs immediate attention.");
- N(5,"FA2-05","اورژانس","orژāns","emergency service; emergency department","اسم — noun","در حادثه با اورژانس تماس بگیرید.","Dar hādesه bā orژāns tamās begirid.","Call emergency services in an accident.");
+ N(5,"FA2-05","سوختگی","sukhtegi","burn; burn injury","اسم — noun","سوختگی شدید به رسیدگی فوری نیاز دارد.","Sukhtegi-ye shadid be residegi-ye fowri niyāz dārad.","A severe burn needs immediate attention.");
+ N(5,"FA2-05","اورژانس","orzhāns","emergency service; emergency department","اسم — noun","در حادثه با اورژانس تماس بگیرید.","Dar hādesه bā orzhāns tamās begirid.","Call emergency services in an accident.");
  N(6,"FA2-06","پزشک عمومی","pezeshk-e omumi","general practitioner","گروه اسمی — noun phrase","پزشک عمومی بیمار را معاینه کرد.","Pezeshk-e omumi bimār rā mo'āyene kard.","The general practitioner examined the patient.");
  N(6,"FA2-06","جراح","jarāh","surgeon","اسم — noun","جراح پیش از عمل با بیمار صحبت کرد.","Jarāh pish az amal bā bimār sohbat kard.","The surgeon spoke with the patient before the operation.");
  N(7,"FA2-07","تگرگ","tagarg","hail","اسم — noun","تگرگ به محصولات کشاورزی خسارت زد.","Tagarg be mahsulāt-e keshāvarzi khasārat zad.","Hail damaged agricultural crops.");
- N(7,"FA2-07","آتش‌سوزی","ātash-suzi","fire; fire incident","اسم — noun","آتش‌سوزی در جنگل گسترش یافت.","Ātash-suzi dar jangal gostarش yāft.","The fire spread in the forest.");
+ N(7,"FA2-07","آتش‌سوزی","ātash-suzi","fire; fire incident","اسم — noun","آتش‌سوزی در جنگل گسترش یافت.","Ātash-suzi dar jangal gostāresh yāft.","The fire spread in the forest.");
  N(8,"FA2-08","مقصد","maqsad","destination","اسم — noun","مقصد سفر ما شهر شیراز بود.","Maqsad-e safar-e mā shahr-e Shirāz bud.","Our destination was the city of Shiraz.");
  N(8,"FA2-08","زیارتگاه","ziyāratgāh","shrine; place of pilgrimage","اسم — noun","زائران به زیارتگاه رفتند.","Zā'erān be ziyāratgāh raftand.","The pilgrims went to the shrine.");
  N(9,"FA2-09","بازیگر","bāzigar","actor; actress","اسم — noun","بازیگر نقش اصلی را خوب اجرا کرد.","Bāzigar naqsh-e asli rā khub ejrā kard.","The actor performed the main role well.");
@@ -116,7 +116,7 @@
  N(10,"FA2-10","نقاشی","naqqāshi","painting; drawing","اسم — noun","نقاشی او رنگ‌های روشنی دارد.","Naqqāshi-ye u rang-hā-ye rowshani dārad.","His painting has bright colours.");
  N(10,"FA2-10","معماری","me'māri","architecture","اسم — noun","معماری این بنا بسیار زیباست.","Me'māri-ye in banā besyār zibāst.","The architecture of this building is beautiful.");
  N(11,"FA2-11","عروسک","arusak","doll","اسم — noun","خواهرم با عروسک بازی می‌کرد.","Khāharam bā arusak bāzi mikard.","My sister used to play with a doll.");
- N(11,"FA2-11","شیطنت","shitنت","mischief; playful behaviour","اسم — noun","شیطنت کودک گاهی همه را می‌خنداند.","Shitنت-e kudak gāhi hame rā mikhandānd.","The child's mischief sometimes makes everyone laugh.");
+ N(11,"FA2-11","شیطنت","sheytanat","mischief; playful behaviour","اسم — noun","شیطنت کودک گاهی همه را می‌خنداند.","Sheytanat-e kudak gāhi hame rā mikhandānd.","The child's mischief sometimes makes everyone laugh.");
  N(12,"FA2-12","گمرک","gomrok","customs","اسم — noun","مسافران مدارک را در گمرک نشان دادند.","Mosāferān madārek rā dar gomrok neshān dādand.","Passengers showed their documents at customs.");
  N(12,"FA2-12","تحویل بار","tahvil-e bār","baggage check-in","گروه اسمی — noun phrase","تحویل بار پیش از رفتن به گیت انجام می‌شود.","Tahvil-e bār pish az raftan be geit anjām mishavad.","Baggage check-in takes place before going to the gate.");
  N(13,"FA2-13","لاستیک","lāstik","tyre; tire","اسم — noun","لاستیک خودرو پنچر شده است.","Lāstik-e khodro pancher shode ast.","The car tyre is flat.");
@@ -134,6 +134,6 @@
  N(19,"FA2-19","خرید اینترنتی","kharid-e interneti","online shopping","گروه اسمی — noun phrase","خرید اینترنتی باید از فروشگاه معتبر انجام شود.","Kharid-e interneti bāyad az forushgāh-e mo'tabar anjām shavad.","Online shopping should be done through a reliable store.");
  N(19,"FA2-19","واحد شمارش","vāhed-e shomāresh","counting unit; measure word","گروه اسمی — noun phrase","واحد شمارش کتاب «جلد» است.","Vāhed-e shomāresh-e ketāb «jeld» ast.","The counting unit for a book is “volume/copy”.");
  N(20,"FA2-20","خسیس","khasis","miserly; stingy","صفت — adjective","آدم خسیس به‌سختی پول خرج می‌کند.","Ādam-e khasis be-sakhti pul kharj mikonad.","A stingy person finds it hard to spend money.");
- N(20,"FA2-20","فیلسوف","feyلسuf","philosopher","اسم — noun","فیلسوف دربارهٔ زندگی پرسش می‌کند.","Feyلسuf darbāre-ye zendegi porsesh mikonad.","A philosopher asks questions about life.");
+ N(20,"FA2-20","فیلسوف","faylasuf","philosopher","اسم — noun","فیلسوف دربارهٔ زندگی پرسش می‌کند.","Faylasuf darbāre-ye zendegi porsesh mikonad.","A philosopher asks questions about life.");
  window.TERM2_DATA.push(...rows);
 })();
