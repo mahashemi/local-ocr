@@ -3,7 +3,7 @@
  * These are first-page word-list entries; expansions will be added after lesson-text review.
  */
 window.TERM1_DATA = [
-{unit:2,source:"F1-02",fa:"کارگر",tr:"kārgar",en:"worker; labourer",pos:"اسم — ism (noun)",ex:["پدرِ علی کارگر است.","Pedar-e Ali kāگر ast.","Ali's father is a worker."]},
+{unit:2,source:"F1-02",fa:"کارگر",tr:"kārgar",en:"worker; labourer",pos:"اسم — ism (noun)",ex:["پدرِ علی کارگر است.","Pedar-e Ali kārgar ast.","Ali's father is a worker."]},
 {unit:2,source:"F1-02",fa:"معلم",tr:"mo'allem",en:"teacher",pos:"اسم — ism (noun)",ex:["معلم فارسی ما مهربان است.","Mo'allem-e fārsi-ye mā mehrabān ast.","Our Persian teacher is kind."]},
 {unit:2,source:"F1-02",fa:"همکلاسی",tr:"hamkelāsi",en:"classmate",pos:"اسم — ism (noun)",ex:["زهرا همکلاسیِ من است.","Zahrā hamkelāsi-ye man ast.","Zahra is my classmate."]},
 {unit:4,source:"F1-04",fa:"مدیر",tr:"modir",en:"manager; director; principal",pos:"اسم — ism (noun)",ex:["مدیرِ مدرسه با دانش‌آموزان صحبت کرد.","Modir-e madrese bā dānesh-āmuzān sohbat kard.","The school principal spoke with the students."]},
@@ -15,7 +15,7 @@ window.TERM1_DATA = [
 {unit:4,source:"F1-04",fa:"جوان",tr:"javān",en:"young",pos:"صفت — sifat (adjective)",ex:["خواهرم هنوز جوان است.","Khāharam hanuz javān ast.","My sister is still young."]},
 {unit:4,source:"F1-04",fa:"اخمو",tr:"akhmu",en:"frowning; grumpy-looking",pos:"صفت — sifat (adjective)",ex:["امروز چرا اخمو هستی؟","Emruz cherā akhmu hasti?","Why are you looking grumpy today?"]},
 {unit:4,source:"F1-04",fa:"خنده‌رو",tr:"khande-ru",en:"smiling; cheerful-looking",pos:"صفت — sifat (adjective)",ex:["معلم ما همیشه خنده‌رو است.","Mo'allem-e mā hamishe khande-ru ast.","Our teacher is always cheerful."]},
-{unit:4,source:"F1-04",fa:"خجالتی",tr:"khejālati",en:"shy; bashful",pos:"صفت — sifat (adjective)",ex:["برادرم کمی خجالتی است.","Barādaram کمی khejālati ast.","My brother is a little shy."]},
+{unit:4,source:"F1-04",fa:"خجالتی",tr:"khejālati",en:"shy; bashful",pos:"صفت — sifat (adjective)",ex:["برادرم کمی خجالتی است.","Barādaram kami khejālati ast.","My brother is a little shy."]},
 {unit:4,source:"F1-04",fa:"مهربان",tr:"mehrabān",en:"kind; caring",pos:"صفت — sifat (adjective)",ex:["مادربزرگم بسیار مهربان است.","Mādarbozorgam besyār mehrabān ast.","My grandmother is very kind."]},
 {unit:5,source:"F1-05",fa:"فرزند",tr:"farzand",en:"child; offspring",pos:"اسم — ism (noun)",ex:["آن‌ها دو فرزند دارند.","Ānhā do farzand dārand.","They have two children."]},
 {unit:5,source:"F1-05",fa:"نوه",tr:"navāde",en:"grandchild",pos:"اسم — ism (noun)",ex:["این کودک نوهٔ من است.","In kudak navāde-ye man ast.","This child is my grandchild."]},
@@ -40,7 +40,7 @@ window.TERM1_DATA = [
 {unit:6,source:"F1-06",fa:"باغچه",tr:"bāghche",en:"small garden; flower bed",pos:"اسم — noun",ex:["در باغچه گل‌های قرمز و زرد هست.","Dar bāghche golhā-ye qermez o zard hast.","There are red and yellow flowers in the garden."]},
 {unit:6,source:"F1-06",fa:"پارکینگ",tr:"pārking",en:"parking area; garage",pos:"اسم — noun",ex:["خانهٔ ما پارکینگ ندارد.","Khāne-ye mā pārking nadārad.","Our house does not have a parking space."]},
 {unit:6,source:"F1-06",fa:"طبقه",tr:"tabaqe",en:"floor; storey",pos:"اسم — noun",ex:["اتاق من در طبقهٔ دوم است.","Otāq-e man dar tabaqe-ye dovvom ast.","My room is on the second floor."]},
-{unit:6,source:"F1-06",fa:"پله",tr:"pelle",en:"step; stair",pos:"اسم — noun",ex:["این ساختمان بیست پله دارد.","In sākhتمān bist pelle dārad.","This building has twenty steps."]},
+{unit:6,source:"F1-06",fa:"پله",tr:"pelle",en:"step; stair",pos:"اسم — noun",ex:["این ساختمان بیست پله دارد.","In sākhtemān bist pelle dārad.","This building has twenty steps."]},
 {unit:6,source:"F1-06",fa:"کمد",tr:"komod",en:"cupboard; wardrobe",pos:"اسم — noun",ex:["لباس‌هایم در کمد است.","Lebāshāyam dar komod ast.","My clothes are in the wardrobe."]},
 {unit:6,source:"F1-06",fa:"یخچال",tr:"yakhchāl",en:"refrigerator",pos:"اسم — noun",ex:["شیر را در یخچال بگذار.","Shir rā dar yakhchāl bogzār.","Put the milk in the refrigerator."]},
 {unit:6,source:"F1-06",fa:"صندلی",tr:"sandali",en:"chair",pos:"اسم — noun",ex:["دو صندلی کنار میز است.","Do sandali kenār-e miz ast.","Two chairs are beside the table."]},
@@ -83,7 +83,7 @@ window.TERM1_DATA = [
 {unit:10,source:"F1-10",fa:"برف‌بازی",tr:"barf-bāzi",en:"playing in the snow",pos:"اسم — noun",ex:["بچه‌ها در حیاط برف‌بازی می‌کنند.","Bachchehā dar hayāt barf-bāzi mikonand.","The children are playing in the snow."]},
 {unit:10,source:"F1-10",fa:"بلیت",tr:"belit",en:"ticket",pos:"اسم — noun",ex:["برای جشن یک بلیت خریدم.","Barāye jashn yek belit kharidam.","I bought a ticket for the celebration."]},
 {unit:10,source:"F1-10",fa:"جشن تولد",tr:"jashn-e tavalod",en:"birthday party",pos:"اسم — noun",ex:["جشن تولد خواهرم فردا است.","Jashn-e tavalod-e khāharam fardā ast.","My sister's birthday party is tomorrow."]},
-{unit:10,source:"F1-10",fa:"بادکنک",tr:"bādkonak",en:"balloon",pos:"اسم — noun",ex:["اتاق را با بادکنک تزئین کردیم.","Otāq rā bā bādkonak تزئin kardim.","We decorated the room with balloons."]},
+{unit:10,source:"F1-10",fa:"بادکنک",tr:"bādkonak",en:"balloon",pos:"اسم — noun",ex:["اتاق را با بادکنک تزئین کردیم.","Otāq rā bā bādkonak taz'in kardim.","We decorated the room with balloons."]},
 {unit:10,source:"F1-10",fa:"شمع",tr:"sham'",en:"candle",pos:"اسم — noun",ex:["روی کیک پنج شمع است.","Ru-ye keyk panj sham' ast.","There are five candles on the cake."]},
 {unit:10,source:"F1-10",fa:"کیک",tr:"keyk",en:"cake",pos:"اسم — noun",ex:["برای تولد کیک خریدیم.","Barāye tavalod keyk kharidim.","We bought a cake for the birthday."]},
 {unit:10,source:"F1-10",fa:"هدیه",tr:"hediye",en:"gift; present",pos:"اسم — noun",ex:["برای مادرم هدیه گرفتم.","Barāye mādaram hediye gereftam.","I got a gift for my mother."]},
