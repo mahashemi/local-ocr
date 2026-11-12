@@ -67,6 +67,18 @@
 [10,"N1-10","استاد راهنما","ostād-e rāhnamā","academic supervisor; advisor","noun phrase","استاد راهنما طرح تحقیق را بررسی کرد.","Ostād-e rāhnamā tarh-e tahqiq rā barrasi kard.","The academic supervisor reviewed the research proposal."],
 [10,"N1-10","فرایند نوشتن","farāyand-e neveshtan","writing process","noun phrase","فرایند نوشتن چند مرحله دارد.","Farāyand-e neveshtan chand marhale dārad.","The writing process has several stages."],
 [10,"N1-10","منبع","manba'","source; reference","noun","برای تحقیق باید منبع معتبر پیدا کنیم.","Barāye tahqiq bāyad manba'-e mo'tabar peydā konim.","We should find a reliable source for research."]
+,
+[3,"KH1-03","کلاس درس","kelās-e dars","classroom; lesson","noun phrase","کلاس درس ما روشن است.","Kelās-e dars-e mā rowshan ast.","Our classroom is bright."],
+[18,"KH1-18","قفل کردن","qofl kardan","to lock","verb","پیش از سفر در را قفل کن.","Pish az safar dar rā qofl kon.","Lock the door before travelling."],
+[18,"KH1-18","رزرو کردن","rezerv kardan","to reserve; to book","verb","اتاق هتل را از قبل رزرو کردیم.","Otāq-e hotel rā az qabl rezerv kardim.","We booked the hotel room in advance."],
+[18,"KH1-18","مقصد","maqsad","destination","noun","مقصد سفر ما شهر شیراز است.","Maqsad-e safar-e mā shahr-e Shirāz ast.","Our travel destination is Shiraz."],
+[19,"KH1-19","غذای محلی","ghazā-ye mahalli","local food","noun phrase","غذای محلی این روستا خوشمزه است.","Ghazā-ye mahalli-ye in rustā khoshmaze ast.","The local food in this village is delicious."],
+[19,"KH1-19","گردشگر","gardeshgar","tourist","noun","گردشگران از روستا دیدن می‌کنند.","Gardeshgarān az rustā didan mikonand.","Tourists visit the village."],
+[19,"KH1-19","عسل","asal","honey","noun","زنبورها عسل تولید می‌کنند.","Zanburhā asal tolid mikonand.","Bees produce honey."],
+[16,"SH1-16","اسکیت‌سواری","eskeit-savāri","skating","noun","اسکیت‌سواری ورزش سرگرم‌کننده‌ای است.","Eskeit-savāri varzesh-e sargarm-konande'i ast.","Skating is an enjoyable sport."],
+[16,"SH1-16","شنا","shenā","swimming","noun","شنا برای سلامتی مفید است.","Shenā barāye salāmati mofid ast.","Swimming is good for health."],
+[17,"SH1-17","کلاس هنری","kelās-e honari","art class","noun phrase","خواهرم در کلاس هنری شرکت می‌کند.","Khāharam dar kelās-e honari sherkat mikonad.","My sister attends an art class."],
+[20,"SH1-20","شیمی‌دان","shimi-dān","chemist","noun","این شیمی‌دان در دانشگاه کار می‌کند.","In shimi-dān dar dāneshgāh kār mikonad.","This chemist works at the university."]
 ];
  const additions=rows.map(([unit,source,fa,tr,en,pos,faEx,trEx,enEx])=>({unit,source,fa,tr,en,pos:pos==="noun"?"اسم — noun":pos==="noun phrase"?"ترکیب اسمی — noun phrase":pos==="adjective"?"صفت — adjective":pos==="adjective/adverb"?"صفت/قید — adjective/adverb":pos==="noun/preposition"?"اسم/حرف اضافه — noun/preposition":pos==="time expression"?"قید زمان — time expression":"فعل مرکب — compound verb",ex:[faEx,trEx,enEx]}));
  const norm=s=>String(s||"").replace(/[\u200c\sـ]/g,"");
