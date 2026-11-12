@@ -27,7 +27,7 @@
  function enterTerm(b){
   activeTerm=b;bkSel.value=String(b);fillCh();chSel.value="all";
   $id("termNav").hidden=false;$id("activeTermTitle").textContent="TERM 0"+b+(b===3?" · PERSIAN":"");
-  document.querySelectorAll('#termTabs [data-t="essays"],#termTabs [data-t="speeches"],#termTabs [data-t="khulasa"]').forEach(x=>x.hidden=b!==3);
+  document.querySelectorAll('#termTabs [data-t="essays"],#termTabs [data-t="speeches"],#termTabs [data-t="khulasa"]').forEach(x=>x.hidden=!(b===3||(b===2&&((window.TERM2_WRITING||{}).chapters||[]).length)));
   gotoTab("home");
  }
  function back(){
