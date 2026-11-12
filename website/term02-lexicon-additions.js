@@ -104,7 +104,7 @@
  N(4,"FA2-04","خبر","khabar","news; report","اسم — noun","خبر را از منبع معتبر بخوان.","Khabar rā az manba'-e mo'tabar bekhān.","Read the news from a reliable source.");
  N(4,"FA2-04","منبع خبری","manba'-e khabari","news source","گروه اسمی — noun phrase","هر منبع خبری باید بررسی شود.","Har manba'-e khabari bāyad barrasi shavad.","Every news source should be checked.");
  N(5,"FA2-05","سوختگی","sukhtegi","burn; burn injury","اسم — noun","سوختگی شدید به رسیدگی فوری نیاز دارد.","Sukhtegi-ye shadid be residegi-ye fowri niyāz dārad.","A severe burn needs immediate attention.");
- N(5,"FA2-05","اورژانس","orzhāns","emergency service; emergency department","اسم — noun","در حادثه با اورژانس تماس بگیرید.","Dar hādesه bā orzhāns tamās begirid.","Call emergency services in an accident.");
+ N(5,"FA2-05","اورژانس","orzhāns","emergency service; emergency department","اسم — noun","در حادثه با اورژانس تماس بگیرید.","Dar hādes bā orzhāns tamās begirid.","Call emergency services in an accident.");
  N(6,"FA2-06","پزشک عمومی","pezeshk-e omumi","general practitioner","گروه اسمی — noun phrase","پزشک عمومی بیمار را معاینه کرد.","Pezeshk-e omumi bimār rā mo'āyene kard.","The general practitioner examined the patient.");
  N(6,"FA2-06","جراح","jarāh","surgeon","اسم — noun","جراح پیش از عمل با بیمار صحبت کرد.","Jarāh pish az amal bā bimār sohbat kard.","The surgeon spoke with the patient before the operation.");
  N(7,"FA2-07","تگرگ","tagarg","hail","اسم — noun","تگرگ به محصولات کشاورزی خسارت زد.","Tagarg be mahsulāt-e keshāvarzi khasārat zad.","Hail damaged agricultural crops.");
