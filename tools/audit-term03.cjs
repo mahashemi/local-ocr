@@ -3,6 +3,7 @@ global.window = global;
 require("../website/term03-data.js");
 require("../website/term03-lexicon-additions.js");
 require("../website/term03-matn-verbs.js");
+require("../website/term03-source-audit.js");
 require("../website/term03-khulasa.js");
 const entries = global.TERM3_DATA || [];
 assert(entries.length >= 550, "Term 03 lexicon unexpectedly small: " + entries.length);
@@ -17,6 +18,9 @@ for (const item of entries) {
   if (/فعل|اصطلاح فعلی/.test(item.pos)) {
     assert(item.ms && item.amr && Array.isArray(item.m) && item.m.length >= 3 && Array.isArray(item.a) && item.a.length >= 3,
       "Verb is missing masdar/amr/examples: " + item.fa);
+    if (item.amr !== "—") assert.notEqual(item.ms.trim(), item.amr.trim(),
+      "Masdar and imperative must be different forms: " + item.fa + " (" + item.ms + ")");
+
     assert(!/[\u0600-\u06ff]/.test(item.m[1] || ""), "Persian script in masdar-example transliteration: " + item.fa);
     assert(!/[\u0600-\u06ff]/.test(item.a[1] || ""), "Persian script in imperative-example transliteration: " + item.fa);
   }
