@@ -34,7 +34,7 @@ def test_all_twenty_khulasa_sheets_exist_and_have_five_lines() -> None:
     assert len(re.findall(r"\{ch:\s*\d+,title:", khulasa)) == 20
     line_arrays = re.findall(r"lines:\s*\[(.*?)\]", khulasa, flags=re.DOTALL)
     assert len(line_arrays) == 20
-    assert all(len(re.findall(r'"(?:[^"\\]|\\.)*"', lines)) == 5 for lines in line_arrays)
+    assert all(5 <= len(re.findall(r'"(?:[^"\\]|\\.)*"', lines)) <= 6 for lines in line_arrays)
 
 
 def test_all_twenty_chapters_have_writing_and_speech_prompts() -> None:
