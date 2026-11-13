@@ -1596,6 +1596,11 @@
  V(20,"SH3-10","سکته کردن","sokte kardan","to have a stroke; to suffer a cardiac event","او ناگهان سکته کرد و به بیمارستان منتقل شد.","U nāgahān sokte kard va be bimārestān montaqel shod.","He suddenly suffered a stroke and was taken to hospital.","سکته کردن","—","سکته کردن یک وضعیت پزشکی اضطراری است.","Sokte kardan yek vaz'iyat-e pezeshki-ye ezterāri ast.","A stroke is a medical emergency.","—","—","—","فعل لازم است؛ امر مستقیم طبیعی ندارد.");
  N(20,"SH3-10","هموطن","hamvatan","compatriot; fellow countryman","هموطنان در سفر به یکدیگر کمک کردند.","Hamvatanān dar safar be yekdigar komak kardand.","Compatriots helped one another during the trip.");
 
+
+ // Final missing global headwords from KH3-02 and KH3-05 first-page lists.
+ V(2,"KH3-02","قصد داشتن","qasd dāshtan","to intend; to plan","من قصد دارم در امتحان موفق شوم.","Man qasd dāram dar emtehān movaffaq shavam.","I intend to succeed in the exam.","قصد داشتن","قصد داشته باش","قصد داشتن به‌تنهایی کافی نیست و باید تلاش کرد.","Qasd dāshtan be-tanhāyi kāfi nist va bāyad talāsh kard.","Intending alone is not enough; one must make an effort.","برای رسیدن به هدفت قصد جدی داشته باش.","Barāye residan be hadafat qasd-e jeddi dāshte bāsh.","Have a firm intention to reach your goal.");
+ N(5,"KH3-05","سنگتراش","sangtarāsh","stonemason; stonecutter","سنگتراش از سنگ برای ساختن پله استفاده کرد.","Sangtarāsh az sang barāye sākhtan-e pelle estefāde kard.","The stonemason used stone to build the steps.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
