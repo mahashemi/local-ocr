@@ -1655,6 +1655,37 @@
  // FA3-15 first-page addition.
  N(15,"FA3-15","تدفین","tadfin","burial; interment","مراسم تدفین پس از نماز برگزار شد.","Marāsem-e tadfin pas az namāz bargozār shod.","The burial ceremony took place after the prayer.");
 
+
+ // FA3-16 first-page additions.
+ N(16,"FA3-16","سرگرمی","sargarmi","entertainment; pastime","مطالعه یکی از سرگرمی‌های مفید است.","Motāle'e yeki az sargarmi-hā-ye mofid ast.","Reading is a useful pastime.");
+ V(16,"FA3-16","شکستن رکورد","shekastan-e rekord","to break a record","ورزشکار توانست رکورد جهانی را بشکند.","Varzeshkār tavānest rekord-e jahāni rā beshekanad.","The athlete managed to break the world record.","شکستن رکورد","رکورد را بشکن","شکستن رکورد به تمرین فراوان نیاز دارد.","Shekastan-e rekord be tamrin-e farāvān niyāz dārad.","Breaking a record requires extensive practice.","رکورد قبلی را بشکن.","Rekord-e qabli rā beshekan.","Break the previous record.");
+ V(16,"FA3-16","بیزار بودن","bizār budan","to be fed up with; to dislike strongly","او از شایعه‌پراکنی بیزار است.","U az shāye'e-parākani bizār ast.","He is fed up with rumour-spreading.","بیزار بودن","—","بیزار بودن از دروغ نشانهٔ حساسیت اخلاقی است.","Bizār budan az dorugh neshāne-ye hassāsiyat-e akhlāqi ast.","Being fed up with lies reflects moral sensitivity.","—","—","—","ساختارِ بودن در این معنا خبری است؛ امر مستقیم طبیعی ندارد.");
+ A(16,"FA3-16","مفصل","mofassal","detailed; extensive","گزارش مفصل را برای روزنامه فرستاد.","Gozaresh-e mofassal rā barāye ruznāme ferestād.","He sent a detailed report.");
+ N(16,"FA3-16","کشتار","koshtār","massacre; mass killing","خبر کشتار مردم جهان را اندوهگین کرد.","Khabar-e koshtār-e mardom jahān rā anduhgin kard.","News of the massacre saddened the world.");
+ A(16,"FA3-16","پرطرفدار","por-tarafdār","popular; widely supported","این برنامهٔ تلویزیونی بسیار پرطرفدار است.","In barnāme-ye televiziyuni besyār por-tarafdār ast.","This television programme is very popular.");
+ // FA3-17 first-page additions.
+ N(17,"FA3-17","رو در رو","ru dar ru","face to face; in person","گفت‌وگوی رو در رو گاهی بهتر از پیام است.","Goft-o-gu-ye ru dar ru gāhi behtar az payām ast.","A face-to-face conversation is sometimes better than a message.","عبارت قیدی — adverbial expression");
+ N(17,"FA3-17","فواید","favāyed","benefits; advantages","فواید ورزش برای بدن بسیار زیاد است.","Favāyed-e varzesh barāye badan besyār ziyād ast.");
+ N(17,"FA3-17","تمام و کامل","tamām-o kāmel","complete; whole","گزارش باید تمام و کامل باشد.","Gozaresh bāyad tamām-o kāmel bāshad.","The report should be complete.","عبارت وصفی — descriptive phrase");
+ N(17,"FA3-17","با این حساب","bā in hesāb","therefore; in that case","با این حساب بهتر است زودتر حرکت کنیم.","Bā in hesāb behtar ast zudtar harekat konim.","In that case, it is better to leave earlier.","عبارت ربطی — linking expression");
+ A(17,"FA3-17","مضطرب","moztareb","anxious; nervous","پیش از امتحان کمی مضطرب بودم.","Pish az emtehān kami moztareb budam.","I was a little anxious before the exam.");
+ V(17,"FA3-17","تکان خوردن"," تکān khordan","to move; to shake","با وزش باد شاخه‌ها تکان خوردند.","Bā vazesh-e bād shākhehā tekān khordand.","The branches moved in the wind.","تکان خوردن","—","تکان خوردن زمین می‌تواند نشانهٔ زلزله باشد.","Tekān khordan-e zamin mitavānad neshāne-ye zelzele bāshad.","The ground shaking can be a sign of an earthquake.","—","—","—","فعل لازم است؛ امر مستقیم طبیعی ندارد.");
+ N(17,"FA3-17","کابل","kābel","cable","کابل برق را از مسیر امن عبور دادند.","Kābel-e barq rā az masir-e amn obur dādand.","They routed the electrical cable through a safe path.");
+ // FA3-18 first-page additions.
+ N(18,"FA3-18","تزیین","taz yin","decoration; adornment","تزیین خانه برای جشن آغاز شد.","Tazyin-e khāne barāye jashn āghāz shod.","Decorating the house for the celebration began.");
+ A(18,"FA3-18","خوش‌یمن","khosh-yomn","auspicious; lucky","آن روز را روزی خوش‌یمن می‌دانستند.","Ān ruz rā ruzi khosh-yomn midānestand.","They considered that day auspicious.");
+ N(18,"FA3-18","اعم از","a'am az","including; whether ... or ...","همهٔ مهمانان، اعم از زن و مرد، دعوت شدند.","Hame-ye mehmānān, a'am az zan-o mard, da'vat shodand.","All guests, women and men alike, were invited.","عبارت حرف اضافه‌ای — prepositional expression");
+ N(18,"FA3-18","حنابندان","hanābandān","henna night; pre-wedding henna ceremony","مراسم حنابندان شب پیش از عروسی برگزار شد.","Marāsem-e hanābandān shab-e pish az arusi bargozār shod.","The henna ceremony was held on the night before the wedding.");
+ // FA3-19 first-page additions.
+ N(19,"FA3-19","امامزاده","emāmzāde","shrine of a descendant of an Imam","مسافران از امامزادهٔ تاریخی دیدن کردند.","Mosāferān az emāmzāde-ye tārikhi didan kardand.","The travellers visited the historic shrine.");
+ N(19,"FA3-19","به‌خصوص","be-khosus","especially; particularly","این منطقه به‌خصوص در بهار زیباست.","In manteqe be-khosus dar bahār zibāst.","This region is especially beautiful in spring.","قید — adverb");
+ N(19,"FA3-19","کف دریا","kaf-e daryā","sea floor; seabed","سنگ‌های رنگی در کف دریا دیده می‌شوند.","Sang-hā-ye rangi dar kaf-e daryā dide mishavand.","Colourful stones can be seen on the sea floor.","گروه اسمی — noun phrase");
+ N(19,"FA3-19","یادگاری","yādgāri","souvenir; keepsake","از سفر برای مادرم یک یادگاری آوردم.","Az safar barāye mādaram yek yādgāri āvardam.","I brought my mother a souvenir from the trip.");
+ A(19,"FA3-19","بریده","boride","cut; severed","شاخهٔ بریده را کنار درخت گذاشتند.","Shākhe-ye boride rā kenār-e derakht gozāshtand.","They placed the cut branch beside the tree.");
+ N(19,"FA3-19","برش","boresh","cut; slice; incision","برش سنگ باید دقیق باشد.","Boresh-e sang bāyad daqiq bāshad.","The stone cut must be precise.");
+ N(19,"FA3-19","استادکار","ostād-kār","master craftsperson; skilled artisan","استادکار با دقت روی چوب کار می‌کرد.","Ostād-kār bā deqqat ru-ye chub kār mikard.","The master craftsperson worked carefully on the wood.");
+ V(19,"FA3-19","پاک شدن","pāk shodan","to become clean; to be removed","لکه با آب پاک شد.","Lake bā āb pāk shod.","The stain was removed with water.","پاک شدن","—","پاک شدن لکه به نوع پارچه بستگی دارد.","Pāk shodan-e lake be no'-e pārche bastagi dārad.","Removing a stain depends on the type of fabric.","—","—","—","فعل لازم/مجهول است؛ امر مستقیم طبیعی ندارد.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
