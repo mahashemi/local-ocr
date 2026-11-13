@@ -68,21 +68,28 @@ const appSource = fs.readFileSync(require.resolve("../website/index.html"), "utf
 
 assert(Array.isArray(global.TERM3_WRITING?.chapters) && global.TERM3_WRITING.chapters.length === 20,
   "Expected a writing prompt for all 20 Term 03 chapters");
-assert(global.TERM3_NEWESTAN_EXAMPLE?.source === "N3-01", "Expected a source-based Newestan Dars 01 example");
+assert(global.TERM3_NEWESTAN_EXAMPLE?.source === "N3-10", "Expected the Newestan model to answer the final Insha exercise in Dars 10");
 assert(global.TERM3_NEWESTAN_EXAMPLE.topicSentence && global.TERM3_NEWESTAN_EXAMPLE.supportingSentences?.length >= 2 &&
   global.TERM3_NEWESTAN_EXAMPLE.concludingSentence && global.TERM3_NEWESTAN_EXAMPLE.sample,
   "Newestan model must demonstrate topic, supporting and concluding sentences");
+assert(global.TERM3_NEWESTAN_EXAMPLE.topic.includes("وظایف دانشجو در برابر استاد"), "Newestan model must use the actual Dars 10 final exercise topic");
+assert(global.TERM3_NEWESTAN_EXAMPLE.subtopics?.length === 4, "Newestan model must preserve the four Dars 10 subtopics");
+assert(global.TERM3_NEWESTAN_EXAMPLE.sections?.map(x=>x.kind).join(",") === "مقدمه,بدنه,بدنه,نتیجه", "Newestan model must have Muqaddama, two body bands and Natija");
+assert(global.TERM3_NEWESTAN_EXAMPLE.sections.every(x=>x.heading&&x.paragraph), "Every Insha section needs a heading and developed paragraph");
 const lexiconKeys = new Set(entries.map(x => String(x.fa).replace(/[\\u200c\\sـ]/g, "")));
 for (const word of global.TERM3_NEWESTAN_EXAMPLE.vocabulary) {
   assert(lexiconKeys.has(String(word).replace(/[\\u200c\\sـ]/g, "")),
     "Newestan vocabulary must open a flashcard: " + word);
 }
 assert(appSource.includes("function addVocabularyForms(index,item)"), "Writing and Khulasa links must support Persian inflected forms");
-assert(appSource.includes("const examples=[item.xf,item.m?.[0],item.a?.[0]]"),
-  "Words demonstrated in flashcard examples must also be searchable from writing pages");
-assert(appSource.includes("vocabLinkStopWords"), "Vocabulary example indexing must exclude grammatical stop words");
+assert(!appSource.includes("const examples=[item.xf,item.m?.[0],item.a?.[0]]"),
+  "Arbitrary example tokens must not be indexed as vocabulary headwords");
+assert(appSource.includes("Never index arbitrary tokens from example sentences"), "Writing links must explicitly prevent example-token false matches");
+assert(appSource.includes("all().filter(i=>Number(i.bk)===term"), "Writing links must use the active term lexicon only");
+assert(appSource.includes("vocabIrregularPlurals") && appSource.includes("vocabVerbForms"), "Writing links must use explicit plural and verb inflection maps");
 assert(appSource.includes("attachVocabularyLinks(v.querySelector(\".writing-wrap\"))"), "Newestan/Sukhanrani content must use shared flashcard links");
 assert(appSource.includes("newestan-vocabulary"), "Newestan model vocabulary must be rendered as linked flashcards");
+assert(appSource.includes("newestanExample.sections.map") && appSource.includes("newestanExample.subtopics.map"), "Newestan Insha must render its essay sections and source subtopics");
 assert(appSource.includes("--fa-reading-font") && appSource.includes(".newestan-example") && appSource.includes(".khulasa-lines"),
   "Persian reading typography styles are missing");
 assert(Array.isArray(global.TERM3_SPEECHES) && global.TERM3_SPEECHES.length === 20,
