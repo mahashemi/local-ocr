@@ -1665,7 +1665,7 @@
  A(16,"FA3-16","پرطرفدار","por-tarafdār","popular; widely supported","این برنامهٔ تلویزیونی بسیار پرطرفدار است.","In barnāme-ye televiziyuni besyār por-tarafdār ast.","This television programme is very popular.");
  // FA3-17 first-page additions.
  N(17,"FA3-17","رو در رو","ru dar ru","face to face; in person","گفت‌وگوی رو در رو گاهی بهتر از پیام است.","Goft-o-gu-ye ru dar ru gāhi behtar az payām ast.","A face-to-face conversation is sometimes better than a message.","عبارت قیدی — adverbial expression");
- N(17,"FA3-17","فواید","favāyed","benefits; advantages","فواید ورزش برای بدن بسیار زیاد است.","Favāyed-e varzesh barāye badan besyār ziyād ast.");
+ N(17,"FA3-17","فواید","favāyed","benefits; advantages","فواید ورزش برای بدن بسیار زیاد است.","Favāyed-e varzesh barāye badan besyār ziyād ast.","The benefits of exercise for the body are numerous.","اسم جمع — plural noun");
  N(17,"FA3-17","تمام و کامل","tamām-o kāmel","complete; whole","گزارش باید تمام و کامل باشد.","Gozaresh bāyad tamām-o kāmel bāshad.","The report should be complete.","عبارت وصفی — descriptive phrase");
  N(17,"FA3-17","با این حساب","bā in hesāb","therefore; in that case","با این حساب بهتر است زودتر حرکت کنیم.","Bā in hesāb behtar ast zudtar harekat konim.","In that case, it is better to leave earlier.","عبارت ربطی — linking expression");
  A(17,"FA3-17","مضطرب","moztareb","anxious; nervous","پیش از امتحان کمی مضطرب بودم.","Pish az emtehān kami moztareb budam.","I was a little anxious before the exam.");
