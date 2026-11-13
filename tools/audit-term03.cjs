@@ -78,6 +78,9 @@ for (const word of global.TERM3_NEWESTAN_EXAMPLE.vocabulary) {
     "Newestan vocabulary must open a flashcard: " + word);
 }
 assert(appSource.includes("function addVocabularyForms(index,item)"), "Writing and Khulasa links must support Persian inflected forms");
+assert(appSource.includes("const examples=[item.xf,item.m?.[0],item.a?.[0]]"),
+  "Words demonstrated in flashcard examples must also be searchable from writing pages");
+assert(appSource.includes("vocabLinkStopWords"), "Vocabulary example indexing must exclude grammatical stop words");
 assert(appSource.includes("attachVocabularyLinks(v.querySelector(\".writing-wrap\"))"), "Newestan/Sukhanrani content must use shared flashcard links");
 assert(appSource.includes("newestan-vocabulary"), "Newestan model vocabulary must be rendered as linked flashcards");
 assert(appSource.includes("--fa-reading-font") && appSource.includes(".newestan-example") && appSource.includes(".khulasa-lines"),
