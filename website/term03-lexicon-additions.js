@@ -1628,6 +1628,33 @@
  A(13,"FA3-13","مشکوک","mashkuk","suspicious; doubtful","رفتار مشکوک حیوان توجه نگهبان را جلب کرد.","Raftār-e mashkuk-e heyvān tavajjoh-e negahbān rā jalb kard.","The animal's suspicious behaviour caught the guard's attention.");
  N(13,"FA3-13","درپوش","darpush","lid; cover; cap","درپوش ظرف را محکم ببندید.","Darpush-e zarf rā mohkam bebandid.","Close the container's lid tightly.");
 
+
+ // FA3-14 first-page additions.
+ A(14,"FA3-14","آجری","āj ori","brick; brick-built","دیوار آجری خانه قدیمی است.","Divār-e ājori-ye khāne qadimi ast.","The house's brick wall is old.");
+ N(14,"FA3-14","رژه","ra zhe","parade; march","سربازان در میدان رژه رفتند.","Sarbāzān dar meydān rāzhe raftand.","The soldiers marched in the square.");
+ A(14,"FA3-14","وارونه","vārun e","upside down; inverted","تصویر در آینه وارونه دیده می‌شود.","Tasvir dar āyene vārun e dide mishavad.","The image appears inverted in the mirror.");
+ N(14,"FA3-14","فروپاشی","forupāshi","collapse; breakdown","فروپاشی حکومت به تغییرات بزرگی انجامید.","Forupāshi-ye hokumat be taghyirāt-e bozorgi anjām id.","The collapse of the government led to major changes.");
+ N(14,"FA3-14","جنگ داخلی","jang-e dākheli","civil war","جنگ داخلی زندگی مردم را دشوار می‌کند.","Jang-e dākheli zendegi-ye mardom rā doshvār mikonad.","Civil war makes people's lives difficult.","گروه اسمی — noun phrase");
+ N(14,"FA3-14","حرفه","herfe","profession; occupation","پزشکی حرفه‌ای دشوار و ارزشمند است.","Pezeshki herfe-i doshvār-o arzeshmand ast.","Medicine is a difficult and valuable profession.");
+ N(14,"FA3-14","مذهب","mazhab","religion; denomination","مذهب در فرهنگ بسیاری از جوامع نقش دارد.","Mazhab dar farhang-e besyāri az javāme' naqsh dārad.","Religion plays a role in the culture of many societies.");
+ N(14,"FA3-14","بین‌النهرین","beyn-an-nahrayn","Mesopotamia","تمدن‌های باستانی در بین‌النهرین شکل گرفتند.","Tamaddon-hā-ye bāstāni dar Beyn-an-Nahrayn shekl gereftand.","Ancient civilisations developed in Mesopotamia.","اسم خاص — proper noun");
+ A(14,"FA3-14","آزادانه","āzādāne","freely","مردم باید بتوانند آزادانه نظر بدهند.","Mardom bāyad betavānand āzādāne nazar bedahand.","People should be able to express their opinions freely.","قید — adverb");
+ N(14,"FA3-14","خط میخی","khat-e mikhi","cuneiform script","خط میخی از خط‌های باستانی است.","Khat-e mikhi az khat-hā-ye bāstāni ast.","Cuneiform is an ancient writing system.","گروه اسمی — noun phrase");
+ N(14,"FA3-14","هخامنشیان","hakhāmaneshiān","the Achaemenids","هخامنشیان بخش بزرگی از ایران باستان را اداره می‌کردند.","Hakhāmaneshiān bakhsh-e bozorgi az Irān-e bāstān rā edāre mikardand.","The Achaemenids ruled a large part of ancient Iran.","اسم خاص — proper noun");
+ A(14,"FA3-14","حاصلخیز","hāselkhiz","fertile","زمین حاصلخیز برای کشاورزی مناسب است.","Zamin-e hāselkhiz barāye keshāvarzi monāseb ast.","Fertile land is suitable for agriculture.");
+ N(14,"FA3-14","معابد","ma'ābed","temples","معابد باستانی بخشی از میراث فرهنگی هستند.","Ma'ābed-e bāstāni bakhshi az mirās-e farhangi hastand.","Ancient temples are part of cultural heritage.");
+ V(14,"FA3-14","رواج داشتن","ravāj dāshtan","to be common; to be prevalent","این رسم در گذشته رواج داشت.","In rasm dar gozashte ravāj dāsht.","This custom was common in the past.","رواج داشتن","—","رواج داشتنِ این زبان به عوامل تاریخی بستگی دارد.","Ravāj dāshtan-e in zabān be avāmel-e tārikhi bastagi dārad.","The prevalence of this language depends on historical factors.","—","—","—","ساختارِ داشتن در این معنا خبری است؛ امر مستقیم طبیعی ندارد.");
+ N(14,"FA3-14","مردم‌شناسی","mardom-shenāsi","anthropology","مردم‌شناسی فرهنگ و زندگی جوامع را بررسی می‌کند.","Mardom-shenāsi farhang-o zendegi-ye javāme' rā barrasi mikonad.","Anthropology studies the culture and life of societies.");
+ A(14,"FA3-14","ناخواسته","nākhāste","unintentionally; unwillingly","او ناخواسته باعث ناراحتی دوستش شد.","U nākhāste bā'es-e nārāhati-ye dustash shod.","He unintentionally upset his friend.","قید/صفت — adverb/adjective");
+ A(14,"FA3-14","نژادپرست","nezhād-parast","racist","رفتار نژادپرستانه به جامعه آسیب می‌زند.","Raftār-e nezhād-parastāne be jāme'e āsib mizanad.","Racist behaviour harms society.");
+ V(14,"FA3-14","محکوم کردن","mahkum kardan","to condemn; to convict","دادگاه او را به پرداخت جریمه محکوم کرد.","Dādgāh u rā be pardākht-e jarime mahkum kard.","The court ordered him to pay a fine.","محکوم کردن","محکوم نکن","محکوم کردن دیگران بدون دلیل درست نیست.","Mahkum kardan-e digarān bedun-e dalil dorost nist.","It is not right to condemn others without reason.","بدون آگاهی کسی را محکوم نکن.","Bedun-e āgāhi kasi rā mahkum nakon.","Do not condemn someone without knowing the facts.");
+ V(14,"FA3-14","موکول شدن","movakul shodan","to be postponed; to be deferred","جلسه به هفتهٔ آینده موکول شد.","Jalase be hafte-ye āyande movakul shod.","The meeting was postponed until next week.","موکول شدن","—","موکول شدنِ تصمیم به بررسی بیشتر نیاز دارد.","Movakul shodan-e tasmim be barrasi-ye bishtar niyāz dārad.","Deferring the decision requires further review.","—","—","—","فعل مجهول است؛ امر مستقیم طبیعی ندارد.");
+ V(14,"FA3-14","مبتلا بودن","mobtalā budan","to suffer from; to be afflicted with","او به بیماری مزمن مبتلا بود.","U be bimāri-ye mozmen mobtalā bud.","He suffered from a chronic illness.","مبتلا بودن","—","مبتلا بودن به بیماری نیازمند مراقبت پزشکی است.","Mobtalā budan be bimāri niyāzmand-e morāqebat-e pezeshki ast.","Having an illness requires medical care.","—","—","—","ساختارِ بودن در این معنا خبری است؛ امر مستقیم طبیعی ندارد.");
+ A(14,"FA3-14","هدفمند","hadafmand","purposeful; goal-oriented","برنامه‌ریزی هدفمند به موفقیت کمک می‌کند.","Barnāme-rizi-ye hadafmand be movaffaqiyat komak mikonad.","Purposeful planning helps success.");
+ A(14,"FA3-14","متحرک","motaharr ek","mobile; moving","نمایشگاه شامل آثار متحرک و ثابت است.","Namāyeshgāh shāmel-e āsār-e motaharr ek-o sābet ast.","The exhibition includes moving and static works.");
+ // FA3-15 first-page addition.
+ N(15,"FA3-15","تدفین","tadfin","burial; interment","مراسم تدفین پس از نماز برگزار شد.","Marāsem-e tadfin pas az namāz bargozār shod.","The burial ceremony took place after the prayer.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
