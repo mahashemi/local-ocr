@@ -1923,6 +1923,13 @@
  A(15,"FA3-15","مشکل‌ساز","moshkel-sāz","problematic; causing trouble","رفتار بی‌احترامی در مراسم مشکل‌ساز است.","Raftār-e bi-ehterāmi dar marāsem moshkel-sāz ast.","Disrespectful behaviour at a ceremony causes problems.");
  N(15,"FA3-15","گناه","gonāh","sin; wrongdoing","تهمت زدن به دیگران گناه است.","Tohmat zadan be digarān gonāh ast.","Slandering others is a sin.");
  V(15,"FA3-15","تراشیدن موی سر","tarāshidan-e mu-ye sar","to shave one's head","در برخی آیین‌ها، نزدیکان فرد درگذشته موی سر خود را می‌تراشند.","Dar barkhi āyin-hā, nazdikān-e fard-e dar-gozashte mu-ye sar-e khod rā mitarāshand.","In some rites, the deceased person's relatives shave their heads.","تراشیدن موی سر","موی سرت را بتراش","تراشیدن موی سر در برخی آیین‌های سوگواری دیده می‌شود.","Tarāshidan-e mu-ye sar dar barkhi āyin-hā-ye soghvāri dide mishavad.","Shaving the head is seen in some mourning rites.","اگر لازم است، موی سرت را بتراش.","Agar lāzem ast, mu-ye sarat rā betarāsh.","If necessary, shave your head.");
+
+ N(17,"FA3-17","بنده","bande","I; your humble servant (formal first-person pronoun)","بنده از این پیشنهاد استقبال می‌کنم.","Bande az in pishnehād esteqbāl mikonam.","I welcome this suggestion.","ضمیر — pronoun");
+ N(17,"FA3-17","تحمل","tahammol","tolerance; endurance","تحمل گرما برای همه آسان نیست.","Tahammol-e garmā barāye hame āsān nist.","Enduring the heat is not easy for everyone.");
+ N(17,"FA3-17","هزینه","hazine","cost; expense","هزینهٔ ساخت این دستگاه زیاد بود.","Hazine-ye sākht-e in dastgāh ziyād bud.","The cost of building this device was high.");
+ N(17,"FA3-17","خودرو","khodru","vehicle; motor vehicle","خودروهای امروزی امکانات زیادی دارند.","Khodru-hā-ye emruzi emkānāt-e ziyādi dārand.","Modern vehicles have many features.");
+ N(17,"FA3-17","زیرلیوانی","zir-livāni","coaster","برای جلوگیری از لک شدن میز از زیرلیوانی استفاده کنید.","Barāye jelogiri az lak shodan-e miz az zir-livāni estefāde konid.","Use a coaster to prevent the table from getting stained.");
+ A(17,"FA3-17","سازگار","sāzgār","compatible; adaptable","این وسیله با محیط زیست سازگار است.","In vasile bā mohite zist sāzgār ast.","This device is environmentally friendly.");
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
