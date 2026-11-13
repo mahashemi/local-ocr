@@ -3,7 +3,7 @@
 (()=>{
  const rows=[];
  const N=(unit,source,fa,tr,en,...args)=>{
-  const hasPos=/^(اسم|صفت|گروه|عبارت|عنوان|قید|ساخت|اصطلاح)(?:\s*[—–-])/.test(args[0]||"");
+  const hasPos=/^(?:(?:اسم|صفت|گروه|عبارت|عنوان|قید|ساخت|اصطلاح|فعل)(?:\s+(?:دستوری|فعلی|مرکب|اصطلاحی))?)(?:\s*\/\s*(?:اسم|صفت))?\s*[—–-]/.test(args[0]||"");
   const pos=hasPos?args[0]:"اسم — ism (noun)";
   const exFa=args[hasPos?1:0],exTr=args[hasPos?2:1],exEn=args[hasPos?3:2],note=args[hasPos?4:3]||"";
   rows.push({unit,source,fa,tr,en,pos,ex:[exFa,exTr,exEn],...(note?{note}:{})});
