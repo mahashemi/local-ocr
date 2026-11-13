@@ -1356,6 +1356,7 @@ function ensureVocabularyModal(scope){
 }
 
 function khulasa(){
+ if(activeTerm===1){v.innerHTML='<section class="writing-wrap"><h2>خلاصه‌نویسی · Term 01</h2><p>خلاصه‌های Term 01 پس از تکمیل بازبینی متن‌های منبع و پیوند واژگان آماده خواهند شد.</p></section>';return}
  const term=activeTerm===2?2:3;
  const rows=term===2?(window.TERM2_KHULASA||[]):(window.TERM3_KHULASA||[]);
  if(!rows.length){v.innerHTML='<section class="writing-wrap"><h2>خلاصه‌نویسی</h2><p>خلاصه‌های این ترم در حال آماده‌سازی از روی متن اصلی درس‌ها هستند.</p></section>';return}
@@ -1411,6 +1412,7 @@ function writeLocal(key,obj){try{localStorage.setItem(key,JSON.stringify(obj))}c
 let essayDrafts=readLocal(essayStoreKey),speechDrafts=readLocal(speechStoreKey),essayCh=1,speechCh=20;
 function printCurrent(){document.body.classList.add("printing");window.onafterprint=()=>document.body.classList.remove("printing");window.print()}
 function essays(){
+ if(activeTerm===1){v.innerHTML='<section class="writing-wrap"><h2>کارگاه نوشتن · Term 01</h2><p>تمرین‌های نوشتاری Term 01 پس از تطبیق کامل با درس‌های منبع تدوین می‌شوند؛ محتوای ترم دیگر به جای آن نمایش داده نمی‌شود.</p></section>';return}
  const data=activeTerm===2?(window.TERM2_WRITING||window.TERM3_WRITING):window.TERM3_WRITING, item=data.chapters.find(x=>x.ch===essayCh)||data.chapters[0], saved=essayDrafts[activeTerm===2?'t2-'+essayCh:essayCh]||{};
  const topic=saved.topic||"main";
  const topics=[["main",item.topic],["alternate",item.alternate]];
@@ -1465,6 +1467,7 @@ function essays(){
 }
 function quranVerseLink(verse){const digits=String(verse||'').replace(/[۰-۹]/g,x=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(x)).replace(/[٠-٩]/g,x=>'٠١٢٣٤٥٦٧٨٩'.indexOf(x));const m=digits.match(/(\d{1,3})\s*[:：]\s*(\d{1,3})/);return m?'<a class="quran-ref" href="https://mahashemi.github.io/QuranMemorizer/#/surah/'+Number(m[1])+'/ayah/'+Number(m[2])+'" target="_blank" rel="noopener noreferrer">'+esc(verse)+'</a>':esc(verse)}
 function speeches(){
+ if(activeTerm===1){v.innerHTML='<section class="writing-wrap"><h2>سخنرانی · Term 01</h2><p>موضوع‌ها و نمونه‌سخنرانی‌های Term 01 پس از بررسی متن‌های شنیداری و گفتاری همان ترم آماده خواهند شد.</p></section>';return}
  const speechRows=activeTerm===2?(window.TERM2_SPEECHES||[]):(window.TERM3_SPEECHES||[]), speechKey=activeTerm===2?'t2-'+speechCh:speechCh, item=speechRows.find(x=>x.ch===speechCh)||speechRows[0],saved=speechDrafts[speechKey]||{};
  v.innerHTML=`<section class="writing-wrap">
  <div class="no-print"><div class="mut">Term 0${activeTerm||3} · Farsi Umumi · chapter-linked talks</div><h2>سخنرانی پنج‌دقیقه‌ای / Five-minute Sukhanrani</h2><p>Prepare one short talk connected to each FA chapter. Use the verse as the central anchor, then explain its meaning and connect it to the chapter and daily life. Do not merely recite the verse.</p>
