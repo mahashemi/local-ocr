@@ -2300,6 +2300,59 @@
  N(6,"N3-06","فرزندان","farzandān","children; offspring","والدین باید به نیازهای فرزندان توجه کنند.","Vāledeyn bāyad be niyāzhā-ye farzandān tavajjoh konand.","Parents should pay attention to their children's needs.");
  N(6,"N3-06","دستورالعمل","dastur-ol'amal","instructions; guidelines","دستورالعمل را پیش از شروع کار بخوانید.","Dastur-ol'amal rā pish az shoru'-e kār bekhānid.","Read the instructions before starting the task.");
 
+
+ // Source-attested Sukhanrani vocabulary: dialogue, travel, transport and food.
+ N(1,"SH3-01","صحبت","sohbat","conversation; talk","صحبت کردن با آرامش به حل اختلاف کمک می‌کند.","Sohbat kardan bā ārāmesh be hal-e ekhtelāf komak mikonad.","Speaking calmly helps resolve disagreements.");
+ N(1,"SH3-01","درست","dorost","correct; right","پاسخ درست را از میان گزینه‌ها انتخاب کنید.","Pāsokh-e dorost rā az miyān-e gozinehā entekhāb konid.","Choose the correct answer from the options.");
+ N(1,"SH3-01","دوباره","dobāre","again; once more","لطفاً جمله را دوباره گوش کنید.","Lotfan jomle rā dobāre gush konid.","Please listen to the sentence again.");
+ N(1,"SH3-01","نادرست","nādorost","incorrect; wrong","اطلاعات نادرست را منتشر نکنید.","Etelā'āt-e nādorost rā montasher nakonid.","Do not share incorrect information.");
+ N(1,"SH3-01","مشکل","moshkel","problem; difficulty","اگر مشکلی دارید، آن را روشن توضیح دهید.","Agar moshkeli dārid, ān rā roshan tozih dahid.","If you have a problem, explain it clearly.");
+ N(1,"SH3-01","فایل","fāyl","file","فایل صوتی درس را یک بار دیگر پخش کنید.","Fāyl-e sowti-ye dars rā yek bār-e digar pakhsh konid.","Play the lesson's audio file once more.");
+ N(1,"SH3-01","صوتی","sowti","audio; sound-related","برای تمرین شنیداری از فایل صوتی استفاده کنید.","Barāye tamrin-e shenidāri az fāyl-e sowti estefāde konid.","Use the audio file for listening practice.");
+ N(1,"SH3-01","واژه","vāzhe","word; vocabulary item","واژه‌های تازه را در دفتر بنویسید.","Vāzhehā-ye tāze rā dar daftar benevisid.","Write the new words in your notebook.");
+ N(1,"SH3-01","حرف","harf","letter; word; speech","این حرف در این موقعیت معنای دیگری دارد.","In harf dar in moghe'iyat ma'nā-ye digari dārad.","This word has another meaning in this context.");
+ N(1,"SH3-01","شماره","shomāre","number; issue","شمارهٔ پرواز را روی بلیت بررسی کنید.","Shomāre-ye parvāz rā ru-ye belit barrasi konid.","Check the flight number on the ticket.");
+ N(1,"SH3-01","تحصیل","tahsil","education; study","ادامهٔ تحصیل به برنامه‌ریزی نیاز دارد.","Edāme-ye tahsil be barnāme-rizi niyāz dārad.","Continuing one's education requires planning.");
+ N(1,"SH3-01","نفر","nafar","person; people (counter)","سه نفر برای گفت‌وگو انتخاب شدند.","Se nafar barāye goft-o-gu entekhāb shodand.","Three people were selected for the conversation.");
+ N(1,"SH3-01","محل","mahal","place; location","محل قرار را پیش از حرکت مشخص کنید.","Mahall-e gharār rā pish az harekat moshakhas konid.","Specify the meeting place before leaving.");
+ N(1,"SH3-01","دست","dast","hand","پیش از غذا دست‌های خود را بشویید.","Pish az ghazā dast-hā-ye khod rā beshuyid.","Wash your hands before eating.");
+ N(1,"SH3-01","خیلی","kheyli","very; a lot","این تمرین خیلی ساده نیست.","In tamrin kheyli sāde nist.","This exercise is not very easy.");
+ N(1,"SH3-01","ترتیب","tartib","order; sequence","رویدادها را به ترتیب زمانی بنویسید.","Roydādhā rā be tartib-e zamāni benevisid.","Write the events in chronological order.");
+ N(1,"SH3-01","تأخیر","ta'khir","delay","پرواز به دلیل شرایط آب‌وهوا با تأخیر انجام شد.","Parvāz be dalil-e sharāyet-e āb-o-havā bā ta'khir anjām shod.","The flight was delayed because of weather conditions.");
+ N(1,"SH3-01","دوره","dowre","period; course","این دوره برای تقویت گفتار طراحی شده است.","In dowre barāye taqviyat-e goftār tarāhi shode ast.","This course is designed to strengthen speaking.");
+ N(2,"SH3-02","رانندگی","rānandegi","driving","رانندگی ایمن به دقت و تمرکز نیاز دارد.","Rānandegi-ye imen be deqqat va tamarkoz niyāz dārad.","Safe driving requires care and concentration.");
+ N(2,"SH3-02","بلیت","belit","ticket","بلیت قطار را از پیش تهیه کردیم.","Belit-e qatār rā az pish tahیه kardim.","We bought the train ticket in advance.");
+ N(2,"SH3-02","حمل","haml","transport; carrying","حمل بار سنگین هزینهٔ جداگانه دارد.","Haml-e bār-e sangin hazine-ye jodāgāne dārad.","Transporting heavy luggage has an additional fee.");
+ N(2,"SH3-02","تبدیل","tabdil","conversion; change","تبدیل پول را در صرافی معتبر انجام دهید.","Tabdil-e pul rā dar sarāfi-ye mo'tabar anjām dahid.","Exchange money at a reputable exchange office.");
+ N(2,"SH3-02","فضا","fazā","space; atmosphere","فضای فرودگاه در ساعت‌های شلوغ پررفت‌وآمد است.","Fazā-ye forudgāh dar sā'at-hā-ye sholugh porraft-o-āmad ast.","The airport is busy during peak hours.");
+ N(2,"SH3-02","تلفن","telefon","telephone; phone","شمارهٔ تلفن خود را درست وارد کنید.","Shomāre-ye telefon-e khod rā dorost vāred konid.","Enter your phone number correctly.");
+ N(2,"SH3-02","مکان","makān","place; location","مکان مناسب برای توقف را انتخاب کنید.","Makān-e monāseb barāye tavaqqof rā entekhāb konid.","Choose a suitable place to stop.");
+ N(3,"SH3-03","غیرمجاز","gheyr-e mojāz","unauthorised; prohibited","پارک کردن در این محل غیرمجاز است.","Pārk kardan dar in mahal gheyr-e mojāz ast.","Parking in this place is prohibited.");
+ N(3,"SH3-03","ممنوع","mamnu'","forbidden; prohibited","ورود به این بخش ممنوع است.","Vorud be in bakhsh mamnu' ast.","Entry to this section is forbidden.");
+ N(3,"SH3-03","مدرک","madrek","document; certificate","برای ثبت‌نام باید مدرک شناسایی ارائه دهید.","Barāye sabt-nām bāyad madrek-e shenāsāyi erā'e dahid.","You must provide identification to register.");
+ N(3,"SH3-03","نقص","naqṣ","defect; fault","پیش از سفر نقص خودرو را بررسی کنید.","Pish az safar naqs-e khodro rā barrasi konid.","Check the vehicle for defects before travelling.");
+ N(3,"SH3-03","رنگ","rang","colour","رنگ تابلو باید از فاصله دیده شود.","Rang-e tāblo bāyad az fāsele dide shavad.","The sign's colour should be visible from a distance.");
+ N(3,"SH3-03","نوع","no'","type; kind","نوع بلیت را هنگام خرید بررسی کنید.","No'-e belit rā hengām-e kharid barrasi konid.","Check the type of ticket when buying it.");
+ N(4,"SH3-04","مواد","mavādd","materials; ingredients; substances","مواد لازم برای پخت غذا را آماده کنید.","Mavādd-e lāzem barāye pokht-e ghazā rā āmāde konid.","Prepare the ingredients needed to cook the meal.");
+ N(4,"SH3-04","سنتی","sonnati","traditional","این غذا با روش سنتی پخته می‌شود.","In ghazā bā ravesh-e sonnati pokhte mishavad.","This food is cooked in the traditional way.");
+ N(4,"SH3-04","نمک","namak","salt","برای این غذا نمک کمتری لازم است.","Barāye in ghazā namak-e kamtari lāzem ast.","This dish needs less salt.");
+ N(4,"SH3-04","پخت","pokht","cooking; preparation","پخت این غذا زمان زیادی می‌برد.","Pokht-e in ghazā zamān-e ziyādi mibarad.","Cooking this dish takes a long time.");
+ N(4,"SH3-04","سفره","sofreh","tablecloth; dining spread","خانواده دور سفره جمع شدند.","Khānevāde dor-e sofreh jam' shodand.","The family gathered around the dining spread.");
+ N(4,"SH3-04","گوشت","gusht","meat","برای این غذا از گوشت تازه استفاده کنید.","Barāye in ghazā az gusht-e tāze estefāde konid.","Use fresh meat for this dish.");
+ N(4,"SH3-04","شیر","shir","milk; lion","کودک هر روز یک لیوان شیر می‌نوشد.","Kudak har ruz yek livān shir minushad.","The child drinks a glass of milk every day.");
+ N(4,"SH3-04","غذایی","ghazāyi","food-related; culinary","مواد غذایی را در جای خنک نگهداری کنید.","Mavādd-e ghazāyi rā dar jā-ye khonak negahdāri konid.","Keep food items in a cool place.");
+ N(5,"SH3-05","حذف","hazf","deletion; removal","حذف واژه‌های تکراری متن را کوتاه‌تر می‌کند.","Hazf-e vāzhehā-ye tekrāri matn rā kutāh-tar mikonad.","Removing repeated words makes the text shorter.");
+ N(5,"SH3-05","عادت","ādat","habit; custom","عادت غذایی بر سلامت اثر می‌گذارد.","Ādat-e ghazāyi bar salāmat asar migozārad.","Eating habits affect health.");
+ N(5,"SH3-05","اضافه","ezāfe","extra; addition","نمک اضافه به غذا نریزید.","Namak-e ezāfe be ghazā narizid.","Do not add extra salt to the food.");
+ N(5,"SH3-05","کافی","kāfi","enough; sufficient","خواب کافی برای سلامت لازم است.","Khab-e kāfi barāye salāmat lāzem ast.","Enough sleep is necessary for health.");
+ N(5,"SH3-05","مختلف","mokhtalef","different; various","مردم سلیقه‌های غذایی مختلفی دارند.","Mardom saliqehā-ye ghazāyi-ye mokhtalefi dārand.","People have different food preferences.");
+ N(5,"SH3-05","حرف","harf","letter; speech","حرف آخر واژه را درست تلفظ کنید.","Harf-e ākhar-e vāzhe rā dorost تلفظ konid.","Pronounce the final letter of the word correctly.");
+ N(6,"SH3-06","کیفیت","keyfiyat","quality","کیفیت غذا به مواد اولیه بستگی دارد.","Keyfiyat-e ghazā be mavādd-e avvaliye bastagi dārad.","Food quality depends on the ingredients.");
+ N(7,"SH3-07","تماس","tamās","contact; call","برای تأیید زمان با مسئول تماس بگیرید.","Barāye ta'yid-e zamān bā mas'ul tamās begirid.","Contact the person in charge to confirm the time.");
+ N(7,"SH3-07","مستمر","mostamer","continuous; ongoing","تمرین مستمر مهارت گفتاری را تقویت می‌کند.","Tamrin-e mostamer mahārat-e goftāri rā taqviyat mikonad.","Consistent practice strengthens speaking skills.");
+ N(8,"SH3-08","شرکت","sherkat","company; participation","شرکت در کلاس گفت‌وگو را بهتر می‌کند.","Sherkat dar kelās goft-o-gu rā behtar mikonad.","Participating in class improves conversation.");
+ N(8,"SH3-08","تحصیلی","tahsili","educational; academic","برنامهٔ تحصیلی خود را با استاد بررسی کنید.","Barnāme-ye tahsili-ye khod rā bā ostād barrasi konid.","Review your study plan with the teacher.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
