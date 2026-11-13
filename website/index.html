@@ -1351,17 +1351,48 @@ function attachVocabularyLinks(scope){
 }
 function ensureVocabularyModal(scope){
  let modal=document.getElementById('sharedVocabModal');
- if(!modal){modal=document.createElement('div');modal.id='sharedVocabModal';modal.className='kh-word-modal';modal.hidden=true;modal.setAttribute('aria-modal','true');modal.setAttribute('role','dialog');modal.setAttribute('aria-label','Vocabulary flashcard');modal.innerHTML='<div class="kh-word-dialog"><button type="button" class="kh-word-close" data-vocab-close aria-label="Close">×</button><div class="mut">TRILINGUAL VOCABULARY CARD</div><div id="sharedVocabCard" class="kh-word-card"></div><div class="kh-word-actions"><button type="button" class="pri" id="sharedVocabFlip">Flip card</button><button type="button" data-vocab-close>Close</button></div></div>';document.body.append(modal)}
- let current=null,revealed=false;const card=modal.querySelector('#sharedVocabCard'),flip=modal.querySelector('#sharedVocabFlip');
- const render=()=>{if(!current)return;card.innerHTML=revealed?'<div class="fa"></div><div class="tr"></div><div class="meaning"></div>':'';if(revealed){card.querySelector('.fa').textContent=current.fa;card.querySelector('.tr').textContent=current.tr||'';card.querySelector('.meaning').textContent=current.en;if(current.xf){const ex=document.createElement('div');ex.className='ex';const fa=document.createElement('div');fa.className='fa';fa.textContent=current.xf;const tr=document.createElement('div');tr.className='tr';tr.textContent=current.xt||'';const en=document.createElement('div');en.textContent=current.xe||'';ex.append(fa,tr,en);card.append(ex)}}else{const fa=document.createElement('div');fa.className='fa';fa.textContent=current.fa;const hint=document.createElement('div');hint.className='mut';hint.textContent='Tap Flip to reveal the meaning and example.';card.append(fa,hint)}flip.textContent=revealed?'Show front':'Flip · Reveal meaning'};
- const close=()=>{modal.hidden=true;document.body.style.overflow=''};
- scope.querySelectorAll('[data-vocab-id]').forEach(btn=>btn.addEventListener('click',()=>{current=all().find(i=>i.id===btn.dataset.vocabId)||null;if(!current)return;revealed=false;render();modal.hidden=false;document.body.style.overflow='hidden'}));
- modal.onclick=e=>{if(e.target===modal||e.target.closest('[data-vocab-close]'))close()};
+ if(!modal){
+  modal=document.createElement('div');modal.id='sharedVocabModal';modal.className='kh-word-modal';modal.hidden=true;
+  modal.setAttribute('aria-hidden','true');modal.setAttribute('aria-modal','true');modal.setAttribute('role','dialog');modal.setAttribute('aria-label','Vocabulary flashcard');
+  modal.innerHTML='<div class="kh-word-dialog"><button type="button" class="kh-word-close" data-vocab-close aria-label="Close">×</button><div class="mut">TRILINGUAL VOCABULARY CARD</div><div id="sharedVocabCard" class="kh-word-card"></div><div class="kh-word-actions"><button type="button" class="pri" id="sharedVocabFlip">Flip card</button><button type="button" data-vocab-close>Close</button></div></div>';
+  document.body.append(modal);
+ }
+ let current=null,revealed=false,returnFocus=null,previousOverflow='';
+ const card=modal.querySelector('#sharedVocabCard'),flip=modal.querySelector('#sharedVocabFlip'),closeButton=modal.querySelector('.kh-word-close');
+ const render=()=>{
+  if(!current)return;
+  card.innerHTML=revealed?'<div class="fa"></div><div class="tr"></div><div class="meaning"></div>':'';
+  if(revealed){
+   card.querySelector('.fa').textContent=current.fa;card.querySelector('.tr').textContent=current.tr||'';card.querySelector('.meaning').textContent=current.en;
+   if(current.xf){const ex=document.createElement('div');ex.className='ex';const fa=document.createElement('div');fa.className='fa';fa.textContent=current.xf;const tr=document.createElement('div');tr.className='tr';tr.textContent=current.xt||'';const en=document.createElement('div');en.textContent=current.xe||'';ex.append(fa,tr,en);card.append(ex)}
+  }else{const fa=document.createElement('div');fa.className='fa';fa.textContent=current.fa;const hint=document.createElement('div');hint.className='mut';hint.textContent='Tap Flip to reveal the meaning and example.';card.append(fa,hint)}
+  flip.textContent=revealed?'Show front':'Flip · Reveal meaning';
+ };
+ const close=()=>{
+  if(modal.hidden)return;
+  modal.hidden=true;modal.setAttribute('aria-hidden','true');document.body.style.overflow=previousOverflow;
+  if(returnFocus&&returnFocus.isConnected)returnFocus.focus();
+ };
+ scope.querySelectorAll('[data-vocab-id]').forEach(btn=>btn.addEventListener('click',()=>{
+  current=all().find(i=>i.id===btn.dataset.vocabId)||null;if(!current)return;
+  returnFocus=btn;previousOverflow=document.body.style.overflow;revealed=false;render();
+  modal.hidden=false;modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';closeButton.focus();
+ }));
+ modal.onclick=e=>{if(e.target===modal||(e.target.closest&&e.target.closest('[data-vocab-close]')))close()};
  flip.onclick=()=>{revealed=!revealed;render()};
  if(window.__sharedVocabEsc)document.removeEventListener('keydown',window.__sharedVocabEsc);
- window.__sharedVocabEsc=e=>{if(e.key==='Escape'&&!modal.hidden)close()};document.addEventListener('keydown',window.__sharedVocabEsc);
+ window.__sharedVocabEsc=e=>{
+  if(modal.hidden)return;
+  if(e.key==='Escape'){close();return}
+  if(e.key==='Tab'){
+   const items=[...modal.querySelectorAll('button:not([disabled])')];if(!items.length)return;
+   const first=items[0],last=items[items.length-1];
+   if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+   else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+  }
+ };
+ document.addEventListener('keydown',window.__sharedVocabEsc);
 }
-
 function khulasa(){
  if(activeTerm===1){v.innerHTML='<section class="writing-wrap"><h2>خلاصه‌نویسی · Term 01</h2><p>خلاصه‌های Term 01 پس از تکمیل بازبینی متن‌های منبع و پیوند واژگان آماده خواهند شد.</p></section>';return}
  const term=activeTerm===2?2:3;
