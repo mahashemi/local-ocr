@@ -1880,6 +1880,12 @@
  N(5,"SH3-05","آداب","ādāb","customs; etiquette","رعایت آداب غذا خوردن نشانهٔ احترام است.","Re'āyat-e ādāb-e ghazā khordan neshāne-ye ehterām ast.","Observing dining etiquette is a sign of respect.");
  N(5,"SH3-05","فرهنگ","farhang","culture","فرهنگ غذایی هر منطقه ویژگی‌های خاصی دارد.","Farhang-e ghazāyi-ye har manteqe vizhegi-hā-ye khāssi dārad.","Every region has its own food culture.");
  N(5,"SH3-05","مخاطب","mokhātab","audience; addressee","نویسنده باید مخاطب نوشتهٔ خود را بشناسد.","Nevisande bāyad mokhātab-e neveshte-ye khod rā beshenāsad.","A writer should know the audience of their writing.");
+
+ N(16,"N3-06","والدین","vāledeyn","parents","والدین باید دربارهٔ استفادهٔ کودکان از اینترنت آگاه باشند.","Vāledeyn bāyad darbāre-ye estefāde-ye kudakān az internet āgāh bāshand.","Parents should be aware of their children's internet use.");
+ N(16,"N3-06","پیشرفت جامعه","pishraft-e jāme'e","social progress; progress of society","آموزش و مشارکت مردم به پیشرفت جامعه کمک می‌کند.","Āmuzesho moshārekat-e mardom be pishraft-e jāme'e komak mikonad.","Education and public participation contribute to social progress.","گروه اسمی — noun phrase");
+ N(16,"N3-06","نقدنویسی","naqd-nevisi","critique writing; critical review","نقدنویسی منصفانه به بررسی دقیق موضوع نیاز دارد.","Naqd-nevisi-ye monsefāne be barrasi-ye daqiq-e mozoo' niyāz dārad.","Writing a fair critique requires careful examination of the subject.");
+ N(16,"N3-06","سوءاستفاده","su'-estefāde","misuse; abuse","سوءاستفاده از اطلاعات شخصی خطرناک است.","Su'-estefāde az ettelā'āt-e shakhsi khatarnāk ast.","Misuse of personal information is dangerous.");
+ A(16,"N3-06","مستهجن","mostahjan","obscene; pornographic","دسترسی کودکان به محتوای مستهجن باید محدود شود.","Dastresi-ye kudakān be mohtavā-ye mostahjan bāyad mahdud shavad.","Children's access to obscene content should be restricted.");
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
