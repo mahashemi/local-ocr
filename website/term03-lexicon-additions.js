@@ -1937,6 +1937,11 @@
  N(18,"FA3-18","خرافات","khorāfāt","superstitions","باور به خرافات می‌تواند تصمیم‌گیری را دشوار کند.","Bāvar be khorāfāt mitavānad tasmim-giri rā doshvār konad.","Belief in superstitions can make decision-making difficult.");
  N(18,"FA3-18","حنا","henā","henna","در بعضی مراسم عروسی از حنا استفاده می‌کنند.","Dar ba'zi marāsem-e arusi az henā estefāde mikonand.","Henna is used in some wedding ceremonies.");
  N(18,"FA3-18","وعده","va'de","promise; appointment; meal (context-dependent)","پیش از جشن، وعده‌ای برای دیدار خانواده‌ها گذاشتند.","Pish az jashn, va'de-i barāye didār-e khānevādehā gozāshtand.","Before the celebration, they arranged a meeting between the families.");
+
+ A(19,"FA3-19","داغ","dāgh","hot; warm; intense","هوای ظهر بسیار داغ بود.","Havā-ye zohr besyār dāgh bud.","The midday weather was very hot.");
+ N(19,"FA3-19","تخریب","takhrib","destruction; damage","تخریب آثار باستانی به میراث فرهنگی آسیب می‌زند.","Takhrib-e āsār-e bāstāni be mirās-e farhangi āsib mizanad.","Destroying historic sites harms cultural heritage.");
+ N(19,"FA3-19","چرا","cherā","why","چرا باید از آثار تاریخی محافظت کنیم؟","Cherā bāyad az āsār-e tārikhi mohāfezat konim?","Why should we protect historical sites?","قید پرسشی — interrogative adverb");
+ N(19,"FA3-19","بله","bale","yes","بله، این مکان ارزش دیدن دارد.","Bale, in makān arzesh-e didan dārad.","Yes, this place is worth visiting.","قید پاسخ — affirmative particle");
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
