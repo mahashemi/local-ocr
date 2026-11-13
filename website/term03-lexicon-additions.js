@@ -2356,7 +2356,7 @@
 
  // Cross-cutting vocabulary used throughout the Term 03 writing, speaking and summary pages.
  N(1,"WR3-01","توضیح","tozih","explanation; clarification","برای هر پاسخ یک توضیح کوتاه بنویسید.","Barāye har pāsokh yek tozih-e kutāh benevisid.","Write a short explanation for each answer.");
- N(1,"WR3-01","بررسی","barrasi","review; examination","بررسی منبع پیش از نقل مطلب ضروری است.","Barrasi-ye manba' pish az naql-e مطلب zaruri ast.","Checking a source before quoting it is essential.");
+ N(1,"WR3-01","بررسی","barrasi","review; examination","بررسی منبع پیش از نقل مطلب ضروری است.","Barrasi-ye manba' pish az naql-e matlab zaruri ast.","Checking a source before quoting it is essential.");
  N(1,"WR3-01","معرفی","mo'arrefi","introduction; presentation","در مقدمه موضوع تحقیق را معرفی کنید.","Dar moqaddame mozoo-ye tahqiq rā mo'arrefi konid.","Introduce the research topic in the introduction.");
  N(1,"WR3-01","انسان","ensān","human being; person","انسان با یادگیری و تجربه رشد می‌کند.","Ensān bā yādgiri va tajrobe roshd mikonad.","A human being grows through learning and experience.");
  N(1,"WR3-01","حفظ","hefz","preservation; protection; memorisation","حفظ محیط زیست مسئولیت همگانی است.","Hefz-e mohite zist mas'uliyat-e hamgāni ast.","Protecting the environment is everyone's responsibility.");
@@ -2367,7 +2367,7 @@
  N(1,"WR3-01","کمک","komak","help; assistance","همکاری و کمک به دیگران رفتار پسندیده‌ای است.","Hamkāri va komak be digarān raftār-e pasandid e-i ast.","Cooperation and helping others are praiseworthy behaviours.");
  N(1,"WR3-01","آیه","āye","Qur'anic verse","برای سخنرانی یک آیهٔ مرتبط انتخاب کنید.","Barāye sokhanrāni yek āye-ye mortabet entekhāb konid.","Choose a relevant Qur'anic verse for the speech.");
  N(1,"WR3-01","مقایسه","moqāyese","comparison","مقایسهٔ دو روش به انتخاب بهتر کمک می‌کند.","Moqāyese-ye do ravesh be entekhāb-e behtar komak mikonad.","Comparing two methods helps make a better choice.");
- N(1,"WR3-01","شناخت","shenākht","knowledge; recognition","شناخت مخاطب به انتخاب لحن مناسب کمک می‌کند.","Shenākht-e mokhāteb be entekhāb-e lahن-e monāseb komak mikonad.","Knowing the audience helps choose an appropriate tone.");
+ N(1,"WR3-01","شناخت","shenākht","knowledge; recognition","شناخت مخاطب به انتخاب لحن مناسب کمک می‌کند.","Shenākht-e mokhāteb be entekhāb-e lahn-e monāseb komak mikonad.","Knowing the audience helps choose an appropriate tone.");
  N(1,"WR3-01","سوره","sure","Qur'anic chapter (surah)","نام سوره و شمارهٔ آیه را دقیق ذکر کنید.","Nām-e sure va shomāre-ye āye rā daqiq zekr konid.","State the surah name and verse number accurately.");
  N(1,"WR3-01","سخن","sokhan","speech; words","سخن سنجیده می‌تواند اختلاف را کاهش دهد.","Sokhan-e sanjide mitavānad ekhtelāf rā kāhesh dahad.","Thoughtful words can reduce disagreement.");
  N(1,"WR3-01","رعایت","re'āyat","observance; consideration","رعایت نوبت نشانهٔ احترام به دیگران است.","Re'āyat-e nobat neshāne-ye ehterām be digarān ast.","Taking turns is a sign of respect for others.");
@@ -2387,7 +2387,7 @@
  N(1,"WR3-01","ارزیابی","arzyābi","evaluation; assessment","پس از پایان کار، نتیجه را ارزیابی کنید.","Pas az pāyān-e kār natije rā arzyābi konid.","Evaluate the result after completing the task.");
  N(1,"WR3-01","ارزشمند","arzeshmand","valuable; worthwhile","وقت و دانش استاد ارزشمند است.","Vaqt va dānesh-e ostād arzeshmand ast.","A teacher's time and knowledge are valuable.");
  N(1,"WR3-01","پیام","payām","message","پیام اصلی نوشته را در نتیجه تکرار نکنید؛ آن را جمع‌بندی کنید.","Payām-e asli-ye neveshte rā dar natije tekrar nakonid; ān rā jam'-bandi konid.","Do not simply repeat the main message in the conclusion; summarise it.");
- N(1,"WR3-01","پیوند","peyvand","connection; link","پیوند منطقی میان بندها متن را منسجم می‌کند.","Peyvand-e manteqi miyān-e bandhā matn rā monسجم mikonad.","Logical connections between paragraphs make a text coherent.");
+ N(1,"WR3-01","پیوند","peyvand","connection; link","پیوند منطقی میان بندها متن را منسجم می‌کند.","Peyvand-e manteqi miyān-e bandhā matn rā monasajem mikonad.","Logical connections between paragraphs make a text coherent.");
  N(1,"WR3-01","طبیعت","tabi'at","nature","حفاظت از طبیعت وظیفهٔ همهٔ مردم است.","Hefāzat az tabi'at vazife-ye hame-ye mardom ast.","Protecting nature is everyone's duty.");
  N(1,"WR3-01","طبیعی","tabi'i","natural","برای توصیف مکان از جزئیات طبیعی استفاده کنید.","Barāye towsif-e makān az joz'iyāt-e tabi'i estefāde konid.","Use natural details to describe a place.");
  N(1,"WR3-01","مسیر","masir","path; route; course","برنامهٔ روشن مسیر رسیدن به هدف را نشان می‌دهد.","Barnāme-ye roshan masir-e residan be hadaf rā neshān midahad.","A clear plan shows the path to a goal.");
