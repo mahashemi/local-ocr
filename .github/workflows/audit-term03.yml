@@ -11,6 +11,16 @@ on:
       - "tests/test_term03_content.py"
       - "TERM03_FIRST_PAGE_AUDIT.md"
       - ".github/workflows/audit-term03.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "website/term03-*.js"
+      - "website/index.html"
+      - "study-materials/dars/term-03/**"
+      - "tools/audit-term03.cjs"
+      - "tests/test_term03_content.py"
+      - "TERM03_FIRST_PAGE_AUDIT.md"
+      - ".github/workflows/audit-term03.yml"
   workflow_dispatch:
 
 permissions:
