@@ -1476,6 +1476,30 @@
  V(17,"N3-07","ترغیب شدن","targhib shodan","to be encouraged; to become motivated","دانش‌آموزان با تشویق معلم به مطالعه ترغیب شدند.","Dānesh-āmuzān bā tashviq-e mo'allem be motāle'e targhib shodand.","The students were encouraged to study.","ترغیب شدن","—","ترغیب شدن به مطالعه با دیدن الگوهای خوب آسان‌تر می‌شود.","Targhib shodan be motāle'e bā didan-e olguhā-ye khub āsāntar mishavad.","Seeing good role models makes it easier to become motivated to read.","—","—","—","فعل مجهول/لازم است؛ امر مستقیم طبیعی ندارد.");
  V(17,"N3-07","پایبند بودن","pāyband budan","to be committed; to adhere to","او به برنامهٔ روزانهٔ خود پایبند است.","U be barnāme-ye ruzāne-ye khod pāyband ast.","He is committed to his daily plan.","پایبند بودن","پایبند باش","پایبند بودن به برنامه به موفقیت کمک می‌کند.","Pāyband budan be barnāme be movaffaqiyat komak mikonad.","Sticking to a plan helps success.","به برنامه‌ات پایبند باش.","Be barnāme-at pāyband bāsh.","Stick to your plan.");
 
+
+ // N3-08 first-page additions.
+ N(18,"N3-08","قاره","qāre","continent","آسیا بزرگ‌ترین قارهٔ جهان است.","Āsiyā bozorg-tarin qāre-ye jahān ast.","Asia is the largest continent.");
+ N(18,"N3-08","وعدهٔ غذایی","va'de-ye ghazāyi","meal","صبحانه یک وعدهٔ غذایی مهم است.","Sobhāne yek va'de-ye ghazāyi-ye mohem ast.","Breakfast is an important meal.","گروه اسمی — noun phrase");
+ N(18,"N3-08","جدول مقایسه‌ای","jadval-e moghāyese-i","comparison table","اطلاعات کشورها را در جدول مقایسه‌ای بنویسید.","Ettelā'āt-e keshvarhā rā dar jadval-e moghāyese-i benevisid.","Write the countries' information in a comparison table.","گروه اسمی — noun phrase");
+ N(18,"N3-08","پشت سرهم","posht-e sarham","consecutively; one after another","سه روز پشت سرهم باران بارید.","Se ruz posht-e sarham bārān bārid.","It rained for three consecutive days.","قید — adverb");
+ N(18,"N3-08","جمع‌بندی","jam'-bandi","summary; conclusion","در پایان درس یک جمع‌بندی کوتاه می‌نویسیم.","Dar pāyān-e dars yek jam'-bandi-ye kutāh minevisim.","At the end of the lesson, we write a short summary.");
+ N(18,"N3-08","نکات ویرایشی","nokāt-e virāyeshi","editing points; editorial notes","پیش از تحویل نوشته، نکات ویرایشی را بررسی کنید.","Pish az tahvil-e neveshte, nokāt-e virāyeshi rā barrasi konid.","Check the editing points before submitting the writing.","گروه اسمی — noun phrase");
+ N(18,"N3-08","مقدمه‌چینی","moqaddame-chini","setting the scene; preparing an introduction","مقدمه‌چینی مناسب خواننده را با موضوع آشنا می‌کند.","Moqaddame-chini-ye monāseb khānande rā bā mozoo' āshnā mikonad.","A good introduction familiarises the reader with the topic.");
+ N(18,"N3-08","بندبازی","band-bāzi","tightrope walking; acrobatics","بندبازی به مهارت و تعادل زیادی نیاز دارد.","Band-bāzi be mahārat-o ta'ādol-e ziyādi niyāz dārad.","Tightrope walking requires great skill and balance.");
+ N(18,"N3-08","تحویل سال","tahvil-e sāl","the moment the new year begins","خانواده هنگام تحویل سال کنار هم جمع می‌شوند.","Khānevāde hengām-e tahvil-e sāl kenār-e ham jam' mishavand.","The family gathers together at the moment the new year begins.","گروه اسمی — noun phrase");
+ N(18,"N3-08","آذین‌بندی","azin-bandi","decoration; festive adornment","آذین‌بندی خیابان‌ها برای جشن آغاز شد.","Azin-bandi-ye خیābānhā barāye jashn āghāz shod.","Decorating the streets for the celebration began.");
+ // N3-09 first-page additions.
+ N(19,"N3-09","محدودیت","mahdudiyat","limitation; restriction","این برنامه محدودیت زمانی دارد.","In barnāme mahdudiyat-e zamāni dārad.","This programme has a time limit.");
+ N(19,"N3-09","شبکهٔ اینترنت","shabake-ye internet","internet network","شبکهٔ اینترنت در این منطقه قوی است.","Shabake-ye internet dar in manteqe qavi ast.","The internet network is strong in this area.","گروه اسمی — noun phrase");
+ N(19,"N3-09","سیستم آموزشی","sistem-e āmuzeshi","educational system","سیستم آموزشی باید به نیازهای دانش‌آموزان توجه کند.","Sistem-e āmuzeshi bāyad be niyāzhā-ye dānesh-āmuzān tavajjoh konad.","The educational system should attend to students' needs.","گروه اسمی — noun phrase");
+ N(19,"N3-09","نظم و آراستگی","nazm-o ārāstegi","order and neatness","نظم و آراستگی در نوشتار اهمیت دارد.","Nazm-o ārāstegi dar neveshtār ahammiyat dārad.","Order and neatness are important in writing.","گروه اسمی — noun phrase");
+ V(19,"N3-09","پرهیز کردن","parhiz kardan","to avoid; to refrain","برای حفظ سلامتی باید از غذای ناسالم پرهیز کرد.","Barāye hefz-e salāmati bāyad az ghazā-ye nāsālem parhiz kard.","To stay healthy, one should avoid unhealthy food.","پرهیز کردن","پرهیز کن","پرهیز کردن از شایعه‌پراکنی مسئولیت همگانی است.","Parhiz kardan az shāye'e-parākani mas'uliyat-e hamegāni ast.","Avoiding rumour-spreading is everyone's responsibility.","از انتشار خبر نادرست پرهیز کن.","Az enteshār-e khabar-e nādorost parhiz kon.","Avoid spreading false news.");
+ N(19,"N3-09","نشانه‌گذاری","neshāne-gozāri","punctuation; marking","نشانه‌گذاری درست فهم متن را آسان می‌کند.","Neshāne-gozāri-ye dorost fahm-e matn rā āsān mikonad.","Correct punctuation makes a text easier to understand.");
+ A(19,"N3-09","صمیمانه","samimāne","warmly; sincerely","او صمیمانه از دوستانش تشکر کرد.","U samimāne az dustānash tashakkor kard.","He sincerely thanked his friends.","قید — adverb");
+ N(19,"N3-09","مورد اعتماد","mored-e e'temād","trustworthy; trusted","برای پژوهش از منابع مورد اعتماد استفاده کنید.","Barāye pazhuhesh az manābe'-e mored-e e'temād estefāde konid.","Use trustworthy sources for research.","گروه وصفی — adjective phrase");
+ N(19,"N3-09","احساس و هیجان","ehsās-o heyajān","feelings and emotions","داستان می‌تواند احساس و هیجان خواننده را برانگیزد.","Dāstān mitavānad ehsās-o heyajān-e khānande rā barangizad.","A story can evoke the reader's feelings and emotions.","گروه اسمی — noun phrase");
+ N(19,"N3-09","زبان شیرین","zabān-e shirin","sweet; pleasant language","فارسی زبان شیرینی است.","Fārsi zabān-e shirini ast.","Persian is a sweet and pleasant language.","گروه وصفی — adjective phrase");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
