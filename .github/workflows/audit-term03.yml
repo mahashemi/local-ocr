@@ -1,0 +1,49 @@
+name: Term 03 content audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "website/term03-*.js"
+      - "website/index.html"
+      - "study-materials/dars/term-03/**"
+      - "tools/audit-term03.cjs"
+      - "tests/test_term03_content.py"
+      - "TERM03_FIRST_PAGE_AUDIT.md"
+      - ".github/workflows/audit-term03.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Check Term 03 JavaScript syntax
+        run: |
+          for file in website/term03-*.js; do
+            node --check "$file"
+          done
+
+      - name: Run Term 03 deployment audit
+        run: node tools/audit-term03.cjs
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pytest
+        run: python -m pip install pytest
+
+      - name: Run Term 03 content tests
+        run: python -m pytest -q tests/test_term03_content.py
