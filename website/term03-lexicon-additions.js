@@ -1598,7 +1598,7 @@
 
 
  // Final missing global headwords from KH3-02 and KH3-05 first-page lists.
- V(2,"KH3-02","قصد داشتن","qasd dāshtan","to intend; to plan","من قصد دارم در امتحان موفق شوم.","Man qasd dāram dar emtehān movaffaq shavam.","I intend to succeed in the exam.","قصد داشتن","قصد داشته باش","قصد داشتن به‌تنهایی کافی نیست و باید تلاش کرد.","Qasd dāshtan be-tanhāyi kāfi nist va bāyad talāsh kard.","Intending alone is not enough; one must make an effort.","برای رسیدن به هدفت قصد جدی داشته باش.","Barāye residan be hadafat qasd-e jeddi dāshte bāsh.","Have a firm intention to reach your goal.");
+ V(2,"KH3-02","قصد داشتن","qasd dāshtan","to intend; to plan","من قصد دارم در امتحان موفق شوم.","Man qasd dāram dar emtehān movaffaq shavam.","I intend to succeed in the exam.","قصد داشتن","قصد داشته باش","قصد داشتن به‌تنهایی کافی نیست و باید تلاش کرد.","Qasd dāshtan be-tanhāyi kāfi nist va bāyad talāsh kard.","Intending alone is not enough; one must make an effort.","برای رسیدن به هدفت قصد داشته باش.","Barāye residan be hadafat qasd dāshte bāsh.","Have a firm intention to reach your goal.");
  N(5,"KH3-05","سنگتراش","sangtarāsh","stonemason; stonecutter","سنگتراش از سنگ برای ساختن پله استفاده کرد.","Sangtarāsh az sang barāye sākhtan-e pelle estefāde kard.","The stonemason used stone to build the steps.");
 
 
@@ -1658,7 +1658,7 @@
 
  // FA3-16 first-page additions.
  N(16,"FA3-16","سرگرمی","sargarmi","entertainment; pastime","مطالعه یکی از سرگرمی‌های مفید است.","Motāle'e yeki az sargarmi-hā-ye mofid ast.","Reading is a useful pastime.");
- V(16,"FA3-16","شکستن رکورد","shekastan-e rekord","to break a record","ورزشکار توانست رکورد جهانی را بشکند.","Varzeshkār tavānest rekord-e jahāni rā beshekanad.","The athlete managed to break the world record.","شکستن رکورد","رکورد را بشکن","شکستن رکورد به تمرین فراوان نیاز دارد.","Shekastan-e rekord be tamrin-e farāvān niyāz dārad.","Breaking a record requires extensive practice.","رکورد قبلی را بشکن.","Rekord-e qabli rā beshekan.","Break the previous record.");
+ V(16,"FA3-16","شکستن رکورد","shekastan-e rekord","to break a record","ورزشکار توانست رکورد جهانی را بشکند.","Varzeshkār tavānest rekord-e jahāni rā beshekanad.","The athlete managed to break the world record.","شکستن رکورد","رکورد را بشکن","شکستن رکورد به تمرین فراوان نیاز دارد.","Shekastan-e rekord be tamrin-e farāvān niyāz dārad.","Breaking a record requires extensive practice.","رکورد را بشکن.","Rekord rā beshekan.","Break the previous record.");
  V(16,"FA3-16","بیزار بودن","bizār budan","to be fed up with; to dislike strongly","او از شایعه‌پراکنی بیزار است.","U az shāye'e-parākani bizār ast.","He is fed up with rumour-spreading.","بیزار بودن","—","بیزار بودن از دروغ نشانهٔ حساسیت اخلاقی است.","Bizār budan az dorugh neshāne-ye hassāsiyat-e akhlāqi ast.","Being fed up with lies reflects moral sensitivity.","—","—","—","ساختارِ بودن در این معنا خبری است؛ امر مستقیم طبیعی ندارد.");
  A(16,"FA3-16","مفصل","mofassal","detailed; extensive","گزارش مفصل را برای روزنامه فرستاد.","Gozaresh-e mofassal rā barāye ruznāme ferestād.","He sent a detailed report.");
  N(16,"FA3-16","کشتار","koshtār","massacre; mass killing","خبر کشتار مردم جهان را اندوهگین کرد.","Khabar-e koshtār-e mardom jahān rā anduhgin kard.","News of the massacre saddened the world.");
