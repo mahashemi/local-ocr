@@ -273,7 +273,7 @@
 
 
  };
- const additions=rows.map(([unit,source,fa,tr,en,pos,faEx,trEx,enEx])=>({unit,source,fa,tr,en,pos:pos==="noun"?"اسم — noun":pos==="noun phrase"?"ترکیب اسمی — noun phrase":pos==="proper noun"?"اسم خاص — proper noun":pos==="adjective"?"صفت — adjective":pos==="adjective/adverb"?"صفت/قید — adjective/adverb":pos==="noun/preposition"?"اسم/حرف اضافه — noun/preposition":pos==="time expression"?"قید زمان — time expression":pos==="greeting"?"عبارت احوال‌پرسی — greeting":pos==="question"?"پرسش — question":pos==="expression"?"عبارت — expression":pos==="adverb"?"قید — adverb":pos==="verb"?"فعل — verb":"فعل مرکب — compound verb",ex:[faEx,trEx,enEx],...(VERB_FORMS[fa]||{})}));
+ const additions=rows.filter(Boolean).map(([unit,source,fa,tr,en,pos,faEx,trEx,enEx])=>({unit,source,fa,tr,en,pos:pos==="noun"?"اسم — noun":pos==="noun phrase"?"ترکیب اسمی — noun phrase":pos==="proper noun"?"اسم خاص — proper noun":pos==="adjective"?"صفت — adjective":pos==="adjective/adverb"?"صفت/قید — adjective/adverb":pos==="noun/preposition"?"اسم/حرف اضافه — noun/preposition":pos==="time expression"?"قید زمان — time expression":pos==="greeting"?"عبارت احوال‌پرسی — greeting":pos==="question"?"پرسش — question":pos==="expression"?"عبارت — expression":pos==="adverb"?"قید — adverb":pos==="verb"?"فعل — verb":"فعل مرکب — compound verb",ex:[faEx,trEx,enEx],...(VERB_FORMS[fa]||{})}));
  const norm=s=>String(s||"").replace(/[\u200c\sـ]/g,"");
  const seen=new Set((window.TERM1_DATA||[]).map(x=>x.unit+"|"+norm(x.fa)));
  for(const x of additions){const k=x.unit+"|"+norm(x.fa);if(seen.has(k))throw new Error("Duplicate Term 01 word: "+k);seen.add(k);}
