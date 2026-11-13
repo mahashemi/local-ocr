@@ -2057,7 +2057,7 @@
  N(9,"N3-09","شبانه‌روز","shabāne-ruz","day and night; 24-hour period","دانشجو شبانه‌روز برای امتحان آماده می‌شد.","Dāneshju shabāne-ruz barāye emtehān āmāde mishod.","The student prepared for the exam day and night.");
 
  N(8,"N3-08","شباهت","shabāhat","similarity; resemblance","شباهت‌های دو فرهنگ را می‌توان مقایسه کرد.","Shabāhat-hā-ye do farhang rā mitavān moghāyese kard.","The similarities between two cultures can be compared.");
- N(8,"N3-08","گذشتگان","gozas h tegān","ancestors; people of the past","باید از تجربهٔ گذشتگان درس بگیریم.","Bāyad az tajrobe-ye gozashtegān dars begirim.","We should learn from the experience of those who came before us.");
+ N(8,"N3-08","گذشتگان","gozashtagān","ancestors; people of the past","باید از تجربهٔ گذشتگان درس بگیریم.","Bāyad az tajrobe-ye gozashtegān dars begirim.","We should learn from the experience of those who came before us.");
  N(8,"N3-08","جوامع","javāme'","societies; communities","جوامع مختلف آداب و رسوم گوناگونی دارند.","Javāme'-e mokhtalef ādāb-o rosum-e gonāguni dārand.","Different societies have different customs and traditions.");
  N(8,"N3-08","نهاد","nehād","institution; organisation","نهادهای فرهنگی از هنر حمایت می‌کنند.","Nehād-hā-ye farhangi az honar hemāyat mikonand.","Cultural institutions support the arts.");
  N(8,"N3-08","متمم","motammem","complement (grammar)","در این جمله، گروه اسمی نقش متمم دارد.","Dar in jomle, goruh-e esmi naqsh-e motammem dārad.","In this sentence, the noun phrase functions as a complement.","اصطلاح دستوری — grammatical term");
