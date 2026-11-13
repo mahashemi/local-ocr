@@ -2445,6 +2445,29 @@
  N(1,"WR3-01","خطر","khatar","danger; risk","آگاهی از خطر به پیشگیری کمک می‌کند.","Āgāhi az khatar be pishgiri komak mikonad.","Awareness of danger helps prevention.");
  N(1,"WR3-01","توسعه","tose'e","development","توسعهٔ مهارت نوشتن به تمرین نیاز دارد.","Tose'e-ye mahārat-e neveshtan be tamrin niyāz dārad.","Developing writing skills requires practice.");
 
+
+ // Vocabulary for the final Newestan Insha exercise and model essay.
+ N(20,"N3-10","انشا","enshā","essay; composition","در انشا باید مقدمه، بدنه و نتیجهٔ روشن داشته باشیم.","Dar enshā bāyad moqaddame, badane va natije-ye roshan dāshte bāshim.","An essay should have a clear introduction, body and conclusion.");
+ N(20,"N3-10","دانشمند","dāneshmand","scholar; scientist","دانشمندان اخلاق دربارهٔ احترام به استاد بحث کرده‌اند.","Dāneshmandān-e akhlāq darbāre-ye ehterām be ostād bahs karde-and.","Ethicists have discussed respect for teachers.");
+ N(20,"N3-10","قالب","qāleb","form; format; framework","این نوشته در قالب چهار بخش تنظیم شده است.","In neveshte dar qāleb-e chahār bakhsh tanzim shode ast.","This writing is arranged in a four-part format.");
+ N(20,"N3-10","بدنه","badane","body (of an essay or text)","بدنهٔ انشا شامل بندهای اصلی است.","Badane-ye enshā shāmel-e bandhā-ye asli ast.","The body of an essay contains its main paragraphs.");
+ N(20,"N3-10","جایگاه","jāygāh","position; status; place","جایگاه استاد در فرایند آموزش مهم است.","Jāygāh-e ostād dar farāyand-e āmuzesh mohem ast.","The teacher's role in the educational process is important.");
+ N(20,"N3-10","بیرون","birun","outside; outdoors","دانشجو بیرون از کلاس نیز مسئولیت دارد.","Dāneshju birun az kelās niz mas'uliyat dārad.","A student also has responsibilities outside the classroom.");
+ N(20,"N3-10","انتقال","enteqāl","transfer; transmission","انتقال دانش به نسل بعد ارزشمند است.","Enteqāl-e dānesh be nasl-e ba'd arzeshmand ast.","Passing knowledge to the next generation is valuable.");
+ N(20,"N3-10","محدود","mahdud","limited; restricted","یادگیری به زمان کلاس محدود نیست.","Yādgiri be zamān-e kelās mahdud nist.","Learning is not limited to class time.");
+ N(20,"N3-10","رابطه","rābete","relationship; connection","رابطهٔ استاد و دانشجو باید بر احترام استوار باشد.","Rābete-ye ostād va dāneshju bāyad bar ehterām ostovār bāshad.","The teacher-student relationship should be based on respect.");
+ N(20,"N3-10","شکل","shekl","form; shape","احترام به استاد شکل‌های گوناگونی دارد.","Ehterām be ostād sheklhā-ye gunāguni dārad.","Respect for a teacher takes different forms.");
+ N(20,"N3-10","راهنمایی","rāhnamāyi","guidance; advice","راهنمایی استاد مسیر پژوهش را روشن می‌کند.","Rāhnamāyi-ye ostād masir-e pazhuhesh rā roshan mikonad.","A teacher's guidance clarifies the path of research.");
+ N(20,"N3-10","هموار","hamvār","smooth; unobstructed","استاد مسیر یادگیری را برای دانشجو هموار می‌کند.","Ostād masir-e yādgiri rā barāye dāneshju hamvār mikonad.","A teacher makes the learning path smoother for a student.");
+ N(20,"N3-10","نگاه","negāh","view; perspective","از نگاه اخلاقی، احترام با صداقت همراه است.","Az negāh-e akhlāqi, ehterām bā sedāqat hamrāh ast.","From an ethical perspective, respect goes together with honesty.");
+ N(20,"N3-10","بی‌چون‌وچرا","bi-chon-o-cherā","unquestioningly; without question","دانشجو نباید هر سخنی را بی‌چون‌وچرا بپذیرد.","Dāneshju nabāyad har sokhani rā bi-chon-o-cherā bepazirad.","A student should not accept every statement unquestioningly.");
+ N(20,"N3-10","دقت","deqqat","care; attention; precision","گوش دادن با دقت به فهم درس کمک می‌کند.","Gush dādan bā deqqat be fahm-e dars komak mikonad.","Listening attentively helps understanding the lesson.");
+ N(20,"N3-10","به‌موقع","be-moghe'","on time; at the right time","دانشجو باید به‌موقع در کلاس حاضر شود.","Dāneshju bāyad be-moghe' dar kelās hāzer shavad.","A student should arrive in class on time.");
+ N(20,"N3-10","حاضر","hāzer","present; ready","همهٔ دانشجویان در کلاس حاضر بودند.","Hame-ye dāneshju-yān dar kelās hāzer budand.","All the students were present in class.");
+ N(20,"N3-10","آمادگی","āmādegi","preparation; readiness","آمادگی پیش از کلاس به یادگیری بهتر کمک می‌کند.","Āmādegi-ye pish az kelās be yādgiri-ye behtar komak mikonad.","Preparation before class helps learning.");
+ N(20,"N3-10","مطلب","matlab","matter; point; content","اگر مطلبی روشن نیست، آن را محترمانه بپرسید.","Agar matlab-i roshan nist, ān rā mohtaramāne beporsid.","If a point is unclear, ask about it politely.");
+ N(20,"N3-10","جدیت","jeddiat","seriousness; diligence","جدیت در مطالعه نشانهٔ مسئولیت‌پذیری است.","Jeddiat dar motāle'e neshāne-ye mas'uliyat-paziri ast.","Seriousness in study is a sign of responsibility.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
