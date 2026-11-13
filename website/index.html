@@ -1526,6 +1526,21 @@ function essays(){
  <details><summary><b>متن کامل نمونه / Complete model paragraph</b></summary><div class="dc fa-block model-sample">${esc(newestanExample.sample)}</div></details>
  <div class="newestan-part"><b>واژگان درس اول / Dars 01 vocabulary</b><p class="fa-block newestan-vocabulary">${newestanExample.vocabulary.map(x=>esc(x)).join(" · ")}</p></div>
  </article>` : ""}
+ ${activeTerm===3&&window.TERM3_NEWESTAN_FINAL_INSHA ? (()=>{const m=window.TERM3_NEWESTAN_FINAL_INSHA;return `<article class="panel newestan-example newestan-final-insha">
+ <div class="mut">NEWESTAN · DARS 10 · ${esc(m.source)}</div>
+ <h3>${esc(m.title)}</h3>
+ <p class="mut fa-block">${esc(m.method)}</p>
+ <div class="newestan-part"><b>پرسش اصلی تحقیق</b><p class="fa-block">${esc(m.mainQuestion)}</p></div>
+ <div class="newestan-part"><b>ریزموضوع‌ها / عنوان‌های فرعی</b><ol class="newestan-support">${m.subtopics.map(x=>`<li class="fa-block">${esc(x)}</li>`).join("")}</ol></div>
+ <div class="newestan-part"><b>مقدمه</b><p class="fa-block">${esc(m.muqaddama)}</p></div>
+ <div class="newestan-part"><b>بند اول</b><p class="fa-block">${esc(m.band1)}</p></div>
+ <div class="newestan-part"><b>بند دوم</b><p class="fa-block">${esc(m.band2)}</p></div>
+ <div class="newestan-part"><b>نتیجه</b><p class="fa-block">${esc(m.natija)}</p></div>
+ <details><summary><b>متن کامل انشا / نمونهٔ یکپارچه</b></summary><div class="dc fa-block model-sample">${esc(m.sample)}</div></details>
+ <div class="newestan-part"><b>چکیده</b><p class="fa-block">${esc(m.abstract)}</p></div>
+ <div class="newestan-part"><b>کلیدواژه‌ها</b><p class="fa-block">${m.keywords.map(esc).join(" · ")}</p></div>
+ <p class="mut fa-block">${esc(m.sourceNote)}</p>
+ </article>`})() : ""}
  <details><summary><b>20-point assessment rubric from the OCR</b></summary><div class="dc">${data.rubric.map(x=>`<div class="rubric-row"><b>${esc(x.name)} · ${x.points}/20</b><span>${x.points} points</span><div style="grid-column:1/-1" class="mut">${esc(x.detail)}</div></div>`).join("")}<p><b>Total: 20 points.</b> The OCR's descriptive bands show: عالی ۱۹–۲۰; خیلی خوب ۱۷–۱۸; خوب ۱۴–۱۶; متوسط ۱۱–۱۳; تلاش بیشتر ۰–۱۰. The printed scale is slightly damaged by OCR, so these bands are transcribed cautiously.</p></div></details>
  </div>
  <div class="panel">
