@@ -1831,6 +1831,36 @@
  N(18,"KH3-18","نورباران","nur-bārān","illumination; shower of lights","خیابان‌ها در جشن نورباران شدند.","Khiābānhā dar jashn nur-bārān shodand.","The streets were illuminated for the celebration.");
  N(18,"KH3-18","منبر","menbar","pulpit","سخنران از منبر برای ایراد خطبه استفاده کرد.","Sokhanrān az menbar barāye irād-e khotbe estefāde kard.","The speaker used the pulpit to deliver the sermon.");
 
+
+ // KH3-19 first-page additions.
+ N(19,"KH3-19","صله رحم","seley-e rahm","maintaining family ties; visiting relatives","صله رحم در فرهنگ اسلامی اهمیت زیادی دارد.","Seley-e rahm dar farhang-e eslāmi ahammiyat-e ziyādi dārad.","Maintaining family ties is very important in Islamic culture.","گروه اسمی — noun phrase");
+ N(19,"KH3-19","کماج","komāj","komaj; traditional sweet bread","برای مهمانان کماج تازه خریدیم.","Barāye mehmānān komāj-e tāze kharidim.","We bought fresh komaj for the guests.");
+ N(19,"KH3-19","حلوا ارده","halvā-ye arde","halva made with sesame paste","حلوا ارده را معمولاً با نان می‌خورند.","Halvā-ye arde rā ma'mulan bā nān mikhorand.","Halva made with sesame paste is usually eaten with bread.");
+ N(19,"KH3-19","هگمتانه","Hegmatāne","Ecbatana; ancient name of Hamadan","هگمتانه از شهرهای مهم ایران باستان بود.","Hegmatāne az shahrhā-ye mohem-e Irān-e bāstān bud.","Ecbatana was an important city in ancient Iran.","اسم خاص — proper noun");
+ N(19,"KH3-19","پیام‌رسانی","payām-resāni","messaging; communication","پیام‌رسانی در دنیای امروز بسیار سریع شده است.","Payām-resāni dar donyā-ye emruz besyār sari' shode ast.","Messaging has become very fast in today's world.");
+ N(19,"KH3-19","انگشت‌پیچ","angosht-pich","traditional sweet; thick confection","انگشت‌پیچ از شیرینی‌های سنتی همدان است.","Angosht-pich az shirini-hā-ye sonnati-ye Hamadān ast.","Angosht-pich is a traditional sweet from Hamadan.");
+ N(19,"KH3-19","شقایق","shaqāyeq","poppy; poppy flower","شقایق‌های سرخ در دشت روییده‌اند.","Shaqāyeq-hā-ye sorkh dar dasht ruide-and.","Red poppies have grown in the plain.");
+ N(19,"KH3-19","انسان‌های اولیه","ensān-hā-ye avvaliye","early humans","انسان‌های اولیه در غارها زندگی می‌کردند.","Ensān-hā-ye avvaliye dar ghārhā zendegi mikardand.","Early humans lived in caves.","گروه اسمی — noun phrase");
+ A(19,"KH3-19","غیرمسلح","gheyr-mosal lah","unarmed","مرد غیرمسلح وارد ساختمان شد.","Mard-e gheyr-mosallah vāred-e sāxtemān shod.","The unarmed man entered the building.");
+ N(19,"KH3-19","دیزی‌سرا","dizi-sarā","restaurant specialising in dizi","برای ناهار به دیزی‌سرا رفتیم.","Barāye nāhār be dizi-sarā raftim.","We went to a restaurant serving dizi for lunch.");
+ N(19,"KH3-19","آبشار","ābshār","waterfall","آبشار از بالای کوه به پایین می‌ریزد.","Ābshār az bālā-ye kuh be pāyin mirizad.","The waterfall pours down from the mountain.");
+ N(19,"KH3-19","تله‌کابین","tele-kābin","cable car","با تله‌کابین به بالای کوه رفتیم.","Bā tele-kābin be bālā-ye kuh raftim.","We went to the top of the mountain by cable car.");
+ N(19,"KH3-19","اسکی‌باز","eski-bāz","skier","اسکی‌باز با سرعت از شیب پایین آمد.","Eski-bāz bā sor'at az shib pāyin āmad.","The skier came down the slope quickly.");
+ // KH3-20 first-page additions.
+ A(20,"KH3-20","باایمان و با تقوا","bā-imān-o bā-taqvā","faithful and pious","مرد باایمان و با تقوا به دیگران کمک می‌کند.","Mard-e bā-imān-o bā-taqvā be digarān komak mikonad.","A faithful and pious man helps others.","گروه وصفی — adjective phrase");
+ N(20,"KH3-20","اهل قرآن","ahl-e Qur'ān","one devoted to the Qur'an","اهل قرآن به خواندن و فهمیدن قرآن اهمیت می‌دهد.","Ahl-e Qur'ān be khāndan-o fahmidan-e Qur'ān ahammiyat midahad.","A person devoted to the Qur'an values reading and understanding it.","گروه اسمی — noun phrase");
+ N(20,"KH3-20","اهل نماز شب","ahl-e namāz-e shab","one who performs the night prayer","اهل نماز شب پیش از سپیده‌دم عبادت می‌کند.","Ahl-e namāz-e shab pish az sepide-dam ebādat mikonad.","A person who performs the night prayer worships before dawn.","گروه اسمی — noun phrase");
+ N(20,"KH3-20","سیاستمدار","siyāsatmadār","politician","سیاستمدار باید به مردم پاسخ‌گو باشد.","Siyāsatmadār bāyad be mardom pāskh-gu bāshad.","A politician should be accountable to the people.");
+ V(20,"KH3-20","معروف بودن","ma'ruf budan","to be famous; to be well-known","این شاعر به مهربانی معروف است.","In shā'er be mehrabāni ma'ruf ast.","This poet is known for kindness.","معروف بودن","معروف باش","معروف بودن به رفتار خوب ارزشمندتر است.","Ma'ruf budan be raftār-e khub arzeshmandtar ast.","Being known for good behaviour is more valuable.","به اخلاق خوب معروف باش.","Be akhlāq-e khub ma'ruf bāsh.","Be known for good character.");
+ V(20,"KH3-20","یتیم شدن","yatim shodan","to become an orphan","کودک پس از فوت پدر یتیم شد.","Kudak pas az fot-e pedar yatim shod.","The child became an orphan after his father died.","یتیم شدن","—","یتیم شدن تجربه‌ای دشوار برای کودک است.","Yatim shodan tajrobe-i doshvār barāye kudak ast.","Becoming an orphan is a difficult experience for a child.","—","—","—","فعل لازم است؛ امر مستقیم طبیعی ندارد.");
+ N(20,"KH3-20","ظلم و ستم","zolm-o setam","oppression; injustice","مبارزه با ظلم و ستم وظیفهٔ همه است.","Mobāreze bā zolm-o setam vazife-ye hame ast.","Fighting oppression is everyone's responsibility.","گروه اسمی — noun phrase");
+ N(20,"KH3-20","مزار","mazār","grave; tomb; shrine","مردم برای زیارت به مزار او رفتند.","Mardom barāye ziyārat be mazār-e u raftand.","People went to his tomb to pay their respects.");
+ N(20,"KH3-20","درجات علمی","darajāt-e elmi","academic degrees; scholarly ranks","او درجات علمی بالایی دارد.","U darajāt-e elmi-ye bālāyi dārad.","He holds high academic degrees.","گروه اسمی — noun phrase");
+ A(20,"KH3-20","سیاهپوش","siyāh-push","dressed in black; wearing black","مردم در مراسم سوگواری سیاهپوش شدند.","Mardom dar marāsem-e سوگواری siyāh-push shodand.","People dressed in black for the mourning ceremony.");
+ V(20,"KH3-20","اشک سرازیر شدن","ashk sarāzir shodan","tears to flow; to burst into tears","با شنیدن خبر، اشک از چشمانش سرازیر شد.","Bā shenidan-e khabar, ashk az cheshmānash sarāzir shod.","On hearing the news, tears flowed from his eyes.","اشک سرازیر شدن","—","اشک سرازیر شدن هنگام شنیدن خبر ناگوار طبیعی است.","Ashk sarāzir shodan hengām-e shenidan-e khabar-e nāgovār tabi'i ast.","It is natural for tears to flow when hearing bad news.","—","—","—","فعل لازم است؛ امر مستقیم طبیعی ندارد.");
+ N(20,"KH3-20","مصلی","mosallā","prayer ground; place for congregational prayer","نماز عید در مصلی برگزار شد.","Namāz-e Eid dar mosallā bargozār shod.","The Eid prayer was held at the prayer ground.");
+ N(20,"KH3-20","خبر ناگوار","khabar-e nāgovār","bad news; distressing news","شنیدن خبر ناگوار همه را ناراحت کرد.","Shenidan-e khabar-e nāgovār hame rā nārāhat kard.","Hearing the bad news upset everyone.","گروه اسمی — noun phrase");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
