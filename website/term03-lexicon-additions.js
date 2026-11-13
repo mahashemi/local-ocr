@@ -2175,7 +2175,7 @@
  N(20,"N3-10","اهمیت","ahammiyat","importance","اهمیت موضوع را در مقدمه توضیح دهید.","Ahammiyat-e mozoo rā dar moqaddame tozih dahid.","Explain the importance of the topic in the introduction.");
  N(20,"N3-10","مطالب","matāleb","material; contents","مطالب را بر اساس ریزموضوع‌ها سازمان‌دهی کنید.","Matāleb rā bar asās-e riz-mozoo-hā sāzmān-dehi konid.","Organise the material according to subtopics.");
  N(20,"N3-10","نیاز","niyāz","need; necessity","پژوهشگر به منابع قابل اعتماد نیاز دارد.","Pazhuheshgar be manābe'-e ghābel-e e'temād niyāz dārad.","A researcher needs reliable sources.");
- N(20,"N3-10","جنگل","jangal","forest","حفاظت از جنگل به همکاری مردم نیاز دارد."," Hefāzat az jangal be hamkāri-ye mardom niyāz dārad.","Protecting forests requires public cooperation.");
+ N(20,"N3-10","جنگل","jangal","forest","حفاظت از جنگل به همکاری مردم نیاز دارد.","Hefāzat az jangal be hamkāri-ye mardom niyāz dārad.","Protecting forests requires public cooperation.");
  N(20,"N3-10","آموزش","āmuzesh","education; instruction","آموزش درست راه یادگیری را هموار می‌کند.","Āmuzeshe dorost rāh-e yādgiri rā hamvār mikonad.","Good instruction makes learning easier.");
  N(20,"N3-10","سفر","safar","travel; journey","سفر فرصتی برای شناخت فرهنگ‌های دیگر است.","Safar forsati barāye shenākht-e farhang-hā-ye digar ast.","Travel is an opportunity to learn about other cultures.");
  N(20,"N3-10","اخلاقی","akhlāqi","ethical; moral","رفتار اخلاقی اعتماد میان افراد را تقویت می‌کند.","Raftār-e akhlāqi e'temād miyān-e afrād rā taqviyat mikonad.","Ethical behaviour strengthens trust between people.");
@@ -2206,7 +2206,7 @@
  N(20,"N3-10","ایران","irān","Iran","دانشجویان از شهرهای مختلف ایران به دانشگاه می‌آیند.","Dāneshju-yān az shahrhā-ye mokhtalef-e Irān be dāneshgāh miāyand.","Students come to the university from different cities in Iran.");
  N(20,"N3-10","مردم","mardom","people; the public","مردم از آموزش باکیفیت سود می‌برند.","Mardom az āmuzesh-e bākeyfiyat sud mibarand.","People benefit from high-quality education.");
  N(20,"N3-10","کار","kār","work; task","تقسیم کار به بخش‌های کوچک انجام آن را آسان می‌کند.","Taqsim-e kār be bakhshhā-ye kuchak anjām-e ān rā āsān mikonad.","Breaking work into small parts makes it easier to complete.");
- N(20,"N3-10","خوب","khub","good; well","یک متن خوب روشن و منسجم است.","Yek matn-e khub roshan va monسجم ast.","A good text is clear and coherent.");
+ N(20,"N3-10","خوب","khub","good; well","یک متن خوب روشن و منسجم است.","Yek matn-e khub roshan va monazzam ast.","A good text is clear and coherent.");
  N(20,"N3-10","زبان","zabān","language; tongue","زبان دقیق به انتقال بهتر اندیشه کمک می‌کند.","Zabān-e daqiq be enteqāl-e behtar-e andishe komak mikonad.","Precise language helps communicate ideas.");
  N(20,"N3-10","فارسی","fārsi","Persian; Farsi","دانشجو هر روز فارسی تمرین می‌کند.","Dāneshju har ruz fārsi tamrin mikonad.","The student practises Persian every day.");
  N(20,"N3-10","اینجا","injā","here","اینجا محل مناسبی برای مطالعه است.","Injā mahall-e monāsebi barāye motāle'e ast.","This is a suitable place to study.");
