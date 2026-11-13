@@ -2061,6 +2061,10 @@
  N(8,"N3-08","جوامع","javāme'","societies; communities","جوامع مختلف آداب و رسوم گوناگونی دارند.","Javāme'-e mokhtalef ādāb-o rosum-e gonāguni dārand.","Different societies have different customs and traditions.");
  N(8,"N3-08","نهاد","nehād","institution; organisation","نهادهای فرهنگی از هنر حمایت می‌کنند.","Nehād-hā-ye farhangi az honar hemāyat mikonand.","Cultural institutions support the arts.");
  N(8,"N3-08","متمم","motammem","complement (grammar)","در این جمله، گروه اسمی نقش متمم دارد.","Dar in jomle, goruh-e esmi naqsh-e motammem dārad.","In this sentence, the noun phrase functions as a complement.","اصطلاح دستوری — grammatical term");
+
+ A(2,"FA3-02","متناسب","monāseb","suitable; appropriate; proportionate","لباس متناسب با موقعیت انتخاب کنید.","Lebās-e monāseb bā mowqe'iyat entekhāb konid.","Choose clothing appropriate to the occasion.");
+ N(3,"FA3-03","توسعه","tose'e","development; expansion","توسعهٔ اقتصادی به برنامه‌ریزی نیاز دارد.","Tose'e-ye eqtesādi be barnāme-rizi niyāz dārad.","Economic development requires planning.");
+ N(4,"FA3-04","ای کاش","ey kāsh","if only; I wish","ای کاش وقت بیشتری برای خانواده داشتم.","Ey kāsh vaqt-e bishtari barāye khānevāde dāshtam.","I wish I had more time for my family.","عبارت آرزویی — wish expression");
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
