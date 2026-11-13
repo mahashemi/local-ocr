@@ -1766,6 +1766,42 @@
  A(12,"KH3-12","غیرعادی","gheyr-e ādi","unusual; abnormal","صدای غیرعادی از موتور شنیده شد.","Sedā-ye gheyr-e ādi az motor shenide shod.","An unusual sound was heard from the engine.");
  N(12,"KH3-12","بادنجان","bādenjān","eggplant; aubergine","برای شام خوراک بادنجان درست کردیم.","Barāye shām khorāk-e bādenjān dorost kardim.","We made an eggplant dish for dinner.");
 
+
+ // KH3-13 first-page additions.
+ N(13,"KH3-13","خبرچین","khabarchin","informant; gossip","خبرچین اطلاعات را به دیگران منتقل می‌کرد.","Khabarchin ettelā'āt rā be digarān montaqel mikard.","The informant passed information to others.");
+ N(13,"KH3-13","تقلیدکار","taqlid-kār","imitator; mimic","تقلیدکار صدای پرندگان را به‌خوبی تقلید می‌کند.","Taqlid-kār sedā-ye parandegān rā be-khubi taqlid mikonad.","The mimic imitates birdsong very well.");
+ N(13,"KH3-13","گیاهخوار","giyāh-khār","herbivore; vegetarian","گاو جانوری گیاهخوار است.","Gāv jānvari giyāh-khār ast.","A cow is a herbivorous animal.");
+ N(13,"KH3-13","گوشتخوار","gusht-khār","carnivore","شیر جانوری گوشتخوار است.","Shir jānvari gusht-khār ast.","A lion is a carnivorous animal.");
+ A(13,"KH3-13","توخالی","tu-khāli","hollow; empty inside","این شاخه توخالی است.","In shākhe tu-khāli ast.","This branch is hollow.");
+ A(13,"KH3-13","توپر","tu-por","solid; filled","این توپ توپر و سنگین است.","In tup tu-por-o sangin ast.","This ball is solid and heavy.");
+ N(13,"KH3-13","مسافت","masāfat","distance","مسافت این روستا تا شهر زیاد نیست.","Masāfat-e in rustā tā shahr ziyād nist.","The distance from this village to the city is not great.");
+ N(13,"KH3-13","حیوانات شکاری","heyvānāt-e shekāri","predatory animals; game animals","حیوانات شکاری برای یافتن غذا شکار می‌کنند.","Heyvānāt-e shekāri barāye yāftan-e ghazā shekār mikonand.","Predatory animals hunt to find food.","گروه اسمی — noun phrase");
+ N(13,"KH3-13","ویژگی‌های ظاهری","vizhegi-hā-ye zāheri","physical characteristics; outward features","ویژگی‌های ظاهری این دو جانور متفاوت است.","Vizhegi-hā-ye zāheri-ye in do jānvar motefāvet ast.","The physical features of these two animals are different.","گروه اسمی — noun phrase");
+ N(13,"KH3-13","گورخر","gurkhar","zebra","گورخر روی بدنش نوارهای سیاه و سفید دارد.","Gurkhar ru-ye badanash navārhā-ye siyāh-o sefid dārad.","A zebra has black and white stripes on its body.");
+ N(13,"KH3-13","قوچ","qoch","ram; male sheep","قوچ شاخ‌های بلندی دارد.","Qoch shākh-hā-ye bolandi dārad.","A ram has long horns.");
+ N(13,"KH3-13","شترمرغ","shotor-morgh","ostrich","شترمرغ پرنده‌ای بزرگ است.","Shotormorgh parandé-i bozorg ast.","An ostrich is a large bird.");
+ N(13,"KH3-13","اسکلت","eskelet","skeleton","اسکلت بدن از استخوان‌ها تشکیل شده است.","Eskelet-e badan az ostokhānhā tashkil shode ast.","The body's skeleton is made up of bones.");
+ N(13,"KH3-13","دستگیره","dastgire","handle; grip","دستگیرهٔ در شکسته است.","Dastgire-ye dar shekaste ast.","The door handle is broken.");
+ // KH3-14 first-page additions.
+ N(14,"KH3-14","پادری","pādari","doormat","کفش‌ها را کنار پادری گذاشتیم.","Kafshhā rā kenār-e pādari gozāshtim.","We put the shoes beside the doormat.");
+ N(14,"KH3-14","قدم‌زنان","qadam-zanān","walking; while walking","او قدم‌زنان به خانه برگشت.","U qadam-zanān be khāne bargasht.","He walked back home.","قید حالت — manner adverb");
+ A(14,"KH3-14","مستمند","mostamand","needy; impoverished","مرد مستمند به کمک نیاز داشت.","Mard-e mostamand be komak niyāz dāsht.","The impoverished man needed help.");
+ N(14,"KH3-14","معبد","ma'bad","temple","معبد باستانی در مرکز شهر قرار دارد.","Ma'bad-e bāstāni dar markaz-e shahr qarār dārad.","The ancient temple is in the city centre.");
+ N(14,"KH3-14","صنایع","sanāye'","industries; crafts","صنایع دستی این منطقه مشهور است.","Sanāye'-e dasti-ye in manteqe mashhur ast.","The handicrafts of this region are famous.");
+ N(14,"KH3-14","تغییرات سیاسی","taghyirāt-e siyāsi","political changes","تغییرات سیاسی بر زندگی مردم اثر می‌گذارد.","Taghyirāt-e siyāsi bar zendegi-ye mardom asar migozārad.","Political changes affect people's lives.","گروه اسمی — noun phrase");
+ N(14,"KH3-14","حمل و نقل","haml-o-naql","transportation; transport","حمل و نقل عمومی در شهر گسترش یافته است.","Haml-o-naql-e omumi dar shahr gostаresh yāfte ast.","Public transportation has expanded in the city.","گروه اسمی — noun phrase");
+ // KH3-15 first-page additions.
+ N(15,"KH3-15","اعیاد","a'yād","festivals; religious holidays","در اعیاد مردم به دیدار یکدیگر می‌روند.","Dar a'yād mardom be didār-e yekdigar miravand.","During festivals, people visit one another.");
+ N(15,"KH3-15","توفان","tufān","storm; tempest","توفان به درختان آسیب زد.","Tufān be derakhtān āsib zad.","The storm damaged the trees.");
+ N(15,"KH3-15","باتری","bāteri","battery","باتری چراغ‌قوه تمام شده است.","Bāteri-ye cherāgh-qوه tamām shode ast.","The flashlight battery is dead.");
+ N(15,"KH3-15","بلور","bolur","crystal; glass crystal","ظرف بلور را با دقت شست.","Zarf-e bolur rā bā deqqat shost.","He washed the crystal dish carefully.");
+ N(15,"KH3-15","نعلبکی","na'albaki","saucer","فنجان چای را روی نعلبکی گذاشت.","Fen jān-e chāy rā ru-ye na'albaki gozāsht.","He put the teacup on the saucer.");
+ A(15,"KH3-15","غلیظ","ghaliz","thick; strong (liquid)","چای غلیظ دوست دارد.","Chāy-e ghaliz dust dārad.","He likes strong tea.");
+ A(15,"KH3-15","تلخ","talkh","bitter","این چای کمی تلخ است.","In chāy kami talkh ast.","This tea is a little bitter.");
+ N(15,"KH3-15","چایخانه","chāy-khāne","teahouse; tea room","در چایخانه چای تازه دم می‌کنند.","Dar chāy-khāne chāy-e tāze dam mikonand.","They brew fresh tea in the teahouse.");
+ A(15,"KH3-15","خانگی","khānegi","homemade; domestic","مربای خانگی بسیار خوشمزه است.","Morabbā-ye khānegi besyār khoshmaze ast.","Homemade jam is delicious.");
+ A(15,"KH3-15","لذیذ","laziz","delicious; tasty","این غذا بسیار لذیذ است.","In ghazā besyār laziz ast.","This food is delicious.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
