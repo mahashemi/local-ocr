@@ -1702,7 +1702,7 @@
  A(20,"FA3-20","خوش‌نوا","khosh-navā","melodious; sweet-sounding","صدای خوش‌نوا آرامش‌بخش است.","Sedā-ye khosh-navā ārāmesh-bakhsh ast.","A melodious voice is soothing.");
  N(20,"FA3-20","گویا","guyā","apparently; seemingly","گویا شاعر از سفر بازگشته است.","Guyā shā'er az safar bāzgasht-e ast.","Apparently, the poet has returned from the journey.","قید — adverb");
  A(20,"FA3-20","حیران","heyrān","astonished; bewildered","تماشاگران از زیبایی منظره حیران شدند.","Tamāshāgarān az zibāyi-ye manzare heyrān shodand.","The viewers were astonished by the beauty of the landscape.");
- N(20,"FA3-20","بانگ","bāng","call; cry; loud sound","بانگ پرنده در کوهستان پیچید.","Bāng-e parandé dar kuhestān pichid.","The bird's call echoed in the mountains.");
+ N(20,"FA3-20","بانگ","bāng","call; cry; loud sound","بانگ پرنده در کوهستان پیچید.","Bāng-e parande dar kuhestān pichid.","The bird's call echoed in the mountains.");
  V(20,"FA3-20","نبشتن","nebeshtan","to write (archaic/literary form of نوشتن)","نبشتن نامه در روزگار گذشته کاری مهم بود.","Nebeshtan-e nāme dar ruzegār-e gozashte kāri mohem bud.","Writing a letter was important in the past.","نبشتن","—","نبشتن در متون کهن به معنای نوشتن است.","Nebeshtan dar motun-e kohan be ma'nā-ye neveshtan ast.","In old texts, nebeshtan means to write.","—","—","—","صورت ادبی و کهن است؛ امر امروزی آن «بنویس» از نوشتن است.");
 
  // Deduplicate against the curated base and within this file by Persian headword.
