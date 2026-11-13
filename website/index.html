@@ -1466,6 +1466,16 @@ function essays(){
  <details><summary><b>Writing hints and useful expressions</b></summary><div class="dc"><ul class="hint-list">${item.hints.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></details>
  <details><summary><b>Suggested essay structure</b></summary><div class="dc"><ol>${item.outline.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></div></details>
  <details><summary><b>Developed model response · نمونهٔ توسعه‌یافته</b></summary><div class="dc fa-block model-sample">${item.sample?esc(item.sample):"A developed sample for this chapter is being prepared. Use the outline above to build your own response."}</div></details>
+ ${newestanExample ? `<article class="panel newestan-example">
+ <div class="mut">NEWESTAN · DARS 01 · N3-01</div>
+ <h3>${esc(newestanExample.title)}</h3>
+ <p class="mut">${esc(newestanExample.skill)}</p>
+ <div class="newestan-part"><b>۱. جملهٔ موضوع / Topic sentence</b><p class="fa-block">${esc(newestanExample.topicSentence)}</p></div>
+ <div class="newestan-part"><b>۲. جمله‌های پشتیبان / Supporting sentences</b><ol class="newestan-support">${newestanExample.supportingSentences.map(x=>`<li class="fa-block">${esc(x)}</li>`).join("")}</ol></div>
+ <div class="newestan-part"><b>۳. جملهٔ پایانی / Concluding sentence</b><p class="fa-block">${esc(newestanExample.concludingSentence)}</p></div>
+ <details><summary><b>متن کامل نمونه / Complete model paragraph</b></summary><div class="dc fa-block model-sample">${esc(newestanExample.sample)}</div></details>
+ <div class="newestan-part"><b>واژگان درس اول / Dars 01 vocabulary</b><p class="fa-block newestan-vocabulary">${newestanExample.vocabulary.map(x=>esc(x)).join(" · ")}</p></div>
+ </article>` : ""}
  <details><summary><b>20-point assessment rubric from the OCR</b></summary><div class="dc">${data.rubric.map(x=>`<div class="rubric-row"><b>${esc(x.name)} · ${x.points}/20</b><span>${x.points} points</span><div style="grid-column:1/-1" class="mut">${esc(x.detail)}</div></div>`).join("")}<p><b>Total: 20 points.</b> The OCR's descriptive bands show: عالی ۱۹–۲۰; خیلی خوب ۱۷–۱۸; خوب ۱۴–۱۶; متوسط ۱۱–۱۳; تلاش بیشتر ۰–۱۰. The printed scale is slightly damaged by OCR, so these bands are transcribed cautiously.</p></div></details>
  </div>
  <div class="panel">
