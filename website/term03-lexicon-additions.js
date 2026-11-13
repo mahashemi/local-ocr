@@ -1930,6 +1930,13 @@
  N(17,"FA3-17","خودرو","khodru","vehicle; motor vehicle","خودروهای امروزی امکانات زیادی دارند.","Khodru-hā-ye emruzi emkānāt-e ziyādi dārand.","Modern vehicles have many features.");
  N(17,"FA3-17","زیرلیوانی","zir-livāni","coaster","برای جلوگیری از لک شدن میز از زیرلیوانی استفاده کنید.","Barāye jelogiri az lak shodan-e miz az zir-livāni estefāde konid.","Use a coaster to prevent the table from getting stained.");
  A(17,"FA3-17","سازگار","sāzgār","compatible; adaptable","این وسیله با محیط زیست سازگار است.","In vasile bā mohite zist sāzgār ast.","This device is environmentally friendly.");
+
+ A(18,"FA3-18","خاص","khāss","special; particular","این جشن آداب خاصی دارد.","In jashn ādāb-e khāssi dārad.","This celebration has special customs.");
+ V(18,"FA3-18","پاشیدن","pāshidan","to sprinkle; to scatter","در جشن، گلبرگ‌ها را روی مهمانان پاشیدند.","Dar jashn, golbarg-hā rā ru-ye mehmānān pāshidand.","At the celebration, they sprinkled flower petals over the guests.","پاشیدن","بپاش","پاشیدن آب در بعضی رسم‌ها نماد پاکی است.","Pāshidan-e āb dar ba'zi rasm-hā nemād-e pākie ast.","Sprinkling water symbolises purity in some customs.","کمی گلاب بپاش.","Kami golāb bepāsh.","Sprinkle a little rosewater.");
+ V(18,"FA3-18","خدمت رسیدن","khedmat residan","to come to serve; to attend upon","مهمانان برای تبریک به خدمت خانواده رسیدند.","Mehmānān barāye tabrik be khedmat-e khānevāde residand.","The guests came to offer congratulations to the family.","خدمت رسیدن","به خدمت برس","خدمت رسیدن به بزرگان نشانهٔ احترام است.","Khedmat residan be bozorgān neshāne-ye ehterām ast.","Coming to pay one's respects to elders is a sign of respect.","برای عرض تبریک به خدمتشان برس.","Barāye arz-e tabrik be khedmat-e ānān beres.","Go and offer them your congratulations.");
+ N(18,"FA3-18","خرافات","khorāfāt","superstitions","باور به خرافات می‌تواند تصمیم‌گیری را دشوار کند.","Bāvar be khorāfāt mitavānad tasmim-giri rā doshvār konad.","Belief in superstitions can make decision-making difficult.");
+ N(18,"FA3-18","حنا","henā","henna","در بعضی مراسم عروسی از حنا استفاده می‌کنند.","Dar ba'zi marāsem-e arusi az henā estefāde mikonand.","Henna is used in some wedding ceremonies.");
+ N(18,"FA3-18","وعده","va'de","promise; appointment; meal (context-dependent)","پیش از جشن، وعده‌ای برای دیدار خانواده‌ها گذاشتند.","Pish az jashn, va'de-i barāye didār-e khānevādehā gozāshtand.","Before the celebration, they arranged a meeting between the families.");
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
