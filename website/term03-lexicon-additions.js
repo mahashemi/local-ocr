@@ -1329,9 +1329,9 @@
  // FA3-05 first-page list reconciliation.
  N(5,"FA3-05","مجری","mojri","presenter; host","مجری برنامه از مهمانان استقبال کرد.","Mojri-ye barnāme az mehmānān esteqbāl kard.","The programme host welcomed the guests.");
  N(5,"FA3-05","کاشکی","kāshki","if only; I wish","کاشکی امروز باران ببارد.","Kāshki emruz bārān bebārad.","If only it would rain today.","قید آرزو — optative particle");
- N(5,"FA3-05","فلش","flash","flash drive; USB drive","فایل را روی فلش ذخیره کردم.","Fāyl rā ru-ye flash ذخیره kardam.","I saved the file on a flash drive.");
+ N(5,"FA3-05","فلش","flash","flash drive; USB drive","فایل را روی فلش ذخیره کردم.","Fāyl rā ru-ye flash zakhire kardam.","I saved the file on a flash drive.");
  A(5,"FA3-05","پکر","poker","upset; dejected (colloquial)","بعد از شنیدن خبر ناراحت‌کننده پکر شد.","Ba'd az shenidan-e khabar-e nārāhat-konande poker shod.","He became dejected after hearing the upsetting news.");
- A(5,"FA3-05","یواش","yavāsh","quietly; slowly (colloquial)","لطفاً یواش صحبت کن.","Lotfan yavāsh sohbat kon.","Please speak quietly.","قید — adverb");
+ N(5,"FA3-05","یواش","yavāsh","quietly; slowly (colloquial)","قید — adverb","لطفاً یواش صحبت کن.","Lotfan yavāsh sohbat kon.","Please speak quietly.");
  V(5,"FA3-05","پا شدن","pā shodan","to get up; to stand up","صبح زود از خواب پا شد.","Sobh-e zud az khāb pā shod.","He got up early in the morning.","پا شدن","پا شو","پا شدن از خواب در زمستان دشوار است.","Pā shodan az khāb dar zemestān doshvār ast.","Getting out of bed in winter is difficult.","زود پا شو تا دیر نکنیم.","Zud pā sho tā dir nakonim.","Get up early so we are not late.");
  N(5,"FA3-05","پریز برق","pariz-e barq","electrical socket; power outlet","شارژر را به پریز برق وصل کردم.","Shārjer rā be pariz-e barq vasl kardam.","I plugged the charger into the power outlet.");
  N(5,"FA3-05","سوسک","susak","cockroach; beetle","یک سوسک کوچک کنار دیوار دیدم.","Yek susak-e kuchak kenār-e divār didam.","I saw a small cockroach beside the wall.");
