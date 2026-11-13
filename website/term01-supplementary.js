@@ -25,7 +25,6 @@
 [19,"SH1-19","میدان نقش جهان","Meydān-e Naqsh-e Jahān","Naqsh-e Jahan Square","noun","میدان نقش جهان در اصفهان قرار دارد.","Meydān-e Naqsh-e Jahān dar Esfahān qarār dārad.","Naqsh-e Jahan Square is in Isfahan."],
 [20,"SH1-20","فارغ‌التحصیل شدن","fāregh-ot-tahsil shodan","to graduate","verb","او سال گذشته از دانشگاه فارغ‌التحصیل شد.","U sāl-e gozashte az dāneshgāh fāregh-ot-tahsil shod.","He or she graduated from university last year."],
 [20,"SH1-20","دانشمند","dāneshmand","scholar; scientist","noun","این دانشمند کتاب‌های زیادی نوشته است.","In dāneshmand ketābhā-ye ziyādi neveshte ast.","This scholar has written many books."]
-,
 [1,"N1-01","تاجر","tājer","merchant; trader","noun","تاجر در بازار کار می‌کند.","Tājer dar bāzār kār mikonad.","The merchant works in the market."],
 [1,"N1-01","تایلندی","tāylandī","Thai","adjective","او تایلندی است.","U tāyl andi ast.","He or she is Thai."],
 [1,"N1-01","خیاط","khayyāt","tailor","noun","خیاط لباس می‌دوزد.","Khayyāt lebās miduzad.","The tailor sews clothes."],
@@ -42,7 +41,6 @@
 [8,"N1-08","رب گوجه‌فرنگی","rob-e goje-farangi","tomato paste","noun phrase","برای خورشت رب گوجه‌فرنگی لازم است.","Barāye khoresh rob-e goje-farangi lāzem ast.","Tomato paste is needed for the stew."],
 [8,"N1-08","رنده","rande","grater","noun","هویج را با رنده خرد می‌کنم.","Havij rā bā rande khord mikonam.","I grate the carrot."],
 [7,"N1-07","مانتو","mānto","women's overcoat; manteau","noun","او مانتوی آبی پوشیده است.","U mānto-ye ābi pushide ast.","She is wearing a blue manteau."]
-,
 [3,"N1-03","اجاره‌نشینی","ejāre-neshini","renting; tenant life","noun","اجاره‌نشینی در شهرهای بزرگ گران است.","Ejāre-neshini dar shahrhā-ye bozorg gerān ast.","Renting is expensive in large cities."],
 [3,"N1-03","صاحب‌خانه","sāheb-khāne","landlord; homeowner","noun","صاحب‌خانه قرارداد را امضا کرد.","Sāheb-khāne gharārdād rā emzā kard.","The landlord signed the contract."],
 [3,"N1-03","مستأجر","mosta'jer","tenant; renter","noun","مستأجر اجاره را هر ماه می‌پردازد.","Mosta'jer ejāre rā har māh mipardāzad.","The tenant pays the rent every month."],
@@ -67,7 +65,6 @@
 [10,"N1-10","استاد راهنما","ostād-e rāhnamā","academic supervisor; advisor","noun phrase","استاد راهنما طرح تحقیق را بررسی کرد.","Ostād-e rāhnamā tarh-e tahqiq rā barrasi kard.","The academic supervisor reviewed the research proposal."],
 [10,"N1-10","فرایند نوشتن","farāyand-e neveshtan","writing process","noun phrase","فرایند نوشتن چند مرحله دارد.","Farāyand-e neveshtan chand marhale dārad.","The writing process has several stages."],
 [10,"N1-10","منبع","manba'","source; reference","noun","برای تحقیق باید منبع معتبر پیدا کنیم.","Barāye tahqiq bāyad manba'-e mo'tabar peydā konim.","We should find a reliable source for research."]
-,
 [3,"KH1-03","کلاس درس","kelās-e dars","classroom; lesson","noun phrase","کلاس درس ما روشن است.","Kelās-e dars-e mā rowshan ast.","Our classroom is bright."],
 [18,"KH1-18","قفل کردن","qofl kardan","to lock","verb","پیش از سفر در را قفل کن.","Pish az safar dar rā qofl kon.","Lock the door before travelling."],
 [18,"KH1-18","رزرو کردن","rezerv kardan","to reserve; to book","verb","اتاق هتل را از قبل رزرو کردیم.","Otāq-e hotel rā az qabl rezerv kardim.","We booked the hotel room in advance."],
@@ -79,7 +76,6 @@
 [16,"SH1-16","شنا","shenā","swimming","noun","شنا برای سلامتی مفید است.","Shenā barāye salāmati mofid ast.","Swimming is good for health."],
 [17,"SH1-17","کلاس هنری","kelās-e honari","art class","noun phrase","خواهرم در کلاس هنری شرکت می‌کند.","Khāharam dar kelās-e honari sherkat mikonad.","My sister attends an art class."],
 [20,"SH1-20","شیمی‌دان","shimi-dān","chemist","noun","این شیمی‌دان در دانشگاه کار می‌کند.","In shimi-dān dar dāneshgāh kār mikonad.","This chemist works at the university."]
-,
 [13,"SH1-13","مهمانی رفتن","mehmāni raftan","to go to a party or gathering","verb","امشب به خانهٔ دوستم مهمانی می‌روم.","Emshab be khāne-ye dustam mehmāni miravam.","Tonight I am going to my friend's gathering."],
 [13,"SH1-13","ورزش کردن","varzesh kardan","to exercise; to do sports","verb","من هر روز ورزش می‌کنم.","Man har ruz varzesh mikonam.","I exercise every day."],
 [13,"SH1-13","بازی کردن","bāzi kardan","to play","verb","کودکان در پارک بازی می‌کنند.","Kudakān dar pārk bāzi mikonand.","Children play in the park."],
@@ -254,7 +250,6 @@
   "گردش کردن":{ms:"گردش کردن",amr:"گردش کن",m:["گردش کردن در شهر قدیمی لذت‌بخش است.","Gardesh kardan dar shahr-e qadimi lezzat-bakhsh ast.","Sightseeing in the old city is enjoyable."],a:["امروز در شهر گردش کن.","Emruz dar shahr gardesh kon.","Go sightseeing in the city today."]},
   "بزرگ شدن":{ms:"بزرگ شدن",amr:"بزرگ شو",m:["بزرگ شدن مسئولیت‌های تازه می‌آورد.","Bozorg shodan mas'uliyat-hā-ye tāze miāvarad.","Growing up brings new responsibilities."],a:["با تجربه بزرگ شو.","Bā tajrobe bozorg sho.","Grow through experience."]},
   "تحصیل کردن":{ms:"تحصیل کردن",amr:"تحصیل کن",m:["تحصیل کردن آیندهٔ انسان را می‌سازد.","Tahsil kardan āyande-ye ensān rā misāzad.","Education shapes a person's future."],a:["با جدیت تحصیل کن.","Bā jeddiyat tahsil kon.","Study diligently."]}
-,
   "سرما خوردن":{ms:"سرما خوردن",amr:"—",m:["سرما خوردن در زمستان شایع است.","Sarmā khordan dar zemestān shāye' ast.","Catching a cold is common in winter."],a:null,note:"رخداد ناخواسته است و امر مثبت طبیعی ندارد؛ برای هشدار می‌گوییم «سرما نخور»."},
   "درد کردن":{ms:"درد کردن",amr:"—",m:["درد کردن زانو راه رفتن را دشوار می‌کند.","Dard kardan-e zānu rāh raftan rā doshvār mikonad.","Knee pain makes walking difficult."],a:null,note:"بیان احساس درد است و امر مستقیم طبیعی ندارد."},
   "تصادف کردن":{ms:"تصادف کردن",amr:"—",m:["تصادف کردن خطرناک است.","Tasādef kardan khatarnāk ast.","Having an accident is dangerous."],a:null,note:"رخداد ناخواسته است و امر مثبت طبیعی ندارد؛ برای هشدار می‌گوییم «تصادف نکن»."},
@@ -265,7 +260,6 @@
   "فارغ‌التحصیل شدن":{ms:"فارغ‌التحصیل شدن",amr:"—",m:["فارغ‌التحصیل شدن از دانشگاه نقطهٔ مهمی در زندگی است.","Fāreq-ottahsili shodan az dāneshgāh noqte-ye mohemmi dar zendegi ast.","Graduating from university is an important life milestone."],a:null,note:"بیان فرایند/رخداد است و امر مستقیم طبیعی ندارد."},
   "به دنیا آمدن":{ms:"به دنیا آمدن",amr:"—",m:["به دنیا آمدن کودک شادی می‌آورد.","Be donyā āmadan-e kudak shādi miāvarad.","A child's birth brings joy."],a:null,note:"رخداد طبیعی است و امر مستقیم ندارد."},
   "نیاز داشتن":{ms:"نیاز داشتن",amr:"—",m:["نیاز داشتن به کمک در بعضی موقعیت‌ها طبیعی است.","Niyāz dāshtan be komak dar ba'zi movqe'iyat-hā tabi'i ast.","Needing help is natural in some situations."],a:null,note:"بیان حالت/نیاز است و امر مستقیم طبیعی ندارد."}
-,
   "رد شدن":{ms:"رد شدن",amr:"رد شو",m:["رد شدن از خیابان باید با احتیاط باشد.","Rad shodan az khiābān bāyad bā ehtiyāt bāshad.","Crossing the street should be done carefully."],a:["با دقت از خیابان رد شو.","Bā deqqat az khiābān rad sho.","Cross the street carefully."]},
   "استراحت کردن":{ms:"استراحت کردن",amr:"استراحت کن",m:["استراحت کردن بعد از کار ضروری است.","Esterāhat kardan ba'd az kār zaruri ast.","Resting after work is necessary."],a:["کمی استراحت کن.","Kami esterāhat kon.","Get some rest."]},
   "تلویزیون دیدن":{ms:"تلویزیون دیدن",amr:"تلویزیون ببین",m:["تلویزیون دیدن در شب برای بعضی خانواده‌ها عادت است.","Televizion didan dar shab barāye ba'zi khānevādehā ādat ast.","Watching television at night is a habit for some families."],a:["امشب تلویزیون ببین.","Emshab televizion bebin.","Watch television tonight."]},
