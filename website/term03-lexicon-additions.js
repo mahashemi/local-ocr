@@ -2364,7 +2364,7 @@
  N(1,"WR3-01","نمونه","nemune","example; sample","این نمونه روش نوشتن بند را نشان می‌دهد.","In nemune ravesh-e neveshtan-e band rā neshān midahad.","This example shows how to write a paragraph.");
  N(1,"WR3-01","معنا","ma'nā","meaning","معنای واژه را از بافت جمله پیدا کنید.","Ma'nā-ye vāzhe rā az bāft-e jomle peydā konid.","Find the meaning of the word from the sentence context.");
  N(1,"WR3-01","تفاوت","tafāvot","difference","تفاوت دو دیدگاه را با مثال توضیح دهید.","Tafāvot-e do didgāh rā bā mesāl tozih dahid.","Explain the difference between the two views with an example.");
- N(1,"WR3-01","کمک","komak","help; assistance","همکاری و کمک به دیگران رفتار پسندیده‌ای است.","Hamkāri va komak be digarān raftār-e pasandid e-i ast.","Cooperation and helping others are praiseworthy behaviours.");
+ N(1,"WR3-01","کمک","komak","help; assistance","همکاری و کمک به دیگران رفتار پسندیده‌ای است.","Hamkāri va komak be digarān raftār-e pasandide-i ast.","Cooperation and helping others are praiseworthy behaviours.");
  N(1,"WR3-01","آیه","āye","Qur'anic verse","برای سخنرانی یک آیهٔ مرتبط انتخاب کنید.","Barāye sokhanrāni yek āye-ye mortabet entekhāb konid.","Choose a relevant Qur'anic verse for the speech.");
  N(1,"WR3-01","مقایسه","moqāyese","comparison","مقایسهٔ دو روش به انتخاب بهتر کمک می‌کند.","Moqāyese-ye do ravesh be entekhāb-e behtar komak mikonad.","Comparing two methods helps make a better choice.");
  N(1,"WR3-01","شناخت","shenākht","knowledge; recognition","شناخت مخاطب به انتخاب لحن مناسب کمک می‌کند.","Shenākht-e mokhāteb be entekhāb-e lahn-e monāseb komak mikonad.","Knowing the audience helps choose an appropriate tone.");
