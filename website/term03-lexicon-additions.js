@@ -2575,7 +2575,7 @@
  N(1,"WR3-01","روزمره","ruzmarre","everyday; daily routine","در زندگی روزمره فرصت‌های زیادی برای تمرین وجود دارد.","Dar zendegi-ye ruzmarre forsathā-ye ziyādi barāye tamrin vojood dārad.","There are many opportunities to practise in everyday life.");
  N(1,"WR3-01","زنده","zende","alive; living","زنده نگه داشتن زبان به استفادهٔ روزانه نیاز دارد.","Zende negah dāshtan-e zabān be estefāde-ye ruzāne niyāz dārad.","Keeping a language alive requires daily use.");
  N(1,"WR3-01","فرمان","farmān","command; order","راننده باید از فرمان‌های راهنمایی پیروی کند.","Rānande bāyad az farmānhā-ye rāhnamāyi peyravi konad.","A driver must follow traffic instructions.");
- N(1,"WR3-01","فشار"," فشار","pressure; stress","فشار زیاد می‌تواند تمرکز را کاهش دهد."," فشار-e ziyād mitavānad tamarkoz rā kāhesh dahad.","Too much pressure can reduce concentration.");
+ N(1,"WR3-01","فشار","feshār","pressure; stress","فشار زیاد می‌تواند تمرکز را کاهش دهد."," فشار-e ziyād mitavānad tamarkoz rā kāhesh dahad.","Too much pressure can reduce concentration.");
  N(1,"WR3-01","مدیریت","modiriyat","management","مدیریت زمان به انجام بهتر تکلیف کمک می‌کند.","Modiriyat-e zamān be anjām-e behtar-e taklif komak mikonad.","Time management helps complete assignments more effectively.");
  N(1,"WR3-01","ملت","mellat","nation; people","ملت‌ها با فرهنگ و زبان خود شناخته می‌شوند.","Mellathā bā farhang va zabān-e khod shenākhte mishavand.","Nations are known by their culture and language.");
  N(1,"WR3-01","همسایه","hamsāye","neighbour","رفتار نیک با همسایه از اخلاق پسندیده است.","Raftār-e nik bā hamsāye az akhlāq-e pasandide ast.","Kind treatment of neighbours is good character.");
