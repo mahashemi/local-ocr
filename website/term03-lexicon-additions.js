@@ -1686,6 +1686,25 @@
  N(19,"FA3-19","استادکار","ostād-kār","master craftsperson; skilled artisan","استادکار با دقت روی چوب کار می‌کرد.","Ostād-kār bā deqqat ru-ye chub kār mikard.","The master craftsperson worked carefully on the wood.");
  V(19,"FA3-19","پاک شدن","pāk shodan","to become clean; to be removed","لکه با آب پاک شد.","Lake bā āb pāk shod.","The stain was removed with water.","پاک شدن","—","پاک شدن لکه به نوع پارچه بستگی دارد.","Pāk shodan-e lake be no'-e pārche bastagi dārad.","Removing a stain depends on the type of fabric.","—","—","—","فعل لازم/مجهول است؛ امر مستقیم طبیعی ندارد.");
 
+
+ // FA3-20 first-page literary vocabulary additions.
+ N(20,"FA3-20","آمیزد","āmizad","mixes; blends (literary present form of آمیختن)","در شعر، خرد با تجربه می‌آمیزد.","Dar she'r, kherad bā tajrobe āmizad.","In poetry, wisdom blends with experience.","ساخت فعلی ادبی — literary verb form");
+ A(20,"FA3-20","غرقه","gharqe","submerged; immersed","کشتی در آب غرقه شد.","Keshti dar āb gharqe shod.","The ship became submerged in the water.");
+ N(20,"FA3-20","خیزد","khizad","rises; gets up (literary present form of خاستن)","در شعر، آفتاب از پشت کوه خیزد.","Dar she'r, āftāb az posht-e kuh khizad.","In poetry, the sun rises from behind the mountain.","ساخت فعلی ادبی — literary verb form");
+ N(20,"FA3-20","درود","dorud","greeting; salutations","درود بر کسانی که برای دانایی تلاش می‌کنند.","Dorud bar kasāni ke barāye dānāyi talāsh mikonand.","Greetings to those who strive for knowledge.");
+ A(20,"FA3-20","سرشناس","sarshenās","well-known; prominent","او شاعر سرشناسی در ایران است.","U shā'er-e sarshenāsi dar Irān ast.","He is a well-known poet.");
+ N(20,"FA3-20","در نهایت","dar nehāyat","ultimately; in the end","در نهایت تلاش به نتیجه می‌رسد.","Dar nehāyat talāsh be natije miresad.","In the end, effort leads to results.","قید — adverb");
+ N(20,"FA3-20","پاداش","pādāsh","reward; prize","پاداش تلاش او موفقیت بود.","Pādāsh-e talāsh-e u movaffaqiyat bud.","The reward for his effort was success.");
+ N(20,"FA3-20","اسیر","asir","captive; prisoner","سربازان اسیر آزاد شدند.","Sarbāzān-e asir āzād shodand.","The captured soldiers were released.","اسم/صفت — noun/adjective");
+ N(20,"FA3-20","سفارت‌خانه","safārat-khāne","embassy","برای دریافت ویزا به سفارت‌خانه مراجعه کردیم.","Barāye daryāft-e viza be safārat-khāne morāje'e kardim.","We went to the embassy to obtain a visa.");
+ N(20,"FA3-20","خواجه","khāje","master; respected man; historical title","در متون تاریخی، خواجه گاهی عنوانی برای افراد بلندپایه بود.","Dar motun-e tārikhi, khāje gāhi onvāni barāye afrād-e bolandpāye bud.","In historical texts, khāje was sometimes a title for high-ranking people.","عنوان تاریخی — historical title");
+ N(20,"FA3-20","صاحب دلق","sāheb-e delq","wearer of a patched cloak; dervish","در حکایت، صاحب دلق نماد ساده‌زیستی است.","Dar hekāyat, sāheb-e delq nemād-e sāde-zisti ast.","In the tale, the patched-cloak wearer symbolises simple living.","گروه اسمی — noun phrase");
+ A(20,"FA3-20","خوش‌نوا","khosh-navā","melodious; sweet-sounding","صدای خوش‌نوا آرامش‌بخش است.","Sedā-ye khosh-navā ārāmesh-bakhsh ast.","A melodious voice is soothing.");
+ N(20,"FA3-20","گویا","guyā","apparently; seemingly","گویا شاعر از سفر بازگشته است.","Guyā shā'er az safar bāzgasht-e ast.","Apparently, the poet has returned from the journey.","قید — adverb");
+ A(20,"FA3-20","حیران","heyrān","astonished; bewildered","تماشاگران از زیبایی منظره حیران شدند.","Tamāshāgarān az zibāyi-ye manzare heyrān shodand.","The viewers were astonished by the beauty of the landscape.");
+ N(20,"FA3-20","بانگ","bāng","call; cry; loud sound","بانگ پرنده در کوهستان پیچید.","Bāng-e parandé dar kuhestān pichid.","The bird's call echoed in the mountains.");
+ V(20,"FA3-20","نبشتن","nebeshtan","to write (archaic/literary form of نوشتن)","نبشتن نامه در روزگار گذشته کاری مهم بود.","Nebeshtan-e nāme dar ruzegār-e gozashte kāri mohem bud.","Writing a letter was important in the past.","نبشتن","—","نبشتن در متون کهن به معنای نوشتن است.","Nebeshtan dar motun-e kohan be ma'nā-ye neveshtan ast.","In old texts, nebeshtan means to write.","—","—","—","صورت ادبی و کهن است؛ امر امروزی آن «بنویس» از نوشتن است.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
