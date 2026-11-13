@@ -61,7 +61,7 @@ jobs:
             for (const field of ['unit', 'source', 'fa', 'tr', 'en']) {
               if (!row[field]) throw new Error('Missing ' + field + ' in ' + JSON.stringify(row));
             }
-            if (/[\\u0600-\\u06ff]/.test(row.tr)) throw new Error('Non-Latin character in transliteration: ' + row.fa);
+            if (/[\u0600-\u06ff]/.test(row.tr)) throw new Error('Non-Latin character in transliteration: ' + row.fa);
             const key = row.unit + '|' + row.fa;
             if (seen.has(key)) throw new Error('Duplicate Term 01 entry: ' + key);
             seen.add(key);
