@@ -2251,6 +2251,55 @@
  V(20,"SH3-02","رفتن","raftan","to go; to leave","رفتن به فرودگاه پیش از زمان پرواز بهتر است.","Raftan be forudgāh pish az zamān-e parvāz behtar ast.","It is better to go to the airport before flight time.","رفتن","برو","رفتن به موقع از نگرانی جلوگیری می‌کند.","Raftan be moghe' az negarāni jelowgiri mikonad.","Leaving on time prevents worry.","به فرودگاه برو.","Be forudgāh boro.","Go to the airport.");
  V(20,"N3-10","دانستن","dānestan","to know","دانستنِ وظایف به رفتار مسئولانه کمک می‌کند.","Dānestan-e vazāyef be raftār-e mas'ulāne komak mikonad.","Knowing one's duties helps responsible behaviour.","دانستن","بدان","دانستنِ حق دیگران برای زندگی اجتماعی لازم است.","Dānestan-e haqq-e digarān barāye zendegi-ye ejtemā'i lāzem ast.","Knowing other people's rights is necessary for social life.","این نکته را بدان.","In nokte rā bedān.","Know this point.");
 
+
+ // Additional source-attested Newestan vocabulary from Dars 01–10.
+ N(1,"N3-01","نویسنده","nevisande","writer; author","نویسنده باید پیش از نوشتن موضوع خود را مشخص کند.","Nevisande bāyad pish az neveshtan mozoo-ye khod rā moshakhas konad.","A writer should define the topic before writing.");
+ N(1,"N3-01","کتاب","ketāb","book","این کتاب برای یادگیری زبان فارسی مفید است.","In ketāb barāye yādgiri-ye zabān-e fārsi mofid ast.","This book is useful for learning Persian.");
+ N(1,"N3-01","آشنا","āshenā","familiar; acquainted","او با فرهنگ شهر آشنا شد.","U bā farhang-e shahr āshenā shod.","He became familiar with the city's culture.");
+ N(1,"N3-01","شهر","shahr","city","این شهر بناهای تاریخی زیادی دارد.","In shahr banāhā-ye tārikhi-ye ziyādi dārad.","This city has many historical buildings.");
+ N(1,"N3-01","نکته","nokte","point; detail","نکته‌های مهم را در دفتر یادداشت کنید.","Noktehā-ye mohem rā dar daftar yāddāsht konid.","Write the important points in your notebook.");
+ N(1,"N3-01","تمرین","tamrin","exercise; practice","تمرین پایانی را در یک بند کامل بنویسید.","Tamrin-e pāyāni rā dar yek band-e kāmel benevisid.","Write the final exercise as a complete paragraph.");
+ N(1,"N3-01","محتوا","mohtavā","content","محتوای نوشته باید با موضوع هماهنگ باشد.","Mohtavā-ye neveshte bā mozoo hamāhang bāshad.","The content of the writing should match its topic.");
+ N(1,"N3-01","ساختار","sākhtār","structure","ساختار روشن، فهم متن را آسان می‌کند.","Sākhtār-e roshan fahm-e matn rā āsān mikonad.","A clear structure makes a text easier to understand.");
+ N(1,"N3-01","دستور","dastur","instruction; grammar","در این درس دستور زبان نیز تمرین می‌شود.","Dar in dars dastur-e zabān niz tamrin mishavad.","Grammar is also practised in this lesson.");
+ N(1,"N3-01","دقیق","daqiq","precise; accurate","اطلاعات دقیق به نوشته اعتبار می‌دهد.","Etelā'āt-e daqiq be neveshte e'tebār midahad.","Accurate information gives credibility to writing.");
+ N(1,"N3-01","مناسب","monāseb","suitable; appropriate","برای هر مخاطب واژگان مناسب انتخاب کنید.","Barāye har mokhāteb vāzhegān-e monāseb entekhāb konid.","Choose suitable vocabulary for each audience.");
+ N(1,"N3-01","کامل","kāmel","complete; whole","پاسخ کامل باید همهٔ بخش‌های پرسش را پوشش دهد.","Pāsokh-e kāmel bāyad hame-ye bakhshhā-ye porsesh rā pushesh dahad.","A complete answer should cover every part of the question.");
+ N(1,"N3-01","پیدا کردن","peydā kardan","to find; to discover","پیدا کردن موضوع مناسب نخستین گام نوشتن است.","Peydā kardan-e mozoo-ye monāseb nokhostin gām-e neveshtan ast.","Finding a suitable topic is the first step in writing.");
+ N(1,"N3-01","جواب","javāb","answer; reply","جواب پرسش را با جمله‌ای روشن بنویسید.","Javāb-e porsesh rā bā jomle-i roshan benevisid.","Write the answer to the question in a clear sentence.");
+ N(1,"N3-01","آینده","āyande","future","برنامه‌ریزی امروز بر آینده اثر می‌گذارد.","Barnāme-rizi-ye emruz bar āyande asar migozārad.","Today's planning affects the future.");
+ N(2,"N3-02","قرآن","qor'ān","the Qur'an","قرآن کریم منبع هدایت مسلمانان است.","Qor'ān-e karim manba'-e hedayat-e mosalmānān ast.","The Holy Qur'an is a source of guidance for Muslims.");
+ N(2,"N3-02","مرحله","marhale","stage; step","هر مرحلهٔ تحقیق هدف مشخصی دارد.","Har marhale-ye tahqiq hadaf-e moshakhkhasi dārad.","Each stage of research has a specific purpose.");
+ N(2,"N3-02","علمی","elmi","scientific; academic","برای تحقیق علمی باید از منابع معتبر استفاده کرد.","Barāye tahqiq-e elmi bāyad az manābe'-e mo'tabar estefāde kard.","Reliable sources should be used for academic research.");
+ N(2,"N3-02","انواع","anvā'","types; kinds","انواع پرسش را با مثال مقایسه کنید.","Anvā'-e porsesh rā bā mesāl moghāyese konid.","Compare the types of questions with examples.");
+ N(2,"N3-02","عنوان","onvān","title; heading","عنوان تحقیق باید کوتاه و روشن باشد.","Onvān-e tahqiq bāyad kutāh va roshan bāshad.","The research title should be short and clear.");
+ N(2,"N3-02","شخص","shakhs","person; individual","هر شخص می‌تواند تجربهٔ خود را بنویسد.","Har shakhs mitavānad tajrobe-ye khod rā benevisad.","Each person can write about their own experience.");
+ N(2,"N3-02","ربط","rabt","connection; relevance","بین پرسش اصلی و ریزموضوع‌ها باید ربط منطقی وجود داشته باشد.","Beyn-e porsesh-e asli va riz-mozoo-hā bāyad rabt-e manteqi vojood dāshte bāshad.","There should be a logical connection between the main question and subtopics.");
+ N(3,"N3-03","خوابگاه","khābgāh","dormitory; student residence","دانشجو باید مقررات خوابگاه را رعایت کند.","Dāneshju bāyad moqarrarāt-e khābgāh rā re'āyat konad.","A student should follow the dormitory rules.");
+ N(3,"N3-03","جامعه","jāme'e","society; community","مسئولیت فرد در برابر جامعه اهمیت دارد.","Mas'uliyat-e fard dar barābar-e jāme'e ahammiyat dārad.","An individual's responsibility toward society matters.");
+ N(3,"N3-03","مفرد","mofrad","singular (grammar)","اسم مفرد به یک شخص یا چیز اشاره می‌کند.","Esm-e mofrad be yek shakhs yā chiz eshāre mikonad.","A singular noun refers to one person or thing.");
+ N(3,"N3-03","درخت","derakht","tree","درختان برای پاکیزگی هوا اهمیت دارند.","Derakhtān barāye pākizegi-ye havā ahammiyat dārand.","Trees are important for clean air.");
+ N(3,"N3-03","ساده","sāde","simple; plain","جملهٔ ساده یک فعل اصلی دارد.","Jomle-ye sāde yek fe'l-e asli dārad.","A simple sentence has one main verb.");
+ N(4,"N3-04","روش","ravesh","method; approach","برای حل مسئله باید روش مناسبی انتخاب کرد.","Barāye hal-e mas'ale bāyad ravesh-e monāsebi entekhāb kard.","A suitable method should be chosen to solve a problem.");
+ N(4,"N3-04","منبع","manba'","source; reference","هر ادعا باید منبع قابل اعتماد داشته باشد.","Har edde'ā bāyad manba'-e ghābel-e e'temād dāshte bāshad.","Every claim should have a reliable source.");
+ N(4,"N3-04","عوامل","avāmel","factors; causes","عوامل گوناگون بر تصمیم انسان اثر می‌گذارند.","Avāmel-e gunāgun bar tasmim-e ensān asar migozārand.","Different factors influence a person's decisions.");
+ N(5,"N3-05","اینترنت","internet","internet","استفادهٔ مسئولانه از اینترنت به آگاهی نیاز دارد.","Estefāde-ye mas'ulāne az internet be āgāhi niyāz dārad.","Responsible use of the internet requires awareness.");
+ N(5,"N3-05","مجازی","majāzi","virtual; online","کلاس مجازی امکان یادگیری از راه دور را فراهم می‌کند.","Kelās-e majāzi emkān-e yādgiri az rāh-e dur rā farāham mikonad.","A virtual class makes remote learning possible.");
+ N(5,"N3-05","رمضان","ramazān","Ramadan","ماه رمضان فرصتی برای عبادت و خودسازی است.","Māh-e ramazān forsati barāye ebādat va khodsāzi ast.","The month of Ramadan is an opportunity for worship and self-improvement.");
+ N(5,"N3-05","جمع","jam'","plural; group; sum","در دستور زبان، جمع به بیش از یک نفر یا چیز اشاره می‌کند.","Dar dastur-e zabān jam' be bish az yek nafar yā chiz eshāre mikonad.","In grammar, the plural refers to more than one person or thing.");
+ N(5,"N3-05","ویژگی","vizhegi","feature; characteristic","هر متن ویژگی‌های مخصوص به خود را دارد.","Har matn vizhegi-hā-ye makhsus be khod rā dārad.","Every text has its own features.");
+ N(5,"N3-05","منظور","manzur","intention; meaning","منظور نویسنده را از متن پیدا کنید.","Manzur-e nevisande rā az matn peydā konid.","Identify the writer's intention in the text.");
+ N(6,"N3-06","اینترنتی","internet i","online; internet-based","خرید اینترنتی باید از فروشگاه معتبر انجام شود.","Kharid-e interneti bāyad az forushgāh-e mo'tabar anjām shavad.","Online shopping should be done through a reliable store.");
+ N(6,"N3-06","چکیده","chokide","abstract; summary","چکیده هدف و یافته‌های تحقیق را خلاصه می‌کند.","Chokide hadaf va yāftehā-ye tahqiq rā kholāse mikonad.","The abstract summarises the aim and findings of research.");
+ N(6,"N3-06","داستان","dāstān","story; tale","داستان خوب شخصیت و رویدادهای روشن دارد.","Dāstān-e khub shakhsiyat va roydādhā-ye roshan dārad.","A good story has clear characters and events.");
+ N(6,"N3-06","امتحان","emtehān","exam; test","برای امتحان باید از پیش برنامه‌ریزی کرد.","Barāye emtehān bāyad az pish barnāme-rizi kard.","One should plan ahead for an exam.");
+ N(6,"N3-06","ثبت‌نام","sabt-nām","registration; enrolment","ثبت‌نام در کلاس پیش از آغاز ترم انجام می‌شود.","Sabt-nām dar kelās pish az āghāz-e term anjām mishavad.","Registration for the class takes place before the term begins.");
+ N(6,"N3-06","مهم","mohem","important","خواب کافی برای یادگیری مهم است.","Khab-e kāfi barāye yādgiri mohem ast.","Enough sleep is important for learning.");
+ N(6,"N3-06","عالی","āli","excellent","این پاسخ از نظر ساختار عالی است.","In pāsokh az nazar-e sākhtār āli ast.","This answer is excellent in structure.");
+ N(6,"N3-06","زیبا","zibā","beautiful","باغ در بهار بسیار زیبا می‌شود.","Bāgh dar bahār besyār zibā mishavad.","The garden becomes very beautiful in spring.");
+ N(6,"N3-06","فرزندان","farzandān","children; offspring","والدین باید به نیازهای فرزندان توجه کنند.","Vāledeyn bāyad be niyāzhā-ye farzandān tavajjoh konand.","Parents should pay attention to their children's needs.");
+ N(6,"N3-06","دستورالعمل","dastur-ol'amal","instructions; guidelines","دستورالعمل را پیش از شروع کار بخوانید.","Dastur-ol'amal rā pish az shoru'-e kār bekhānid.","Read the instructions before starting the task.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
