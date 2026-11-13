@@ -72,15 +72,27 @@ assert(global.TERM3_NEWESTAN_EXAMPLE?.source === "N3-01", "Expected a source-bas
 assert(global.TERM3_NEWESTAN_EXAMPLE.topicSentence && global.TERM3_NEWESTAN_EXAMPLE.supportingSentences?.length >= 2 &&
   global.TERM3_NEWESTAN_EXAMPLE.concludingSentence && global.TERM3_NEWESTAN_EXAMPLE.sample,
   "Newestan model must demonstrate topic, supporting and concluding sentences");
+assert(global.TERM3_NEWESTAN_FINAL_INSHA?.source?.startsWith("N3-10"), "Expected final Newestan Insha model to cite Dars 10");
+assert(global.TERM3_NEWESTAN_FINAL_INSHA.mainQuestion && global.TERM3_NEWESTAN_FINAL_INSHA.method &&
+  global.TERM3_NEWESTAN_FINAL_INSHA.subtopics?.length === 4 &&
+  global.TERM3_NEWESTAN_FINAL_INSHA.muqaddama && global.TERM3_NEWESTAN_FINAL_INSHA.band1 &&
+  global.TERM3_NEWESTAN_FINAL_INSHA.band2 && global.TERM3_NEWESTAN_FINAL_INSHA.natija &&
+  global.TERM3_NEWESTAN_FINAL_INSHA.abstract && global.TERM3_NEWESTAN_FINAL_INSHA.keywords?.length >= 5,
+  "Final Newestan Insha must include research method, subtopics, Muqaddama, two body bands, Natija, abstract and keywords");
+assert(appSource.includes("newestan-final-insha") && appSource.includes("m.muqaddama") &&
+  appSource.includes("m.band1") && appSource.includes("m.band2") && appSource.includes("m.natija"),
+  "Final Newestan Insha must be rendered as a complete structured essay");
 const lexiconKeys = new Set(entries.map(x => String(x.fa).replace(/[\\u200c\\sـ]/g, "")));
 for (const word of global.TERM3_NEWESTAN_EXAMPLE.vocabulary) {
   assert(lexiconKeys.has(String(word).replace(/[\\u200c\\sـ]/g, "")),
     "Newestan vocabulary must open a flashcard: " + word);
 }
-assert(appSource.includes("function addVocabularyForms(index,item)"), "Writing and Khulasa links must support Persian inflected forms");
-assert(appSource.includes("const examples=[item.xf,item.m?.[0],item.a?.[0]]"),
-  "Words demonstrated in flashcard examples must also be searchable from writing pages");
-assert(appSource.includes("vocabLinkStopWords"), "Vocabulary example indexing must exclude grammatical stop words");
+assert(appSource.includes("Exact vocabulary matching only"), "Vocabulary linking must use exact headwords rather than arbitrary example tokens");
+assert(appSource.includes("curatedVocabAliases"), "Only reviewed Persian plural/irregular aliases should be linked");
+assert(!appSource.includes("const examples=[item.xf,item.m?.[0],item.a?.[0]]"),
+  "Arbitrary example-sentence tokens must never create flashcard links");
+assert(appSource.includes("Number(b.bk===activeTerm)-Number(a.bk===activeTerm)"),
+  "Flashcards from the active term must take priority over cross-term duplicates");
 assert(appSource.includes("attachVocabularyLinks(v.querySelector(\".writing-wrap\"))"), "Newestan/Sukhanrani content must use shared flashcard links");
 assert(appSource.includes("newestan-vocabulary"), "Newestan model vocabulary must be rendered as linked flashcards");
 assert(appSource.includes("--fa-reading-font") && appSource.includes(".newestan-example") && appSource.includes(".khulasa-lines"),

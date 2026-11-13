@@ -1346,33 +1346,33 @@ function add(){
 
 
 
-/* Index common Persian plural forms so inflected nouns open their base flashcard. */
+/* Exact vocabulary matching only. Never index arbitrary words from example sentences:
+   doing so made unrelated words open whichever flashcard happened to appear first. */
 const vocabLinkStopWords=new Set("و در به از که را با برای این آن او آنها ما شما من یک هر هم نیز اما اگر تا یا چون زیرا ولی بلکه پس سپس بعد قبل اکنون امروز بیشتر کمتر بسیار همه هیچ خود دیگر همین همان چه چگونه چرا کدام است هست بود بودند باشد شوند شود شده دارد دارند داشت داشتن کردن کند کنند کرد کردند می‌کند می‌شود می‌باشد می‌توان می‌توانند می‌خواهد می‌خواهند باید نباید نیست نیستند هستند آن‌ها آنچه چنین مانند مثل دربارهٔ میان روی زیر نزد طرف هنگام زمان سال روز ماه بسم الله الرحمن الرحیم سلام علیکم والسلام الحمد رب العالمین علی محمد آله الطاهرین".split(/\s+/).map(fold));
+const curatedVocabAliases={
+ "منبع":["منابع"],"اثر":["آثار"],"حق":["حقوق"],"شرط":["شرایط"],"عامل":["عوامل"],
+ "رابطه":["روابط"],"رسم":["رسوم"],"فرد":["افراد"],"حیوان":["حیوانات"],
+ "موضوع":["موضوعات"],"نکته":["نکات"],"مرحله":["مراحل"],"خبر":["اخبار"],
+ "امر":["امور"],"ادب":["آداب"],"شعر":["اشعار"],"کتاب":["کتاب‌ها","کتابها"],
+ "دانشجو":["دانشجویان"],"دانش‌آموز":["دانش‌آموزان"],"استاد":["استادان","اساتید"],
+ "مردم":["مردمان"],"مسئله":["مسائل"],"مسأله":["مسائل"],"قانون":["قوانین"],
+ "شهر":["شهرها","شهرهای"],"کشور":["کشورها","کشورهای"],"جامعه":["جوامع"]
+};
 function addVocabularyForms(index,item){
  const key=fold(item.fa);if(!key)return;
- index.set(key,item);
- if(String(item.fa).trim().split(/\s+/).length===1){
-  ["ها","های","هایی","ان","گان","یان"].forEach(suffix=>{
-   const variant=key+fold(suffix);if(!index.has(variant))index.set(variant,item);
-  });
- }
- const irregular={"منابع":"منبع","آثار":"اثر","حقوق":"حق","شرایط":"شرط","عوامل":"عامل","روابط":"رابطه","رسوم":"رسم","افراد":"فرد","حیوانات":"حیوان","موضوعات":"موضوع","نکات":"نکته","مراحل":"مرحله","اخبار":"خبر","امور":"امر","آداب":"ادب","اشعار":"شعر"};
- const base=irregular[String(item.fa).trim()];
- if(base){const variant=fold(base);if(!index.has(variant))index.set(variant,item);}
- // Words appearing in a flashcard's own Persian examples are also searchable
- // from the writing pages; clicking them opens the card that demonstrates them.
- const examples=[item.xf,item.m?.[0],item.a?.[0]];
- for(const example of examples){
-  for(const token of String(example||"").match(/[\u0600-\u06ff]+(?:‌[\u0600-\u06ff]+)*/g)||[]){
-   const word=fold(token);
-   if(word.length>2&&!vocabLinkStopWords.has(word)&&!index.has(word))index.set(word,item);
-  }
+ // Exact headwords always take precedence over aliases.
+ if(!index.has(key))index.set(key,item);
+ const aliases=curatedVocabAliases[String(item.fa).trim()]||[];
+ for(const alias of aliases){
+  const aliasKey=fold(alias);
+  if(aliasKey&&!index.has(aliasKey))index.set(aliasKey,item);
  }
 }
 
+/* Link only exact flashcard headwords and reviewed aliases in writing/speaking pages. */
 /* Link Persian vocabulary in writing and speaking guidance to the shared flashcard. */
 function attachVocabularyLinks(scope){
- const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>String(b.fa).trim().split(/\s+/).length-String(a.fa).trim().split(/\s+/).length||String(b.fa).length-String(a.fa).length);
+ const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>(Number(b.bk===activeTerm)-Number(a.bk===activeTerm))||String(b.fa).trim().split(/\s+/).length-String(a.fa).trim().split(/\s+/).length||String(b.fa).length-String(a.fa).length);
  const index=new Map();let maxWords=1;
  entries.forEach(i=>{addVocabularyForms(index,i);maxWords=Math.max(maxWords,String(i.fa).trim().split(/\s+/).length)});
  const walker=document.createTreeWalker(scope,NodeFilter.SHOW_TEXT,{acceptNode(node){
@@ -1526,6 +1526,21 @@ function essays(){
  <details><summary><b>متن کامل نمونه / Complete model paragraph</b></summary><div class="dc fa-block model-sample">${esc(newestanExample.sample)}</div></details>
  <div class="newestan-part"><b>واژگان درس اول / Dars 01 vocabulary</b><p class="fa-block newestan-vocabulary">${newestanExample.vocabulary.map(x=>esc(x)).join(" · ")}</p></div>
  </article>` : ""}
+ ${activeTerm===3&&window.TERM3_NEWESTAN_FINAL_INSHA ? (()=>{const m=window.TERM3_NEWESTAN_FINAL_INSHA;return `<article class="panel newestan-example newestan-final-insha">
+ <div class="mut">NEWESTAN · DARS 10 · ${esc(m.source)}</div>
+ <h3>${esc(m.title)}</h3>
+ <p class="mut fa-block">${esc(m.method)}</p>
+ <div class="newestan-part"><b>پرسش اصلی تحقیق</b><p class="fa-block">${esc(m.mainQuestion)}</p></div>
+ <div class="newestan-part"><b>ریزموضوع‌ها / عنوان‌های فرعی</b><ol class="newestan-support">${m.subtopics.map(x=>`<li class="fa-block">${esc(x)}</li>`).join("")}</ol></div>
+ <div class="newestan-part"><b>مقدمه</b><p class="fa-block">${esc(m.muqaddama)}</p></div>
+ <div class="newestan-part"><b>بند اول</b><p class="fa-block">${esc(m.band1)}</p></div>
+ <div class="newestan-part"><b>بند دوم</b><p class="fa-block">${esc(m.band2)}</p></div>
+ <div class="newestan-part"><b>نتیجه</b><p class="fa-block">${esc(m.natija)}</p></div>
+ <details><summary><b>متن کامل انشا / نمونهٔ یکپارچه</b></summary><div class="dc fa-block model-sample">${esc(m.sample)}</div></details>
+ <div class="newestan-part"><b>چکیده</b><p class="fa-block">${esc(m.abstract)}</p></div>
+ <div class="newestan-part"><b>کلیدواژه‌ها</b><p class="fa-block">${m.keywords.map(esc).join(" · ")}</p></div>
+ <p class="mut fa-block">${esc(m.sourceNote)}</p>
+ </article>`})() : ""}
  <details><summary><b>20-point assessment rubric from the OCR</b></summary><div class="dc">${data.rubric.map(x=>`<div class="rubric-row"><b>${esc(x.name)} · ${x.points}/20</b><span>${x.points} points</span><div style="grid-column:1/-1" class="mut">${esc(x.detail)}</div></div>`).join("")}<p><b>Total: 20 points.</b> The OCR's descriptive bands show: عالی ۱۹–۲۰; خیلی خوب ۱۷–۱۸; خوب ۱۴–۱۶; متوسط ۱۱–۱۳; تلاش بیشتر ۰–۱۰. The printed scale is slightly damaged by OCR, so these bands are transcribed cautiously.</p></div></details>
  </div>
  <div class="panel">
