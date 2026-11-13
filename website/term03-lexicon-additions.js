@@ -1552,7 +1552,7 @@
 
 
  // SH3-07 first-page additions.
- N(19,"SH3-07","تعمیر جزیی","ta'mir-e jozi","minor repair","تعمیر جزیی دستگاه یک ساعت طول کشید.","Ta'mir-e jozi-ye dastgāh yek sā'at tul کشid.","The minor repair of the device took one hour.","گروه اسمی — noun phrase");
+ N(19,"SH3-07","تعمیر جزیی","ta'mir-e jozi","minor repair","تعمیر جزیی دستگاه یک ساعت طول کشید.","Ta'mir-e jozi-ye dastgāh yek sā'at tul keshid.","The minor repair of the device took one hour.","گروه اسمی — noun phrase");
  N(19,"SH3-07","آبگرمکن","ābgarm-kon","water heater","آبگرمکن هتل خراب شده است.","Ābgarm-kon-e hotel kharāb shode ast.","The hotel's water heater is broken.");
  N(19,"SH3-07","گاهی اوقات","gāhi owqāt","sometimes; occasionally","گاهی اوقات ارتباط اینترنت قطع می‌شود.","Gāhi owqāt ertebāt-e internet qat' mishavad.","Sometimes the internet connection is interrupted.","قید — adverb");
  N(19,"SH3-07","کارت اعتباری","kārt-e e'tebāri","credit card","هزینهٔ هتل را با کارت اعتباری پرداخت کردم.","Hazine-ye hotel rā bā kārt-e e'tebāri pardākht kardam.","I paid the hotel bill with a credit card.","گروه اسمی — noun phrase");
@@ -1571,7 +1571,7 @@
  N(3,"SH3-08","قطعی اینترنت","qat'i-ye internet","internet outage; interruption of internet service","قطعی اینترنت کلاس مجازی را متوقف کرد.","Qat'i-ye internet kelās-e majāzi rā motevaqqef kard.","The internet outage interrupted the online class.","گروه اسمی — noun phrase");
  // SH3-09 first-page additions.
  A(10,"SH3-09","بی‌تقصیر","bi-taqsir","innocent; not at fault","در این ماجرا کودک بی‌تقصیر بود.","Dar in mājerā kudak bi-taqsir bud.","The child was not at fault in this incident.");
- A(10,"SH3-09","تولیدی","tolid i","manufactured; production-related","این شرکت لباس تولیدی باکیفیت دارد.","In sherkat lebās-e tolidi-ye bā-keyfiyat dārad.","This company produces high-quality clothing.");
+ A(10,"SH3-09","تولیدی","tolidi","manufactured; production-related","این شرکت لباس تولیدی باکیفیت دارد.","In sherkat lebās-e tolidi-ye bā-keyfiyat dārad.","This company produces high-quality clothing.");
  A(10,"SH3-09","شرمنده","sharmande","embarrassed; ashamed","فروشنده از اشتباه خود شرمنده شد.","Forushande az eshtebāh-e khod sharmande shod.","The seller felt embarrassed by the mistake.");
  V(10,"SH3-09","ناموفق بودن","nāmovaffaq budan","to be unsuccessful","خرید اینترنتی او ناموفق بود.","Kharid-e interneti-ye u nāmovaffaq bud.","His online purchase was unsuccessful.","ناموفق بودن","—","ناموفق بودن در یک تلاش پایان راه نیست.","Nāmovaffaq budan dar yek talāsh pāyān-e rāh nist.","Being unsuccessful in one attempt is not the end.","—","—","—","ساختار وصفی است؛ امر مستقیم طبیعی ندارد.");
  N(10,"SH3-09","حراج زمستانه","harāj-e zemestāne","winter sale","در حراج زمستانه قیمت لباس‌ها کمتر است.","Dar harāj-e zemestāne gheymat-e lebāshā kamtar ast.","Clothing prices are lower in the winter sale.","گروه اسمی — noun phrase");
