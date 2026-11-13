@@ -1234,7 +1234,7 @@
  V(1,"KH3-01","زبان‌درازی کردن","zabān-derāzi kardan","to talk back; to speak insolently","زبان‌درازی کردن به بزرگ‌ترها پسندیده نیست.","Zabān-derāzi kardan be bozorgtarhā pasandide nist.","Talking back to elders is not appropriate.","زبان‌درازی کردن","زبان‌درازی نکن","زبان‌درازی کردن نشانهٔ بی‌ادبی است.","Zabān-derāzi kardan neshāne-ye bi-adabi ast.","Talking back is a sign of disrespect.","با بزرگ‌ترها زبان‌درازی نکن.","Bā bozorgtarhā zabān-derāzi nakon.","Do not talk back to elders.");
  N(1,"KH3-01","از کسی خوشش آمدن","az kasi khoshesh āmadan","to like someone; to take a liking to someone","از رفتار مهربان او خوشم آمد.","Az raftār-e mehrabān-e u khosh-am āmад.","I liked his kind behaviour.","عبارت — expression");
  N(1,"KH3-01","محبوب","mahbub","beloved; popular","او میان دوستانش محبوب است.","U miyān-e dustānash mahbub ast.","He is popular among his friends.","صفت — sifat (adjective)");
- A(1,"KH3-01","برهنه","barahne","naked; bare","در داستان، پادشاه برهنه بود.","Dar dāstān, pādeshāh barهنه bud.","In the story, the king was naked.");
+ A(1,"KH3-01","برهنه","barahne","naked; bare","در داستان، پادشاه برهنه بود.","Dar dāstān, pādeshāh barahne bud.","In the story, the king was naked.");
  V(1,"KH3-01","شهادت دادن","shahādat dādan","to testify; to bear witness","شاهد در دادگاه شهادت داد.","Shāhed dar dādgāh shahādat dād.","The witness testified in court.","شهادت دادن","شهادت بده","شهادت دادن باید بر پایهٔ حقیقت باشد.","Shahādat dādan bāyad bar pāye-ye haqiqat bāshad.","Testimony must be based on truth.","اگر حقیقت را می‌دانی، شهادت بده.","Agar haqiqat rā midāni, shahādat bedeh.","If you know the truth, testify.");
  N(1,"N3-01","دوران","dowrān","era; period","در دوران کودکی بازی‌های زیادی داشتیم.","Dar dowrān-e kudaki bāzi-hā-ye ziyādi dāshtim.","We had many games during childhood.","اسم — ism (noun)");
  N(1,"N3-01","کسب و تجارت","kasb-o-tejārat","business and trade","کسب و تجارت در این منطقه رونق دارد.","Kasb-o-tejārat dar in manteqe رونق dārad.","Business and trade are thriving in this region.","گروه اسمی — noun phrase");
@@ -1259,6 +1259,10 @@
  V(1,"SH3-01","در خدمت بودن","dar khedmat budan","to be at someone's service; to be available to help","من همیشه در خدمت شما هستم.","Man hamishe dar khedmat-e shomā hastam.","I am always at your service.","در خدمت بودن","در خدمت باش","در خدمت بودن نشانهٔ آمادگی برای کمک است.","Dar khedmat budan neshāne-ye āmādegi barāye komak ast.","Being at someone's service shows readiness to help.","هر وقت نیاز داشتی، در خدمت باش.","Har vaqt niyāz dāshti, dar khedmat bāsh.","Be available whenever needed.");
  V(1,"SH3-01","به دست آوردن","be dast āvardan","to obtain; to achieve","او اعتماد دوستانش را به دست آورد.","U e'temād-e dustānash rā be dast āvard.","He gained his friends' trust.","به دست آوردن","به دست بیاور","اعتماد دیگران را با صداقت به دست بیاور.","E'temād-e digarān rā bā sedāqat be dast biyāvar.","Earn others' trust through honesty.");
  V(1,"SH3-01","قهر کردن","qahr kardan","to become upset and stop speaking; to fall out","دو کودک پس از اختلاف با هم قهر کردند.","Do kudak pas az ekhtelāf bā ham qahr kardand.","The two children fell out after a disagreement.","قهر کردن","قهر نکن","قهر کردن مشکل را حل نمی‌کند.","Qahr kardan moshkel rā hal nemikonad.","Sulking does not solve the problem.","با دوستت قهر نکن؛ با او صحبت کن.","Bā dustat qahr nakon; bā u sohbat kon.","Do not fall out with your friend; talk to them.");
+
+
+ A(1,"FA3-01","خونسرد","khونسard","calm; cool-headed","در موقعیت دشوار خونسرد بمان.","Dar mowqe'iyat-e doshvār khونسard bemān.","Stay calm in a difficult situation.");
+ N(1,"SH3-01","متکا","motakkā","pillow; cushion (variant term listed beside بالش)","کودک سرش را روی متکا گذاشت.","Kudak sarash rā ru-ye motakkā gozāsht.","The child put his head on the pillow.","اسم — ism (noun)");
 
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
