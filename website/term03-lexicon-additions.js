@@ -1866,6 +1866,7 @@
  N(5,"FA3-05","یک عالمه","yek āleme","a lot of; a great many","در این فروشگاه یک عالمه کتاب وجود دارد.","Dar in forushgāh yek āleme ketāb vojud dārad.","There are a lot of books in this shop.","عبارت کمّی — quantifier phrase");
  N(20,"FA3-20","روزکی","ruzaki","a short while; a few days (archaic/poetic)","روزکی چند درنگ کرد و سپس راه افتاد.","Ruzaki chand derang kard-o sepas rāh oftād.","He paused for a short while and then set off.","واژهٔ ادبی — literary word");
 
+ N(20,"FA3-20","سرشار","sarshār","full of; abundant in","این شعر سرشار از احساس و اندیشه است.","In she'r sarshār az ehsās-o andishe ast.","This poem is full of feeling and thought.");
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
