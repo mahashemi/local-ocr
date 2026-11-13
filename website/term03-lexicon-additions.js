@@ -2503,6 +2503,30 @@
  V(20,"N3-10","توانستن","tavānestan","to be able; can","توانستنِ پرسیدن پرسش درست بخشی از یادگیری است.","Tavānestan-e porsidan-e porsesh-e dorost bakhshi az yādgiri ast.","Being able to ask the right question is part of learning.","توانستن","بتوان","توانستنِ توضیح دادن نظر خود نشانهٔ فهم است.","Tavānestan-e tozih dādan-e nazar-e khod neshāne-ye fahm ast.","Being able to explain one's view is a sign of understanding.","باید بتوان پاسخ را با دلیل توضیح داد.","Bāyad betavān pāsokh rā bā dalil tozih dād.","One should be able to explain the answer with a reason.");
  V(20,"N3-10","پرهیز کردن","parhiz kardan","to avoid; to refrain","پرهیز کردن از بدگویی نشانهٔ اخلاق نیک است.","Parhiz kardan az badguyi neshāne-ye akhlāq-e nik ast.","Avoiding backbiting is a sign of good character.","پرهیز کردن","پرهیز کن","پرهیز کردن از توهین در گفت‌وگو ضروری است.","Parhiz kardan az tohin dar goft-o-gu zaruri ast.","Avoiding insults in conversation is essential.","از بدگویی پرهیز کن.","Az badguyi parhiz kon.","Avoid speaking ill of others.");
 
+
+ // High-frequency source tokens retained as useful vocabulary rather than false links.
+ N(1,"N3-01","اول","avval","first; initially","اول موضوع را انتخاب کنید و سپس طرح بنویسید.","Avval mozoo rā entekhāb konid va sepas tarh benevisid.","First choose the topic, then write an outline.");
+ N(1,"N3-01","دوم","dovvom","second","در بند دوم دلیل دیگری را توضیح دهید.","Dar band-e dovvom dalil-e digari rā tozih dahid.","Explain another reason in the second paragraph.");
+ N(1,"N3-01","سوم","sevvom","third","سومین نکته را در نتیجه یادآوری کنید.","Sevvomin nokte rā dar natije yādāvari konid.","Recall the third point in the conclusion.");
+ N(1,"N3-01","چهارم","chahārom","fourth","چهارمین مرحله بازبینی متن است.","Chahāromin marhale bāzbini-ye matn ast.","The fourth step is reviewing the text.");
+ N(1,"N3-03","صورت","surat","form; manner; face","صورت درست جمله را در جدول بنویسید.","Surat-e dorost-e jomle rā dar jadval benevisid.","Write the correct form of the sentence in the table.");
+ N(1,"N3-03","فعل","fe'l","verb","فعل جمله را پیدا کنید.","Fe'l-e jomle rā peydā konid.","Find the verb in the sentence.");
+ N(1,"N3-01","چند","chand","some; a few; how many","چند جمله دربارهٔ موضوع بنویسید.","Chand jomle darbāre-ye mozoo benevisid.","Write a few sentences about the topic.");
+ N(1,"N3-01","تمام","tamām","all; whole; complete","تمام بخش‌های تمرین را پاسخ دهید.","Tamām-e bakhshhā-ye tamrin rā pāsokh dahid.","Answer all parts of the exercise.");
+ N(1,"N3-01","نام","nām","name","نام نویسنده را زیر عنوان بنویسید.","Nām-e nevisande rā zir-e onvān benevisid.","Write the author's name below the title.");
+ N(1,"N3-01","جدول","jadval","table; chart","اطلاعات را در جدول مرتب کنید.","Etelā'āt rā dar jadval morattab konid.","Organise the information in the table.");
+ N(1,"N3-03","قرار","qarār","appointment; arrangement; قرار","قرار است فردا دربارهٔ تحقیق گفت‌وگو کنیم.","Qarār ast fardā darbāre-ye tahqiq goft-o-gu konim.","We are going to discuss the research tomorrow.");
+ N(1,"N3-01","پیش","pish","before; ahead; in front","پیش از نوشتن، ریزموضوع‌ها را مشخص کنید.","Pish az neveshtan riz-mozoo-hā rā moshakhas konid.","Before writing, identify the subtopics.");
+ N(1,"N3-01","زمان","zamān","time; period","برای هر بخش زمان کافی در نظر بگیرید.","Barāye har bakhsh zamān-e kāfi dar nazar begirid.","Allow enough time for each section.");
+ N(1,"N3-01","پیدا","peydā","found; visible; available","پاسخ را در متن پیدا کنید.","Pāsokh rā dar matn peydā konid.","Find the answer in the text.");
+ N(1,"N3-01","چیز","chiz","thing; something","هر چیز را با دلیل و مثال توضیح دهید.","Har chiz rā bā dalil va mesāl tozih dahid.","Explain each thing with a reason and an example.");
+ N(1,"N3-01","کنار","kenār","beside; next to; alongside","در کنار موضوع اصلی، دو ریزموضوع بنویسید.","Dar kenār-e mozoo-ye asli, do riz-mozoo benevisid.","Write two subtopics alongside the main topic.");
+ N(1,"N3-01","انجام","anjām","completion; performance","انجام تمرین به دقت و زمان نیاز دارد.","Anjām-e tamrin be deqqat va zamān niyāz dārad.","Completing the exercise requires care and time.");
+ N(1,"N3-10","مقابل","moqābel","opposite; in front of; against","دانشجو در مقابل استاد مسئولیت اخلاقی دارد.","Dāneshju dar moqābel-e ostād mas'uliyat-e akhlāqi dārad.","A student has ethical responsibilities toward the teacher.");
+ N(1,"N3-10","هدف","hadaf","goal; aim","هدف تحقیق را در مقدمه روشن کنید.","Hadaf-e tahqiq rā dar moqaddame roshan konid.","Clarify the aim of the research in the introduction.");
+ N(1,"SH3-02","کالا","kālā","goods; product","قیمت کالا را پیش از خرید بررسی کنید.","Gheymat-e kālā rā pish az kharid barrasi konid.","Check the price of the product before buying.");
+ N(1,"SH3-01","پیش‌تکلیف","pish-taklif","pre-task; preparatory assignment","پیش‌تکلیف را پیش از جلسه انجام دهید.","Pish-taklif rā pish az jalase anjām dahid.","Complete the preparatory assignment before the session.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
