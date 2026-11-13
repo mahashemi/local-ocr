@@ -1355,6 +1355,35 @@
  V(4,"FA3-04","گیر آمدن","gir āmadan","to be found; to turn up","بالاخره بلیت گیر آمد.","Bālākhare belit gir āmad.","A ticket finally turned up.","گیر آمدن","—","گیر آمدنِ بلیت در روزهای شلوغ دشوار است.","Gir āmadan-e belit dar ruzhā-ye sholugh doshvār ast.","Finding a ticket on busy days is difficult.","—","—","—","فعل لازم است؛ امر مستقیم طبیعی ندارد.");
  N(4,"FA3-04","مخفیانه","makhfiāne","secretly; in secret","او مخفیانه نامه را خواند.","U makhfiāne nāme rā khānd.","He read the letter secretly.","قید — adverb");
 
+
+ // FA3-06 first-page additions.
+ N(6,"FA3-06","همراه بانک","hamrāh-bānk","mobile banking; banking app","با همراه بانک می‌توانم قبض‌ها را پرداخت کنم.","Bā hamrāh-bānk mitavānam qabz-hā rā pardākht konam.","I can pay bills with mobile banking.","گروه اسمی — noun phrase");
+ N(6,"FA3-06","محاسن","mahāsen","advantages; merits","هر روش محاسن و معایب خودش را دارد.","Har ravesh mahāsen-o ma'āyeb-e khodash rā dārad.","Every method has its own advantages and disadvantages.");
+ A(6,"FA3-06","مجهز","mojahhaz","equipped","این بانک به دستگاه‌های جدید مجهز است.","In bānk be dastgāh-hā-ye jadid mojahhaz ast.","This bank is equipped with modern devices.");
+ A(6,"FA3-06","بی‌ربط","bi-rabt","irrelevant; unrelated","این پاسخ به پرسش من بی‌ربط بود.","In pāskh be porsesh-e man bi-rabt bud.","This answer was irrelevant to my question.");
+ // FA3-07 first-page additions.
+ A(7,"FA3-07","محتاج","mohtāj","needy; in need","کمک به افراد محتاج کار ارزشمندی است.","Komak be afrād-e mohtāj kār-e arzeshmandi ast.","Helping people in need is a worthy act.");
+ A(7,"FA3-07","متعدد","mota'added","numerous; multiple","برای این مشکل راه‌حل‌های متعدد وجود دارد.","Barāye in moshkel rāh-hal-hā-ye mota'added vojud dārad.","There are numerous solutions to this problem.");
+ N(7,"FA3-07","تجمل‌گرایی","tajammol-gerāyi","luxury-seeking; excessive materialism","تجمل‌گرایی می‌تواند هزینه‌های خانواده را افزایش دهد.","Tajammol-gerāyi mitavānad hazinehā-ye khānevāde rā afzāyesh dahad.","Excessive materialism can increase a family's expenses.");
+ N(7,"FA3-07","آژیر","āzhir","siren; alarm","با شنیدن صدای آژیر، مردم از ساختمان خارج شدند.","Bā shenidan-e sedā-ye āzhir, mardom az sāxtemān khārej shodand.","When they heard the siren, people left the building.");
+ N(7,"FA3-07","رعایت حق تقدم","re'āyat-e haqq-e taqaddom","observing the right of way","رعایت حق تقدم از تصادف جلوگیری می‌کند.","Re'āyat-e haqq-e taqaddom az tasādef jelogiri mikonad.","Observing the right of way prevents accidents.","گروه اسمی — noun phrase");
+ N(7,"FA3-07","قانون‌شکنی","qānun-shekani","lawbreaking; violation of the law","قانون‌شکنی نظم جامعه را از بین می‌برد.","Qānun-shekani nazm-e jāme'e rā az beyn mibараd.","Breaking the law undermines social order.");
+ // FA3-08 first-page additions.
+ A(8,"FA3-08","نوساز","now-sāz","newly built; newly constructed","این آپارتمان نوساز و روشن است.","In āpārtemān now-sāz-o rowshan ast.","This apartment is newly built and bright.");
+ A(8,"FA3-08","خفه","khoffe","stuffy; airless","اتاق بدون پنجره خفه است.","Otāq-e bedun-e panjare khoffe ast.","The room without a window is stuffy.");
+ A(8,"FA3-08","دنج","denj","quiet; secluded; cosy","خانه‌ای دنج برای مطالعه انتخاب کردم.","Khāne-i denj barāye motāle'e entekhāb kardam.","I chose a quiet, cosy home for studying.");
+ A(8,"FA3-08","جادار","jādār","spacious","این خانه اتاق‌های جاداری دارد.","In khāne otāq-hā-ye jādāri dārad.","This house has spacious rooms.");
+ A(8,"FA3-08","فسقلی","fesqeli","tiny; very small (colloquial)","اتاق فسقلی اما مرتب بود.","Otāq fesqeli ammā morattab bud.","The room was tiny but tidy.");
+ N(8,"FA3-08","بالکن","bālk on","balcony","گلدان‌ها را روی بالکن گذاشتیم.","Goldān-hā rā ru-ye bālk on gozāshtim.","We put the flowerpots on the balcony.");
+ A(8,"FA3-08","باصفا","bā-safā","pleasant; charming","این محله باصفا و آرام است.","In mahalle bā-safā-o ārām ast.","This neighbourhood is charming and peaceful.");
+ N(8,"FA3-08","پیشاپیش","pishāpish","in advance; beforehand","اجاره را پیشاپیش پرداخت کردم.","Ejāre rā pishāpish pardākht kardam.","I paid the rent in advance.","قید — adverb");
+ N(8,"FA3-08","ایستگاه برق","istgāh-e barq","electrical substation; power station","ایستگاه برق در نزدیکی محله قرار دارد.","Istgāh-e barq dar nazdiki-ye mahalle qarār dārad.","The electrical substation is near the neighbourhood.","گروه اسمی — noun phrase");
+ V(8,"FA3-08","چیدن","chidan","to arrange; to put in order","او کتاب‌ها را روی قفسه چید.","U ketābhā rā ru-ye qafase chid.","She arranged the books on the shelf.","چیدن","بچین","چیدن وسایل پیش از اسباب‌کشی مفید است.","Chidan-e vasāyel pish az asbāb-keshi mofid ast.","Arranging belongings before moving is useful.","کتاب‌ها را مرتب بچین.","Ketābhā rā morattab bechin.","Arrange the books neatly.");
+ V(8,"FA3-08","جویا شدن","juyā shodan","to inquire; to seek information","او از همسایه‌ها جویا شد.","U az hamsāyehā juyā shod.","He inquired of the neighbours.","جویا شدن","جویا شو","جویا شدن از شرایط قرارداد ضروری است.","Juyā shodan az sharāyet-e gharārdād zaruri ast.","It is important to inquire about the contract terms.","دربارهٔ هزینه‌ها جویا شو.","Darbāre-ye hazinehā juyā sho.","Ask about the costs.");
+ N(8,"FA3-08","افسوس","afsوس","regret; alas","افسوس که خانه زود اجاره رفت.","Afsus ke khāne zud ejāre raft.","Unfortunately, the house was rented quickly.","اسم — noun");
+ A(8,"FA3-08","مجزا","mojazzā","separate; distinct","آشپزخانه از اتاق نشیمن مجزاست.","Āshpazkhāne az otāq-e neshiman mojazzāst.","The kitchen is separate from the living room.");
+ N(8,"FA3-08","اظهار","ezhār","statement; expression","اظهار نظر دربارهٔ خانه به سلیقهٔ شما بستگی دارد.","Ezhār-e nazar darbāre-ye khāne be saliqe-ye shomā bastagi dārad.","Expressing an opinion about the house depends on your taste.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
