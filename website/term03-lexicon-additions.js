@@ -1912,7 +1912,7 @@
  N(13,"FA3-13","بال","bāl","wing","پرندگان با بال‌های خود پرواز می‌کنند.","Parandegān bā bāl-hā-ye khod parvāz mikonand.","Birds fly with their wings.");
  N(13,"FA3-13","پستاندار","pestāndār","mammal","انسان و نهنگ هر دو پستاندار هستند.","Ensān va nahang har do pestāndār hastand.","Humans and whales are both mammals.");
  A(13,"FA3-13","زبر","zबर","rough; coarse","پوست بعضی خزندگان زبر است.","Pust-e ba'zi khazandegān zबर ast.","The skin of some reptiles is rough.");
- N(13,"FA3-13","انقراض","enqerāz","extinction","شکار بی‌رویه می‌تواند به انقراض گونه‌ها منجر شود.","Shekār-e bi-raviyye mitavānad be enqerāz-e gunهhā monjar shavad.","Uncontrolled hunting can lead to species extinction.");
+ N(13,"FA3-13","انقراض","enqerāz","extinction","شکار بی‌رویه می‌تواند به انقراض گونه‌ها منجر شود.","Shekār-e bi-raviyye mitavānad be enqerāz-e gunehā monjar shavad.","Uncontrolled hunting can lead to species extinction.");
  N(13,"FA3-13","شکار","shekār","hunting; prey","شکار بی‌رویه به جمعیت جانوران آسیب می‌زند.","Shekār-e bi-raviyye be jam'iyat-e jānvarān āsib mizanad.","Uncontrolled hunting harms animal populations.");
  N(13,"FA3-13","لاک","lāk","shell; carapace","لاک لاک‌پشت از بدن او محافظت می‌کند.","Lāk-e lākposht az badan-e u mohāfezat mikonad.","A turtle's shell protects its body.");
  // Deduplicate against the curated base and within this file by Persian headword.
