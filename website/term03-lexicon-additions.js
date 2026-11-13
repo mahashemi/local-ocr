@@ -2092,6 +2092,9 @@
  N(10,"FA3-10","آلات","ālāt","tools; instruments","استفاده از آلات خطرناک تابع قانون است.","Estefāde az ālāt-e khatarnāk tābe'-e qānun ast.","The use of dangerous instruments is regulated by law.");
  A(10,"FA3-10","خونگرم","khun-garm","warm-hearted; sociable","مردم این شهر خونگرم و مهمان‌نواز هستند.","Mardom-e in shahr khun-garm-o mehmān-navāz hastand.","The people of this city are warm-hearted and hospitable.");
  N(10,"FA3-10","قوانین جمهوری اسلامی","qavānin-e jomhuri-ye eslāmi","laws of the Islamic Republic","قوانین جمهوری اسلامی در این درس معرفی می‌شوند.","Qavānin-e Jomhuri-ye Eslāmi dar in dars mo'arrefi mishavand.","The laws of the Islamic Republic are introduced in this lesson.","گروه اسمی — noun phrase");
+
+ N(9,"SH3-09","تنوع","tano'o","variety; diversity","تنوع کالاها انتخاب را برای مشتری آسان‌تر می‌کند.","Tano'o-ye kālāhā entekhāb rā barāye moshtari āsāntar mikonad.","A variety of goods makes choosing easier for customers.");
+ N(9,"SH3-09","لباس‌های مجلسی","lebās-hā-ye majlesi","formal clothes; occasion wear","برای مراسم عروسی لباس‌های مجلسی می‌پوشند.","Barāye marāsem-e arusi lebās-hā-ye majlesi mipushand.","People wear formal clothes to wedding ceremonies.","گروه اسمی — noun phrase");
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
