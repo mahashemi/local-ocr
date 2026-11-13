@@ -162,8 +162,7 @@
 [12,"SH1-12","سفید","sefid","white","adjective","این پیراهن سفید است.","In pirāhan sefid ast.","This shirt is white."],
 [12,"SH1-12","قهوه‌ای","qahve'i","brown","adjective","او پیراهن قهوه‌ای می‌پوشد.","U pirāhan-e qahve'i mipushad.","He wears a brown shirt."],
 [12,"SH1-12","بنفش","banafsh","purple","adjective","لباس بنفش را دوست دارم.","Lebās-e banafsh rā dust dāram.","I like the purple clothes."],
-[12,"SH1-12","سرمه‌ای","sorme'i","navy blue","adjective","او کت سرمه‌ای دارد.","U kot-e sorme'i dārad.","He has a navy-blue jacket."]
-
+[12,"SH1-12","سرمه‌ای","sorme'i","navy blue","adjective","او کت سرمه‌ای دارد.","U kot-e sorme'i dārad.","He has a navy-blue jacket."],
 [4,"KH1-04","هنرمند","honarmand","artist","noun","همسر من هنرمند است.","Hamsar-e man honarmand ast.","My spouse is an artist."],
 [4,"KH1-04","قدبلند","qadboland","tall","adjective","او بسیار قدبلند است.","U besyār qadboland ast.","He is very tall."],
 [4,"KH1-04","قدکوتاه","qadkutāh","short (in height)","adjective","خواهر او قدکوتاه است.","Khāhar-e u qadkutāh ast.","His sister is short."],
