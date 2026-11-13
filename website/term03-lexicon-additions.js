@@ -2036,6 +2036,25 @@
  N(10,"SH3-10","گرگ","gorg","wolf","گرگ در داستان نقش مهمی دارد.","Gorg dar dāstān naqsh-e mohemmi dārad.","The wolf plays an important role in the story.");
  N(10,"SH3-10","داستان‌نویسی","dāstān-nevisi","story writing; fiction writing","داستان‌نویسی به تخیل و تمرین نیاز دارد.","Dāstān-nevisi be takhayyol-o tamrin niyāz dārad.","Writing stories requires imagination and practice.");
  A(10,"SH3-10","پرخور و شکمو","por-khor-o shekamu","gluttonous; someone who eats too much","شخص پرخور و شکمو باید به سلامت خود توجه کند.","Shakhs-e por-khor-o shekamu bāyad be salāmat-e khod tavajjoh konad.","A gluttonous person should pay attention to their health.","عبارت وصفی — descriptive phrase");
+
+ V(3,"N3-03","اجاره کردن","ejāre kardan","to rent; to lease","آن‌ها یک خانهٔ کوچک اجاره کردند.","Ānhā yek khāne-ye kuchak ejāre kardand.","They rented a small house.","اجاره کردن","اجاره کن","اجاره کردن خانه به بررسی قرارداد نیاز دارد.","Ejāre kardan-e khāne be barrasi-ye qarārdād niyāz dārad.","Renting a house requires reviewing the contract.","این خانه را برای یک سال اجاره کن.","In khāne rā barāye yek sāl ejāre kon.","Rent this house for one year.");
+ A(3,"N3-03","ماهانه","māhāne","monthly; per month","اجارهٔ خانه باید ماهانه پرداخت شود.","Ejāre-ye khāne bāyad māhāne pardākht shavad.","The rent must be paid monthly.","قید — adverb");
+ N(3,"N3-03","قرارداد","qarārdād","contract; agreement","قرارداد باید پیش از امضا خوانده شود.","Qarārdād bāyad pish az emzā khānde shavad.","The contract should be read before signing.");
+ N(3,"N3-03","دادگاه","dādgāh","court; courthouse","اختلاف دربارهٔ اجاره ممکن است به دادگاه برسد.","Ekhtelāf darbāre-ye ejāre momken ast be dādgāh beresad.","A rental dispute may reach court.");
+ N(3,"N3-03","دامدار","dāmdār","livestock farmer; herder","دامدار گوسفندان را به چراگاه برد.","Dāmdār gusfandān rā be cherāgāh bord.","The livestock farmer took the sheep to pasture.");
+ N(3,"N3-03","دشت","dasht","plain; open grassland","چادرها در دشت بزرگی برپا شده‌اند.","Chāderhā dar dasht-e bozorgi barpā shode-and.","The tents have been set up on a large plain.");
+ V(3,"N3-03","جابه‌جا کردن","jā-be-jā kardan","to move; to relocate","خانواده وسایل خانه را جابه‌جا کرد.","Khānevāde vasāyel-e khāne rā jā-be-jā kard.","The family moved the household items.","جابه‌جا کردن","جابه‌جا کن","جابه‌جا کردن وسایل سنگین به کمک نیاز دارد.","Jā-be-jā kardan-e vasāyel-e sangin be komak niyāz dārad.","Moving heavy items requires help.","میز را کمی جابه‌جا کن.","Miz rā kami jā-be-jā kon.","Move the table a little.");
+ N(3,"N3-03","منطقهٔ گرم","manteqe-ye garm","hot region","دامداران در منطقهٔ گرم و سرد شیوه‌های متفاوتی دارند.","Dāmdārān dar manteqe-ye garm-o sard shivehā-ye motefāveti dārand.","Livestock farmers in hot and cold regions have different ways of life.","گروه اسمی — noun phrase");
+ N(3,"N3-03","منطقهٔ سرد","manteqe-ye sard","cold region","زمستان در منطقهٔ سرد طولانی است.","Zemestān dar manteqe-ye sard tulāni ast.","Winter is long in a cold region.","گروه اسمی — noun phrase");
+ N(3,"N3-03","آتش","ātash","fire","برای گرم کردن چادر آتش روشن کردند.","Barāye garm kardan-e chāder ātash rowshan kardand.","They lit a fire to warm the tent.");
+ A(7,"N3-07","متعهد","mota'ahhed","committed; dedicated","فرد متعهد به برنامهٔ خود پایبند می‌ماند.","Fard-e mota'ahhed be barnāme-ye khod pāyband mimānad.","A committed person stays faithful to their plan.");
+ N(7,"N3-07","پیش‌بینی","pish-bini","prediction; forecast","پیش‌بینی درست به برنامه‌ریزی کمک می‌کند.","Pish-bini-ye dorost be barnāme-rizi komak mikonad.","Accurate forecasting helps with planning.");
+ N(7,"N3-07","برنامه‌ریزی","barnāme-rizi","planning","برنامه‌ریزی دقیق احتمال موفقیت را بیشتر می‌کند.","Barnāme-rizi-ye daqiq ehtemāl-e movaffaqiyat rā bishtar mikonad.","Careful planning increases the chance of success.");
+ N(9,"N3-09","راه‌اندازی","rāh-andāzi","launch; setup","راه‌اندازی دانشگاه مجازی به فناوری نیاز دارد.","Rāh-andāzi-ye dāneshgāh-e majāzi be fanāvari niyāz dārad.","Setting up a virtual university requires technology.");
+ A(9,"N3-09","شگفت‌انگیز","shegeft-angiz","amazing; astonishing","پیشرفت فناوری شگفت‌انگیز است.","Pishraft-e fanāvari shegeft-angiz ast.","The progress of technology is astonishing.");
+ N(9,"N3-09","یادداشت","yāddāsht","note; written reminder","برای هر درس یادداشت کوتاهی نوشتم.","Barāye har dars yāddāsht-e kutāhi neveshtam.","I wrote a short note for each lesson.");
+ N(9,"N3-09","صداقت","sedāqat","honesty; sincerity","صداقت در ارتباط با دیگران اهمیت دارد.","Sedāqat dar ertebāt bā digarān ahammiyat dārad.","Honesty matters in communication with others.");
+ N(9,"N3-09","شبانه‌روز","shabāne-ruz","day and night; 24-hour period","دانشجو شبانه‌روز برای امتحان آماده می‌شد.","Dāneshju shabāne-ruz barāye emtehān āmāde mishod.","The student prepared for the exam day and night.");
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
