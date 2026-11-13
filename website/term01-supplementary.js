@@ -169,7 +169,7 @@
 [4,"KH1-04","قدکوتاه","qadkutāh","short (in height)","adjective","خواهر او قدکوتاه است.","Khāhar-e u qadkutāh ast.","His sister is short."],
 [4,"KH1-04","ورزشکار","varzeshkār","athlete; sportsperson","noun","آقای حسینی ورزشکار است.","Āghā-ye Hoseyni varzeshkār ast.","Mr Hosseini is an athlete."],
 [4,"KH1-04","پزشک","pezeshk","physician; doctor","noun","همسر او پزشک است.","Hamsar-e u pezeshk ast.","His spouse is a doctor."],
-[4,"KH1-04","زبان مادری","zabān-e mā dari","mother tongue; native language","noun phrase","زبان مادری او عربی است.","Zabān-e mā dari-ye u arabi ast.","His mother tongue is Arabic."],
+[4,"KH1-04","زبان مادری","zabān-e mādarī","mother tongue; native language","noun phrase","زبان مادری او عربی است.","Zabān-e mā dari-ye u arabi ast.","His mother tongue is Arabic."],
 [4,"KH1-04","دانشگاه","dāneshgāh","university","noun","من در دانشگاه درس می‌خوانم.","Man dar dāneshgāh dars mikhanam.","I study at university."],
 [16,"KH1-16","معلول","ma'lul","disabled; having a disability","adjective","مهتاب دانش‌آموزی معلول است.","Mahtāb dānesh-āmuz-i ma'lul ast.","Mahtab is a student with a disability."],
 [16,"KH1-16","نوجوان","nowjavān","teenager; adolescent","noun","مهتاب دختر نوجوانی است.","Mahtāb dokhtar-e nowjavāni ast.","Mahtab is a teenage girl."],
