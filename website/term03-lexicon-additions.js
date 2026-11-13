@@ -2468,6 +2468,29 @@
  N(20,"N3-10","مطلب","matlab","matter; point; content","اگر مطلبی روشن نیست، آن را محترمانه بپرسید.","Agar matlab-i roshan nist, ān rā mohtaramāne beporsid.","If a point is unclear, ask about it politely.");
  N(20,"N3-10","جدیت","jeddiat","seriousness; diligence","جدیت در مطالعه نشانهٔ مسئولیت‌پذیری است.","Jeddiat dar motāle'e neshāne-ye mas'uliyat-paziri ast.","Seriousness in study is a sign of responsibility.");
 
+
+ N(20,"N3-10","ملاقات","molāqāt","meeting; visit","برای ملاقات با استاد زمان مناسبی درخواست کنید.","Barāye molāqāt bā ostād zamān-e monāsebi darkhāst konid.","Request a suitable time to meet the teacher.");
+ N(20,"N3-10","نسبت","nesbat","attribution; relation","نسبت دادن سخن نادرست به دیگران اخلاقی نیست.","Nesbat dādan-e sokhan-e nādorost be digarān akhlāqi nist.","Attributing false statements to others is unethical.");
+ N(20,"N3-10","تأییدنشده","ta'yid-nashode","unverified; unconfirmed","از انتشار خبر تأییدنشده خودداری کنید.","Az enteshār-e khabar-e ta'yid-nashode khoddāri konid.","Avoid sharing unverified news.");
+ N(20,"N3-10","حرمت","hormat","dignity; respect","حفظ حرمت استاد در غیاب او نیز لازم است.","Hefz-e hormat-e ostād dar qeyāb-e u niz lāzem ast.","Respecting a teacher's dignity is necessary even in their absence.");
+ N(20,"N3-10","منصفانه","monsefāne","fairly; fair-mindedly","دیدگاه استاد را منصفانه بیان کنید.","Didgāh-e ostād rā monsefāne bayān konid.","Present the teacher's viewpoint fairly.");
+ N(20,"N3-10","دیدگاه","didgāh","viewpoint; perspective","اختلاف دیدگاه همیشه به معنای بی‌احترامی نیست.","Ekhtelāf-e didgāh hamishe be ma'nā-ye bi-ehterāmi nist.","A difference of viewpoint does not always mean disrespect.");
+ N(20,"N3-10","اختلاف","ekhtelāf","difference; disagreement","اختلاف علمی را باید با گفت‌وگو حل کرد.","Ekhtelāf-e elmi rā bāyad bā goft-o-gu hal kard.","Academic disagreement should be resolved through discussion.");
+ N(20,"N3-10","توهین","tohin","insult; offence","نقد علمی نباید به توهین تبدیل شود.","Naqd-e elmi nabāyad be tohin tabdil shavad.","Academic criticism should not turn into an insult.");
+ N(20,"N3-10","بدگویی","badguyi","speaking ill of someone; backbiting","بدگویی دربارهٔ استاد اعتماد را از بین می‌برد.","Badguyi darbāre-ye ostād e'temād rā az beyn mibarad.","Speaking ill of a teacher destroys trust.");
+ N(20,"N3-10","یادکرد","yādkard","remembrance; mention","یادکرد نیک از استاد بخشی از سپاس‌گزاری است.","Yādkard-e nik az ostād bakhshi az sepās-gozāri ast.","Speaking well of a teacher is part of gratitude.");
+ N(20,"N3-10","نیک","nik","good; virtuous","از استاد با نیکی یاد کنید.","Az ostād bā niki yād konid.","Remember the teacher with kindness.");
+ N(20,"N3-10","آموخته","āmukhte","what has been learned","آموخته‌های استاد را به دیگران منتقل کنید.","Āmukhtehā-ye ostād rā be digarān montaqel konid.","Pass on what you have learned from the teacher.");
+ N(20,"N3-10","شاگردی","shāgerdi","being a student; discipleship","شاگردی فقط حضور در کلاس نیست.","Shāgerdi faqat hozur dar kelās nist.","Being a student is not merely attending class.");
+ N(20,"N3-10","تعارف","ta'ārof","polite formula; social courtesy","احترام واقعی از تعارف فراتر می‌رود.","Ehterām-e vāqe'i az ta'ārof farātar miravad.","Genuine respect goes beyond polite formulas.");
+ N(20,"N3-10","کردار","kerdār","conduct; deeds","کردار دانشجو باید با گفتار او هماهنگ باشد.","Kerdār-e dāneshju bā goftār-e u hamāhang bāshad.","A student's actions should match their words.");
+ N(20,"N3-10","آشکار","āshkār","clear; evident","احترام در رفتار روزانه آشکار می‌شود.","Ehterām dar raftār-e ruzāne āshkār mishavad.","Respect becomes evident in daily behaviour.");
+ N(20,"N3-10","تفکر","tafakkor","thinking; reflection","تفکر مستقل با احترام به استاد منافاتی ندارد.","Tafakkor-e mostaqel bā ehterām be ostād monāfāti nadārad.","Independent thinking does not conflict with respect for a teacher.");
+ N(20,"N3-10","مستقل","mostaqel","independent","دانشجو باید پرسش‌گری مستقل را تمرین کند.","Dāneshju bāyad porseshgari-ye mostaqel rā tamrin konad.","A student should practise independent inquiry.");
+ N(20,"N3-10","رشد","roshd","growth; development","رابطهٔ سالم به رشد علمی و اخلاقی کمک می‌کند.","Rābete-ye sālem be roshd-e elmi va akhlāqi komak mikonad.","A healthy relationship supports academic and moral growth.");
+ N(20,"N3-10","عین","eyn","same; exact; very","در عین احترام، پرسش خود را روشن مطرح کنید.","Dar eyn-e ehterām, porsesh-e khod rā roshan matrah konid.","While remaining respectful, state your question clearly.");
+ N(20,"N3-10","حال","hāl","state; condition; present","در هر حال باید از انصاف پیروی کرد.","Dar har hāl bāyad az ensāf peyrovi kard.","In every circumstance, one should act fairly.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
