@@ -1454,6 +1454,7 @@ function essays(){
  const data=activeTerm===2?(window.TERM2_WRITING||window.TERM3_WRITING):window.TERM3_WRITING, item=data.chapters.find(x=>x.ch===essayCh)||data.chapters[0], saved=essayDrafts[activeTerm===2?'t2-'+essayCh:essayCh]||{};
  const topic=saved.topic||"main";
  const topics=[["main",item.topic],["alternate",item.alternate]];
+ const newestanExample=activeTerm===3?window.TERM3_NEWESTAN_EXAMPLE:null;
  v.innerHTML=`<section class="writing-wrap">
  <div class="no-print"><div class="mut">Term 0${activeTerm||3} · Term-linked writing practice</div><h2>Essay writing workshop</h2>
  <p>Work through the chapter skill, plan your response, write a complete draft and print a clean practice sheet. Your work is saved only in this browser.</p>
