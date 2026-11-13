@@ -1264,6 +1264,11 @@
  A(1,"FA3-01","خونسرد","khunsard","calm; cool-headed","در موقعیت دشوار خونسرد بمان.","Dar mowqe'iyat-e doshvār khunsard bemān.","Stay calm in a difficult situation.");
  N(1,"SH3-01","متکا","motakkā","pillow; cushion (variant term listed beside بالش)","کودک سرش را روی متکا گذاشت.","Kudak sarash rā ru-ye motakkā gozāsht.","The child put his head on the pillow.","اسم — ism (noun)");
 
+
+ // Exact SH3-01 first-page vocabulary forms from the OCR list.
+ N(1,"SH3-01","بالشت","bālesht","pillow; cushion (variant spelling of بالش)","کودک بالشت را زیر سرش گذاشت.","Kudak bālesht rā zir-e sarash gozāsht.","The child put the pillow under his head.","اسم — ism (noun)");
+ N(1,"SH3-01","گلوله‌های برف","goluleh-hā-ye barf","snowballs","بچه‌ها در حیاط گلوله‌های برف درست کردند.","Bachchehā dar hayāt goluleh-hā-ye barf dorost kardand.","The children made snowballs in the yard.","گروه اسمی — noun phrase");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
