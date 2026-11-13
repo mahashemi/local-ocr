@@ -269,14 +269,14 @@
 ,
   "رد شدن":{ms:"رد شدن",amr:"رد شو",m:["رد شدن از خیابان باید با احتیاط باشد.","Rad shodan az khiābān bāyad bā ehtiyāt bāshad.","Crossing the street should be done carefully."],a:["با دقت از خیابان رد شو.","Bā deqqat az khiābān rad sho.","Cross the street carefully."]},
   "استراحت کردن":{ms:"استراحت کردن",amr:"استراحت کن",m:["استراحت کردن بعد از کار ضروری است.","Esterāhat kardan ba'd az kār zaruri ast.","Resting after work is necessary."],a:["کمی استراحت کن.","Kami esterāhat kon.","Get some rest."]},
-  "تلویزیون دیدن":{ms:"تلویزیون دیدن",amr:"تلویزیون ببین",m:["تلویزیون دیدن در شب برای بعضی خانواده‌ها عادت است.","Televizion didan dar shab barāye ba'zi khānevādehā ādat ast.","Watching television at night is a habit for some families."],a:["امشب تلویزیون ببین.","Emshab televizion ببین.","Watch television tonight."]},
+  "تلویزیون دیدن":{ms:"تلویزیون دیدن",amr:"تلویزیون ببین",m:["تلویزیون دیدن در شب برای بعضی خانواده‌ها عادت است.","Televizion didan dar shab barāye ba'zi khānevādehā ādat ast.","Watching television at night is a habit for some families."],a:["امشب تلویزیون ببین.","Emshab televizion bebin.","Watch television tonight."]},
   "حمام رفتن":{ms:"حمام رفتن",amr:"حمام برو",m:["حمام رفتن در صبح به بعضی افراد انرژی می‌دهد.","Hammām raftan dar sobh be ba'zi afrād enerji midahad.","Taking a bath in the morning gives some people energy."],a:["حالا حمام برو.","Hālā hammām boro.","Go take a bath now."]},
   "خوابیدن":{ms:"خوابیدن",amr:"بخواب",m:["خوابیدن کافی برای سلامتی مهم است.","Khābidan-e kāfi barāye salāmati mohem ast.","Getting enough sleep is important for health."],a:["زود بخواب.","Zud bekhāb.","Go to sleep early."]},
   "تمیز کردن":{ms:"تمیز کردن",amr:"تمیز کن",m:["تمیز کردن خانه به همکاری نیاز دارد.","Tamiz kardan-e khāne be hamkāri niyāz dārad.","Cleaning the house requires cooperation."],a:["اتاقت را تمیز کن.","Otāqat rā tamiz kon.","Clean your room."]},
   "غذا پختن":{ms:"غذا پختن",amr:"غذا بپز",m:["غذا پختن در خانه می‌تواند اقتصادی باشد.","Ghazā pokhtan dar khāne mitavānad eqtesādi bāshad.","Cooking at home can be economical."],a:["امروز غذا بپز.","Emruz ghazā bepaz.","Cook food today."]},
   "خرید کردن":{ms:"خرید کردن",amr:"خرید کن",m:["خرید کردن از بازار محلی تجربهٔ خوبی است.","Kharid kardan az bāzār-e mahalli tajrobe-ye khubi ast.","Shopping at the local market is a good experience."],a:["از بازار خرید کن.","Az bāzār kharid kon.","Shop at the market."]},
   "آب دادن":{ms:"آب دادن",amr:"آب بده",m:["آب دادن به گل‌ها هر روز لازم است.","Āb dādan be golhā har ruz lāzem ast.","Watering the flowers is necessary every day."],a:["به گل‌ها آب بده.","Be golhā āb bede.","Water the flowers."]},
-  "باران آمدن":{ms:"باران آمدن",amr:"—",m:["باران آمدن در بهار در این منطقه زیاد است.","Bārān āmadan dar bahār dar in manteqe ziyād ast.","Rain is common in this region in spring."],a:null,note:"پدیدهٔ طبیعی و غیرارادی است؛ امر مستقیم طبیعی ندارد."}
+  "باران آمدن":{ms:"باران آمدن",amr:"—",m:["باران آمدن در بهار در این منطقه زیاد است.","Bārān āmadan dar bahār dar in manteqe ma'mul ast.","Rainfall is common in this region in spring."],a:null,note:"پدیدهٔ طبیعی و غیرارادی است؛ امر مستقیم طبیعی ندارد."}
 
 
  };
