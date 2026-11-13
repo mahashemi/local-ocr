@@ -1902,6 +1902,19 @@
  A(12,"FA3-12","مخفیانه","makhfiyāne","secretly; covertly","او مخفیانه زباله را در طبیعت رها کرد.","U makhfiyāne zobāle rā dar tabi'at rahā kard.","He secretly dumped rubbish in nature.");
  N(12,"FA3-12","کمبود","kambud","shortage; lack","کمبود آب در تابستان بیشتر احساس می‌شود.","Kambud-e āb dar tābestān bishtar ehsās mishavad.","Water shortages are felt more strongly in summer.");
  N(12,"FA3-12","تفکیک","tafkik","separation; sorting","تفکیک زباله به بازیافت کمک می‌کند.","Tafkik-e zobāle be bāzyāft komak mikonad.","Sorting waste helps recycling.");
+
+ N(13,"FA3-13","پر","par","feather","پرهای پرندگان به پرواز و گرم نگه داشتن بدن کمک می‌کنند.","Parhā-ye parandegān be parvāz va garm negah dāshtan-e badan komak mikonand.","Birds' feathers help with flight and keeping the body warm.");
+ N(13,"FA3-13","خزندگان","khazandegān","reptiles","مارها و لاک‌پشت‌ها از خزندگان هستند.","Mārhā va lākposht-hā az khazandegān hastand.","Snakes and turtles are reptiles.");
+ N(13,"FA3-13","شکم","shekam","belly; abdomen","شکم بعضی جانوران با مو یا پر پوشیده شده است.","Shekam-e ba'zi jānvarān bā mu yā par pushide shode ast.","The bellies of some animals are covered with fur or feathers.");
+ N(13,"FA3-13","سُم","som","hoof","گاو و گوسفند سُم دارند.","Gāv-o gusfand som dārand.","Cows and sheep have hooves.");
+ N(13,"FA3-13","شاخ","shākh","horn","گوزن شاخ‌های بلندی دارد.","Gavazn shākh-hā-ye bolandi dārad.","A deer has long horns.");
+ N(13,"FA3-13","دم","dom","tail","دم گربه هنگام حرکت به او کمک می‌کند.","Dom-e gorbe hengām-e harekat be u komak mikonad.","A cat's tail helps it move.");
+ N(13,"FA3-13","بال","bāl","wing","پرندگان با بال‌های خود پرواز می‌کنند.","Parandegān bā bāl-hā-ye khod parvāz mikonand.","Birds fly with their wings.");
+ N(13,"FA3-13","پستاندار","pestāndār","mammal","انسان و نهنگ هر دو پستاندار هستند.","Ensān va nahang har do pestāndār hastand.","Humans and whales are both mammals.");
+ A(13,"FA3-13","زبر","zबर","rough; coarse","پوست بعضی خزندگان زبر است.","Pust-e ba'zi khazandegān zबर ast.","The skin of some reptiles is rough.");
+ N(13,"FA3-13","انقراض","enqerāz","extinction","شکار بی‌رویه می‌تواند به انقراض گونه‌ها منجر شود.","Shekār-e bi-raviyye mitavānad be enqerāz-e gunهhā monjar shavad.","Uncontrolled hunting can lead to species extinction.");
+ N(13,"FA3-13","شکار","shekār","hunting; prey","شکار بی‌رویه به جمعیت جانوران آسیب می‌زند.","Shekār-e bi-raviyye be jam'iyat-e jānvarān āsib mizanad.","Uncontrolled hunting harms animal populations.");
+ N(13,"FA3-13","لاک","lāk","shell; carapace","لاک لاک‌پشت از بدن او محافظت می‌کند.","Lāk-e lākposht az badan-e u mohāfezat mikonad.","A turtle's shell protects its body.");
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
