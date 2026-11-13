@@ -2549,6 +2549,49 @@
 
  V(1,"N3-04","نداشتن","nadāshtan","not to have; to lack","نداشتنِ برنامه باعث اتلاف وقت می‌شود.","Nadāshtan-e barnāme bā'es-e etlāf-e vaqt mishavad.","Not having a plan causes wasted time.","نداشتن","نداشته باش","نداشتنِ اطلاعات کافی تصمیم‌گیری را دشوار می‌کند.","Nadāshtan-e etelā'āt-e kāfi tasmim-giri rā doshvār mikonad.","Lacking sufficient information makes decision-making difficult.","چنین نگرشی نداشته باش.","Chenin negarshi nadāshte bāsh.","Do not have such an attitude.");
 
+
+ // Additional high-frequency vocabulary from Khulasa and Sukhanrani content.
+ N(1,"WR3-01","حق","haqq","right; entitlement; truth","رعایت حق دیگران نشانهٔ اخلاق نیک است.","Re'āyat-e haqq-e digarān neshāne-ye akhlāq-e nik ast.","Respecting other people's rights is a sign of good character.");
+ N(1,"WR3-01","قرض","qarz","loan; debt","پیش از گرفتن قرض، توان بازپرداخت را بررسی کنید.","Pish az gereftan-e qarz tavān-e bāzpardākht rā barrasi konid.","Before taking a loan, consider your ability to repay it.");
+ N(1,"WR3-01","حساب","hesāb","account; calculation","هزینه‌ها را در یک حساب جداگانه ثبت کنید.","Hazinehā rā dar yek hesāb-e jodāgāne sabt konid.","Record the expenses in a separate account.");
+ N(1,"WR3-01","حیوان","heyvān","animal","با حیوانات با مهربانی رفتار کنید.","Bā heyvānāt bā mehrabāni raftār konid.","Treat animals kindly.");
+ N(1,"WR3-01","دعا","do'ā","prayer; supplication","دعا و تلاش باید در کنار یکدیگر باشند.","Do'ā va talāsh bāyad dar kenār-e yekdigar bāshand.","Prayer and effort should go together.");
+ N(1,"WR3-01","قانون","qānun","law; rule","همه باید قانون را رعایت کنند.","Hame bāyad qānun rā re'āyat konand.","Everyone should obey the law.");
+ N(1,"WR3-01","معیار","me'yār","criterion; standard","برای ارزیابی، معیار روشنی تعیین کنید.","Barāye arzyābi me'yār-e roshani ta'yin konid.","Set a clear criterion for evaluation.");
+ N(1,"WR3-01","اجرا","ejrā","implementation; performance","اجرای درست قانون به همکاری مردم نیاز دارد.","Ejrā-ye dorost-e qānun be hamkāri-ye mardom niyāz dārad.","Proper implementation of the law requires public cooperation.");
+ N(1,"WR3-01","اشتباه","eshtebāh","mistake; error","پذیرفتن اشتباه نخستین گام اصلاح است.","Paziroftan-e eshtebāh nokhostin gām-e eslāh ast.","Accepting a mistake is the first step toward correction.");
+ N(1,"WR3-01","بافت","bāft","texture; context","معنای واژه را در بافت جمله بررسی کنید.","Ma'nā-ye vāzhe rā dar bāft-e jomle barrasi konid.","Check a word's meaning in the context of the sentence.");
+ N(1,"WR3-01","بحث","bahs","discussion; debate","بحث علمی باید بر دلیل و احترام استوار باشد.","Bahs-e elmi bāyad bar dalil va ehterām ostovār bāshad.","Academic discussion should be based on evidence and respect.");
+ N(1,"WR3-01","جای","jāy","place; position","برای هر ایده در نوشته جای مناسبی در نظر بگیرید.","Barāye har ide dar neveshte jā-ye monāsebi dar nazar begirid.","Give each idea a suitable place in the writing.");
+ N(1,"WR3-01","شرط","shart","condition; requirement","صداقت شرط مهم رابطهٔ سالم است.","Sedāqat shart-e mohem-e rābete-ye sālem ast.","Honesty is an important condition for a healthy relationship.");
+ N(1,"WR3-01","عمل","amal","action; deed","دانش باید در عمل نیز به کار گرفته شود.","Dānesh bāyad dar amal niz be kār gerefte shavad.","Knowledge should also be applied in practice.");
+ N(1,"WR3-01","متقابل","moteqābel","mutual; reciprocal","احترام متقابل رابطه را تقویت می‌کند.","Ehterām-e moteqābel rābete rā taqviyat mikonad.","Mutual respect strengthens a relationship.");
+ N(1,"WR3-01","تقوا","taqvā","piety; God-consciousness","تقوا در گفتار و رفتار انسان آشکار می‌شود.","Taqvā dar goftār va raftār-e ensān āshkār mishavad.","Piety becomes visible in a person's speech and conduct.");
+ N(1,"WR3-01","تقویت","taqviyat","strengthening; reinforcement","تمرین روزانه به تقویت مهارت گفتار کمک می‌کند.","Tamrin-e ruzāne be taqviyat-e mahārat-e goftār komak mikonad.","Daily practice helps strengthen speaking skills.");
+ N(1,"WR3-01","جهان","jahān","world; universe","در جهان امروز یادگیری زبان اهمیت زیادی دارد.","Dar jahān-e emruz yādgiri-ye zabān ahammiyat-e ziyādi dārad.","In today's world, language learning is very important.");
+ N(1,"WR3-01","خویشاوند","kheishāvand","relative; kin","دیدار خویشاوندان پیوندهای خانوادگی را تقویت می‌کند.","Didār-e kheishāvandān peyvandhā-ye khānevādegi rā taqviyat mikonad.","Visiting relatives strengthens family bonds.");
+ N(1,"WR3-01","رحمت","rahmat","mercy; compassion","رحمت و مهربانی در رفتار با دیگران ارزشمند است.","Rahmat va mehrabāni dar raftār bā digarān arzeshmand ast.","Mercy and kindness toward others are valuable.");
+ N(1,"WR3-01","روزانه","ruzāne","daily; every day","مطالعهٔ روزانه به پیشرفت زبان کمک می‌کند.","Motāle'e-ye ruzāne be pishraft-e zabān komak mikonad.","Daily study helps language progress.");
+ N(1,"WR3-01","روزمره","ruzmarre","everyday; daily routine","در زندگی روزمره فرصت‌های زیادی برای تمرین وجود دارد.","Dar zendegi-ye ruzmarre forsathā-ye ziyādi barāye tamrin vojood dārad.","There are many opportunities to practise in everyday life.");
+ N(1,"WR3-01","زنده","zende","alive; living","زنده نگه داشتن زبان به استفادهٔ روزانه نیاز دارد.","Zende negah dāshtan-e zabān be estefāde-ye ruzāne niyāz dārad.","Keeping a language alive requires daily use.");
+ N(1,"WR3-01","فرمان","farmān","command; order","راننده باید از فرمان‌های راهنمایی پیروی کند.","Rānande bāyad az farmānhā-ye rāhnamāyi peyravi konad.","A driver must follow traffic instructions.");
+ N(1,"WR3-01","فشار"," فشار","pressure; stress","فشار زیاد می‌تواند تمرکز را کاهش دهد."," فشار-e ziyād mitavānad tamarkoz rā kāhesh dahad.","Too much pressure can reduce concentration.");
+ N(1,"WR3-01","مدیریت","modiriyat","management","مدیریت زمان به انجام بهتر تکلیف کمک می‌کند.","Modiriyat-e zamān be anjām-e behtar-e taklif komak mikonad.","Time management helps complete assignments more effectively.");
+ N(1,"WR3-01","ملت","mellat","nation; people","ملت‌ها با فرهنگ و زبان خود شناخته می‌شوند.","Mellathā bā farhang va zabān-e khod shenākhte mishavand.","Nations are known by their culture and language.");
+ N(1,"WR3-01","همسایه","hamsāye","neighbour","رفتار نیک با همسایه از اخلاق پسندیده است.","Raftār-e nik bā hamsāye az akhlāq-e pasandide ast.","Kind treatment of neighbours is good character.");
+ N(1,"WR3-01","مورد","mowred","case; instance; item","در این مورد باید منبع را بررسی کرد.","Dar in mowred bāyad manba' rā barrasi kard.","In this case, the source should be checked.");
+ N(1,"WR3-01","باعث","bā'es","cause; reason","مطالعهٔ منظم باعث پیشرفت می‌شود.","Motāle'e-ye monazzam bā'es-e pishraft mishavad.","Regular study causes progress.");
+ N(1,"WR3-01","لباس","lebās","clothing; clothes","لباس مناسب برای هر موقعیت متفاوت است.","Lebās-e monāseb barāye har moghe'iyat motefāvet ast.","Suitable clothing differs for each situation.");
+ N(1,"WR3-01","دارای","dārā-ye","having; possessing","هر بند باید دارای یک ایدهٔ اصلی باشد.","Har band bāyad dārā-ye yek ide-ye asli bāshad.","Each paragraph should have one main idea.");
+ N(1,"WR3-01","آخر","ākhar","last; end; final","در آخر نوشته نتیجه را بیان کنید.","Dar ākhar-e neveshte natije rā bayān konid.","State the conclusion at the end of the writing.");
+ N(1,"WR3-01","بسیار","besyār","very; a great deal; many","تمرین بسیار به یادگیری کمک می‌کند.","Tamrin-e besyār be yādgiri komak mikonad.","A great deal of practice helps learning.");
+ N(1,"WR3-01","تحویل","tahvil","submission; delivery","تحویل تکلیف باید در زمان تعیین‌شده انجام شود.","Tahvil-e taklif bāyad dar zamān-e ta'yin-shode anjām shavad.","The assignment should be submitted by the set time.");
+ N(1,"WR3-01","تولد","tavallod","birth; birthday","روز تولد فرصتی برای دیدار خانواده است.","Ruz-e tavallod forsati barāye didār-e khānevāde ast.","A birthday is an opportunity to see family.");
+ N(1,"WR3-01","دچار","dochār","to suffer from; afflicted by","او دچار مشکل زبانی شد.","U dochār-e moshkel-e zabāni shod.","He experienced a language difficulty.");
+ N(1,"WR3-01","دنیا","donya","world; life","دنیا با دانش و همکاری بهتر می‌شود.","Donya bā dānesh va hamkāri behtar mishavad.","The world becomes better through knowledge and cooperation.");
+ N(1,"WR3-01","مدت","moddat","duration; period","مدت تمرین را به‌تدریج افزایش دهید.","Moddat-e tamrin rā be-tadrij afzāyesh dahid.","Increase the duration of practice gradually.");
+ N(1,"WR3-01","نگارش","negāresh","writing; composition","نگارش خوب به طرح و بازبینی نیاز دارد.","Negāresh-e khub be tarh va bāzbini niyāz dārad.","Good writing requires planning and revision.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
