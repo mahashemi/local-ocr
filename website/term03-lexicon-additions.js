@@ -2146,7 +2146,7 @@
  N(1,"WR3-02","بررسی","barrasi","examination; review","بررسی دقیق شواهد به نتیجهٔ درست کمک می‌کند.","Barrasi-ye daqiq-e shavāhed be natije-ye dorost komak mikonad.","Careful examination of evidence helps reach the correct conclusion.");
  N(1,"WR3-02","معرفی","mo'arrefi","introduction; presentation","در مقدمه، موضوع و هدف تحقیق را معرفی می‌کنیم.","Dar moqaddame, mozoo' va hadaf-e tahqiq rā mo'arrefi mikonim.","In the introduction, we present the topic and aim of the research.");
  N(1,"WR3-02","نتیجه","natije","result; conclusion","نتیجهٔ تحقیق باید با شواهد هماهنگ باشد.","Natije-ye tahqiq bāyad bā shavāhed hamāhang bāshad.","The result of research should agree with the evidence.");
- N(1,"WR3-02","نمونه","nemune","example; sample","برای روشن شدن مطلب، یک نمونه بیان می‌کنیم.","Barāye rowshan shodan-e مطلب, yek nemune beyān mikonim.","We give an example to clarify the point.");
+ N(1,"WR3-02","نمونه","nemune","example; sample","برای روشن شدن مطلب، یک نمونه بیان می‌کنیم.","Barāye rowshan shodan-e matlab, yek nemune beyān mikonim.","We give an example to clarify the point.");
  N(1,"WR3-02","مسئولیت","mas'uliyat","responsibility","هر فرد در برابر رفتار خود مسئولیت دارد.","Har fard dar barābar-e raftār-e khod mas'uliyat dārad.","Every person is responsible for their own conduct.");
  N(1,"WR3-02","اهمیت","ahammiyat","importance","اهمیت مطالعه در گسترش دانش آشکار است.","Ahammiyat-e motāle'e dar gostāresh-e dānesh āshkār ast.","The importance of reading is clear in the expansion of knowledge.");
  N(1,"WR3-02","حفظ","hefz","preservation; protection","حفظ محیط زیست وظیفهٔ همگان است.","Hefz-e mohite zist vazife-ye hamegān ast.","Protecting the environment is everyone's duty.");
@@ -2171,7 +2171,7 @@
  N(1,"WR3-02","تلاش","talāsh","effort","موفقیت بدون تلاش پیوسته به دست نمی‌آید.","Movafaqiyat bedun-e talāsh-e peyvaste be dast nemiāyad.","Success does not come without continuous effort.");
  N(1,"WR3-02","پیشنهاد","pishnehād","suggestion; proposal","در پایان، یک پیشنهاد عملی برای بهبود وضعیت ارائه می‌کنیم.","Dar pāyān, yek pishnehād-e amali barāye behbud-e vaz'iyat erā'e mikonim.","At the end, we offer a practical suggestion for improvement.");
  N(1,"WR3-02","کاهش","kāhesh","reduction; decrease","کاهش مصرف آب از منابع طبیعی محافظت می‌کند.","Kāhesh-e masraf-e āb az manābe'-e tabi'i mohāfezat mikonad.","Reducing water consumption protects natural resources.");
- N(1,"WR3-02","ارزش","arzesh","value; worth","ارزش یک اثر فقط به شهرت پدیدآورندهٔ آن نیست.","Arzesh-e yek asar faqat be shohرت-e padid-āvarande-ye ān nist.","The value of a work does not depend only on its creator's fame.");
+ N(1,"WR3-02","ارزش","arzesh","value; worth","ارزش یک اثر فقط به شهرت پدیدآورندهٔ آن نیست.","Arzesh-e yek asar faqat be shohrat-e padid-āvarande-ye ān nist.","The value of a work does not depend only on its creator's fame.");
  N(1,"WR3-02","مراسم","marāsem","ceremony; event","مراسم فرهنگی می‌تواند مردم را گرد هم آورد.","Marāsem-e farhangi mitavānad mardom rā gard-e ham āvarad.","A cultural ceremony can bring people together.");
  N(1,"WR3-02","مسیر","masir","path; route; direction","برنامهٔ روشن، مسیر رسیدن به هدف را نشان می‌دهد.","Barnāme-ye rowshan, masir-e residan be hadaf rā neshān midahad.","A clear plan shows the path to a goal.");
  N(1,"WR3-02","پیوند","peyvand","connection; link","پیوند میان بندها متن را منسجم می‌کند.","Peyvand miyān-e band-hā matn rā monsajem mikonad.","The connection between paragraphs makes a text coherent.");
