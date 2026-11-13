@@ -117,7 +117,13 @@ main{max-width:1120px;padding:28px 24px 16px}.site-head{margin-bottom:26px}.bran
 .quran-ref{color:var(--ac);font-weight:750;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
 @media(max-width:600px){.khulasa-lines{font-size:20px;padding-right:20px}.khulasa-lines li{padding:8px 4px}.kh-word-dialog{padding:17px}.writing-wrap .panel{padding:17px}}
 
-\n/* Interactive vocabulary links across essay and speech workshops. */\n.writing-wrap .model-sample{white-space:pre-wrap;font-size:19px;line-height:2.15;padding:14px 16px;background:var(--soft);border-radius:12px}\n.writing-wrap .kh-word{font-size:inherit;line-height:inherit;padding:0 2px;border-radius:3px;background:color-mix(in srgb,var(--soft) 45%,transparent)}\n.writing-wrap .kh-word:focus-visible{outline:2px solid var(--gold);outline-offset:2px}\n.writing-wrap .kh-word:hover{background:var(--soft)}\n</style></head>
+
+/* Interactive vocabulary links across essay and speech workshops. */
+.writing-wrap .model-sample{white-space:pre-wrap;font-size:19px;line-height:2.15;padding:14px 16px;background:var(--soft);border-radius:12px}
+.writing-wrap .kh-word{font-size:inherit;line-height:inherit;padding:0 2px;border-radius:3px;background:color-mix(in srgb,var(--soft) 45%,transparent)}
+.writing-wrap .kh-word:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.writing-wrap .kh-word:hover{background:var(--soft)}
+</style></head>
 <body><main>
 <div class="bismillah-wrap"><img src="bismillah_text_green.png" alt="بسم الله الرحمن الرحیم" class="bismillah-image"><div class="bismillah-rule"><span>✦</span></div></div>
 <header class="site-head"><div class="brandline"><div><div class="eyebrow">PERSIAN LEARNING · TERM 01–03</div><h1>راهِ فارسی <span>·</span> Persian Learning</h1><p class="tagline">A thoughtful path from vocabulary to confident expression.</p></div><div class="brandmark">فارسی</div></div><section class="overall-progress"><div class="progress-head"><div><b>Your learning journey</b><span class="mut">Across all three terms</span></div><div class="progress-total"><strong id="overallDone">0</strong><span> / <span id="overallWords">0</span> words</span></div></div><div class="bar bigbar"><i id="overallBar" style="width:0%"></i></div><div class="progress-foot"><span id="overallPercent">0% memorised</span><span id="termProgressMini">3 terms · steady progress</span></div></section></header>
@@ -135,7 +141,8 @@ main{max-width:1120px;padding:28px 24px 16px}.site-head{margin-bottom:26px}.bran
 <script src="term01-supplementary.js"></script>
 <script src="term03-data.js"></script>
 <script src="term03-lexicon-additions.js"></script>
-<script src="term03-matn-verbs.js"></script>\n<script src="term03-source-audit.js"></script>
+<script src="term03-matn-verbs.js"></script>
+<script src="term03-source-audit.js"></script>
 <script src="term03-writing.js"></script>
 <script src="term03-khulasa.js"></script>
 <script src="semantic-meanings.js"></script>
@@ -1315,20 +1322,20 @@ function add(){
 
 /* Link Persian vocabulary in writing and speaking guidance to the shared flashcard. */
 function attachVocabularyLinks(scope){
- const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>String(b.fa).trim().split(/\\s+/).length-String(a.fa).trim().split(/\\s+/).length||String(b.fa).length-String(a.fa).length);
+ const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>String(b.fa).trim().split(/\s+/).length-String(a.fa).trim().split(/\s+/).length||String(b.fa).length-String(a.fa).length);
  const index=new Map();let maxWords=1;
- entries.forEach(i=>{const key=fold(i.fa);if(key&&!index.has(key))index.set(key,i);maxWords=Math.max(maxWords,String(i.fa).trim().split(/\\s+/).length)});
+ entries.forEach(i=>{const key=fold(i.fa);if(key&&!index.has(key))index.set(key,i);maxWords=Math.max(maxWords,String(i.fa).trim().split(/\s+/).length)});
  const walker=document.createTreeWalker(scope,NodeFilter.SHOW_TEXT,{acceptNode(node){
   const p=node.parentElement;
-  if(!p||!/[\\u0600-\\u06ff]/.test(node.nodeValue)||p.closest('textarea,input,button,a,script,style,select,.kh-word,.kh-word-modal'))return NodeFilter.FILTER_REJECT;
+  if(!p||!/[\u0600-\u06ff]/.test(node.nodeValue)||p.closest('textarea,input,button,a,script,style,select,.kh-word,.kh-word-modal'))return NodeFilter.FILTER_REJECT;
   return NodeFilter.FILTER_ACCEPT;
  }});
  const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
  nodes.forEach(node=>{
-  const parts=node.nodeValue.split(/(\\s+)/);if(parts.length<1)return;
+  const parts=node.nodeValue.split(/(\s+)/);if(parts.length<1)return;
   const frag=document.createDocumentFragment();
   for(let p=0;p<parts.length;){
-   if(/^\\s+$/.test(parts[p])){frag.append(document.createTextNode(parts[p++]));continue}
+   if(/^\s+$/.test(parts[p])){frag.append(document.createTextNode(parts[p++]));continue}
    let found=null,span=1;
    for(let n=Math.min(maxWords,Math.floor((parts.length-p+1)/2));n>=1;n--){
     const end=p+n*2-1;if(end>parts.length)continue;
