@@ -2546,6 +2546,9 @@
  N(1,"N3-01","وجود","vojud","existence; presence","وجود منبع معتبر به تحقیق اعتبار می‌دهد.","Vojud-e manba'-e mo'tabar be tahqiq e'tebār midahad.","Having a reliable source gives research credibility.");
  N(1,"N3-01","گاهی","gāhi","sometimes; occasionally","گاهی یک مثال ساده موضوع را روشن می‌کند.","Gāhi yek mesāl-e sāde mozoo rā roshan mikonad.","Sometimes a simple example clarifies the topic.");
 
+
+ V(1,"N3-04","نداشتن","nadāshtan","not to have; to lack","نداشتنِ برنامه باعث اتلاف وقت می‌شود.","Nadāshtan-e barnāme bā'es-e etlāf-e vaqt mishavad.","Not having a plan causes wasted time.","نداشتن","نداشته باش","نداشتنِ اطلاعات کافی تصمیم‌گیری را دشوار می‌کند.","Nadāshtan-e etelā'āt-e kāfi tasmim-giri rā doshvār mikonad.","Lacking sufficient information makes decision-making difficult.","اگر وقت نداری، بعداً بیا.","Agar vaqt nadāri, ba'dan biyā.","If you do not have time, come later.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
