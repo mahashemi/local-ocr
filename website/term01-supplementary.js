@@ -255,6 +255,17 @@
   "گردش کردن":{ms:"گردش کردن",amr:"گردش کن",m:["گردش کردن در شهر قدیمی لذت‌بخش است.","Gardesh kardan dar shahr-e qadimi lezzat-bakhsh ast.","Sightseeing in the old city is enjoyable."],a:["امروز در شهر گردش کن.","Emruz dar shahr gardesh kon.","Go sightseeing in the city today."]},
   "بزرگ شدن":{ms:"بزرگ شدن",amr:"بزرگ شو",m:["بزرگ شدن مسئولیت‌های تازه می‌آورد.","Bozorg shodan mas'uliyat-hā-ye tāze miāvarad.","Growing up brings new responsibilities."],a:["با تجربه بزرگ شو.","Bā tajrobe bozorg sho.","Grow through experience."]},
   "تحصیل کردن":{ms:"تحصیل کردن",amr:"تحصیل کن",m:["تحصیل کردن آیندهٔ انسان را می‌سازد.","Tahsil kardan āyande-ye ensān rā misāzad.","Education shapes a person's future."],a:["با جدیت تحصیل کن.","Bā jeddiyat tahsil kon.","Study diligently."]}
+,
+  "سرما خوردن":{ms:"سرما خوردن",amr:"—",m:["سرما خوردن در زمستان شایع است.","Sarmā khordan dar zemestān shāye' ast.","Catching a cold is common in winter."],a:null,note:"رخداد ناخواسته است و امر مثبت طبیعی ندارد؛ برای هشدار می‌گوییم «سرما نخور»."},
+  "درد کردن":{ms:"درد کردن",amr:"—",m:["درد کردن زانو راه رفتن را دشوار می‌کند.","Dard kardan-e zānu rāh raftan rā doshvār mikonad.","Knee pain makes walking difficult."],a:null,note:"بیان احساس درد است و امر مستقیم طبیعی ندارد."},
+  "تصادف کردن":{ms:"تصادف کردن",amr:"—",m:["تصادف کردن خطرناک است.","Tasādef kardan khatarnāk ast.","Having an accident is dangerous."],a:null,note:"رخداد ناخواسته است و امر مثبت طبیعی ندارد؛ برای هشدار می‌گوییم «تصادف نکن»."},
+  "گم شدن":{ms:"گم شدن",amr:"—",m:["گم شدن در شهر ناآشنا ترسناک است.","Gom shodan dar shahr-e nāāshenā tarsnāk ast.","Getting lost in an unfamiliar city is frightening."],a:null,note:"فعل لازم و رخداد ناخواسته است؛ «گم شو» معنی دیگری دارد و نباید به‌عنوان امر این فعل ثبت شود."},
+  "پنچر شدن":{ms:"پنچر شدن",amr:"—",m:["پنچر شدن لاستیک سفر را متوقف کرد.","Pancher shodan-e lāstik safar rā motavaqef kard.","The flat tyre brought the trip to a stop."],a:null,note:"تغییر حالت ناخواسته است و امر مستقیم طبیعی ندارد."},
+  "تأخیر داشتن":{ms:"تأخیر داشتن",amr:"—",m:["تأخیر داشتن در جلسه بی‌احترامی است.","Ta'khir dāshtan dar jalase bi-ehtirāmi ast.","Being late to a meeting is disrespectful."],a:null,note:"بیان وضعیت است؛ برای هشدار معمولاً می‌گوییم «دیر نکن»."},
+  "درگذشتن":{ms:"درگذشتن",amr:"—",m:["درگذشتن یک عزیز اندوه بزرگی می‌آورد.","Dargozashtan-e yek aziz anduh-e bozorgi miāvarad.","The death of a loved one brings great sorrow."],a:null,note:"فعل لازم برای مرگ است و امر مستقیم ندارد."},
+  "فارغ‌التحصیل شدن":{ms:"فارغ‌التحصیل شدن",amr:"—",m:["فارغ‌التحصیل شدن از دانشگاه نقطهٔ مهمی در زندگی است.","Fāreq-ottahsili shodan az dāneshgāh noqte-ye mohemmi dar zendegi ast.","Graduating from university is an important life milestone."],a:null,note:"بیان فرایند/رخداد است و امر مستقیم طبیعی ندارد."},
+  "به دنیا آمدن":{ms:"به دنیا آمدن",amr:"—",m:["به دنیا آمدن کودک شادی می‌آورد.","Be donyā āmadan-e kudak shādi miāvarad.","A child's birth brings joy."],a:null,note:"رخداد طبیعی است و امر مستقیم ندارد."},
+  "نیاز داشتن":{ms:"نیاز داشتن",amr:"—",m:["نیاز داشتن به کمک در بعضی موقعیت‌ها طبیعی است.","Niyāz dāshtan be komak dar ba'zi movqe'iyat-hā tabi'i ast.","Needing help is natural in some situations."],a:null,note:"بیان حالت/نیاز است و امر مستقیم طبیعی ندارد."}
 
 
  };
