@@ -66,4 +66,4 @@ Standalone `--` lines around the vocabulary blocks were retained because they ac
 
 ## Deployment status
 
-The earlier Term 01 deployment blocker has been corrected. The latest Pages validation and Term 03 content audit should be checked against the current `main` commit and deployment run before treating this report as the latest live-site confirmation.
+The earlier Term 01 deployment blocker has been corrected. The Pages validation and deployment succeeded for main commit `16ba66d4c63dd10eae469be0654ce09574e4e8af` (workflow run `43487963907`). The Term 03 content audit also passed for that commit (workflow run `43487963886`).
