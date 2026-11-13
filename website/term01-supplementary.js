@@ -24,7 +24,7 @@
 [19,"SH1-19","حافظیه","Hāfeziye","Hafezieh (Hafez's tomb complex)","noun","گردشگران از حافظیه دیدن می‌کنند.","Gardeshgarān az Hāfeziye didan mikonand.","Tourists visit Hafezieh."],
 [19,"SH1-19","میدان نقش جهان","Meydān-e Naqsh-e Jahān","Naqsh-e Jahan Square","noun","میدان نقش جهان در اصفهان قرار دارد.","Meydān-e Naqsh-e Jahān dar Esfahān qarār dārad.","Naqsh-e Jahan Square is in Isfahan."],
 [20,"SH1-20","فارغ‌التحصیل شدن","fāregh-ot-tahsil shodan","to graduate","verb","او سال گذشته از دانشگاه فارغ‌التحصیل شد.","U sāl-e gozashte az dāneshgāh fāregh-ot-tahsil shod.","He or she graduated from university last year."],
-[20,"SH1-20","دانشمند","dāneshmand","scholar; scientist","noun","این دانشمند کتاب‌های زیادی نوشته است.","In dāneshmand ketābhā-ye ziyādi neveshte ast.","This scholar has written many books."]
+[20,"SH1-20","دانشمند","dāneshmand","scholar; scientist","noun","این دانشمند کتاب‌های زیادی نوشته است.","In dāneshmand ketābhā-ye ziyādi neveshte ast.","This scholar has written many books."],
 [1,"N1-01","تاجر","tājer","merchant; trader","noun","تاجر در بازار کار می‌کند.","Tājer dar bāzār kār mikonad.","The merchant works in the market."],
 [1,"N1-01","تایلندی","tāylandī","Thai","adjective","او تایلندی است.","U tāyl andi ast.","He or she is Thai."],
 [1,"N1-01","خیاط","khayyāt","tailor","noun","خیاط لباس می‌دوزد.","Khayyāt lebās miduzad.","The tailor sews clothes."],
