@@ -1372,7 +1372,7 @@ function addVocabularyForms(index,item){
 /* Link only exact flashcard headwords and reviewed aliases in writing/speaking pages. */
 /* Link Persian vocabulary in writing and speaking guidance to the shared flashcard. */
 function attachVocabularyLinks(scope){
- const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>String(b.fa).trim().split(/\s+/).length-String(a.fa).trim().split(/\s+/).length||String(b.fa).length-String(a.fa).length);
+ const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>(Number(b.bk===activeTerm)-Number(a.bk===activeTerm))||String(b.fa).trim().split(/\\s+/).length-String(a.fa).trim().split(/\\s+/).length||String(b.fa).length-String(a.fa).length);
  const index=new Map();let maxWords=1;
  entries.forEach(i=>{addVocabularyForms(index,i);maxWords=Math.max(maxWords,String(i.fa).trim().split(/\s+/).length)});
  const walker=document.createTreeWalker(scope,NodeFilter.SHOW_TEXT,{acceptNode(node){
