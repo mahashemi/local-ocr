@@ -1601,6 +1601,33 @@
  V(2,"KH3-02","قصد داشتن","qasd dāshtan","to intend; to plan","من قصد دارم در امتحان موفق شوم.","Man qasd dāram dar emtehān movaffaq shavam.","I intend to succeed in the exam.","قصد داشتن","قصد داشته باش","قصد داشتن به‌تنهایی کافی نیست و باید تلاش کرد.","Qasd dāshtan be-tanhāyi kāfi nist va bāyad talāsh kard.","Intending alone is not enough; one must make an effort.","برای رسیدن به هدفت قصد جدی داشته باش.","Barāye residan be hadafat qasd-e jeddi dāshte bāsh.","Have a firm intention to reach your goal.");
  N(5,"KH3-05","سنگتراش","sangtarāsh","stonemason; stonecutter","سنگتراش از سنگ برای ساختن پله استفاده کرد.","Sangtarāsh az sang barāye sākhtan-e pelle estefāde kard.","The stonemason used stone to build the steps.");
 
+
+ // FA3-11 first-page additions.
+ V(11,"FA3-11","بستگی داشتن","bastegi dāshtan","to depend; to be dependent on","مصرف آب به تعداد افراد خانواده بستگی دارد.","Masraf-e āb be tedād-e afrād-e khānevāde bastagi dārad.","Water consumption depends on the number of family members.","بستگی داشتن","—","بستگی داشتنِ نتیجه به تلاش گروه وابسته است.","Bastegi dāshtan-e natije be talāsh-e goruh vābaste ast.","The result depends on the group's effort.","—","—","—","ساختارِ داشتن در این معنا خبری است؛ امر مستقیم طبیعی ندارد.");
+ N(11,"FA3-11","رشد صنعتی","roshd-e san'ati","industrial growth","رشد صنعتی به انرژی نیاز دارد.","Roshd-e san'ati be enerji niyāz dārad.","Industrial growth requires energy.","گروه اسمی — noun phrase");
+ N(11,"FA3-11","کارواش","kārvāsh","car wash","ماشین را به کارواش بردم.","Māshin rā be kārvāsh bordam.","I took the car to the car wash.");
+ N(11,"FA3-11","شلنگ","shilang","hose","با شلنگ باغچه را آب دادیم.","Bā shilang bāghche rā āb dād im.","We watered the garden with a hose.");
+ V(11,"FA3-11","عقب انداختن","aqab andākhtan","to postpone; to put off","جلسه را به دلیل باران عقب انداختند.","Jalase rā be dalil-e bārān aqab andākhtand.","They postponed the meeting because of the rain.","عقب انداختن","عقب نینداز","عقب انداختنِ کارها مشکل را بیشتر می‌کند.","Aqab andākhtan-e kārhā moshkel rā bishtar mikonad.","Putting tasks off makes the problem worse.","کار مهمت را عقب نینداز.","Kār-e mohemet rā aqab nayandāz.","Do not put off your important task.");
+ V(11,"FA3-11","کاشتن","kāshtan","to plant; to sow","کشاورز در بهار گندم کاشت.","Keshāvarz dar bahār gandom kāsht.","The farmer planted wheat in spring.","کاشتن","بکار","کاشتن درخت به پاکیزگی هوا کمک می‌کند.","Kāshtan-e derakht be pākizegi-ye havā komak mikonad.","Planting trees helps keep the air clean.","در باغ یک درخت بکار.","Dar bāgh yek derakht bekār.","Plant a tree in the garden.");
+ // FA3-12 first-page additions.
+ V(12,"FA3-12","دراز کشیدن","derāz keshidan","to lie down; to stretch out","بیمار روی تخت دراز کشید.","Bimār ru-ye takht derāz keshid.","The patient lay down on the bed.","دراز کشیدن","دراز بکش","دراز کشیدن پس از کار سنگین به استراحت کمک می‌کند.","Derāz keshidan pas az kār-e sangin be esterāhat komak mikonad.","Lying down after hard work helps with rest.","روی تخت دراز بکش.","Ru-ye takht derāz bekesh.","Lie down on the bed.");
+ N(12,"FA3-12","برداشت محصول","bardāsht-e mahsul","harvesting a crop; crop harvest","برداشت محصول در پاییز انجام می‌شود.","Bardāsht-e mahsul dar pāyiz anjām mishavad.","The crop is harvested in autumn.","گروه اسمی — noun phrase");
+ V(12,"FA3-12","دفن شدن","dafn shodan","to be buried","بذر پس از آماده‌سازی خاک دفن شد.","Bazr pas az āmāde-sāzi-ye khāk dafn shod.","The seed was buried after the soil was prepared.","دفن شدن","—","دفن شدنِ زباله در زمین می‌تواند به محیط زیست آسیب بزند.","Dafn shodan-e zobāle dar zamin mitavānad be mohite zist āsib bezanad.","Burying waste in the ground can harm the environment.","—","—","—","فعل مجهول است؛ امر مستقیم طبیعی ندارد.");
+ N(12,"FA3-12","بریدگی","boridegi","cut; incision","روی دست او یک بریدگی کوچک بود.","Ru-ye dast-e u yek boridegi-ye kuchak bud.","There was a small cut on his hand.");
+ N(12,"FA3-12","تفاله","tofāle","pulp; residue; dregs","تفالهٔ میوه را می‌توان برای کود استفاده کرد.","Tofāle-ye mive rā mitavān barāye kud estefāde kard.","Fruit pulp can be used for compost.");
+ N(12,"FA3-12","ته‌مانده","tah-mānde","leftover; remainder","ته‌ماندهٔ غذا را در یخچال گذاشتیم.","Tah-mānde-ye ghazā rā dar yakhchāl gozāshtim.","We put the leftovers in the refrigerator.");
+ // FA3-13 first-page additions.
+ N(13,"FA3-13","نوک","nok","beak; tip; point","نوک پرنده تیز است.","Nok-e parandé tiz ast.","The bird's beak is sharp.");
+ N(13,"FA3-13","پنجه","panje","paw; claw; talon","پنجهٔ شیر بسیار نیرومند است.","Panje-ye shir besyār niru mand ast.","The lion's paw is very powerful.");
+ N(13,"FA3-13","دندان نیش","dandān-e nish","fang; canine tooth","مار با دندان نیش خود زهر را وارد می‌کند.","Mār bā dandān-e nish-e khod zahr rā vāred mikonad.","A snake injects venom with its fangs.","گروه اسمی — noun phrase");
+ A(13,"FA3-13","تکه‌پاره","tekke-pāre","torn into pieces; fragmented","لباس او تکه‌پاره شده بود.","Lebās-e u tekke-pāre shode bud.","His clothes were torn into pieces.");
+ A(13,"FA3-13","آدم‌خوار","ādam-khār","cannibalistic; man-eating","در داستان افسانه‌ای از دیوی آدم‌خوار سخن می‌گفتند.","Dar dāstān-e afsāne-i az div-e ādam-khār sokhan migoftand.","The fairy tale spoke of a man-eating demon.");
+ N(13,"FA3-13","خرطوم","khortum","trunk (of an elephant)","فیل با خرطوم خود آب می‌نوشد.","Fil bā khortum-e khod āb minushad.","An elephant drinks water with its trunk.");
+ N(13,"FA3-13","خون‌سردی","khun-sardi","cold-bloodedness; calmness","خون‌سردی در شرایط خطرناک اهمیت دارد.","Khun-sardi dar sharāyet-e khatarnāk ahammiyat dārad.","Calmness is important in dangerous situations.");
+ N(13,"FA3-13","چاله","chāle","pit; hole","حیوان در چاله افتاد.","Heyvān dar chāle oftād.","The animal fell into a pit.");
+ A(13,"FA3-13","مشکوک","mashkuk","suspicious; doubtful","رفتار مشکوک حیوان توجه نگهبان را جلب کرد.","Raftār-e mashkuk-e heyvān tavajjoh-e negahbān rā jalb kard.","The animal's suspicious behaviour caught the guard's attention.");
+ N(13,"FA3-13","درپوش","darpush","lid; cover; cap","درپوش ظرف را محکم ببندید.","Darpush-e zarf rā mohkam bebandid.","Close the container's lid tightly.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
