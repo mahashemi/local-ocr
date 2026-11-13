@@ -1742,6 +1742,30 @@
  // N3-05 remaining first-page expression.
  N(12,"N3-05","جشن طبیعت","jashn-e tabi'at","festival of nature; celebration of spring","نوروز را جشن طبیعت نیز می‌نامند.","Nowruz rā jashn-e tabi'at niz mināmand.","Nowruz is also called the festival of nature.","گروه اسمی — noun phrase");
 
+
+ // KH3-11 first-page additions.
+ A(11,"KH3-11","کم‌توقع","kam-tavaqqo'","undemanding; not asking for much","او فردی کم‌توقع و مهربان است.","U fardi kam-tavaqqo'-o mehrabān ast.","He is an undemanding and kind person.");
+ V(11,"KH3-11","فوت کردن","fot kardan","to pass away; to blow","پدربزرگ او سال گذشته فوت کرد.","Pedربozorg-e u sāl-e gozashte fot kard.","His grandfather passed away last year.","فوت کردن","—","فوت کردن در این متن به معنای درگذشتن است.","Fot kardan dar in matn be ma'nā-ye dargozashtan ast.","In this text, fot kardan means to pass away.","—","—","—","در معنای درگذشتن، امر مستقیم طبیعی ندارد.");
+ N(11,"KH3-11","کار خیر","kār-e kheyr","good deed; charitable act","کمک به نیازمندان کار خیر است.","Komak be niyāzmandān kār-e kheyr ast.","Helping people in need is a good deed.","گروه اسمی — noun phrase");
+ A(11,"KH3-11","ممتاز","momtāz","excellent; outstanding","دانش‌آموز ممتاز جایزه گرفت.","Dānesh-āmuz-e momtāz jāyeze gereft.","The outstanding student received a prize.");
+ A(11,"KH3-11","خشن","khoshn","rough; harsh; violent","رفتار خشن به دیگران آسیب می‌زند.","Raftār-e khoshn be digarān āsib mizanad.","Harsh behaviour harms others.");
+ N(11,"KH3-11","مجسمه","mojasame","statue; sculpture","مجسمهٔ شاعر در میدان شهر قرار دارد.","Mojasame-ye shā'er dar meydān-e shahr qarār dārad.","The poet's statue stands in the city square.");
+ N(11,"KH3-11","اسکناس","eskenās","banknote; paper money","اسکناس‌ها را در کیف گذاشت.","Eskenāshā rā dar kif gozāsht.","He put the banknotes in his wallet.");
+ N(11,"KH3-11","ریاست","riyāsat","presidency; leadership","ریاست گروه به استاد باتجربه سپرده شد.","Riyāsat-e goruh be ostād-e bātajrobe seporde shod.","Leadership of the group was entrusted to an experienced teacher.");
+ N(11,"KH3-11","موتور الکتریکی","motor-e elektriki","electric motor","موتور الکتریکی انرژی برق را به حرکت تبدیل می‌کند.","Motor-e elektriki enerji-ye barq rā be harekat tabdil mikonad.","An electric motor converts electrical energy into motion.","گروه اسمی — noun phrase");
+ N(11,"KH3-11","الکتریسیته","elektrisite","electricity","الکتریسیته برای روشنایی خانه ضروری است.","Elektrisite barāye rowshanāyi-ye khāne zaruri ast.","Electricity is essential for lighting a home.");
+ N(11,"KH3-11","خودآموزی","khod-ām uzi","self-study; autodidactic learning","خودآموزی به برنامه‌ریزی و پشتکار نیاز دارد.","Khod-ām uzi be barnāme-rizi-o poshtkār niyāz dārad.","Self-study requires planning and perseverance.");
+ N(11,"KH3-11","شیمیدان","shimidan","chemist","شیمیدان ترکیب این ماده را بررسی کرد.","Shimidan tarkib-e in māde rā barrasi kard.","The chemist examined the composition of this substance.");
+ N(11,"KH3-11","کاشف","kāشف","discoverer; explorer","کاشف این ماده جایزه دریافت کرد.","Kāشف-e in māde jāyeze daryāft kard.","The discoverer of this substance received an award.");
+ V(11,"KH3-11","کشف کردن","kashf kardan","to discover; to find out","دانشمندان سیارهٔ تازه‌ای کشف کردند.","Dāneshmandān sayyāre-ye tāze-i kashf kardand.","Scientists discovered a new planet.","کشف کردن","کشف کن","کشف کردن حقیقت به تحقیق نیاز دارد.","Kashf kardan-e haqiqat be tahqiq niyāz dārad.","Discovering the truth requires research.","پاسخ را با تحقیق کشف کن.","Pāskh rā bā tahqiq kashf kon.","Discover the answer through research.");
+ // KH3-12 first-page additions.
+ V(12,"KH3-12","تغذیه کردن","taghziye kardan","to feed; to nourish","مادر نوزاد را با شیر تغذیه می‌کند.","Mādar nowzād rā bā shir taghziye mikonad.","The mother feeds the baby with milk.","تغذیه کردن","تغذیه کن","تغذیه کردن بدن با غذای سالم اهمیت دارد.","Taghziye kardan-e badan bā ghazā-ye sālem ahammiyat dārad.","Nourishing the body with healthy food is important.","بدنت را با غذای سالم تغذیه کن.","Badanat rā bā ghazā-ye sālem taghziye kon.","Nourish your body with healthy food.");
+ N(12,"KH3-12","چاه","chāh","well; shaft","روستاییان از چاه آب می‌کشیدند.","Rostāyiān az chāh āb mikeshidand.","The villagers drew water from the well.");
+ V(12,"KH3-12","ناپدید شدن","nāpadi d shodan","to disappear; to vanish","ابرها پس از طلوع آفتاب ناپدید شدند.","Abrhā pas az tolu'-e āftāb nāpadid shodand.","The clouds disappeared after sunrise.","ناپدید شدن","—","ناپدید شدن حیوانات در این منطقه نگران‌کننده است.","Nāpadid shodan-e heyvānāt dar in manteqe negarān-konande ast.","The disappearance of animals in this region is worrying.","—","—","—","فعل لازم است؛ امر مستقیم طبیعی ندارد.");
+ A(12,"KH3-12","واضح","vāzeh","clear; obvious","پاسخ این سؤال واضح است.","Pāskh-e in so'āl vāzeh ast.","The answer to this question is clear.");
+ A(12,"KH3-12","غیرعادی","gheyr-e ādi","unusual; abnormal","صدای غیرعادی از موتور شنیده شد.","Sedā-ye gheyr-e ādi az motor shenide shod.","An unusual sound was heard from the engine.");
+ N(12,"KH3-12","بادنجان","bādenjān","eggplant; aubergine","برای شام خوراک بادنجان درست کردیم.","Barāye shām khorāk-e bādenjān dorost kardim.","We made an eggplant dish for dinner.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
