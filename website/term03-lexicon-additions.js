@@ -1338,6 +1338,23 @@
  N(5,"FA3-05","نقطهٔ مقابل","noqte-ye moqābel","opposite; converse","آرامش نقطهٔ مقابل اضطراب است.","Ārāmesh noqte-ye moqābel-e ezterāb ast.","Calmness is the opposite of anxiety.","گروه اسمی — noun phrase");
  N(5,"FA3-05","به هیچ وجه","be hich vajh","by no means; not at all","به هیچ وجه نباید قوانین را نادیده گرفت.","Be hich vajh nabāyad qavānin rā nādide gereft.","Under no circumstances should rules be ignored.","عبارت قیدی — adverbial phrase");
 
+
+ // FA3-03 first-page vocabulary: add source links for words already defined elsewhere.
+ N(3,"FA3-03","انصراف","enseref","withdrawal; cancellation","انصراف از تصمیم گاهی دشوار است.","Enserāf az tasmim gāhi doshvār ast.","Withdrawing from a decision is sometimes difficult.");
+ N(3,"FA3-03","مهاجرت","mohājerat","migration; immigration","مهاجرت برای یافتن کار بهتر انجام می‌شود.","Mohājerat barāye yāftan-e kār-e behtar anjām mishavad.","People migrate to find better work.");
+ N(3,"FA3-03","صرفه‌جویی","sarf-eju'i","saving; economising","صرفه‌جویی در مصرف آب اهمیت دارد.","Sarfeju'i dar masraf-e āb ahammiyat dārad.","Saving water is important.");
+ N(3,"FA3-03","نقطهٔ عطف","noqte-ye atf","turning point","آن موفقیت نقطهٔ عطف زندگی او بود.","Ān movaffaqiyat noqte-ye atf-e zendegi-ye u bud.","That success was a turning point in his life.","گروه اسمی — noun phrase");
+ N(3,"FA3-03","شعبه","sho'be","branch; branch office","این بانک در شهر ما سه شعبه دارد.","In bānk dar shahr-e mā se sho'be dārad.","This bank has three branches in our city.");
+ N(3,"FA3-03","جایگاه اجتماعی","jāygāh-e ejtemā'i","social standing; social position","تحصیل می‌تواند جایگاه اجتماعی افراد را تغییر دهد.","Tahsil mitavānad jāygāh-e ejtemā'i-ye afrād rā taghyir dahad.","Education can change people's social standing.","گروه اسمی — noun phrase");
+ N(3,"FA3-03","دوران حاضر","dourān-e hāzer","the present era; current period","در دوران حاضر فناوری با سرعت پیشرفت می‌کند.","Dar dourān-e hāzer fanāvari bā sor'at pishraft mikonad.","Technology is advancing rapidly in the present era.","گروه اسمی — noun phrase");
+ // FA3-04 first-page vocabulary: add source links and missing forms.
+ V(4,"FA3-04","سر زدن","sar zadan","to drop by; to visit briefly","امروز به خانهٔ دوستم سر زدم.","Emruz be khāne-ye dustam sar zadam.","I dropped by my friend's house.","سر زدن","سر بزن","سر زدن به دوستان باعث تقویت رابطه می‌شود.","Sar zadan be dustān bā'es-e taqviyat-e rābete mishavad.","Dropping by friends helps strengthen relationships.","فردا به مادربزرگت سر بزن.","Fardā be مادربozorgat sar bezan.","Visit your grandmother tomorrow.");
+ N(4,"FA3-04","فدای سرت","fedā-ye saret","never mind; don't worry (affectionate expression)","وقتی عذرخواهی کردم، گفت: «فدای سرت».","Vaqti ozrkhāhi kardam, goft: fedā-ye saret.","When I apologised, they said, 'Don't worry about it.'","اصطلاح — idiom");
+ N(4,"FA3-04","سرطان","sartān","cancer","تشخیص زودهنگام سرطان اهمیت دارد.","Tashkhis-e zud-hengām-e sartān ahammiyat dārad.","Early diagnosis of cancer is important.");
+ V(4,"FA3-04","کیف داشتن","keyf dāshtan","to enjoy; to have a good time (colloquial)","بچه‌ها از بازی در پارک کیف داشتند.","Bachchehā az bāzi dar pārk keyf dāshtand.","The children enjoyed playing in the park.","کیف داشتن","کیف کن","کیف داشتن از یک سفر خوب خاطره می‌سازد.","Keyf dāshtan az yek safar-e khub khātere misāzad.","Enjoying a good trip creates a memory.","از تعطیلاتت کیف کن.","Az ta'tilat-et keyf kon.","Enjoy your holiday.");
+ V(4,"FA3-04","گیر آمدن","gir āmadan","to be found; to turn up","بالاخره بلیت گیر آمد.","Bālākhare belit gir āmad.","A ticket finally turned up.","گیر آمدن","—","گیر آمدنِ بلیت در روزهای شلوغ دشوار است.","Gir āmadan-e belit dar ruzhā-ye sholugh doshvār ast.","Finding a ticket on busy days is difficult.","—","—","—","فعل لازم است؛ امر مستقیم طبیعی ندارد.");
+ N(4,"FA3-04","مخفیانه","makhfiāne","secretly; in secret","او مخفیانه نامه را خواند.","U makhfiāne nāme rā khānd.","He read the letter secretly.","قید — adverb");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
