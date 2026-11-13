@@ -2353,6 +2353,67 @@
  N(8,"SH3-08","شرکت","sherkat","company; participation","شرکت در کلاس گفت‌وگو را بهتر می‌کند.","Sherkat dar kelās goft-o-gu rā behtar mikonad.","Participating in class improves conversation.");
  N(8,"SH3-08","تحصیلی","tahsili","educational; academic","برنامهٔ تحصیلی خود را با استاد بررسی کنید.","Barnāme-ye tahsili-ye khod rā bā ostād barrasi konid.","Review your study plan with the teacher.");
 
+
+ // Cross-cutting vocabulary used throughout the Term 03 writing, speaking and summary pages.
+ N(1,"WR3-01","توضیح","tozih","explanation; clarification","برای هر پاسخ یک توضیح کوتاه بنویسید.","Barāye har pāsokh yek tozih-e kutāh benevisid.","Write a short explanation for each answer.");
+ N(1,"WR3-01","بررسی","barrasi","review; examination","بررسی منبع پیش از نقل مطلب ضروری است.","Barrasi-ye manba' pish az naql-e مطلب zaruri ast.","Checking a source before quoting it is essential.");
+ N(1,"WR3-01","معرفی","mo'arrefi","introduction; presentation","در مقدمه موضوع تحقیق را معرفی کنید.","Dar moqaddame mozoo-ye tahqiq rā mo'arrefi konid.","Introduce the research topic in the introduction.");
+ N(1,"WR3-01","انسان","ensān","human being; person","انسان با یادگیری و تجربه رشد می‌کند.","Ensān bā yādgiri va tajrobe roshd mikonad.","A human being grows through learning and experience.");
+ N(1,"WR3-01","حفظ","hefz","preservation; protection; memorisation","حفظ محیط زیست مسئولیت همگانی است.","Hefz-e mohite zist mas'uliyat-e hamgāni ast.","Protecting the environment is everyone's responsibility.");
+ N(1,"WR3-01","روشن","roshan","clear; bright","پرسش روشن پاسخ دقیق‌تری به دنبال دارد.","Porsesh-e roshan pāsokh-e daqiq-tari be donbāl dārad.","A clear question leads to a more precise answer.");
+ N(1,"WR3-01","نمونه","nemune","example; sample","این نمونه روش نوشتن بند را نشان می‌دهد.","In nemune ravesh-e neveshtan-e band rā neshān midahad.","This example shows how to write a paragraph.");
+ N(1,"WR3-01","معنا","ma'nā","meaning","معنای واژه را از بافت جمله پیدا کنید.","Ma'nā-ye vāzhe rā az bāft-e jomle peydā konid.","Find the meaning of the word from the sentence context.");
+ N(1,"WR3-01","تفاوت","tafāvot","difference","تفاوت دو دیدگاه را با مثال توضیح دهید.","Tafāvot-e do didgāh rā bā mesāl tozih dahid.","Explain the difference between the two views with an example.");
+ N(1,"WR3-01","کمک","komak","help; assistance","همکاری و کمک به دیگران رفتار پسندیده‌ای است.","Hamkāri va komak be digarān raftār-e pasandid e-i ast.","Cooperation and helping others are praiseworthy behaviours.");
+ N(1,"WR3-01","آیه","āye","Qur'anic verse","برای سخنرانی یک آیهٔ مرتبط انتخاب کنید.","Barāye sokhanrāni yek āye-ye mortabet entekhāb konid.","Choose a relevant Qur'anic verse for the speech.");
+ N(1,"WR3-01","مقایسه","moqāyese","comparison","مقایسهٔ دو روش به انتخاب بهتر کمک می‌کند.","Moqāyese-ye do ravesh be entekhāb-e behtar komak mikonad.","Comparing two methods helps make a better choice.");
+ N(1,"WR3-01","شناخت","shenākht","knowledge; recognition","شناخت مخاطب به انتخاب لحن مناسب کمک می‌کند.","Shenākht-e mokhāteb be entekhāb-e lahن-e monāseb komak mikonad.","Knowing the audience helps choose an appropriate tone.");
+ N(1,"WR3-01","سوره","sure","Qur'anic chapter (surah)","نام سوره و شمارهٔ آیه را دقیق ذکر کنید.","Nām-e sure va shomāre-ye āye rā daqiq zekr konid.","State the surah name and verse number accurately.");
+ N(1,"WR3-01","سخن","sokhan","speech; words","سخن سنجیده می‌تواند اختلاف را کاهش دهد.","Sokhan-e sanjide mitavānad ekhtelāf rā kāhesh dahad.","Thoughtful words can reduce disagreement.");
+ N(1,"WR3-01","رعایت","re'āyat","observance; consideration","رعایت نوبت نشانهٔ احترام به دیگران است.","Re'āyat-e nobat neshāne-ye ehterām be digarān ast.","Taking turns is a sign of respect for others.");
+ N(1,"WR3-01","برابر","barābar","equal; in front of; against","همهٔ افراد در برابر قانون مسئول‌اند.","Hame-ye afrād dar barābar-e qānun mas'ul-and.","Everyone is responsible under the law.");
+ N(1,"WR3-01","یادگیری","yādgiri","learning","یادگیری زبان با تمرین روزانه بهتر می‌شود.","Yādgiri-ye zabān bā tamrin-e ruzāne behtar mishavad.","Language learning improves with daily practice.");
+ N(1,"WR3-01","کاهش","kāhesh","reduction; decrease","کاهش مصرف آب به حفاظت از منابع کمک می‌کند.","Kāhesh-e masraf-e āb be hefāzat az manābe' komak mikonad.","Reducing water use helps protect resources.");
+ N(1,"WR3-01","مشخص","moshakhas","specific; clear","هدف باید مشخص و قابل اندازه‌گیری باشد.","Hadaf bāyad moshakhas va ghābel-e andāze-giri bāshad.","A goal should be specific and measurable.");
+ N(1,"WR3-01","تجربه","tajrobe","experience","تجربهٔ گذشته می‌تواند راهنمای تصمیم امروز باشد.","Tajrobe-ye gozashte mitavānad rāhnamā-ye tasmim-e emruz bāshad.","Past experience can guide today's decisions.");
+ N(1,"WR3-01","نقش","naqsh","role; part","خانواده در آموزش اخلاقی کودک نقش مهمی دارد.","Khānevāde dar āmuzesh-e akhlāqi-ye kudak naqsh-e mohemmi dārad.","Family plays an important role in a child's moral education.");
+ N(1,"WR3-01","مسئولانه","mas'ulāne","responsibly; responsible","از فضای مجازی مسئولانه استفاده کنید.","Az fazā-ye majāzi mas'ulāne estefāde konid.","Use online spaces responsibly.");
+ N(1,"WR3-01","عمومی","omumi","public; general","این موضوع برای سلامت عمومی اهمیت دارد.","In mozoo barāye salāmat-e omumi ahammiyat dārad.","This topic matters for public health.");
+ N(1,"WR3-01","شخصی","shakhsi","personal","اطلاعات شخصی خود را در فضای عمومی منتشر نکنید.","Etelā'āt-e shakhsi-ye khod rā dar fazā-ye omumi montasher nakonid.","Do not publish your personal information in public spaces.");
+ N(1,"WR3-01","ارزش","arzesh","value; worth","ارزش انسان به اخلاق و کردار او وابسته است.","Arzesh-e ensān be akhlāq va kerdār-e u vābaste ast.","A person's worth depends on their ethics and actions.");
+ N(1,"WR3-01","مراسم","marāsem","ceremony; occasion","مراسم مذهبی با آداب ویژه‌ای برگزار می‌شود.","Marāsem-e mazhabi bā ādāb-e vizhe-i bargozār mishavad.","Religious ceremonies are held with particular customs.");
+ N(1,"WR3-01","خدمت","khedmat","service; serving","خدمت به مردم یکی از راه‌های مفید استفاده از دانش است.","Khedmat be mardom yeki az rāhhā-ye mofid-e estefāde az dānesh ast.","Serving people is a useful way to apply knowledge.");
+ N(1,"WR3-01","خدا","khodā","God","یاد خدا به انسان آرامش می‌دهد.","Yād-e khodā be ensān ārāmesh midahad.","Remembering God gives a person peace.");
+ N(1,"WR3-01","ارزیابی","arzyābi","evaluation; assessment","پس از پایان کار، نتیجه را ارزیابی کنید.","Pas az pāyān-e kār natije rā arzyābi konid.","Evaluate the result after completing the task.");
+ N(1,"WR3-01","ارزشمند","arzeshmand","valuable; worthwhile","وقت و دانش استاد ارزشمند است.","Vaqt va dānesh-e ostād arzeshmand ast.","A teacher's time and knowledge are valuable.");
+ N(1,"WR3-01","پیام","payām","message","پیام اصلی نوشته را در نتیجه تکرار نکنید؛ آن را جمع‌بندی کنید.","Payām-e asli-ye neveshte rā dar natije tekrar nakonid; ān rā jam'-bandi konid.","Do not simply repeat the main message in the conclusion; summarise it.");
+ N(1,"WR3-01","پیوند","peyvand","connection; link","پیوند منطقی میان بندها متن را منسجم می‌کند.","Peyvand-e manteqi miyān-e bandhā matn rā monسجم mikonad.","Logical connections between paragraphs make a text coherent.");
+ N(1,"WR3-01","طبیعت","tabi'at","nature","حفاظت از طبیعت وظیفهٔ همهٔ مردم است.","Hefāzat az tabi'at vazife-ye hame-ye mardom ast.","Protecting nature is everyone's duty.");
+ N(1,"WR3-01","طبیعی","tabi'i","natural","برای توصیف مکان از جزئیات طبیعی استفاده کنید.","Barāye towsif-e makān az joz'iyāt-e tabi'i estefāde konid.","Use natural details to describe a place.");
+ N(1,"WR3-01","مسیر","masir","path; route; course","برنامهٔ روشن مسیر رسیدن به هدف را نشان می‌دهد.","Barnāme-ye roshan masir-e residan be hadaf rā neshān midahad.","A clear plan shows the path to a goal.");
+ N(1,"WR3-01","واقعی","vāqe'i","real; realistic","برای هدف خود زمان واقعی تعیین کنید.","Barāye hadaf-e khod zamān-e vāqe'i ta'yin konid.","Set a realistic timeframe for your goal.");
+ N(1,"WR3-01","امید","omid","hope","امید به انسان انگیزهٔ تلاش می‌دهد.","Omid be ensān angize-ye talāsh midahad.","Hope gives a person motivation to make an effort.");
+ N(1,"WR3-01","دلیل","dalil","reason; evidence","برای نظر خود دلیل روشن بیاورید.","Barāye nazar-e khod dalil-e roshan biyāvarid.","Give a clear reason for your opinion.");
+ N(1,"WR3-01","دعوت","da'vat","invitation; call","دعوت به کار نیک باید با رفتار نیک همراه باشد.","Da'vat be kār-e nik bāyad bā raftār-e nik hamrāh bāshad.","Calling people to good should be accompanied by good conduct.");
+ N(1,"WR3-01","ضروری","zaruri","necessary; essential","ذکر منبع در تحقیق ضروری است.","Zekr-e manba' dar tahqiq zaruri ast.","Citing a source in research is essential.");
+ N(1,"WR3-01","اصلاح","eslāh","correction; improvement","بازخوانی به اصلاح اشتباه‌های نوشتاری کمک می‌کند.","Bāzkhāni be eslāh-e eshtebāhhā-ye neveshtāri komak mikonad.","Proofreading helps correct writing mistakes.");
+ N(1,"WR3-01","شرایط","sharāyet","conditions; circumstances","شرایط هر مسئله را پیش از پیشنهاد راه‌حل بررسی کنید.","Sharāyet-e har mas'ale rā pish az pishnehād-e rāhhal barrasi konid.","Review the conditions of each problem before suggesting a solution.");
+ N(1,"WR3-01","آسیب","āsib","harm; damage","استفادهٔ نادرست از اینترنت ممکن است آسیب ایجاد کند.","Estefāde-ye nādorost az internet momken ast āsib ijād konad.","Improper internet use may cause harm.");
+ N(1,"WR3-01","مقصد","maqsad","destination; goal","پیش از سفر مقصد و مسیر را مشخص کنید.","Pish az safar maqsad va masir rā moshakhas konid.","Specify the destination and route before travelling.");
+ N(1,"WR3-01","برداشت","bardāsht","interpretation; impression","برداشت خود از متن را با دلیل بنویسید.","Bardāsht-e khod az matn rā bā dalil benevisid.","Write your interpretation of the text with a reason.");
+ N(1,"WR3-01","عدالت","edālat","justice; fairness","عدالت در رفتار با همهٔ افراد لازم است.","Edālat dar raftār bā hame-ye afrād lāzem ast.","Fairness is necessary in treating everyone.");
+ N(1,"WR3-01","زمین","zamin","earth; ground; land","زمین و منابع طبیعی به حفاظت نیاز دارند.","Zamin va manābe'-e tabi'i be hefāzat niyāz dārand.","The earth and natural resources need protection.");
+ N(1,"WR3-01","همکاری","hamkāri","cooperation; collaboration","همکاری دانشجویان انجام پروژه را آسان می‌کند.","Hamkāri-ye dāneshju-yān anjām-e proje rā āsān mikonad.","Students' cooperation makes the project easier to complete.");
+ N(1,"WR3-01","اعتماد","e'temād","trust; confidence","اعتماد با صداقت و وفای به قول ساخته می‌شود.","E'temād bā sedāqat va vafā be qowl sākhte mishavad.","Trust is built through honesty and keeping promises.");
+ N(1,"WR3-01","فرصت","forsat","opportunity","هر فرصت یادگیری را جدی بگیرید.","Har forsat-e yādgiri rā jeddi begirid.","Take every learning opportunity seriously.");
+ N(1,"WR3-01","تأکید","ta'kid","emphasis; stress","در نتیجه بر پیام اصلی تأکید کنید.","Dar natije bar payām-e asli ta'kid konid.","Emphasise the main message in the conclusion.");
+ N(1,"WR3-01","گسترش","gostāresh","expansion; development","گسترش واژگان به تمرین و مطالعه نیاز دارد.","Gostāresh-e vāzhegān be tamrin va motāle'e niyāz dārad.","Expanding vocabulary requires practice and reading.");
+ N(1,"WR3-01","درخواست","darkhāst","request; application","درخواست خود را کوتاه و محترمانه بیان کنید.","Darkhāst-e khod rā kutāh va mohtaramāne bayān konid.","State your request briefly and politely.");
+ N(1,"WR3-01","سلامت","salāmat","health; well-being","خواب کافی برای سلامت جسم و ذهن مهم است.","Khab-e kāfi barāye salāmat-e jesm va zehn mohem ast.","Enough sleep is important for physical and mental health.");
+ N(1,"WR3-01","تصمیم","tasmim","decision","تصمیم درست به اطلاعات کافی نیاز دارد.","Tasmim-e dorost be etelā'āt-e kāfi niyāz dārad.","A good decision requires sufficient information.");
+ N(1,"WR3-01","زمینه","zamine","context; field; background","معنای واژه را در زمینهٔ جمله بررسی کنید.","Ma'nā-ye vāzhe rā dar zamine-ye jomle barrasi konid.","Check the meaning of a word in the context of the sentence.");
+ N(1,"WR3-01","راه","rāh","way; path","برای حل مشکل راهی عملی پیشنهاد دهید.","Barāye hal-e moshkel rāhi amali pishnehād dahid.","Suggest a practical way to solve the problem.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
