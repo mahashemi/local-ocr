@@ -117,7 +117,7 @@ main{max-width:1120px;padding:28px 24px 16px}.site-head{margin-bottom:26px}.bran
 .quran-ref{color:var(--ac);font-weight:750;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
 @media(max-width:600px){.khulasa-lines{font-size:20px;padding-right:20px}.khulasa-lines li{padding:8px 4px}.kh-word-dialog{padding:17px}.writing-wrap .panel{padding:17px}}
 
-</style></head>
+\n/* Interactive vocabulary links across essay and speech workshops. */\n.writing-wrap .kh-word{font-size:inherit;line-height:inherit;padding:0 2px;border-radius:3px;background:color-mix(in srgb,var(--soft) 45%,transparent)}\n.writing-wrap .kh-word:focus-visible{outline:2px solid var(--gold);outline-offset:2px}\n.writing-wrap .kh-word:hover{background:var(--soft)}\n</style></head>
 <body><main>
 <div class="bismillah-wrap"><img src="bismillah_text_green.png" alt="بسم الله الرحمن الرحیم" class="bismillah-image"><div class="bismillah-rule"><span>✦</span></div></div>
 <header class="site-head"><div class="brandline"><div><div class="eyebrow">PERSIAN LEARNING · TERM 01–03</div><h1>راهِ فارسی <span>·</span> Persian Learning</h1><p class="tagline">A thoughtful path from vocabulary to confident expression.</p></div><div class="brandmark">فارسی</div></div><section class="overall-progress"><div class="progress-head"><div><b>Your learning journey</b><span class="mut">Across all three terms</span></div><div class="progress-total"><strong id="overallDone">0</strong><span> / <span id="overallWords">0</span> words</span></div></div><div class="bar bigbar"><i id="overallBar" style="width:0%"></i></div><div class="progress-foot"><span id="overallPercent">0% memorised</span><span id="termProgressMini">3 terms · steady progress</span></div></section></header>
@@ -1312,6 +1312,49 @@ function add(){
 }
 
 
+
+/* Link Persian vocabulary in writing and speaking guidance to the shared flashcard. */
+function attachVocabularyLinks(scope){
+ const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>String(b.fa).trim().split(/\\s+/).length-String(a.fa).trim().split(/\\s+/).length||String(b.fa).length-String(a.fa).length);
+ const index=new Map();let maxWords=1;
+ entries.forEach(i=>{const key=fold(i.fa);if(key&&!index.has(key))index.set(key,i);maxWords=Math.max(maxWords,String(i.fa).trim().split(/\\s+/).length)});
+ const walker=document.createTreeWalker(scope,NodeFilter.SHOW_TEXT,{acceptNode(node){
+  const p=node.parentElement;
+  if(!p||!/[\\u0600-\\u06ff]/.test(node.nodeValue)||p.closest('textarea,input,button,a,script,style,select,.kh-word,.kh-word-modal'))return NodeFilter.FILTER_REJECT;
+  return NodeFilter.FILTER_ACCEPT;
+ }});
+ const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+ nodes.forEach(node=>{
+  const parts=node.nodeValue.split(/(\\s+)/);if(parts.length<1)return;
+  const frag=document.createDocumentFragment();
+  for(let p=0;p<parts.length;){
+   if(/^\\s+$/.test(parts[p])){frag.append(document.createTextNode(parts[p++]));continue}
+   let found=null,span=1;
+   for(let n=Math.min(maxWords,Math.floor((parts.length-p+1)/2));n>=1;n--){
+    const end=p+n*2-1;if(end>parts.length)continue;
+    const raw=parts.slice(p,end).join(''),key=fold(raw);
+    if(key&&index.has(key)){found=index.get(key);span=n*2-1;break}
+   }
+   if(found){const raw=parts.slice(p,p+span).join(''),btn=document.createElement('button');btn.type='button';btn.className='kh-word';btn.dataset.vocabId=found.id;btn.textContent=raw;btn.setAttribute('aria-label','Open vocabulary card: '+found.fa);frag.append(btn);p+=span}
+   else frag.append(document.createTextNode(parts[p++]));
+  }
+  node.parentNode.replaceChild(frag,node);
+ });
+ ensureVocabularyModal(scope);
+}
+function ensureVocabularyModal(scope){
+ let modal=document.getElementById('sharedVocabModal');
+ if(!modal){modal=document.createElement('div');modal.id='sharedVocabModal';modal.className='kh-word-modal';modal.hidden=true;modal.setAttribute('aria-modal','true');modal.setAttribute('role','dialog');modal.setAttribute('aria-label','Vocabulary flashcard');modal.innerHTML='<div class="kh-word-dialog"><button type="button" class="kh-word-close" data-vocab-close aria-label="Close">×</button><div class="mut">TRILINGUAL VOCABULARY CARD</div><div id="sharedVocabCard" class="kh-word-card"></div><div class="kh-word-actions"><button type="button" class="pri" id="sharedVocabFlip">Flip card</button><button type="button" data-vocab-close>Close</button></div></div>';document.body.append(modal)}
+ let current=null,revealed=false;const card=modal.querySelector('#sharedVocabCard'),flip=modal.querySelector('#sharedVocabFlip');
+ const render=()=>{if(!current)return;card.innerHTML=revealed?'<div class="fa"></div><div class="tr"></div><div class="meaning"></div>':'';if(revealed){card.querySelector('.fa').textContent=current.fa;card.querySelector('.tr').textContent=current.tr||'';card.querySelector('.meaning').textContent=current.en;if(current.xf){const ex=document.createElement('div');ex.className='ex';const fa=document.createElement('div');fa.className='fa';fa.textContent=current.xf;const tr=document.createElement('div');tr.className='tr';tr.textContent=current.xt||'';const en=document.createElement('div');en.textContent=current.xe||'';ex.append(fa,tr,en);card.append(ex)}}else{const fa=document.createElement('div');fa.className='fa';fa.textContent=current.fa;const hint=document.createElement('div');hint.className='mut';hint.textContent='Tap Flip to reveal the meaning and example.';card.append(fa,hint)}flip.textContent=revealed?'Show front':'Flip · Reveal meaning'};
+ const close=()=>{modal.hidden=true;document.body.style.overflow=''};
+ scope.querySelectorAll('[data-vocab-id]').forEach(btn=>btn.addEventListener('click',()=>{current=all().find(i=>i.id===btn.dataset.vocabId)||null;if(!current)return;revealed=false;render();modal.hidden=false;document.body.style.overflow='hidden'}));
+ modal.onclick=e=>{if(e.target===modal||e.target.closest('[data-vocab-close]'))close()};
+ flip.onclick=()=>{revealed=!revealed;render()};
+ if(window.__sharedVocabEsc)document.removeEventListener('keydown',window.__sharedVocabEsc);
+ window.__sharedVocabEsc=e=>{if(e.key==='Escape'&&!modal.hidden)close()};document.addEventListener('keydown',window.__sharedVocabEsc);
+}
+
 function khulasa(){
  const term=activeTerm===2?2:3;
  const rows=term===2?(window.TERM2_KHULASA||[]):(window.TERM3_KHULASA||[]);
@@ -1411,6 +1454,7 @@ function essays(){
  </div>
  <div class="row no-print"><button class="pri" id="printEssay">Print this essay sheet</button><button id="clearEssay">Clear this chapter's draft</button></div>
  </section>`;
+ attachVocabularyLinks(v.querySelector(".writing-wrap"));
  $("#essayChapter").onchange=e=>{essayCh=Number(e.target.value);essays()};
  const saveEssay=()=>{const draftKey=activeTerm===2?'t2-'+essayCh:essayCh;const obj={...(essayDrafts[draftKey]||{}),topic:$("#essayTopic").value,checks:[...v.querySelectorAll("[data-check]:checked")].map(x=>x.dataset.check)};v.querySelectorAll("[data-field]").forEach(el=>obj[el.dataset.field]=el.value);essayDrafts[draftKey]=obj;writeLocal(essayStoreKey,essayDrafts);$("#essaySaved").textContent="Saved locally · "+new Date().toLocaleTimeString()};
  $("#essayTopic").onchange=saveEssay;
@@ -1440,6 +1484,7 @@ function speeches(){
  <div class="mut" id="speechSaved">Saved locally in this browser.</div></div>
  <div class="row no-print"><button class="pri" id="printSpeech">Print this speech plan</button><button id="clearSpeech">Clear this chapter's notes</button></div>
  </section>`;
+ attachVocabularyLinks(v.querySelector(".writing-wrap"));
  $("#speechChapter").onchange=e=>{speechCh=Number(e.target.value);speeches()};
  const saveSpeech=()=>{const obj={};v.querySelectorAll("[data-speech]").forEach(el=>obj[el.dataset.speech]=el.value);speechDrafts[speechKey]=obj;writeLocal(speechStoreKey,speechDrafts);$("#speechSaved").textContent="Saved locally · "+new Date().toLocaleTimeString()};
  v.querySelectorAll("[data-speech]").forEach(el=>el.addEventListener("input",saveSpeech));
