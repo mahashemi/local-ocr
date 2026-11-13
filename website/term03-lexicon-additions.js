@@ -1500,6 +1500,19 @@
  N(19,"N3-09","احساس و هیجان","ehsās-o heyajān","feelings and emotions","داستان می‌تواند احساس و هیجان خواننده را برانگیزد.","Dāstān mitavānad ehsās-o heyajān-e khānande rā barangizad.","A story can evoke the reader's feelings and emotions.","گروه اسمی — noun phrase");
  N(19,"N3-09","زبان شیرین","zabān-e shirin","sweet; pleasant language","فارسی زبان شیرینی است.","Fārsi zabān-e shirini ast.","Persian is a sweet and pleasant language.","گروه وصفی — adjective phrase");
 
+
+ // N3-10 first-page additions.
+ N(20,"N3-10","موضوع نوشته","mozoo'-e neveshte","writing topic; subject of a text","موضوع نوشته باید روشن و مشخص باشد.","Mozoo'-e neveshte bāyad rowshan-o moshakhkhas bāshad.","The topic of a piece of writing should be clear and specific.","گروه اسمی — noun phrase");
+ N(20,"N3-10","امکان تقسیم","emkān-e taqsim","possibility of division; ability to be divided","امکان تقسیم موضوع به چند بخش وجود دارد.","Emkān-e taqsim-e mozoo' be chand bakhsh vojud dārad.","The topic can be divided into several sections.","گروه اسمی — noun phrase");
+ N(20,"N3-10","مراکز اطلاع‌رسانی","marākez-e ettelā'-resāni","information centres","مراکز اطلاع‌رسانی منابع گوناگونی در اختیار پژوهشگران می‌گذارند.","Marākez-e ettelā'-resāni manābe'-e gonāguni dar ekhtiyār-e pazhuheshgarān migozārand.","Information centres provide researchers with various resources.","گروه اسمی — noun phrase");
+ N(20,"N3-10","ولایت فقیه","velāyat-e faqih","Guardianship of the Jurist (Islamic political-legal concept)","ولایت فقیه از مباحث مهم اندیشهٔ سیاسی شیعه است.","Velāyat-e faqih az mabāhes-e mohem-e andishe-ye siyāsi-ye Shi'e ast.","Guardianship of the Jurist is an important topic in Shi'a political thought.","اصطلاح دینی/سیاسی — religious/political term");
+ N(20,"N3-10","بیت‌المقدس","bayt al-maqdis","Bayt al-Maqdis; Jerusalem","بیت‌المقدس جایگاه مهمی در تاریخ ادیان دارد.","Bayt al-Maqdis jāygāh-e mohemmi dar tārikh-e adyān dārad.","Bayt al-Maqdis has an important place in the history of religions.","اسم خاص — proper noun");
+ N(20,"N3-10","فرایند نوشتن","farāyand-e neveshtan","writing process","فرایند نوشتن با انتخاب موضوع آغاز می‌شود.","Farāyand-e neveshtan bā entekhāb-e mozoo' āghāz mishavad.","The writing process begins with choosing a topic.","گروه اسمی — noun phrase");
+ N(20,"N3-10","استاد راهنما","ostād-e rāhnamā","academic supervisor; advisor","استاد راهنما دربارهٔ طرح تحقیق به دانشجو کمک می‌کند.","Ostād-e rāhnamā darbāre-ye tarh-e tahqiq be dāneshju komak mikonad.","The academic supervisor helps the student with the research proposal.","گروه اسمی — noun phrase");
+ N(20,"N3-10","سؤال اصلی","so'āl-e asli","main question; central research question","سؤال اصلی تحقیق باید دقیق باشد.","So'āl-e asli-ye tahqiq bāyad daqiq bāshad.","The main research question should be precise.","گروه اسمی — noun phrase");
+ N(20,"N3-10","سؤال‌های فرعی","so'āl-hā-ye far'i","secondary questions; subquestions","سؤال‌های فرعی به پاسخ دادن به سؤال اصلی کمک می‌کنند.","So'āl-hā-ye far'i be pāskh dādan be so'āl-e asli komak mikonand.","Subquestions help answer the main question.","گروه اسمی — noun phrase");
+ N(20,"N3-10","هدف و ضرورت نوشتن","hadaf-o zarurat-e neveshtan","purpose and necessity of writing","پیش از شروع تحقیق باید هدف و ضرورت نوشتن را مشخص کنیم.","Pish az shoru'-e tahqiq bāyad hadaf-o zarurat-e neveshtan rā moshakhkhas konim.","Before beginning research, we should identify the purpose and necessity of writing.","گروه اسمی — noun phrase");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
