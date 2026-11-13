@@ -1606,7 +1606,7 @@
  V(11,"FA3-11","بستگی داشتن","bastegi dāshtan","to depend; to be dependent on","مصرف آب به تعداد افراد خانواده بستگی دارد.","Masraf-e āb be tedād-e afrād-e khānevāde bastagi dārad.","Water consumption depends on the number of family members.","بستگی داشتن","—","بستگی داشتنِ نتیجه به تلاش گروه وابسته است.","Bastegi dāshtan-e natije be talāsh-e goruh vābaste ast.","The result depends on the group's effort.","—","—","—","ساختارِ داشتن در این معنا خبری است؛ امر مستقیم طبیعی ندارد.");
  N(11,"FA3-11","رشد صنعتی","roshd-e san'ati","industrial growth","رشد صنعتی به انرژی نیاز دارد.","Roshd-e san'ati be enerji niyāz dārad.","Industrial growth requires energy.","گروه اسمی — noun phrase");
  N(11,"FA3-11","کارواش","kārvāsh","car wash","ماشین را به کارواش بردم.","Māshin rā be kārvāsh bordam.","I took the car to the car wash.");
- N(11,"FA3-11","شلنگ","shilang","hose","با شلنگ باغچه را آب دادیم.","Bā shilang bāghche rā āb dād im.","We watered the garden with a hose.");
+ N(11,"FA3-11","شلنگ","shilang","hose","با شلنگ باغچه را آب دادیم.","Bā shilang bāghche rā āb dādim.","We watered the garden with a hose.");
  V(11,"FA3-11","عقب انداختن","aqab andākhtan","to postpone; to put off","جلسه را به دلیل باران عقب انداختند.","Jalase rā be dalil-e bārān aqab andākhtand.","They postponed the meeting because of the rain.","عقب انداختن","عقب نینداز","عقب انداختنِ کارها مشکل را بیشتر می‌کند.","Aqab andākhtan-e kārhā moshkel rā bishtar mikonad.","Putting tasks off makes the problem worse.","کار مهمت را عقب نینداز.","Kār-e mohemet rā aqab nayandāz.","Do not put off your important task.");
  V(11,"FA3-11","کاشتن","kāshtan","to plant; to sow","کشاورز در بهار گندم کاشت.","Keshāvarz dar bahār gandom kāsht.","The farmer planted wheat in spring.","کاشتن","بکار","کاشتن درخت به پاکیزگی هوا کمک می‌کند.","Kāshtan-e derakht be pākizegi-ye havā komak mikonad.","Planting trees helps keep the air clean.","در باغ یک درخت بکار.","Dar bāgh yek derakht bekār.","Plant a tree in the garden.");
  // FA3-12 first-page additions.
@@ -1617,8 +1617,8 @@
  N(12,"FA3-12","تفاله","tofāle","pulp; residue; dregs","تفالهٔ میوه را می‌توان برای کود استفاده کرد.","Tofāle-ye mive rā mitavān barāye kud estefāde kard.","Fruit pulp can be used for compost.");
  N(12,"FA3-12","ته‌مانده","tah-mānde","leftover; remainder","ته‌ماندهٔ غذا را در یخچال گذاشتیم.","Tah-mānde-ye ghazā rā dar yakhchāl gozāshtim.","We put the leftovers in the refrigerator.");
  // FA3-13 first-page additions.
- N(13,"FA3-13","نوک","nok","beak; tip; point","نوک پرنده تیز است.","Nok-e parandé tiz ast.","The bird's beak is sharp.");
- N(13,"FA3-13","پنجه","panje","paw; claw; talon","پنجهٔ شیر بسیار نیرومند است.","Panje-ye shir besyār niru mand ast.","The lion's paw is very powerful.");
+ N(13,"FA3-13","نوک","nok","beak; tip; point","نوک پرنده تیز است.","Nok-e parande tiz ast.","The bird's beak is sharp.");
+ N(13,"FA3-13","پنجه","panje","paw; claw; talon","پنجهٔ شیر بسیار نیرومند است.","Panje-ye shir besyār nirumand ast.","The lion's paw is very powerful.");
  N(13,"FA3-13","دندان نیش","dandān-e nish","fang; canine tooth","مار با دندان نیش خود زهر را وارد می‌کند.","Mār bā dandān-e nish-e khod zahr rā vāred mikonad.","A snake injects venom with its fangs.","گروه اسمی — noun phrase");
  A(13,"FA3-13","تکه‌پاره","tekke-pāre","torn into pieces; fragmented","لباس او تکه‌پاره شده بود.","Lebās-e u tekke-pāre shode bud.","His clothes were torn into pieces.");
  A(13,"FA3-13","آدم‌خوار","ādam-khār","cannibalistic; man-eating","در داستان افسانه‌ای از دیوی آدم‌خوار سخن می‌گفتند.","Dar dāstān-e afsāne-i az div-e ādam-khār sokhan migoftand.","The fairy tale spoke of a man-eating demon.");
