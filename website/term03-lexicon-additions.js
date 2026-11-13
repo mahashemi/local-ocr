@@ -1723,7 +1723,7 @@
  N(8,"N3-03","قرارداد جدید","gharārdād-e jadid","new contract","مستأجر و صاحبخانه قرارداد جدید امضا کردند.","Mostā'jer-o sāheb-khāne gharārdād-e jadid emzā kardand.","The tenant and landlord signed a new contract.","گروه اسمی — noun phrase");
  N(8,"N3-03","سرپناه","sarpanāh","shelter; place to live","هر خانواده به سرپناهی امن نیاز دارد.","Har khānevāde be sarpanāhi amn niyāz dārad.","Every family needs safe shelter.");
  N(8,"N3-03","تهیهٔ غذا","tahiyye-ye ghazā","food preparation","تهیهٔ غذا برای گروه بزرگی زمان می‌برد.","Tahiyye-ye ghazā barāye goruh-e bozorgi zamān mibarad.","Preparing food for a large group takes time.","گروه اسمی — noun phrase");
- N(8,"N3-03","سیاه‌چادر","siyāh-chāder","black tent (traditional nomadic tent)","عشایر در سیاه‌چادر زندگی می‌کنند.","Ashāyer dar siyāh-chāder zendegi mikonand.");
+ N(8,"N3-03","سیاه‌چادر","siyāh-chāder","black tent (traditional nomadic tent)","عشایر در سیاه‌چادر زندگی می‌کنند.","Ashāyer dar siyāh-chāder zendegi mikonand.","Nomadic families live in traditional black tents.");
  V(8,"N3-03","تغییر دادن","taghyir dādan","to change; to alter","آن‌ها تصمیم گرفتند محل زندگی خود را تغییر دهند.","Ānhā tasmim gereftand mahal-e zendegi-ye khod rā taghyir dahand.","They decided to change where they live.","تغییر دادن","تغییر بده","تغییر دادن عادت‌های نادرست زمان می‌برد.","Taghyir dādan-e ādat-hā-ye nādorost zamān mibarad.","Changing bad habits takes time.","برنامه‌ات را تغییر بده.","Barnāme-at rā taghyir bedeh.","Change your plan.");
  // N3-04 first-page additions.
  N(2,"N3-04","جامعهٔ امروز","jāme'e-ye emruz","today's society; modern society","جامعهٔ امروز با چالش‌های تازه روبه‌روست.","Jāme'e-ye emruz bā chālesh-hā-ye tāze ruberu ast.","Today's society faces new challenges.","گروه اسمی — noun phrase");
