@@ -2,6 +2,8 @@
 
 This document records the completion criteria for the Term 03 study set. The goal is to make Term 03 study-ready without repeated vocabulary-only maintenance passes.
 
+> **Inventory note (2026-11-13):** The numeric content inventory below is a snapshot from before the first-page vocabulary reconciliation. First-page vocabulary has since been expanded; do not treat the 939-row / 938-headword figures as current. See [`TERM03_FIRST_PAGE_AUDIT.md`](TERM03_FIRST_PAGE_AUDIT.md) for the latest 60-file first-page reconciliation and validation scope. Regenerate the runtime inventory with the deployment audit before publishing updated totals.
+
 ## Source inventory
 
 | Source family | Original files | Lexicon source IDs |
