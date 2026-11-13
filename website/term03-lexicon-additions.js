@@ -1718,7 +1718,7 @@
  N(8,"N3-03","مجتمع آپارتمانی","mojteme'-e āpārtemāni","apartment complex","این مجتمع آپارتمانی پارکینگ دارد.","In mojteme'-e āpārtemāni pārking dārad.","This apartment complex has parking.","گروه اسمی — noun phrase");
  N(8,"N3-03","هزینه‌های نظافت","hazinehā-ye nezāfat","cleaning costs","هزینه‌های نظافت میان ساکنان تقسیم می‌شود.","Hazinehā-ye nezāfat miyān-e sākenān taqsim mishavad.","Cleaning costs are divided among residents.","گروه اسمی — noun phrase");
  N(8,"N3-03","محوطه","mohute","grounds; courtyard; surrounding area","کودکان در محوطهٔ ساختمان بازی می‌کنند.","Kudakān dar mohute-ye sāxtemān bāzi mikonand.","Children play in the building's courtyard.");
- N(8,"N3-03","راهرو","rāhro","corridor; hallway","راهرو باید همیشه tamiz باشد.","Rāhرو bāyad hamishe tamiz bāshad.","The hallway should always be clean.");
+ N(8,"N3-03","راهرو","rāhro","corridor; hallway","راهرو باید همیشه tamiz باشد.","Rāhro bāyad hamishe tamiz bāshad.","The hallway should always be clean.");
  N(8,"N3-03","حسابدار","hesābdār","accountant","حسابدار هزینه‌های ساختمان را ثبت می‌کند.","Hesābdār hazinehā-ye sāxtemān rā sabt mikonad.","The accountant records the building's expenses.");
  N(8,"N3-03","قرارداد جدید","gharārdād-e jadid","new contract","مستأجر و صاحبخانه قرارداد جدید امضا کردند.","Mostā'jer-o sāheb-khāne gharārdād-e jadid emzā kardand.","The tenant and landlord signed a new contract.","گروه اسمی — noun phrase");
  N(8,"N3-03","سرپناه","sarpanāh","shelter; place to live","هر خانواده به سرپناهی امن نیاز دارد.","Har khānevāde be sarpanāhi amn niyāz dārad.","Every family needs safe shelter.");
@@ -1789,11 +1789,11 @@
  N(14,"KH3-14","معبد","ma'bad","temple","معبد باستانی در مرکز شهر قرار دارد.","Ma'bad-e bāstāni dar markaz-e shahr qarār dārad.","The ancient temple is in the city centre.");
  N(14,"KH3-14","صنایع","sanāye'","industries; crafts","صنایع دستی این منطقه مشهور است.","Sanāye'-e dasti-ye in manteqe mashhur ast.","The handicrafts of this region are famous.");
  N(14,"KH3-14","تغییرات سیاسی","taghyirāt-e siyāsi","political changes","تغییرات سیاسی بر زندگی مردم اثر می‌گذارد.","Taghyirāt-e siyāsi bar zendegi-ye mardom asar migozārad.","Political changes affect people's lives.","گروه اسمی — noun phrase");
- N(14,"KH3-14","حمل و نقل","haml-o-naql","transportation; transport","حمل و نقل عمومی در شهر گسترش یافته است.","Haml-o-naql-e omumi dar shahr gostаresh yāfte ast.","Public transportation has expanded in the city.","گروه اسمی — noun phrase");
+ N(14,"KH3-14","حمل و نقل","haml-o-naql","transportation; transport","حمل و نقل عمومی در شهر گسترش یافته است.","Haml-o-naql-e omumi dar shahr gostaresh yāfte ast.","Public transportation has expanded in the city.","گروه اسمی — noun phrase");
  // KH3-15 first-page additions.
  N(15,"KH3-15","اعیاد","a'yād","festivals; religious holidays","در اعیاد مردم به دیدار یکدیگر می‌روند.","Dar a'yād mardom be didār-e yekdigar miravand.","During festivals, people visit one another.");
  N(15,"KH3-15","توفان","tufān","storm; tempest","توفان به درختان آسیب زد.","Tufān be derakhtān āsib zad.","The storm damaged the trees.");
- N(15,"KH3-15","باتری","bāteri","battery","باتری چراغ‌قوه تمام شده است.","Bāteri-ye cherāgh-qوه tamām shode ast.","The flashlight battery is dead.");
+ N(15,"KH3-15","باتری","bāteri","battery","باتری چراغ‌قوه تمام شده است.","Bāteri-ye cherāgh-qovve tamām shode ast.","The flashlight battery is dead.");
  N(15,"KH3-15","بلور","bolur","crystal; glass crystal","ظرف بلور را با دقت شست.","Zarf-e bolur rā bā deqqat shost.","He washed the crystal dish carefully.");
  N(15,"KH3-15","نعلبکی","na'albaki","saucer","فنجان چای را روی نعلبکی گذاشت.","Fen jān-e chāy rā ru-ye na'albaki gozāsht.","He put the teacup on the saucer.");
  A(15,"KH3-15","غلیظ","ghaliz","thick; strong (liquid)","چای غلیظ دوست دارد.","Chāy-e ghaliz dust dārad.","He likes strong tea.");
