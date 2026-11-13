@@ -2206,7 +2206,7 @@
  N(20,"N3-10","ایران","irān","Iran","دانشجویان از شهرهای مختلف ایران به دانشگاه می‌آیند.","Dāneshju-yān az shahrhā-ye mokhtalef-e Irān be dāneshgāh miāyand.","Students come to the university from different cities in Iran.");
  N(20,"N3-10","مردم","mardom","people; the public","مردم از آموزش باکیفیت سود می‌برند.","Mardom az āmuzesh-e bākeyfiyat sud mibarand.","People benefit from high-quality education.");
  N(20,"N3-10","کار","kār","work; task","تقسیم کار به بخش‌های کوچک انجام آن را آسان می‌کند.","Taqsim-e kār be bakhshhā-ye kuchak anjām-e ān rā āsān mikonad.","Breaking work into small parts makes it easier to complete.");
- N(20,"N3-10","خوب","khub","good; well","یک متن خوب روشن و منسجم است.","Yek matn-e khub roshan va monazzam ast.","A good text is clear and coherent.");
+ N(20,"N3-10","خوب","khub","good; well","یک متن خوب روشن و منسجم است.","Yek matn-e khub roshan va monasajem ast.","A good text is clear and coherent.");
  N(20,"N3-10","زبان","zabān","language; tongue","زبان دقیق به انتقال بهتر اندیشه کمک می‌کند.","Zabān-e daqiq be enteqāl-e behtar-e andishe komak mikonad.","Precise language helps communicate ideas.");
  N(20,"N3-10","فارسی","fārsi","Persian; Farsi","دانشجو هر روز فارسی تمرین می‌کند.","Dāneshju har ruz fārsi tamrin mikonad.","The student practises Persian every day.");
  N(20,"N3-10","اینجا","injā","here","اینجا محل مناسبی برای مطالعه است.","Injā mahall-e monāsebi barāye motāle'e ast.","This is a suitable place to study.");
@@ -2289,7 +2289,7 @@
  N(5,"N3-05","جمع","jam'","plural; group; sum","در دستور زبان، جمع به بیش از یک نفر یا چیز اشاره می‌کند.","Dar dastur-e zabān jam' be bish az yek nafar yā chiz eshāre mikonad.","In grammar, the plural refers to more than one person or thing.");
  N(5,"N3-05","ویژگی","vizhegi","feature; characteristic","هر متن ویژگی‌های مخصوص به خود را دارد.","Har matn vizhegi-hā-ye makhsus be khod rā dārad.","Every text has its own features.");
  N(5,"N3-05","منظور","manzur","intention; meaning","منظور نویسنده را از متن پیدا کنید.","Manzur-e nevisande rā az matn peydā konid.","Identify the writer's intention in the text.");
- N(6,"N3-06","اینترنتی","internet i","online; internet-based","خرید اینترنتی باید از فروشگاه معتبر انجام شود.","Kharid-e interneti bāyad az forushgāh-e mo'tabar anjām shavad.","Online shopping should be done through a reliable store.");
+ N(6,"N3-06","اینترنتی","interneti","online; internet-based","خرید اینترنتی باید از فروشگاه معتبر انجام شود.","Kharid-e interneti bāyad az forushgāh-e mo'tabar anjām shavad.","Online shopping should be done through a reliable store.");
  N(6,"N3-06","چکیده","chokide","abstract; summary","چکیده هدف و یافته‌های تحقیق را خلاصه می‌کند.","Chokide hadaf va yāftehā-ye tahqiq rā kholāse mikonad.","The abstract summarises the aim and findings of research.");
  N(6,"N3-06","داستان","dāstān","story; tale","داستان خوب شخصیت و رویدادهای روشن دارد.","Dāstān-e khub shakhsiyat va roydādhā-ye roshan dārad.","A good story has clear characters and events.");
  N(6,"N3-06","امتحان","emtehān","exam; test","برای امتحان باید از پیش برنامه‌ریزی کرد.","Barāye emtehān bāyad az pish barnāme-rizi kard.","One should plan ahead for an exam.");
@@ -2321,7 +2321,7 @@
  N(1,"SH3-01","تأخیر","ta'khir","delay","پرواز به دلیل شرایط آب‌وهوا با تأخیر انجام شد.","Parvāz be dalil-e sharāyet-e āb-o-havā bā ta'khir anjām shod.","The flight was delayed because of weather conditions.");
  N(1,"SH3-01","دوره","dowre","period; course","این دوره برای تقویت گفتار طراحی شده است.","In dowre barāye taqviyat-e goftār tarāhi shode ast.","This course is designed to strengthen speaking.");
  N(2,"SH3-02","رانندگی","rānandegi","driving","رانندگی ایمن به دقت و تمرکز نیاز دارد.","Rānandegi-ye imen be deqqat va tamarkoz niyāz dārad.","Safe driving requires care and concentration.");
- N(2,"SH3-02","بلیت","belit","ticket","بلیت قطار را از پیش تهیه کردیم.","Belit-e qatār rā az pish tahیه kardim.","We bought the train ticket in advance.");
+ N(2,"SH3-02","بلیت","belit","ticket","بلیت قطار را از پیش تهیه کردیم.","Belit-e qatār rā az pish tahye kardim.","We bought the train ticket in advance.");
  N(2,"SH3-02","حمل","haml","transport; carrying","حمل بار سنگین هزینهٔ جداگانه دارد.","Haml-e bār-e sangin hazine-ye jodāgāne dārad.","Transporting heavy luggage has an additional fee.");
  N(2,"SH3-02","تبدیل","tabdil","conversion; change","تبدیل پول را در صرافی معتبر انجام دهید.","Tabdil-e pul rā dar sarāfi-ye mo'tabar anjām dahid.","Exchange money at a reputable exchange office.");
  N(2,"SH3-02","فضا","fazā","space; atmosphere","فضای فرودگاه در ساعت‌های شلوغ پررفت‌وآمد است.","Fazā-ye forudgāh dar sā'at-hā-ye sholugh porraft-o-āmad ast.","The airport is busy during peak hours.");
@@ -2346,7 +2346,7 @@
  N(5,"SH3-05","اضافه","ezāfe","extra; addition","نمک اضافه به غذا نریزید.","Namak-e ezāfe be ghazā narizid.","Do not add extra salt to the food.");
  N(5,"SH3-05","کافی","kāfi","enough; sufficient","خواب کافی برای سلامت لازم است.","Khab-e kāfi barāye salāmat lāzem ast.","Enough sleep is necessary for health.");
  N(5,"SH3-05","مختلف","mokhtalef","different; various","مردم سلیقه‌های غذایی مختلفی دارند.","Mardom saliqehā-ye ghazāyi-ye mokhtalefi dārand.","People have different food preferences.");
- N(5,"SH3-05","حرف","harf","letter; speech","حرف آخر واژه را درست تلفظ کنید.","Harf-e ākhar-e vāzhe rā dorost تلفظ konid.","Pronounce the final letter of the word correctly.");
+ N(5,"SH3-05","حرف","harf","letter; speech","حرف آخر واژه را درست تلفظ کنید.","Harf-e ākhar-e vāzhe rā dorost talaffoz konid.","Pronounce the final letter of the word correctly.");
  N(6,"SH3-06","کیفیت","keyfiyat","quality","کیفیت غذا به مواد اولیه بستگی دارد.","Keyfiyat-e ghazā be mavādd-e avvaliye bastagi dārad.","Food quality depends on the ingredients.");
  N(7,"SH3-07","تماس","tamās","contact; call","برای تأیید زمان با مسئول تماس بگیرید.","Barāye ta'yid-e zamān bā mas'ul tamās begirid.","Contact the person in charge to confirm the time.");
  N(7,"SH3-07","مستمر","mostamer","continuous; ongoing","تمرین مستمر مهارت گفتاری را تقویت می‌کند.","Tamrin-e mostamer mahārat-e goftāri rā taqviyat mikonad.","Consistent practice strengthens speaking skills.");
