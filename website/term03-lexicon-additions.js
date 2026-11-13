@@ -1402,6 +1402,35 @@
  N(10,"FA3-10","مؤلفه","mo'allefe","component; element","قانون چند مؤلفهٔ مهم دارد.","Qānun chand mo'allefe-ye mohem dārad.","The law has several important components.");
  A(10,"FA3-10","لباس پوشیده","lebās-e pushide","modest; covered clothing","در این مکان باید لباس پوشیده و مناسب بپوشیم.","Dar in makān bāyad lebās-e pushide-o monāseb bepushim.","In this place we should wear modest and appropriate clothing.","گروه وصفی — adjective phrase");
 
+
+ // KH3-03 to KH3-07 first-page vocabulary additions.
+ N(3,"KH3-03","آمار","āmār","statistics; figures","آمار جمعیت هر سال تغییر می‌کند.","Āmār-e jam'iyat har sāl taghyir mikonad.","Population statistics change every year.");
+ N(3,"KH3-03","طبقه‌بندی","tabaqe-bandi","classification; categorisation","طبقه‌بندی اطلاعات پیدا کردن آن‌ها را آسان می‌کند.","Tabaqe-bandi-ye ettelā'āt peydā kardan-e ānhā rā āsān mikonad.","Classifying information makes it easier to find.");
+ N(3,"KH3-03","پیش‌بینی","pish-bini","prediction; forecast","پیش‌بینی آب‌وهوا همیشه دقیق نیست.","Pish-bini-ye āb-o-havā hamishe daqiq nist.","Weather forecasts are not always accurate.");
+ N(3,"KH3-03","کلاس هنری","kelās-e honari","art class","فرزندم هفته‌ای دو بار به کلاس هنری می‌رود.","Farzandam hafte-i do bār be kelās-e honari miravad.","My child goes to an art class twice a week.","گروه اسمی — noun phrase");
+ N(4,"KH3-04","تفنگ","tofang","rifle; gun","تفنگ در موزهٔ تاریخی نگهداری می‌شود.","Tofang dar muze-ye tārikhi negahdāri mishavad.","The rifle is kept in the history museum.");
+ N(4,"KH3-04","دوقلو","do-qolu","twin","دو برادر دوقلو هستند.","Do barādar do-qolu hastand.","The two brothers are twins.","اسم/صفت — noun/adjective");
+ N(4,"KH3-04","اسلحه","aslehe","weapon; firearm","نگهداری اسلحه تابع قانون است.","Negahdāri-ye aslehe tābe'-e qānun ast.","Possessing a weapon is subject to the law.");
+ A(5,"KH3-05","دست‌یافتنی","dast-yāftani","attainable; achievable","با تلاش، هدف‌های دشوار هم دست‌یافتنی می‌شوند.","Bā talāsh, hadaf-hā-ye doshvār ham dast-yāftani mishavand.","With effort, even difficult goals become achievable.");
+ A(5,"KH3-05","قوی‌تر","qavi-tar","stronger","تمرین منظم بدن را قوی‌تر می‌کند.","Tamrin-e monazzam badan rā qavi-tar mikonad.","Regular exercise makes the body stronger.");
+ A(5,"KH3-05","بیچاره","bichāre","poor; unfortunate; helpless","مرد بیچاره به کمک نیاز داشت.","Mard-e bichāre be komak niyāz dāsht.","The unfortunate man needed help.");
+ N(5,"KH3-05","تخت روان","takht-e ravān","palanquin; portable litter","در گذشته گاهی بزرگان را با تخت روان جابه‌جا می‌کردند.","Dar gozashte gāhi bozorgān rā bā takht-e ravān jā-be-jā mikardand.","In the past, dignitaries were sometimes carried in a palanquin.","گروه اسمی — noun phrase");
+ N(5,"KH3-05","قربان","qorbān","a respectful or affectionate form of address; at your service","در گفتار روزمره، «قربان» گاهی برای احترام به کار می‌رود.","Dar goftār-e ruzmarre, qorbān gāhi barāye ehterām be kār miravad.","In everyday speech, qorbān is sometimes used as a respectful expression.","عبارت تعارف — polite expression");
+ N(5,"KH3-05","سر ظهر","sar-e zohr","around noon","سر ظهر هوا گرم‌تر می‌شود.","Sar-e zohr havā garm-tar mishavad.","Around noon, the weather gets hotter.","عبارت زمانی — time expression");
+ A(5,"KH3-05","نابجا","nā-bejā","inappropriate; out of place","شوخی نابجا ممکن است دیگران را ناراحت کند.","Shukhi-ye nā-bejā momken ast digarān rā nārāhat konad.","An inappropriate joke may upset others.");
+ V(5,"KH3-05","ترک کردن","tark kardan","to leave; to abandon; to quit","او شهر خود را ترک کرد.","U shahr-e khod rā tark kard.","He left his city.","ترک کردن","ترک نکن","ترک کردن تحصیل می‌تواند آینده را دشوار کند.","Tark kardan-e tahsil mitavānad āyande rā doshvār konad.","Leaving school can make the future more difficult.","مدرسه را ترک نکن.","Madrese rā tark nakon.","Do not leave school.");
+ V(6,"KH3-06","باز کردن حساب","bāz kardan-e hesāb","to open an account","برای دریافت حقوق در بانک حساب باز کردم.","Barāye daryāft-e hoquq dar bānk hesāb bāz kardam.","I opened a bank account to receive my salary.","باز کردن حساب","حساب باز کن","باز کردن حساب بانکی به مدارک نیاز دارد.","Bāz kardan-e hesāb-e bānki be madārek niyāz dārad.","Opening a bank account requires documents.","در بانک حساب باز کن.","Dar bānk hesāb bāz kon.","Open an account at the bank.");
+ A(6,"KH3-06","اهلی","ahli","domesticated; tame","اسب اهلی به انسان عادت دارد.","Asb-e ahli be ensān ādat dārad.","A domesticated horse is accustomed to people.");
+ N(6,"KH3-06","وظایف","vazāyef","duties; responsibilities","وظایف کارمند بانک مشخص است.","Vazāyef-e kārmand-e bānk moshakhkhas ast.","The bank employee's duties are clear.");
+ N(7,"KH3-07","مردان خدا","mardān-e khodā","men of God; devout men","مردان خدا مردم را به نیکی دعوت می‌کنند.","Mardān-e khodā mardom rā be neki da'vat mikonand.","Devout men invite people to goodness.","گروه اسمی — noun phrase");
+ N(7,"KH3-07","مقام","maqām","rank; status; position","مقام انسان به اخلاق او وابسته است.","Maqām-e ensān be akhlāq-e u vābaste ast.","A person's standing depends on their character.");
+ N(7,"KH3-07","روز قیامت","ruz-e qiyāmat","the Day of Judgment","در باور اسلامی، روز قیامت روز حسابرسی است.","Dar bāvar-e eslāmi, ruz-e qiyāmat ruz-e hesābresist.","In Islamic belief, the Day of Judgment is the day of reckoning.","گروه اسمی — noun phrase");
+ N(7,"KH3-07","مهرماه","mehr-māh","the month of Mehr in the Iranian calendar","مدرسه‌ها معمولاً در مهرماه باز می‌شوند.","Madresehā ma'mulan dar mehr-māh bāz mishavand.","Schools usually open in the month of Mehr.");
+ V(7,"KH3-07","خفتن","khoftan","to sleep; to lie down (literary)","کودک پس از شنیدن قصه خفت.","Kudak pas az shenidan-e qesse khoft.","The child slept after hearing the story.","خفتن","—","خفتن در این کاربرد واژه‌ای ادبی برای خوابیدن است.","Khoftan dar in کاربرد vāzhe-i adabi barāye khābidan ast.","In this usage, khoftan is a literary word for sleeping.","—","—","—","فعل ادبی و لازم است؛ امر مستقیم امروزی ندارد.");
+ V(7,"KH3-07","پژوهیدن","pazhuHidan","to research; to investigate (literary)","پژوهیدن دربارهٔ تاریخ به منابع معتبر نیاز دارد.","Pazhuhidan darbāre-ye tārikh be manābe'-e mo'tabar niyāz dārad.","Researching history requires reliable sources.","پژوهیدن","—","پژوهیدنِ گذشته به دقت و صبر نیاز دارد.","Pazhuhidan-e gozashte be deqqat-o sabr niyāz dārad.","Investigating the past requires care and patience.","—","—","—","فعل ادبی است؛ امر مستقیم رایج ندارد.");
+ N(7,"KH3-07","پیشینیان","pishiniyān","ancestors; predecessors","پیشینیان تجربه‌های ارزشمندی برای ما به جا گذاشتند.","Pishiniyān tajrobehā-ye arzeshmandi barāye mā be jā gozāshtand.","Our predecessors left valuable experiences for us.");
+ N(7,"KH3-07","زیر و بالا","zir-o-bālā","ups and downs; highs and lows","زندگی همیشه زیر و بالا دارد.","Zendegi hamishe zir-o-bālā dārad.","Life always has ups and downs.","عبارت — expression");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
