@@ -123,6 +123,32 @@ main{max-width:1120px;padding:28px 24px 16px}.site-head{margin-bottom:26px}.bran
 .writing-wrap .kh-word{font-size:inherit;line-height:inherit;padding:0 2px;border-radius:3px;background:color-mix(in srgb,var(--soft) 45%,transparent)}
 .writing-wrap .kh-word:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .writing-wrap .kh-word:hover{background:var(--soft)}
+
+/* Persian learning typography: graceful Naskh/Vazirmatn fallbacks, tuned for long-form reading. */
+:root{--fa-reading-font:"Vazirmatn","Noto Naskh Arabic UI","Noto Naskh Arabic","Geeza Pro","Noto Sans Arabic",Tahoma,sans-serif}
+.fa,.writing-wrap .fa-block,.writing-wrap .khulasa-lines,.writing-wrap textarea{
+ font-family:var(--fa-reading-font);font-weight:450;font-kerning:normal;
+ font-feature-settings:"kern","liga","calt";text-rendering:optimizeLegibility
+}
+.writing-wrap .fa-block{font-size:clamp(1.08rem,1.45vw,1.24rem);line-height:2.2;letter-spacing:0}
+.writing-wrap .model-sample{font-size:1.2rem;line-height:2.25;padding:16px 18px;background:linear-gradient(135deg,rgba(39,102,91,.045),transparent);border-right:3px solid var(--gold);border-radius:10px}
+.writing-wrap .khulasa-lines{font-size:clamp(1.08rem,1.45vw,1.22rem);line-height:2.25;padding-right:25px}
+.writing-wrap .khulasa-lines li{padding:10px 12px;margin:7px 0;border-right:2px solid rgba(39,102,91,.18);border-radius:10px;background:rgba(39,102,91,.025)}
+.newestan-example{border-color:rgba(189,149,80,.42)!important;background:linear-gradient(145deg,rgba(189,149,80,.055),var(--card) 42%)!important}
+.newestan-example h3{color:var(--ink);line-height:1.7}
+.newestan-example .newestan-part{padding:12px 14px;margin:12px 0;border:1px solid var(--bd);border-radius:12px;background:rgba(255,255,255,.32)}
+.newestan-example .newestan-part>b{color:var(--ac);font-size:13px}
+.newestan-example .fa-block{margin:8px 0 0}
+.newestan-example .newestan-support{padding-right:25px}
+.newestan-example .newestan-support li{padding:5px 0;line-height:2.15}
+.newestan-example .newestan-vocabulary{font-size:1.06rem;line-height:2.5}
+.writing-wrap textarea{line-height:1.95}
+@media(max-width:600px){
+ .writing-wrap .fa-block{font-size:1.08rem;line-height:2.15}
+ .writing-wrap .model-sample{font-size:1.1rem;line-height:2.2;padding:12px}
+ .writing-wrap .khulasa-lines{font-size:1.08rem;padding-right:20px}
+ .newestan-example .newestan-part{padding:10px}
+}
 </style></head>
 <body><main>
 <div class="bismillah-wrap"><img src="bismillah_text_green.png" alt="بسم الله الرحمن الرحیم" class="bismillah-image"><div class="bismillah-rule"><span>✦</span></div></div>
@@ -1320,11 +1346,25 @@ function add(){
 
 
 
+/* Index common Persian plural forms so inflected nouns open their base flashcard. */
+function addVocabularyForms(index,item){
+ const key=fold(item.fa);if(!key)return;
+ index.set(key,item);
+ if(String(item.fa).trim().split(/\s+/).length===1){
+  ["ها","های","هایی","ان","گان","یان"].forEach(suffix=>{
+   const variant=key+fold(suffix);if(!index.has(variant))index.set(variant,item);
+  });
+ }
+ const irregular={"منابع":"منبع","آثار":"اثر","حقوق":"حق","شرایط":"شرط","عوامل":"عامل","روابط":"رابطه","رسوم":"رسم","افراد":"فرد","حیوانات":"حیوان","موضوعات":"موضوع","نکات":"نکته","مراحل":"مرحله","اخبار":"خبر","امور":"امر","آداب":"ادب","اشعار":"شعر"};
+ const base=irregular[String(item.fa).trim()];
+ if(base){const variant=fold(base);if(!index.has(variant))index.set(variant,item);}
+}
+
 /* Link Persian vocabulary in writing and speaking guidance to the shared flashcard. */
 function attachVocabularyLinks(scope){
  const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>String(b.fa).trim().split(/\s+/).length-String(a.fa).trim().split(/\s+/).length||String(b.fa).length-String(a.fa).length);
  const index=new Map();let maxWords=1;
- entries.forEach(i=>{const key=fold(i.fa);if(key&&!index.has(key))index.set(key,i);maxWords=Math.max(maxWords,String(i.fa).trim().split(/\s+/).length)});
+ entries.forEach(i=>{addVocabularyForms(index,i);maxWords=Math.max(maxWords,String(i.fa).trim().split(/\s+/).length)});
  const walker=document.createTreeWalker(scope,NodeFilter.SHOW_TEXT,{acceptNode(node){
   const p=node.parentElement;
   if(!p||!/[\u0600-\u06ff]/.test(node.nodeValue)||p.closest('textarea,input,button,a,script,style,select,.kh-word,.kh-word-modal'))return NodeFilter.FILTER_REJECT;
@@ -1404,7 +1444,7 @@ function khulasa(){
  const words=all().filter(i=>i.fa&&i.en).sort((a,b)=>(a.bk===term?0:1)-(b.bk===term?0:1));
  const cleanKh=t=>fold(String(t).replace(/[،؛؟۔,.;:!?«»()[\\]{}…]/g,''));
  const wordIndex=new Map();
- words.forEach(i=>{const k=cleanKh(i.fa);if(k&&!wordIndex.has(k))wordIndex.set(k,i)});
+ words.forEach(i=>{addVocabularyForms(wordIndex,i)});
  const maxWords=Math.max(1,...words.map(i=>String(i.fa).trim().split(/\s+/).length));
  function linkLine(line){
   const parts=String(line).split(/(\s+)/),out=[];
@@ -1454,6 +1494,7 @@ function essays(){
  const data=activeTerm===2?(window.TERM2_WRITING||window.TERM3_WRITING):window.TERM3_WRITING, item=data.chapters.find(x=>x.ch===essayCh)||data.chapters[0], saved=essayDrafts[activeTerm===2?'t2-'+essayCh:essayCh]||{};
  const topic=saved.topic||"main";
  const topics=[["main",item.topic],["alternate",item.alternate]];
+ const newestanExample=activeTerm===3?window.TERM3_NEWESTAN_EXAMPLE:null;
  v.innerHTML=`<section class="writing-wrap">
  <div class="no-print"><div class="mut">Term 0${activeTerm||3} · Term-linked writing practice</div><h2>Essay writing workshop</h2>
  <p>Work through the chapter skill, plan your response, write a complete draft and print a clean practice sheet. Your work is saved only in this browser.</p>
@@ -1465,6 +1506,16 @@ function essays(){
  <details><summary><b>Writing hints and useful expressions</b></summary><div class="dc"><ul class="hint-list">${item.hints.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></details>
  <details><summary><b>Suggested essay structure</b></summary><div class="dc"><ol>${item.outline.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></div></details>
  <details><summary><b>Developed model response · نمونهٔ توسعه‌یافته</b></summary><div class="dc fa-block model-sample">${item.sample?esc(item.sample):"A developed sample for this chapter is being prepared. Use the outline above to build your own response."}</div></details>
+ ${newestanExample ? `<article class="panel newestan-example">
+ <div class="mut">NEWESTAN · DARS 01 · N3-01</div>
+ <h3>${esc(newestanExample.title)}</h3>
+ <p class="mut">${esc(newestanExample.skill)}</p>
+ <div class="newestan-part"><b>۱. جملهٔ موضوع / Topic sentence</b><p class="fa-block">${esc(newestanExample.topicSentence)}</p></div>
+ <div class="newestan-part"><b>۲. جمله‌های پشتیبان / Supporting sentences</b><ol class="newestan-support">${newestanExample.supportingSentences.map(x=>`<li class="fa-block">${esc(x)}</li>`).join("")}</ol></div>
+ <div class="newestan-part"><b>۳. جملهٔ پایانی / Concluding sentence</b><p class="fa-block">${esc(newestanExample.concludingSentence)}</p></div>
+ <details><summary><b>متن کامل نمونه / Complete model paragraph</b></summary><div class="dc fa-block model-sample">${esc(newestanExample.sample)}</div></details>
+ <div class="newestan-part"><b>واژگان درس اول / Dars 01 vocabulary</b><p class="fa-block newestan-vocabulary">${newestanExample.vocabulary.map(x=>esc(x)).join(" · ")}</p></div>
+ </article>` : ""}
  <details><summary><b>20-point assessment rubric from the OCR</b></summary><div class="dc">${data.rubric.map(x=>`<div class="rubric-row"><b>${esc(x.name)} · ${x.points}/20</b><span>${x.points} points</span><div style="grid-column:1/-1" class="mut">${esc(x.detail)}</div></div>`).join("")}<p><b>Total: 20 points.</b> The OCR's descriptive bands show: عالی ۱۹–۲۰; خیلی خوب ۱۷–۱۸; خوب ۱۴–۱۶; متوسط ۱۱–۱۳; تلاش بیشتر ۰–۱۰. The printed scale is slightly damaged by OCR, so these bands are transcribed cautiously.</p></div></details>
  </div>
  <div class="panel">
