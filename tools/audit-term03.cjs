@@ -125,27 +125,32 @@ const coveredWord = word => {
   }
   return false;
 };
-const candidates = new Map();
-const recordCoverageText = (text, source) => {
+const sourceCandidates = new Map();
+const visibleCandidates = new Map();
+const recordCoverageText = (bucket, text, source) => {
   for (const token of String(text).match(/[\u0621-\u064a\u066e-\u06d3\u06ee-\u06fc\u06ff]+(?:‌[\u0621-\u064a\u066e-\u06d3\u06ee-\u06fc\u06ff]+)*/g) || []) {
     const word = normalizeFa(token);
     if (word.length < 3 || coveredWord(word)) continue;
-    const item = candidates.get(word) || { word, count: 0, sources: new Set() };
-    item.count += 1; item.sources.add(source); candidates.set(word, item);
+    const item = bucket.get(word) || { word, count: 0, sources: new Set() };
+    item.count += 1; item.sources.add(source); bucket.set(word, item);
   }
 };
 const writingSourceFiles = studyFiles.filter(name => /^T3_(N3-|SH3_)/.test(name));
-for (const name of writingSourceFiles) recordCoverageText(fs.readFileSync(path.join(studyDir, name), "utf8"), name);
+for (const name of writingSourceFiles) recordCoverageText(sourceCandidates, fs.readFileSync(path.join(studyDir, name), "utf8"), name);
 for (const [name, value] of [["Khulasa", global.TERM3_KHULASA], ["Sukhanrani", global.TERM3_SPEECHES], ["Newestan model", global.TERM3_NEWESTAN_EXAMPLE]]) {
-  recordCoverageText(JSON.stringify(value), name);
+  recordCoverageText(visibleCandidates, JSON.stringify(value), name);
 }
-const unmatchedCandidates = [...candidates.values()]
+const rankCandidates = bucket => [...bucket.values()]
   .map(x => ({ word: x.word, count: x.count, sources: [...x.sources].slice(0, 3) }))
   .sort((a, b) => b.count - a.count || a.word.localeCompare(b.word, "fa"));
+const unmatchedSourceCandidates = rankCandidates(sourceCandidates);
+const unmatchedVisibleCandidates = rankCandidates(visibleCandidates);
 console.log("Term 03 writing vocabulary coverage triage:", JSON.stringify({
   sourceDarsScanned: writingSourceFiles.length,
-  unmatchedUniqueCandidates: unmatchedCandidates.length,
-  topUnmatchedCandidates: unmatchedCandidates.slice(0, 100)
+  unmatchedUniqueSourceCandidates: unmatchedSourceCandidates.length,
+  topUnmatchedSourceCandidates: unmatchedSourceCandidates.slice(0, 80),
+  unmatchedUniqueVisibleCandidates: unmatchedVisibleCandidates.length,
+  topUnmatchedVisibleCandidates: unmatchedVisibleCandidates.slice(0, 80)
 }, null, 2));
 
 console.log(JSON.stringify({ total: entries.length, sources: sourceCounts, verifiedVerbs: entries.filter(x => /فعل|اصطلاح فعلی/.test(x.pos)).length, chapterSummaries: Object.keys(global.TERM3_UNIT_META).length, khulasaSummaries: global.TERM3_KHULASA.length, writingPrompts: global.TERM3_WRITING.chapters.length, speechPrompts: global.TERM3_SPEECHES.length, sourceChapters: expectedSources.length, sourceFiles: studyFiles.length }, null, 2));
