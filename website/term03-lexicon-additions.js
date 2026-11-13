@@ -1833,7 +1833,7 @@
 
 
  // KH3-19 first-page additions.
- N(19,"KH3-19","صله رحم","seley-e rahm","maintaining family ties; visiting relatives","صله رحم در فرهنگ اسلامی اهمیت زیادی دارد.","Seley-e rahm dar farhang-e eslāmi ahammiyat-e ziyādi dārad.","Maintaining family ties is very important in Islamic culture.","گروه اسمی — noun phrase");
+ N(19,"KH3-19","صله رحم","sile-ye rahm","maintaining family ties; visiting relatives","صله رحم در فرهنگ اسلامی اهمیت زیادی دارد.","Seley-e rahm dar farhang-e eslāmi ahammiyat-e ziyādi dārad.","Maintaining family ties is very important in Islamic culture.","گروه اسمی — noun phrase");
  N(19,"KH3-19","کماج","komāj","komaj; traditional sweet bread","برای مهمانان کماج تازه خریدیم.","Barāye mehmānān komāj-e tāze kharidim.","We bought fresh komaj for the guests.");
  N(19,"KH3-19","حلوا ارده","halvā-ye arde","halva made with sesame paste","حلوا ارده را معمولاً با نان می‌خورند.","Halvā-ye arde rā ma'mulan bā nān mikhorand.","Halva made with sesame paste is usually eaten with bread.");
  N(19,"KH3-19","هگمتانه","Hegmatāne","Ecbatana; ancient name of Hamadan","هگمتانه از شهرهای مهم ایران باستان بود.","Hegmatāne az shahrhā-ye mohem-e Irān-e bāstān bud.","Ecbatana was an important city in ancient Iran.","اسم خاص — proper noun");
@@ -1841,7 +1841,7 @@
  N(19,"KH3-19","انگشت‌پیچ","angosht-pich","traditional sweet; thick confection","انگشت‌پیچ از شیرینی‌های سنتی همدان است.","Angosht-pich az shirini-hā-ye sonnati-ye Hamadān ast.","Angosht-pich is a traditional sweet from Hamadan.");
  N(19,"KH3-19","شقایق","shaqāyeq","poppy; poppy flower","شقایق‌های سرخ در دشت روییده‌اند.","Shaqāyeq-hā-ye sorkh dar dasht ruide-and.","Red poppies have grown in the plain.");
  N(19,"KH3-19","انسان‌های اولیه","ensān-hā-ye avvaliye","early humans","انسان‌های اولیه در غارها زندگی می‌کردند.","Ensān-hā-ye avvaliye dar ghārhā zendegi mikardand.","Early humans lived in caves.","گروه اسمی — noun phrase");
- A(19,"KH3-19","غیرمسلح","gheyr-mosal lah","unarmed","مرد غیرمسلح وارد ساختمان شد.","Mard-e gheyr-mosallah vāred-e sāxtemān shod.","The unarmed man entered the building.");
+ A(19,"KH3-19","غیرمسلح","gheyr-mosallah","unarmed","مرد غیرمسلح وارد ساختمان شد.","Mard-e gheyr-mosallah vāred-e sāxtemān shod.","The unarmed man entered the building.");
  N(19,"KH3-19","دیزی‌سرا","dizi-sarā","restaurant specialising in dizi","برای ناهار به دیزی‌سرا رفتیم.","Barāye nāhār be dizi-sarā raftim.","We went to a restaurant serving dizi for lunch.");
  N(19,"KH3-19","آبشار","ābshār","waterfall","آبشار از بالای کوه به پایین می‌ریزد.","Ābshār az bālā-ye kuh be pāyin mirizad.","The waterfall pours down from the mountain.");
  N(19,"KH3-19","تله‌کابین","tele-kābin","cable car","با تله‌کابین به بالای کوه رفتیم.","Bā tele-kābin be bālā-ye kuh raftim.","We went to the top of the mountain by cable car.");
@@ -1856,7 +1856,7 @@
  N(20,"KH3-20","ظلم و ستم","zolm-o setam","oppression; injustice","مبارزه با ظلم و ستم وظیفهٔ همه است.","Mobāreze bā zolm-o setam vazife-ye hame ast.","Fighting oppression is everyone's responsibility.","گروه اسمی — noun phrase");
  N(20,"KH3-20","مزار","mazār","grave; tomb; shrine","مردم برای زیارت به مزار او رفتند.","Mardom barāye ziyārat be mazār-e u raftand.","People went to his tomb to pay their respects.");
  N(20,"KH3-20","درجات علمی","darajāt-e elmi","academic degrees; scholarly ranks","او درجات علمی بالایی دارد.","U darajāt-e elmi-ye bālāyi dārad.","He holds high academic degrees.","گروه اسمی — noun phrase");
- A(20,"KH3-20","سیاهپوش","siyāh-push","dressed in black; wearing black","مردم در مراسم سوگواری سیاهپوش شدند.","Mardom dar marāsem-e سوگواری siyāh-push shodand.","People dressed in black for the mourning ceremony.");
+ A(20,"KH3-20","سیاهپوش","siyāh-push","dressed in black; wearing black","مردم در مراسم سوگواری سیاهپوش شدند.","Mardom dar marāsem-e soghvāri siyāh-push shodand.","People dressed in black for the mourning ceremony.");
  V(20,"KH3-20","اشک سرازیر شدن","ashk sarāzir shodan","tears to flow; to burst into tears","با شنیدن خبر، اشک از چشمانش سرازیر شد.","Bā shenidan-e khabar, ashk az cheshmānash sarāzir shod.","On hearing the news, tears flowed from his eyes.","اشک سرازیر شدن","—","اشک سرازیر شدن هنگام شنیدن خبر ناگوار طبیعی است.","Ashk sarāzir shodan hengām-e shenidan-e khabar-e nāgovār tabi'i ast.","It is natural for tears to flow when hearing bad news.","—","—","—","فعل لازم است؛ امر مستقیم طبیعی ندارد.");
  N(20,"KH3-20","مصلی","mosallā","prayer ground; place for congregational prayer","نماز عید در مصلی برگزار شد.","Namāz-e Eid dar mosallā bargozār shod.","The Eid prayer was held at the prayer ground.");
  N(20,"KH3-20","خبر ناگوار","khabar-e nāgovār","bad news; distressing news","شنیدن خبر ناگوار همه را ناراحت کرد.","Shenidan-e khabar-e nāgovār hame rā nārāhat kard.","Hearing the bad news upset everyone.","گروه اسمی — noun phrase");
