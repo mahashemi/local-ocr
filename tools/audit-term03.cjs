@@ -64,6 +64,8 @@ for (const source of expectedSources) {
 }
 assert(studyFiles.length === 60, "Expected exactly 60 original Term 03 source files");
 
+const appSource = fs.readFileSync(require.resolve("../website/index.html"), "utf8");
+
 assert(Array.isArray(global.TERM3_WRITING?.chapters) && global.TERM3_WRITING.chapters.length === 20,
   "Expected a writing prompt for all 20 Term 03 chapters");
 assert(global.TERM3_NEWESTAN_EXAMPLE?.source === "N3-01", "Expected a source-based Newestan Dars 01 example");
@@ -84,7 +86,6 @@ assert(Array.isArray(global.TERM3_SPEECHES) && global.TERM3_SPEECHES.length === 
   "Expected a speech prompt for all 20 Term 03 chapters");
 assert(String(global.TERM3_UNIT_META[2].links).includes("N3-04"), "N3-04 must be linked to Unit 02");
 assert(String(global.TERM3_UNIT_META[9].links).includes("N3-04"), "N3-04 emotional-needs vocabulary must also be linked to Unit 09");
-const appSource = fs.readFileSync(require.resolve("../website/index.html"), "utf8");
 assert(appSource.includes("units:Array.isArray(a.units)"), "Chapter items must preserve all linked learning units");
 assert(appSource.includes("(i.units||[i.ch]).includes(Number(c))"), "Chapter filters must include shared vocabulary in every linked unit");
 assert(appSource.includes("flatMap(i=>(i.units||[i.ch])"), "Chapter navigation must include shared vocabulary units");
