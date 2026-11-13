@@ -2534,6 +2534,18 @@
 
  V(1,"N3-03","بودن","budan","to be; to exist","بودنِ دانشجو در کلاس به‌موقع اهمیت دارد.","Budan-e dāneshju dar kelās be-moghe' ahammiyat dārad.","A student's being on time in class matters.","بودن","باش","بودن در کنار خانواده به انسان آرامش می‌دهد.","Budan dar kenār-e khānevāde be ensān ārāmesh midahad.","Being with family gives a person peace.","آماده باش.","Āmāde bāsh.","Be ready.");
 
+
+ N(1,"N3-01","زیاد","ziyād","many; much; a lot","برای این موضوع مثال‌های زیادی وجود دارد.","Barāye in mozoo mesāl-hā-ye ziyādi vojood dārad.","There are many examples for this topic.");
+ N(1,"N3-01","یاد","yād","memory; remembrance","یاد گرفتن واژه‌های تازه به تمرین نیاز دارد.","Yād gereftan-e vāzhehā-ye tāze be tamrin niyāz dārad.","Learning new words requires practice.");
+ N(1,"N3-01","انتظار","entezār","expectation; waiting","از دانشجو انتظار می‌رود با نظم در کلاس حاضر شود.","Az dāneshju entezār miravad bā nazm dar kelās hāzer shavad.","A student is expected to attend class punctually.");
+ N(1,"N3-01","بزرگ","bozorg","big; large; great","یک موضوع بزرگ را به ریزموضوع‌های کوچک تقسیم کنید.","Yek mozoo-ye bozorg rā be riz-mozoo-hā-ye kuchak taqsim konid.","Divide a large topic into smaller subtopics.");
+ N(20,"N3-10","فرعی","far'i","secondary; sub-; subsidiary","پرسش فرعی به روشن شدن پرسش اصلی کمک می‌کند.","Porsesh-e far'i be roshan shodan-e porsesh-e asli komak mikonad.","A sub-question helps clarify the main question.");
+ N(1,"N3-01","پدر","pedar","father","پدر برای فرزندش کتاب خرید.","Pedar barāye farzandash ketāb kharid.","The father bought a book for his child.");
+ N(1,"N3-01","مادر","mādar","mother","مادر داستانی برای کودک خواند.","Mādar dāstāni barāye kudak khānd.","The mother read a story to the child.");
+ N(1,"N3-01","مدرسه","madrese","school","دانش‌آموزان صبح به مدرسه می‌روند.","Dānesh-āmuzān sobh be madrese miravand.","Students go to school in the morning.");
+ N(1,"N3-01","وجود","vojud","existence; presence","وجود منبع معتبر به تحقیق اعتبار می‌دهد.","Vojud-e manba'-e mo'tabar be tahqiq e'tebār midahad.","Having a reliable source gives research credibility.");
+ N(1,"N3-01","گاهی","gāhi","sometimes; occasionally","گاهی یک مثال ساده موضوع را روشن می‌کند.","Gāhi yek mesāl-e sāde mozoo rā roshan mikonad.","Sometimes a simple example clarifies the topic.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
