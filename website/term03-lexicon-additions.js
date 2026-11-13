@@ -1669,11 +1669,11 @@
  N(17,"FA3-17","تمام و کامل","tamām-o kāmel","complete; whole","گزارش باید تمام و کامل باشد.","Gozaresh bāyad tamām-o kāmel bāshad.","The report should be complete.","عبارت وصفی — descriptive phrase");
  N(17,"FA3-17","با این حساب","bā in hesāb","therefore; in that case","با این حساب بهتر است زودتر حرکت کنیم.","Bā in hesāb behtar ast zudtar harekat konim.","In that case, it is better to leave earlier.","عبارت ربطی — linking expression");
  A(17,"FA3-17","مضطرب","moztareb","anxious; nervous","پیش از امتحان کمی مضطرب بودم.","Pish az emtehān kami moztareb budam.","I was a little anxious before the exam.");
- V(17,"FA3-17","تکان خوردن"," تکān khordan","to move; to shake","با وزش باد شاخه‌ها تکان خوردند.","Bā vazesh-e bād shākhehā tekān khordand.","The branches moved in the wind.","تکان خوردن","—","تکان خوردن زمین می‌تواند نشانهٔ زلزله باشد.","Tekān khordan-e zamin mitavānad neshāne-ye zelzele bāshad.","The ground shaking can be a sign of an earthquake.","—","—","—","فعل لازم است؛ امر مستقیم طبیعی ندارد.");
+ V(17,"FA3-17","تکان خوردن","tekān khordan","to move; to shake","با وزش باد شاخه‌ها تکان خوردند.","Bā vazesh-e bād shākhehā tekān khordand.","The branches moved in the wind.","تکان خوردن","—","تکان خوردن زمین می‌تواند نشانهٔ زلزله باشد.","Tekān khordan-e zamin mitavānad neshāne-ye zelzele bāshad.","The ground shaking can be a sign of an earthquake.","—","—","—","فعل لازم است؛ امر مستقیم طبیعی ندارد.");
  N(17,"FA3-17","کابل","kābel","cable","کابل برق را از مسیر امن عبور دادند.","Kābel-e barq rā az masir-e amn obur dādand.","They routed the electrical cable through a safe path.");
  // FA3-18 first-page additions.
- N(18,"FA3-18","تزیین","taz yin","decoration; adornment","تزیین خانه برای جشن آغاز شد.","Tazyin-e khāne barāye jashn āghāz shod.","Decorating the house for the celebration began.");
- A(18,"FA3-18","خوش‌یمن","khosh-yomn","auspicious; lucky","آن روز را روزی خوش‌یمن می‌دانستند.","Ān ruz rā ruzi khosh-yomn midānestand.","They considered that day auspicious.");
+ N(18,"FA3-18","تزیین","tazyin","decoration; adornment","تزیین خانه برای جشن آغاز شد.","Tazyin-e khāne barāye jashn āghāz shod.","Decorating the house for the celebration began.");
+ A(18,"FA3-18","خوش‌یمن","khosh-yomen","auspicious; lucky","آن روز را روزی خوش‌یمن می‌دانستند.","Ān ruz rā ruzi khosh-yomn midānestand.","They considered that day auspicious.");
  N(18,"FA3-18","اعم از","a'am az","including; whether ... or ...","همهٔ مهمانان، اعم از زن و مرد، دعوت شدند.","Hame-ye mehmānān, a'am az zan-o mard, da'vat shodand.","All guests, women and men alike, were invited.","عبارت حرف اضافه‌ای — prepositional expression");
  N(18,"FA3-18","حنابندان","hanābandān","henna night; pre-wedding henna ceremony","مراسم حنابندان شب پیش از عروسی برگزار شد.","Marāsem-e hanābandān shab-e pish az arusi bargozār shod.","The henna ceremony was held on the night before the wedding.");
  // FA3-19 first-page additions.
