@@ -1942,6 +1942,23 @@
  N(19,"FA3-19","تخریب","takhrib","destruction; damage","تخریب آثار باستانی به میراث فرهنگی آسیب می‌زند.","Takhrib-e āsār-e bāstāni be mirās-e farhangi āsib mizanad.","Destroying historic sites harms cultural heritage.");
  N(19,"FA3-19","چرا","cherā","why","چرا باید از آثار تاریخی محافظت کنیم؟","Cherā bāyad az āsār-e tārikhi mohāfezat konim?","Why should we protect historical sites?","قید پرسشی — interrogative adverb");
  N(19,"FA3-19","بله","bale","yes","بله، این مکان ارزش دیدن دارد.","Bale, in makān arzesh-e didan dārad.","Yes, this place is worth visiting.","قید پاسخ — affirmative particle");
+
+ N(20,"FA3-20","کسب","kasb","acquisition; earning; gain","کسب دانش به مطالعه و تجربه نیاز دارد.","Kasb-e dānesh be motāle'e va tajrobe niyāz dārad.","Acquiring knowledge requires study and experience.");
+ N(20,"FA3-20","اثر","asar","work; effect; trace","آثار ادبی گذشتگان هنوز خواندنی هستند.","Āsār-e adabi-ye gozashtegān hanuz khāndani hastand.","The literary works of earlier generations are still worth reading.");
+ N(20,"FA3-20","دیده","dide","eye; sight (literary)","دیدهٔ انسان زیبایی‌های جهان را می‌بیند.","Dide-ye ensān zibāyi-hā-ye jahān rā mibinad.","The human eye sees the world's beauty.");
+ N(20,"FA3-20","گوی","guy","ball; sphere","کودک گوی را به سوی دوستش انداخت.","Kudak guy rā be su-ye dustash اندākht.","The child threw the ball toward his friend.");
+ A(20,"FA3-20","ناگاه","nāgāh","suddenly; unexpectedly","ناگاه صدایی از دور شنیده شد.","Nāgāh sedāyi az dur shenide shod.","Suddenly, a sound was heard in the distance.","قید — adverb");
+ A(20,"FA3-20","موجود","mojud","existing; creature (depending on context)","هر موجود زنده‌ای به آب نیاز دارد.","Har mojūd-e zende-i be āb niyāz dārad.","Every living creature needs water.");
+ N(20,"FA3-20","اسب","asb","horse","اسب در داستان‌های حماسی نماد دلاوری است.","Asb dar dāstān-hā-ye hamāsi nemād-e delāvari ast.","The horse symbolises bravery in epic stories.");
+ A(20,"FA3-20","آسوده","āsude","at ease; comfortable","پس از سفر طولانی، مسافران آسوده شدند.","Pas az safar-e tulāni, mosāferān āsude shodand.","After the long journey, the travellers felt at ease.");
+ N(20,"FA3-20","تور","tur","net","ماهیگیر تور خود را به دریا انداخت.","Māhigir tur-e khod rā be daryā اندākht.","The fisherman cast his net into the sea.");
+ N(20,"FA3-20","پژوهش","pazhuhesh","research; study","پژوهش دربارهٔ شعر خیام ادامه دارد.","Pazhuhesh darbāre-ye she'r-e Khayyām edāme dārad.","Research on Khayyam's poetry continues.");
+ N(20,"FA3-20","بقال","baqqāl","grocer; shopkeeper","بقال هر روز مغازه را زود باز می‌کرد.","Baqqāl har ruz maghāze rā zud bāz mikard.","The grocer opened the shop early every day.");
+ A(20,"FA3-20","بزرگوار","bozorgvār","noble; generous; honourable","مرد بزرگوار به نیازمندان کمک کرد.","Mard-e bozorgvār be niyāzmandān komak kard.","The honourable man helped those in need.");
+ N(20,"FA3-20","بیم","bim","fear; apprehension","بیم و امید در شعر فارسی بارها کنار هم می‌آیند.","Bim-o omid dar she'r-e fārsi bārhā kenār-e ham miāyand.","Fear and hope often appear together in Persian poetry.");
+ A(20,"FA3-20","فارغ","fāregh","free; finished; at leisure","پس از پایان کار، از نگرانی فارغ شد.","Pas az pāyān-e kār, az negarāni fāregh shod.","After finishing the work, he was free of worry.");
+ N(20,"FA3-20","گل","gol","flower; clay (context-dependent)","شاعر گل را نماد زیبایی می‌داند.","Shā'er gol rā nemād-e zibāyi midānad.","The poet regards the flower as a symbol of beauty.");
+ N(20,"FA3-20","پارسا","pārsā","pious person; virtuous person","پارسا در حکایت نماد پرهیزکاری است.","Pārsā dar hekāyat nemād-e parhizkāri ast.","The pious person symbolises virtue in the tale.","اسم — noun");
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
