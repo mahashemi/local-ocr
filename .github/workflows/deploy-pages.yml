@@ -7,8 +7,20 @@ on:
     paths:
       - "website/**"
       - ".github/workflows/deploy-pages.yml"
-      - "tools/audit-term03.cjs"
-      - "tools/audit-term02.cjs"
+      - "tools/**"
+      - "study-materials/dars/term-01/**"
+      - "study-materials/dars/term-02/**"
+      - "study-materials/dars/term-03/**"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "website/**"
+      - ".github/workflows/deploy-pages.yml"
+      - "tools/**"
+      - "study-materials/dars/term-01/**"
+      - "study-materials/dars/term-02/**"
+      - "study-materials/dars/term-03/**"
   workflow_dispatch:
 
 permissions:
@@ -16,15 +28,15 @@ permissions:
   pages: write
   id-token: write
 
+# Do not cancel a deployment already in progress. Keep concurrency scoped to
+# each ref so pull-request validation cannot interrupt the main deployment.
 concurrency:
-  group: github-pages
-  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  validate:
+    name: Validate learning website and source data
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -65,40 +77,35 @@ jobs:
           node --check website/term02-writing.js
           node tools/audit-term02.cjs
 
-      - name: Validate Term 03 data JavaScript
-        run: node --check website/term03-data.js
-
-      - name: Validate Term 03 writing curriculum JavaScript
-        run: node --check website/term03-writing.js
-
-      - name: Validate Term 03 Khulasa summaries JavaScript
-        run: node --check website/term03-khulasa.js
-
-      - name: Validate expanded Term 03 lexicon JavaScript
-        run: node --check website/term03-lexicon-additions.js
-
-      - name: Validate source-audited vocabulary additions
-        run: node --check website/term03-source-audit.js
-
-      - name: Validate cross-term verb treasury
-        run: node --check website/verb-treasury.js
-
-      - name: Validate trilingual semantic vocabulary
-        run: node --check website/semantic-meanings.js
-
-      - name: Validate portal navigation JavaScript
-        run: node --check website/term-portal.js
-
-      - name: Validate body-text verb additions
-        run: node --check website/term03-matn-verbs.js
-
-      - name: Audit Term 03 vocabulary completeness and grammar fields
-        run: node tools/audit-term03.cjs
+      - name: Validate Term 03 curriculum JavaScript
+        run: |
+          node --check website/term03-data.js
+          node --check website/term03-writing.js
+          node --check website/term03-khulasa.js
+          node --check website/term03-lexicon-additions.js
+          node --check website/term03-source-audit.js
+          node --check website/verb-treasury.js
+          node --check website/semantic-meanings.js
+          node --check website/term-portal.js
+          node --check website/term03-matn-verbs.js
+          node tools/audit-term03.cjs
 
       - name: Validate embedded application JavaScript
         run: |
           node -e "const fs=require('fs'); const html=fs.readFileSync('website/index.html','utf8'); const match=html.match(/<script>([\\s\\S]*?)<\\/script>/); if(!match) throw new Error('Inline application script not found'); fs.writeFileSync('/tmp/persian-trainer.js',match[1]);"
           node --check /tmp/persian-trainer.js
+
+  deploy:
+    name: Publish GitHub Pages
+    needs: validate
+    if: github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
