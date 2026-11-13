@@ -55,6 +55,12 @@ const expectedSources = [
 ];
 const presentSources = new Set(entries.flatMap(item => (item.sources || [item.source]).filter(Boolean)));
 for (const source of expectedSources) assert(presentSources.has(source), "No lexicon entry linked to " + source);
+const writingLexicon = entries.filter(item => (item.sources || [item.source]).includes("WR3-02"));
+assert(writingLexicon.length >= 50, "Expected at least 50 source-tagged writing/speaking vocabulary cards");
+const requiredWritingWords = ["احترام","زندگی","استفاده","توضیح","بررسی","معرفی","نتیجه","نمونه","مسئولیت","اهمیت","حفظ","آیه","معنا","توصیف","سوره","هدف","جامعه","آموزش","خدمت","شناخت","محیط","تجربه","تفاوت","مقایسه","انرژی","علت","مقدمه","تلاش","پیشنهاد","کاهش","ارزش","مراسم","مسیر","پیوند","طبیعت","ارزیابی","پرسش","مصرف","ترتیب","تصویر","نقش","یادگیری","موفقیت","پیام","اصلاح","علم","نیاز","پاسخ","منبع","تحقیق","روشن","دقیق","ارزشمند","مسئولانه","تاریخی","فرهنگی"];
+const writingHeadwords = new Set(writingLexicon.map(item => String(item.fa).replace(/[\\u200c\\sـ]/g, "")));
+for (const word of requiredWritingWords) assert(writingHeadwords.has(word.replace(/[\\u200c\\sـ]/g, "")),
+  "Missing writing/speaking flashcard: " + word);
 
 const studyDir = path.join(__dirname, "../study-materials/dars/term-03");
 const studyFiles = fs.readdirSync(studyDir);
