@@ -2515,7 +2515,7 @@
  N(1,"N3-01","تمام","tamām","all; whole; complete","تمام بخش‌های تمرین را پاسخ دهید.","Tamām-e bakhshhā-ye tamrin rā pāsokh dahid.","Answer all parts of the exercise.");
  N(1,"N3-01","نام","nām","name","نام نویسنده را زیر عنوان بنویسید.","Nām-e nevisande rā zir-e onvān benevisid.","Write the author's name below the title.");
  N(1,"N3-01","جدول","jadval","table; chart","اطلاعات را در جدول مرتب کنید.","Etelā'āt rā dar jadval morattab konid.","Organise the information in the table.");
- N(1,"N3-03","قرار","qarār","appointment; arrangement; قرار","قرار است فردا دربارهٔ تحقیق گفت‌وگو کنیم.","Qarār ast fardā darbāre-ye tahqiq goft-o-gu konim.","We are going to discuss the research tomorrow.");
+ N(1,"N3-03","قرار","qarār","appointment; arrangement; resolution","قرار است فردا دربارهٔ تحقیق گفت‌وگو کنیم.","Qarār ast fardā darbāre-ye tahqiq goft-o-gu konim.","We are going to discuss the research tomorrow.");
  N(1,"N3-01","پیش","pish","before; ahead; in front","پیش از نوشتن، ریزموضوع‌ها را مشخص کنید.","Pish az neveshtan riz-mozoo-hā rā moshakhas konid.","Before writing, identify the subtopics.");
  N(1,"N3-01","زمان","zamān","time; period","برای هر بخش زمان کافی در نظر بگیرید.","Barāye har bakhsh zamān-e kāfi dar nazar begirid.","Allow enough time for each section.");
  N(1,"N3-01","پیدا","peydā","found; visible; available","پاسخ را در متن پیدا کنید.","Pāsokh rā dar matn peydā konid.","Find the answer in the text.");
@@ -2526,6 +2526,10 @@
  N(1,"N3-10","هدف","hadaf","goal; aim","هدف تحقیق را در مقدمه روشن کنید.","Hadaf-e tahqiq rā dar moqaddame roshan konid.","Clarify the aim of the research in the introduction.");
  N(1,"SH3-02","کالا","kālā","goods; product","قیمت کالا را پیش از خرید بررسی کنید.","Gheymat-e kālā rā pish az kharid barrasi konid.","Check the price of the product before buying.");
  N(1,"SH3-01","پیش‌تکلیف","pish-taklif","pre-task; preparatory assignment","پیش‌تکلیف را پیش از جلسه انجام دهید.","Pish-taklif rā pish az jalase anjām dahid.","Complete the preparatory assignment before the session.");
+
+
+ V(1,"N3-03","خوردن","khordan","to eat; to consume","خوردنِ غذای سالم برای بدن مفید است.","Khordan-e ghazā-ye sālem barāye badan mofid ast.","Eating healthy food is good for the body.","خوردن","بخور","خوردنِ آرام و با دقت به هضم غذا کمک می‌کند.","Khordan-e ārām va bā deqqat be hazm-e ghazā komak mikonad.","Eating slowly and carefully helps digestion.","میوهٔ تازه بخور.","Mive-ye tāze bekhor.","Eat fresh fruit.");
+ V(1,"SH3-01","آموختن","āmukhtan","to learn; to acquire knowledge","آموختنِ واژه‌های تازه به تمرین نیاز دارد.","Āmukhtan-e vāzhehā-ye tāze be tamrin niyāz dārad.","Learning new words requires practice.","آموختن","بیاموز","آموختنِ زبان با شنیدن و گفت‌وگو آسان‌تر می‌شود.","Āmukhtan-e zabān bā shenidan va goft-o-gu āsān-tar mishavad.","Learning a language becomes easier through listening and conversation.","از اشتباه‌های خود بیاموز.","Az eshtebāhhā-ye khod biyāmoz.","Learn from your mistakes.");
 
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
