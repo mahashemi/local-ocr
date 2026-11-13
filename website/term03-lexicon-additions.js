@@ -1802,6 +1802,35 @@
  A(15,"KH3-15","خانگی","khānegi","homemade; domestic","مربای خانگی بسیار خوشمزه است.","Morabbā-ye khānegi besyār khoshmaze ast.","Homemade jam is delicious.");
  A(15,"KH3-15","لذیذ","laziz","delicious; tasty","این غذا بسیار لذیذ است.","In ghazā besyār laziz ast.","This food is delicious.");
 
+
+ // KH3-16 first-page additions.
+ N(16,"KH3-16","سازماندهی","sāzmāndehi","organisation; coordination","سازماندهی برنامه به همکاری همه نیاز دارد.","Sāzmāndehi-ye barnāme be hamkāri-ye hame niyāz dārad.","Organising the programme requires everyone's cooperation.");
+ N(16,"KH3-16","وسایل ارتباط جمعی","vasāyel-e ertebāt-e jam'i","mass media; means of mass communication","وسایل ارتباط جمعی اخبار را به مردم می‌رسانند.","Vasāyel-e ertebāt-e jam'i akhbār rā be mardom mirasā nand.","Mass media deliver news to people.","گروه اسمی — noun phrase");
+ V(16,"KH3-16","تبلیغ کردن","tabligh kardan","to advertise; to promote","شرکت محصول تازهٔ خود را تبلیغ کرد.","Sherkat mahsul-e tāze-ye khod rā tabligh kard.","The company advertised its new product.","تبلیغ کردن","تبلیغ کن","تبلیغ کردن باید با اطلاعات درست انجام شود.","Tabligh kardan bāyad bā ettelā'āt-e dorost anjām shavad.","Advertising should be done with accurate information.","محصول را صادقانه تبلیغ کن.","Mahsul rā sādeqāne tabligh kon.","Advertise the product honestly.");
+ A(16,"KH3-16","برون‌مرزی","borun-marzi","cross-border; international","این شبکه برنامه‌های برون‌مرزی پخش می‌کند.","In shabake barnāmehā-ye borun-marzi pakhsh mikonad.","This network broadcasts international programmes.");
+ N(16,"KH3-16","رقیب","raqib","rival; competitor","هر شرکت باید رقیبان خود را بشناسد.","Har sherkat bāyad raqibān-e khod rā beshenāsad.","Every company should know its competitors.");
+ N(16,"KH3-16","بنیانگذار","bonyān-gozār","founder","بنیانگذار این روزنامه خبرنگار مشهوری بود.","Bonyān-gozār-e in ruznāme khabarn egār-e mashhuri bud.","The founder of this newspaper was a famous journalist.");
+ N(16,"KH3-16","خدمتگزار","khedmat-gozār","servant; public servant","خدمتگزار مردم باید مسئولیت‌پذیر باشد.","Khedmat-gozār-e mardom bāyad mas'uliyat-pazir bāshad.","A public servant should be responsible.");
+ // KH3-17 first-page additions.
+ V(17,"KH3-17","بالا زدن","bālā zadan","to roll up; to rise/overflow","او آستین‌هایش را بالا زد.","U āstin-hāyash rā bālā zad.","He rolled up his sleeves.","بالا زدن","بالا بزن","بالا زدن آستین‌ها پیش از کار نشانهٔ آمادگی است.","Bālā zadan-e āstin-hā pish az kār neshāne-ye āmādegi ast.","Rolling up one's sleeves before work shows readiness.","آستین‌هایت را بالا بزن.","Āstin-hāyat rā bālā bezan.","Roll up your sleeves.");
+ V(17,"KH3-17","پشت پا زدن به","posht pā zadan be","to betray; to turn one's back on","او به قول خود پشت پا زد.","U be qowl-e khod posht pā zad.","He went back on his word.","پشت پا زدن به","پشت پا نزن","پشت پا زدن به اعتماد دیگران کار درستی نیست.","Posht pā zadan be e'temād-e digarān kār-e dorosti nist.","Betraying others' trust is not right.","به قولت پشت پا نزن.","Be qowlat posht pā nazan.","Do not go back on your promise.");
+ V(17,"KH3-17","آبغوره گرفتن","āb-ghure gereftan","to make verjuice; to press unripe grapes","در تابستان برای زمستان آبغوره می‌گیرند.","Dar tābestān barāye zemestān āb-ghure migirand.","In summer, people make verjuice for the winter.","آبغوره گرفتن","آبغوره بگیر","آبغوره گرفتن در خانه به انگور نارس نیاز دارد.","Āb-ghure gereftan dar khāne be angur-e nāres niyāz dārad.","Making verjuice at home requires unripe grapes.","برای ترشی آبغوره بگیر.","Barāye torshi āb-ghure begir.","Make verjuice for the pickle.");
+ V(17,"KH3-17","پنبه را از گوش درآوردن","panbe rā az gush darāvardan","to pay attention; to stop ignoring what is said (idiom)","بالاخره پنبه را از گوشش درآورد و حرف ما را شنید.","Bālākhare panbe rā az gushash darāvard-o harf-e mā rā shenid.","At last he paid attention and listened to us.","پنبه را از گوش درآوردن","پنبه را از گوشت درآور","پنبه را از گوش درآوردن کنایه از توجه کردن است.","Panbe rā az gush darāvardan kenāye az tavajjoh kardan ast.","The idiom means to start paying attention.","پنبه را از گوشت درآور و گوش کن.","Panbe rā az gushat darāvar-o gush kon.","Stop ignoring us and listen.");
+ N(17,"KH3-17","جوهر","jowhar","ink; essence","جوهر خودکار روی کاغذ پخش شد.","Jowhar-e khodkār ru-ye kāghaz pakhsh shod.","The pen ink spread on the paper.");
+ V(17,"KH3-17","خیس کردن","khis kardan","to wet; to soak","باران لباس او را خیس کرد.","Bārān lebās-e u rā khis kard.","The rain wet his clothes.","خیس کردن","خیس کن","خیس کردن پارچه پیش از شستن مفید است.","Khis kardan-e pārche pish az shostan mofid ast.","Wetting the fabric before washing is useful.","پارچه را خیس کن.","Pārche rā khis kon.","Wet the fabric.");
+ A(17,"KH3-17","ضد رطوبت","zed-e rotubat","moisture-resistant; waterproof","این کیف ضد رطوبت است.","In kif zed-e rotubat ast.","This bag is moisture-resistant.","صفت مرکب — compound adjective");
+ N(17,"KH3-17","عرق‌گیر","araq-gir","sweatband; sweat absorber","ورزشکار از عرق‌گیر استفاده کرد.","Varzeshkār az araq-gir estefāde kard.","The athlete used a sweatband.");
+ N(17,"KH3-17","نظامیان","nezāmiyān","military personnel; servicemen","نظامیان در مراسم رسمی حضور داشتند.","Nezāmiyān dar marāsem-e rasmi hozur dāshtand.","Military personnel attended the official ceremony.");
+ N(17,"KH3-17","اسفنج","esfenj","sponge","با اسفنج میز را تمیز کرد.","Bā esfenj miz rā tamiz kard.","He cleaned the table with a sponge.");
+ N(17,"KH3-17","آستین","āstin","sleeve","آستین پیراهنش خیس شد.","Āstin-e pirāhanash khis shod.","His shirt sleeve got wet.");
+ A(17,"KH3-17","پوسیده","puside","rotten; decayed","چوب پوسیده به‌آسانی می‌شکند.","Chub-e puside be-āsāni mishekanad.","Rotten wood breaks easily.");
+ N(17,"KH3-17","خنک‌کننده","khonak-konande","cooler; cooling device","خنک‌کنندهٔ اتاق در تابستان روشن است.","Khonak-konande-ye otāq dar tābestān rowshan ast.","The room cooler is on in summer.");
+ // KH3-18 first-page additions.
+ N(18,"KH3-18","پیمان","peymān","pact; covenant; agreement","دو کشور پیمان همکاری امضا کردند.","Do keshvar peymān-e hamkāri emzā kardand.","The two countries signed a cooperation agreement.");
+ N(18,"KH3-18","شربت","sharbat","syrup; sweet drink","در مراسم شربت خنک پخش کردند.","Dar marāsem sharbat-e khonak pakhsh kardand.","They served a cool sweet drink at the ceremony.");
+ N(18,"KH3-18","نورباران","nur-bārān","illumination; shower of lights","خیابان‌ها در جشن نورباران شدند.","Khiābānhā dar jashn nur-bārān shodand.","The streets were illuminated for the celebration.");
+ N(18,"KH3-18","منبر","menbar","pulpit","سخنران از منبر برای ایراد خطبه استفاده کرد.","Sokhanrān az menbar barāye irād-e khotbe estefāde kard.","The speaker used the pulpit to deliver the sermon.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
