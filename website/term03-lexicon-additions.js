@@ -1861,6 +1861,11 @@
  N(20,"KH3-20","مصلی","mosallā","prayer ground; place for congregational prayer","نماز عید در مصلی برگزار شد.","Namāz-e Eid dar mosallā bargozār shod.","The Eid prayer was held at the prayer ground.");
  N(20,"KH3-20","خبر ناگوار","khabar-e nāgovār","bad news; distressing news","شنیدن خبر ناگوار همه را ناراحت کرد.","Shenidan-e khabar-e nāgovār hame rā nārāhat kard.","Hearing the bad news upset everyone.","گروه اسمی — noun phrase");
 
+
+ // Resolve two OCR-uncertain first-page forms after dictionary/context review.
+ N(5,"FA3-05","یک عالمه","yek āleme","a lot of; a great many","در این فروشگاه یک عالمه کتاب وجود دارد.","Dar in forushgāh yek āleme ketāb vojud dārad.","There are a lot of books in this shop.","عبارت کمّی — quantifier phrase");
+ N(20,"FA3-20","روزکی","ruzaki","a short while; a few days (archaic/poetic)","روزکی چند درنگ کرد و سپس راه افتاد.","Ruzaki chand derang kard-o sepas rāh oftād.","He paused for a short while and then set off.","واژهٔ ادبی — literary word");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
