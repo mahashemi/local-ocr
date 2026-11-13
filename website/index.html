@@ -1348,7 +1348,7 @@ function add(){
 
 /* Exact vocabulary matching only. Never index arbitrary words from example sentences:
    doing so made unrelated words open whichever flashcard happened to appear first. */
-const vocabLinkStopWords=new Set("و در به از که را با برای این آن او آنها ما شما من یک هر هم نیز اما اگر تا یا چون زیرا ولی بلکه پس سپس بعد قبل اکنون امروز بیشتر کمتر بسیار همه هیچ خود دیگر همین همان چه چگونه چرا کدام است هست بود بودند باشد شوند شود شده دارد دارند داشت داشتن کردن کند کنند کرد کردند می‌کند می‌شود می‌باشد می‌توان می‌توانند می‌خواهد می‌خواهند باید نباید نیست نیستند هستند آن‌ها آنچه چنین مانند مثل دربارهٔ میان روی زیر نزد طرف هنگام زمان سال روز ماه بسم الله الرحمن الرحیم سلام علیکم والسلام الحمد رب العالمین علی محمد آله الطاهرین".split(/\\s+/).map(fold));
+const vocabLinkStopWords=new Set("و در به از که را با برای این آن او آنها ما شما من یک هر هم نیز اما اگر تا یا چون زیرا ولی بلکه پس سپس بعد قبل اکنون امروز بیشتر کمتر بسیار همه هیچ خود دیگر همین همان چه چگونه چرا کدام است هست بود بودند باشد شوند شود شده دارد دارند داشت داشتن کردن کند کنند کرد کردند می‌کند می‌شود می‌باشد می‌توان می‌توانند می‌خواهد می‌خواهند باید نباید نیست نیستند هستند آن‌ها آنچه چنین مانند مثل دربارهٔ میان روی زیر نزد طرف هنگام زمان سال روز ماه بسم الله الرحمن الرحیم سلام علیکم والسلام الحمد رب العالمین علی محمد آله الطاهرین".split(/\s+/).map(fold));
 const curatedVocabAliases={
  "منبع":["منابع"],"اثر":["آثار"],"حق":["حقوق"],"شرط":["شرایط"],"عامل":["عوامل"],
  "رابطه":["روابط"],"رسم":["رسوم"],"فرد":["افراد"],"حیوان":["حیوانات"],
@@ -1372,7 +1372,7 @@ function addVocabularyForms(index,item){
 /* Link only exact flashcard headwords and reviewed aliases in writing/speaking pages. */
 /* Link Persian vocabulary in writing and speaking guidance to the shared flashcard. */
 function attachVocabularyLinks(scope){
- const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>(Number(b.bk===activeTerm)-Number(a.bk===activeTerm))||String(b.fa).trim().split(/\\s+/).length-String(a.fa).trim().split(/\\s+/).length||String(b.fa).length-String(a.fa).length);
+ const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>(Number(b.bk===activeTerm)-Number(a.bk===activeTerm))||String(b.fa).trim().split(/\s+/).length-String(a.fa).trim().split(/\s+/).length||String(b.fa).length-String(a.fa).length);
  const index=new Map();let maxWords=1;
  entries.forEach(i=>{addVocabularyForms(index,i);maxWords=Math.max(maxWords,String(i.fa).trim().split(/\s+/).length)});
  const walker=document.createTreeWalker(scope,NodeFilter.SHOW_TEXT,{acceptNode(node){
