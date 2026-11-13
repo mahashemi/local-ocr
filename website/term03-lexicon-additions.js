@@ -2098,6 +2098,45 @@
 
  V(3,"SH3-03","آشامیدن","āshāmīdan","to drink (formal)","آشامیدن آب سالم برای بدن ضروری است.","Āshām idan-e āb-e sālem barāye badan zaruri ast.","Drinking clean water is essential for the body.","آشامیدن","بیاشام","آشامیدن آب کافی به حفظ سلامت کمک می‌کند.","Āshām idan-e āb-e kāfi be hefz-e salāmat komak mikonad.","Drinking enough water helps maintain health.","آب را آرام بیاشام.","Āb rā ārām biyāshām.","Drink the water slowly.");
  V(4,"SH3-04","جا گذاشتن مدارک","jā gozāshtan-e madārek","to leave documents behind","مسافر مدارکش را در هتل جا گذاشت.","Mosāfer madārekash rā dar hotel jā gozāsht.","The traveller left their documents at the hotel.","جا گذاشتن مدارک","جا نگذار","جا گذاشتن مدارک سفر دردسر ایجاد می‌کند.","Jā gozāshtan-e madārek-e safar dardesar ijād mikonad.","Leaving travel documents behind causes trouble.","مدارکت را در هتل جا نگذار.","Madārekat rā dar hotel jā nazār.","Do not leave your documents at the hotel.");
+
+ // Supplementary vocabulary used throughout Newestan, Sukhanrani and Khulasa model texts.
+ // WR3-01 marks words added for the Term 03 writing/speaking curriculum rather than OCR page lists.
+ N(1,"WR3-01","احترام","ehterām","respect","احترام به دیگران پایهٔ گفت‌وگوی سالم است.","Ehterām be digarān pāye-ye goft-o-gu-ye sālem ast.","Respect for others is the basis of healthy dialogue.");
+ N(2,"WR3-01","مسئولیت","mas'uliyat","responsibility","هر انسان در برابر رفتار خود مسئولیت دارد.","Har ensān dar barābar-e raftār-e khod mas'uliyat dārad.","Every person is responsible for their own behaviour.");
+ N(2,"WR3-01","رفتار","raftār","behaviour; conduct","رفتار محترمانه اعتماد ایجاد می‌کند.","Raftār-e mohtaramāne e'temād ijād mikonad.","Respectful behaviour builds trust.");
+ N(2,"WR3-01","اخلاق","akhlāq","ethics; character","اخلاق نیک در زندگی اجتماعی اهمیت دارد.","Akhlāq-e nik dar zendegi-ye ejtemā'i ahammiyat dārad.","Good character matters in social life.");
+ N(3,"WR3-01","تصویر","tasvir","image; picture","توصیف دقیق، تصویر روشنی در ذهن خواننده می‌سازد.","Towsif-e daqiq tasvir-e rowshani dar zehn-e khāneنده misāzad.","Precise description creates a clear image in the reader's mind.");
+ N(3,"WR3-01","زاویه","zāviye","angle; point of view","نویسنده مکان را از زاویهٔ دید خود توصیف کرد.","Nevisande makān rā az zāviye-ye did-e khod towsif kard.","The writer described the place from their point of view.");
+ N(4,"WR3-01","مسئله","mas'ale","issue; problem","برای حل هر مسئله باید علت آن را شناخت.","Barāye hall-e har mas'ale bāyad ellat-e ān rā shenākht.","To solve an issue, its cause must be understood.");
+ N(4,"WR3-01","علت","ellat","cause; reason","کمبود اطلاعات می‌تواند علت یک تصمیم نادرست باشد.","Kambud-e ettelā'āt mitavānad ellat-e yek tasmim-e nādorost bāshad.","Lack of information can be the cause of a poor decision.");
+ N(4,"WR3-01","پیامد","payāmad","consequence; outcome","هر انتخاب ممکن است پیامدهای مثبت یا منفی داشته باشد.","Har entekhāb momken ast payāmad-hā-ye mosbat yā manfi dāshte bāshad.","Every choice may have positive or negative consequences.");
+ N(4,"WR3-01","پیشنهاد","pishnehād","suggestion; proposal","او برای کاهش مشکل یک پیشنهاد عملی ارائه کرد.","U barāye kāhesh-e moshkel yek pishnehād-e amali erā'e kard.","They offered a practical suggestion to reduce the problem.");
+ N(5,"WR3-01","محیط","mohit","environment; surroundings","حفاظت از محیط وظیفهٔ همهٔ ماست.","Hefāzat az mohit vazife-ye hame-ye māst.","Protecting the environment is everyone's responsibility.");
+ N(5,"WR3-01","حفاظت","hefāzat","protection; conservation","حفاظت از درختان به سلامت شهر کمک می‌کند.","Hefāzat az derakhtān be salāmat-e shahr komak mikonad.","Protecting trees helps the health of the city.");
+ N(5,"WR3-01","منابع","manābe'","resources","مصرف درست منابع طبیعی برای آینده ضروری است.","Masraf-e dorost-e manābe'-e tabi'i barāye āyande zaruri ast.","Using natural resources wisely is essential for the future.");
+ N(5,"WR3-01","آلودگی","āludegi","pollution","آلودگی هوا سلامت کودکان را تهدید می‌کند.","Āludegi-ye havā salāmat-e kudakān rā تهدید mikonad.","Air pollution threatens children's health.");
+ N(5,"WR3-01","زباله","zobāle","rubbish; waste","نباید زباله را در طبیعت رها کنیم.","Nabāyad zobāle rā dar tabi'at rahā konim.","We should not leave rubbish in nature.");
+ N(6,"WR3-01","فناوری","fanāvari","technology","فناوری ارتباط میان مردم را آسان‌تر کرده است.","Fanāvari ertebāt miyān-e mardom rā āsān-tar karde ast.","Technology has made communication easier.");
+ N(6,"WR3-01","تحقیق","tahqiq","research; investigation","پیش از نوشتن مقاله باید تحقیق کافی انجام داد.","Pish az neveshtan-e maqāle bāyad tahqiq-e kāfi anjām dād.","Sufficient research should be done before writing an essay.");
+ N(7,"WR3-01","هدف","hadaf","goal; objective","هدف روشن به برنامه‌ریزی بهتر کمک می‌کند.","Hadaf-e rowshan be barnāme-rizi-ye behtar komak mikonad.","A clear goal helps with better planning.");
+ N(7,"WR3-01","پیشرفت","pishraft","progress; advancement","مرور منظم باعث پیشرفت در یادگیری می‌شود.","Morur-e monazzam bā'es-e pishraft dar yādgiri mishavad.","Regular review leads to progress in learning.");
+ N(8,"WR3-01","ارتباط","ertebāt","communication; connection","ارتباط صمیمانه اعضای خانواده را به هم نزدیک می‌کند.","Ertebāt-e samimāne a'zā-ye khānevāde rā be ham nazdik mikonad.","Warm communication brings family members closer.");
+ N(8,"WR3-01","آرامش","ārāmesh","calm; peace of mind","گفت‌وگوی محترمانه به آرامش خانواده کمک می‌کند.","Goft-o-gu-ye mohtaramāne be ārāmesh-e khānevāde komak mikonad.","Respectful conversation helps bring peace to the family.");
+ N(9,"WR3-01","احساس","ehsās","feeling; emotion","نوشتن خاطرات به بیان احساس کمک می‌کند.","Neveshtan-e khāterāt be bayān-e ehsās komak mikonad.","Writing memories helps express feelings.");
+ N(10,"WR3-01","قانون","qānun","law; rule","رعایت قانون از حقوق دیگران حمایت می‌کند.","Re'āyat-e qānun az hoquq-e digarān hemāyat mikonad.","Observing the law protects the rights of others.");
+ N(11,"WR3-01","انرژی","enerzhi","energy","صرفه‌جویی در انرژی به حفظ منابع کمک می‌کند.","Sarfejuyi dar enerzhi be hefz-e manābe' komak mikonad.","Saving energy helps conserve resources.");
+ N(11,"WR3-01","مصرف","masraf","consumption; use","مصرف بی‌رویهٔ آب به محیط زیست آسیب می‌زند.","Masraf-e biraviye-ye āb be mohit-e zist āsib mizanad.","Excessive water consumption harms the environment.");
+ N(12,"WR3-01","تغییر","taghyir","change","تغییر عادت‌های کوچک می‌تواند نتیجهٔ بزرگی داشته باشد.","Taghyir-e 'ādat-hā-ye kuchak mitavānad natije-ye bozorgi dāshte bāshad.","Changing small habits can have a big result.");
+ N(14,"WR3-01","تاریخ","tārikh","history","مطالعهٔ تاریخ شناخت گذشته را آسان می‌کند.","Motāle'e-ye tārikh shenākht-e gozashte rā āsān mikonad.","Studying history makes the past easier to understand.");
+ N(14,"WR3-01","تمدن","tamaddon","civilisation","تمدن‌ها با دانش و همکاری گسترش یافته‌اند.","Tamaddon-hā bā dānesh va hamkāri gostareش yāfte-and.","Civilisations have developed through knowledge and cooperation.");
+ N(15,"WR3-01","فرهنگ","farhang","culture","فرهنگ هر جامعه در آداب و رسوم آن دیده می‌شود.","Farhang-e har jāme'e dar ādāb-o-rosum-e ān dide mishavad.","A society's culture can be seen in its customs and traditions.");
+ N(16,"WR3-01","خبر","khabar","news; report","پیش از بازنشر خبر باید اعتبار منبع را بررسی کرد.","Pish az bāzneshr-e khabar bāyad e'tebār-e manba' rā barrasi kard.","Before sharing news, check the reliability of the source.");
+ N(17,"WR3-01","نوآوری","nowāvari","innovation","نوآوری می‌تواند کیفیت زندگی را بهبود دهد.","Nowāvari mitavānad keyfiyat-e zendegi rā behbud dahad.","Innovation can improve quality of life.");
+ N(19,"WR3-01","سفر","safar","travel; journey","برنامه‌ریزی پیش از سفر از بسیاری مشکلات جلوگیری می‌کند.","Barnāme-rizi pish az safar az besyāri moshkelāt jelowgiri mikonad.","Planning before a journey prevents many problems.");
+ N(20,"WR3-01","شعر","she'r","poetry; poem","خواندن شعر دایرهٔ واژگان را گسترش می‌دهد.","Khāndan-e she'r dāyere-ye vāzhegān rā gostareش midahad.","Reading poetry expands vocabulary.");
+ N(20,"WR3-01","نقد","naqd","criticism; review","نقد سازنده هم نقاط قوت و هم ضعف را بررسی می‌کند.","Naqd-e sāzande ham noqāt-e qovvat va ham za'f rā barrasi mikonad.","Constructive criticism examines both strengths and weaknesses.");
+ N(20,"WR3-01","روایت","revāyat","narrative; account","روایت منظم رویدادها متن را خواندنی‌تر می‌کند.","Revāyat-e monazzam-e rooydād-hā matn rā khāndani-tar mikonad.","An orderly narrative makes a text more engaging.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
