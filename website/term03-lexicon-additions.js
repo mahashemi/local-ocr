@@ -2162,7 +2162,7 @@
  N(1,"WR3-02","شناخت","shenākht","knowledge; recognition","شناخت فرهنگ‌های دیگر به احترام متقابل کمک می‌کند.","Shenākht-e farhang-hā-ye digar be ehterām-e moteqābel komak mikonad.","Understanding other cultures helps foster mutual respect.");
  N(1,"WR3-02","محیط","mohit","environment; surroundings","آلودگی به سلامت محیط آسیب می‌زند.","Āludegi be salāmat-e mohit āsib mizanad.","Pollution harms the health of the environment.");
  N(1,"WR3-02","قرآن","Qur'ān","the Qur'an","قرآن انسان را به اندیشه و کار نیک دعوت می‌کند.","Qur'ān ensān rā be andishe va kār-e nik davat mikonad.","The Qur'an invites people to reflection and good deeds.");
- N(1,"WR3-02","تجربه","tajrobe","experience","تجربه‌های گذشته می‌توانند راهنمای تصمیم‌های امروز باشند.","Tajrobe-hā-ye gozashte mitavā nand rāhnamā-ye tasmim-hā-ye emruz bāshand.","Past experiences can guide today's decisions.");
+ N(1,"WR3-02","تجربه","tajrobe","experience","تجربه‌های گذشته می‌توانند راهنمای تصمیم‌های امروز باشند.","Tajrobe-hā-ye gozashte mitavānad rāhnamā-ye tasmim-hā-ye emruz bāshand.","Past experiences can guide today's decisions.");
  N(1,"WR3-02","تفاوت","tafāvot","difference","در این نوشته تفاوت دو روش را بررسی می‌کنیم.","Dar in neveshte tafāvot-e do ravesh rā barrasi mikonim.","In this text, we examine the difference between two methods.");
  N(1,"WR3-02","مقایسه","moqāyese","comparison","مقایسهٔ دو دیدگاه به فهم بهتر موضوع کمک می‌کند.","Moqāyese-ye do didgāh be fahm-e behtar-e mozoo' komak mikonad.","Comparing two viewpoints helps us understand the topic better.");
  N(1,"WR3-02","انرژی","enerji","energy","صرفه‌جویی در انرژی به حفاظت از طبیعت کمک می‌کند.","Sarf-ejuyi dar enerji be hefāzat az tabi'at komak mikonad.","Saving energy helps protect nature.");
