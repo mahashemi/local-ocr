@@ -47,7 +47,7 @@ The first 100 lines are **not always page 1**. For example, FA3-05 reaches its P
   - `term03-source-audit.js`
   - `term03-khulasa.js`
   - `term03-writing.js`
-- Checked 1,367 vocabulary helper-call rows in `term03-lexicon-additions.js`.
+- Checked 1,610 vocabulary helper-call rows in `term03-lexicon-additions.js`; the validated Term 03 lexicon contains 1,844 entries.
 - No Persian- or Cyrillic-script characters were found in the transliteration fields checked.
 - No masdar/amr example mismatches or identical masdar/amr pairs were found by the custom validation pass.
 
@@ -55,6 +55,15 @@ The first 100 lines are **not always page 1**. For example, FA3-05 reaches its P
 
 Standalone `--` lines around the vocabulary blocks were retained because they act as separators in the OCR text; they were not treated as accidental word connectors. The repository contains OCR text files, not the original scanned page images. Consequently, visual column order, exact printed line breaks, and whether a separator is present in the scan cannot be certified from these text files alone. No unsupported visual-layout corrections were made.
 
-## Deployment workflow note
+## Writing, speaking and Khulasa linkage
 
-The latest GitHub Pages deployment workflow run failed in the unrelated Term 01 check at `website/term01-supplementary.js:283` (`undefined is not iterable`). The six Term 03 modules passed the syntax checks above; the deployment failure is not evidence of a Term 03 vocabulary or syntax failure. A successful site deployment has therefore **not** been claimed by this audit.
+- Added 35 supplementary `WR3-01` flashcards for vocabulary used across Term 03 writing, speaking and summary materials.
+- Added a source-based Newestan model paragraph from `N3-01`, explicitly demonstrating a topic sentence, supporting sentences, a concluding sentence and punctuation.
+- The model also displays all 21 Dars 01 vocabulary headwords as clickable flashcard terms.
+- Improved Persian reading typography for Newestan, Sukhanrani and Khulasa with responsive sizing, line spacing and platform-safe Vazirmatn / Noto Naskh / Geeza Pro fallbacks.
+- The shared vocabulary linker now supports common plural forms and links meaningful words that occur in the Persian examples on existing flashcards. Khulasa uses the same lookup helper.
+- The automated Term 03 audit checks the Newestan example structure, its 21 flashcard mappings, the shared writing-link helper and the typography rules.
+
+## Deployment status
+
+The earlier Term 01 deployment blocker has been corrected. The Pages validation and deployment succeeded for main commit `16ba66d4c63dd10eae469be0654ce09574e4e8af` (workflow run `43487963907`). The Term 03 content audit also passed for that commit (workflow run `43487963886`).
