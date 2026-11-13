@@ -1630,10 +1630,10 @@
 
 
  // FA3-14 first-page additions.
- A(14,"FA3-14","آجری","āj ori","brick; brick-built","دیوار آجری خانه قدیمی است.","Divār-e ājori-ye khāne qadimi ast.","The house's brick wall is old.");
- N(14,"FA3-14","رژه","ra zhe","parade; march","سربازان در میدان رژه رفتند.","Sarbāzān dar meydān rāzhe raftand.","The soldiers marched in the square.");
- A(14,"FA3-14","وارونه","vārun e","upside down; inverted","تصویر در آینه وارونه دیده می‌شود.","Tasvir dar āyene vārun e dide mishavad.","The image appears inverted in the mirror.");
- N(14,"FA3-14","فروپاشی","forupāshi","collapse; breakdown","فروپاشی حکومت به تغییرات بزرگی انجامید.","Forupāshi-ye hokumat be taghyirāt-e bozorgi anjām id.","The collapse of the government led to major changes.");
+ A(14,"FA3-14","آجری","ājori","brick; brick-built","دیوار آجری خانه قدیمی است.","Divār-e ājori-ye khāne qadimi ast.","The house's brick wall is old.");
+ N(14,"FA3-14","رژه","rāzhe","parade; march","سربازان در میدان رژه رفتند.","Sarbāzān dar meydān rāzhe raftand.","The soldiers marched in the square.");
+ A(14,"FA3-14","وارونه","vārune","upside down; inverted","تصویر در آینه وارونه دیده می‌شود.","Tasvir dar āyene vārun e dide mishavad.","The image appears inverted in the mirror.");
+ N(14,"FA3-14","فروپاشی","forupāshi","collapse; breakdown","فروپاشی حکومت به تغییرات بزرگی انجامید.","Forupāshi-ye hokumat be taghyirāt-e bozorgi anjāmid.","The collapse of the government led to major changes.");
  N(14,"FA3-14","جنگ داخلی","jang-e dākheli","civil war","جنگ داخلی زندگی مردم را دشوار می‌کند.","Jang-e dākheli zendegi-ye mardom rā doshvār mikonad.","Civil war makes people's lives difficult.","گروه اسمی — noun phrase");
  N(14,"FA3-14","حرفه","herfe","profession; occupation","پزشکی حرفه‌ای دشوار و ارزشمند است.","Pezeshki herfe-i doshvār-o arzeshmand ast.","Medicine is a difficult and valuable profession.");
  N(14,"FA3-14","مذهب","mazhab","religion; denomination","مذهب در فرهنگ بسیاری از جوامع نقش دارد.","Mazhab dar farhang-e besyāri az javāme' naqsh dārad.","Religion plays a role in the culture of many societies.");
@@ -1651,7 +1651,7 @@
  V(14,"FA3-14","موکول شدن","movakul shodan","to be postponed; to be deferred","جلسه به هفتهٔ آینده موکول شد.","Jalase be hafte-ye āyande movakul shod.","The meeting was postponed until next week.","موکول شدن","—","موکول شدنِ تصمیم به بررسی بیشتر نیاز دارد.","Movakul shodan-e tasmim be barrasi-ye bishtar niyāz dārad.","Deferring the decision requires further review.","—","—","—","فعل مجهول است؛ امر مستقیم طبیعی ندارد.");
  V(14,"FA3-14","مبتلا بودن","mobtalā budan","to suffer from; to be afflicted with","او به بیماری مزمن مبتلا بود.","U be bimāri-ye mozmen mobtalā bud.","He suffered from a chronic illness.","مبتلا بودن","—","مبتلا بودن به بیماری نیازمند مراقبت پزشکی است.","Mobtalā budan be bimāri niyāzmand-e morāqebat-e pezeshki ast.","Having an illness requires medical care.","—","—","—","ساختارِ بودن در این معنا خبری است؛ امر مستقیم طبیعی ندارد.");
  A(14,"FA3-14","هدفمند","hadafmand","purposeful; goal-oriented","برنامه‌ریزی هدفمند به موفقیت کمک می‌کند.","Barnāme-rizi-ye hadafmand be movaffaqiyat komak mikonad.","Purposeful planning helps success.");
- A(14,"FA3-14","متحرک","motaharr ek","mobile; moving","نمایشگاه شامل آثار متحرک و ثابت است.","Namāyeshgāh shāmel-e āsār-e motaharr ek-o sābet ast.","The exhibition includes moving and static works.");
+ A(14,"FA3-14","متحرک","motaharrek","mobile; moving","نمایشگاه شامل آثار متحرک و ثابت است.","Namāyeshgāh shāmel-e āsār-e motaharr ek-o sābet ast.","The exhibition includes moving and static works.");
  // FA3-15 first-page addition.
  N(15,"FA3-15","تدفین","tadfin","burial; interment","مراسم تدفین پس از نماز برگزار شد.","Marāsem-e tadfin pas az namāz bargozār shod.","The burial ceremony took place after the prayer.");
 
