@@ -1347,6 +1347,7 @@ function add(){
 
 
 /* Index common Persian plural forms so inflected nouns open their base flashcard. */
+const vocabLinkStopWords=new Set("و در به از که را با برای این آن او آنها ما شما من یک هر هم نیز اما اگر تا یا چون زیرا ولی بلکه پس سپس بعد قبل اکنون امروز بیشتر کمتر بسیار همه هیچ خود دیگر همین همان چه چگونه چرا کدام است هست بود بودند باشد شوند شود شده دارد دارند داشت داشتن کردن کند کنند کرد کردند می‌کند می‌شود می‌باشد می‌توان می‌توانند می‌خواهد می‌خواهند باید نباید نیست نیستند هستند آن‌ها آنچه چنین مانند مثل دربارهٔ میان روی زیر نزد طرف هنگام زمان سال روز ماه بسم الله الرحمن الرحیم سلام علیکم والسلام الحمد رب العالمین علی محمد آله الطاهرین".split(/\s+/).map(fold));
 function addVocabularyForms(index,item){
  const key=fold(item.fa);if(!key)return;
  index.set(key,item);
@@ -1358,6 +1359,15 @@ function addVocabularyForms(index,item){
  const irregular={"منابع":"منبع","آثار":"اثر","حقوق":"حق","شرایط":"شرط","عوامل":"عامل","روابط":"رابطه","رسوم":"رسم","افراد":"فرد","حیوانات":"حیوان","موضوعات":"موضوع","نکات":"نکته","مراحل":"مرحله","اخبار":"خبر","امور":"امر","آداب":"ادب","اشعار":"شعر"};
  const base=irregular[String(item.fa).trim()];
  if(base){const variant=fold(base);if(!index.has(variant))index.set(variant,item);}
+ // Words appearing in a flashcard's own Persian examples are also searchable
+ // from the writing pages; clicking them opens the card that demonstrates them.
+ const examples=[item.xf,item.m?.[0],item.a?.[0]];
+ for(const example of examples){
+  for(const token of String(example||"").match(/[\u0600-\u06ff]+(?:‌[\u0600-\u06ff]+)*/g)||[]){
+   const word=fold(token);
+   if(word.length>2&&!vocabLinkStopWords.has(word)&&!index.has(word))index.set(word,item);
+  }
+ }
 }
 
 /* Link Persian vocabulary in writing and speaking guidance to the shared flashcard. */
