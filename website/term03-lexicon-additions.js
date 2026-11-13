@@ -2531,6 +2531,9 @@
  V(1,"N3-03","خوردن","khordan","to eat; to consume","خوردنِ غذای سالم برای بدن مفید است.","Khordan-e ghazā-ye sālem barāye badan mofid ast.","Eating healthy food is good for the body.","خوردن","بخور","خوردنِ آرام و با دقت به هضم غذا کمک می‌کند.","Khordan-e ārām va bā deqqat be hazm-e ghazā komak mikonad.","Eating slowly and carefully helps digestion.","میوهٔ تازه بخور.","Mive-ye tāze bekhor.","Eat fresh fruit.");
  V(1,"SH3-01","آموختن","āmukhtan","to learn; to acquire knowledge","آموختنِ واژه‌های تازه به تمرین نیاز دارد.","Āmukhtan-e vāzhehā-ye tāze be tamrin niyāz dārad.","Learning new words requires practice.","آموختن","بیاموز","آموختنِ زبان با شنیدن و گفت‌وگو آسان‌تر می‌شود.","Āmukhtan-e zabān bā shenidan va goft-o-gu āsān-tar mishavad.","Learning a language becomes easier through listening and conversation.","از اشتباه‌های خود بیاموز.","Az eshtebāhhā-ye khod biyāmoz.","Learn from your mistakes.");
 
+
+ V(1,"N3-03","بودن","budan","to be; to exist","بودنِ دانشجو در کلاس به‌موقع اهمیت دارد.","Budan-e dāneshju dar kelās be-moghe' ahammiyat dārad.","A student's being on time in class matters.","بودن","باش","بودن در کنار خانواده به انسان آرامش می‌دهد.","Budan dar kenār-e khānevāde be ensān ārāmesh midahad.","Being with family gives a person peace.","آماده باش.","Āmāde bāsh.","Be ready.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
