@@ -96,8 +96,42 @@
 [20,"SH1-20","به دنیا آمدن","be donyā āmadan","to be born","verb","او در سال ۱۳۷۰ به دنیا آمد.","U dar sāl-e 1370 be donyā āmad.","He was born in 1991."],
 [20,"SH1-20","بزرگ شدن","bozorg shodan","to grow up","verb","او در یک شهر کوچک بزرگ شد.","U dar yek shahr-e kuchak bozorg shod.","She grew up in a small city."],
 [20,"SH1-20","تحصیل کردن","tahsil kardan","to study; to pursue education","verb","او در دانشگاه تحصیل می‌کند.","U dar dāneshgāh tahsil mikonad.","He studies at university."]
+
+[1,"KH1-01","ملیت","melliyat","nationality","noun","ملیت من ایرانی است.","Melliyat-e man Irāni ast.","My nationality is Iranian."],
+[1,"KH1-01","فوتبالیست","futbālist","footballer; soccer player","noun","او فوتبالیست حرفه‌ای است.","U futbālist-e herfe'i ast.","He is a professional footballer."],
+[1,"KH1-01","مهربان","mehrabān","kind; kind-hearted","adjective","مادر من بسیار مهربان است.","Mādar-e man besyār mehrabān ast.","My mother is very kind."],
+[1,"KH1-01","همسر","hamsar","spouse","noun","همسر او پزشک است.","Hamsar-e u pezeshk ast.","His spouse is a doctor."],
+[1,"KH1-01","بزرگ","bozorg","big; large; grown-up","adjective","تهران شهر بزرگی است.","Tehrān shahr-e bozorgi ast.","Tehran is a large city."],
+[1,"KH1-01","کشور","keshvar","country","noun","ایران کشور زیبایی است.","Irān keshvar-e zibāyi ast.","Iran is a beautiful country."],
+[1,"SH1-01","حال شما خوب است؟","hāl-e shomā khub ast?","Are you well?","question","سلام، حال شما خوب است؟","Salām, hāl-e shomā khub ast?","Hello, are you well?"],
+[1,"SH1-01","شما خوبید؟","shomā khubid?","Are you well? (polite)","question","سلام، شما خوبید؟","Salām, shomā khubid?","Hello, are you well?"],
+[1,"SH1-01","سلامتی","salāmati","health; well-being","noun","سلامتی شما برای ما مهم است.","Salāmati-ye shomā barā-ye mā mohem ast.","Your well-being is important to us."],
+[1,"SH1-01","خوشبختم","khoshbakhtam","Nice to meet you","greeting","سلام، خوشبختم.","Salām, khoshbakhtam.","Hello, nice to meet you."],
+[1,"SH1-01","خوش‌وقتم","khoshvaqtam","Pleased to meet you","greeting","از آشنایی با شما خوش‌وقتم.","Az āshenāyi bā shomā khoshvaqtam.","I am pleased to meet you."],
+[1,"SH1-01","از دیدنتان خوشحالم","az didan-e shomā khoshhālam","I'm glad to see you","expression","از دیدنتان خوشحالم.","Az didan-e shomā khoshhālam.","I'm glad to see you."],
+[1,"SH1-01","فامیلی چیست؟","fāmili chist?","What is your family name?","question","ببخشید، فامیلی شما چیست؟","Bebakhshid, fāmili-ye shomā chist?","Excuse me, what is your family name?"],
+[1,"SH1-01","شما چطور؟","shomā chetor?","And you?; How about you?","question","من خوبم، شما چطور؟","Man khubam, shomā chetor?","I am well; how about you?"],
+[1,"SH1-01","فردا می‌بینمت","fardā mibinamet","See you tomorrow","expression","خداحافظ، فردا می‌بینمت.","Khodāhāfez, fardā mibinamet.","Goodbye, see you tomorrow."],
+[2,"SH1-02","شمال","shomāl","north","noun","تهران در شمالِ مرکز ایران نیست؛ در شمال کشور قرار دارد.","Tehrān dar shomāl-e keshvar qarār dārad.","Tehran is in the north of the country."],
+[2,"SH1-02","جنوب","jonub","south","noun","بندرعباس در جنوب ایران است.","Bandar-Abbās dar jonub-e Irān ast.","Bandar Abbas is in southern Iran."],
+[2,"SH1-02","شرق","sharq","east","noun","خورشید از شرق طلوع می‌کند.","Khorshid az sharq tolu' mikonad.","The sun rises in the east."],
+[2,"SH1-02","غرب","gharb","west","noun","خورشید در غرب غروب می‌کند.","Khorshid dar gharb ghorub mikonad.","The sun sets in the west."],
+[2,"SH1-02","جنگلی","jangali","wooded; forested","adjective","این منطقه جنگلی است.","In manteqe jangali ast.","This area is forested."],
+[2,"SH1-02","بیابانی","biyābāni","desert; desert-like","adjective","بخش بزرگی از این منطقه بیابانی است.","Bakhsh-e bozorgi az in manteqe biyābāni ast.","A large part of this region is desert-like."],
+[2,"SH1-02","کوهستانی","kuhestāni","mountainous","adjective","این روستا در منطقه‌ای کوهستانی است.","In rustā dar manteqe-i kuhestāni ast.","This village is in a mountainous area."],
+[2,"SH1-02","زبان کشور شما چیست؟","zabān-e keshvar-e shomā chist?","What is the language of your country?","question","زبان کشور شما چیست؟","Zabān-e keshvar-e shomā chist?","What is the language of your country?"],
+[4,"SH1-04","همین‌طور","hamintor","likewise; the same way","adverb","من هم همین‌طور فکر می‌کنم.","Man ham hamintor fekr mikonam.","I think so too."],
+[4,"SH1-04","عاشق ... هستم","āsheq-e ... hastam","I love ...; I am fond of ...","expression","من عاشقِ انار هستم.","Man āsheq-e anār hastam.","I love pomegranates."],
+[4,"SH1-04","فرقی نمی‌کند","farqi nemikonad","It makes no difference; it doesn't matter","expression","برای من فرقی نمی‌کند.","Barā-ye man farqi nemikonad.","It makes no difference to me."],
+[4,"SH1-04","میوه‌فروشی","mive-forushi","fruit shop","noun","میوه‌فروشی نزدیک خانهٔ ما است.","Mive-forushi nazdik-e khāne-ye mā ast.","The fruit shop is near our home."],
+[4,"SH1-04","خوشم می‌آید","khosham miāyad","I like; I enjoy","expression","من از این میوه خوشم می‌آید.","Man az in mive khosham miāyad.","I like this fruit."],
+[4,"SH1-04","بدم می‌آید","bedam miāyad","I dislike; I can't stand","expression","من از غذای خیلی تند بدم می‌آید.","Man az ghazā-ye kheili tond bedam miāyad.","I dislike very spicy food."],
+[7,"KH1-07","آدرس دادن","ādrēs dādan","to give an address; to give directions","verb","لطفاً آدرس را دقیق بدهید.","Lotfan ādrēs rā daqiq bedehid.","Please give the address accurately."],
+[7,"SH1-07","کیک","kik","cake","noun","برای تولد یک کیک خریدیم.","Barā-ye tavallod yek kik kharidim.","We bought a cake for the birthday."],
+[17,"KH1-17","جشن","jashn","celebration; festival","noun","جشن عید فطر در شهر ما برگزار می‌شود.","Jashn-e Eid-e Fetr dar shahr-e mā bargozār mishavad.","The Eid al-Fitr celebration is held in our city."],
+[17,"KH1-17","عید فطر","Eid-e Fetr","Eid al-Fitr","noun phrase","عید فطر پس از ماه رمضان است.","Eid-e Fetr pas az māh-e Ramazān ast.","Eid al-Fitr comes after the month of Ramadan."]
 ];
- const additions=rows.map(([unit,source,fa,tr,en,pos,faEx,trEx,enEx])=>({unit,source,fa,tr,en,pos:pos==="noun"?"اسم — noun":pos==="noun phrase"?"ترکیب اسمی — noun phrase":pos==="adjective"?"صفت — adjective":pos==="adjective/adverb"?"صفت/قید — adjective/adverb":pos==="noun/preposition"?"اسم/حرف اضافه — noun/preposition":pos==="time expression"?"قید زمان — time expression":"فعل مرکب — compound verb",ex:[faEx,trEx,enEx]}));
+ const additions=rows.map(([unit,source,fa,tr,en,pos,faEx,trEx,enEx])=>({unit,source,fa,tr,en,pos:pos==="noun"?"اسم — noun":pos==="noun phrase"?"ترکیب اسمی — noun phrase":pos==="adjective"?"صفت — adjective":pos==="adjective/adverb"?"صفت/قید — adjective/adverb":pos==="noun/preposition"?"اسم/حرف اضافه — noun/preposition":pos==="time expression"?"قید زمان — time expression":pos==="greeting"?"عبارت احوال‌پرسی — greeting":pos==="question"?"پرسش — question":pos==="expression"?"عبارت — expression":pos==="adverb"?"قید — adverb":pos==="verb"?"فعل — verb":"فعل مرکب — compound verb",ex:[faEx,trEx,enEx]}));
  const norm=s=>String(s||"").replace(/[\u200c\sـ]/g,"");
  const seen=new Set((window.TERM1_DATA||[]).map(x=>x.unit+"|"+norm(x.fa)));
  for(const x of additions){const k=x.unit+"|"+norm(x.fa);if(seen.has(k))throw new Error("Duplicate Term 01 word: "+k);seen.add(k);}
