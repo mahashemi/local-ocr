@@ -1346,11 +1346,25 @@ function add(){
 
 
 
+/* Index common Persian plural forms so inflected nouns open their base flashcard. */
+function addVocabularyForms(index,item){
+ const key=fold(item.fa);if(!key)return;
+ index.set(key,item);
+ if(String(item.fa).trim().split(/\s+/).length===1){
+  ["ها","های","هایی","ان","گان","یان"].forEach(suffix=>{
+   const variant=key+fold(suffix);if(!index.has(variant))index.set(variant,item);
+  });
+ }
+ const irregular={"منابع":"منبع","آثار":"اثر","حقوق":"حق","شرایط":"شرط","عوامل":"عامل","روابط":"رابطه","رسوم":"رسم","افراد":"فرد","حیوانات":"حیوان","موضوعات":"موضوع","نکات":"نکته","مراحل":"مرحله","اخبار":"خبر","امور":"امر","آداب":"ادب","اشعار":"شعر"};
+ const base=irregular[String(item.fa).trim()];
+ if(base){const variant=fold(base);if(!index.has(variant))index.set(variant,item);}
+}
+
 /* Link Persian vocabulary in writing and speaking guidance to the shared flashcard. */
 function attachVocabularyLinks(scope){
  const entries=all().filter(i=>i.fa&&i.en).sort((a,b)=>String(b.fa).trim().split(/\s+/).length-String(a.fa).trim().split(/\s+/).length||String(b.fa).length-String(a.fa).length);
  const index=new Map();let maxWords=1;
- entries.forEach(i=>{const key=fold(i.fa);if(key&&!index.has(key))index.set(key,i);maxWords=Math.max(maxWords,String(i.fa).trim().split(/\s+/).length)});
+ entries.forEach(i=>{addVocabularyForms(index,i);maxWords=Math.max(maxWords,String(i.fa).trim().split(/\s+/).length)});
  const walker=document.createTreeWalker(scope,NodeFilter.SHOW_TEXT,{acceptNode(node){
   const p=node.parentElement;
   if(!p||!/[\u0600-\u06ff]/.test(node.nodeValue)||p.closest('textarea,input,button,a,script,style,select,.kh-word,.kh-word-modal'))return NodeFilter.FILTER_REJECT;
@@ -1430,7 +1444,7 @@ function khulasa(){
  const words=all().filter(i=>i.fa&&i.en).sort((a,b)=>(a.bk===term?0:1)-(b.bk===term?0:1));
  const cleanKh=t=>fold(String(t).replace(/[،؛؟۔,.;:!?«»()[\\]{}…]/g,''));
  const wordIndex=new Map();
- words.forEach(i=>{const k=cleanKh(i.fa);if(k&&!wordIndex.has(k))wordIndex.set(k,i)});
+ words.forEach(i=>{addVocabularyForms(wordIndex,i)});
  const maxWords=Math.max(1,...words.map(i=>String(i.fa).trim().split(/\s+/).length));
  function linkLine(line){
   const parts=String(line).split(/(\s+)/),out=[];
