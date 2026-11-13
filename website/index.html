@@ -123,6 +123,32 @@ main{max-width:1120px;padding:28px 24px 16px}.site-head{margin-bottom:26px}.bran
 .writing-wrap .kh-word{font-size:inherit;line-height:inherit;padding:0 2px;border-radius:3px;background:color-mix(in srgb,var(--soft) 45%,transparent)}
 .writing-wrap .kh-word:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .writing-wrap .kh-word:hover{background:var(--soft)}
+
+/* Persian learning typography: graceful Naskh/Vazirmatn fallbacks, tuned for long-form reading. */
+:root{--fa-reading-font:"Vazirmatn","Noto Naskh Arabic UI","Noto Naskh Arabic","Geeza Pro","Noto Sans Arabic",Tahoma,sans-serif}
+.fa,.writing-wrap .fa-block,.writing-wrap .khulasa-lines,.writing-wrap textarea{
+ font-family:var(--fa-reading-font);font-weight:450;font-kerning:normal;
+ font-feature-settings:"kern","liga","calt";text-rendering:optimizeLegibility
+}
+.writing-wrap .fa-block{font-size:clamp(1.08rem,1.45vw,1.24rem);line-height:2.2;letter-spacing:0}
+.writing-wrap .model-sample{font-size:1.2rem;line-height:2.25;padding:16px 18px;background:linear-gradient(135deg,rgba(39,102,91,.045),transparent);border-right:3px solid var(--gold);border-radius:10px}
+.writing-wrap .khulasa-lines{font-size:clamp(1.08rem,1.45vw,1.22rem);line-height:2.25;padding-right:25px}
+.writing-wrap .khulasa-lines li{padding:10px 12px;margin:7px 0;border-right:2px solid rgba(39,102,91,.18);border-radius:10px;background:rgba(39,102,91,.025)}
+.newestan-example{border-color:rgba(189,149,80,.42)!important;background:linear-gradient(145deg,rgba(189,149,80,.055),var(--card) 42%)!important}
+.newestan-example h3{color:var(--ink);line-height:1.7}
+.newestan-example .newestan-part{padding:12px 14px;margin:12px 0;border:1px solid var(--bd);border-radius:12px;background:rgba(255,255,255,.32)}
+.newestan-example .newestan-part>b{color:var(--ac);font-size:13px}
+.newestan-example .fa-block{margin:8px 0 0}
+.newestan-example .newestan-support{padding-right:25px}
+.newestan-example .newestan-support li{padding:5px 0;line-height:2.15}
+.newestan-example .newestan-vocabulary{font-size:1.06rem;line-height:2.5}
+.writing-wrap textarea{line-height:1.95}
+@media(max-width:600px){
+ .writing-wrap .fa-block{font-size:1.08rem;line-height:2.15}
+ .writing-wrap .model-sample{font-size:1.1rem;line-height:2.2;padding:12px}
+ .writing-wrap .khulasa-lines{font-size:1.08rem;padding-right:20px}
+ .newestan-example .newestan-part{padding:10px}
+}
 </style></head>
 <body><main>
 <div class="bismillah-wrap"><img src="bismillah_text_green.png" alt="بسم الله الرحمن الرحیم" class="bismillah-image"><div class="bismillah-rule"><span>✦</span></div></div>
