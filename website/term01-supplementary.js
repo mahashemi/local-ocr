@@ -163,6 +163,37 @@
 [12,"SH1-12","قهوه‌ای","qahve'i","brown","adjective","او پیراهن قهوه‌ای می‌پوشد.","U pirāhan-e qahve'i mipushad.","He wears a brown shirt."],
 [12,"SH1-12","بنفش","banafsh","purple","adjective","لباس بنفش را دوست دارم.","Lebās-e banafsh rā dust dāram.","I like the purple clothes."],
 [12,"SH1-12","سرمه‌ای","sorme'i","navy blue","adjective","او کت سرمه‌ای دارد.","U kot-e sorme'i dārad.","He has a navy-blue jacket."]
+
+[4,"KH1-04","هنرمند","honarmand","artist","noun","همسر من هنرمند است.","Hamsar-e man honarmand ast.","My spouse is an artist."],
+[4,"KH1-04","قدبلند","qadboland","tall","adjective","او بسیار قدبلند است.","U besyār qadboland ast.","He is very tall."],
+[4,"KH1-04","قدکوتاه","qadkutāh","short (in height)","adjective","خواهر او قدکوتاه است.","Khāhar-e u qadkutāh ast.","His sister is short."],
+[4,"KH1-04","ورزشکار","varzeshkār","athlete; sportsperson","noun","آقای حسینی ورزشکار است.","Āghā-ye Hoseyni varzeshkār ast.","Mr Hosseini is an athlete."],
+[4,"KH1-04","پزشک","pezeshk","physician; doctor","noun","همسر او پزشک است.","Hamsar-e u pezeshk ast.","His spouse is a doctor."],
+[4,"KH1-04","زبان مادری","zabān-e mā dari","mother tongue; native language","noun phrase","زبان مادری او عربی است.","Zabān-e mā dari-ye u arabi ast.","His mother tongue is Arabic."],
+[4,"KH1-04","دانشگاه","dāneshgāh","university","noun","من در دانشگاه درس می‌خوانم.","Man dar dāneshgāh dars mikhanam.","I study at university."],
+[16,"KH1-16","معلول","ma'lul","disabled; having a disability","adjective","مهتاب دانش‌آموزی معلول است.","Mahtāb dānesh-āmuz-i ma'lul ast.","Mahtab is a student with a disability."],
+[16,"KH1-16","نوجوان","nowjavān","teenager; adolescent","noun","مهتاب دختر نوجوانی است.","Mahtāb dokhtar-e nowjavāni ast.","Mahtab is a teenage girl."],
+[16,"KH1-16","کیف مدرسه","kif-e madrese","schoolbag; school bag","noun phrase","کتاب را داخل کیف مدرسه می‌گذارم.","Ketāb rā dākhel-e kif-e madrese migozāram.","I put the book inside the schoolbag."],
+[16,"KH1-16","مسواک زدن","mesvāk zadan","to brush one's teeth","verb","من هر شب مسواک می‌زنم.","Man har shab mesvāk mizanam.","I brush my teeth every night."],
+[16,"KH1-16","لباس پوشیدن","lebās pushidan","to get dressed; to put on clothes","verb","مهتاب می‌تواند لباس بپوشد.","Mahtāb mitavānad lebās bepushad.","Mahtab can get dressed."],
+[16,"KH1-16","خیاطی کردن","khayyāti kardan","to sew; to do tailoring","verb","او می‌تواند خیاطی کند.","U mitavānad khayyāti konad.","She can sew."],
+[16,"KH1-16","نویسنده","nevisande","writer; author","noun","مهتاب نویسندهٔ خوبی است.","Mahtāb nevisande-ye khubi ast.","Mahtab is a good writer."],
+[16,"KH1-16","نقاشی کردن","naqqāshi kardan","to draw; to paint","verb","او با مدادرنگی نقاشی می‌کند.","U bā medād-rangi naqqāshi mikonad.","She draws with coloured pencils."],
+[16,"KH1-16","آبرنگ","ābrang","watercolour paint","noun","او با آبرنگ نقاشی می‌کند.","U bā ābrang naqqāshi mikonad.","She paints with watercolours."],
+[16,"KH1-16","گچ","gach","chalk; plaster (depending on context)","noun","دانش‌آموز گچ را برمی‌دارد.","Dānesh-āmuz gach rā barmidārad.","The student picks up the chalk."],
+[16,"KH1-16","نیمکت","nimkat","classroom bench; school desk","noun","نشستن روی نیمکت برای او دشوار است.","Neshastan ru-ye nimkat barā-ye u doshvār ast.","Sitting on the bench is difficult for her."],
+[16,"KH1-16","میز","miz","table; desk","noun","پدرش برای او میز مخصوص می‌سازد.","Pedarash barā-ye u miz-e makhsus misāzad.","Her father makes a special desk for her."],
+[16,"KH1-16","نجار","najjār","carpenter","noun","پدر مهتاب نجار نیست.","Pedar-e Mahtāb najjār nist.","Mahtab's father is not a carpenter."],
+[16,"KH1-16","کارمند","kārmand","employee; office worker","noun","پدر او کارمند است.","Pedar-e u kārmand ast.","Her father is an employee."],
+[6,"SH1-06","قورمه‌سبزی","qormeh-sabzi","Ghormeh sabzi, an Iranian herb stew","noun","من قورمه‌سبزی را دوست دارم.","Man qormeh-sabzi rā dust dāram.","I like ghormeh sabzi."],
+[6,"SH1-06","سبزی","sabzi","herbs; greens; vegetables","noun","در قورمه‌سبزی سبزی هست.","Dar qormeh-sabzi sabzi hast.","There are herbs in ghormeh sabzi."],
+[6,"SH1-06","گوشت","gusht","meat","noun","این غذا گوشت دارد.","In ghazā gusht dārad.","This dish contains meat."],
+[6,"SH1-06","لوبیا","lubiā","beans","noun","در آبگوشت لوبیا هست.","Dar ābgusht lubiā hast.","There are beans in abgoosht."],
+[6,"SH1-06","آبگوشت","ābgusht","abgoosht; Iranian meat and bean stew","noun","ما آبگوشت می‌خوریم.","Mā ābgusht mikhorim.","We eat abgoosht."],
+[6,"SH1-06","دوغ","dugh","doogh; savoury yoghurt drink","noun","من آبگوشت را با دوغ می‌خورم.","Man ābgusht rā bā dugh mikhoram.","I eat abgoosht with doogh."],
+[6,"SH1-06","نان سنگک","nān-e sangak","sangak flatbread","noun phrase","آبگوشت با نان سنگک خوشمزه است.","Ābgusht bā nān-e sangak khoshmaze ast.","Abgoosht with sangak bread is delicious."],
+[6,"SH1-06","غذا","ghazā","food; meal","noun","شما چه غذایی را دوست دارید؟","Shomā che ghazāyi rā dust dārid?","What food do you like?"],
+[6,"SH1-06","تاکسی","tāksi","taxi","noun","او با تاکسی به بیمارستان می‌رود.","U bā tāksi be bimārestān miravad.","He goes to the hospital by taxi."]
 ];
  const additions=rows.map(([unit,source,fa,tr,en,pos,faEx,trEx,enEx])=>({unit,source,fa,tr,en,pos:pos==="noun"?"اسم — noun":pos==="noun phrase"?"ترکیب اسمی — noun phrase":pos==="proper noun"?"اسم خاص — proper noun":pos==="adjective"?"صفت — adjective":pos==="adjective/adverb"?"صفت/قید — adjective/adverb":pos==="noun/preposition"?"اسم/حرف اضافه — noun/preposition":pos==="time expression"?"قید زمان — time expression":pos==="greeting"?"عبارت احوال‌پرسی — greeting":pos==="question"?"پرسش — question":pos==="expression"?"عبارت — expression":pos==="adverb"?"قید — adverb":pos==="verb"?"فعل — verb":"فعل مرکب — compound verb",ex:[faEx,trEx,enEx]}));
  const norm=s=>String(s||"").replace(/[\u200c\sـ]/g,"");
