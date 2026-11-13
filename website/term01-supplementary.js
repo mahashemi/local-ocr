@@ -141,7 +141,7 @@
 [10,"KH1-10","فروردین","Farvardin","Farvardin, the first month of the Iranian calendar","noun","نوروز در ماه فروردین است.","Nowruz dar māh-e Farvardin ast.","Nowruz is in the month of Farvardin."],
 [10,"KH1-10","بهمن","Bahman","Bahman, the eleventh month of the Iranian calendar","noun","بیست‌ودوم بهمن در ایران روز مهمی است.","Bist-o-dovvom-e Bahman dar Irān ruz-e mohemmi ast.","The twenty-second of Bahman is an important day in Iran."],
 [9,"N1-09","جشن عروسی","jashn-e arusi","wedding celebration","noun phrase","ما به جشن عروسی دوستم می‌رویم.","Mā be jashn-e arusi-ye dustam miravim.","We are going to my friend's wedding celebration."],
-[9,"N1-09","جشن فارغ‌التحصیلی","jashn-e fāreq-ottahsili","graduation celebration","noun phrase","دانشگاه برای دانشجویان جشن فارغ‌التحصیلی می‌گیرد.","Dāneshgāh barā-ye dāneshju-yān jashn-e fāreq-ottahsili migirad.","The university holds a graduation celebration for the students."],
+[9,"N1-09","جشن فارغ‌التحصیلی","jashn-e farāghat-e tahsili","graduation celebration","noun phrase","دانشگاه برای دانشجویان جشن فارغ‌التحصیلی می‌گیرد.","Dāneshgāh barā-ye dāneshju-yān jashn-e fāreq-ottahsili migirad.","The university holds a graduation celebration for the students."],
 [9,"N1-09","جشن پیروزی","jashn-e piruzi","victory celebration","noun phrase","مردم در جشن پیروزی شرکت می‌کنند.","Mardom dar jashn-e piruzi sherkat mikonand.","People take part in the victory celebration."],
 [9,"N1-09","جشن تکلیف","jashn-e taklif","religious-obligation celebration","noun phrase","مادرم برای جشن تکلیف من به مدرسه می‌آید.","Mādar-am barā-ye jashn-e taklif-e man be madrese miāyad.","My mother comes to school for my religious-obligation celebration."],
 [9,"N1-09","جشن تولد","jashn-e tavallod","birthday party","noun phrase","امروز به جشن تولد سجاد می‌رویم.","Emruz be jashn-e tavallod-e Sajjād miravim.","Today we are going to Sajjad's birthday party."],
@@ -156,7 +156,7 @@
 [11,"SH1-11","ماشین","māshin","car; automobile","noun","او با ماشین به بیمارستان می‌رود.","U bā māshin be bimārestān miravad.","He goes to the hospital by car."],
 [11,"SH1-11","اتوبوس","otobus","bus","noun","ما با اتوبوس به دانشگاه می‌رویم.","Mā bā otobus be dāneshgāh miravim.","We go to university by bus."],
 [11,"SH1-11","تاکسی خطی","tāksi-ye khatti","shared-route taxi","noun phrase","او با تاکسی خطی به مرکز شهر می‌رود.","U bā tāksi-ye khatti be markaz-e shahr miravad.","He goes to the city centre by shared-route taxi."],
-[11,"SH1-11","تاکسی تلفنی","tāksi-ye telefonī","telephone-dispatched taxi","noun phrase","برای رفتن به بیمارستان تاکسی تلفنی گرفتیم.","Barā-ye raftan be bimārestān tāksi-ye telefonī gereftim.","We called a taxi to go to the hospital."],
+[11,"SH1-11","تاکسی تلفنی","tāksi-ye telefonī","call taxi; radio taxi","noun phrase","برای رفتن به بیمارستان تاکسی تلفنی گرفتیم.","Barā-ye raftan be bimārestān tāksi-ye telefonī gereftim.","We called a taxi to go to the hospital."],
 [11,"SH1-11","موتور","motor","motorcycle; motorbike (colloquial)","noun","او با موتور به رستوران می‌رود.","U bā motor be restorān miravad.","He goes to the restaurant by motorbike."],
 [12,"SH1-12","پیراهن","pirāhan","shirt","noun","من معمولاً پیراهن سفید می‌پوشم.","Man ma'mulan pirāhan-e sefid mipusham.","I usually wear a white shirt."],
 [12,"SH1-12","سفید","sefid","white","adjective","این پیراهن سفید است.","In pirāhan sefid ast.","This shirt is white."],
@@ -164,7 +164,7 @@
 [12,"SH1-12","بنفش","banafsh","purple","adjective","لباس بنفش را دوست دارم.","Lebās-e banafsh rā dust dāram.","I like the purple clothes."],
 [12,"SH1-12","سرمه‌ای","sorme'i","navy blue","adjective","او کت سرمه‌ای دارد.","U kot-e sorme'i dārad.","He has a navy-blue jacket."]
 ];
- const additions=rows.map(([unit,source,fa,tr,en,pos,faEx,trEx,enEx])=>({unit,source,fa,tr,en,pos:pos==="noun"?"اسم — noun":pos==="noun phrase"?"ترکیب اسمی — noun phrase":pos==="adjective"?"صفت — adjective":pos==="adjective/adverb"?"صفت/قید — adjective/adverb":pos==="noun/preposition"?"اسم/حرف اضافه — noun/preposition":pos==="time expression"?"قید زمان — time expression":pos==="greeting"?"عبارت احوال‌پرسی — greeting":pos==="question"?"پرسش — question":pos==="expression"?"عبارت — expression":pos==="adverb"?"قید — adverb":pos==="verb"?"فعل — verb":"فعل مرکب — compound verb",ex:[faEx,trEx,enEx]}));
+ const additions=rows.map(([unit,source,fa,tr,en,pos,faEx,trEx,enEx])=>({unit,source,fa,tr,en,pos:pos==="noun"?"اسم — noun":pos==="noun phrase"?"ترکیب اسمی — noun phrase":pos==="proper noun"?"اسم خاص — proper noun":pos==="adjective"?"صفت — adjective":pos==="adjective/adverb"?"صفت/قید — adjective/adverb":pos==="noun/preposition"?"اسم/حرف اضافه — noun/preposition":pos==="time expression"?"قید زمان — time expression":pos==="greeting"?"عبارت احوال‌پرسی — greeting":pos==="question"?"پرسش — question":pos==="expression"?"عبارت — expression":pos==="adverb"?"قید — adverb":pos==="verb"?"فعل — verb":"فعل مرکب — compound verb",ex:[faEx,trEx,enEx]}));
  const norm=s=>String(s||"").replace(/[\u200c\sـ]/g,"");
  const seen=new Set((window.TERM1_DATA||[]).map(x=>x.unit+"|"+norm(x.fa)));
  for(const x of additions){const k=x.unit+"|"+norm(x.fa);if(seen.has(k))throw new Error("Duplicate Term 01 word: "+k);seen.add(k);}
