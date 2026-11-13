@@ -1316,6 +1316,28 @@
  N(3,"SH3-02","بروز مشکل","boruz-e moshkel","the occurrence of a problem","در صورت بروز مشکل با مسئولان تماس بگیرید.","Dar surat-e boruz-e moshkel bā mas'ulān tamās begirid.","If a problem occurs, contact the staff.","گروه اسمی — noun phrase");
  N(3,"SH3-02","ردیف","radif","row; line","صندلی من در ردیف پنجم است.","Sandali-ye man dar radif-e panjom ast.","My seat is in the fifth row.","اسم — noun");
 
+
+ // FA3-02 first-page list reconciliation.
+ A(2,"FA3-02","سخاوتمند","sakhāvatmand","generous","مرد سخاوتمند به نیازمندان کمک می‌کند.","Mard-e sakhāvatmand be niyāzmandān komak mikonad.","A generous man helps people in need.");
+ A(2,"FA3-02","عبوس","abus","frowning; sullen","چهرهٔ عبوس او همه را نگران کرد.","Chehre-ye abus-e u hame rā negarān kard.","His sullen expression worried everyone.");
+ A(2,"FA3-02","پر جنب و جوش","por-jonb-o-jush","lively; energetic","کودک پر جنب و جوش در حیاط بازی می‌کند.","Kudak-e por-jonb-o-jush dar hayāt bāzi mikonad.","The energetic child plays in the yard.");
+ A(2,"FA3-02","پرچانه","por-chāne","talkative; chatty","همکار پرچانه‌ام همیشه داستانی برای گفتن دارد.","Hamkār-e por-chāne-am hamishe dāstāni barāye goftan dārad.","My chatty colleague always has a story to tell.");
+ A(2,"FA3-02","خنگ","khang","foolish; dim-witted (colloquial, insulting)","این واژه توهین‌آمیز است و نباید برای دیگران به کار رود.","In vāzhe tohin-āmiz ast va nabāyad barāye digarān be kār ravad.","This word is insulting and should not be used for others.");
+ A(2,"FA3-02","همه‌فن‌حریف","hame-fan-harif","versatile; good at many things","او تعمیرکار همه‌فن‌حریفی است.","U ta'mirkār-e hame-fan-harifi ast.","He is a versatile repairer.");
+ V(2,"FA3-02","با چیزی کنار آمدن","bā chizi kenār āmadan","to come to terms with something","او با شرایط تازه کنار آمد.","U bā sharāyet-e tāze kenār āmad.","He came to terms with the new circumstances.","با چیزی کنار آمدن","با شرایط کنار بیا","با چیزی کنار آمدن به صبر نیاز دارد.","Bā chizi kenār āmadan be sabr niyāz dārad.","Coming to terms with something requires patience.","با شرایط تازه کنار بیا.","Bā sharāyet-e tāze kenār biyā.","Come to terms with the new circumstances.");
+ N(2,"FA3-02","در معرض","dar ma'rez","exposed to; at risk of","کودکان نباید در معرض خطر قرار بگیرند.","Kudakān nabāyad dar ma'rez-e khatar qarār begirand.","Children should not be exposed to danger.","عبارت حرف اضافه‌ای — prepositional phrase");
+ // FA3-05 first-page list reconciliation.
+ N(5,"FA3-05","مجری","mojri","presenter; host","مجری برنامه از مهمانان استقبال کرد.","Mojri-ye barnāme az mehmānān esteqbāl kard.","The programme host welcomed the guests.");
+ N(5,"FA3-05","کاشکی","kāshki","if only; I wish","کاشکی امروز باران ببارد.","Kāshki emruz bārān bebārad.","If only it would rain today.","قید آرزو — optative particle");
+ N(5,"FA3-05","فلش","flash","flash drive; USB drive","فایل را روی فلش ذخیره کردم.","Fāyl rā ru-ye flash ذخیره kardam.","I saved the file on a flash drive.");
+ A(5,"FA3-05","پکر","poker","upset; dejected (colloquial)","بعد از شنیدن خبر ناراحت‌کننده پکر شد.","Ba'd az shenidan-e khabar-e nārāhat-konande poker shod.","He became dejected after hearing the upsetting news.");
+ A(5,"FA3-05","یواش","yavāsh","quietly; slowly (colloquial)","لطفاً یواش صحبت کن.","Lotfan yavāsh sohbat kon.","Please speak quietly.","قید — adverb");
+ V(5,"FA3-05","پا شدن","pā shodan","to get up; to stand up","صبح زود از خواب پا شد.","Sobh-e zud az khāb pā shod.","He got up early in the morning.","پا شدن","پا شو","پا شدن از خواب در زمستان دشوار است.","Pā shodan az khāb dar zemestān doshvār ast.","Getting out of bed in winter is difficult.","زود پا شو تا دیر نکنیم.","Zud pā sho tā dir nakonim.","Get up early so we are not late.");
+ N(5,"FA3-05","پریز برق","pariz-e barq","electrical socket; power outlet","شارژر را به پریز برق وصل کردم.","Shārjer rā be pariz-e barq vasl kardam.","I plugged the charger into the power outlet.");
+ N(5,"FA3-05","سوسک","susak","cockroach; beetle","یک سوسک کوچک کنار دیوار دیدم.","Yek susak-e kuchak kenār-e divār didam.","I saw a small cockroach beside the wall.");
+ N(5,"FA3-05","نقطهٔ مقابل","noqte-ye moqābel","opposite; converse","آرامش نقطهٔ مقابل اضطراب است.","Ārāmesh noqte-ye moqābel-e ezterāb ast.","Calmness is the opposite of anxiety.","گروه اسمی — noun phrase");
+ N(5,"FA3-05","به هیچ وجه","be hich vajh","by no means; not at all","به هیچ وجه نباید قوانین را نادیده گرفت.","Be hich vajh nabāyad qavānin rā nādide gereft.","Under no circumstances should rules be ignored.","عبارت قیدی — adverbial phrase");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
