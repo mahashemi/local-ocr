@@ -2414,6 +2414,37 @@
  N(1,"WR3-01","زمینه","zamine","context; field; background","معنای واژه را در زمینهٔ جمله بررسی کنید.","Ma'nā-ye vāzhe rā dar zamine-ye jomle barrasi konid.","Check the meaning of a word in the context of the sentence.");
  N(1,"WR3-01","راه","rāh","way; path","برای حل مشکل راهی عملی پیشنهاد دهید.","Barāye hal-e moshkel rāhi amali pishnehād dahid.","Suggest a practical way to solve the problem.");
 
+
+ V(20,"N3-10","دادن","dādan","to give; to provide","دادنِ پاسخ دقیق به پرسش اصلی اهمیت دارد.","Dādan-e pāsokh-e daqiq be porsesh-e asli ahammiyat dārad.","Giving a precise answer to the main question is important.","دادن","بده","دادنِ فرصت پرسش به دانشجو به یادگیری کمک می‌کند.","Dādan-e forsat-e porsesh be dāneshju be yādgiri komak mikonad.","Giving students an opportunity to ask questions helps learning.","این کتاب را به دوستم بده.","In ketāb rā be dustam bede.","Give this book to my friend.");
+ N(1,"WR3-01","اثر","asar","effect; impact; work","رفتار استاد بر انگیزهٔ دانشجو اثر می‌گذارد.","Raftār-e ostād bar angize-ye dāneshju asar migozārad.","A teacher's behaviour affects a student's motivation.");
+ N(1,"WR3-01","دیگران","digarān","others; other people","به نظر و حق دیگران احترام بگذارید.","Be nazar va haqq-e digarān ehterām bogozārid.","Respect other people's views and rights.");
+ N(1,"WR3-01","فقط","faqat","only; just","نتیجه فقط تکرار مقدمه نیست.","Natije faqat tekrar-e moqaddame nist.","The conclusion is not merely a repetition of the introduction.");
+ N(1,"WR3-01","همراه","hamrāh","together with; companion","احترام باید همراه با صداقت باشد.","Ehterām bāyad hamrāh bā sedāqat bāshad.","Respect should be accompanied by honesty.");
+ N(1,"WR3-01","نشان","neshān","sign; indication","این رفتار نشانِ مسئولیت‌پذیری است.","In raftār neshān-e mas'uliyat-paziri ast.","This behaviour is a sign of responsibility.");
+ N(1,"WR3-01","بدون","bedun","without","بدون منبع معتبر، ادعا را قطعی بیان نکنید.","Bedun-e manba'-e mo'tabar edde'ā rā qat'i bayān nakonid.","Do not state a claim as certain without a reliable source.");
+ N(1,"WR3-01","ممکن","momken","possible; may","تغییر عادت ممکن است زمان ببرد.","Taghyir-e ādat momken ast zamān bebarad.","Changing a habit may take time.");
+ N(1,"WR3-01","پایان","pāyān","end; conclusion","در پایان، پیام اصلی را کوتاه جمع‌بندی کنید.","Dar pāyān payām-e asli rā kutāh jam'-bandi konid.","At the end, briefly summarise the main message.");
+ N(1,"WR3-01","بخشی","bakhshi","part; section","هر بند بخشی از موضوع اصلی را توضیح می‌دهد.","Har band bakhshi az mozoo-ye asli rā tozih midahad.","Each paragraph explains part of the main topic.");
+ N(1,"WR3-01","قابل","ghābel","capable; suitable for; worth","پیشنهاد باید قابل اجرا باشد.","Pishnehād bāyad ghābel-e ejrā bāshad.","A suggestion should be feasible.");
+ N(1,"WR3-01","کوچک","kuchak","small; little","هدف بزرگ را به گام‌های کوچک تقسیم کنید.","Hadaf-e bozorg rā be gāmhā-ye kuchak taqsim konid.","Divide a large goal into small steps.");
+ N(1,"WR3-01","مالی","māli","financial","برنامه‌ریزی مالی به مدیریت هزینه کمک می‌کند.","Barnāme-rizi-ye māli be modiriyat-e hazine komak mikonad.","Financial planning helps manage expenses.");
+ N(1,"WR3-01","بهتر","behtar","better","بازنویسی می‌تواند متن را بهتر کند.","Bāznevisi mitavānad matn rā behtar konad.","Rewriting can make the text better.");
+ N(1,"WR3-01","لازم","lāzem","necessary; required","برای نوشتن تحقیق، یادداشت‌برداری لازم است.","Barāye neveshtan-e tahqiq yāddāsht-bardāri lāzem ast.","Note-taking is necessary for writing research.");
+ N(1,"WR3-01","مطرح","matrah","raised; discussed","در مقدمه پرسش اصلی مطرح می‌شود.","Dar moqaddame porsesh-e asli matrah mishavad.","The main question is raised in the introduction.");
+ N(1,"WR3-01","فصل","fasl","chapter; season","در پایان هر فصل نکته‌های اصلی را مرور کنید.","Dar pāyān-e har fasl noktehā-ye asli rā morur konid.","Review the main points at the end of each chapter.");
+ N(1,"WR3-01","اساس","asās","basis; foundation","پاسخ باید بر اساس شواهد نوشته شود.","Pāsokh bāyad bar asās-e shavāhed neveshte shavad.","The answer should be written on the basis of evidence.");
+ N(1,"WR3-01","گسترش","gostāresh","expansion; development","گسترش ایده با مثال و توضیح انجام می‌شود.","Gostāresh-e ide bā mesāl va tozih anjām mishavad.","An idea is developed through examples and explanation.");
+ N(1,"WR3-01","رسم","rasm","custom; tradition","هر کشور رسم‌های فرهنگی ویژه‌ای دارد.","Har keshvar rasmhā-ye farhangi-ye vizhe-i dārad.","Every country has its own cultural customs.");
+ N(1,"WR3-01","انتشار","enteshār","publication; distribution","پیش از انتشار نوشته، آن را ویرایش کنید.","Pish az enteshār-e neveshte ān rā virāyesh konid.","Edit the writing before publication.");
+ N(1,"WR3-01","ماضی","māzi","past tense (grammar)","فعل ماضی برای بیان رویداد گذشته به کار می‌رود.","Fe'l-e māzi barāye bayān-e roydād-e gozashte be kār miravad.","The past tense is used to describe a past event.");
+ N(1,"WR3-01","فرد","fard","individual; person","هر فرد در برابر انتخاب خود مسئول است.","Har fard dar barābar-e entekhāb-e khod mas'ul ast.","Each individual is responsible for their choices.");
+ N(1,"WR3-01","فردی","fardi","individual; personal","برنامهٔ فردی باید با شرایط شخص هماهنگ باشد.","Barnāme-ye fardi bā sharāyet-e shakhs hamāhang bāshad.","An individual plan should fit the person's circumstances.");
+ N(1,"WR3-01","آثار","āsār","works; effects","آثار علمی استاد برای دانشجویان سودمند است.","Āsār-e elmi-ye ostād barāye dāneshju-yān sudmand ast.","A teacher's scholarly works are useful to students.");
+ N(1,"WR3-01","تصمیم‌گیری","tasmim-giri","decision-making","تصمیم‌گیری درست به شناخت مسئله نیاز دارد.","Tasmim-giri-ye dorost be shenākht-e mas'ale niyāz dārad.","Good decision-making requires understanding the problem.");
+ N(1,"WR3-01","پیامد","payāmad","consequence; outcome","هر تصمیمی پیامدهایی دارد.","Har tasmimi payāmad-hāyi dārad.","Every decision has consequences.");
+ N(1,"WR3-01","خطر","khatar","danger; risk","آگاهی از خطر به پیشگیری کمک می‌کند.","Āgāhi az khatar be pishgiri komak mikonad.","Awareness of danger helps prevention.");
+ N(1,"WR3-01","توسعه","tose'e","development","توسعهٔ مهارت نوشتن به تمرین نیاز دارد.","Tose'e-ye mahārat-e neveshtan be tamrin niyāz dārad.","Developing writing skills requires practice.");
+
  // Deduplicate against the curated base and within this file by Persian headword.
  const norm=x=>String(x||"").replace(/[\u200c\sـ]/g,"");
  const byKey=new Map((window.TERM3_DATA||[]).map(x=>[norm(x.fa),x]));
