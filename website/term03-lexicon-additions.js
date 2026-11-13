@@ -1261,7 +1261,7 @@
  V(1,"SH3-01","قهر کردن","qahr kardan","to become upset and stop speaking; to fall out","دو کودک پس از اختلاف با هم قهر کردند.","Do kudak pas az ekhtelāf bā ham qahr kardand.","The two children fell out after a disagreement.","قهر کردن","قهر نکن","قهر کردن مشکل را حل نمی‌کند.","Qahr kardan moshkel rā hal nemikonad.","Sulking does not solve the problem.","با دوستت قهر نکن؛ با او صحبت کن.","Bā dustat qahr nakon; bā u sohbat kon.","Do not fall out with your friend; talk to them.");
 
 
- A(1,"FA3-01","خونسرد","khونسard","calm; cool-headed","در موقعیت دشوار خونسرد بمان.","Dar mowqe'iyat-e doshvār khونسard bemān.","Stay calm in a difficult situation.");
+ A(1,"FA3-01","خونسرد","khunsard","calm; cool-headed","در موقعیت دشوار خونسرد بمان.","Dar mowqe'iyat-e doshvār khunsard bemān.","Stay calm in a difficult situation.");
  N(1,"SH3-01","متکا","motakkā","pillow; cushion (variant term listed beside بالش)","کودک سرش را روی متکا گذاشت.","Kudak sarash rā ru-ye motakkā gozāsht.","The child put his head on the pillow.","اسم — ism (noun)");
 
  // Deduplicate against the curated base and within this file by Persian headword.
