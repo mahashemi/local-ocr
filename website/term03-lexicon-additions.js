@@ -1292,7 +1292,7 @@
  N(12,"N3-05","عروس فصل‌ها","arus-e faslhā","the bride of the seasons (poetic name for spring)","بهار را عروس فصل‌ها می‌نامند.","Bahār rā arus-e fasl-hā mināmand.","Spring is called the bride of the seasons.","ترکیب ادبی — literary phrase");
  A(12,"N3-05","دلپذیر","delpazir","pleasant; agreeable","هوای بهاری بسیار دلپذیر است.","Havā-ye bahāri besyār delpazir ast.","The spring weather is very pleasant.");
  N(12,"N3-05","لاله‌ها","lāle-hā","tulips","لاله‌ها در دشت شکوفه می‌دهند.","Lāle-hā dar dasht shekuhe midahand.","Tulips bloom in the plain.");
- N(12,"N3-05","شکوفه‌های خندان","shekuهe-hā-ye khandān","smiling blossoms","شکوفه‌های خندان باغ را زیبا کرده‌اند.","Shekuhe-hā-ye khandān bāgh rā zibā karde-and.","The smiling blossoms have made the garden beautiful.","گروه اسمی — noun phrase");
+ N(12,"N3-05","شکوفه‌های خندان","shekuhe-hā-ye khandān","smiling blossoms","شکوفه‌های خندان باغ را زیبا کرده‌اند.","Shekuhe-hā-ye khandān bāgh rā zibā karde-and.","The smiling blossoms have made the garden beautiful.","گروه اسمی — noun phrase");
  N(12,"N3-05","شهد","shahd","nectar","زنبورها از شهد گل‌ها تغذیه می‌کنند.","Zanburhā az shahd-e golhā taghziye mikonand.","Bees feed on the nectar of flowers.");
  N(12,"N3-05","به حدی","be haddi","to such an extent","هوا به حدی گرم شد که همه به سایه رفتند.","Havā be haddi garm shod ke hame be sāye raftand.","It became so hot that everyone went into the shade.","عبارت قیدی — adverbial phrase");
  N(12,"N3-05","سرزمین‌های افسانه‌ای","sarzamin-hā-ye afsāne-i","legendary lands","در داستان‌ها از سرزمین‌های افسانه‌ای سخن می‌گویند.","Dar dāstān-hā az sarzamin-hā-ye afsāne-i sokhan miguyand.","Stories speak of legendary lands.","گروه اسمی — noun phrase");
