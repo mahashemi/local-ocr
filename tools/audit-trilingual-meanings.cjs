@@ -18,6 +18,7 @@ const load = (p) => require(require('path').resolve(__dirname, '..', p));
   'website/term02-proverbs.js',
   'website/term01-core-semantics.js',
   'website/term02-core-semantics.js',
+  'website/term02-additional-semantics-01.js',
   'website/term03-core-semantics.js'
 ].forEach(load);
 
