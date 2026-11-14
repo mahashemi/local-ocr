@@ -3,30 +3,30 @@
    These 18 common commands are a clearly labelled supplementary practice set. */
 (()=> {
  const data = [
- ["بلند شدن","boland shodan","to get up; stand up","بلند شو","از جا بلند شو.","Az jā boland sho.","Get up."],
- ["نشستن","neshastan","to sit down","بنشین","اینجا بنشین.","Injā be-neshin.","Sit here."],
- ["آوردن","āvardan","to bring","بیاور","کتابت را بیاور.","Ketābat rā biyāvar.","Bring your book."],
- ["بردن","bordan","to take; carry","ببر","این کتاب را به کلاس ببر.","In ketāb rā be kelās bebar.","Take this book to class."],
- ["برگشتن","bargashtan","to return; come back","برگرد","زود برگرد.","Zud bargard.","Come back soon."],
- ["گذاشتن","gozāshtan","to put; place","بگذار","کتاب را روی میز بگذار.","Ketāb rā ru-ye miz bogzār.","Put the book on the table."],
- ["نگه داشتن","negah dāshtan","to keep; hold","نگه دار","این کاغذ را نگه دار.","In kāghaz rā negah dār.","Keep this paper."],
- ["گرفتن","gereftan","to take; get; receive","بگیر","این را از من بگیر.","In rā az man begir.","Take this from me."],
- ["دادن","dādan","to give; hand over","بده","لطفاً کتاب را به من بده.","Lotfan ketāb rā be man bedeh.","Please give me the book."],
- ["برداشتن","bardāshtan","to pick up; lift","بردار","کیفت را بردار.","Kif-at rā bardār.","Pick up your bag."],
- ["باز کردن","bāz kardan","to open","باز کن","در را باز کن.","Dar rā bāz kon.","Open the door."],
- ["بستن","bastan","to close; shut","ببند","در را ببند.","Dar rā beband.","Close the door."],
- ["روشن کردن","rowshan kardan","to turn on; switch on","روشن کن","چراغ را روشن کن.","Cherāgh rā rowshan kon.","Turn on the light."],
- ["خاموش کردن","khāmush kardan","to turn off; switch off","خاموش کن","تلویزیون را خاموش کن.","Televizion rā khāmush kon.","Turn off the television."],
- ["آمدن","āmadan","to come","بیا","اینجا بیا.","Injā biyā.","Come here."],
- ["رفتن","raftan","to go; leave","برو","به کلاس برو.","Be kelās boro.","Go to class."],
- ["ایستادن","istādan","to stand; stop","بایست","اینجا بایست.","Injā bāyest.","Stand here."],
- ["صبر کردن","sabr kardan","to wait; be patient","صبر کن","کمی صبر کن.","Kami sabr kon.","Wait a little."]
+ ["بلند شدن","boland shodan","to get up; stand up","بلند شو","بلند شدن از خواب در آغاز روز مفید است.","Boland shodan az khāb dar āghāz-e ruz mofid ast.","Getting up at the start of the day is beneficial.","از جا بلند شو.","Az jā boland sho.","Get up."],
+ ["نشستن","neshastan","to sit down","بنشین","نشستن در جای مناسب به نظم کلاس کمک می‌کند.","Neshastan dar jā-ye monāseb be nazm-e kelās komak mikonad.","Sitting in the proper place helps maintain classroom order.","اینجا بنشین.","Injā be-neshin.","Sit here."],
+ ["آوردن","āvardan","to bring","بیاور","آوردن کتاب به کلاس ضروری است.","Āvardan-e ketāb be kelās zaruri ast.","Bringing the book to class is necessary.","کتابت را بیاور.","Ketābat rā biyāvar.","Bring your book."],
+ ["بردن","bordan","to take; carry","ببر","بردن کتاب به کتابخانه کار ساده‌ای است.","Bordan-e ketāb be ketābkhāne kār-e sāde-i ast.","Taking the book to the library is simple.","این کتاب را به کلاس ببر.","In ketāb rā be kelās bebar.","Take this book to class."],
+ ["برگشتن","bargashtan","to return; come back","برگرد","برگشتن به خانه پس از کلاس معمول است.","Bargashtan be khāne pas az kelās ma'mul ast.","Returning home after class is usual.","زود برگرد.","Zud bargard.","Come back soon."],
+ ["گذاشتن","gozāshtan","to put; place","بگذار","گذاشتن کتاب روی میز کار ساده‌ای است.","Gozāshtan-e ketāb ru-ye miz kār-e sāde-i ast.","Putting the book on the table is simple.","کتاب را روی میز بگذار.","Ketāb rā ru-ye miz bogzār.","Put the book on the table."],
+ ["نگه داشتن","negah dāshtan","to keep; hold","نگه دار","نگه داشتن رسید برای پیگیری لازم است.","Negah dāshtan-e resid barāye peygiri lāzem ast.","Keeping the receipt is necessary for follow-up.","این کاغذ را نگه دار.","In kāghaz rā negah dār.","Keep this paper."],
+ ["گرفتن","gereftan","to take; get; receive","بگیر","گرفتن نوبت پیش از مراجعه مفید است.","Gereftan-e nobat pish az morāje'e mofid ast.","Getting an appointment before visiting is useful.","این را از من بگیر.","In rā az man begir.","Take this from me."],
+ ["دادن","dādan","to give; hand over","بده","دادن کتاب به دوست کار خوبی است.","Dādan-e ketāb be dust kār-e khubi ast.","Giving a book to a friend is a good thing.","لطفاً کتاب را به من بده.","Lotfan ketāb rā be man bedeh.","Please give me the book."],
+ ["برداشتن","bardāshtan","to pick up; lift","بردار","برداشتن کیف از روی زمین آسان است.","Bardāshtan-e kif az ru-ye zamin āsān ast.","Picking up the bag from the floor is easy.","کیفت را بردار.","Kif-at rā bardār.","Pick up your bag."],
+ ["باز کردن","bāz kardan","to open","باز کن","باز کردن پنجره هوا را تازه می‌کند.","Bāz kardan-e panjare havā rā tāze mikonad.","Opening the window refreshes the air.","در را باز کن.","Dar rā bāz kon.","Open the door."],
+ ["بستن","bastan","to close; shut","ببند","بستن در پس از خروج ضروری است.","Bastan-e dar pas az khoruj zaruri ast.","Closing the door after leaving is necessary.","در را ببند.","Dar rā beband.","Close the door."],
+ ["روشن کردن","rowshan kardan","to turn on; switch on","روشن کن","روشن کردن چراغ در تاریکی لازم است.","Rowshan kardan-e cherāgh dar tariki lāzem ast.","Turning on the light is necessary in the dark.","چراغ را روشن کن.","Cherāgh rā rowshan kon.","Turn on the light."],
+ ["خاموش کردن","khāmush kardan","to turn off; switch off","خاموش کن","خاموش کردن چراغ هنگام خروج در مصرف برق صرفه‌جویی می‌کند.","Khāmush kardan-e cherāgh hengām-e khoruj dar masraf-e barq sarfejuyi mikonad.","Turning off the light when leaving saves electricity.","تلویزیون را خاموش کن.","Televizion rā khāmush kon.","Turn off the television."],
+ ["آمدن","āmadan","to come","بیا","آمدن به‌موقع احترام به دیگران است.","Āmadan be-moqe' ehterām be digarān ast.","Arriving on time shows respect for others.","اینجا بیا.","Injā biyā.","Come here."],
+ ["رفتن","raftan","to go; leave","برو","رفتن به کلاس بخشی از برنامهٔ روزانه است.","Raftan be kelās bakhshi az barnāme-ye ruzāne ast.","Going to class is part of the daily routine.","به کلاس برو.","Be kelās boro.","Go to class."],
+ ["ایستادن","istādan","to stand; stop","بایست","ایستادن در صف نشانهٔ رعایت نوبت است.","Istādan dar saf neshāne-ye re'āyat-e nobat ast.","Standing in line shows respect for the queue.","اینجا بایست.","Injā bāyest.","Stand here."],
+ ["صبر کردن","sabr kardan","to wait; be patient","صبر کن","صبر کردن هنگام انتظار لازم است.","Sabr kardan hengām-e entezār lāzem ast.","Being patient while waiting is necessary.","کمی صبر کن.","Kami sabr kon.","Wait a little."]
  ];
  const norm=s=>String(s||"").replace(/[\u200c\sـ]/g,"");
  const seen=new Set((window.TERM1_DATA||[]).map(x=>"7|"+norm(x.fa)));
- for(const [fa,tr,en,amr,exFa,exTr,exEn] of data){
+ for(const [fa,tr,en,amr,mf,mt,me,af,at,ae] of data){
   if(seen.has("7|"+norm(fa))) continue;
-  window.TERM1_DATA.push({unit:7,source:"F1-07",fa,tr,en,pos:"فعل — verb",ms:fa,amr,ex:[exFa,exTr,exEn],m:[exFa,exTr,exEn],a:[exFa,exTr,exEn],note:"فعل امر پرکاربرد؛ مجموعهٔ تکمیلی برای تمرین ساخت امر در درس FA1-07."});
+  window.TERM1_DATA.push({unit:7,source:"F1-07",fa,tr,en,pos:"فعل — verb",ms:fa,amr,ex:[mf,mt,me],m:[mf,mt,me],a:[af,at,ae],note:"فعل امر پرکاربرد؛ مجموعهٔ تکمیلی برای تمرین ساخت امر در درس FA1-07."});
  }
  const S=window.PERSIAN_SEMANTICS||(window.PERSIAN_SEMANTICS={});
  const meanings={
