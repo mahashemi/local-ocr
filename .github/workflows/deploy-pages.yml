@@ -95,6 +95,7 @@ jobs:
           node --check website/term02-writing.js
           node --check website/term02-proverbs.js
           node --check website/term02-core-semantics.js
+          node --check website/term02-additional-semantics-01.js
           node <<'NODE'
           global.window = {};
           require('./website/term02-data.js');
@@ -102,6 +103,7 @@ jobs:
           require('./website/semantic-meanings.js');
           require('./website/term02-proverbs.js');
           require('./website/term02-core-semantics.js');
+          require('./website/term02-additional-semantics-01.js');
           const proverbs = window.TERM2_DATA.filter(x => x.source === 'FA2-20' && x.pos.includes('ضرب‌المثل'));
           if (proverbs.length !== 13) throw new Error('Expected 13 FA2-20 proverbs, found ' + proverbs.length);
           for (const row of proverbs) {
@@ -113,7 +115,8 @@ jobs:
             const meaning = window.PERSIAN_SEMANTICS[fa];
             if (!meaning || !meaning.faMeaning || !meaning.enMeaning || !meaning.arMeaning) throw new Error('Missing Term 02 trilingual meaning for ' + fa);
           }
-          console.log('Validated ' + proverbs.length + ' FA2-20 proverbs and ' + window.TERM2_CORE_SEMANTICS_COUNT + ' Term 02 core trilingual meanings.');
+          if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH1.length !== 29) throw new Error('Expected 29 Term 02 additional meanings in batch 1.');
+          console.log('Validated ' + proverbs.length + ' FA2-20 proverbs, ' + window.TERM2_CORE_SEMANTICS_COUNT + ' Term 02 core meanings and ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH1.length + ' additional meanings.');
           NODE
           node tools/audit-term02.cjs
 
