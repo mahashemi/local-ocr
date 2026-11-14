@@ -191,7 +191,7 @@
  N(15,"KH3-15","قهوه‌خانه","qahve-khāne","traditional teahouse","قهوه‌خانه محل دیدار مردم بود.","Qahve-khāne mahal-e didār-e mardom bud.","The teahouse was a place for people to meet.");
  V(15,"KH3-15","رایج شدن","rāyej shodan","to become common","این رسم به‌تدریج رایج شد.","In rasm be-tadrij rāyej shod.","This custom gradually became common.","رایج شدن","—","رایج شدن این رفتار زمان می‌برد.","Rāyej shodan-e in raftār zamān mibard.","This behaviour takes time to become common.","—","—","—","فعل لازم است؛ امر مستقیم نامأنوس است.");
  N(15,"KH3-15","دامداری","dāmdāri","animal husbandry","دامداری شغل بسیاری از روستاییان است.","Dāmdāri shoghl-e besyāri az rustāyiān ast.","Animal husbandry is the occupation of many villagers.");
- N(15,"KH3-15","sugvāri","sugvāri","mourning","sugvāri برای عزیزان طبیعی است.","Sugvāri barāye azizān tabi'i ast.","Mourning loved ones is natural.");
+ N(15,"KH3-15","سوگواری","sugvāri","mourning","سوگواری برای عزیزان طبیعی است.","Sugvāri barāye azizān tabi'i ast.","Mourning loved ones is natural.");
  N(16,"KH3-16","گذار","gozār","passage; transition (as in گذار)","گذار از یک مرحله به مرحلهٔ دیگر زمان می‌برد.","Gozār az yek marhale be marhale-ye digar zamān mibard.","Moving from one stage to another takes time.");
  N(16,"KH3-16","گزار","gozār","one who performs/reports (suffix in گزار)","گزار در واژه‌هایی مانند گزارشگر دیده می‌شود.","Gozār dar vāzhehāyi mānand gozāreshgar dide mishavad.","The element appears in words such as reporter.");
  N(17,"KH3-17","میکروب","mikrob","microbe; germ","میکروب با چشم دیده نمی‌شود.","Mikrob bā cheshm dide nemishavad.","A microbe cannot be seen with the naked eye.");
