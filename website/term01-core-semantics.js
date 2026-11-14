@@ -34,7 +34,8 @@
  "آفتابی":["دارای نور خورشید و بدون پوشش گستردهٔ ابر در آسمان.","Having plenty of sunshine, with little or no cloud cover.","مشمس؛ تشرق فيه الشمس مع قلّة الغيوم أو انعدامها."],
  "برف‌بازی":["بازی و سرگرمی با برف، مانند گلوله‌برفی درست کردن یا آدم‌برفی ساختن.","Playing in the snow, for example making snowballs or building a snowman.","اللعب بالثلج، مثل صنع كرات الثلج أو رجل الثلج."],
  "جشن تولد":["مراسم یا مهمانی برای بزرگداشت سالروز تولد یک شخص.","A party or celebration held to mark someone's birthday.","حفلة أو مناسبة احتفالية لإحياء ذكرى ميلاد شخص."],
- "هدیه":["چیزی که بدون دریافت پول، برای ابراز محبت، احترام یا شادی به دیگری داده می‌شود.","Something given to another person without payment, to show affection, respect, or celebration.","شيءٌ يُقدَّم إلى شخصٍ آخر من دون مقابل، تعبيراً عن المودة أو الاحترام أو الاحتفال."]
+ "هدیه":["چیزی که بدون دریافت پول، برای ابراز محبت، احترام یا شادی به دیگری داده می‌شود.","Something given to another person without payment, to show affection, respect, or celebration.","شيءٌ يُقدَّم إلى شخصٍ آخر من دون مقابل، تعبيراً عن المودة أو الاحترام أو الاحتفال."],
+ "کوهنوردی":["فعالیت پیاده‌روی و بالا رفتن از کوه، معمولاً برای ورزش، گردش یا رسیدن به قله.","The activity of walking or climbing in mountains, usually for sport, recreation, or reaching a summit.","نشاط المشي أو تسلّق الجبال، عادةً للرياضة أو الترفيه أو بلوغ القمّة."]
  };
  for(const [fa,v] of Object.entries(rows)) S[fa]={...(S[fa]||{}),faMeaning:v[0],enMeaning:v[1],arMeaning:v[2],faSynonyms:(S[fa]||{}).faSynonyms||[],enSynonyms:(S[fa]||{}).enSynonyms||[],arSynonyms:(S[fa]||{}).arSynonyms||[]};
  window.TERM1_CORE_SEMANTICS_COUNT=Object.keys(rows).length;
