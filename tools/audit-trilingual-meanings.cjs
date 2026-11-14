@@ -69,7 +69,8 @@ const load = (p) => require(require('path').resolve(__dirname, '..', p));
   'website/term03-additional-semantics-39.js',
   'website/term03-additional-semantics-40.js',
   'website/term03-additional-semantics-41.js',
-  'website/term03-additional-semantics-42.js'
+  'website/term03-additional-semantics-42.js',
+  'website/term03-additional-semantics-43.js'
 ].forEach(load);
 
 const requiredCounts = [
