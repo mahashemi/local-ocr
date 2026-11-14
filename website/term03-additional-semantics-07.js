@@ -1,0 +1,38 @@
+/* Term 03 additional vocabulary — semantic batch 7. */
+(()=> {
+ const S=window.PERSIAN_SEMANTICS||(window.PERSIAN_SEMANTICS={});
+ const rows={
+ "شاعر":["کسی که شعر می‌سراید و احساس‌ها، اندیشه‌ها یا تجربه‌های خود را با زبان آهنگین و هنری بیان می‌کند.","A poet; a person who writes poetry to express feelings, ideas, or experiences in artistic language.","شاعر؛ شخص ينظم الشعر ويعبّر بلغة فنية وإيقاعية عن مشاعره وأفكاره وتجربته."],
+ "مصراع":["نیمی از یک بیت شعر که همراه با نیمهٔ دیگر، ساختار کامل بیت را می‌سازد.","A hemistich; one of the two halves of a verse of poetry.","شطر البيت الشعري؛ أحد النصفين اللذين يتكوّن منهما البيت."],
+ "بیت":["یک واحد کامل شعر فارسی که معمولاً از دو مصراع تشکیل می‌شود.","A couplet; a complete unit of Persian verse, usually consisting of two hemistichs.","بيت شعري؛ وحدة كاملة من الشعر الفارسي تتكوّن عادةً من شطرين."],
+ "قافیه":["واژه‌ها یا بخش‌های هم‌آوا در پایان مصراع‌ها که نظم آوایی شعر را پدید می‌آورند.","Rhyme; matching sounds at the ends of poetic lines.","القافية؛ أصوات أو كلمات متشابهة في أواخر الأبيات تُحدث انسجاماً صوتياً."],
+ "ردیف":["واژه یا عبارت یکسانی که پس از قافیه در پایان مصراع‌ها یا بیت‌ها تکرار می‌شود.","Radif; a word or phrase repeated after the rhyme at the ends of lines in Persian poetry.","الرَّديف؛ كلمة أو عبارة تتكرّر بعد القافية في أواخر الأشطر أو الأبيات في الشعر الفارسي."],
+ "پارسایی":["پرهیز از گناه و رفتار نادرست و پایبندی به پاکی و تقوا.","Piety; avoiding sin and wrongdoing and remaining committed to moral and spiritual integrity.","التقوى؛ اجتناب المعاصي والأعمال السيئة والالتزام بالطهارة والاستقامة."],
+ "الهام":["اندیشه یا انگیزه‌ای تازه که ناگهان به ذهن می‌رسد و زمینهٔ آفرینش یا انجام کاری را فراهم می‌کند.","Inspiration; a fresh idea or impulse that comes to mind and stimulates creativity or action.","إلهام؛ فكرة أو دافع جديد يخطر في الذهن ويحفّز الإبداع أو العمل."],
+ "نبرد":["درگیری و جنگ میان دو فرد یا گروه؛ همچنین مبارزه‌ای سخت برای رسیدن به هدف.","A battle or struggle between people or groups; also a determined fight to achieve a goal.","معركة أو صراع بين شخصين أو جماعتين؛ ويُستعمل أيضاً للكفاح الشديد من أجل هدف."],
+ "آویختن":["چیزی را از جایی بلند یا ثابت به گونه‌ای قرار دادن که از آن آویزان بماند.","To hang or suspend something from a raised point or support.","علّقَ شيئاً في موضع مرتفع أو على حامل بحيث يتدلّى منه."],
+ "ظاهر شدن":["پدیدار شدن یا دیده شدن پس از آنکه چیزی یا کسی پنهان بوده یا دیده نمی‌شده است.","To appear or become visible after being hidden or unseen.","ظهرَ أو بدا للعيان بعد أن كان خفياً أو غير مرئي."],
+ "آشنا شدن":["برای نخستین بار با شخص، موضوع یا محیطی شناخت و ارتباط پیدا کردن.","To become acquainted with a person, subject, or place.","تعرّفَ إلى شخص أو موضوع أو مكان وأصبح على معرفة به."],
+ "باایمان":["دارای ایمان و باور دینی و پایبند به اعتقادات خود.","Faithful; having religious faith and holding firmly to one's beliefs.","مؤمن؛ صاحب إيمان ديني ومتمسّك بمعتقداته."],
+ "باتقوا":["دارای تقوا؛ کسی که در رفتار و تصمیم‌های خود از گناه دوری می‌کند و خدا را در نظر دارد.","Pious or God-conscious; someone who avoids wrongdoing and remains mindful of God.","تقيّ؛ شخص يتجنّب المعصية ويراعي مراقبة الله في سلوكه وقراراته."],
+ "شجاع":["کسی که در برابر خطر یا دشواری ترس خود را کنترل می‌کند و با شهامت عمل می‌کند.","Brave or courageous; able to face danger or difficulty with resolve.","شجاع؛ من يواجه الخطر أو الصعوبات بثبات وشجاعة."],
+ "ظلم کردن":["با رفتار ناعادلانه، حق کسی را پایمال کردن یا به او آسیب رساندن.","To oppress or wrong someone by treating them unjustly or violating their rights.","ظلمَ لشخص أو جار عليه بسلوك غير عادل أو بانتهاك حقوقه."],
+ "دفن کردن":["پیکر فرد درگذشته یا چیزی را در خاک قرار دادن و با خاک پوشاندن.","To bury a deceased person or an object by placing it in the ground and covering it with soil.","دفنَ شخصاً متوفّى أو شيئاً بوضعه في الأرض وتغطيته بالتراب."],
+ "وداع کردن":["هنگام جدا شدن، با کسی خداحافظی کردن؛ به‌ویژه پیش از سفر یا جدایی طولانی.","To say goodbye to someone, especially before a journey or a long separation.","ودّعَ شخصاً عند فراقه، ولا سيّما قبل سفر أو ابتعاد طويل."],
+ "داستان‌نویسی":["هنر و فرایند نوشتن داستان با شخصیت‌ها، رویدادها و طرح روایی.","Story writing; the art and process of creating a narrative with characters, events, and a plot.","كتابة القصص؛ فنّ إنشاء سرد يضمّ شخصيات وأحداثاً وحبكة."],
+ "عناصر داستان":["اجزای اصلی تشکیل‌دهندهٔ داستان، مانند شخصیت، زمان، مکان، زاویهٔ دید، رویداد و پیرنگ.","Elements of a story, such as character, time, setting, point of view, events, and plot.","عناصر القصة، مثل الشخصيات والزمان والمكان ووجهة النظر والأحداث والحبكة."],
+ "جاذبهٔ دیدنی":["ویژگی یا مکان جذابی که توجه بازدیدکنندگان را جلب می‌کند و ارزش دیدن دارد.","An attraction or appealing feature of a place that draws visitors and is worth seeing.","مَعلَم أو ميزة جذّابة في مكان ما تستقطب الزائرين وتستحقّ المشاهدة."],
+ "چادر زدن":["چادر را در محل مناسبی برپا کردن تا بتوان در آن اقامت یا استراحت کرد.","To pitch or set up a tent for staying or resting in a place.","نصبَ خيمة في مكان مناسب للإقامة أو الاستراحة."],
+ "رکاب زدن":["با فشار دادن پدال‌های دوچرخه و حرکت دادن پاها، دوچرخه‌سواری کردن.","To pedal a bicycle by pressing its pedals with one's feet.","ضغطَ على دواسات الدراجة بقدميه لقيادتها."],
+ "تخریب کردن":["به ساختمان، محیط یا چیزی آسیب جدی زدن یا آن را ویران کردن.","To damage severely or destroy a building, environment, or other thing.","خرّبَ مبنى أو بيئة أو شيئاً آخر وألحق به ضرراً كبيراً."],
+ "کنار آمدن":["با شخص یا شرایط دشوار سازگار شدن و راهی برای پذیرش یا مدیریت آن پیدا کردن.","To come to terms with a person or difficult situation and find a way to manage it.","تكيّفَ مع شخص أو ظرف صعب ووجد طريقة لتقبّله أو التعامل معه."],
+ "میزبان":["شخص یا نهادی که از مهمانان پذیرایی می‌کند یا رویدادی را برگزار می‌کند.","A host; a person or organisation that welcomes guests or organises an event.","مُضيف؛ شخص أو جهة تستقبل الضيوف أو تنظّم مناسبة."],
+ "قلعه":["ساختمانی بزرگ و مستحکم که در گذشته برای دفاع و حفاظت از مردم یا یک منطقه ساخته می‌شد.","A castle or fortress; a large, strongly built structure formerly used for defence and protection.","قلعة أو حصن؛ بناء كبير ومتين شُيّد قديماً للدفاع والحماية."],
+ "سنگ‌نوشته":["نوشته یا کتیبه‌ای که حروف یا نشانه‌های آن روی سنگ حک شده است.","A stone inscription; writing or an inscription carved into stone.","نقش حجري؛ كتابة أو نقش حُفرت حروفه أو علاماته على الحجر."],
+ "گردشگر":["کسی که برای تفریح، آشنایی با فرهنگ یا دیدن مکان‌ها به منطقه‌ای سفر می‌کند.","A tourist; someone who travels to visit places, enjoy recreation, or experience another culture.","سائح؛ شخص يسافر لزيارة الأماكن أو الترفيه أو التعرّف إلى ثقافة أخرى."],
+ "راهنمای گردشگری":["فردی آگاه که گردشگران را همراهی می‌کند و دربارهٔ مکان‌ها، تاریخ و جاذبه‌ها توضیح می‌دهد.","A tour guide; a knowledgeable person who accompanies visitors and explains places, history, and attractions.","مرشد سياحي؛ شخص مطّلع يرافق السيّاح ويشرح لهم الأماكن والتاريخ والمعالم."],
+ "کارت پرواز":["مدرکی که پس از انجام مراحل پذیرش صادر می‌شود و اطلاعات پرواز و اجازهٔ سوار شدن به هواپیما را نشان می‌دهد.","A boarding pass; a document issued after check-in that gives flight details and authorises boarding.","بطاقة صعود الطائرة؛ وثيقة تصدر بعد إنهاء إجراءات تسجيل الوصول، وتتضمن معلومات الرحلة وتسمح بالصعود."],
+ };
+ for(const [fa,v] of Object.entries(rows)) S[fa]={...(S[fa]||{}),faMeaning:v[0],enMeaning:v[1],arMeaning:v[2],faSynonyms:(S[fa]||{}).faSynonyms||[],enSynonyms:(S[fa]||{}).enSynonyms||[],arSynonyms:(S[fa]||{}).arSynonyms||[]};
+ window.TERM3_ADDITIONAL_SEMANTICS_BATCH7=Object.keys(rows);
+})();
