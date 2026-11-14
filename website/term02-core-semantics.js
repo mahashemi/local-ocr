@@ -67,7 +67,7 @@
  "کمک‌های اولیه":["اقدام‌های فوری و ابتدایی برای کمک به فرد آسیب‌دیده یا بیمار تا رسیدن کمک تخصصی.","Immediate basic care given to an injured or ill person before professional help arrives.","رعاية أولية وفورية تُقدَّم للمصاب أو المريض إلى حين وصول المساعدة الطبية المتخصصة."],
  "نمونه‌گیری":["برداشتن بخشی کوچک از خون، بافت یا ماده‌ای برای آزمایش و بررسی.","The process of taking a small sample of blood, tissue, or material for testing.","أخذ عيّنة صغيرة من الدم أو النسيج أو مادة ما لإجراء الفحص والتحليل."],
  "آب‌گرفتگی":["جمع شدن آب در خیابان، خانه یا زمین به اندازه‌ای که رفت‌وآمد یا استفاده از محل را دشوار کند.","Water collecting in streets, buildings, or land and making access or use difficult.","تجمّع المياه في الشوارع أو المباني أو الأراضي بما يعيق المرور أو الانتفاع بالمكان."],
- "سفر زیارتی":["سفری با هدف زیارت مکان مقدس و انجام اعمال یا آداب مذهبی.","A journey made to visit a sacred place and perform religious acts or observances.","رحلةٌ目的ها زيارة مكان مقدّس وأداء الأعمال أو الشعائر الدينية."],
+ "سفر زیارتی":["سفری با هدف زیارت مکان مقدس و انجام اعمال یا آداب مذهبی.","A journey made to visit a sacred place and perform religious acts or observances.","رحلةٌ هدفها زيارة مكان مقدّس وأداء الأعمال أو الشعائر الدينية."],
  "تهیه‌کننده":["فرد یا نهادی که منابع مالی و اجرایی ساخت فیلم یا برنامه را فراهم و مدیریت می‌کند.","The person or organisation that arranges and manages the financial and practical resources for a film or programme.","الشخص أو الجهة التي توفّر وتدير الموارد المالية والتنظيمية لإنتاج فيلم أو برنامج."],
  "سفال‌گری":["هنر ساخت ظرف و اشیای گِلی با شکل دادن و پختن آن‌ها در کوره.","The craft of making clay vessels and objects by shaping and firing them in a kiln.","حرفة صنع الأواني والأشياء من الطين بتشكيلها وحرقها في الفرن."]
  };
