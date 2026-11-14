@@ -24,7 +24,7 @@
  ];
  const norm=s=>String(s||"").replace(/[\\u200c\\sـ]/g,"");
  const existingRows=window.TERM1_DATA||[];
- const seen=new Set(existingRows.map(x=>"7|"+norm(x.fa)));
+ const seen=new Set(existingRows.filter(x=>x.unit===7).map(x=>"7|"+norm(x.fa)));
  let added=0, alreadyPresent=0;
  const existingForms=[];
  for(const [fa,tr,en,amr,mf,mt,me,af,at,ae] of data){
