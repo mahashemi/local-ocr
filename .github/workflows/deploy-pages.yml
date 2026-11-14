@@ -130,7 +130,7 @@ jobs:
           if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH3.length !== 30) throw new Error('Expected 30 Term 02 additional meanings in batch 3.');
           if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH4.length !== 30) throw new Error('Expected 30 Term 02 additional meanings in batch 4.');
           if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH5.length !== 30) throw new Error('Expected 30 Term 02 additional meanings in batch 5.');
-          if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH6.length !== 30) throw new Error('Expected 30 Term 02 additional meanings in batch 6.');
+          if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH6.length !== 31) throw new Error('Expected 31 Term 02 additional meanings in batch 6.');
           console.log('Validated ' + proverbs.length + ' FA2-20 proverbs, ' + window.TERM2_CORE_SEMANTICS_COUNT + ' Term 02 core meanings and ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH1.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH2.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH3.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH4.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH5.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH6.length + ' additional meanings.');
           NODE
           node tools/audit-term02.cjs
