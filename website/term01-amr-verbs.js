@@ -23,7 +23,9 @@
  ["صبر کردن","sabr kardan","to wait; be patient","صبر کن","صبر کردن هنگام انتظار لازم است.","Sabr kardan hengām-e entezār lāzem ast.","Being patient while waiting is necessary.","کمی صبر کن.","Kami sabr kon.","Wait a little."]
  ];
  const norm=s=>String(s||"").replace(/[\u200c\sـ]/g,"");
- const seen=new Set((window.TERM1_DATA||[]).map(x=>"7|"+norm(x.fa)));
+ const existingRows=window.TERM1_DATA||[];
+ const seen=new Set(existingRows.map(x=>"7|"+norm(x.fa)));
+ let added=0, alreadyPresent=0;
  for(const [fa,tr,en,amr,mf,mt,me,af,at,ae] of data){
   if(seen.has("7|"+norm(fa))) continue;
   window.TERM1_DATA.push({unit:7,source:"F1-07",fa,tr,en,pos:"فعل — verb",ms:fa,amr,ex:[mf,mt,me],m:[mf,mt,me],a:[af,at,ae],note:"فعل امر پرکاربرد؛ مجموعهٔ تکمیلی برای تمرین ساخت امر در درس FA1-07."});
