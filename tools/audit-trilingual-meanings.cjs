@@ -40,7 +40,7 @@ const requiredCounts = [
   ['Term 02 additional meanings batch 3', (window.TERM2_ADDITIONAL_SEMANTICS_BATCH3 || []).length, 30],
   ['Term 02 additional meanings batch 4', (window.TERM2_ADDITIONAL_SEMANTICS_BATCH4 || []).length, 30],
   ['Term 02 additional meanings batch 5', (window.TERM2_ADDITIONAL_SEMANTICS_BATCH5 || []).length, 30],
-  ['Term 02 additional meanings batch 6', (window.TERM2_ADDITIONAL_SEMANTICS_BATCH6 || []).length, 30],
+  ['Term 02 additional meanings batch 6', (window.TERM2_ADDITIONAL_SEMANTICS_BATCH6 || []).length, 31],
   ['Term 03 core meanings', window.TERM3_CORE_SEMANTICS_COUNT, 98],
   ['Term 03 additional meanings batch 1', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH1 || []).length, 30],
   ['Term 03 additional meanings batch 2', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH2 || []).length, 30],
