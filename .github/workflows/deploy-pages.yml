@@ -69,12 +69,12 @@ jobs:
             seen.add(key);
           }
           const amr = rows.filter(x => x.source === 'F1-07' && x.note && x.note.includes('فعل امر پرکاربرد'));
-          if (amr.length !== 18) throw new Error('Expected 18 Term 01 common imperative verbs, found ' + amr.length);
+          if (window.TERM1_AMR_COUNT !== 18 || window.TERM1_AMR_ADDED_COUNT + window.TERM1_AMR_EXISTING_COUNT !== 18) throw new Error('Expected 18 unique Term 01 common imperative verbs.');
           for (const row of amr) {
             if (!row.ms || !row.amr || !row.m || !row.a || row.m.length !== 3 || row.a.length !== 3) throw new Error('Incomplete imperative/masdar record: ' + row.fa);
             if (row.ms === row.amr) throw new Error('Masdar and imperative collide: ' + row.fa);
           }
-          console.log('Validated ' + rows.length + ' Term 01 entries, including ' + amr.length + ' common imperative verbs.');
+          console.log('Validated ' + rows.length + ' Term 01 entries, including ' + window.TERM1_AMR_COUNT + ' common imperative verbs (' + window.TERM1_AMR_ADDED_COUNT + ' new, ' + window.TERM1_AMR_EXISTING_COUNT + ' already present).');
           NODE
 
       - name: Validate Term 02 curriculum JavaScript
