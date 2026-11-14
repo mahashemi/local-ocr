@@ -60,7 +60,8 @@ const load = (p) => require(require('path').resolve(__dirname, '..', p));
   'website/term03-additional-semantics-30.js',
   'website/term03-additional-semantics-31.js',
   'website/term03-additional-semantics-32.js',
-  'website/term03-additional-semantics-33.js'
+  'website/term03-additional-semantics-33.js',
+  'website/term03-additional-semantics-34.js'
 ].forEach(load);
 
 const requiredCounts = [
@@ -110,7 +111,8 @@ const requiredCounts = [
   ['Term 03 additional meanings batch 30', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH30 || []).length, 30],
   ['Term 03 additional meanings batch 31', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH31 || []).length, 30],
   ['Term 03 additional meanings batch 32', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH32 || []).length, 30],
-  ['Term 03 additional meanings batch 33', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH33 || []).length, 30]
+  ['Term 03 additional meanings batch 33', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH33 || []).length, 30],
+  ['Term 03 additional meanings batch 34', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH34 || []).length, 30]
 ];
 for (const [label, actual, expected] of requiredCounts) {
   if (actual !== expected) throw new Error(label + ': expected ' + expected + ', got ' + actual);
