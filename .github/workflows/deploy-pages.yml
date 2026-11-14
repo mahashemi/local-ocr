@@ -49,6 +49,8 @@ jobs:
           node --check website/term01-chapters-16-20.js
           node --check website/term01-supplementary.js
           node --check website/term01-amr-verbs.js
+          node --check website/term01-semantic-additions.js
+          node --check website/term01-core-semantics.js
           node <<'NODE'
           global.window = {};
           require('./website/term01-data.js');
@@ -56,6 +58,9 @@ jobs:
           require('./website/term01-chapters-16-20.js');
           require('./website/term01-supplementary.js');
           require('./website/term01-amr-verbs.js');
+          require('./website/semantic-meanings.js');
+          require('./website/term01-semantic-additions.js');
+          require('./website/term01-core-semantics.js');
           const rows = window.TERM1_DATA;
           if (!Array.isArray(rows) || rows.length < 20) throw new Error('Term 01 vocabulary is unexpectedly small');
           const seen = new Set();
@@ -74,7 +79,12 @@ jobs:
             if (!row.ms || !row.amr || !row.m || !row.a || row.m.length !== 3 || row.a.length !== 3) throw new Error('Incomplete imperative/masdar record: ' + row.fa);
             if (row.ms === row.amr) throw new Error('Masdar and imperative collide: ' + row.fa);
           }
-          console.log('Validated ' + rows.length + ' Term 01 entries, including ' + window.TERM1_AMR_COUNT + ' common imperative verbs (' + window.TERM1_AMR_ADDED_COUNT + ' new, ' + window.TERM1_AMR_EXISTING_COUNT + ' already present).');
+          if (window.TERM1_CORE_SEMANTICS_COUNT !== 32) throw new Error('Expected 32 Term 01 core trilingual meanings.');
+          for (const fa of window.TERM1_CORE_SEMANTICS_KEYS) {
+            const meaning = window.PERSIAN_SEMANTICS[fa];
+            if (!meaning || !meaning.faMeaning || !meaning.enMeaning || !meaning.arMeaning) throw new Error('Missing trilingual meaning for ' + fa);
+          }
+          console.log('Validated ' + rows.length + ' Term 01 entries, including ' + window.TERM1_AMR_COUNT + ' common imperatives and ' + window.TERM1_CORE_SEMANTICS_COUNT + ' completed trilingual meanings.');
           NODE
 
       - name: Validate Term 02 curriculum JavaScript
