@@ -128,6 +128,7 @@ jobs:
           node --check website/semantic-meanings.js
           node --check website/term-portal.js
           node --check website/term03-matn-verbs.js
+          node --check website/term03-core-semantics.js
           node tools/audit-term03.cjs
           node --check tools/audit-trilingual-meanings.cjs
           node tools/audit-trilingual-meanings.cjs
