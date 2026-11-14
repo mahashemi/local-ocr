@@ -128,7 +128,8 @@ const requiredCounts = [
   ['Term 03 additional meanings batch 39', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH39 || []).length, 30],
   ['Term 03 additional meanings batch 40', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH40 || []).length, 30],
   ['Term 03 additional meanings batch 41', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH41 || []).length, 30],
-  ['Term 03 additional meanings batch 42', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH42 || []).length, 29]
+  ['Term 03 additional meanings batch 42', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH42 || []).length, 29],
+  ['Term 03 additional meanings batch 43', (window.TERM3_ADDITIONAL_SEMANTICS_BATCH43 || []).length, 100]
 ];
 for (const [label, actual, expected] of requiredCounts) {
   if (actual !== expected) throw new Error(label + ': expected ' + expected + ', got ' + actual);
