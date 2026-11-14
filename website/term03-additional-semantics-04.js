@@ -1,0 +1,37 @@
+/* Term 03 additional vocabulary — semantic batch 4. */
+(()=> {
+ const S=window.PERSIAN_SEMANTICS||(window.PERSIAN_SEMANTICS={});
+ const rows={
+ "سایه‌بان":["ساختار یا پوششی که از آفتاب، باران یا عوامل محیطی محافظت می‌کند و سایه ایجاد می‌کند.","A structure or covering that provides shade and protection from sunlight, rain, or other environmental conditions.","مظلّة أو غطاء يوفّر الظلّ والحماية من أشعة الشمس أو المطر أو العوامل البيئية."],
+ "پیشکار":["فردی که در خانه یا محل کار به شخص دیگری خدمت می‌کند و در انجام امور روزانه یاری می‌رساند.","An attendant or personal assistant who serves and helps someone with daily tasks at home or work.","خادم أو مساعد شخصي يخدم شخصاً آخر ويعينه في الأعمال اليومية في المنزل أو العمل."],
+ "چسبیدن":["به سطح یا چیزی متصل ماندن یا به آن پیوستن، به‌گونه‌ای که جدا شدن دشوار باشد.","To stick or adhere to a surface or object, so that separation may be difficult.","التصقَ بسطح أو شيء وبقي متصلاً به بحيث يصعب فصله."],
+ "رسید":["برگه یا مدرکی که دریافت پول، کالا یا مدرک دیگری را تأیید می‌کند.","A receipt or written proof that money, goods, or another item has been received.","إيصال أو وثيقة تثبت استلام المال أو البضائع أو شيء آخر."],
+ "وام دادن":["پول یا دارایی را با توافق بازپرداخت در آینده در اختیار شخص دیگری گذاشتن.","To lend money or property to another person under an agreement to repay it later.","أقرضَ مالاً أو ممتلكات لشخص آخر باتفاق على ردّها لاحقاً."],
+ "بذر":["دانه‌ای که برای روییدن گیاه تازه در خاک کاشته می‌شود.","A seed planted in soil so that a new plant can grow.","بذرة تُزرع في التربة لتنمو منها نبتة جديدة."],
+ "شخم":["زیرورو کردن خاک زمین کشاورزی برای آماده‌سازی آن جهت کاشت.","The ploughing or turning of agricultural soil to prepare it for planting.","حراثة التربة الزراعية وتقليبها لتهيئتها للزراعة."],
+ "دهقان":["کشاورزی که زمین را کشت می‌کند و معمولاً در روستا زندگی یا کار می‌کند.","A farmer or peasant who cultivates land, often living or working in a rural area.","فلاح أو مزارع يزرع الأرض، ويعيش أو يعمل غالباً في منطقة ريفية."],
+ "کشتگاه":["زمینی که برای کاشت و پرورش محصولات کشاورزی آماده شده یا به این کار اختصاص دارد.","A field or cultivated area prepared or designated for growing crops.","أرض زراعية أُعدّت أو خُصّصت لزراعة المحاصيل."],
+ "شخم زدن":["با گاوآهن یا ماشین کشاورزی خاک را بریدن و زیرورو کردن تا برای کاشت آماده شود.","To plough a field by cutting and turning the soil with a plough or agricultural machine.","حرثَ الحقل وقلبَ تربته باستعمال المحراث أو آلة زراعية استعداداً للزراعة."],
+ "تخلیه":["خالی کردن یک مکان از افراد یا اشیا؛ همچنین بیرون رفتن مردم از منطقه‌ای برای حفظ جان.","The act of emptying a place of people or objects; also, the evacuation of people from an area for safety.","إفراغ مكان من الأشخاص أو الأشياء؛ ويعني أيضاً إجلاء الناس من منطقة حفاظاً على سلامتهم."],
+ "تخلیه کردن":["افراد یا وسایل را از مکانی بیرون بردن یا محتویات چیزی را خالی کردن.","To evacuate people or remove items from a place, or to empty the contents of something.","أخلى مكاناً من الأشخاص أو الأشياء، أو أفرغَ محتويات شيء."],
+ "ساکن بودن":["در مکانی زندگی کردن و آن را محل اقامت خود قرار دادن.","To live or reside in a particular place.","سكنَ في مكان واتّخذه محلّاً لإقامته."],
+ "جملهٔ پایه":["جمله‌ای اصلی که معنای مستقل دارد و جمله یا عبارت وابسته می‌تواند به آن پیوند بخورد.","A main clause that expresses an independent idea and can be joined by a dependent clause or phrase.","جملة رئيسية تحمل معنى مستقلاً ويمكن أن ترتبط بها جملة أو عبارة تابعة."],
+ "جملهٔ پیرو":["جمله‌ای وابسته که به‌تنهایی معنای کامل ندارد و از نظر دستوری به جملهٔ پایه وابسته است.","A subordinate clause that does not express a complete independent thought and depends grammatically on a main clause.","جملة تابعة لا تعبّر وحدها عن معنى مستقل كامل، وترتبط نحوياً بجملة رئيسية."],
+ "شاد بودن":["احساس شادی، رضایت یا خوشحالی داشتن.","To feel happy, joyful, or content.","كانَ سعيداً أو شعرَ بالفرح والرضا."],
+ "اصلاح کردن":["اشتباه یا نقصی را برطرف کردن؛ یا چیزی را برای بهتر شدن تغییر دادن.","To correct an error or defect, or to change something in order to improve it.","أصلحَ خطأً أو عيباً، أو غيّرَ شيئاً لتحسينه."],
+ "پیروی کردن":["از دستور، قانون، روش یا راهنمایی شخصی پیروی و مطابق آن عمل کردن.","To follow or comply with an instruction, rule, method, or person's guidance.","اتّبعَ تعليمات أو قانوناً أو منهجاً أو إرشاد شخص وعمل بموجبه."],
+ "نیروی جاذبه":["نیرویی طبیعی که اجسام دارای جرم را به سوی یکدیگر جذب می‌کند.","The natural force of gravity that attracts objects with mass toward one another.","قوة الجاذبية الطبيعية التي تجذب الأجسام ذات الكتلة بعضها نحو بعض."],
+ "فروتن":["کسی که خود را برتر از دیگران نمی‌داند و با تواضع و احترام رفتار می‌کند.","Humble; someone who does not consider themselves superior to others and behaves modestly.","متواضع؛ شخص لا يرى نفسه أفضل من الآخرين ويتصرّف بتواضع واحترام."],
+ "رشته‌کوه":["مجموعه‌ای از کوه‌ها که در امتداد یکدیگر و در یک ناحیهٔ جغرافیایی قرار دارند.","A chain or range of mountains extending across a geographical region.","سلسلة من الجبال تمتدّ على طول منطقة جغرافية."],
+ "ابریشم":["الیاف نرم و درخشانی که از پیلهٔ کرم ابریشم به دست می‌آید و برای بافت پارچه استفاده می‌شود.","A soft, lustrous fibre produced by silkworm cocoons and used to weave fabric.","ليف ناعم لامع يُستخرج من شرانق دودة القز ويُستعمل في نسج الأقمشة."],
+ "زیستگاه امن":["محیطی که جانور یا گیاه در آن از خطرهای مهم در امان است و می‌تواند به زندگی و رشد ادامه دهد.","A habitat where an animal or plant is protected from major threats and can continue to live and grow.","موطن آمن يحتمي فيه الحيوان أو النبات من الأخطار الرئيسية ويستطيع مواصلة العيش والنمو."],
+ "نماد":["نشانه، شکل یا چیزی که نمایندهٔ یک مفهوم، گروه یا معنای دیگر است.","A sign, image, or object that represents an idea, group, or another meaning.","علامة أو صورة أو شيء يرمز إلى فكرة أو جماعة أو معنى آخر."],
+ "کمیاب":["چیزی که به مقدار کم یافت می‌شود و به‌آسانی در دسترس نیست.","Rare; existing in small quantities and not easily found or obtained.","نادر؛ يوجد بكميات قليلة ولا يسهل العثور عليه أو الحصول عليه."],
+ "میراث":["دارایی، سنت، دانش یا ارزش‌هایی که از نسل‌های پیشین به نسل‌های بعد منتقل می‌شود.","Property, traditions, knowledge, or values passed down from earlier generations.","أموال أو تقاليد أو معارف أو قيم تنتقل من الأجيال السابقة إلى الأجيال اللاحقة."],
+ "خط آهن":["مسیر ساخته‌شده از ریل که قطارها برای جابه‌جایی مسافر یا بار روی آن حرکت می‌کنند.","A railway track or rail route on which trains carry passengers or freight.","سكة أو مسار من القضبان تسير عليه القطارات لنقل الركاب أو البضائع."],
+ "دریانوردی":["فعالیت سفر و جابه‌جایی با کشتی در دریا؛ همچنین دانش و فن هدایت کشتی.","Seafaring and travel by ship, as well as the skill and practice of navigating vessels at sea.","الملاحة البحرية والسفر بالسفن في البحر، وكذلك علم وفن قيادة السفن."],
+ "رایج شدن":["به‌تدریج میان مردم معمول و پذیرفته شدن و کاربرد یا رواج پیدا کردن.","To gradually become common, widely used, or generally accepted.","أصبحَ شائعاً أو واسع الاستعمال أو مقبولاً بين الناس تدريجياً."]
+ };
+ for(const [fa,v] of Object.entries(rows)) S[fa]={...(S[fa]||{}),faMeaning:v[0],enMeaning:v[1],arMeaning:v[2],faSynonyms:(S[fa]||{}).faSynonyms||[],enSynonyms:(S[fa]||{}).enSynonyms||[],arSynonyms:(S[fa]||{}).arSynonyms||[]};
+ window.TERM3_ADDITIONAL_SEMANTICS_BATCH4=Object.keys(rows);
+})();
