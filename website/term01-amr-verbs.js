@@ -18,7 +18,7 @@
  ["روشن کردن","rowshan kardan","to turn on; switch on","روشن کن","چراغ را روشن کن.","Cherāgh rā rowshan kon.","Turn on the light."],
  ["خاموش کردن","khāmush kardan","to turn off; switch off","خاموش کن","تلویزیون را خاموش کن.","Televizion rā khāmush kon.","Turn off the television."],
  ["آمدن","āmadan","to come","بیا","اینجا بیا.","Injā biyā.","Come here."],
- ["رفتن","raftan","to go; leave","برو","به کلاس برو.","Be kelās برو.","Go to class."],
+ ["رفتن","raftan","to go; leave","برو","به کلاس برو.","Be kelās boro.","Go to class."],
  ["ایستادن","istādan","to stand; stop","بایست","اینجا بایست.","Injā bāyest.","Stand here."],
  ["صبر کردن","sabr kardan","to wait; be patient","صبر کن","کمی صبر کن.","Kami sabr kon.","Wait a little."]
  ];
