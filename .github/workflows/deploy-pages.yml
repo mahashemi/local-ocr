@@ -79,7 +79,7 @@ jobs:
             if (!row.ms || !row.amr || !row.m || !row.a || row.m.length !== 3 || row.a.length !== 3) throw new Error('Incomplete imperative/masdar record: ' + row.fa);
             if (row.ms === row.amr) throw new Error('Masdar and imperative collide: ' + row.fa);
           }
-          if (window.TERM1_CORE_SEMANTICS_COUNT !== 32) throw new Error('Expected 32 Term 01 core trilingual meanings.');
+          if (window.TERM1_CORE_SEMANTICS_COUNT !== 33) throw new Error('Expected 32 Term 01 core trilingual meanings.');
           for (const fa of window.TERM1_CORE_SEMANTICS_KEYS) {
             const meaning = window.PERSIAN_SEMANTICS[fa];
             if (!meaning || !meaning.faMeaning || !meaning.enMeaning || !meaning.arMeaning) throw new Error('Missing trilingual meaning for ' + fa);
