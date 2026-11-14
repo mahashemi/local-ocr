@@ -1,0 +1,38 @@
+/* Term 03 additional vocabulary — semantic batch 6. */
+(()=> {
+ const S=window.PERSIAN_SEMANTICS||(window.PERSIAN_SEMANTICS={});
+ const rows={
+ "تأثیر داشتن":["بر شخص یا چیزی اثر گذاشتن و باعث تغییر در رفتار، وضعیت یا نتیجهٔ آن شدن.","To have an effect on someone or something and influence its behaviour, condition, or outcome.","أثّرَ في شخص أو شيء وتسبّبَ في تغيير سلوكه أو حالته أو نتيجته."],
+ "سبزپوش":["کسی یا چیزی که لباس یا پوششی به رنگ سبز دارد.","A person or thing dressed or covered in green.","شخص أو شيء يرتدي لباساً أخضر أو مكسوّاً باللون الأخضر."],
+ "به تن کردن":["لباس یا پوششی را پوشیدن.","To put on or wear an item of clothing.","ارتدى لباساً أو غطاءً."],
+ "سر از خاک بیرون آوردن":["از زیر خاک بیرون آمدن و رشد کردن؛ معمولاً دربارهٔ جوانه یا گیاه تازه.","To emerge from the soil and begin growing, usually referring to a new shoot or plant.","خرجَ من التراب وبدأ بالنمو، ويُقال غالباً عن البرعم أو النبتة الجديدة."],
+ "منجر شدن":["به نتیجه یا پیامدی مشخص رسیدن یا باعث رخ دادن آن شدن.","To lead to or result in a particular outcome or consequence.","أدّى إلى نتيجة أو عاقبة معيّنة أو تسبّبَ في حدوثها."],
+ "نقدنویسی کردن":["دربارهٔ یک کتاب، فیلم، اثر هنری یا موضوع، ارزیابی و نظر تحلیلی نوشتن.","To write a review or critical analysis of a book, film, artwork, or subject.","كتبَ مراجعةً أو نقداً تحليلياً لكتاب أو فيلم أو عمل فني أو موضوع."],
+ "برنامهٔ کوتاه‌مدت":["برنامه‌ای برای رسیدن به هدف‌هایی که قرار است در آیندهٔ نزدیک انجام شوند.","A plan designed to achieve goals in the near future.","خطة تهدف إلى تحقيق أهداف في المستقبل القريب."],
+ "برنامهٔ بلندمدت":["برنامه‌ای برای رسیدن به هدف‌هایی که تحقق آن‌ها به زمان طولانی‌تری نیاز دارد.","A plan for goals whose achievement requires a longer period of time.","خطة لأهداف يتطلّب تحقيقها مدة زمنية أطول."],
+ "پای‌بند بودن":["به اصل، قول، قانون یا تعهدی وفادار ماندن و مطابق آن عمل کردن.","To remain committed or faithful to a principle, promise, rule, or obligation.","التزمَ بمبدأ أو وعد أو قانون أو واجب وظلّ وفياً له."],
+ "خونگرم":["کسی که در برخورد با دیگران صمیمی، خوش‌برخورد و زودجوش است.","Warm-hearted and sociable; friendly and welcoming toward others.","ودود واجتماعي؛ يتعامل مع الآخرين بألفة وترحاب."],
+ "خانه‌تکانی":["تمیزکاری گستردهٔ خانه، معمولاً پیش از نوروز، همراه با گردگیری و مرتب کردن وسایل.","A thorough house-cleaning, often before Nowruz, involving dusting and putting things in order.","تنظيف شامل للمنزل، غالباً قبل عيد النوروز، يتضمّن إزالة الغبار وترتيب الأغراض."],
+ "دانشگاه مجازی":["مؤسسهٔ آموزش عالی که کلاس‌ها و بسیاری از خدمات آموزشی آن از راه اینترنت ارائه می‌شود.","A higher-education institution that delivers classes and many educational services online.","مؤسسة للتعليم العالي تقدّم الدروس وكثيراً من خدماتها التعليمية عبر الإنترنت."],
+ "برخط":["متصل به اینترنت یا در حال انجام از طریق شبکهٔ اینترنت؛ معادل فارسی «آنلاین».","Connected to the internet or taking place through an internet network; online.","متصل بالإنترنت أو جارٍ عبر شبكة الإنترنت؛ أي متصل أو إلكتروني."],
+ "مقطع تحصیلی":["یکی از مرحله‌های مشخص آموزش، مانند ابتدایی، متوسطه، کارشناسی یا کارشناسی ارشد.","A defined stage of education, such as primary school, secondary school, bachelor's, or master's study.","مرحلة محدّدة من التعليم، مثل الابتدائية أو الثانوية أو البكالوريوس أو الماجستير."],
+ "کارنامه":["سندی که نمره‌ها و وضعیت تحصیلی دانش‌آموز یا دانشجو را در یک دوره نشان می‌دهد.","A report card or academic record showing a student's grades and progress during a period.","وثيقة دراسية تعرض درجات الطالب ومستواه وتقدّمه خلال فترة دراسية."],
+ "واحد درسی":["بخشی از برنامهٔ آموزشی که برای یک درس تعریف می‌شود و معمولاً مقدار مشخصی اعتبار یا ساعت آموزشی دارد.","A course unit or credit in an educational programme, usually representing a defined amount of study.","وحدة دراسية ضمن البرنامج التعليمي، تمثّل عادةً مقداراً محدّداً من الساعات أو الرصيد الدراسي."],
+ "انتخاب واحد کردن":["در آغاز نیم‌سال، درس‌های مورد نظر را طبق مقررات دانشگاه برای ثبت‌نام انتخاب کردن.","To register for selected courses at the beginning of a university term, following the institution's rules.","اختارَ المقررات الدراسية وسجّل فيها في بداية الفصل الجامعي وفق أنظمة المؤسسة."],
+ "موضوع‌یابی":["جست‌وجو و بررسی برای پیدا کردن موضوعی مناسب برای پژوهش، مقاله یا نوشته.","The process of searching for and identifying a suitable topic for research, an article, or a piece of writing.","عملية البحث والتقصّي لاختيار موضوع مناسب لبحث أو مقال أو كتابة."],
+ "موضوع انتخاب کردن":["یک موضوع را از میان گزینه‌های مختلف برای مطالعه، پژوهش یا گفت‌وگو برگزیدن.","To choose a topic from several options for study, research, or discussion.","اختارَ موضوعاً من بين خيارات متعددة للدراسة أو البحث أو النقاش."],
+ "پرسش اصلی":["مهم‌ترین سؤال یک پژوهش یا بحث که مسیر بررسی و پاسخ‌گویی را مشخص می‌کند.","The main question of a study or discussion that guides the investigation and its answer.","السؤال الأساسي في بحث أو نقاش، وهو الذي يحدّد مسار الدراسة والإجابة."],
+ "پرسش فرعی":["سؤال کوچک‌تر و وابسته‌ای که برای پاسخ دادن به پرسش اصلی یا روشن کردن بخشی از آن مطرح می‌شود.","A smaller, supporting question used to answer or clarify part of the main question.","سؤال فرعي أصغر يُطرح للإجابة عن السؤال الرئيسي أو توضيح جانب منه."],
+ "چهره":["صورت و ظاهر فرد؛ همچنین در کاربرد گسترده‌تر، شخصیت یا فرد شناخته‌شده در یک حوزه.","A person's face or appearance; more broadly, a notable person or figure in a field.","وجه الشخص أو مظهره؛ ويأتي بمعنى شخصية بارزة أو معروفة في مجال ما."],
+ "تپل":["دارای اندامی نسبتاً گرد و چاق، معمولاً با لحنی محاوره‌ای و گاه محبت‌آمیز.","Chubby or pleasantly plump; an informal description of a somewhat round body shape.","ممتلئ أو ممتلئ الجسم؛ وصف محادثي لقوام مستدير نسبياً وقد يُقال بمودّة."],
+ "شیطان":["در باور دینی، موجودی سرکش و گمراه‌کننده که انسان را به بدی وسوسه می‌کند.","In religious belief, a rebellious and misleading being who tempts people toward wrongdoing.","في المعتقد الديني، كائن متمرّد ومضلّل يوسوس للإنسان ويدعوه إلى الشر."],
+ "اشک ریختن":["گریه کردن و جاری شدن اشک از چشم‌ها.","To cry or shed tears.","بكى وذرفت عيناه الدموع."],
+ "قایم کردن":["چیزی را در جایی پنهان کردن تا دیگران آن را نبینند یا پیدا نکنند.","To hide or conceal something so that others cannot see or find it.","أخفى شيئاً في مكان كي لا يراه الآخرون أو يعثروا عليه."],
+ "لجبازی کردن":["با وجود درخواست یا دلیل دیگران، از روی سرسختی بر نظر یا رفتار خود پافشاری کردن.","To act stubbornly by insisting on one's own view or behaviour despite others' requests or reasons.","عاندَ وأصرّ على رأيه أو سلوكه رغم طلبات الآخرين أو حججهم."],
+ "گوش به حرف دادن":["به سخن یا راهنمایی کسی توجه کردن و آن را پذیرفتن یا مطابق آن عمل کردن.","To listen to someone's words or advice and heed or follow it.","أصغى إلى كلام شخص أو نصيحته وأخذ بها أو عمل بموجبها."],
+ "سالن تحویل بار":["بخش فرودگاه که مسافران در آن چمدان‌های خود را به شرکت هواپیمایی تحویل می‌دهند.","The airport area where passengers check in and hand their luggage to the airline.","منطقة في المطار يسلّم فيها المسافرون أمتعتهم إلى شركة الطيران لإتمام إجراءات شحنها."],
+ "اتباع غیرایرانی":["افرادی که تابعیت کشوری غیر از ایران را دارند و شهروند ایران محسوب نمی‌شوند.","People who hold the nationality of a country other than Iran and are not Iranian citizens.","أشخاص يحملون جنسية دولة غير إيران ولا يُعدّون مواطنين إيرانيين."]
+ };
+ for(const [fa,v] of Object.entries(rows)) S[fa]={...(S[fa]||{}),faMeaning:v[0],enMeaning:v[1],arMeaning:v[2],faSynonyms:(S[fa]||{}).faSynonyms||[],enSynonyms:(S[fa]||{}).enSynonyms||[],arSynonyms:(S[fa]||{}).arSynonyms||[]};
+ window.TERM3_ADDITIONAL_SEMANTICS_BATCH6=Object.keys(rows);
+})();
