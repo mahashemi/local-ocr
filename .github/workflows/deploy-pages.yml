@@ -48,12 +48,14 @@ jobs:
           node --check website/term01-chapters-11-15.js
           node --check website/term01-chapters-16-20.js
           node --check website/term01-supplementary.js
+          node --check website/term01-amr-verbs.js
           node <<'NODE'
           global.window = {};
           require('./website/term01-data.js');
           require('./website/term01-chapters-11-15.js');
           require('./website/term01-chapters-16-20.js');
           require('./website/term01-supplementary.js');
+          require('./website/term01-amr-verbs.js');
           const rows = window.TERM1_DATA;
           if (!Array.isArray(rows) || rows.length < 20) throw new Error('Term 01 vocabulary is unexpectedly small');
           const seen = new Set();
@@ -66,7 +68,13 @@ jobs:
             if (seen.has(key)) throw new Error('Duplicate Term 01 entry: ' + key);
             seen.add(key);
           }
-          console.log('Validated ' + rows.length + ' Term 01 entries.');
+          const amr = rows.filter(x => x.source === 'F1-07' && x.note && x.note.includes('فعل امر پرکاربرد'));
+          if (amr.length !== 18) throw new Error('Expected 18 Term 01 common imperative verbs, found ' + amr.length);
+          for (const row of amr) {
+            if (!row.ms || !row.amr || !row.m || !row.a || row.m.length !== 3 || row.a.length !== 3) throw new Error('Incomplete imperative/masdar record: ' + row.fa);
+            if (row.ms === row.amr) throw new Error('Masdar and imperative collide: ' + row.fa);
+          }
+          console.log('Validated ' + rows.length + ' Term 01 entries, including ' + amr.length + ' common imperative verbs.');
           NODE
 
       - name: Validate Term 02 curriculum JavaScript
@@ -75,6 +83,21 @@ jobs:
           node --check website/term02-lexicon-additions.js
           node --check website/term02-khulasa.js
           node --check website/term02-writing.js
+          node --check website/term02-proverbs.js
+          node <<'NODE'
+          global.window = {};
+          require('./website/term02-data.js');
+          require('./website/term02-lexicon-additions.js');
+          require('./website/semantic-meanings.js');
+          require('./website/term02-proverbs.js');
+          const proverbs = window.TERM2_DATA.filter(x => x.source === 'FA2-20' && x.pos.includes('ضرب‌المثل'));
+          if (proverbs.length !== 13) throw new Error('Expected 13 FA2-20 proverbs, found ' + proverbs.length);
+          for (const row of proverbs) {
+            const sem = window.PERSIAN_SEMANTICS[row.fa];
+            if (!row.ex || row.ex.length !== 3 || !sem || !sem.faMeaning || !sem.enMeaning || !sem.arMeaning) throw new Error('Incomplete trilingual proverb: ' + row.fa);
+          }
+          console.log('Validated ' + proverbs.length + ' FA2-20 proverb entries with trilingual meanings.');
+          NODE
           node tools/audit-term02.cjs
 
       - name: Validate Term 03 curriculum JavaScript
