@@ -129,6 +129,8 @@ jobs:
           node --check website/term-portal.js
           node --check website/term03-matn-verbs.js
           node tools/audit-term03.cjs
+          node --check tools/audit-trilingual-meanings.cjs
+          node tools/audit-trilingual-meanings.cjs
 
       - name: Validate embedded application JavaScript
         run: |
