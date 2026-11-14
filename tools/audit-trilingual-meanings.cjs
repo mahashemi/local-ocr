@@ -19,6 +19,7 @@ const load = (p) => require(require('path').resolve(__dirname, '..', p));
   'website/term01-core-semantics.js',
   'website/term02-core-semantics.js',
   'website/term02-additional-semantics-01.js',
+  'website/term02-additional-semantics-02.js',
   'website/term03-core-semantics.js'
 ].forEach(load);
 
@@ -28,6 +29,7 @@ const requiredCounts = [
   ['Term 02 proverbs', window.TERM2_PROVERBS_COUNT, 13],
   ['Term 02 core meanings', window.TERM2_CORE_SEMANTICS_COUNT, 68],
   ['Term 02 additional meanings batch 1', (window.TERM2_ADDITIONAL_SEMANTICS_BATCH1 || []).length, 29],
+  ['Term 02 additional meanings batch 2', (window.TERM2_ADDITIONAL_SEMANTICS_BATCH2 || []).length, 30],
   ['Term 03 core meanings', window.TERM3_CORE_SEMANTICS_COUNT, 98]
 ];
 for (const [label, actual, expected] of requiredCounts) {
