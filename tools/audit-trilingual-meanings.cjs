@@ -143,7 +143,10 @@ for (const [term, rows] of Object.entries(books)) {
   }
   total += byWord.size;
   console.log(term + ': ' + (byWord.size - missing.length) + '/' + byWord.size + ' complete; ' + missing.length + ' missing');
-  if (missing.length) console.log('  Missing examples: ' + missing.slice(0, 30).join('، ') + (missing.length > 30 ? ' …' : ''));
+  if (missing.length) {
+    console.log('  Missing examples: ' + missing.slice(0, 30).join('، ') + (missing.length > 30 ? ' …' : ''));
+    console.log('  Missing all: ' + missing.join('، '));
+  }
 }
 console.log('Total unique term/headword pairs: ' + total);
 console.log('Complete trilingual semantic records: ' + complete);
