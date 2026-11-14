@@ -22,15 +22,32 @@
  ["ایستادن","istādan","to stand; stop","بایست","ایستادن در صف نشانهٔ رعایت نوبت است.","Istādan dar saf neshāne-ye re'āyat-e nobat ast.","Standing in line shows respect for the queue.","اینجا بایست.","Injā bāyest.","Stand here."],
  ["صبر کردن","sabr kardan","to wait; be patient","صبر کن","صبر کردن هنگام انتظار لازم است.","Sabr kardan hengām-e entezār lāzem ast.","Being patient while waiting is necessary.","کمی صبر کن.","Kami sabr kon.","Wait a little."]
  ];
- const norm=s=>String(s||"").replace(/[\u200c\sـ]/g,"");
+ const norm=s=>String(s||"").replace(/[\\u200c\\sـ]/g,"");
  const existingRows=window.TERM1_DATA||[];
  const seen=new Set(existingRows.map(x=>"7|"+norm(x.fa)));
  let added=0, alreadyPresent=0;
  const existingForms=[];
  for(const [fa,tr,en,amr,mf,mt,me,af,at,ae] of data){
-  if(seen.has("7|"+norm(fa))) continue;
+  const key="7|"+norm(fa);
+  if(seen.has(key)){
+   const prior=existingRows.find(x=>x.unit===7 && norm(x.fa)===norm(fa));
+   if(!prior) throw new Error("Could not locate existing Term 01 entry: "+fa);
+   prior.ms=prior.ms||fa;
+   prior.amr=prior.amr||amr;
+   prior.m=prior.m||[mf,mt,me];
+   prior.a=prior.a||[af,at,ae];
+   existingForms.push(fa);
+   alreadyPresent++;
+   continue;
+  }
   window.TERM1_DATA.push({unit:7,source:"F1-07",fa,tr,en,pos:"فعل — verb",ms:fa,amr,ex:[mf,mt,me],m:[mf,mt,me],a:[af,at,ae],note:"فعل امر پرکاربرد؛ مجموعهٔ تکمیلی برای تمرین ساخت امر در درس FA1-07."});
+  seen.add(key);
+  added++;
  }
+ window.TERM1_AMR_COUNT=data.length;
+ window.TERM1_AMR_ADDED_COUNT=added;
+ window.TERM1_AMR_EXISTING_COUNT=alreadyPresent;
+ window.TERM1_AMR_EXISTING_FORMS=existingForms;
  const S=window.PERSIAN_SEMANTICS||(window.PERSIAN_SEMANTICS={});
  const meanings={
  "بلند شدن":["از حالت نشسته یا خوابیده برخاستن و روی پا ایستادن.","To rise from a sitting or lying position; to get up or stand.","نهضَ من جلوسه أو نومه ووقف على قدميه.","بلند شو","boland sho","Get up."],
