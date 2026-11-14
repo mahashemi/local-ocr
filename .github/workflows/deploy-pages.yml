@@ -97,6 +97,7 @@ jobs:
           node --check website/term02-core-semantics.js
           node --check website/term02-additional-semantics-01.js
           node --check website/term02-additional-semantics-02.js
+          node --check website/term02-additional-semantics-03.js
           node <<'NODE'
           global.window = {};
           require('./website/term02-data.js');
@@ -106,6 +107,7 @@ jobs:
           require('./website/term02-core-semantics.js');
           require('./website/term02-additional-semantics-01.js');
           require('./website/term02-additional-semantics-02.js');
+          require('./website/term02-additional-semantics-03.js');
           const proverbs = window.TERM2_DATA.filter(x => x.source === 'FA2-20' && x.pos.includes('ضرب‌المثل'));
           if (proverbs.length !== 13) throw new Error('Expected 13 FA2-20 proverbs, found ' + proverbs.length);
           for (const row of proverbs) {
@@ -119,7 +121,8 @@ jobs:
           }
           if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH1.length !== 29) throw new Error('Expected 29 Term 02 additional meanings in batch 1.');
           if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH2.length !== 30) throw new Error('Expected 30 Term 02 additional meanings in batch 2.');
-          console.log('Validated ' + proverbs.length + ' FA2-20 proverbs, ' + window.TERM2_CORE_SEMANTICS_COUNT + ' Term 02 core meanings and ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH1.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH2.length + ' additional meanings.');
+          if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH3.length !== 30) throw new Error('Expected 30 Term 02 additional meanings in batch 3.');
+          console.log('Validated ' + proverbs.length + ' FA2-20 proverbs, ' + window.TERM2_CORE_SEMANTICS_COUNT + ' Term 02 core meanings and ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH1.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH2.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH3.length + ' additional meanings.');
           NODE
           node tools/audit-term02.cjs
 
@@ -135,6 +138,7 @@ jobs:
           node --check website/term-portal.js
           node --check website/term03-matn-verbs.js
           node --check website/term03-core-semantics.js
+          node --check website/term03-additional-semantics-01.js
           node tools/audit-term03.cjs
           node --check tools/audit-trilingual-meanings.cjs
           node tools/audit-trilingual-meanings.cjs
