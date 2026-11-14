@@ -165,6 +165,7 @@ jobs:
           node --check website/term03-additional-semantics-07.js
           node --check website/term03-additional-semantics-08.js
           node --check website/term03-additional-semantics-09.js
+          node --check website/term03-additional-semantics-10.js
           node tools/audit-term03.cjs
           node --check tools/audit-trilingual-meanings.cjs
           node tools/audit-trilingual-meanings.cjs
