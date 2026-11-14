@@ -17,7 +17,8 @@ const load = (p) => require(require('path').resolve(__dirname, '..', p));
   'website/term01-amr-verbs.js',
   'website/term02-proverbs.js',
   'website/term01-core-semantics.js',
-  'website/term02-core-semantics.js'
+  'website/term02-core-semantics.js',
+  'website/term03-core-semantics.js'
 ].forEach(load);
 
 const norm = (s) => String(s || '').normalize('NFC').replace(/[\u200c\sـ]/g, '').trim();
