@@ -38,4 +38,5 @@
  };
  for(const [fa,v] of Object.entries(rows)) S[fa]={...(S[fa]||{}),faMeaning:v[0],enMeaning:v[1],arMeaning:v[2],faSynonyms:(S[fa]||{}).faSynonyms||[],enSynonyms:(S[fa]||{}).enSynonyms||[],arSynonyms:(S[fa]||{}).arSynonyms||[]};
  window.TERM1_CORE_SEMANTICS_COUNT=Object.keys(rows).length;
+ window.TERM1_CORE_SEMANTICS_KEYS=Object.keys(rows);
 })();
