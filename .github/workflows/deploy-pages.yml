@@ -100,6 +100,7 @@ jobs:
           node --check website/term02-additional-semantics-03.js
           node --check website/term02-additional-semantics-04.js
           node --check website/term02-additional-semantics-05.js
+          node --check website/term02-additional-semantics-06.js
           node <<'NODE'
           global.window = {};
           require('./website/term02-data.js');
@@ -112,6 +113,7 @@ jobs:
           require('./website/term02-additional-semantics-03.js');
           require('./website/term02-additional-semantics-04.js');
           require('./website/term02-additional-semantics-05.js');
+          require('./website/term02-additional-semantics-06.js');
           const proverbs = window.TERM2_DATA.filter(x => x.source === 'FA2-20' && x.pos.includes('ضرب‌المثل'));
           if (proverbs.length !== 13) throw new Error('Expected 13 FA2-20 proverbs, found ' + proverbs.length);
           for (const row of proverbs) {
@@ -128,7 +130,8 @@ jobs:
           if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH3.length !== 30) throw new Error('Expected 30 Term 02 additional meanings in batch 3.');
           if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH4.length !== 30) throw new Error('Expected 30 Term 02 additional meanings in batch 4.');
           if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH5.length !== 30) throw new Error('Expected 30 Term 02 additional meanings in batch 5.');
-          console.log('Validated ' + proverbs.length + ' FA2-20 proverbs, ' + window.TERM2_CORE_SEMANTICS_COUNT + ' Term 02 core meanings and ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH1.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH2.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH3.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH4.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH5.length + ' additional meanings.');
+          if (window.TERM2_ADDITIONAL_SEMANTICS_BATCH6.length !== 30) throw new Error('Expected 30 Term 02 additional meanings in batch 6.');
+          console.log('Validated ' + proverbs.length + ' FA2-20 proverbs, ' + window.TERM2_CORE_SEMANTICS_COUNT + ' Term 02 core meanings and ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH1.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH2.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH3.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH4.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH5.length + ' + ' + window.TERM2_ADDITIONAL_SEMANTICS_BATCH6.length + ' additional meanings.');
           NODE
           node tools/audit-term02.cjs
 
