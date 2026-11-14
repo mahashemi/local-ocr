@@ -1,0 +1,38 @@
+/* Term 03 additional vocabulary — semantic batch 5. */
+(()=> {
+ const S=window.PERSIAN_SEMANTICS||(window.PERSIAN_SEMANTICS={});
+ const rows={
+ "گذار":["عبور یا انتقال از یک مرحله، وضعیت یا دوره به مرحله یا وضعیت دیگر.","A passage or transition from one stage, state, or period to another.","انتقال أو عبور من مرحلة أو حالة أو فترة إلى أخرى."],
+ "گزار":["جزئی از برخی واژه‌های فارسی به معنای انجام‌دهنده یا به‌جاآورندهٔ یک کار؛ مانند خدمتگزار.","A word element in Persian compounds referring to someone who performs or carries out an action, as in خدمتگزار (servant).","جزء من بعض الكلمات الفارسية المركّبة يدلّ على من يقوم بعمل، مثل «خدمتگزار» أي الخادم."],
+ "میکروب":["موجود زندهٔ بسیار ریزی که معمولاً فقط با میکروسکوپ دیده می‌شود؛ برخی میکروب‌ها بیماری‌زا هستند.","A very small living organism, usually visible only through a microscope; some microbes cause disease.","كائن حيّ دقيق جداً لا يُرى عادةً إلا بالمجهر، وبعض الميكروبات تسبّب الأمراض."],
+ "ماندگاری":["مدت یا کیفیت باقی ماندن چیزی بدون از بین رفتن، تغییر زیاد یا فاسد شدن.","The length of time or quality of lasting without being lost, greatly changed, or spoiled.","مدة بقاء الشيء أو قدرته على الاستمرار من دون زوال أو تغيّر كبير أو فساد."],
+ "عرق کردن":["از پوست بدن عرق ترشح کردن، معمولاً در اثر گرما، فعالیت بدنی یا اضطراب.","To perspire or sweat, usually because of heat, physical activity, or anxiety.","تعرّقَ؛ أفرزَ العرق من الجلد، عادةً بسبب الحرارة أو النشاط البدني أو القلق."],
+ "ابلاغ":["رساندن رسمی یک خبر، دستور، تصمیم یا پیام به فرد یا نهاد مربوط.","The formal communication or delivery of a notice, instruction, decision, or message to the relevant person or organisation.","تبليغ أو إيصال خبر أو أمر أو قرار أو رسالة رسمية إلى الشخص أو الجهة المعنية."],
+ "اشک شوق":["اشکی که بر اثر شادی، هیجان یا احساس عمیق خوشحالی از چشم جاری می‌شود.","Tears shed because of joy, excitement, or deep happiness.","دموع تنزل بسبب الفرح أو الحماس أو السعادة العميقة."],
+ "حکاکی‌شده":["سطحی که روی آن با ابزار، نقش یا نوشته‌ای کنده و ایجاد شده است.","Engraved; having a design or writing cut into its surface.","منقوش أو محفور؛ نُقشَ رسم أو كتابة على سطحه بأداة."],
+ "صلهٔ رحم":["دیدار، رسیدگی و حفظ ارتباط محبت‌آمیز با خویشاوندان و اعضای خانواده.","Maintaining family ties through visiting, caring for, and keeping affectionate contact with relatives.","صلة الأقارب بزيارتهم ورعايتهم والمحافظة على التواصل الودّي معهم."],
+ "گنبد":["سقف یا سازه‌ای خمیده و نیم‌کره‌ای که معمولاً بالای ساختمان یا فضای بزرگ قرار می‌گیرد.","A curved, usually dome-shaped roof or structure built over a building or large space.","سقف أو بناء مقوّس يشبه نصف الكرة، يُقام غالباً فوق مبنى أو مساحة واسعة."],
+ "یتیم":["کودکی که پدر خود را از دست داده است؛ در کاربرد عمومی گاهی به کودکی بی‌سرپرست نیز گفته می‌شود.","An orphan; a child whose father has died, and more generally a child without parental care.","يتيم؛ طفل توفّي أبوه، ويُستعمل أحياناً بصورة أعمّ للطفل الذي فقد الرعاية الوالدية."],
+ "عرفان":["شناخت و معرفت معنوی و باطنی دربارهٔ خدا، انسان و حقیقت؛ همچنین حوزه‌ای از اندیشه و سلوک معنوی.","Spiritual or inner knowledge of God, the human being, and reality; also the tradition of mystical thought and practice.","معرفة روحية وباطنية بالله والإنسان والحقيقة؛ ويُطلق أيضاً على منهج الفكر والسلوك العرفاني."],
+ "اقوام":["خویشاوندان و بستگان یک شخص؛ همچنین در معنایی دیگر، ملت‌ها و گروه‌های قومی.","A person's relatives or kin; in another sense, peoples or ethnic groups.","أقارب الشخص وذووه؛ ويأتي أيضاً بمعنى الشعوب والجماعات القومية."],
+ "دهکدهٔ توریستی":["روستایی که امکانات و خدماتی برای پذیرایی از گردشگران و بازدیدکنندگان فراهم کرده است.","A village equipped with facilities and services for tourists and visitors.","قرية توفّر مرافق وخدمات لاستقبال السيّاح والزائرين."],
+ "روایت کردن":["داستان، رویداد یا مطلبی را به ترتیب و با زبان خود بازگو کردن.","To narrate or recount a story, event, or account in sequence.","روى قصةً أو حدثاً أو خبراً وسرده بتسلسل وبأسلوبه."],
+ "زندگی‌نامه":["نوشته‌ای دربارهٔ زندگی یک شخص که رویدادها و مراحل مهم زندگی او را شرح می‌دهد.","A biography: a written account of a person's life and its important events and stages.","سيرة ذاتية للغير؛ نصّ يروي حياة شخص وأحداثها ومراحلها المهمة."],
+ "دانشیار":["مرتبه‌ای دانشگاهی برای عضو هیئت علمی که معمولاً پس از استادیاری و پیش از استادی قرار دارد.","An associate professor; an academic rank generally above assistant professor and below full professor.","أستاذ مشارك؛ رتبة أكاديمية تأتي عادةً بعد الأستاذ المساعد وقبل الأستاذ."],
+ "بخش اطفال":["بخشی از بیمارستان که برای معاینه، درمان و مراقبت پزشکی از نوزادان و کودکان در نظر گرفته شده است.","The paediatrics department or ward of a hospital, providing medical care for infants and children.","قسم أو جناح طبّ الأطفال في المستشفى، ويقدّم الرعاية الطبية للرضّع والأطفال."],
+ "فعالیت علمی":["کاری مانند پژوهش، آزمایش، مطالعه یا انتشار مقاله که برای گسترش دانش انجام می‌شود.","An activity such as research, experimentation, study, or publishing that contributes to the advancement of knowledge.","نشاط مثل البحث أو التجربة أو الدراسة أو نشر المقالات بهدف تطوير المعرفة."],
+ "عهده داشتن":["مسئولیت انجام یا پیگیری کاری را بر عهده داشتن.","To be responsible for carrying out or overseeing a task.","تولّى مسؤولية تنفيذ عمل أو متابعته."],
+ "از دنیا رفتن":["درگذشتن؛ عبارت مؤدبانه و غیرمستقیم برای گفتن اینکه کسی مرده است.","To pass away; a gentle or indirect expression meaning that someone has died.","توفّي؛ تعبير لطيف وغير مباشر للدلالة على موت شخص."],
+ "همکاری داشتن":["برای رسیدن به هدفی مشترک با فرد یا گروه دیگری کار کردن.","To cooperate or work together with another person or group toward a shared goal.","تعاونَ أو عملَ مع شخص أو جماعة لتحقيق هدف مشترك."],
+ "به چاپ رسیدن":["منتشر شدن یک کتاب، مقاله یا نوشته به صورت چاپی.","For a book, article, or written work to be published in print.","نُشرَ كتاب أو مقال أو نصّ مطبوع."],
+ "به عهده گرفتن":["مسئولیت انجام کاری یا مدیریت آن را پذیرفتن.","To take on or accept responsibility for doing or managing something.","تولّى مسؤولية القيام بعمل أو إدارته وقَبِلَها."],
+ "به پایان رساندن":["کاری را کامل کردن و آن را تا آخر پیش بردن.","To bring something to an end by completing it.","أنهى عملاً وأتمّه حتى نهايته."],
+ "کوچهٔ بن‌بست":["کوچه‌ای که از یک سمت راه خروج ندارد و به مسیر دیگری متصل نمی‌شود.","A dead-end alley or lane with no through exit at one end.","زقاق مسدود لا يوفّر منفذاً للمرور من أحد طرفيه."],
+ "انتهای خیابان":["بخش پایانی خیابان، در نقطه‌ای که مسیر آن تمام می‌شود یا به مسیر دیگری می‌رسد.","The far end of a street, where it finishes or meets another route.","نهاية الشارع، حيث ينتهي مساره أو يلتقي بطريق آخر."],
+ "بافته شدن":["با درهم‌تنیدن نخ‌ها یا رشته‌ها، به شکل پارچه، فرش یا بافتی دیگر درآمدن.","To be woven by interlacing threads or strands into fabric, a carpet, or another textile.","نُسجَ بتشابك الخيوط أو الألياف لتكوين قماش أو سجادة أو منسوج آخر."],
+ "کانون گرم خانواده":["فضای صمیمی و حمایتگر خانواده که اعضای آن در کنار هم احساس محبت، امنیت و تعلق می‌کنند.","The warm, loving, and supportive family environment in which members feel affection, security, and belonging.","الجوّ الأسري الدافئ والمحبّ والداعم الذي يشعر فيه أفراد الأسرة بالمودّة والأمان والانتماء."],
+ "نیازهای روحی":["نیازهای عاطفی، معنوی و روانی انسان، مانند محبت، آرامش، امید و احساس تعلق.","A person's emotional, spiritual, and psychological needs, such as affection, peace, hope, and belonging.","احتياجات الإنسان العاطفية والروحية والنفسية، مثل المحبة والطمأنينة والأمل والشعور بالانتماء."]
+ };
+ for(const [fa,v] of Object.entries(rows)) S[fa]={...(S[fa]||{}),faMeaning:v[0],enMeaning:v[1],arMeaning:v[2],faSynonyms:(S[fa]||{}).faSynonyms||[],enSynonyms:(S[fa]||{}).enSynonyms||[],arSynonyms:(S[fa]||{}).arSynonyms||[]};
+ window.TERM3_ADDITIONAL_SEMANTICS_BATCH5=Object.keys(rows);
+})();
